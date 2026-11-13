@@ -2,6 +2,7 @@
  * Phase 5 : le programme complet (41 semaines) est visible ; seules les semaines rédigées sont ouvertes.
  */
 import { expect, test } from '@playwright/test';
+import { chapitresPublies, competencesAVenir } from './aides.ts';
 
 test('E1 : le parcours affiche les 41 semaines, la semaine rédigée est ouverte, les autres « à venir »', async ({ page }) => {
   await page.goto('/parcours/');
@@ -19,10 +20,13 @@ test('E1 : le parcours affiche les 41 semaines, la semaine rédigée est ouverte
 
 test('E2 : tableau de bord et compétences tiennent compte du programme complet', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByTestId('avancement-cursus')).toContainText('1 semaine disponible sur 41');
+  const n = chapitresPublies().length;
+  await expect(page.getByTestId('avancement-cursus')).toContainText(n > 1 ? `${n} semaines disponibles sur 41` : '1 semaine disponible sur 41');
   await page.goto('/competences/');
   const aVenir = page.getByTestId('competences-a-venir');
-  await expect(aVenir.locator('summary')).toHaveCount(10);
+  const codes = competencesAVenir();
+  const domaines = new Set(codes.map((c) => c.split('.')[0]));
+  await expect(aVenir.locator('summary')).toHaveCount(domaines.size);
   await aVenir.locator('summary').first().click();
-  await expect(aVenir.getByText('D1.1')).toBeVisible();
+  await expect(aVenir.getByText(codes[0]!, { exact: true })).toBeVisible();
 });

@@ -2,6 +2,7 @@
  * Parcours du prototype (critères P1 à P8, T4, T5 de docs/architecture/05-tests-et-validation.md).
  */
 import { expect, test, type Page } from '@playwright/test';
+import { chapitre, chapitresPublies, deroger, ordonnerQuestions } from './aides.ts';
 
 const LECON = '/parcours/m1/s02/s02-l01/';
 const QCM = '/parcours/m1/s02/qcm/';
@@ -37,21 +38,15 @@ async function repondreQcm(page: Page, fausses: string[] = []) {
   }
 }
 
-/** Met la question d'ordre S02-Q010 dans le bon ordre avec les flèches, puis confirme si rien n'a bougé. */
-async function ordonnerQ010(page: Page) {
-  const q10 = page.getByTestId('question-S02-Q010');
-  const etapes = ['Relever la tension', 'Calculer la puissance', 'Comparer P', 'Conclure'];
-  for (const texte of etapes) {
-    const items = q10.locator('.ordre li');
-    const libelles = await items.locator('span').allTextContents();
-    let i = libelles.findIndex((l) => l.startsWith(texte));
-    while (i > etapes.indexOf(texte)) {
-      await items.nth(i).getByRole('button', { name: /Monter/ }).click();
-      i--;
-    }
-  }
-  const garder = q10.getByRole('button', { name: 'Je garde cet ordre' });
-  if (await garder.isVisible()) await garder.click();
+/** Corrigé du chapitre S02 (servi après soumission ; lu ici pour piloter les réponses). */
+async function corrigesS02(page: Page): Promise<Record<string, { ordre?: string[] }>> {
+  return (await (await page.request.get('/corrections/s02.json')).json()).corrections;
+}
+
+/** Première question « sécurité » du tirage affiché. */
+async function questionSecuriteTiree(page: Page): Promise<string> {
+  const bloc = page.locator('[data-testid^="question-"]').filter({ has: page.locator('.badge', { hasText: 'Sécurité' }) }).first();
+  return (await bloc.getAttribute('data-testid'))!.replace('question-', '');
 }
 
 test.describe('prototype AREPROG Academy', () => {
@@ -60,7 +55,10 @@ test.describe('prototype AREPROG Academy', () => {
     await expect(page).toHaveTitle('AREPROG Academy');
     await expect(page.locator('html')).toHaveAttribute('lang', 'fr');
     await expect(page.getByRole('heading', { name: /M1 · Électricité fondamentale/ })).toBeVisible();
-    await expect(page.getByTestId('chapitre-S02').getByTestId('etat-chapitre')).toHaveText('Disponible');
+    // S02 dépend de S01 : il est verrouillé tant que S01 (publié) n'est pas validé.
+    const s01Publie = chapitresPublies().some((c) => c.id === 'S01');
+    await expect(page.getByTestId('chapitre-S02').getByTestId('etat-chapitre')).toHaveText(s01Publie ? 'Verrouillé' : 'Disponible');
+    if (s01Publie) await expect(page.getByTestId('chapitre-S01').getByTestId('etat-chapitre')).toHaveText('Disponible');
     await expect(page.getByTestId('competence-D2.2')).toContainText('Non commencée');
     await pasDeDefilementHorizontal(page);
   });
@@ -69,7 +67,10 @@ test.describe('prototype AREPROG Academy', () => {
     await page.goto(LECON);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Grandeurs électriques et loi d\'Ohm');
     await expect(page.getByRole('heading', { name: 'Objectifs' })).toBeVisible();
-    await expect(page.getByText('S01 : pas encore publié')).toBeVisible();
+    const prerequis = page.getByRole('heading', { name: 'Prérequis' }).locator('xpath=following-sibling::ul[1]');
+    await expect(prerequis).toContainText('S01');
+    const s01Publie = chapitresPublies().some((c) => c.id === 'S01');
+    await expect(prerequis.getByText('pas encore publié')).toHaveCount(s01Publie ? 0 : 1);
     await expect(page.getByRole('img', { name: /Schéma d'un circuit fermé/ })).toBeVisible();
     await expect(page.getByText('Figure réalisée par AREPROG')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Références documentaires' })).toBeVisible();
@@ -122,29 +123,36 @@ test.describe('prototype AREPROG Academy', () => {
   });
 
   test('P5 : QCM réussi, échec par la règle sécurité, remédiation', async ({ page }) => {
+    const corriges = await corrigesS02(page);
     await page.goto(QCM);
     await page.getByRole('button', { name: 'Commencer le QCM' }).click();
-    await expect(page.locator('[data-testid^="question-"]')).toHaveCount(10);
-    // Une seule erreur, sur une question sécurité : 90 % mais échec.
-    await repondreQcm(page, ['S02-Q007']);
-    await ordonnerQ010(page);
+    const questions = page.locator('[data-testid^="question-"]');
+    const nb = await questions.count();
+    expect(nb).toBeGreaterThanOrEqual(10);
+    expect(nb).toBeLessThanOrEqual(20);
+    // Une seule erreur, sur une question sécurité : score élevé mais échec.
+    const securite = await questionSecuriteTiree(page);
+    await repondreQcm(page, [securite]);
+    await ordonnerQuestions(page, 'S02', corriges);
     await page.getByRole('button', { name: 'Valider mes réponses' }).click();
     const resultat = page.getByTestId('qcm-resultat');
     await expect(resultat.getByText('✗ QCM non réussi')).toBeVisible();
     await expect(resultat.getByText(/question de sécurité est fausse/)).toBeVisible();
-    await expect(resultat.getByRole('link', { name: /La puissance/ })).toHaveAttribute('href', `${LECON}#la-puissance`);
-    await expect(page.getByTestId('correction-S02-Q007')).toContainText('Bonne réponse');
+    // Remédiation : renvoi vers une section d'une leçon du chapitre.
+    await expect(resultat.locator('a[href^="/parcours/m1/s02/s02-l0"][href*="#"]').first()).toBeVisible();
+    await expect(page.getByTestId(`correction-${securite}`)).toContainText('Bonne réponse');
 
     // Nouvelle tentative, tout juste (ordre compris) : réussite.
     await page.getByRole('button', { name: 'Nouvelle tentative' }).click();
     await repondreQcm(page);
-    await ordonnerQ010(page);
+    await ordonnerQuestions(page, 'S02', corriges);
     await page.getByRole('button', { name: 'Valider mes réponses' }).click();
     await expect(page.getByTestId('qcm-resultat').getByText('✓ QCM réussi')).toBeVisible();
     await expect(page.getByTestId('qcm-resultat').locator('.score')).toHaveText('100 %');
   });
 
   test('P6, P7, P8 : historique, progression et sauvegarde aller-retour', async ({ page }) => {
+    await deroger(page, 'S02');
     await page.goto(LECON);
     const ex = page.getByTestId('exercice-S02-L01-EX04');
     await ex.locator('input[type=text]').fill('47');
@@ -162,7 +170,7 @@ test.describe('prototype AREPROG Academy', () => {
     const lignes = page.getByTestId('historique').locator('tbody tr');
     await expect(lignes).toHaveCount(2);
     await expect(lignes.first()).toContainText('QCM du chapitre S02');
-    await expect(lignes.first()).toContainText('0.2'); // version du chapitre S02
+    await expect(lignes.first()).toContainText(chapitre('S02').version); // version du chapitre S02
 
     // P1 + P7 : tableau de bord et compétences mis à jour, sans niveau non mérité.
     await page.goto('/');

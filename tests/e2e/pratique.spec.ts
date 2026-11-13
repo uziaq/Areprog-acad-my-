@@ -3,6 +3,7 @@
  * et validation complète du chapitre.
  */
 import { expect, test, type Page } from '@playwright/test';
+import { ajouterEnregistrement, chapitre, deroger } from './aides.ts';
 
 const TP = '/parcours/m1/s02/tp/tp-03/';
 /** PNG 1 × 1 valide, pour simuler une photo prise sur la tablette. */
@@ -30,27 +31,14 @@ async function remplirCritere(page: Page, id: string, niveau = 'Atteint') {
   await expect(c.locator('img.vignette')).toHaveCount(1);
 }
 
-async function ajouterQcmReussi(page: Page) {
-  await page.evaluate(
-    () =>
-      new Promise<void>((resolve, reject) => {
-        const req = indexedDB.open('areprog-academy');
-        req.onsuccess = () => {
-          const db = req.result;
-          const tx = db.transaction('tentatives', 'readwrite');
-          tx.objectStore('tentatives').put({
-            id: 'qcm-test', type: 'qcm', ref: 'S02', chapitre: 'S02', version: '0.2', date: '2026-11-13T08:00:00.000Z',
-            score: 1, reussi: true, securite_ok: true, duree_s: 60, details: [],
-          });
-          tx.oncomplete = () => { db.close(); resolve(); };
-          tx.onerror = () => reject(tx.error);
-        };
-        req.onerror = () => reject(req.error);
-      }),
-  );
-}
+const ajouterQcmReussi = (page: Page) =>
+  ajouterEnregistrement(page, 'tentatives', {
+    id: 'qcm-test', type: 'qcm', ref: 'S02', chapitre: 'S02', version: chapitre('S02').version, date: '2026-11-13T08:00:00.000Z',
+    score: 1, reussi: true, securite_ok: true, duree_s: 60, details: [],
+  });
 
 test('T1 : TP noté réussi avec photos, puis chapitre « Validé » si le QCM est réussi', async ({ page }) => {
+  await deroger(page, 'S02');
   await page.goto(TP);
   await expect(page.getByTestId('pratique-formulaire')).toBeVisible();
   await expect(page.getByText('Photo du réglage de la limite de courant')).toBeVisible();
