@@ -1,0 +1,16 @@
+# Énoncés seulement : les solutions sont dans corrections/S04-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S04-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un point de mesure a pour modèle Eth = 6 V et Rth = 1 MΩ. Que lit un voltmètre de résistance d'entrée 10 MΩ ?"
+  unite_attendue: V
+  competences: [D3.1]
+  objectif: O1
+- id: S04-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Le calibre mA d'un multimètre a une résistance de 2 Ω. Quelle chute de tension ajoute-t-il dans un circuit parcouru par 40 mA ?"
+  unite_attendue: mV
+  competences: [D3.1]
+  objectif: O2

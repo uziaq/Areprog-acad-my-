@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 170" width="360" height="170" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : comparaison d'un intervalle de tolérance et d'un intervalle de mesure, sans valeur. -->
+  <path d="M20 140 H340" />
+  <text x="300" y="160" fill="currentColor" stroke="none">valeur</text>
+  <!-- tolérance -->
+  <rect x="80" y="40" width="140" height="22" fill="currentColor" fill-opacity="0.15" />
+  <text x="84" y="32" fill="currentColor" stroke="none">Intervalle de tolérance du composant</text>
+  <path d="M150 62 V140" stroke-dasharray="3 3" />
+  <text x="132" y="156" fill="currentColor" stroke="none">nominale</text>
+  <!-- cas A : mesure dans la tolérance -->
+  <rect x="120" y="76" width="50" height="14" />
+  <circle cx="145" cy="83" r="3" fill="currentColor" stroke="none" />
+  <text x="12" y="88" fill="currentColor" stroke="none">A : conforme</text>
+  <!-- cas B : à cheval -->
+  <rect x="200" y="98" width="56" height="14" />
+  <circle cx="228" cy="105" r="3" fill="currentColor" stroke="none" />
+  <text x="12" y="110" fill="currentColor" stroke="none">B : non concluant</text>
+  <!-- cas C : hors -->
+  <rect x="250" y="120" width="50" height="14" />
+  <circle cx="275" cy="127" r="3" fill="currentColor" stroke="none" />
+  <text x="12" y="132" fill="currentColor" stroke="none">C : non conforme</text>
+</svg>
