@@ -20,6 +20,7 @@ import {
   reponseQuestionSchema,
   sourceSchema,
   programmeSchema,
+  grillesSchema,
   tpSchema,
   type Programme,
   type Statut,
@@ -148,6 +149,39 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
     }
   }
   const domaines = new Set((programme?.domaines ?? []).map((d) => d.id));
+
+  // ---------- Grilles d'évaluation pratique ----------
+  const fg = contenu.grilles?.chemin ?? 'evaluation/grilles.yaml';
+  if (!contenu.grilles) {
+    ajouter('grille', 'erreur', fg, 'grilles d\'évaluation pratique absentes (content/evaluation/grilles.yaml)');
+  } else if (contenu.grilles.erreurLecture) {
+    ajouter('yaml', 'erreur', fg, contenu.grilles.erreurLecture);
+  } else {
+    const g = verifierSchema(grillesSchema, contenu.grilles.donnees, fg);
+    if (g) {
+      for (const id of ['generique', 'renforcee'] as const) {
+        const grille = g.grilles.filter((x) => x.id === id);
+        if (grille.length !== 1) ajouter('grille', 'erreur', fg, `grille « ${id} » attendue une fois exactement`);
+      }
+      for (const grille of g.grilles) {
+        const total = grille.criteres.reduce((n, c) => n + c.poids, 0);
+        const ids = new Set(grille.criteres.map((c) => c.id));
+        if (ids.size !== grille.criteres.length) ajouter('grille', 'erreur', fg, `grille ${grille.id} : critère en double`);
+        if (grille.id === 'generique' && total !== 100) ajouter('grille', 'erreur', fg, `grille générique : poids total ${total}, 100 attendu`);
+        for (const c of grille.criteres) {
+          if (c.poids === 0 && !c.eliminatoire_si) ajouter('grille', 'erreur', fg, `grille ${grille.id}, critère ${c.id} : ni poids ni condition éliminatoire`);
+        }
+      }
+      const idsFautes = new Set(g.fautes_eliminatoires.map((f) => f.id));
+      if (idsFautes.size !== g.fautes_eliminatoires.length) ajouter('grille', 'erreur', fg, 'faute éliminatoire en double');
+      if (programme) {
+        const modules = new Set(programme.modules.map((m) => m.id));
+        for (const f of g.fautes_eliminatoires) {
+          for (const m of f.modules) if (!modules.has(m)) ajouter('grille', 'erreur', fg, `${f.id} : module ${m} absent du programme`);
+        }
+      }
+    }
+  }
 
   // ---------- Référentiel ----------
   const competences = new Set<string>();

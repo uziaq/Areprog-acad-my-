@@ -2,10 +2,10 @@
  * Format de sauvegarde (export / import) et migrations du schéma de données apprenant.
  * Fonctions pures, testables sans navigateur.
  */
-import type { Evenement, Tentative } from '../types.ts';
+import type { Evenement, Preuve, Tentative } from '../types.ts';
 
 export const FORMAT = 'areprog-academy-sauvegarde';
-export const VERSION_SCHEMA = 1;
+export const VERSION_SCHEMA = 2;
 
 export interface Sauvegarde {
   format: typeof FORMAT;
@@ -13,15 +13,18 @@ export interface Sauvegarde {
   date_export: string;
   tentatives: Tentative[];
   evenements: Evenement[];
+  /** Preuves des évaluations pratiques (photos compressées et notes), depuis la version 2. */
+  preuves: Preuve[];
 }
 
 /** Migrations : la clé est la version de départ. Chaque migration produit la version suivante. */
 export const MIGRATIONS: Record<number, (d: Record<string, unknown>) => Record<string, unknown>> = {
-  // 1: (d) => ({ ...d, version_schema: 2, ... }),
+  // Version 2 : ajout des preuves d'évaluation pratique.
+  1: (d) => ({ ...d, version_schema: 2, preuves: [] }),
 };
 
-export function construireSauvegarde(tentatives: Tentative[], evenements: Evenement[], date = new Date()): Sauvegarde {
-  return { format: FORMAT, version_schema: VERSION_SCHEMA, date_export: date.toISOString(), tentatives, evenements };
+export function construireSauvegarde(tentatives: Tentative[], evenements: Evenement[], preuves: Preuve[] = [], date = new Date()): Sauvegarde {
+  return { format: FORMAT, version_schema: VERSION_SCHEMA, date_export: date.toISOString(), tentatives, evenements, preuves };
 }
 
 export type LectureSauvegarde = { ok: true; sauvegarde: Sauvegarde } | { ok: false; erreur: string };
@@ -32,7 +35,7 @@ function tentativeValide(t: unknown): t is Tentative {
   return (
     estObjet(t) &&
     typeof t.id === 'string' &&
-    (t.type === 'exercice' || t.type === 'qcm') &&
+    (t.type === 'exercice' || t.type === 'qcm' || t.type === 'pratique') &&
     typeof t.ref === 'string' &&
     typeof t.chapitre === 'string' &&
     typeof t.version === 'string' &&
@@ -51,6 +54,20 @@ function evenementValide(e: unknown): e is Evenement {
     typeof e.ref === 'string' &&
     typeof e.chapitre === 'string' &&
     typeof e.date === 'string'
+  );
+}
+
+function preuveValide(p: unknown): p is Preuve {
+  return (
+    estObjet(p) &&
+    typeof p.id === 'string' &&
+    typeof p.tentative === 'string' &&
+    typeof p.tp === 'string' &&
+    typeof p.critere === 'string' &&
+    (p.type === 'photo' || p.type === 'note') &&
+    typeof p.date === 'string' &&
+    typeof p.contenu === 'string' &&
+    (p.type === 'note' || p.contenu.startsWith('data:image/'))
   );
 }
 
@@ -73,14 +90,15 @@ export function lireSauvegarde(texte: string): LectureSauvegarde {
     d = m(d);
     v += 1;
   }
-  if (!Array.isArray(d.tentatives) || !Array.isArray(d.evenements)) return { ok: false, erreur: 'Sauvegarde incomplète.' };
+  if (!Array.isArray(d.tentatives) || !Array.isArray(d.evenements) || !Array.isArray(d.preuves)) return { ok: false, erreur: 'Sauvegarde incomplète.' };
   const tentatives = d.tentatives.filter(tentativeValide);
   const evenements = d.evenements.filter(evenementValide);
-  const rejetes = d.tentatives.length - tentatives.length + d.evenements.length - evenements.length;
+  const preuves = d.preuves.filter(preuveValide);
+  const rejetes = d.tentatives.length - tentatives.length + d.evenements.length - evenements.length + d.preuves.length - preuves.length;
   if (rejetes > 0) return { ok: false, erreur: `${rejetes} enregistrement(s) illisible(s) : import refusé pour ne rien perdre.` };
   return {
     ok: true,
-    sauvegarde: { format: FORMAT, version_schema: VERSION_SCHEMA, date_export: String(d.date_export ?? ''), tentatives, evenements },
+    sauvegarde: { format: FORMAT, version_schema: VERSION_SCHEMA, date_export: String(d.date_export ?? ''), tentatives, evenements, preuves },
   };
 }
 

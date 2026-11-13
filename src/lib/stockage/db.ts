@@ -2,11 +2,11 @@
  * Stockage local des données apprenant (IndexedDB), navigateur uniquement.
  * Sauvegarde automatique : chaque tentative ou événement est écrit immédiatement.
  */
-import type { Evenement, Tentative } from '../types.ts';
+import type { Evenement, Preuve, Tentative } from '../types.ts';
 import { VERSION_SCHEMA, type Sauvegarde } from './sauvegarde.ts';
 
 const NOM_BASE = 'areprog-academy';
-const MAGASINS = ['tentatives', 'evenements', 'meta'] as const;
+const MAGASINS = ['tentatives', 'evenements', 'meta', 'preuves'] as const;
 type Magasin = (typeof MAGASINS)[number];
 
 let ouverture: Promise<IDBDatabase> | null = null;
@@ -26,10 +26,14 @@ function ouvrir(): Promise<IDBDatabase> {
     const req = indexedDB.open(NOM_BASE, VERSION_SCHEMA);
     req.onupgradeneeded = () => {
       const db = req.result;
-      // Version 1 : création des magasins. Les versions suivantes ajouteront leurs migrations ici.
+      // Version 1 : tentatives, événements, méta. Version 2 : preuves d'évaluation pratique.
+      // Chaque étape est idempotente : une base en version 1 reçoit seulement le magasin manquant.
       if (!db.objectStoreNames.contains('tentatives')) db.createObjectStore('tentatives', { keyPath: 'id' });
       if (!db.objectStoreNames.contains('evenements')) db.createObjectStore('evenements', { keyPath: 'id' });
       if (!db.objectStoreNames.contains('meta')) db.createObjectStore('meta');
+      if (!db.objectStoreNames.contains('preuves')) {
+        db.createObjectStore('preuves', { keyPath: 'id' }).createIndex('tentative', 'tentative');
+      }
     };
     req.onsuccess = () => {
       const db = req.result;
@@ -83,6 +87,26 @@ export const listerEvenements = () => tout<Evenement>('evenements');
 export const enregistrerTentative = (t: Tentative) => ecrire('tentatives', t);
 export const enregistrerEvenement = (e: Evenement) => ecrire('evenements', e);
 
+export const listerPreuves = () => tout<Preuve>('preuves');
+export const enregistrerPreuve = (p: Preuve) => ecrire('preuves', p);
+
+export async function preuvesDeTentative(tentative: string): Promise<Preuve[]> {
+  const db = await ouvrir();
+  return requete(db.transaction('preuves').objectStore('preuves').index('tentative').getAll(tentative) as IDBRequest<Preuve[]>);
+}
+
+export async function supprimerPreuve(id: string): Promise<void> {
+  const db = await ouvrir();
+  const tx = db.transaction('preuves', 'readwrite');
+  tx.objectStore('preuves').delete(id);
+  await new Promise<void>((resolve, reject) => {
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+    tx.onabort = () => reject(tx.error);
+  });
+  signalerChangement();
+}
+
 export async function lireMeta<T>(cle: string): Promise<T | undefined> {
   const db = await ouvrir();
   return requete(db.transaction('meta').objectStore('meta').get(cle) as IDBRequest<T | undefined>);
@@ -92,13 +116,16 @@ export const ecrireMeta = (cle: string, valeur: unknown) => ecrire('meta', valeu
 /** Remplace toutes les données par celles d'une sauvegarde (après confirmation de l'apprenant). */
 export async function remplacerDonnees(s: Sauvegarde): Promise<void> {
   const db = await ouvrir();
-  const tx = db.transaction(['tentatives', 'evenements'], 'readwrite');
+  const tx = db.transaction(['tentatives', 'evenements', 'preuves'], 'readwrite');
   const t = tx.objectStore('tentatives');
   const e = tx.objectStore('evenements');
+  const p = tx.objectStore('preuves');
   t.clear();
   e.clear();
+  p.clear();
   for (const x of s.tentatives) t.put(x);
   for (const x of s.evenements) e.put(x);
+  for (const x of s.preuves) p.put(x);
   await new Promise<void>((resolve, reject) => {
     tx.oncomplete = () => resolve();
     tx.onerror = () => reject(tx.error);

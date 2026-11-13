@@ -4,7 +4,7 @@
  * Règle (docs/pedagogie/04-evaluation.md) : une compétence n'atteint le niveau visé que lorsque
  * la semaine qui l'enseigne ET le jalon qui la vérifie sont validés.
  */
-import type { Evenement, Plan, PlanChapitre, Tentative } from '../types.ts';
+import type { Evenement, Plan, PlanChapitre, PlanTp, Tentative } from '../types.ts';
 
 export type EtatChapitre = 'verrouille' | 'disponible' | 'en_cours' | 'a_reprendre' | 'a_rejouer' | 'qcm_reussi' | 'valide';
 
@@ -27,8 +27,10 @@ export interface SyntheseChapitre {
   derogation: Evenement | null;
   dernierQcm: Tentative | null;
   nbTentativesQcm: number;
-  /** La validation complète exige aussi l'évaluation pratique (pas encore disponible). */
-  pratiqueRequise: boolean;
+  /** TP notés du chapitre dont la dernière évaluation pratique n'est pas réussie (ou absente). */
+  tpRestants: PlanTp[];
+  /** Le chapitre n'a encore aucun TP publié : il ne peut pas être validé. */
+  pratiqueIndisponible: boolean;
 }
 
 const parDate = (a: { date: string }, b: { date: string }) => a.date.localeCompare(b.date);
@@ -37,10 +39,22 @@ export function chapitresDuPlan(plan: Plan): PlanChapitre[] {
   return plan.modules.flatMap((m) => m.chapitres);
 }
 
-/** Un chapitre est validé quand son QCM est réussi ET son évaluation pratique validée. */
-export function chapitreValide(_chapitre: string, _tentatives: Tentative[]): boolean {
-  // L'évaluation pratique (lot L2 / L3) n'existe pas encore : aucun chapitre ne peut être « validé ».
-  return false;
+const derniere = (tentatives: Tentative[], type: Tentative['type'], ref: string) =>
+  tentatives.filter((t) => t.type === type && t.ref === ref).sort(parDate).at(-1) ?? null;
+
+/** TP du chapitre dont la dernière évaluation pratique n'est pas réussie. */
+export function tpNonValides(chapitre: PlanChapitre, tentatives: Tentative[]): PlanTp[] {
+  return chapitre.tp.filter((tp) => !derniere(tentatives, 'pratique', tp.id)?.reussi);
+}
+
+/**
+ * Un chapitre est validé quand son dernier QCM est réussi ET la dernière évaluation pratique de
+ * chacun de ses TP est réussie (docs/pedagogie/04-evaluation.md). Sans TP publié, la partie
+ * pratique ne peut pas être évaluée : le chapitre n'est pas validé.
+ */
+export function chapitreValide(chapitre: PlanChapitre, tentatives: Tentative[]): boolean {
+  if (chapitre.tp.length === 0) return false;
+  return !!derniere(tentatives, 'qcm', chapitre.id)?.reussi && tpNonValides(chapitre, tentatives).length === 0;
 }
 
 export function syntheseChapitre(
@@ -49,13 +63,13 @@ export function syntheseChapitre(
   tentatives: Tentative[],
   evenements: Evenement[],
 ): SyntheseChapitre {
-  const existants = new Set(chapitresDuPlan(plan).map((c) => c.id));
+  const existants = new Map(chapitresDuPlan(plan).map((c) => [c.id, c]));
   const prerequisAbsents = chapitre.prerequis.filter((p) => !existants.has(p));
-  const prerequisBloquants = chapitre.prerequis.filter((p) => existants.has(p) && !chapitreValide(p, tentatives));
+  const prerequisBloquants = chapitre.prerequis.filter((p) => existants.has(p) && !chapitreValide(existants.get(p)!, tentatives));
   const derogation =
     evenements.filter((e) => e.type === 'derogation' && e.chapitre === chapitre.id).sort(parDate).at(-1) ?? null;
 
-  const qcm = tentatives.filter((t) => t.type === 'qcm' && t.chapitre === chapitre.id).sort(parDate);
+  const qcm = tentatives.filter((t) => t.type === 'qcm' && t.ref === chapitre.id).sort(parDate);
   const dernierQcm = qcm.at(-1) ?? null;
   const activite =
     tentatives.some((t) => t.chapitre === chapitre.id) ||
@@ -63,7 +77,7 @@ export function syntheseChapitre(
 
   let etat: EtatChapitre;
   if (prerequisBloquants.length && !derogation) etat = 'verrouille';
-  else if (chapitreValide(chapitre.id, tentatives)) etat = 'valide';
+  else if (chapitreValide(chapitre, tentatives)) etat = 'valide';
   else if (dernierQcm?.reussi) etat = 'qcm_reussi';
   else if (qcm.length >= 2 && !qcm.at(-1)!.reussi && !qcm.at(-2)!.reussi) etat = 'a_rejouer';
   else if (dernierQcm) etat = 'a_reprendre';
@@ -77,7 +91,8 @@ export function syntheseChapitre(
     derogation,
     dernierQcm,
     nbTentativesQcm: qcm.length,
-    pratiqueRequise: true,
+    tpRestants: tpNonValides(chapitre, tentatives),
+    pratiqueIndisponible: chapitre.tp.length === 0,
   };
 }
 
@@ -109,6 +124,7 @@ export function progressionCompetences(plan: Plan, tentatives: Tentative[], even
   const lecons = chapitresDuPlan(plan).flatMap((c) => c.lecons);
   const consultees = new Set(evenements.filter((e) => e.type === 'consultation').map((e) => e.ref));
   const competencesPubliees = new Set(chapitresDuPlan(plan).flatMap((c) => c.competences));
+  const tpParId = new Map(chapitresDuPlan(plan).flatMap((c) => c.tp).map((tp) => [tp.id, tp]));
 
   return plan.competences.map((comp) => {
     const enseignee = lecons.some((l) => l.competences.includes(comp.code) && consultees.has(l.id));
@@ -120,7 +136,8 @@ export function progressionCompetences(plan: Plan, tentatives: Tentative[], even
       const concernees = t.details.filter((d) => d.competences.includes(comp.code));
       return concernees.length > 0 && concernees.filter((d) => d.correct).length / concernees.length >= seuil - 1e-9;
     });
-    const pratique = false; // évaluation pratique : lot ultérieur
+    // Pratique : une évaluation pratique réussie d'un TP qui exerce la compétence.
+    const pratique = tentatives.some((t) => t.type === 'pratique' && t.reussi && tpParId.get(t.ref)?.competences.includes(comp.code));
     const jalon = false; // jalon (S14…) : lot ultérieur
     const etapes = { enseignee, exercee, qcm, pratique, jalon };
     const franchies = Object.values(etapes).filter(Boolean).length;

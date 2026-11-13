@@ -272,6 +272,29 @@ describe('programme du cursus', () => {
   });
 });
 
+describe('grilles d\'évaluation pratique', () => {
+  it('grilles absentes', () => {
+    const r = copie();
+    rmSync(join(r, 'evaluation'), { recursive: true });
+    expect(regles(valider(r))).toContain('grille');
+  });
+  it('poids de la grille générique différent de 100', () => {
+    const r = copie();
+    modifier(r, 'evaluation/grilles.yaml', (t) => t.replace('poids: 60', 'poids: 50'));
+    expect(regles(valider(r))).toContain('grille');
+  });
+  it('faute éliminatoire rattachée à un module absent du programme', () => {
+    const r = copie();
+    modifier(r, 'evaluation/grilles.yaml', (t) => t.replace('modules: [M1]', 'modules: [M7]'));
+    expect(regles(valider(r))).toContain('grille');
+  });
+  it('critère sans poids ni condition éliminatoire', () => {
+    const r = copie();
+    modifier(r, 'evaluation/grilles.yaml', (t) => t.replace('{id: decharge-mesuree, texte: Décharge mesurée, poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}', '{id: decharge-mesuree, texte: Décharge mesurée, poids: 0}'));
+    expect(regles(valider(r))).toContain('grille');
+  });
+});
+
 describe('renvois de section', () => {
   it('section inexistante dans la leçon', () => {
     const r = copie();

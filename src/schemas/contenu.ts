@@ -216,7 +216,31 @@ export const tpSchema = z.strictObject({
   securite: z.enum(['standard', 'renforcee']),
   domaines_risque: z.array(z.enum(['airbag', 'abs-esp', 'direction'])).default([]),
   competences: z.array(id(RE_ID.competence, 'compétence')).min(1),
+  /** Preuves attendues, affichées comme preuves à joindre lors de l'évaluation pratique. */
+  livrables: z.array(z.string().min(1)).default([]),
 });
+
+// ---------- Grilles d'évaluation pratique ----------
+export const critereGrilleSchema = z.strictObject({
+  id: z.string().regex(/^[a-z0-9-]+$/, { message: 'identifiant de critère en minuscules et tirets' }),
+  texte: z.string().min(1),
+  /** Poids en points sur 100 ; 0 pour un critère purement éliminatoire. */
+  poids: z.number().int().min(0).max(100),
+  /** Situation qui rend toute l'évaluation nulle. */
+  eliminatoire_si: z.string().min(1).optional(),
+  /** Critère éliminatoire qui peut être déclaré sans objet (ex. étape sur véhicule lors d'un TP sur banc). */
+  sans_objet_possible: z.boolean().default(false),
+});
+
+export const grillesSchema = z.strictObject({
+  fautes_eliminatoires: z
+    .array(z.strictObject({ id: z.string().regex(/^FE-\d{2}$/), texte: z.string().min(1), modules: z.array(id(RE_ID.module, 'module')) }))
+    .min(1),
+  grilles: z
+    .array(z.strictObject({ id: z.enum(['generique', 'renforcee']), titre: z.string().min(1), criteres: z.array(critereGrilleSchema).min(1) }))
+    .min(1),
+});
+export type Grilles = z.infer<typeof grillesSchema>;
 
 // ---------- Fiche source (bibliothèque) ----------
 export const sourceSchema = z.strictObject({

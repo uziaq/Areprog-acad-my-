@@ -43,6 +43,8 @@ export interface ContenuBrut {
   referentiel: FichierYaml | null;
   /** Plan du cursus : content/programme.yaml. */
   programme: FichierYaml | null;
+  /** Grilles d'évaluation pratique : content/evaluation/grilles.yaml. */
+  grilles: FichierYaml | null;
   sources: FichierYaml[];
   modules: ModuleBrut[];
 }
@@ -101,6 +103,7 @@ export function chargerContenu(racine: string): ContenuBrut {
     referentiel: existsSync(join(racine, 'referentiel', 'competences.yaml'))
       ? lireYaml(racine, join(racine, 'referentiel', 'competences.yaml'))
       : null,
+    grilles: existsSync(join(racine, 'evaluation', 'grilles.yaml')) ? lireYaml(racine, join(racine, 'evaluation', 'grilles.yaml')) : null,
     programme: existsSync(join(racine, 'programme.yaml')) ? lireYaml(racine, join(racine, 'programme.yaml')) : null,
     sources: fichiers(join(racine, 'bibliotheque', 'sources'), ['.yaml', '.yml']).map((f) => lireYaml(racine, f)),
     modules: [],

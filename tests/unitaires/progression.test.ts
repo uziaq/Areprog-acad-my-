@@ -4,7 +4,7 @@ import type { Evenement, Plan, Tentative } from '../../src/lib/types.ts';
 
 const plan: Plan = {
   programme: { version: '0.3', domaines: [{ id: 'D2', titre: 'Électricité' }], modules: [] },
-  seuils: { qcm_reussite: 0.8, qcm_securite: 1, questions_par_tirage: 20 },
+  seuils: { qcm_reussite: 0.8, qcm_securite: 1, questions_par_tirage: 20, pratique_reussite: 0.7 },
   competences: [
     { code: 'D2.1', intitule: 'Préfixes', niveau_vise: 'N3', enseignee_en: ['S02'], jalon: 'S14' },
     { code: 'D2.2', intitule: 'Loi d\'Ohm', niveau_vise: 'N3', enseignee_en: ['S02'], jalon: 'S14' },
@@ -16,6 +16,7 @@ const plan: Plan = {
       id: 'S02', titre: 'S02', module: 'M1', version: '0.1', statut: 'brouillon', prerequis: ['S01'],
       competences: ['D2.1', 'D2.2'], questions: ['S02-Q001'], urlQcm: '/qcm/',
       lecons: [{ id: 'S02-L01', titre: 'L01', version: '0.1', url: '/l01/', competences: ['D2.1', 'D2.2'], exercices: ['S02-L01-EX01'], sections: {} }],
+      tp: [],
     }],
   }],
 };
@@ -32,6 +33,16 @@ const exo = (correct: boolean): Tentative => ({
   score: correct ? 1 : 0, reussi: correct, securite_ok: true, duree_s: 10,
   details: [{ id: 'S02-L01-EX01', correct, securite: false, competences: ['D2.1'], section: 's', reponse: null }],
 });
+const tpNote = (reussi: boolean, date: string): Tentative => ({
+  id: `t${n++}`, type: 'pratique', ref: 'TP-03', chapitre: 'S02', version: '0.1', date, score: reussi ? 0.8 : 0,
+  reussi, securite_ok: reussi, duree_s: 600, details: [],
+});
+const TP03 = { id: 'TP-03', titre: 'TP', version: '0.1', url: '/tp/', securite: 'standard' as const, competences: ['D2.2'], livrables: [] };
+const avecTp = (): Plan => {
+  const p = structuredClone(plan);
+  p.modules[0]!.chapitres[0]!.tp = [structuredClone(TP03)];
+  return p;
+};
 const consult: Evenement = { id: 'e1', type: 'consultation', ref: 'S02-L01', chapitre: 'S02', date: '2026-11-13T09:00:00Z' };
 
 describe('état du chapitre', () => {
@@ -61,7 +72,43 @@ describe('état du chapitre', () => {
   });
 });
 
+describe('validation du chapitre avec TP noté', () => {
+  it('QCM réussi et TP réussi : validé', () => {
+    const p = avecTp();
+    const c = p.modules[0]!.chapitres[0]!;
+    const s = syntheseChapitre(c, p, [qcm(true, '2026-11-13T10:00:00Z'), tpNote(true, '2026-11-13T12:00:00Z')], []);
+    expect(s.etat).toBe('valide');
+    expect(s.tpRestants).toEqual([]);
+  });
+  it('TP réussi sans QCM réussi : non validé', () => {
+    const p = avecTp();
+    const c = p.modules[0]!.chapitres[0]!;
+    expect(syntheseChapitre(c, p, [tpNote(true, '2026-11-13T12:00:00Z')], []).etat).not.toBe('valide');
+  });
+  it('dernière évaluation pratique échouée : non validé, TP restant signalé', () => {
+    const p = avecTp();
+    const c = p.modules[0]!.chapitres[0]!;
+    const s = syntheseChapitre(c, p, [qcm(true, '2026-11-13T10:00:00Z'), tpNote(true, '2026-11-13T11:00:00Z'), tpNote(false, '2026-11-13T12:00:00Z')], []);
+    expect(s.etat).toBe('qcm_reussi');
+    expect(s.tpRestants.map((t) => t.id)).toEqual(['TP-03']);
+  });
+  it('prérequis validé (QCM + TP) : le chapitre suivant se déverrouille', () => {
+    const p = avecTp();
+    p.modules[0]!.chapitres.push({ ...structuredClone(p.modules[0]!.chapitres[0]!), id: 'S03', prerequis: ['S02'], tp: [] });
+    const s03 = p.modules[0]!.chapitres[1]!;
+    expect(syntheseChapitre(s03, p, [qcm(true, '2026-11-13T10:00:00Z')], []).etat).toBe('verrouille');
+    expect(syntheseChapitre(s03, p, [qcm(true, '2026-11-13T10:00:00Z'), tpNote(true, '2026-11-13T12:00:00Z')], []).etat).toBe('disponible');
+  });
+});
+
 describe('progression par compétence', () => {
+  it('étape pratique : TP réussi qui exerce la compétence', () => {
+    const p = progressionCompetences(avecTp(), [tpNote(true, '2026-11-13T12:00:00Z')], [], 0.8);
+    expect(p.find((x) => x.code === 'D2.2')!.etapes.pratique).toBe(true);
+    expect(p.find((x) => x.code === 'D2.1')!.etapes.pratique).toBe(false);
+    const echec = progressionCompetences(avecTp(), [tpNote(false, '2026-11-13T12:00:00Z')], [], 0.8);
+    expect(echec.find((x) => x.code === 'D2.2')!.etapes.pratique).toBe(false);
+  });
   it('franchit les étapes enseignée, exercée, QCM, sans jamais annoncer le niveau visé avant le jalon', () => {
     const p = progressionCompetences(plan, [exo(true), qcm(true, '2026-11-13T11:00:00Z')], [consult], 0.8);
     const d21 = p.find((x) => x.code === 'D2.1')!;

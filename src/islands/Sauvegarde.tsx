@@ -3,7 +3,7 @@
  */
 import { useEffect, useState } from 'preact/hooks';
 import { formaterDate } from '../lib/plan.ts';
-import { demanderStockagePersistant, ecrireMeta, lireMeta, remplacerDonnees } from '../lib/stockage/db.ts';
+import { demanderStockagePersistant, ecrireMeta, listerPreuves, lireMeta, remplacerDonnees } from '../lib/stockage/db.ts';
 import { construireSauvegarde, lireSauvegarde, nomFichierSauvegarde, type Sauvegarde as S } from '../lib/stockage/sauvegarde.ts';
 import { useDonnees } from './donnees.ts';
 
@@ -24,7 +24,9 @@ export default function Sauvegarde() {
   }, []);
 
   async function exporter() {
-    const s = construireSauvegarde(tentatives, evenements);
+    // Les preuves (photos, notes de TP) sont lues au moment de l'export : elles ne sont pas gardées en mémoire.
+    const preuves = await listerPreuves().catch(() => []);
+    const s = construireSauvegarde(tentatives, evenements, preuves);
     const url = URL.createObjectURL(new Blob([JSON.stringify(s, null, 2)], { type: 'application/json' }));
     const a = document.createElement('a');
     a.href = url;
@@ -91,7 +93,7 @@ export default function Sauvegarde() {
         {apercu && (
           <div class="alerte" style={{ marginTop: '1rem' }} data-testid="apercu-import">
             <p>
-              Sauvegarde du {apercu.date_export ? formaterDate(apercu.date_export) : 'date inconnue'} : {apercu.tentatives.length} tentative(s), {apercu.evenements.length} événement(s).
+              Sauvegarde du {apercu.date_export ? formaterDate(apercu.date_export) : 'date inconnue'} : {apercu.tentatives.length} tentative(s), {apercu.evenements.length} événement(s), {apercu.preuves.length} preuve(s) de TP.
               Les {tentatives.length} tentative(s) actuelles seront remplacées.
             </p>
             <div class="actions">

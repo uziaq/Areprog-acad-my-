@@ -10,6 +10,7 @@ import {
   competenceSchema,
   correctionExerciceSchema,
   exerciceSchema,
+  grillesSchema,
   leconSchema,
   moduleSchema,
   parametresSchema,
@@ -17,13 +18,16 @@ import {
   questionSchema,
   reponseQuestionSchema,
   sourceSchema,
+  tpSchema,
+  type Grilles,
 } from '../schemas/contenu.ts';
 import { chargerContenu } from '../validation/charger.ts';
 import { titresParAncre } from '../validation/etiquettes.ts';
-import type { Correction, CorrectionsChapitre, Enonce, Plan, PlanChapitre, PlanModule } from './types.ts';
+import type { Correction, CorrectionsChapitre, Enonce, Plan, PlanChapitre, PlanModule, PlanTp } from './types.ts';
 
 export type Source = z.infer<typeof sourceSchema>;
 export type Lecon = z.infer<typeof leconSchema>;
+export type Tp = z.infer<typeof tpSchema>;
 
 export interface ContenuSite {
   plan: Plan;
@@ -37,6 +41,10 @@ export interface ContenuSite {
   chapitres: Map<string, { chapitre: PlanChapitre; module: PlanModule; dossier: string }>;
   /** Images (photos, illustrations) des leçons publiées : URL publiée → chemin du fichier source. */
   images: Map<string, string>;
+  /** Travaux pratiques publiés, avec leur corps Markdown. */
+  tps: Map<string, { tp: Tp; corps: string; chemin: string; planTp: PlanTp; chapitre: PlanChapitre; module: PlanModule }>;
+  /** Grilles d'évaluation pratique et fautes éliminatoires. */
+  grilles: Grilles;
 }
 
 const bas = (s: string) => s.toLowerCase();
@@ -44,6 +52,7 @@ export const urlModule = (m: string) => `/parcours/${bas(m)}/`;
 export const urlChapitre = (m: string, c: string) => `/parcours/${bas(m)}/${bas(c)}/`;
 export const urlLecon = (m: string, c: string, l: string) => `/parcours/${bas(m)}/${bas(c)}/${bas(l)}/`;
 export const urlQcm = (m: string, c: string) => `/parcours/${bas(m)}/${bas(c)}/qcm/`;
+export const urlTp = (m: string, c: string, t: string) => `/parcours/${bas(m)}/${bas(c)}/tp/${bas(t)}/`;
 export const urlCorrections = (c: string) => `/corrections/${bas(c)}.json`;
 export const urlSource = (s: string) => `/sources/${bas(s)}/`;
 
@@ -57,6 +66,7 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
   const brut = chargerContenu(racine);
   const parametres = parametresSchema.parse(brut.parametres?.donnees);
   const programme = programmeSchema.parse(brut.programme?.donnees);
+  const grilles = grillesSchema.parse(brut.grilles?.donnees);
   const competences = competenceSchema.array().parse(brut.referentiel?.donnees ?? []);
   const sources = new Map(brut.sources.map((f) => sourceSchema.parse(f.donnees)).map((s) => [s.id, s]));
 
@@ -66,6 +76,7 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
   const lecons: ContenuSite['lecons'] = new Map();
   const chapitres: ContenuSite['chapitres'] = new Map();
   const images: ContenuSite['images'] = new Map();
+  const tps: ContenuSite['tps'] = new Map();
   const modules: PlanModule[] = [];
 
   const modulesTries = brut.modules
@@ -125,6 +136,11 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
       }
       corrections.set(c.id, { chapitre: c.id, version: c.version, corrections: correctionsChapitre });
 
+      const tpsChapitre = cb.tp
+        .map((f) => ({ tp: tpSchema.parse(f.entete), corps: f.corps, chemin: f.chemin }))
+        .filter(({ tp }) => STATUTS_PUBLIES.has(tp.statut) && c.tp.includes(tp.id))
+        .sort((a, b) => c.tp.indexOf(a.tp.id) - c.tp.indexOf(b.tp.id));
+
       const planChapitre: PlanChapitre = {
         id: c.id,
         titre: c.titre,
@@ -144,9 +160,21 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
           exercices: l.exercices,
           sections: Object.fromEntries(titresParAncre(corpsLecons.get(l.id) ?? '')),
         })),
+        tp: tpsChapitre.map(({ tp }) => ({
+          id: tp.id,
+          titre: tp.titre,
+          version: tp.version,
+          url: urlTp(m.id, c.id, tp.id),
+          securite: tp.securite,
+          competences: tp.competences,
+          livrables: tp.livrables,
+        })),
       };
       planModule.chapitres.push(planChapitre);
       chapitres.set(c.id, { chapitre: planChapitre, module: planModule, dossier: cb.dossier });
+      for (const [i, t] of tpsChapitre.entries()) {
+        tps.set(t.tp.id, { ...t, planTp: planChapitre.tp[i]!, chapitre: planChapitre, module: planModule });
+      }
       for (const l of leconsParsees) {
         lecons.set(l.id, { lecon: l, chapitre: planChapitre, module: planModule });
         for (const fig of l.figures) {
@@ -193,6 +221,7 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
         qcm_reussite: parametres.qcm.seuil_reussite,
         qcm_securite: parametres.qcm.seuil_securite,
         questions_par_tirage: parametres.qcm.questions_par_tirage,
+        pratique_reussite: parametres.pratique.seuil_reussite,
       },
     },
     enonces,
@@ -202,6 +231,8 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
     lecons,
     chapitres,
     images,
+    tps,
+    grilles,
   };
   return cache;
 }
