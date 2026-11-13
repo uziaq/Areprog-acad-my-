@@ -5,7 +5,7 @@
 
 ## 1. Finalité
 
-Permettre à un apprenant autodidacte de suivre les 32 semaines dans l'atelier, de
+Permettre à un apprenant autodidacte de suivre les 35 semaines dans l'atelier, de
 s'évaluer de façon honnête et de constituer, en même temps, la documentation technique
 d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 
@@ -22,7 +22,7 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 
 ### 3.1 Parcours et progression
 
-- **F1** Afficher le parcours des 32 semaines par module, avec l'état de chaque cours (verrouillé, disponible, en cours, validé, à reprendre).
+- **F1** Afficher le parcours des 35 semaines par module, avec l'état de chaque cours (verrouillé, disponible, en cours, validé, à reprendre).
 - **F2** Verrouiller un cours tant que ses prérequis ne sont pas validés ; permettre une dérogation manuelle tracée.
 - **F3** Tableau de bord du [référentiel de compétences](01-referentiel-competences.md) : niveau atteint par compétence, preuves associées.
 - **F4** Suivi du temps passé par semaine et par bloc (théorie, exercices, pratique, évaluation), comparé aux 8 h prévues.
@@ -104,7 +104,7 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 - Un cours non conforme au gabarit ne peut pas être publié dans le parcours.
 - Aucune valeur numérique d'un cours publié n'est dépourvue d'étiquette de fiabilité.
 - Une évaluation pratique ne peut pas être validée sans preuve jointe.
-- Le parcours complet S1 → S32 peut être suivi hors ligne sur tablette.
+- Le parcours complet S1 → S35 peut être suivi hors ligne sur tablette.
 
 ## 8. Choix techniques à trancher plus tard
 

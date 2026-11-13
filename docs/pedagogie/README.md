@@ -1,7 +1,7 @@
 # AREPROG Academy — Architecture pédagogique
 
 > Statut : **proposition v0.1 à valider**. Aucun cours n'est encore rédigé. Ce dossier
-> fixe le cadre qui permettra de rédiger les 256 heures de formation de façon cohérente.
+> fixe le cadre qui permettra de rédiger les 280 heures de formation de façon cohérente.
 
 ## Public et point de départ
 
@@ -12,14 +12,14 @@
 | Instruments de labo (alimentation, oscilloscope, microscope) | Débutant | Prise en main progressive, avec un instrument à la fois. |
 | Microsoudure | Débutant | Pratique régulière dès la semaine 4 (fil rouge), puis bloc intensif. |
 
-Format : **32 semaines × 8 h = 256 h**, en autonomie, dans l'atelier AREPROG.
+Format : **35 semaines × 8 h = 280 h** (32 semaines initialement, 3 semaines ajoutées pour les calculateurs de sécurité et la validation sur véhicule), en autonomie, dans l'atelier AREPROG.
 
 ## Les documents
 
 | # | Document | Contenu |
 |---|---|---|
-| 1 | [Référentiel de compétences](01-referentiel-competences.md) | 10 domaines, 55 compétences, niveaux visés |
-| 2 | [Programme 32 semaines](02-programme-32-semaines.md) | 9 modules, prérequis, objectifs, contenu et TP semaine par semaine |
+| 1 | [Référentiel de compétences](01-referentiel-competences.md) | 10 domaines, 56 compétences, niveaux visés |
+| 2 | [Programme 35 semaines](02-programme-35-semaines.md) | 10 modules, prérequis, objectifs, contenu et TP semaine par semaine |
 | 3 | [Travaux pratiques et équipement](03-travaux-pratiques.md) | Catalogue des TP, règles de sécurité, matériel nécessaire |
 | 4 | [Évaluation](04-evaluation.md) | QCM, évaluations pratiques, grilles, jalons, règles de validation |
 | 5 | [Ressources documentaires](05-ressources-documentaires.md) | Normes, ouvrages, datasheets, règles de sourçage |
@@ -55,12 +55,11 @@ documentant la méthode.
 [Atelier]→[Électricité]→[Composants  ]→[Schémas & ]→[Alimentations]
  sécurité   DC / AC       + oscillo      PCB + JALON 1   + auto 12 V
                                                             │
- S32        S29–S31         S26–S28        S23–S25        S19–S22
-[EXAMEN]←[Diagnostic  ]←[Microsoudure]←[Réseaux    ]←[Numérique,  ]
- final     ECU/TCU/BCM    intensive      CAN/LIN/K      MCU, mémoires
-           BSI/FRM/CAS                    + JALON 2
-           + airbag,
-           ABS, direction
+ S35       S31–S34       S29–S30        S26–S28        S23–S25        S19–S22
+[EXAMEN]←[Sécurité   ]←[Diagnostic ]←[Microsoudure]←[Réseaux    ]←[Numérique,  ]
+ final    airbag, ABS,  ECU/TCU/BCM   intensive      CAN/LIN/K      MCU, mémoires
+          direction +   BSI/FRM/CAS                  + JALON 2
+          véhicule
             ────── fil rouge microsoudure 1 h/semaine de S4 à S25 ──────
 ```
 

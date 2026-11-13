@@ -81,7 +81,7 @@ Règle : les « exemples de familles » ci-dessus servent à indiquer **quel typ
 | Ressource | Contenu | Création |
 |---|---|---|
 | Journal d'atelier | Une page par séance | Dès S1 |
-| Modèle de dossier de réparation | Réception, symptômes, hypothèses, mesures, intervention, validation, sources | S1, enrichi en S31 |
+| Modèle de dossier de réparation | Réception, symptômes, hypothèses, mesures, intervention, validation, sources | S1, enrichi en S30 et S34 |
 | Bibliothèque de datasheets | Fichiers + fiche source | Au fil des semaines |
 | Base de connaissances calculateurs | Relevés de cartes et observations, **toujours étiquetés** | À partir de S13 |
 | Inventaire des calculateurs de récupération | Référence, origine, état, usage TP | Avant S7 |

@@ -13,14 +13,15 @@
 
 Décision d'Arthur (13/11/2026) : les calculateurs d'airbag, d'ABS / ESP et de direction
 assistée sont **diagnostiqués et réparés** dans le cursus, pas seulement observés. Ils
-sont traités en S31, après validation de tout le reste, avec le protocole renforcé ci-dessous.
+sont traités dans le module M9 (S31–S34), après validation de tout le reste, avec le protocole renforcé ci-dessous.
 
 | Famille | Quand | Cadre |
 |---|---|---|
 | ECU moteur, TCU | S29–S30 | Diagnostic et réparation sur récupération. La validation doit lister ce qui n'a pas pu être testé. |
 | BCM / BSI / FRM / CAS | S30 | Diagnostic et réparation sur récupération. Éclairage, verrouillage et antidémarrage touchent la sécurité des personnes et des biens. |
-| Airbag | S31 | Diagnostic et réparation sur récupération, protocole renforcé, **jamais de pyrotechnie à l'atelier**. |
-| ABS / ESP, direction assistée | S31 | Diagnostic et réparation sur récupération, protocole renforcé, validation finale sur véhicule. |
+| Airbag | S31, S34 | Diagnostic et réparation sur récupération, protocole renforcé, **jamais de pyrotechnie à l'atelier**. |
+| ABS / ESP | S32, S34 | Diagnostic et réparation sur récupération, protocole renforcé, validation finale sur véhicule d'atelier. |
+| Direction assistée | S33, S34 | Diagnostic et réparation sur récupération, protocole renforcé, validation finale sur véhicule d'atelier. |
 
 ## Protocole renforcé pour les calculateurs de sécurité
 
@@ -44,7 +45,8 @@ reste [À VÉRIFIER] et la mesure prime.
 **Validation et traçabilité**
 
 8. Dossier de validation renforcée : ce qui est validé sur banc, ce qui doit l'être sur véhicule avec l'outil de diagnostic (lecture des défauts, codages, apprentissages, essais dynamiques prévus par le constructeur), ce qui ne peut pas l'être en atelier.
-9. Remise en circulation d'un calculateur de sécurité : régie par la [décision D-14](08-decisions-et-lacunes.md), jamais pendant le cursus sans protocole écrit.
+9. Essais sur véhicule : uniquement sur les véhicules d'atelier d'AREPROG, jamais sur un véhicule client pendant le cursus ; procédures airbag du constructeur pour la dépose et la repose ; essais dynamiques sur voie privée selon la procédure constructeur. [À VÉRIFIER : cadre réglementaire et assurance des essais]
+10. Remise en circulation d'un calculateur de sécurité : régie par la [décision D-14](08-decisions-et-lacunes.md), jamais pendant le cursus sans protocole écrit.
 
 ## Catalogue des TP
 
@@ -98,9 +100,13 @@ Durée indicative : 1 à 3 h. « CE » = carte d'entraînement ou plaque d'essai
 | TP-44 | S30 | Diagnostic TCU ou BCM / BSI / FRM / CAS | CR | Dossier de réparation |
 | TP-45 | S30 | Consommation au repos et réveil | CR | Courbe de consommation, analyse |
 | TP-46 | S30 | Validation et dossier | CR réparé | Dossier complet avec limites de validation |
-| TP-47 | S31 | Airbag sur banc avec charges de substitution | CR airbag (sans pyrotechnie) | Décharge de la réserve mesurée, sauvegardes, diagnostic |
-| TP-48 | S31 | ABS / ESP ou direction sur banc | CR | Étage de puissance diagnostiqué, charges de substitution documentées |
-| TP-49 | S31 | Dossier de validation renforcée | CR réparé de TP-47 ou TP-48 | Banc / véhicule / non validable clairement séparés |
+| TP-47 | S31 | Airbag sur banc avec simulateurs d'allumeurs | CR airbag (sans pyrotechnie) | Décharge de la réserve mesurée, sauvegardes, diagnostic |
+| TP-48 | S32 | ABS / ESP sur banc | CR | Étages d'électrovannes et de pompe diagnostiqués, charges de substitution documentées |
+| TP-49 | S34 | Dossier de validation renforcée | CR réparé en M9 | Banc / véhicule / non validable clairement séparés |
+| TP-50 | S32 | Capteurs de roue sur véhicule | Véhicule d'atelier | Captures oscilloscope des signaux de roue |
+| TP-51 | S33 | Étage de puissance de direction sur banc | CR direction | Pont de puissance diagnostiqué |
+| TP-52 | S33 | Capteur de couple sur véhicule | Véhicule d'atelier | Signaux relevés en statique, braquage lent |
+| TP-53 | S34 | Validation véhicule d'un calculateur réparé | Véhicule d'atelier + CR réparé | Défauts, valeurs réelles, codages, apprentissages, essais constructeur documentés |
 
 ## Fil rouge microsoudure (S4 à S25, 1 h par semaine)
 
@@ -154,8 +160,9 @@ selon le budget (voir [décisions](08-decisions-et-lacunes.md)). Aucune marque n
 | Utile | Milliohmmètre (ou méthode 4 fils) | Localisation de court-circuit | S18 |
 | Utile | Sonde différentielle haute tension | Mesures flottantes | S29 |
 | Utile | Banc / simulateur de charges construit en TP-42 | Diagnostic | S29 |
-| Indispensable (S31) | Simulateurs d'allumeurs d'airbag (charges résistives de substitution) | Airbag sur banc sans pyrotechnie | S31 |
-| Indispensable (S31) | Charges de substitution de puissance (électrovannes, moteurs) | ABS / ESP, direction | S31 |
+| Indispensable (M9) | Simulateurs d'allumeurs d'airbag (charges résistives de substitution) | Airbag sur banc sans pyrotechnie | S31 |
+| Indispensable (M9) | Charges de substitution de puissance (électrovannes, moteurs) | ABS / ESP, direction | S32 |
+| Indispensable (M9) | Véhicules d'atelier compatibles avec les calculateurs étudiés + outil de diagnostic constructeur | Validation véhicule | S32 |
 
 ## Sécurité chimique et thermique (à détailler dans le cours S1)
 

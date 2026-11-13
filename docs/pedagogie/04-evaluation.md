@@ -8,7 +8,7 @@
 | Fil rouge microsoudure | Chaque semaine (S4–S25) | Photo microscope + grille | Critère de réussite de l'exercice atteint |
 | Jalon 1 | S14 | Écrit + pratique chronométrée | ≥ 70 % à chaque épreuve |
 | Jalon 2 | S25 | Écrit + pratique + épreuve fil rouge | ≥ 70 % à chaque épreuve |
-| Évaluation finale | S32 | Réparation complète + dossier + QCM de synthèse | ≥ 75 % global, aucun critère éliminatoire |
+| Évaluation finale | S35 | Réparation complète + dossier + QCM de synthèse | ≥ 75 % global, aucun critère éliminatoire |
 
 Ces seuils sont des propositions (voir [décisions](08-decisions-et-lacunes.md)).
 
@@ -55,7 +55,7 @@ Ces seuils sont des propositions (voir [décisions](08-decisions-et-lacunes.md))
 
 Échec : 2 semaines de fil rouge supplémentaires avant l'entrée en M7 (décalage du planning à prévoir).
 
-## Évaluation finale (S32)
+## Évaluation finale (S35)
 
 | Critère | Poids | Éliminatoire si… |
 |---|---|---|

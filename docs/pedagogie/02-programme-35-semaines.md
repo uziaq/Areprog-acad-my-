@@ -1,4 +1,6 @@
-# 2. Programme détaillé — 32 semaines × 8 h
+# 2. Programme détaillé — 35 semaines × 8 h
+
+> Version 0.2 : passage de 32 à 35 semaines (280 h) le 13/11/2026, pour consacrer un module complet aux calculateurs de sécurité et à la validation sur véhicule (décision D-13).
 
 Conventions :
 
@@ -20,9 +22,10 @@ Conventions :
 | M5 | S19–S22 | 32 | Numérique, microcontrôleurs, mémoires | M4 (S15, S18 au minimum) |
 | M6 | S23–S25 | 24 | Réseaux CAN, LIN, K-Line, **jalon 2** | M5 (S19) |
 | M7 | S26–S28 | 24 | Microsoudure intensive et réparation de carte | Fil rouge S4–S25 validé |
-| M8 | S29–S31 | 24 | Diagnostic de calculateurs ECU, TCU, BCM, BSI, FRM, CAS, puis calculateurs de sécurité (airbag, ABS / ESP, direction) | M4 à M7 |
-| — | S32 | 8 | **Évaluation finale** | Tout le cursus |
-| | | **256** | | |
+| M8 | S29–S30 | 16 | Diagnostic de calculateurs ECU, TCU, BCM, BSI, FRM, CAS et validation | M4 à M7 |
+| M9 | S31–S34 | 32 | Calculateurs de sécurité (airbag, ABS / ESP, direction) et validation sur véhicule | M8 |
+| — | S35 | 8 | **Évaluation finale** | Tout le cursus |
+| | | **280** | | |
 
 ---
 
@@ -260,7 +263,7 @@ Conventions :
 
 ---
 
-## M8 — Diagnostic de calculateurs (S29–S31)
+## M8 — Diagnostic de calculateurs (S29–S30)
 
 ### S29 — Méthodologie et étages d'entrée / sortie
 
@@ -277,20 +280,46 @@ Conventions :
 - **TP** : TP-44 Diagnostic d'un TCU ou BCM / BSI / FRM / CAS de récupération ; TP-45 Mesure de consommation au repos et analyse du réveil ; TP-46 Validation et dossier de la réparation de S29 ou S30.
 - **Validation** (déplacée de S31) : protocole d'essais fonctionnels, mesures avant / après, durée d'essai, limites d'un banc d'atelier, traçabilité, communication au client.
 
-### S31 — Calculateurs de sécurité : airbag, ABS / ESP, direction assistée
+## M9 — Calculateurs de sécurité et validation sur véhicule (S31–S34)
 
-- **Prérequis** : S30, TP-46 validé, [protocole sécurité renforcé](03-travaux-pratiques.md#protocole-renforcé-pour-les-calculateurs-de-sécurité) lu et signé.
+Ce module applique le [protocole renforcé](03-travaux-pratiques.md#protocole-renforcé-pour-les-calculateurs-de-sécurité). Les architectures sont décrites de façon générique à partir de documentation publique ; tout relevé sur une carte précise reste [À VÉRIFIER]. Les essais sur véhicule utilisent les véhicules d'atelier d'AREPROG, jamais un véhicule client.
+
+### S31 — Sécurité fonctionnelle et calculateurs d'airbag
+
+- **Prérequis** : M8 validé, protocole renforcé lu et signé.
 - **Objectifs**
-  - Expliquer, à partir de documentation publique, l'architecture générique d'un calculateur d'airbag (alimentation, réserve d'énergie, étages de commande des allumeurs, capteurs, mémoire d'événements), d'un calculateur ABS / ESP (commande d'électrovannes et de moteur de pompe, capteurs de roue) et d'un calculateur de direction assistée électrique (étage de puissance moteur, capteur de couple).
-  - Mettre un calculateur d'airbag de récupération sous tension sur banc **sans aucun élément pyrotechnique**, avec des charges de substitution, et vérifier la décharge de sa réserve d'énergie avant toute intervention.
-  - Diagnostiquer un défaut de niveau carte sur un calculateur de sécurité de récupération, et rédiger un protocole de validation renforcé qui distingue ce qui est validé sur banc, ce qui doit l'être sur véhicule avec l'outil de diagnostic (ODIS, ISTA… selon marque), et ce qui ne peut pas l'être en atelier.
-- **Contenu** : principes de sécurité fonctionnelle (ISO 26262, notions) et redondances ; spécificités airbag (réserve d'énergie, mémoire de collision et éventuel verrouillage après choc [À VÉRIFIER par constructeur], codage) ; spécificités ABS / ESP et direction (étages de forte puissance, autodiagnostic, apprentissages et calibrations après intervention [À VÉRIFIER par constructeur]) ; responsabilité de l'atelier et conditions de remise en circulation (voir [décision D-14](08-decisions-et-lacunes.md)).
-- **TP** : TP-47 Calculateur d'airbag sur banc avec charges de substitution ; TP-48 Calculateur ABS / ESP ou direction sur banc ; TP-49 Dossier de validation renforcée.
+  - Expliquer les notions de sécurité fonctionnelle utiles à l'atelier (ISO 26262 : niveaux ASIL, redondance, état sûr) sans prétendre à une application de la norme.
+  - Décrire l'architecture générique d'un calculateur d'airbag : alimentation, réserve d'énergie, étages de commande des allumeurs, capteurs internes et satellites, mémoire d'événements.
+  - Mettre un calculateur d'airbag de récupération sous tension sur banc **sans aucune pyrotechnie**, avec simulateurs d'allumeurs, après avoir vérifié par la mesure la décharge de la réserve d'énergie.
+  - Diagnostiquer un défaut de niveau carte (alimentation, réserve, étage d'allumeur, mémoire) et le documenter.
+- **Contenu** : principes ISO 26262 ; architecture airbag ; mémoire de collision et éventuel verrouillage après choc [À VÉRIFIER par constructeur] ; codage et appairage [À VÉRIFIER par constructeur] ; règles de manipulation des véhicules équipés d'airbags (procédures du constructeur).
+- **TP** : TP-47 Calculateur d'airbag sur banc avec simulateurs d'allumeurs (support disponible : calculateur d'airbag VW T-Cross de récupération).
+
+### S32 — Calculateurs ABS / ESP
+
+- **Prérequis** : S31.
+- **Objectifs** : décrire l'architecture générique d'un calculateur ABS / ESP (commande d'électrovannes, moteur de pompe, capteurs de vitesse de roue, capteurs d'embardée intégrés ou déportés) ; mesurer les étages de commande sur banc avec charges de substitution ; diagnostiquer un défaut de niveau carte ; identifier les opérations d'après-intervention (purge, apprentissages, calibration de capteurs) dans la documentation constructeur.
+- **Contenu** : séparation électronique / hydraulique et précautions de dépose ; capteurs de roue actifs et passifs (mesure à l'oscilloscope) ; étages de forte puissance ; autodiagnostic et défauts mémorisés.
+- **TP** : TP-48 Calculateur ABS / ESP de récupération sur banc ; TP-50 Signaux de capteurs de roue sur véhicule d'atelier.
+
+### S33 — Direction assistée électrique
+
+- **Prérequis** : S32.
+- **Objectifs** : décrire l'architecture générique d'un calculateur de direction assistée électrique (étage de puissance moteur triphasé ou continu, capteur de couple, capteur d'angle, alimentation et protections) ; diagnostiquer un étage de puissance sur banc ; identifier les calibrations après intervention (angle de braquage, butées) dans la documentation constructeur.
+- **Contenu** : ponts de puissance et drivers de MOSFET (rappel S9, S29) ; capteurs de couple et d'angle (principes) ; modes dégradés ; contraintes thermiques et courants élevés sur banc.
+- **TP** : TP-51 Étage de puissance d'un calculateur de direction de récupération sur banc ; TP-52 Observation des signaux de capteur de couple sur véhicule d'atelier.
+
+### S34 — Validation sur véhicule
+
+- **Prérequis** : S33, au moins un calculateur réparé en M8 et un en M9.
+- **Objectifs** : monter un calculateur réparé sur un véhicule d'atelier ; réaliser la validation véhicule avec l'outil de diagnostic (défauts, valeurs réelles, codages, apprentissages, tests d'actionneurs, essais prévus par le constructeur) ; compléter le dossier de validation renforcée en séparant banc, véhicule et non validable.
+- **Contenu** : procédure de montage (batterie, ordre de connexion, procédures airbag du constructeur) ; essais statiques puis dynamiques ; essais dynamiques uniquement sur voie privée et selon la procédure constructeur [À VÉRIFIER : cadre réglementaire et assurance des essais] ; critères d'arrêt immédiat ; comparaison avec un calculateur de référence.
+- **TP** : TP-49 Dossier de validation renforcée ; TP-53 Validation véhicule d'un calculateur réparé (ECU moteur, puis un calculateur de sécurité).
 
 ---
 
-## S32 — Évaluation finale
+## S35 — Évaluation finale
 
-- **Prérequis** : jalons 1 et 2 validés, dossiers S29–S31 complets.
-- **Épreuve** : diagnostic et réparation d'un calculateur de récupération inconnu (panne préparée par un tiers si possible, voir [lacunes](08-decisions-et-lacunes.md)), en 6 h, avec dossier de réparation ; 2 h de QCM de synthèse et d'auto-évaluation du référentiel.
-- **Critères** : voir [évaluation finale](04-evaluation.md#évaluation-finale-s32).
+- **Prérequis** : jalons 1 et 2 validés, dossiers S29–S34 complets.
+- **Épreuve** : diagnostic et réparation d'un calculateur de récupération inconnu (panne préparée par un tiers si possible, voir [lacunes](08-decisions-et-lacunes.md)), en 6 h, avec dossier de réparation et, si le calculateur s'y prête, validation sur véhicule d'atelier ; 2 h de QCM de synthèse et d'auto-évaluation du référentiel.
+- **Critères** : voir [évaluation finale](04-evaluation.md#évaluation-finale-s35).
