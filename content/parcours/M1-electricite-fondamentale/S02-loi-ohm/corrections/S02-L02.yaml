@@ -1,0 +1,19 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S02-L02-EX01
+  valeur: 2.15
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "En série, les résistances s'ajoutent : 470 + 680 + 1 000 = 2 150 Ω = 2,15 kΩ. Erreur fréquente : additionner 470 + 680 + 1 en oubliant que 1 kΩ vaut 1 000 Ω."
+  renvoi_section: "S02-L02#résistances-en-série"
+- id: S02-L02-EX02
+  valeur: 2.35
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "Deux résistances identiques en parallèle valent la moitié de l'une : 4,7 / 2 = 2,35 kΩ. Avec la formule : (4 700 × 4 700) / (4 700 + 4 700) = 2 350 Ω."
+  renvoi_section: "S02-L02#résistances-en-parallèle"
+- id: S02-L02-EX03
+  valeur: 0.36
+  tolerance_relative: 0.02
+  unite: W
+  explication: "Req = 200 Ω, I = 12 / 200 = 0,06 A. Chaque résistance : P = R × I² = 100 × 0,0036 = 0,36 W (ou 6 V à ses bornes, P = 36 / 100). Erreur fréquente : calculer 12² / 100 = 1,44 W, comme si chaque résistance recevait les 12 V."
+  renvoi_section: "S02-L02#qui-chauffe-le-plus-"

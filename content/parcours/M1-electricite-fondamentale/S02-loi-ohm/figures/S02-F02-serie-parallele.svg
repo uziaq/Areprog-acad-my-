@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 190" width="400" height="190" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="13">
+  <!-- Figure réalisée par AREPROG : associations de résistances, sans valeur. -->
+  <!-- série -->
+  <text x="20" y="22" fill="currentColor" stroke="none" font-weight="600">Série</text>
+  <circle cx="20" cy="80" r="4" fill="currentColor" stroke="none" />
+  <path d="M24 80 H40" />
+  <rect x="40" y="70" width="44" height="20" />
+  <text x="52" y="62" fill="currentColor" stroke="none">R1</text>
+  <path d="M84 80 H104" />
+  <rect x="104" y="70" width="44" height="20" />
+  <text x="116" y="62" fill="currentColor" stroke="none">R2</text>
+  <path d="M148 80 H164" />
+  <circle cx="168" cy="80" r="4" fill="currentColor" stroke="none" />
+  <text x="20" y="126" fill="currentColor" stroke="none">Même courant dans R1 et R2</text>
+  <text x="20" y="146" fill="currentColor" stroke="none">Req = R1 + R2</text>
+  <!-- parallèle -->
+  <text x="230" y="22" fill="currentColor" stroke="none" font-weight="600">Parallèle</text>
+  <circle cx="230" cy="80" r="4" fill="currentColor" stroke="none" />
+  <path d="M234 80 H250 V50 H280" />
+  <path d="M250 80 V110 H280" />
+  <rect x="280" y="40" width="44" height="20" />
+  <text x="336" y="55" fill="currentColor" stroke="none">R1</text>
+  <rect x="280" y="100" width="44" height="20" />
+  <text x="336" y="115" fill="currentColor" stroke="none">R2</text>
+  <path d="M324 50 H354 V110 H324" />
+  <path d="M354 80 H370" />
+  <circle cx="374" cy="80" r="4" fill="currentColor" stroke="none" />
+  <text x="230" y="146" fill="currentColor" stroke="none">Même tension aux bornes</text>
+  <text x="230" y="166" fill="currentColor" stroke="none">1/Req = 1/R1 + 1/R2</text>
+</svg>
