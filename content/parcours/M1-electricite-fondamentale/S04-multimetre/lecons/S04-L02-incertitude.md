@@ -56,7 +56,7 @@ L'exemple de la note Fluke : pour une lecture de 100 V avec une précision de ±
 
 La spécification dépend de la fonction, du calibre et parfois de la fréquence : elle se lit dans
 le tableau de spécifications de la notice, pour **chaque** mesure
-[À VÉRIFIER : tableau de spécifications du multimètre de l'atelier, dans sa notice].
+[À VÉRIFIER : tableau de spécifications du multimètre de l'atelier, relevé dans sa fiche d'identité au TP-06].
 
 ### Méthode de calcul
 

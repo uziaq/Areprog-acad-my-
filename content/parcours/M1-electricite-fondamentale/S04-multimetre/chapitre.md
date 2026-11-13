@@ -30,7 +30,7 @@ FR-01 (1 h), QCM et journal (1 h).
 **TP-06.** Les tensions théoriques se calculent avec le modèle de Thévenin du diviseur (S03), à
 partir des résistances **mesurées** hors circuit, puis avec l'effet de charge du voltmètre. Pour
 chaque lecture, l'incertitude se calcule avec la spécification de la notice du multimètre, pour
-la fonction et le calibre utilisés [À VÉRIFIER : spécifications à relever dans la notice du multimètre de l'atelier].
+la fonction et le calibre utilisés [À VÉRIFIER : spécifications relevées dans la fiche d'identité du multimètre, TP-06].
 La conclusion de chaque comparaison est l'un des trois cas de la leçon S04-L02 : conforme, non
 conforme ou non concluant.
 
@@ -66,6 +66,23 @@ catalogue des TP : joints brillants et concaves, sans pont.
 4. Étamer l'extrémité de deux fils, puis les souder bout à bout et sur une cosse.
 5. Souder dix composants traversants sur la carte d'entraînement.
 6. Photographier chaque joint au microscope ou à la loupe ; noter au journal les joints refaits et pourquoi.
+
+## Quand remplacer le multimètre basique
+
+Un multimètre basique suffit pour les TP de cette semaine, à condition d'en connaître les limites
+(fiche d'identité du TP-06). Avant d'en acheter un autre pour la suite du cursus, voici ce qu'il
+faut vérifier. Aucune marque n'est recommandée ici : ce sont des critères, à contrôler sur
+l'appareil et dans sa notice.
+
+- **Catégorie de mesure.** Choisir un appareil classé pour la catégorie la plus élevée dans laquelle on pourrait l'utiliser [SOURCÉ : SRC-0004 §The bottom line] ; la catégorie compte autant que la tension (S01).
+- **Essai par un laboratoire indépendant.** Chercher le symbole et le numéro d'homologation d'un laboratoire d'essai indépendant ; le marquage CE seul ne garantit pas un essai indépendant [SOURCÉ : SRC-0004 §Independent testing is the key to safety compliance] [SOURCÉ : SRC-0004 §What does the CE symbol indicate?].
+- **Bornes de courant protégées par des fusibles à haute énergie** [SOURCÉ : SRC-0004 §Use the right high-energy fuses], dont le modèle de rechange est indiqué par le fabricant.
+- **Bornes encastrées et cordons à connecteurs gainés, avec garde-doigts** [SOURCÉ : SRC-0004 §Electric shock] ; les cordons doivent être certifiés pour une catégorie et une tension au moins égales à celles de l'appareil [SOURCÉ : SRC-0004 §The bottom line].
+- **Valeur efficace vraie (TRMS)**, utile pour les signaux non sinusoïdaux de l'électronique automobile [SOURCÉ : SRC-0008 §DC and AC voltage] (S04-L02, S06).
+- **Nombre de points et précision** : un tableau de spécifications complet dans la notice, pour chaque fonction et chaque calibre [SOURCÉ : SRC-0008 §Accuracy]. Un appareil sans tableau de spécifications ne permet pas de conclure sur une conformité.
+
+Le choix de la catégorie et de la tension minimales adaptées à l'atelier reste à arrêter avec la
+norme en vigueur [À VÉRIFIER : catégorie et tension minimales pour les mesures de l'atelier, selon l'édition en vigueur de l'IEC 61010].
 
 ## Sécurité spécifique
 

@@ -30,7 +30,7 @@ QCM et journal (1 h).
 **TP-04.** La tension de sortie théorique se calcule avec la formule du diviseur, à vide puis
 chargé, à partir des valeurs **mesurées** des résistances hors circuit. L'écart toléré combine
 la tolérance des résistances (lue sur leurs bagues) et l'incertitude du multimètre (lue dans sa
-notice) [À VÉRIFIER : tolérances à relever sur les composants et dans la notice du multimètre utilisés].
+notice) [À VÉRIFIER : tolérances à relever sur les composants et dans la notice du multimètre utilisés ; « inconnue » si elle n'y figure pas, la fiche complète du multimètre est établie au TP-06].
 L'entrée du voltmètre charge elle aussi le diviseur : avec les valeurs du TP, cet effet est
 calculé et doit rester négligeable ; il sera étudié en S04.
 
@@ -38,7 +38,7 @@ calculé et doit rester négligeable ; il sera étudié en S04.
 On contrôle sa cohérence en prévoyant, avec la valeur trouvée, la tension sous une seconde charge,
 puis en la mesurant. L'écart toléré combine la tolérance des résistances de charge et
 l'incertitude du multimètre ; la décharge de la pile pendant l'essai ajoute un écart qu'on limite
-en mesurant vite [À VÉRIFIER : tolérances à relever sur les résistances et dans la notice du multimètre].
+en mesurant vite [À VÉRIFIER : tolérances à relever sur les résistances et dans la notice du multimètre ; « inconnue » si elle n'y figure pas, la fiche complète du multimètre est établie au TP-06].
 
 ## Erreurs fréquentes
 

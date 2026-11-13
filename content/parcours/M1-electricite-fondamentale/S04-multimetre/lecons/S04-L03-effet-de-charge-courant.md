@@ -40,7 +40,7 @@ historique:
 Le voltmètre se branche en parallèle sur le point mesuré. Il se comporte comme une résistance
 d'entrée **Rin**, élevée mais pas infinie. Dans l'exemple de la note Fluke, l'entrée tension
 présente environ 10 MΩ [SOURCÉ : SRC-0004 §Protection against two major electrical hazards] ;
-celle de votre multimètre se lit dans sa notice [À VÉRIFIER : résistance d'entrée du multimètre de l'atelier, par calibre].
+celle de votre multimètre se lit dans sa notice [À VÉRIFIER : résistance d'entrée du multimètre de l'atelier, relevée dans sa fiche d'identité au TP-06, ou mesurée en partie B si la notice ne la donne pas].
 
 Avec le modèle de Thévenin du point mesuré (S03), la tension lue vaut :
 
@@ -65,7 +65,7 @@ C'est le principe du TP-06.
 
 - Le multimètre se place **en série** : on ouvre le circuit à l'endroit de la mesure, alimentation coupée, et on insère l'appareil [SOURCÉ : SRC-0008 §DC and AC current].
 - Le courant traverse le **shunt** interne, une résistance de faible valeur dont la chute de tension sert à calculer le courant [SOURCÉ : SRC-0008 §DC and AC current]. Cette chute s'ajoute au circuit et réduit un peu le courant mesuré.
-- La valeur du shunt (ou la chute de tension par ampère) se lit dans la notice [À VÉRIFIER : résistance ou chute de tension de chaque calibre de courant du multimètre de l'atelier].
+- La valeur du shunt (ou la chute de tension par ampère) se lit dans la notice [À VÉRIFIER : résistance ou chute de tension de chaque calibre de courant du multimètre de l'atelier, à relever dans sa notice ; « inconnue » si elle n'y figure pas].
 
 ### Ne pas détruire le fusible
 

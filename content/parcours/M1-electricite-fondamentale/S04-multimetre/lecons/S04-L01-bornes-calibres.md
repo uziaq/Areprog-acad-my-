@@ -50,7 +50,7 @@ analogique-numérique la transforme en nombre affiché. Les autres grandeurs y s
 
 Les bornes de courant (mA, A) passent par le shunt et par un fusible ; la borne VΩ présente au
 contraire une résistance élevée. La disposition des bornes et leurs calibres varient selon les
-modèles : seule la notice de **votre** multimètre fait foi [À VÉRIFIER : bornes, calibres et fusibles du multimètre de l'atelier, dans sa notice].
+modèles : seule la notice de **votre** multimètre fait foi [À VÉRIFIER : bornes, calibres et fusibles du multimètre de l'atelier, relevés dans sa fiche d'identité au TP-06].
 
 ::figure{id=S04-F01}
 
