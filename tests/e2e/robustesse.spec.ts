@@ -3,6 +3,7 @@
  * (stockage indisponible, clavier seul, double envoi, sauvegarde corrompue, plusieurs onglets, erreurs JS).
  */
 import { expect, test, type Page } from '@playwright/test';
+import { deroger } from './aides.ts';
 
 const LECON = '/parcours/m1/s02/s02-l01/';
 const QCM = '/parcours/m1/s02/qcm/';
@@ -113,7 +114,7 @@ test('R6 : le champ d\'import est atteignable au clavier avec un focus visible',
 
 test('R7 : un résultat obtenu dans un onglet met à jour le tableau de bord ouvert dans un autre', async ({ context }) => {
   const tableau = await context.newPage();
-  await tableau.goto('/');
+  await deroger(tableau, 'S02');
   const chapitre = tableau.getByTestId('chapitre-S02');
   await expect(chapitre).toContainText('Disponible');
   const lecon = await context.newPage();
@@ -128,8 +129,9 @@ test('R7 : un résultat obtenu dans un onglet met à jour le tableau de bord ouv
 test('R8 : une question d\'ordre non traitée compte comme sans réponse, même si l\'ordre affiché est juste', async ({ page }) => {
   await page.goto(QCM);
   await page.getByRole('button', { name: 'Commencer le QCM' }).click();
+  const nb = await page.locator('[data-testid^="question-"]').count();
   await page.getByRole('button', { name: 'Valider mes réponses' }).click();
-  await expect(page.getByText('10 question(s) sans réponse')).toBeVisible();
+  await expect(page.getByText(`${nb} question(s) sans réponse`)).toBeVisible();
   await page.getByRole('button', { name: 'Valider quand même' }).click();
   await expect(page.getByTestId('qcm-resultat').locator('.score')).toHaveText('0 %');
 });
