@@ -1,0 +1,17 @@
+{
+  "name": "AREPROG Academy",
+  "short_name": "AREPROG Academy",
+  "description": "Formation privée à l'électronique automobile",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1E2225",
+  "theme_color": "#1E2225",
+  "icons": [
+    { "src": "/icones/icone.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/icones/icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icones/icone-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

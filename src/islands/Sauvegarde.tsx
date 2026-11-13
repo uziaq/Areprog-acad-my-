@@ -1,0 +1,94 @@
+/**
+ * Export / import des données apprenant (NF4, NF5).
+ */
+import { useEffect, useState } from 'preact/hooks';
+import { formaterDate } from '../lib/plan.ts';
+import { demanderStockagePersistant, ecrireMeta, lireMeta, remplacerDonnees } from '../lib/stockage/db.ts';
+import { construireSauvegarde, lireSauvegarde, nomFichierSauvegarde, type Sauvegarde as S } from '../lib/stockage/sauvegarde.ts';
+import { useDonnees } from './donnees.ts';
+
+export default function Sauvegarde() {
+  const { pret, tentatives, evenements } = useDonnees();
+  const [persistant, setPersistant] = useState<boolean | null>(null);
+  const [dernierExport, setDernierExport] = useState<string | null>(null);
+  const [apercu, setApercu] = useState<S | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    demanderStockagePersistant().then(setPersistant);
+    lireMeta<string>('dernier_export').then((d) => setDernierExport(d ?? null)).catch(() => {});
+  }, []);
+
+  async function exporter() {
+    const s = construireSauvegarde(tentatives, evenements);
+    const url = URL.createObjectURL(new Blob([JSON.stringify(s, null, 2)], { type: 'application/json' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = nomFichierSauvegarde();
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    await ecrireMeta('dernier_export', s.date_export);
+    setDernierExport(s.date_export);
+    setMessage('Sauvegarde exportée. Conservez le fichier hors de la tablette (PC, clé USB, stockage en ligne privé).');
+  }
+
+  async function choisirFichier(ev: Event) {
+    const f = (ev.target as HTMLInputElement).files?.[0];
+    if (!f) return;
+    const r = lireSauvegarde(await f.text());
+    if (!r.ok) {
+      setApercu(null);
+      setMessage(r.erreur);
+      return;
+    }
+    setApercu(r.sauvegarde);
+    setMessage(null);
+  }
+
+  async function confirmerImport() {
+    if (!apercu) return;
+    await remplacerDonnees(apercu);
+    setMessage(`Import terminé : ${apercu.tentatives.length} tentative(s) restaurée(s).`);
+    setApercu(null);
+  }
+
+  return (
+    <div class="pile">
+      <section class="carte">
+        <h2>Exporter</h2>
+        <p>
+          Vos résultats sont enregistrés automatiquement sur cet appareil uniquement.
+          {pret && <> Ils comptent actuellement <strong data-testid="nb-tentatives">{tentatives.length}</strong> tentative(s).</>}
+        </p>
+        <p class="note">
+          {dernierExport ? `Dernier export : ${formaterDate(dernierExport)}.` : 'Aucun export pour l\'instant.'}{' '}
+          {persistant === true && 'Stockage persistant accordé par le navigateur.'}
+          {persistant === false && 'Le navigateur n\'a pas accordé le stockage persistant : installez l\'application sur l\'écran d\'accueil et exportez régulièrement.'}
+        </p>
+        <div class="actions">
+          <button class="bouton" type="button" onClick={exporter} disabled={!pret}>Télécharger la sauvegarde (JSON)</button>
+          <button class="bouton bouton--secondaire" type="button" onClick={() => window.print()}>Imprimer cette page</button>
+        </div>
+      </section>
+      <section class="carte">
+        <h2>Importer</h2>
+        <p>L'import <strong>remplace</strong> toutes les données de cet appareil par celles du fichier.</p>
+        <label class="bouton bouton--secondaire" for="fichier-sauvegarde">Choisir un fichier de sauvegarde</label>
+        <input id="fichier-sauvegarde" type="file" accept="application/json,.json" onChange={choisirFichier} style={{ position: 'absolute', left: '-999px' }} />
+        {apercu && (
+          <div class="alerte" style={{ marginTop: '1rem' }} data-testid="apercu-import">
+            <p>
+              Sauvegarde du {apercu.date_export ? formaterDate(apercu.date_export) : 'date inconnue'} : {apercu.tentatives.length} tentative(s), {apercu.evenements.length} événement(s).
+              Les {tentatives.length} tentative(s) actuelles seront remplacées.
+            </p>
+            <div class="actions">
+              <button class="bouton" type="button" onClick={confirmerImport}>Remplacer mes données</button>
+              <button class="bouton bouton--secondaire" type="button" onClick={() => setApercu(null)}>Annuler</button>
+            </div>
+          </div>
+        )}
+      </section>
+      {message && <p class="alerte" role="status" data-testid="message-sauvegarde">{message}</p>}
+    </div>
+  );
+}

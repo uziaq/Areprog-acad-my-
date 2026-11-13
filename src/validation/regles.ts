@@ -7,7 +7,10 @@ import { dirname, join } from 'node:path';
 import type { z } from 'astro/zod';
 import {
   CLES_SOLUTION,
+  RE_SECTION,
+  SIMULATEURS_DISPONIBLES,
   chapitreSchema,
+  competenceSchema,
   correctionExerciceSchema,
   exerciceSchema,
   leconSchema,
@@ -20,7 +23,7 @@ import {
   type Statut,
 } from '../schemas/contenu.ts';
 import type { ContenuBrut, FichierMarkdown } from './charger.ts';
-import { section, trouverEtiquettes, valeursNonEtiquetees } from './etiquettes.ts';
+import { ancres, section, trouverEtiquettes, valeursNonEtiquetees } from './etiquettes.ts';
 
 export type Gravite = 'erreur' | 'avertissement';
 
@@ -104,6 +107,28 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
   }
   const delaiSources = parametres.sources.delai_reverification_mois;
 
+  // ---------- Référentiel ----------
+  const competences = new Set<string>();
+  if (!contenu.referentiel) {
+    ajouter('referentiel', 'erreur', 'referentiel/competences.yaml', 'référentiel de compétences absent');
+  } else if (contenu.referentiel.erreurLecture) {
+    ajouter('yaml', 'erreur', contenu.referentiel.chemin, contenu.referentiel.erreurLecture);
+  } else if (!Array.isArray(contenu.referentiel.donnees)) {
+    ajouter('schema', 'erreur', contenu.referentiel.chemin, 'liste de compétences attendue');
+  } else {
+    for (const brut of contenu.referentiel.donnees) {
+      const c = verifierSchema(competenceSchema, brut, contenu.referentiel.chemin);
+      if (!c) continue;
+      declarerId(c.code, contenu.referentiel.chemin);
+      competences.add(c.code);
+    }
+  }
+  function verifierCompetences(codes: string[], fichier: string, quoi: string) {
+    for (const code of codes) {
+      if (!competences.has(code)) ajouter('reference', 'erreur', fichier, `${quoi} : compétence ${code} absente du référentiel`);
+    }
+  }
+
   // ---------- Bibliothèque ----------
   const sources = new Set<string>();
   for (const f of contenu.sources) {
@@ -140,6 +165,8 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
 
   // ---------- Parcours ----------
   const chapitresConnus = new Set<string>();
+  const ancresParLecon = new Map<string, Set<string>>();
+  const renvois: { valeur: string; fichier: string; quoi: string }[] = [];
   const prerequisAVerifier: { ids: string[]; fichier: string; statut: Statut | undefined }[] = [];
 
   for (const mod of contenu.modules) {
@@ -175,6 +202,7 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
       if (c.module !== m.id) ajouter('reference', 'erreur', fc, `chapitre rattaché à ${c.module} mais rangé dans le module ${m.id}`);
       if (!m.chapitres.includes(c.id)) ajouter('reference', 'erreur', mod.module.chemin, `le chapitre ${c.id} existe mais n'est pas listé dans module.yaml`);
       prerequisAVerifier.push({ ids: c.prerequis, fichier: fc, statut: c.statut });
+      verifierCompetences(c.competences, fc, 'chapitre');
       for (const s of c.sources) if (!sources.has(s)) ajouter('reference', 'erreur', fc, `source ${s} introuvable dans la bibliothèque`);
       if (moisEntre(c.derniere_verification_sources, aujourdhui) > delaiSources) {
         ajouter('source-perimee', 'avertissement', fc, `sources vérifiées pour la dernière fois le ${c.derniere_verification_sources}`);
@@ -195,6 +223,7 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           const e = verifierSchema(exerciceSchema, brut, f.chemin);
           if (!e) continue;
           declarerId(e.id, f.chemin);
+          verifierCompetences(e.competences, f.chemin, e.id);
           exercices.set(e.id, e);
         }
       }
@@ -206,6 +235,7 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           const k = verifierSchema(correctionExerciceSchema, brut, f.chemin);
           if (!k) continue;
           corriges.add(k.id);
+          renvois.push({ valeur: k.renvoi_section, fichier: f.chemin, quoi: k.id });
           const e = exercices.get(k.id);
           if (!e) { ajouter('correction', 'erreur', f.chemin, `correction de ${k.id} sans exercice correspondant`); continue; }
           if (e.type === 'calcul' && (k.valeur === undefined || k.tolerance_relative === undefined || !k.unite)) {
@@ -234,9 +264,11 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
         const l: Lecon | null = verifierSchema(leconSchema, lf.entete, lf.chemin);
         if (!l) continue;
         declarerId(l.id, lf.chemin);
+        ancresParLecon.set(l.id, ancres(lf.corps));
         if (l.chapitre !== c.id) ajouter('reference', 'erreur', lf.chemin, `leçon rattachée à ${l.chapitre} mais rangée dans ${c.id}`);
         if (!c.lecons.includes(l.id)) ajouter('reference', 'erreur', fc, `la leçon ${l.id} existe mais n'est pas listée dans le chapitre`);
         prerequisAVerifier.push({ ids: l.prerequis, fichier: lf.chemin, statut: l.statut });
+        for (const o of l.objectifs) verifierCompetences(o.competences, lf.chemin, `objectif ${o.id}`);
         nbObjectifs += l.objectifs.length;
         nbFigures += l.figures.length;
         nbExemples += (lf.corps.match(/^###\s+Exemple/gim) ?? []).length;
@@ -260,10 +292,11 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           if (!existsSync(join(contenu.racine, dirname(lf.chemin), fig.fichier))) ajouter('figure', 'erreur', lf.chemin, `fichier de figure introuvable : ${fig.fichier}`);
           if (fig.origine !== 'areprog' && !sources.has(fig.origine)) ajouter('figure', 'erreur', lf.chemin, `origine de figure ${fig.origine} absente de la bibliothèque`);
         }
-        for (const d of lf.corps.matchAll(/^::(figure|exercice)\{id=([^}\s]+)\}/gm)) {
+        for (const d of lf.corps.matchAll(/^::(figure|exercice|simulateur)\{id=([^}\s]+)\}/gm)) {
           const [, type, id] = d;
           if (type === 'figure' && !figures.has(id!)) ajouter('reference', 'erreur', lf.chemin, `::figure{id=${id}} non déclarée dans l'en-tête`);
           if (type === 'exercice' && !l.exercices.includes(id!)) ajouter('reference', 'erreur', lf.chemin, `::exercice{id=${id}} non listé dans l'en-tête`);
+          if (type === 'simulateur' && !SIMULATEURS_DISPONIBLES.includes(id!)) ajouter('reference', 'erreur', lf.chemin, `::simulateur{id=${id}} inconnu (disponibles : ${SIMULATEURS_DISPONIBLES.join(', ')})`);
         }
         verifierEtiquettes(lf, l.statut);
       }
@@ -286,6 +319,8 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           const q = verifierSchema(questionSchema, brut, f.chemin);
           if (!q) continue;
           declarerId(q.id, f.chemin);
+          verifierCompetences(q.competences, f.chemin, q.id);
+          renvois.push({ valeur: q.section, fichier: f.chemin, quoi: q.id });
           questions.set(q.id, q);
         }
       }
@@ -298,6 +333,7 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           const r = verifierSchema(reponseQuestionSchema, brut, f.chemin);
           if (!r) continue;
           repondues.add(r.id);
+          if (RE_SECTION.test(r.source)) renvois.push({ valeur: r.source, fichier: f.chemin, quoi: r.id });
           const q = questions.get(r.id);
           if (!q) { ajouter('correction', 'erreur', f.chemin, `réponse à ${r.id} sans question correspondante`); continue; }
           if (q.type === 'calcul' && (r.valeur === undefined || r.tolerance_relative === undefined || !r.unite)) {
@@ -356,12 +392,23 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
         if (t.support === 'vehicule' && section(tf.corps, 'Limites de la validation') === null) {
           ajouter('securite-renforcee', 'erreur', tf.chemin, 'TP sur véhicule sans section « ## Limites de la validation »');
         }
+        verifierCompetences(t.competences, tf.chemin, t.id);
         verifierEtiquettes(tf, t.statut);
       }
     }
     for (const cid of m.chapitres) {
       if (!chapitresDuModule.has(cid)) ajouter('reference', 'avertissement', mod.module.chemin, `chapitre ${cid} annoncé mais pas encore présent`);
     }
+  }
+
+  // Renvois de section (remédiation) : la leçon et l'ancre doivent exister.
+  for (const r of renvois) {
+    const m = RE_SECTION.exec(r.valeur);
+    if (!m) continue;
+    const [, lecon, a] = m;
+    const lesAncres = ancresParLecon.get(lecon!);
+    if (!lesAncres) ajouter('section', 'erreur', r.fichier, `${r.quoi} : renvoi vers la leçon ${lecon}, introuvable`);
+    else if (a && !lesAncres.has(a)) ajouter('section', 'erreur', r.fichier, `${r.quoi} : section « #${a} » introuvable dans ${lecon} (ancres disponibles : ${[...lesAncres].join(', ')})`);
   }
 
   // Prérequis : vérifiés une fois tous les chapitres connus.

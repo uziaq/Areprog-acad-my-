@@ -1,0 +1,119 @@
+---
+import { getCollection } from 'astro:content';
+import { enrichirHtml } from '../../../../../markdown/enrichir-html.ts';
+import Base from '../../../../../layouts/Base.astro';
+import { chargerSite, urlCorrections, urlSource } from '../../../../../lib/contenu.ts';
+import { urlSection } from '../../../../../lib/plan.ts';
+
+export async function getStaticPaths() {
+  const site = chargerSite();
+  const entrees = await getCollection('lecons');
+  return entrees
+    .filter((e) => site.lecons.has(e.id))
+    .map((e) => {
+      const { chapitre, module } = site.lecons.get(e.id)!;
+      return {
+        params: { module: module.id.toLowerCase(), chapitre: chapitre.id.toLowerCase(), lecon: e.id.toLowerCase() },
+        props: { entree: e },
+      };
+    });
+}
+
+const { entree } = Astro.props;
+const site = chargerSite();
+const { lecon, chapitre, module } = site.lecons.get(entree.id)!;
+const html = enrichirHtml(entree.rendered?.html ?? '', lecon.figures, entree.filePath ? `${process.cwd()}/${entree.filePath}` : '');
+const libellesStatut: Record<string, string> = { brouillon: 'Brouillon', relu: 'Relu', valide: 'Validé', retire: 'Retiré' };
+const chapitresPublies = new Set(site.plan.modules.flatMap((m) => m.chapitres.map((c) => c.id)));
+
+// Données publiques des exercices (énoncés seulement, jamais les solutions).
+const donnees = {
+  lecon: lecon.id,
+  chapitre: chapitre.id,
+  exercices: Object.fromEntries(
+    lecon.exercices.map((id) => {
+      const enonce = site.enonces.get(id)!;
+      return [id, {
+        enonce,
+        chapitre: chapitre.id,
+        version: site.versionsExercices.get(id) ?? lecon.version,
+        urlCorrections: urlCorrections(chapitre.id),
+        urlSection: urlSection(site.plan, enonce.section),
+      }];
+    }),
+  ),
+};
+const competences = site.plan.competences;
+---
+<Base titre={lecon.titre} actif="parcours">
+  <article class="lecture">
+    <p class="fil">
+      <a href="/parcours/">Parcours</a> › <a href={module.url}>{module.id}</a> › {chapitre.id} › {lecon.id}
+    </p>
+    <h1>{lecon.titre}</h1>
+    <div class="meta">
+      <span class="badge badge--info">{chapitre.id} · {chapitre.titre}</span>
+      <span class="badge badge--neutre">{lecon.duree_min} min</span>
+      <span class="badge badge--neutre">Version {lecon.version}</span>
+      <span class={`badge ${lecon.statut === 'valide' ? 'badge--succes' : 'badge--alerte'}`} title="Statut de relecture du contenu">
+        {libellesStatut[lecon.statut]}
+      </span>
+    </div>
+
+    <section class="carte" aria-labelledby="objectifs">
+      <h2 id="objectifs">Objectifs</h2>
+      <p class="note" style="margin-top:0">À la fin de la leçon, vous serez capable de :</p>
+      <ul class="objectifs">
+        {lecon.objectifs.map((o) => (
+          <li>{o.texte} <span class="note">({o.competences.join(', ')})</span></li>
+        ))}
+      </ul>
+      <h3>Prérequis</h3>
+      <ul>
+        {lecon.prerequis.map((p) => (
+          <li>{p}{!chapitresPublies.has(p) && <span class="note"> : pas encore publié dans l'application</span>}</li>
+        ))}
+        {lecon.prerequis.length === 0 && <li>Aucun</li>}
+      </ul>
+    </section>
+
+    <div class="contenu">
+      <Fragment set:html={html} />
+    </div>
+
+    <section aria-labelledby="references">
+      <h2 id="references">Références documentaires</h2>
+      <ul>
+        {lecon.references.map((id) => {
+          const s = site.sources.get(id)!;
+          return <li><a href={urlSource(id)}>{id}</a> · {s.titre}, {s.editeur} ({s.revision})</li>;
+        })}
+      </ul>
+    </section>
+
+    <section aria-labelledby="criteres">
+      <h2 id="criteres">Critères d'évaluation</h2>
+      <ul>
+        {lecon.criteres_evaluation.map((k) => {
+          const o = lecon.objectifs.find((x) => x.id === k.objectif);
+          return <li><strong>{o?.texte}</strong> : {k.critere}</li>;
+        })}
+      </ul>
+      <p class="note">
+        Compétences travaillées :
+        {[...new Set(lecon.objectifs.flatMap((o) => o.competences))].map((c) => `${c} ${competences.find((x) => x.code === c)?.intitule ?? ''}`).join(' ; ')}
+      </p>
+    </section>
+
+    <div class="actions">
+      <a class="bouton" href={chapitre.urlQcm}>Passer le QCM du chapitre {chapitre.id}</a>
+      <a class="bouton bouton--secondaire" href="/">Tableau de bord</a>
+    </div>
+  </article>
+
+  <script type="application/json" id="donnees-lecon" set:html={JSON.stringify(donnees).replace(/</g, '\\u003c')} />
+  <script>
+    import { monterLecon } from '../../../../../islands/montage-lecon.ts';
+    monterLecon();
+  </script>
+</Base>

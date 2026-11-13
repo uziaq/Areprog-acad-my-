@@ -7,4 +7,5 @@ export default defineConfig({
   output: 'static',
   integrations: [preact()],
   build: { format: 'directory' },
+  devToolbar: { enabled: false },
 });

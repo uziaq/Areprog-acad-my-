@@ -181,3 +181,36 @@ describe('protocole de sécurité renforcé (airbag, ABS, direction)', () => {
     expect(regles(valider(r))).toContain('securite-renforcee');
   });
 });
+
+describe('référentiel et directives', () => {
+  it('compétence absente du référentiel', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/qcm/banque.yaml`, (t) => t.replace('competences: [D2.1]', 'competences: [D9.9]'));
+    expect(regles(valider(r))).toContain('reference');
+  });
+
+  it('simulateur inconnu', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) => `${t}\n::simulateur{id=inexistant}\n`);
+    expect(regles(valider(r))).toContain('reference');
+  });
+
+  it('référentiel absent', () => {
+    const r = copie();
+    rmSync(join(r, 'referentiel'), { recursive: true });
+    expect(regles(valider(r))).toContain('referentiel');
+  });
+});
+
+describe('renvois de section', () => {
+  it('section inexistante dans la leçon', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/qcm/banque.yaml`, (t) => t.replace('S02-L01#théorie', 'S02-L01#nulle-part'));
+    expect(regles(valider(r))).toContain('section');
+  });
+  it('leçon inexistante', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/corrections/S02-L01.yaml`, (t) => t.replace('S02-L01#théorie', 'S02-L09#théorie'));
+    expect(regles(valider(r))).toContain('section');
+  });
+});

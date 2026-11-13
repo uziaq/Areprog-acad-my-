@@ -1,0 +1,33 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Qcm from '../../../../islands/Qcm.tsx';
+import { chargerSite, urlCorrections } from '../../../../lib/contenu.ts';
+import type { PlanChapitre, PlanModule } from '../../../../lib/types.ts';
+
+export function getStaticPaths() {
+  const site = chargerSite();
+  return [...site.chapitres.values()]
+    .filter(({ chapitre }) => chapitre.questions.length > 0)
+    .map(({ chapitre, module }) => ({
+      params: { module: module.id.toLowerCase(), chapitre: chapitre.id.toLowerCase() },
+      props: { chapitre, module },
+    }));
+}
+const { chapitre, module } = Astro.props as { chapitre: PlanChapitre; module: PlanModule };
+const site = chargerSite();
+const banque = chapitre.questions.map((id) => site.enonces.get(id)!);
+---
+<Base titre={`QCM ${chapitre.id}`} actif="parcours">
+  <p class="fil"><a href="/parcours/">Parcours</a> › <a href={module.url}>{module.id}</a> › {chapitre.id} › QCM</p>
+  <h1>QCM · {chapitre.id} {chapitre.titre}</h1>
+  <Qcm
+    client:load
+    plan={site.plan}
+    chapitre={chapitre.id}
+    titreChapitre={chapitre.titre}
+    version={chapitre.version}
+    banque={banque}
+    urlCorrections={urlCorrections(chapitre.id)}
+    tailleMinBanque={40}
+  />
+</Base>

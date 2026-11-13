@@ -3,28 +3,28 @@
   tolerance_relative: 0.02
   unite: mA
   explication: Correction fictive 1.
-  renvoi_section: "S02-L01#theorie"
+  renvoi_section: "S02-L01#théorie"
 - id: S02-L01-EX02
   valeur: 22.7
   tolerance_relative: 0.02
   unite: mA
   explication: Correction fictive 2.
-  renvoi_section: "S02-L01#theorie"
+  renvoi_section: "S02-L01#théorie"
 - id: S02-L01-EX03
   valeur: 22.7
   tolerance_relative: 0.02
   unite: mA
   explication: Correction fictive 3.
-  renvoi_section: "S02-L01#theorie"
+  renvoi_section: "S02-L01#théorie"
 - id: S02-L01-EX04
   valeur: 22.7
   tolerance_relative: 0.02
   unite: mA
   explication: Correction fictive 4.
-  renvoi_section: "S02-L01#theorie"
+  renvoi_section: "S02-L01#théorie"
 - id: S02-L01-EX05
   valeur: 22.7
   tolerance_relative: 0.02
   unite: mA
   explication: Correction fictive 5.
-  renvoi_section: "S02-L01#theorie"
+  renvoi_section: "S02-L01#théorie"

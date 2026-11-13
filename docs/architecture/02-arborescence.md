@@ -94,11 +94,11 @@ Areprog-acad-my-/
 │   │   ├── evaluation/                (P3) notation, tolérances numériques, seuils
 │   │   └── progression/               (P3) calcul d'état des chapitres et compétences
 │   ├── markdown/
-│   │   └── remark-etiquettes.ts       (P3) rend [SOURCÉ], [EXEMPLE], [HYPOTHÈSE], [À VÉRIFIER]
+│   │   └── enrichir-html.ts           (P3) rend [SOURCÉ], [EXEMPLE]… et les directives, sur le HTML produit par Astro
 │   ├── styles/
 │   │   ├── jetons.css                 (P3) couleurs et polices AREPROG
 │   │   └── impression.css             (L3) export PDF par impression
-│   └── sw.ts                          (P3) service worker hors ligne
+│   └── pages/sw.js.ts                 (P3) service worker hors ligne, généré à la construction
 │
 ├── public/
 │   ├── fonts/                         (P3) Poppins, Inter (woff2, licence OFL)

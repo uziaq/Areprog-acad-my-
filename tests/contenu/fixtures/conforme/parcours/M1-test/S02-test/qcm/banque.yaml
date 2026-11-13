@@ -2,7 +2,7 @@
   type: choix_unique
   securite: false
   competences: [D2.1]
-  section: "S02-L01#theorie"
+  section: "S02-L01#théorie"
   enonce: Combien de milliampères dans un ampère ?
   propositions:
     - {id: a, texte: "10"}
@@ -11,6 +11,6 @@
   type: calcul
   securite: true
   competences: [D2.2]
-  section: "S02-L01#theorie"
+  section: "S02-L01#théorie"
   enonce: Question de calcul fictive.
   unite_attendue: mA

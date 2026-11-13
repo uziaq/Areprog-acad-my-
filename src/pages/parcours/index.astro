@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { chargerSite } from '../../lib/contenu.ts';
+const { plan } = chargerSite();
+---
+<Base titre="Parcours" actif="parcours">
+  <h1>Parcours</h1>
+  <p class="note">Contenu publié dans le prototype. Les autres modules du cursus seront ajoutés au fil de la rédaction.</p>
+  <div class="pile">
+    {plan.modules.map((m) => (
+      <section class="carte">
+        <h2><a href={m.url}>{m.id} · {m.titre}</a></h2>
+        <p>{m.chapitres.length} chapitre(s) : {m.chapitres.map((c) => `${c.id} ${c.titre}`).join(' ; ')}</p>
+      </section>
+    ))}
+  </div>
+</Base>

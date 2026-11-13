@@ -36,3 +36,16 @@ describe('étiquettes de fiabilité', () => {
     expect(section(md, 'C')).toBeNull();
   });
 });
+
+import { ancre, ancres } from '../../src/validation/etiquettes.ts';
+
+describe('ancres de titres', () => {
+  it('reproduit les ancres du moteur Markdown', () => {
+    expect(ancre("La loi d'Ohm")).toBe('la-loi-dohm');
+    expect(ancre('Les préfixes')).toBe('les-préfixes');
+    expect(ancre("Exemple 2 : vérifier la puissance d'une résistance")).toBe('exemple-2--vérifier-la-puissance-dune-résistance');
+  });
+  it('suffixe les doublons', () => {
+    expect([...ancres('## A\n## A\n')]).toEqual(['a', 'a-1']);
+  });
+});

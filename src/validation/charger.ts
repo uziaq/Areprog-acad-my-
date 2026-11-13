@@ -40,6 +40,7 @@ export interface ModuleBrut {
 export interface ContenuBrut {
   racine: string;
   parametres: FichierYaml | null;
+  referentiel: FichierYaml | null;
   sources: FichierYaml[];
   modules: ModuleBrut[];
 }
@@ -95,6 +96,9 @@ export function chargerContenu(racine: string): ContenuBrut {
   const contenu: ContenuBrut = {
     racine,
     parametres: existsSync(parametresChemin) ? lireYaml(racine, parametresChemin) : null,
+    referentiel: existsSync(join(racine, 'referentiel', 'competences.yaml'))
+      ? lireYaml(racine, join(racine, 'referentiel', 'competences.yaml'))
+      : null,
     sources: fichiers(join(racine, 'bibliotheque', 'sources'), ['.yaml', '.yml']).map((f) => lireYaml(racine, f)),
     modules: [],
   };

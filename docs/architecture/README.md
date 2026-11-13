@@ -22,6 +22,7 @@ qui garde les résultats de l'apprenant **dans l'appareil** avec export / import
 | 4 | [Configuration Claude Code](04-configuration-claude-code.md) | `CLAUDE.md`, 7 règles, 5 Skills, 4 sous-agents, permissions |
 | 5 | [Tests et validation](05-tests-et-validation.md) | Structure des tests, validation du contenu en trois barrières, **critères d'acceptation du prototype** |
 | 6 | [Risques](06-risques.md) | 15 risques et leurs mesures |
+| 7 | [Prototype](07-prototype.md) | Ce qui est livré, critères d'acceptation vérifiés, écarts |
 
 Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges-plateforme.md)
 (fil pédagogique, branche `claude/project-thread-7tl6vf` ; ce lien fonctionnera une fois les deux PR fusionnées).

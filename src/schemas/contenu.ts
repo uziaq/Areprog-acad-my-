@@ -23,6 +23,10 @@ export const RE_ID = {
   cas: /^CAS-\d{3}$/,
 };
 
+/** Renvoi vers une section de leçon : « S02-L01#ancre ». */
+export const RE_SECTION = /^(S\d{2}-L\d{2})(?:#(\S+))?$/;
+const renvoiSection = z.string().regex(RE_SECTION, { message: 'renvoi de section au format S02-L01#ancre attendu' });
+
 const id = (re: RegExp, nom: string) =>
   z.string().regex(re, { message: `identifiant de ${nom} invalide (format attendu : ${re.source})` });
 
@@ -139,7 +143,7 @@ export const correctionExerciceSchema = z.strictObject({
   bonnes: z.array(z.string()).optional(),
   ordre: z.array(z.string()).optional(),
   explication: z.string().min(1, { message: 'correction sans explication' }),
-  renvoi_section: z.string().min(1),
+  renvoi_section: renvoiSection,
 });
 
 // ---------- QCM ----------
@@ -148,7 +152,7 @@ export const questionSchema = z.strictObject({
   type: typeExercice,
   securite: z.boolean(),
   competences: z.array(id(RE_ID.competence, 'compétence')).min(1),
-  section: z.string().min(1),
+  section: renvoiSection,
   enonce: z.string().min(1),
   unite_attendue: z.string().optional(),
   propositions: z.array(z.strictObject({ id: z.string(), texte: z.string() })).optional(),
@@ -163,7 +167,8 @@ export const reponseQuestionSchema = z.strictObject({
   ordre: z.array(z.string()).optional(),
   explication: z.string().min(1),
   pourquoi_faux: z.record(z.string(), z.string()).optional(),
-  source: z.string().min(1),
+  /** Section du cours (S02-L01#ancre) ou fiche source (SRC-0001 …). */
+  source: z.union([renvoiSection, z.string().regex(/^SRC-\d{4}/)]),
 });
 
 // ---------- Travaux pratiques ----------
@@ -189,9 +194,23 @@ export const sourceSchema = z.strictObject({
   date_consultation: dateIso,
   type: z.enum(['datasheet', 'norme', 'ouvrage', 'notice', 'site', 'cours']),
   licence: z.enum(['lien_seulement', 'extrait_autorise', 'libre']),
-  lien: z.string().url().optional(),
+  lien: z.url().optional(),
   fichier_local: z.string().nullable().default(null),
 });
+
+// ---------- Référentiel de compétences ----------
+export const competenceSchema = z.strictObject({
+  code: id(RE_ID.competence, 'compétence'),
+  intitule: z.string().min(1),
+  domaine: z.string().regex(/^D\d+$/),
+  niveau_vise: z.enum(['N1', 'N2', 'N3', 'N4']),
+  enseignee_en: z.array(id(RE_ID.chapitre, 'chapitre')).min(1),
+  /** Jalon qui vérifie la compétence ; le niveau visé n'est atteint qu'après lui. */
+  jalon: id(RE_ID.chapitre, 'chapitre').nullable(),
+});
+
+/** Simulateurs pédagogiques utilisables par la directive ::simulateur{id=…}. */
+export const SIMULATEURS_DISPONIBLES = ['loi-ohm'];
 
 // ---------- Paramètres d'évaluation ----------
 export const parametresSchema = z.strictObject({

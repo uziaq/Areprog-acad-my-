@@ -20,7 +20,12 @@ describe('frontières d\'architecture', () => {
   it('aucune couleur codée en dur hors des jetons de thème', () => {
     const fautifs = fichiersSource('src')
       .filter((f) => !f.endsWith('jetons.css'))
-      .filter((f) => /#[0-9a-fA-F]{6}\b/.test(readFileSync(f, 'utf8')));
+      // Seule exception : <meta name="theme-color">, qui exige une couleur littérale.
+      .filter((f) =>
+        readFileSync(f, 'utf8')
+          .split('\n')
+          .some((l) => /#[0-9a-fA-F]{6}\b/.test(l) && !l.includes('theme-color')),
+      );
     expect(fautifs).toEqual([]);
   });
 });

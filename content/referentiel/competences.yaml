@@ -1,0 +1,44 @@
+# Extrait du référentiel (docs/pedagogie/01-referentiel-competences.md), domaine D2.
+# Prototype : seules les compétences du domaine D2 sont déclarées.
+- code: D2.1
+  intitule: Manipuler les grandeurs, unités, préfixes et ordres de grandeur
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S02]
+  jalon: S14
+- code: D2.2
+  intitule: Appliquer la loi d'Ohm et calculer une puissance dissipée
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S02]
+  jalon: S14
+- code: D2.3
+  intitule: Appliquer les lois de Kirchhoff, les diviseurs de tension et de courant
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S03]
+  jalon: S14
+- code: D2.4
+  intitule: Utiliser le théorème de Thévenin pour modéliser une source réelle
+  domaine: D2
+  niveau_vise: N2
+  enseignee_en: [S03]
+  jalon: S14
+- code: D2.5
+  intitule: Expliquer le comportement d'un condensateur et d'une inductance (charge, constante de temps)
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S05]
+  jalon: S14
+- code: D2.6
+  intitule: Caractériser un signal alternatif (période, fréquence, valeur crête, efficace, rapport cyclique)
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S06]
+  jalon: S14
+- code: D2.7
+  intitule: Expliquer l'impédance et le filtrage RC du premier ordre
+  domaine: D2
+  niveau_vise: N2
+  enseignee_en: [S06]
+  jalon: S14

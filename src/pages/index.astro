@@ -1,18 +1,10 @@
 ---
-// Page provisoire (phase 2). Le tableau de bord arrive avec le prototype (phase 3).
-import '../styles/jetons.css';
+import Base from '../layouts/Base.astro';
+import TableauDeBord from '../islands/TableauDeBord.tsx';
+import { chargerSite } from '../lib/contenu.ts';
+const { plan } = chargerSite();
 ---
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>AREPROG Academy</title>
-  </head>
-  <body>
-    <main style="max-width: 48rem; margin: 0 auto; padding: 1rem;">
-      <h1>AREPROG Academy</h1>
-      <p>Structure du projet en place. Le prototype (tableau de bord, leçon, exercice, QCM) arrive en phase 3.</p>
-    </main>
-  </body>
-</html>
+<Base titre="AREPROG Academy" actif="accueil">
+  <h1>Tableau de bord</h1>
+  <TableauDeBord client:load plan={plan} />
+</Base>

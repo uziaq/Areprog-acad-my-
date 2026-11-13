@@ -66,3 +66,30 @@ export function section(markdown: string, titre: string): string | null {
   const fin = lignes.findIndex((l, i) => i > debut && /^#{1,2}\s/.test(l));
   return lignes.slice(debut + 1, fin < 0 ? undefined : fin).join('\n');
 }
+
+/** Identifiant d'ancre d'un titre, comme le produit le moteur Markdown d'Astro (github-slugger). */
+export function ancre(titre: string): string {
+  return titre
+    .toLowerCase()
+    .replace(/[^\p{L}\p{M}\p{N}\p{Pc}\- ]/gu, '')
+    .replace(/ /g, '-');
+}
+
+/** Ancres de tous les titres d'un document Markdown (doublons suffixés -1, -2…). */
+export function ancres(markdown: string): Set<string> {
+  return new Set(titresParAncre(markdown).keys());
+}
+
+/** Titres indexés par ancre. */
+export function titresParAncre(markdown: string): Map<string, string> {
+  const vues = new Map<string, number>();
+  const resultat = new Map<string, string>();
+  for (const m of markdown.replace(/```[\s\S]*?```/g, '').matchAll(/^#{1,6}\s+(.+?)\s*#*\s*$/gm)) {
+    const titre = m[1]!.replace(/[*_`]/g, '');
+    const base = ancre(titre);
+    const n = vues.get(base) ?? 0;
+    vues.set(base, n + 1);
+    resultat.set(n === 0 ? base : `${base}-${n}`, titre);
+  }
+  return resultat;
+}

@@ -1,25 +1,36 @@
-/* Jetons de thème AREPROG : seule source des couleurs et polices de l'application. */
+/*
+ * Jetons de thème AREPROG : seule source des couleurs et polices de l'application.
+ * Contrastes vérifiés par tests/architecture/contraste.test.ts (objectif WCAG AA).
+ */
 :root {
-  --bleu-principal: #1E88E5;
-  --bleu-secondaire: #1565C0;
+  /* Identité AREPROG */
+  --bleu-principal: #1E88E5;   /* accents, bordures, barres de progression (pas de texte courant : contraste 4,4:1 sur fond-1) */
+  --bleu-secondaire: #1565C0;  /* fond des boutons principaux (texte blanc 5,7:1) */
   --fond-1: #1E2225;
   --fond-2: #2F3336;
   --texte: #C7CCD1;
+
+  /* Dérivés nécessaires à la lisibilité */
+  --texte-fort: #FFFFFF;
+  --texte-attenue: #A3AAB1;
+  --lien: #64B5F6;             /* bleu clair de la même famille, lisible sur fond sombre */
+  --bordure: #454B50;
+  --fond-3: #3A3F43;
+
+  /* États */
+  --succes: #81C784;
+  --erreur: #EF9A9A;
+  --alerte: #FFCC80;
+
+  /* Étiquettes de fiabilité (couleur + pictogramme) */
+  --etiquette-source: #81C784;
+  --etiquette-exemple: #90CAF9;
+  --etiquette-hypothese: #FFCC80;
+  --etiquette-a-verifier: #EF9A9A;
+
   --police-titres: "Poppins", system-ui, sans-serif;
   --police-texte: "Inter", system-ui, sans-serif;
   --cible-tactile-min: 48px;
+  --rayon: 10px;
   color-scheme: dark;
-}
-
-body {
-  margin: 0;
-  background: var(--fond-1);
-  color: var(--texte);
-  font-family: var(--police-texte);
-  font-size: 1.125rem;
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  font-family: var(--police-titres);
 }
