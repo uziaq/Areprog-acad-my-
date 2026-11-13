@@ -1,0 +1,18 @@
+# AREPROG Academy — configuration Netlify.
+# AUCUN déploiement sans l'autorisation écrite d'Arthur (voir CLAUDE.md).
+# Le dépôt n'est relié à aucun site Netlify : rien ne se déploie automatiquement.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Site privé : jamais indexé.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"

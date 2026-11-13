@@ -8,6 +8,8 @@
 | **Chapitre** | Une semaine = un « cours » du [gabarit](../pedagogie/06-gabarit-cours.md) (8 h) | `S02` | En-tête du gabarit, prérequis, compétences, TP, QCM, corrigé, sources, statut de relecture |
 | **Leçon** | Une séquence de 1 à 2 h à l'intérieur de la semaine | `S02-L01` | Les champs demandés : identifiant, version, objectifs, prérequis, contenu, exercices, références, critères d'évaluation |
 
+Le chapitre est décrit par `chapitre.md` : en-tête YAML du gabarit (id, module, compétences, prérequis, leçons, TP, sources, version, statut) et sections `## Mesures attendues et tolérances` et `## Erreurs fréquentes`.
+
 Les 12 rubriques du gabarit restent vérifiées **au niveau du chapitre** : théorie, schémas,
 exemples et exercices sont répartis dans les leçons ; prérequis, TP, mesures attendues,
 erreurs fréquentes, QCM, corrigé et sources sont au niveau du chapitre. Voir décision A-02.

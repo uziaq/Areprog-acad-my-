@@ -51,7 +51,7 @@ Areprog-acad-my-/
 │   │   └── M1-electricite-fondamentale/
 │   │       ├── module.yaml            (P3) id, titre, ordre, chapitres
 │   │       └── S02-loi-ohm/           un chapitre = une semaine de 8 h
-│   │           ├── chapitre.yaml      (P3) en-tête du gabarit (id, prérequis, compétences, TP…)
+│   │           ├── chapitre.md        (P3) en-tête du gabarit + sections « Mesures attendues » et « Erreurs fréquentes »
 │   │           ├── lecons/
 │   │           │   └── S02-L01-grandeurs-et-loi-ohm.md   (P3)
 │   │           ├── exercices/
@@ -64,11 +64,10 @@ Areprog-acad-my-/
 │   │           │   └── reponses.yaml  (P3) bonnes réponses + explications
 │   │           ├── tp/
 │   │           │   └── TP-03.md       (L3)
-│   │           ├── figures/
-│   │           │   └── S02-F01-circuit-serie.svg  (P3) + métadonnées dans la leçon
-│   │           └── sources.yaml       (P3) références citées par le chapitre
+│   │           └── figures/
+│   │               └── S02-F01-circuit-serie.svg  (P3) + métadonnées dans la leçon
 │   ├── bibliotheque/
-│   │   └── sources/SRC-0001.yaml      (L5) fiches sources communes (titre, éditeur, révision, licence, lien)
+│   │   └── sources/SRC-0001.yaml      (P3) fiches sources, seul endroit où une source est décrite ; chapitres et leçons y renvoient par identifiant (titre, éditeur, révision, licence, lien)
 │   └── etudes-de-cas/
 │       └── CAS-001/                   (L3) cas ECU : fictif pédagogique OU dossier réel anonymisé
 │
@@ -107,8 +106,8 @@ Areprog-acad-my-/
 │   └── manifest.webmanifest           (P3)
 │
 ├── scripts/
-│   ├── valider-contenu.ts             (P2/P3) contrôle de conformité F25
-│   └── nouveau-chapitre.ts            (L1) génère le squelette d'un chapitre au gabarit
+│   ├── valider-contenu.ts             (P2) contrôle de conformité F25 (règles dans src/validation/)
+│   └── nouveau-chapitre.ts            (P2) génère le squelette d'un chapitre au gabarit
 │
 ├── tests/
 │   ├── unitaires/                     (P3) notation, tolérances, progression, migrations

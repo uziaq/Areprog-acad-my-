@@ -60,13 +60,15 @@ Conséquences :
 | Tests | **Vitest** (unitaires, contenu) + **Playwright** (bout en bout, gabarit tablette) | Standard Vite / Astro ; Playwright teste un vrai navigateur en format iPad | Jest (configuration plus lourde avec ESM), Cypress (plus lourd) |
 | Intégration continue | **GitHub Actions** : validation du contenu, tests, construction | Bloque une PR dont un cours est non conforme | Contrôle uniquement local (oubliable) |
 | Hébergement | **Netlify**, site protégé, déploiement **manuel** autorisé par Arthur | Demandé ; statique ; fonctions de bord pour la protection | — |
-| Environnement | Node.js LTS (24), npm | Pas d'outil supplémentaire (pas de pnpm / yarn) ; Node exécute TypeScript simple sans compilateur pour les scripts | — |
+| Environnement | Node.js 22 (≥ 22.18), npm | Pas d'outil supplémentaire (pas de pnpm / yarn) ; Node exécute TypeScript simple sans compilateur pour les scripts | — |
 
 ### Dépendances prévues (exhaustif pour le prototype)
 
 | Production | Développement |
 |---|---|
-| `astro`, `@astrojs/preact`, `preact` | `typescript`, `vitest`, `@playwright/test`, `@astrojs/check` |
+| `astro`, `@astrojs/preact`, `preact` | `typescript`, `@types/node`, `vitest`, `@playwright/test`, `@astrojs/check`, `yaml` |
+
+`yaml` sert au validateur de contenu (lecture des fichiers YAML hors d'Astro) ; `@types/node` aux types des scripts. Aucun des deux n'est envoyé au navigateur.
 
 Toute nouvelle dépendance devra être justifiée dans la PR qui l'ajoute (règle `.claude/rules/dependances.md`).
 Les versions seront épinglées (fichier `package-lock.json` versionné) au moment de la phase 2.

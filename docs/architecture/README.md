@@ -1,7 +1,8 @@
 # Architecture de l'application AREPROG Academy — Phase 1
 
-> **Statut : proposition v0.1, en attente de validation par Arthur.**
-> Aucune implémentation n'est lancée. Aucun déploiement n'est prévu sans son autorisation.
+> **Statut : v0.1 validée par Arthur le 13/11/2026 (décisions A-01 à A-08 acceptées telles quelles).**
+> Phase 2 réalisée : structure, configuration Claude Code, validateur de contenu (lot L0).
+> Aucun déploiement n'est prévu sans son autorisation.
 > Ce dépôt est celui de la formation ; le site commercial AREPROG n'est pas concerné.
 
 ## En une phrase
@@ -25,7 +26,7 @@ qui garde les résultats de l'apprenant **dans l'appareil** avec export / import
 Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges-plateforme.md)
 (fil pédagogique, branche `claude/project-thread-7tl6vf` ; ce lien fonctionnera une fois les deux PR fusionnées).
 
-## Décisions à valider
+## Décisions (validées)
 
 | # | Décision | Options | Recommandé | Pourquoi |
 |---|---|---|---|---|

@@ -1,0 +1,25 @@
+/* Jetons de thème AREPROG : seule source des couleurs et polices de l'application. */
+:root {
+  --bleu-principal: #1E88E5;
+  --bleu-secondaire: #1565C0;
+  --fond-1: #1E2225;
+  --fond-2: #2F3336;
+  --texte: #C7CCD1;
+  --police-titres: "Poppins", system-ui, sans-serif;
+  --police-texte: "Inter", system-ui, sans-serif;
+  --cible-tactile-min: 48px;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--fond-1);
+  color: var(--texte);
+  font-family: var(--police-texte);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--police-titres);
+}
