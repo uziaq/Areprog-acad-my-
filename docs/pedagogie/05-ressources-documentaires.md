@@ -28,11 +28,12 @@ Les normes ISO, IEC et IPC sont payantes (sauf mention). Leur achat est une déc
 | ISO 7637-2 | Perturbations électriques par conduction sur les lignes d'alimentation des véhicules | S17 |
 | ISO 16750-2 | Conditions d'environnement électriques des équipements embarqués | S17 |
 | ISO 10605 | Décharges électrostatiques dans les véhicules routiers | S1, S17 |
-| ISO 26262 | Sécurité fonctionnelle des véhicules routiers | S17, S29 |
+| ISO 26262 | Sécurité fonctionnelle des véhicules routiers | S17, S35 |
+| NF C18-550 | Habilitation électrique pour les opérations sur véhicules à motorisation thermique, électrique ou hybride [À VÉRIFIER : édition et périmètre] | Sécurité véhicule (M9) |
 | ISO 11898-1 / ISO 11898-2 | CAN : couche liaison / couche physique haute vitesse | S23, S25 |
 | ISO 17987 | LIN | S24 |
 | ISO 9141-2, ISO 14230 | K-Line, KWP 2000 | S24 |
-| ISO 14229 | Services de diagnostic UDS (lien avec la pratique atelier) | S22, S29 |
+| ISO 14229 | Services de diagnostic UDS (lien avec la pratique atelier) | S22, S25, S30 |
 | IPC-A-610 | Critères d'acceptabilité des assemblages électroniques | S26–S28 |
 | IPC J-STD-001 | Exigences pour les assemblages soudés | S26–S28 |
 | IPC-7711/7721 | Retouche, modification et réparation des assemblages électroniques | S27, S28 |
@@ -64,8 +65,20 @@ Les normes ISO, IEC et IPC sont payantes (sauf mention). Leur achat est une déc
 | Datasheets de microcontrôleurs automobiles | Familles identifiées sur les calculateurs de récupération, documentation publique uniquement | S20, S22 |
 | Fiches techniques de produits | Flux, alliages, décapants de vernis, vernis de tropicalisation, alcool isopropylique (fiches techniques + FDS) | S1, S26–S28 |
 | Notices des stations de soudage et air chaud | Matériel de l'atelier | S4, S27 |
+| Datasheets de drivers d'injection, de ponts en H et de commutateurs protégés | Composants relevés sur les calculateurs de récupération | S29–S32 |
+| Datasheets de circuits d'airbag, de drivers d'électrovannes ABS / ESP et de ponts de direction | Uniquement les composants relevés sur les cartes et dont la documentation est publique | S35–S38 |
 
 Règle : les « exemples de familles » ci-dessus servent à indiquer **quel type** de document chercher. Le contenu cité dans les cours doit provenir de la datasheet téléchargée, avec sa révision.
+
+## Sources pour les modules M8 et M9
+
+| Source | Usage | Statut |
+|---|---|---|
+| Documentation d'atelier officielle des constructeurs des véhicules d'atelier (procédures de dépose / repose, procédures airbag, purge, calibrations, schémas électriques) | S12, S23, M8, M9 | À obtenir par les abonnements constructeurs ; référence et date notées |
+| Documentation de l'outil de diagnostic (ODIS, ISTA… selon marque) : fonctions guidées, apprentissages, essais | S18, M8, M9 | À relever dans l'outil |
+| Ouvrages de la collection Bosch sur les systèmes de sécurité, de freinage et de direction | S35–S38 | [À VÉRIFIER : titres et éditions] |
+| Documentation des simulateurs d'allumeurs et des charges de substitution utilisés | S35–S39 | Notice du fabricant |
+| Notes d'application publiques sur les entrées capteurs et les étages de puissance automobiles | S29 | À sélectionner chez les fabricants des composants relevés |
 
 ## Ressources gratuites en ligne
 
@@ -81,11 +94,11 @@ Règle : les « exemples de familles » ci-dessus servent à indiquer **quel typ
 | Ressource | Contenu | Création |
 |---|---|---|
 | Journal d'atelier | Une page par séance | Dès S1 |
-| Modèle de dossier de réparation | Réception, symptômes, hypothèses, mesures, intervention, validation, sources | S1, enrichi en S30 et S34 |
+| Modèle de dossier de réparation | Réception, symptômes, hypothèses, mesures, intervention, validation, sources | S1, enrichi en S33 et S39 |
 | Bibliothèque de datasheets | Fichiers + fiche source | Au fil des semaines |
 | Base de connaissances calculateurs | Relevés de cartes et observations, **toujours étiquetés** | À partir de S13 |
 | Inventaire des calculateurs de récupération | Référence, origine, état, usage TP | Avant S7 |
-| Banque de questions QCM | ≥ 40 questions par cours | Avec chaque cours |
+| Banque de questions QCM | 25 questions par cours, dont calculs paramétrés | Avec chaque cours |
 
 ## Ce qui n'existe pas publiquement (et comment le cursus le gère)
 

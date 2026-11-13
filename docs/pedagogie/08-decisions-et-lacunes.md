@@ -6,28 +6,29 @@ Pour chaque décision, une option est appliquée par défaut dans les documents.
 
 | # | Décision | Options | Appliqué par défaut | Pourquoi |
 |---|---|---|---|---|
-| D-01 | Organisation de la microsoudure | A. Fil rouge 1 h / semaine de S4 à S25 puis bloc intensif S26–S28 ; B. Bloc unique plus long en fin de cursus | **A** | Le geste demande de la répétition espacée ; un bloc tardif seul laisse 6 mois sans pratique |
-| D-02 | Calculateurs d'airbag | A. Exclus ; B. Diagnostic et réparation avec protocole renforcé | **B — validé par Arthur le 13/11/2026** | Traités en S31 et S34, sans pyrotechnie à l'atelier, voir [protocole](03-travaux-pratiques.md#protocole-renforcé-pour-les-calculateurs-de-sécurité) |
-| D-03 | Calculateurs ABS / ESP / direction | A. Observation seulement ; B. Diagnostic et réparation avec validation renforcée | **B — validé par Arthur le 13/11/2026** | Traités en S32–S34 ; la validation finale passe par un véhicule d'atelier et l'outil de diagnostic |
-| D-04 | Seuils de validation | QCM ≥ 80 % + 100 % sécurité ; pratique ≥ 70 % ; final ≥ 75 % | **Proposés** | À ajuster selon l'exigence voulue |
-| D-05 | Budget équipement | Liste du [catalogue](03-travaux-pratiques.md#équipement-nécessaire) : indispensable / important / utile | **Indispensable + important** | L'oscilloscope 4 voies et l'air chaud sont les postes les plus coûteux ; choix du modèle à faire par Arthur |
-| D-06 | Achat des normes | A. Acheter les normes clés (IEC 61010-1, ISO 11898-2, IPC-A-610) ; B. Se limiter aux sources gratuites et citer les normes par référence | **B pour démarrer, A avant S23** | Les normes sont payantes ; la règle de fiabilité exige de pouvoir citer une section précise |
-| D-07 | Langue des sources | Accepter des sources en anglais (datasheets, normes, ouvrages) avec glossaire | **Oui** | La quasi-totalité des datasheets n'existe qu'en anglais |
-| D-08 | Évaluateur externe | A. Auto-évaluation seule avec preuves ; B. Un électronicien externe valide les jalons et prépare la panne de l'examen final | **A, B recommandé pour S14, S25, S32** | Une panne préparée par soi-même ne teste pas le diagnostic |
-| D-09 | Ordre de rédaction | A. Cours pilote S1 + S2 complets, revue, puis rythme d'une semaine d'avance ; B. Rédiger tout un module avant de commencer | **A** | Valider le format sur un cours réel avant d'en écrire 32 |
-| D-10 | Type de plateforme | A. Site statique généré depuis le dépôt (simple, hors ligne facile) ; B. Application web avec base de données (journal, multi-appareils) ; C. Hybride : statique pour les cours + module journal | **C, à confirmer** | Les cours sont du contenu versionné ; le journal et les preuves sont des données |
-| D-11 | Familles de calculateurs de récupération | Stock actuel déclaré : module CAS3 BMW, calculateur d'airbag VW T-Cross, ECU Bosch EDC17C60 ; achats possibles | **Inventaire à compléter** (TCU, BCM / BSI, FRM, ABS / ESP, direction manquent) | Les TP S29–S31 demandent au moins un exemplaire par famille, idéalement deux identiques (un de référence, un en panne) |
-| D-13 | Volume consacré aux calculateurs de sécurité | A. Une semaine ; B. Ajouter 3 semaines (cursus de 35 semaines) | **B — validé par Arthur le 13/11/2026** | Module M9 (S31–S34) : airbag, ABS / ESP, direction, validation sur les véhicules d'atelier ; examen final en S35 ; total 280 h |
-| D-14 | Remise en circulation d'un calculateur de sécurité réparé | A. Jamais pendant le cursus, pièces de récupération uniquement ; B. Possible après protocole écrit, validation véhicule et vérification juridique / assurance | **A pendant le cursus, B ensuite** | La responsabilité de l'atelier est engagée en cas d'accident [À VÉRIFIER auprès de l'assureur et d'un juriste] |
+| D-01 | Organisation de la microsoudure | A. Fil rouge 1 h / semaine (20 séances, S4–S24) puis bloc intensif S26–S28 ; B. Bloc unique plus long en fin de cursus | **A** | Le geste demande de la répétition espacée |
+| D-02 | Calculateurs d'airbag | A. Exclus ; B. Diagnostic et réparation avec protocole renforcé | **B — validé par Arthur le 13/11/2026** | Traités en S35, S36 et S39, sans pyrotechnie à l'atelier ; sur véhicule, allumeurs remplacés par des simulateurs ([protocole](03-travaux-pratiques.md#protocole-renforcé-pour-les-calculateurs-de-sécurité)) |
+| D-03 | Calculateurs ABS / ESP / direction | A. Observation seulement ; B. Diagnostic et réparation avec validation renforcée | **B — validé par Arthur le 13/11/2026** | Traités en S37–S39 ; validation finale sur véhicule d'atelier ([sécurité véhicule](03-travaux-pratiques.md#sécurité-véhicule)) |
+| D-04 | Seuils de validation | QCM ≥ 80 % + 100 % sécurité ; pratique ≥ 70 % ; jalon 3 et final ≥ 75 % | **Proposés** | À ajuster selon l'exigence voulue |
+| D-05 | Budget équipement | Liste du [catalogue](03-travaux-pratiques.md#équipement-nécessaire) | **Indispensable + important** | La v0.3 ajoute en indispensable : pince de courant, testeur ESR / LCR, sonde différentielle, préchauffeur dès S15, simulateurs d'allumeurs en nombre suffisant pour un véhicule |
+| D-06 | Achat des normes | A. Acheter les normes clés (IEC 61010-1, ISO 11898-2, IPC-A-610) ; B. Se limiter aux sources gratuites et citer les normes par référence | **B pour démarrer, A avant S23** | La règle de fiabilité exige de pouvoir citer une section précise |
+| D-07 | Langue des sources | Accepter des sources en anglais avec glossaire | **Oui** | La quasi-totalité des datasheets n'existe qu'en anglais |
+| D-08 | Évaluateur tiers | A. Auto-évaluation seule ; B. Un tiers prépare, scelle et corrige les pannes | **B obligatoire pour le jalon 3 (S34) et l'examen final (S40–S41), recommandé pour S14 et S25** | Une panne préparée par soi-même ne teste pas le diagnostic. **Arthur doit désigner ce tiers avant S29.** |
+| D-09 | Ordre de rédaction | A. Cours pilotes S1 + S2, revue, puis une semaine d'avance ; B. Un module entier avant de commencer | **A** | Valider le format sur un cours réel avant d'en écrire 36 |
+| D-10 | Type de plateforme | A. Site statique ; B. Application web avec base de données ; C. Hybride | **C, à confirmer** | Les cours sont du contenu versionné ; le journal et les preuves sont des données |
+| D-11 | Calculateurs de récupération et véhicules d'atelier | Stock déclaré : BMW CAS3, airbag VW T-Cross, ECU Bosch EDC17C60 ; achats possibles ; véhicules d'atelier disponibles | **Inventaire à compléter avant S29** : état de chaque pièce (saine / en panne / inconnu), véhicule d'atelier compatible ; manquent TCU, BCM / BSI, FRM, ABS / ESP, direction | Les TP de M8 et M9 exigent un exemplaire par famille, idéalement deux identiques pour le diagnostic comparatif (TP-44) ; l'airbag T-Cross doit être validé sur un véhicule compatible [À VÉRIFIER : codage et protection des composants côté constructeur] |
 | D-12 | Rythme | 8 h en une journée ou réparties (ex. 2 × 4 h) | **2 × 4 h conseillé** | Meilleure rétention, et le fil rouge gagne à être espacé |
+| D-13 | Durée du cursus | v0.1 : 32 semaines ; v0.2 : 35 ; v0.3 : 41 semaines (328 h) | **41 semaines — ajout de semaines accepté par Arthur le 13/11/2026** | M8 passe de 2 à 6 semaines (dont jalon 3), M9 de 4 à 5, examen final sur 2 semaines |
+| D-14 | Remise en circulation d'un calculateur de sécurité réparé | A. Jamais pendant le cursus ; B. Possible après protocole écrit, validation véhicule et vérification juridique / assurance | **A pendant le cursus, B ensuite** | La responsabilité de l'atelier est engagée [À VÉRIFIER auprès de l'assureur et d'un juriste] |
+| D-15 | Véhicules électrifiés (hybrides, électriques, 48 V) | A. Exclus du cursus ; B. Inclus après habilitation électrique | **A** | Habilitation requise [À VÉRIFIER : NF C18-550] |
 
 ## Lacunes et limites du programme
 
 ### Limites de volume
 
-1. **280 h ne font pas un réparateur expert.** L'objectif réaliste est l'autonomie (N3) sur les fondamentaux et sur des pannes de niveau carte simples à moyennes (alimentation, composants passifs et discrets, mémoires série, étages de sortie, bus). Le diagnostic de pannes internes de microcontrôleur, la réparation BGA et les pannes intermittentes complexes demanderont une seconde phase.
-2. **La thermique et la CEM** (compatibilité électromagnétique) ne sont qu'effleurées (S16, S17). Elles expliquent pourtant une part des pannes. À prévoir en phase 2.
-3. **Pas de module dédié aux capteurs et actionneurs du point de vue carte** : le conditionnement de capteurs est vu en S10 et les étages de sortie en S29, mais un module complet (capteurs inductifs, à effet Hall, ratiométriques ; commande d'injecteurs, de moteurs pas à pas, d'électrovannes proportionnelles) serait utile.
+1. **328 h ne font pas un réparateur expert.** L'objectif réaliste est l'autonomie (N3) sur les fondamentaux et sur des pannes de niveau carte simples à moyennes (alimentation, composants passifs et discrets, mémoires série, étages de sortie, bus). Le diagnostic de pannes internes de microcontrôleur, la réparation BGA et les pannes intermittentes complexes demanderont une seconde phase.
+2. **La thermique et la CEM** (compatibilité électromagnétique) ne sont qu'effleurées (S16, S17, S33). Elles expliquent pourtant une part des pannes. À prévoir en phase 2.
+3. **Capteurs et actionneurs** : traités en une semaine (S29). Les moteurs pas à pas, les électrovannes proportionnelles et les interfaces de sonde lambda large bande ne sont vus qu'en principe.
 4. **Mathématiques** : un test de positionnement est prévu en S1, mais aucune semaine de remise à niveau n'est budgétée. Si le test révèle des lacunes (puissances de 10, logarithmes), il faudra ajouter 4 à 8 h.
 
 ### Limites de sources
@@ -38,23 +39,24 @@ Pour chaque décision, une option est appliquée par défaut dans les documents.
 
 ### Limites de méthode
 
-8. **Pas de correcteur.** L'auto-évaluation, même avec preuves, a un biais. D-08 propose un évaluateur externe pour les jalons.
-9. **Peu de mise en situation sur véhicule avant S32.** Jusqu'à S31, le cursus reste au niveau carte et banc ; les véhicules d'atelier ne sont utilisés qu'à partir de S32. Des TP véhicule pourraient être ajoutés plus tôt (mesures de capteurs en M2, réseaux en M6) sans changer le volume.
-10. **Sécurité fonctionnelle** : le cursus enseigne le diagnostic et la réparation des calculateurs de sécurité (M9, S31–S34), mais un atelier ne peut pas reproduire les essais constructeur. La validation reste partielle et doit le dire explicitement dans chaque dossier.
+8. **Dépendance à un tiers.** Le jalon 3 et l'examen final exigent un tiers (D-08). Sans lui, ces épreuves perdent leur valeur.
+9. **Mise en situation véhicule** : ponctuelle avant M9 (TP-15 en S10, TP-34 en S23), systématique ensuite.
+10. **Sécurité fonctionnelle** : le cursus enseigne le diagnostic et la réparation des calculateurs de sécurité (M9, S35–S39), mais un atelier ne peut pas reproduire les essais constructeur. La validation reste partielle et doit le dire explicitement dans chaque dossier.
 11. **Aspects réglementaires et assurance** (responsabilité de l'atelier sur une pièce réparée, traitement des déchets électroniques, produits chimiques) : non couverts, [À VÉRIFIER] auprès des organismes compétents.
 
 ### Points non tranchés dans le programme
 
-12. **Calendrier** : aucune semaine tampon n'est prévue. Un échec au fil rouge (S25) ou à un jalon décale la suite. Il est recommandé de prévoir 2 à 4 semaines de marge sur l'année.
-13. **Matériel de récupération** : l'inventaire (D-11) conditionne les TP à partir de S7 ; il doit être constitué avant cette date.
+12. **Calendrier** : les 41 semaines n'incluent pas de semaine tampon. Un échec au fil rouge (S24) ou à un jalon décale la suite : prévoir 2 à 4 semaines de marge.
+13. **Matériel de récupération** : l'inventaire (D-11) conditionne les TP à partir de S7, et les pannes de M8 / M9 avant S29.
 
-### Points ajoutés après décision du 13/11/2026
+### Points ajoutés après les décisions et l'audit du 13/11/2026
 
-14. **Antidémarrage (CAS, BSI…)** : le cursus traite le niveau carte uniquement. Toute intervention sur les données d'antidémarrage se limite à des pièces dont la provenance est légitime et documentée.
+14. **Antidémarrage et données de collision** : le cursus n'enseigne ni la modification de données d'antidémarrage ni l'effacement de données de collision ; le CAS est étudié au niveau carte, sur des pièces de provenance légitime et documentée.
+15. **BGA** : présenté, non pratiqué. Les pannes de microcontrôleur BGA restent hors périmètre.
 
 ## Prochaine étape proposée
 
-1. Arthur valide ou modifie les décisions encore ouvertes (D-01, D-04 à D-10, D-12, D-14) et complète l'inventaire D-11.
-2. Rédaction du **cours pilote S1** (sécurité, atelier, méthode) puis **S2** (loi d'Ohm), au format du [gabarit](06-gabarit-cours.md), avec QCM, corrigé et TP.
+1. Arthur valide ou modifie les décisions ouvertes (D-01, D-04 à D-10, D-12, D-14, D-15), désigne le tiers évaluateur (D-08) et complète l'inventaire D-11.
+2. Rédaction des **cours pilotes S1 et S2** au format du [gabarit](06-gabarit-cours.md), avec QCM, corrigé et TP.
 3. Revue des deux cours pilotes, ajustement du gabarit, puis rédaction au rythme d'une semaine d'avance.
-4. Lot L0 de la plateforme (format + contrôle de conformité) quand le cours pilote est validé.
+4. Lot L0 de la plateforme (format + contrôle de conformité) quand les cours pilotes sont validés.

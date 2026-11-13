@@ -5,7 +5,7 @@
 
 ## 1. Finalité
 
-Permettre à un apprenant autodidacte de suivre les 35 semaines dans l'atelier, de
+Permettre à un apprenant autodidacte de suivre les 41 semaines dans l'atelier, de
 s'évaluer de façon honnête et de constituer, en même temps, la documentation technique
 d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 
@@ -22,14 +22,14 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 
 ### 3.1 Parcours et progression
 
-- **F1** Afficher le parcours des 35 semaines par module, avec l'état de chaque cours (verrouillé, disponible, en cours, validé, à reprendre).
+- **F1** Afficher le parcours des 41 semaines par module, avec l'état de chaque cours (verrouillé, disponible, en cours, validé, à reprendre).
 - **F2** Verrouiller un cours tant que ses prérequis ne sont pas validés ; permettre une dérogation manuelle tracée.
 - **F3** Tableau de bord du [référentiel de compétences](01-referentiel-competences.md) : niveau atteint par compétence, preuves associées.
 - **F4** Suivi du temps passé par semaine et par bloc (théorie, exercices, pratique, évaluation), comparé aux 8 h prévues.
 
 ### 3.2 Consultation des cours
 
-- **F5** Afficher les 12 rubriques de chaque cours, navigation par rubrique.
+- **F5** Afficher les 14 rubriques de chaque cours, navigation par rubrique.
 - **F6** Afficher les étiquettes de fiabilité ([SOURCÉ], [EXEMPLE], [HYPOTHÈSE], [À VÉRIFIER]) avec un code visuel distinct ; un clic sur [SOURCÉ] ouvre la fiche source.
 - **F7** Glossaire français / anglais (les datasheets sont en anglais), avec lien vers le cours qui définit chaque terme.
 - **F8** Mode atelier : affichage lisible sur tablette, gros boutons, procédure de TP pas à pas avec cases à cocher, fonctionnement sans réseau.
@@ -64,7 +64,7 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 ### 3.7 Création de contenu
 
 - **F24** Les cours sont écrits en Markdown avec en-tête YAML, versionnés dans ce dépôt Git.
-- **F25** Contrôle automatique de conformité (exécuté à chaque modification) : présence des 12 rubriques, existence des prérequis cités, présence d'une fiche source pour chaque [SOURCÉ], valeurs numériques non étiquetées signalées, banque QCM ≥ 40 questions, corrigé présent et séparé.
+- **F25** Contrôle automatique de conformité (exécuté à chaque modification) : présence des 14 rubriques, existence des prérequis cités, présence d'une fiche source pour chaque [SOURCÉ], valeurs numériques non étiquetées signalées, banque QCM de 25 questions au moins, corrigé présent et séparé.
 - **F26** Statut de relecture par cours (brouillon, relu, validé) et date de dernière vérification des sources.
 
 ## 4. Exigences non fonctionnelles
@@ -83,7 +83,7 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 ## 5. Hors périmètre (version 1)
 
 - Développement de la plateforme (phase suivante).
-- Rédaction des 32 cours.
+- Rédaction des 36 cours.
 - Multi-apprenants, paiement, certification.
 - Connexion directe aux instruments (import de captures par fichier uniquement).
 - Toute fonctionnalité de reprogrammation ou de lecture de calculateur.
@@ -104,7 +104,7 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 - Un cours non conforme au gabarit ne peut pas être publié dans le parcours.
 - Aucune valeur numérique d'un cours publié n'est dépourvue d'étiquette de fiabilité.
 - Une évaluation pratique ne peut pas être validée sans preuve jointe.
-- Le parcours complet S1 → S35 peut être suivi hors ligne sur tablette.
+- Le parcours complet S1 → S41 peut être suivi hors ligne sur tablette.
 
 ## 8. Choix techniques à trancher plus tard
 

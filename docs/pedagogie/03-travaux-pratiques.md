@@ -1,56 +1,90 @@
 # 3. Travaux pratiques, sécurité et équipement
 
+> Version 0.3 : 60 TP numérotés dans l'ordre des semaines, 20 séances de fil rouge,
+> projet transversal « banc de test » (PB-1 à PB-3), protocoles de sécurité étendus
+> au calculateur réel (dès S18) et au véhicule (M9).
+
 ## Principes communs à tous les TP
 
-1. **Basse tension protégée d'abord.** Jusqu'à S16, tous les TP sont alimentés par une alimentation de laboratoire limitée en courant, avec des tensions de circuit ≤ 15 V. Le secteur n'est jamais ouvert ni mesuré.
+1. **Basse tension protégée d'abord.** Jusqu'à S17, tous les TP sont alimentés par une alimentation de laboratoire limitée en courant, avec des tensions de circuit ≤ 15 V. Le secteur n'est jamais ouvert ni mesuré. À partir de S18, le [protocole commun calculateurs réels](#protocole-commun-calculateurs-réels-à-partir-de-s18) s'applique.
 2. **Cartes d'entraînement avant cartes réelles.** Toute opération destructive est d'abord réalisée sur une carte d'entraînement, puis sur un calculateur de récupération (hors service, sans valeur client).
-3. **Jamais de calculateur client pendant le cursus.** Une carte client ne sert de support qu'après validation du domaine concerné, et en dehors du cursus.
-4. **Calculateurs liés à la sécurité** (freinage / ABS / ESP, direction assistée, airbag et prétensionneurs, gestion moteur avec commande de papillon) : voir règle dédiée ci-dessous.
+3. **Jamais de calculateur ni de véhicule client pendant le cursus.**
+4. **Deux voies pour chaque TP de diagnostic (M8, M9)** : panne réelle sur calculateur de récupération, ou panne de niveau carte provoquée, réversible, préparée et scellée par un tiers.
 5. **Mesures attendues.** Chaque TP fournit une valeur théorique calculée et une **tolérance justifiée** : tolérance des composants (marquage / datasheet) + incertitude de l'instrument (notice). Une tolérance sans justification est interdite.
-6. **Livrable systématique** : page de journal d'atelier avec schéma, photos, tableau de mesures, écart théorie / mesure expliqué.
+6. **Limite de courant écrite.** Chaque TP alimenté indique la limite de courant à régler, justifiée par la charge ; un TP sans limite écrite ne commence pas.
+7. **Livrable systématique** : page de journal d'atelier avec schéma, photos, tableau de mesures, écart théorie / mesure expliqué.
+
+## Protocole commun calculateurs réels (à partir de S18)
+
+1. Photos des deux faces avant toute intervention ; inventaire de la carte au journal.
+2. Repérer les **convertisseurs élévateurs et étages à tension interne élevée** (par exemple les étages d'injection d'un ECU moteur diesel, dont la tension survoltée est très supérieure à 12 V [À VÉRIFIER : valeur dans la datasheet du driver relevé sur la carte]).
+3. Après coupure, **mesurer** la décharge des condensateurs de ces étages avant de toucher la carte ou de souder ; ne jamais supposer qu'un temps d'attente suffit.
+4. Mesurer ces nœuds avec une **sonde différentielle** ou un oscilloscope à voies isolées, jamais avec une sonde dont la masse est reliée à la terre.
+5. Mise sous tension progressive avec limitation de courant (méthode S18).
+6. Sauvegarder les mémoires deux fois, empreintes identiques, avant toute écriture ou soudure à proximité.
 
 ## Règle « calculateurs de sécurité »
 
 Décision d'Arthur (13/11/2026) : les calculateurs d'airbag, d'ABS / ESP et de direction
 assistée sont **diagnostiqués et réparés** dans le cursus, pas seulement observés. Ils
-sont traités dans le module M9 (S31–S34), après validation de tout le reste, avec le protocole renforcé ci-dessous.
+sont traités dans le module M9 (S35–S39), après le jalon 3.
 
 | Famille | Quand | Cadre |
 |---|---|---|
-| ECU moteur, TCU | S29–S30 | Diagnostic et réparation sur récupération. La validation doit lister ce qui n'a pas pu être testé. |
-| BCM / BSI / FRM / CAS | S30 | Diagnostic et réparation sur récupération. Éclairage, verrouillage et antidémarrage touchent la sécurité des personnes et des biens. |
-| Airbag | S31, S34 | Diagnostic et réparation sur récupération, protocole renforcé, **jamais de pyrotechnie à l'atelier**. |
-| ABS / ESP | S32, S34 | Diagnostic et réparation sur récupération, protocole renforcé, validation finale sur véhicule d'atelier. |
-| Direction assistée | S33, S34 | Diagnostic et réparation sur récupération, protocole renforcé, validation finale sur véhicule d'atelier. |
+| ECU moteur | S29–S30 | Protocole commun ; tensions internes élevées. |
+| TCU | S31 | Protocole commun. |
+| BCM / BSI / FRM / CAS | S32 | Protocole commun ; éclairage, verrouillage et antidémarrage touchent la sécurité des personnes et des biens. |
+| Airbag | S35, S36, S39 | Protocole renforcé, **jamais de pyrotechnie à l'atelier**, validation véhicule sur simulateurs uniquement. |
+| ABS / ESP | S37, S39 | Protocole renforcé, sécurité véhicule. |
+| Direction assistée | S38, S39 | Protocole renforcé, sécurité véhicule. |
 
 ## Protocole renforcé pour les calculateurs de sécurité
 
 Ce protocole est une proposition pédagogique. Toute valeur (résistance de substitution,
 temps de décharge, tension de réserve) doit venir d'une source identifiée, sinon elle
-reste [À VÉRIFIER] et la mesure prime.
+reste [À VÉRIFIER] et la mesure prime. Il est vérifié par la
+[grille « protocole renforcé »](04-evaluation.md#grille--protocole-renforcé--m9).
 
 **Avant l'intervention**
 
 1. Le calculateur arrive **seul** : aucun module d'airbag, prétensionneur ou autre élément pyrotechnique n'entre dans l'atelier de formation. [À VÉRIFIER : réglementation applicable au stockage et à la manipulation des pyrotechnies automobiles]
-2. Identifier sur la carte la réserve d'énergie (condensateurs de réserve) et les étages de commande des allumeurs, à partir de la carte elle-même et de datasheets publiques, et marquer le relevé [À VÉRIFIER].
-3. Vérifier **par la mesure** que la réserve d'énergie est déchargée avant toute manipulation ou soudure. Ne jamais supposer qu'un temps d'attente suffit.
-4. Sauvegarder la mémoire (EEPROM / Flash) deux fois, empreintes identiques, avant toute intervention. Noter l'état de la mémoire d'événements sans la modifier dans le cadre du cursus.
+2. Identifier sur la carte la réserve d'énergie et les étages de commande des allumeurs, à partir de la carte et de datasheets publiques ; marquer le relevé [À VÉRIFIER].
+3. Vérifier **par la mesure** que la réserve d'énergie est déchargée avant toute manipulation ou soudure.
+4. Sauvegarder la mémoire deux fois, empreintes identiques. Noter l'état de la mémoire d'événements **sans la modifier**.
 
 **Sur banc**
 
-5. Alimentation de labo limitée en courant, mise sous tension progressive (méthode S18).
-6. Sorties d'allumeurs reliées **uniquement** à des charges de substitution résistives (simulateurs d'allumeurs du commerce ou résistances), dont la valeur provient de la documentation de l'outil ou du constructeur. [À VÉRIFIER : valeur par calculateur]
-7. ABS / ESP et direction : charges de substitution pour électrovannes et moteurs dimensionnées d'après les mesures sur l'organe réel ; protection contre les courants élevés (fusible, limitation).
+5. Alimentation de labo limitée en courant, mise sous tension progressive.
+6. Sorties d'allumeurs reliées **uniquement** à des simulateurs d'allumeurs ou résistances, dont la valeur provient de la documentation de l'outil ou du constructeur. [À VÉRIFIER : valeur par calculateur]
+7. ABS / ESP et direction : charges de substitution **réduites** (électrovannes, moteurs), limite de courant écrite par TP, fusible ; l'alimentation de labo n'est pas dimensionnée pour un moteur de pompe ou un pont de direction à pleine charge.
 
 **Validation et traçabilité**
 
-8. Dossier de validation renforcée : ce qui est validé sur banc, ce qui doit l'être sur véhicule avec l'outil de diagnostic (lecture des défauts, codages, apprentissages, essais dynamiques prévus par le constructeur), ce qui ne peut pas l'être en atelier.
-9. Essais sur véhicule : uniquement sur les véhicules d'atelier d'AREPROG, jamais sur un véhicule client pendant le cursus ; procédures airbag du constructeur pour la dépose et la repose ; essais dynamiques sur voie privée selon la procédure constructeur. [À VÉRIFIER : cadre réglementaire et assurance des essais]
-10. Remise en circulation d'un calculateur de sécurité : régie par la [décision D-14](08-decisions-et-lacunes.md), jamais pendant le cursus sans protocole écrit.
+8. Dossier de validation renforcée : ce qui est validé sur banc, ce qui l'est sur véhicule, ce qui ne peut pas l'être en atelier.
+9. Remise en circulation d'un calculateur de sécurité : régie par la [décision D-14](08-decisions-et-lacunes.md), jamais pendant le cursus.
+
+## Sécurité véhicule
+
+S'applique à tout TP sur véhicule d'atelier (TP-15, TP-34, TP-55, TP-57, TP-58, TP-59, S41).
+
+1. **Véhicules électrifiés exclus** (hybrides, électriques, et 48 V tant que la question n'est pas tranchée) sans habilitation électrique adaptée. [À VÉRIFIER : NF C18-550 et niveau d'habilitation requis]
+2. Immobilisation : frein de stationnement, cales, boîte en position de stationnement ; levage sur pont ou chandelles selon la notice ; zone dégagée.
+3. Connexions et déconnexions **batterie débranchée**, selon l'ordre prévu par le constructeur.
+4. **Airbag** : pour un calculateur d'airbag réparé pendant le cursus, tous les modules pyrotechniques du véhicule sont débranchés selon la procédure constructeur et remplacés par des simulateurs ; batterie débranchée pendant les connexions ; personne dans l'habitacle à la première mise sous contact. Un calculateur d'airbag réparé n'est **jamais** mis sous tension face à des allumeurs réels pendant le cursus.
+5. **ABS / ESP** : purge et contrôle de pédale selon le constructeur, puis essais de freinage statiques, avant tout déplacement.
+6. **Direction** : premiers essais véhicule immobilisé, roues décollées si la procédure le prévoit ; calibrations constructeur avant tout roulage.
+7. Essais dynamiques uniquement sur voie privée, selon la procédure constructeur. [À VÉRIFIER : cadre réglementaire et assurance des essais]
+8. **Critères d'arrêt immédiat** écrits avant l'essai (voyant de sécurité, bruit, odeur, comportement anormal de la pédale ou de la direction).
+
+## Ce que le cursus n'enseigne pas
+
+- L'effacement ou la modification de données de collision.
+- La modification de données d'antidémarrage ; le module CAS est étudié au niveau carte uniquement, sur des pièces de provenance légitime et documentée. [À VÉRIFIER : cadre juridique]
+- La reprise de BGA (présentée en S27, hors pratique).
 
 ## Catalogue des TP
 
-Durée indicative : 1 à 3 h. « CE » = carte d'entraînement ou plaque d'essai ; « CR » = calculateur de récupération.
+Durée indicative : 1 à 3 h. « CE » = carte d'entraînement ou plaque d'essai ; « CR » = calculateur de récupération ; « VA » = véhicule d'atelier.
 
 | TP | Semaine | Intitulé | Support | Mesures / livrable principal |
 |---|---|---|---|---|
@@ -68,47 +102,62 @@ Durée indicative : 1 à 3 h. « CE » = carte d'entraînement ou plaque d'essai
 | TP-12 | S8 | Zener et TVS | CE + alim limitée | Tension d'écrêtage vs datasheet |
 | TP-13 | S9 | Commande par NPN | CE | VCE(sat), courant de base |
 | TP-14 | S9 | Commande par MOSFET | CE | VDS en conduction, échauffement, RDS(on) calculée |
-| TP-15 | S10 | Montages AOP | CE | Gain mesuré vs calculé |
+| TP-15 | S10 | Montages AOP + capteur ratiométrique | CE, VA (contact mis, moteur arrêté) | Gain mesuré vs calculé, tension capteur relevée |
 | TP-16 | S10 | Comparateur à hystérésis | CE | Seuils haut / bas mesurés |
 | TP-17 | S11 | Compensation de sonde, longue masse | Oscilloscope | Captures avant / après, explication |
-| TP-18 | S11 | Événement unique | CE (bouton, relais) | Capture du rebond d'un contact |
-| TP-19 | S12 | Découpage d'un schéma public | Schéma d'une carte d'évaluation | Schéma annoté par blocs |
+| TP-18 | S11 | Événement unique, courant à la pince | CE (relais) | Rebond de contact, courant d'appel, FFT d'un signal PWM |
+| TP-19 | S12 | Découpage d'un schéma public + schéma électrique constructeur | Schémas | Schéma annoté par blocs, brochage d'un connecteur relevé sur document officiel |
 | TP-20 | S13 | Relevé d'un bloc d'entrée | CR | Schéma KiCad marqué [À VÉRIFIER] |
 | TP-21 | S15 | Régulateur linéaire sous charge | CE | Dissipation calculée vs température mesurée |
-| TP-22 | S16 | Module buck | Module du commerce | Rendement, ondulation de sortie |
+| TP-22 | S16 | Module buck | Module du commerce | Rendement, ondulation, ESR des condensateurs |
 | TP-23 | S17 | Chaîne d'alimentation d'un calculateur | CR | Schéma de la chaîne d'entrée relevé |
 | TP-24 | S18 | Court-circuit simulé | CE préparée | Localisation et méthode documentée |
-| TP-25 | S18 | Mise sous tension sur banc | CR | Courant de repos et rails mesurés, procédure |
+| TP-25 | S18 | Mise sous tension sur banc | CR | Courant de repos, rails, défauts internes lus à l'outil de diagnostic |
 | TP-26 | S19 | Portes logiques et seuils | CE | Seuils de basculement mesurés |
 | TP-27 | S19 | Analyseur logique sur I²C | Carte d'évaluation | Trame décodée |
 | TP-28 | S20 | Reset et watchdog | Carte de développement | Captures reset / watchdog |
 | TP-29 | S20 | Conditions de vie du MCU | CR | Alimentations, horloge, reset relevés |
 | TP-30 | S21 | EEPROM sur carte d'entraînement | CE + programmateur | Lecture, écriture, vérification par empreinte |
-| TP-31 | S21 | Dépose / lecture / repose EEPROM | CR | Deux sauvegardes identiques, repose contrôlée |
+| TP-31 | S21 | Dépose / lecture / repose EEPROM | CE multicouche | Deux sauvegardes identiques, repose contrôlée |
 | TP-32 | S22 | Programmation par interface de débogage | Carte de développement | Programmation réussie + analyse d'échec |
 | TP-33 | S23 | Banc CAN à deux nœuds | Cartes de développement | Résistance bus, captures différentielles |
-| TP-34 | S23 | Mesures CAN sur calculateur | CR sur banc | Captures CAN-H / CAN-L |
+| TP-34 | S23 | Mesures CAN sur véhicule et calculateur | VA, puis CR sur banc | Captures CAN-H / CAN-L, brochage tiré du schéma officiel |
 | TP-35 | S24 | Banc LIN | Carte de développement + transceiver | Trame LIN capturée |
-| TP-36 | S25 | Pannes de bus provoquées | Banc CAN S23 | Diagnostic de 4 pannes |
+| TP-36 | S25 | Pannes de bus provoquées (épreuve du jalon 2) | Banc CAN S23 | Diagnostic de 4 pannes |
 | TP-37 | S26 | 20 passifs 0603 / 0402 | CE | Taux de conformité au microscope |
-| TP-38 | S27 | Dépose / repose QFP | CE | Contrôle broches, continuité, absence de pont |
-| TP-39 | S27 | Dépose d'un CI sur carte réelle | CR | Composants voisins intacts |
-| TP-40 | S28 | Réparation de pistes et pastilles | CE | Continuité, tenue mécanique |
+| TP-38 | S27 | Dépose / repose QFP et QFN | CE | Contrôle broches, continuité, absence de pont |
+| TP-39 | S27 | Dépose d'une EEPROM et d'un CI sur carte réelle | CR | Composants voisins et pastilles intacts |
+| TP-40 | S28 | Réparation de pistes, pastilles, broche de connecteur | CE | Continuité, tenue mécanique |
 | TP-41 | S28 | Zone corrodée | CR | Avant / après, mesures d'isolement |
-| TP-42 | S29 | Banc de test et simulateur de charges | Matériel atelier | Banc documenté et sécurisé |
-| TP-43 | S29 | Diagnostic complet ECU moteur | CR | Dossier de réparation |
-| TP-44 | S30 | Diagnostic TCU ou BCM / BSI / FRM / CAS | CR | Dossier de réparation |
-| TP-45 | S30 | Consommation au repos et réveil | CR | Courbe de consommation, analyse |
-| TP-46 | S30 | Validation et dossier | CR réparé | Dossier complet avec limites de validation |
-| TP-47 | S31 | Airbag sur banc avec simulateurs d'allumeurs | CR airbag (sans pyrotechnie) | Décharge de la réserve mesurée, sauvegardes, diagnostic |
-| TP-48 | S32 | ABS / ESP sur banc | CR | Étages d'électrovannes et de pompe diagnostiqués, charges de substitution documentées |
-| TP-49 | S34 | Dossier de validation renforcée | CR réparé en M9 | Banc / véhicule / non validable clairement séparés |
-| TP-50 | S32 | Capteurs de roue sur véhicule | Véhicule d'atelier | Captures oscilloscope des signaux de roue |
-| TP-51 | S33 | Étage de puissance de direction sur banc | CR direction | Pont de puissance diagnostiqué |
-| TP-52 | S33 | Capteur de couple sur véhicule | Véhicule d'atelier | Signaux relevés en statique, braquage lent |
-| TP-53 | S34 | Validation véhicule d'un calculateur réparé | Véhicule d'atelier + CR réparé | Défauts, valeurs réelles, codages, apprentissages, essais constructeur documentés |
+| TP-42 | S29 | Entrées capteurs | CE | Signaux inductif, Hall, ratiométrique conditionnés |
+| TP-43 | S29 | Étages de puissance | CE + pince de courant | Low-side, high-side, pont en H, courant d'injecteur simulé |
+| TP-44 | S30 | Diagnostic comparatif | 2 CR identiques | Tableau broche par broche, écarts expliqués |
+| TP-45 | S30 | Diagnostic complet ECU moteur | CR (EDC17C60) | Dossier de réparation |
+| TP-46 | S31 | Diagnostic TCU | CR | Dossier de réparation, mesure de régulation de courant |
+| TP-47 | S32 | Diagnostic BCM / BSI ou FRM | CR | Dossier de réparation, diagnostic de charge |
+| TP-48 | S32 | Module CAS | CR (CAS3) | Conditions de vie, consommation au repos, réveil |
+| TP-49 | S33 | Panne intermittente provoquée | CE ou CR | Méthode de provocation et de localisation |
+| TP-50 | S33 | Validation et dossier | CR réparé en S30–S32 | Dossier complet avec limites de validation |
+| TP-51 | S34 | Épreuve du jalon 3 | CR, panne scellée par un tiers | Voir [évaluation](04-evaluation.md#jalon-3-s34) |
+| TP-52 | S35 | Airbag sur banc avec simulateurs d'allumeurs | CR airbag (T-Cross) | Décharge mesurée, sauvegardes, état de la mémoire noté |
+| TP-53 | S36 | Diagnostic et réparation d'un airbag | CR airbag | Dossier renforcé, absence de défaut d'allumeur sur simulateurs |
+| TP-54 | S37 | ABS / ESP sur banc | CR | Étages d'électrovannes et de pompe, charges réduites documentées |
+| TP-55 | S37 | Capteurs de roue | VA levé | Captures des signaux de roue |
+| TP-56 | S38 | Étage de puissance de direction | CR direction | Pont de puissance diagnostiqué, limite de courant écrite |
+| TP-57 | S38 | Capteur de couple | VA immobilisé | Signaux relevés en statique |
+| TP-58 | S39 | Validation véhicule d'un calculateur M8 | VA + CR réparé | Défauts, valeurs réelles, codages, essais constructeur |
+| TP-59 | S39 | Validation véhicule d'un calculateur de sécurité | VA + CR réparé (airbag : simulateurs) | Sécurité véhicule respectée, essais documentés |
+| TP-60 | S39 | Dossier de validation renforcée | CR réparés en M9 | Banc / véhicule / non validable clairement séparés |
 
-## Fil rouge microsoudure (S4 à S25, 1 h par semaine)
+## Projet transversal « banc de test »
+
+| Étape | Semaine | Contenu | Livrable |
+|---|---|---|---|
+| PB-1 | S18 | Alimentation protégée (fusible, limitation, interrupteurs 30 / 15), câblage d'un connecteur de calculateur | Banc documenté, schéma |
+| PB-2 | S22 | Simulateur de charges : résistives, lampes, inductives, avec mesure de courant | Charges étiquetées avec valeurs mesurées |
+| PB-3 | S24 | Raccordement CAN et prise de diagnostic pour l'outil atelier | Communication outil ↔ calculateur sur banc |
+
+## Fil rouge microsoudure (20 séances, S4 à S24, sans séance en S14)
 
 | FR | Semaine | Exercice | Critère de réussite |
 |---|---|---|---|
@@ -118,21 +167,20 @@ Durée indicative : 1 à 3 h. « CE » = carte d'entraînement ou plaque d'essai
 | FR-04 | S7 | CMS 0805 | 10/10 conformes |
 | FR-05 | S8 | SOD / MELF | Orientation et ménisques corrects |
 | FR-06 | S9 | SOT-23 | 3 broches sans pont |
-| FR-07 | S10 | SOIC-8 | Repose sans pont, continuité vérifiée |
+| FR-07 | S10 | Repose SOIC-8 | Repose sans pont, continuité vérifiée |
 | FR-08 | S11 | Retouche et contrôle | Identification des défauts sur photos |
 | FR-09 | S12 | SOIC-14/16 | Repose conforme |
-| FR-10 | S13 | Prévention des pastilles soulevées | Dépose de 10 composants sans dommage |
-| FR-11 | S15 | Dépose DPAK au fer | Pastille intacte |
+| FR-10 | S13 | Dépose de SOIC-8 au fer (deux fers, pince chauffante ou alliage à bas point de fusion) | Pastilles intactes sur 3 déposes |
+| FR-11 | S15 | Dépose DPAK au fer avec préchauffage | Pastille intacte |
 | FR-12 | S16 | Inductances, électrolytiques CMS | Polarité et tenue |
 | FR-13 | S17 | Composants sous vernis | Retrait local propre |
 | FR-14 | S18 | Remplacement d'un découplage | Valeur et orientation vérifiées |
 | FR-15 | S19 | TSSOP | Repose sans pont |
 | FR-16 | S20 | Quartz / oscillateurs CMS | Repose et fonctionnement |
-| FR-17 | S21 | Repose SOIC-8 au fer | Continuité de chaque broche |
+| FR-17 | S21 | Dépose et repose SOIC-8 au fer | Continuité de chaque broche, pastilles intactes |
 | FR-18 | S22 | Straps en fil émaillé | Strap fixé, isolé, continuité |
 | FR-19 | S23 | SOT-23-5 / 6 | Repose sans pont |
-| FR-20 | S24 | QFN au fer (approche) | Contrôle des côtés visibles |
-| FR-21/22 | S25 | Épreuve fil rouge | Grille [évaluation](04-evaluation.md#épreuve-du-fil-rouge-s25) |
+| FR-20 | S24 | **Épreuve du fil rouge** | Grille [évaluation](04-evaluation.md#épreuve-du-fil-rouge-s24) |
 
 ## Équipement nécessaire
 
@@ -144,29 +192,33 @@ selon le budget (voir [décisions](08-decisions-et-lacunes.md)). Aucune marque n
 | Indispensable | Poste ESD (tapis relié à la terre, bracelet, testeur) | Protéger les cartes | S1 |
 | Indispensable | Alimentation de labo réglable avec limitation de courant (au moins 0–30 V, quelques ampères) | TP et mise sous tension sur banc | S1 |
 | Indispensable | Multimètre TRMS, catégorie de mesure adaptée, notice avec spécifications de précision | Toutes les mesures | S1 |
-| Indispensable | Fer à souder régulé avec pannes fines, flux, tresse, alliage | Fil rouge | S4 |
+| Indispensable | Kits de composants, plaques d'essai, cartes d'entraînement à la soudure | TP | S2 |
+| Indispensable | Fer à souder régulé avec pannes fines, flux, tresse, alliage ; second fer ou pince chauffante ; alliage à bas point de fusion | Fil rouge | S4 |
 | Indispensable | Extracteur de fumées de soudure | Sécurité | S4 |
 | Indispensable | Générateur de fonctions (ou générateur intégré à l'oscilloscope) | Signaux de test | S6 |
-| Indispensable | Oscilloscope numérique 2 voies minimum (4 conseillées pour l'automobile), sondes ×10 | Mesures de signaux | S6 |
+| Indispensable | Oscilloscope numérique 4 voies conseillé, sondes ×10, fonctions math et FFT | Mesures de signaux | S6 |
 | Indispensable | Microscope stéréo ou numérique avec éclairage | Inspection, microsoudure | S7 |
-| Indispensable | Kits de composants, plaques d'essai, cartes d'entraînement à la soudure | TP | S2 |
-| Indispensable | Calculateurs de récupération variés (ECU, TCU, BCM / BSI, FRM) | TP réels | S7 |
-| Indispensable | Station à air chaud + préchauffeur | Microsoudure intensive | S26 |
+| Indispensable | Calculateurs de récupération (voir D-11) | TP réels | S7 |
+| Indispensable | Pince de courant pour oscilloscope | Courants d'actionneurs | S11 |
+| Indispensable | Préchauffeur de carte | Cuivre épais, DPAK | S15 |
+| Indispensable | Testeur ESR / LCR | Condensateurs vieillis | S16 |
+| Indispensable | Sonde différentielle (ou oscilloscope à voies isolées) | Tensions internes élevées, mesures flottantes | S18 |
+| Indispensable | Station à air chaud | Microsoudure intensive | S26 |
 | Important | Analyseur logique USB | Bus numériques | S19 |
 | Important | Interface CAN / LIN USB pour PC | Réseaux | S23 |
 | Important | Cartes de développement microcontrôleur (2 au moins) + transceivers CAN et LIN | Bancs | S20 |
 | Important | Programmateur de mémoires série compatible 3,3 V et 5 V | Mémoires | S21 |
 | Important | Caméra thermique ou module thermique pour smartphone | Localisation de court-circuit | S18 |
 | Utile | Milliohmmètre (ou méthode 4 fils) | Localisation de court-circuit | S18 |
-| Utile | Sonde différentielle haute tension | Mesures flottantes | S29 |
-| Utile | Banc / simulateur de charges construit en TP-42 | Diagnostic | S29 |
-| Indispensable (M9) | Simulateurs d'allumeurs d'airbag (charges résistives de substitution) | Airbag sur banc sans pyrotechnie | S31 |
-| Indispensable (M9) | Charges de substitution de puissance (électrovannes, moteurs) | ABS / ESP, direction | S32 |
-| Indispensable (M9) | Véhicules d'atelier compatibles avec les calculateurs étudiés + outil de diagnostic constructeur | Validation véhicule | S32 |
+| Indispensable (M8) | Banc de test PB-1 à PB-3 | Diagnostic | S29 |
+| Indispensable (M9) | Simulateurs d'allumeurs d'airbag, en nombre suffisant pour remplacer tous les modules pyrotechniques d'un véhicule d'atelier | Airbag sur banc et sur véhicule sans pyrotechnie | S35 |
+| Indispensable (M9) | Charges de substitution de puissance réduites (électrovannes, moteurs) + fusibles | ABS / ESP, direction | S37 |
+| Indispensable (M9) | Alimentation de puissance ou batterie avec chargeur de maintien, si les charges réduites ne suffisent pas | ABS / ESP, direction | S37 |
+| Indispensable (M9) | Véhicules d'atelier compatibles + outil de diagnostic constructeur + pont ou chandelles | Validation véhicule | S10 (VA), S37 |
 
 ## Sécurité chimique et thermique (à détailler dans le cours S1)
 
 - Fumées de flux : aspiration à la source obligatoire.
 - Alliages contenant du plomb : lavage des mains, pas de nourriture au poste. [À VÉRIFIER : obligations réglementaires de l'atelier]
-- Alcool isopropylique et décapants de vernis : lire la fiche de données de sécurité (FDS) de chaque produit avant usage.
+- Alcool isopropylique, décapants de vernis, bombe de froid : lire la fiche de données de sécurité (FDS) de chaque produit avant usage.
 - Air chaud : supports adaptés, jamais d'air chaud près de condensateurs électrolytiques ou de connecteurs sans protection.

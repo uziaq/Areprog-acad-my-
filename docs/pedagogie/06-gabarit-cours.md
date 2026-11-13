@@ -1,7 +1,8 @@
 # 6. Gabarit de cours (structure obligatoire)
 
-Chaque semaine correspond à **un cours**. Chaque cours suit exactement cette structure en
-12 rubriques. Le corrigé est un fichier séparé. Ce gabarit servira aussi de règle de
+Le cursus compte **36 cours** (une semaine chacun) et **5 semaines d'épreuve** sans cours
+(S14, S25, S34, S40, S41). Chaque cours suit exactement cette structure en 14 rubriques
+(12 rubriques de base + « Lien atelier » + « Sécurité spécifique »). Le corrigé est un fichier séparé. Ce gabarit servira aussi de règle de
 validation automatique sur la plateforme (voir [cahier des charges](07-cahier-des-charges-plateforme.md)).
 
 ## En-tête (métadonnées)
@@ -19,7 +20,7 @@ statut: brouillon | relu | validé
 derniere_verification_sources: AAAA-MM-JJ
 ```
 
-## Les 12 rubriques
+## Les 14 rubriques
 
 | # | Rubrique | Contenu attendu | Critère de qualité |
 |---|---|---|---|
@@ -35,6 +36,8 @@ derniere_verification_sources: AAAA-MM-JJ
 | 10 | QCM et évaluation pratique | 15 à 20 questions tirées de la banque, grille pratique | Questions sécurité signalées |
 | 11 | Corrigé séparé | Fichier distinct, débloqué après soumission | Explique aussi les mauvaises réponses |
 | 12 | Sources documentaires | Fiche source pour chaque référence utilisée | Version / révision et date de consultation présentes |
+| 13 | Lien atelier | Situation de diagnostic véhicule qui illustre la notion | Exemple qualitatif ou étiqueté ; jamais une « panne connue » non sourcée |
+| 14 | Sécurité spécifique | Risques propres à la semaine ; à partir de S18, rappel du protocole commun calculateurs réels ; en M9, protocole renforcé et sécurité véhicule | Obligatoire et non vide à partir de S18 ; renvoie aux fautes éliminatoires de l'[évaluation](04-evaluation.md#fautes-de-sécurité-éliminatoires) |
 
 ## Étiquetage dans le texte
 
@@ -58,7 +61,7 @@ cours/
   S05-condensateurs/
     cours.md
     corrige.md          (séparé, verrouillé jusqu'à soumission)
-    qcm.yaml            (banque ≥ 40 questions)
+    qcm.yaml            (banque de 25 questions, dont calculs paramétrés)
     tp.md
     figures/
     sources.yaml
