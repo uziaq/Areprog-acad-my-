@@ -62,7 +62,7 @@ export default function Qcm({ plan, chapitre, titreChapitre, version, banque, ur
   }
 
   async function soumettre(confirme: boolean) {
-    const manquantes = tirage.filter((q) => q.type !== 'ordonnancement' && !reponseRenseignee(reponses[q.id] ?? null)).length;
+    const manquantes = tirage.filter((q) => !reponseRenseignee(reponses[q.id] ?? null)).length;
     if (manquantes > 0 && !confirme) {
       return setPhase({ nom: 'questions', avertissement: `${manquantes} question(s) sans réponse : elles compteront comme fausses.` });
     }

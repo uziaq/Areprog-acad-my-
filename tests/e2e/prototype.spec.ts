@@ -37,6 +37,23 @@ async function repondreQcm(page: Page, fausses: string[] = []) {
   }
 }
 
+/** Met la question d'ordre S02-Q010 dans le bon ordre avec les flèches, puis confirme si rien n'a bougé. */
+async function ordonnerQ010(page: Page) {
+  const q10 = page.getByTestId('question-S02-Q010');
+  const etapes = ['Relever la tension', 'Calculer la puissance', 'Comparer P', 'Conclure'];
+  for (const texte of etapes) {
+    const items = q10.locator('.ordre li');
+    const libelles = await items.locator('span').allTextContents();
+    let i = libelles.findIndex((l) => l.startsWith(texte));
+    while (i > etapes.indexOf(texte)) {
+      await items.nth(i).getByRole('button', { name: /Monter/ }).click();
+      i--;
+    }
+  }
+  const garder = q10.getByRole('button', { name: 'Je garde cet ordre' });
+  if (await garder.isVisible()) await garder.click();
+}
+
 test.describe('prototype AREPROG Academy', () => {
   test('P1 : le tableau de bord affiche le module, le chapitre et son état', async ({ page }) => {
     await page.goto('/');
@@ -110,6 +127,7 @@ test.describe('prototype AREPROG Academy', () => {
     await expect(page.locator('[data-testid^="question-"]')).toHaveCount(10);
     // Une seule erreur, sur une question sécurité : 90 % mais échec.
     await repondreQcm(page, ['S02-Q007']);
+    await ordonnerQ010(page);
     await page.getByRole('button', { name: 'Valider mes réponses' }).click();
     const resultat = page.getByTestId('qcm-resultat');
     await expect(resultat.getByText('✗ QCM non réussi')).toBeVisible();
@@ -120,18 +138,7 @@ test.describe('prototype AREPROG Academy', () => {
     // Nouvelle tentative, tout juste (ordre compris) : réussite.
     await page.getByRole('button', { name: 'Nouvelle tentative' }).click();
     await repondreQcm(page);
-    const q10 = page.getByTestId('question-S02-Q010');
-    for (const texte of ['Relever la tension', 'Calculer la puissance', 'Comparer P', 'Conclure']) {
-      // Fait monter l'élément jusqu'à sa place.
-      const items = q10.locator('.ordre li');
-      const libelles = await items.locator('span').allTextContents();
-      let i = libelles.findIndex((l) => l.startsWith(texte));
-      const cible = ['Relever la tension', 'Calculer la puissance', 'Comparer P', 'Conclure'].indexOf(texte);
-      while (i > cible) {
-        await items.nth(i).getByRole('button', { name: /Monter/ }).click();
-        i--;
-      }
-    }
+    await ordonnerQ010(page);
     await page.getByRole('button', { name: 'Valider mes réponses' }).click();
     await expect(page.getByTestId('qcm-resultat').getByText('✓ QCM réussi')).toBeVisible();
     await expect(page.getByTestId('qcm-resultat').locator('.score')).toHaveText('100 %');

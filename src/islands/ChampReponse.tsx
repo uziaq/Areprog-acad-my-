@@ -13,7 +13,8 @@ interface Props {
 
 export function reponseInitiale(e: Enonce): Reponse | null {
   if (e.type === 'calcul') return { kind: 'numerique', valeur: '', unite: e.unite_attendue ?? '' };
-  if (e.type === 'ordonnancement') return { kind: 'ordre', ids: (e.propositions ?? []).map((p) => p.id) };
+  // Ordre : pas de réponse tant que l'apprenant n'a rien déplacé ni confirmé. Sinon un ordre affiché
+  // par hasard dans le bon sens serait compté juste sans que la question ait été traitée.
   return null;
 }
 
@@ -56,7 +57,9 @@ export function ChampReponse({ enonce, reponse, onChange, desactive }: Props) {
       [n[i], n[i + d]] = [n[i + d]!, n[i]!];
       onChange({ kind: 'ordre', ids: n });
     };
+    const confirme = reponse?.kind === 'ordre';
     return (
+      <>
       <ol class="ordre" aria-label="Ordre des étapes">
         {ids.map((id, i) => (
           <li key={id}>
@@ -67,6 +70,15 @@ export function ChampReponse({ enonce, reponse, onChange, desactive }: Props) {
           </li>
         ))}
       </ol>
+      {!confirme && !desactive && (
+        <p class="note">
+          Réglez l'ordre avec les flèches.{' '}
+          <button type="button" class="bouton bouton--secondaire" onClick={() => onChange({ kind: 'ordre', ids })}>
+            Je garde cet ordre
+          </button>
+        </p>
+      )}
+      </>
     );
   }
   const multiple = enonce.type === 'choix_multiple';

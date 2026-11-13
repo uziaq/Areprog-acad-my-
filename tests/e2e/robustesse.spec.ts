@@ -122,3 +122,18 @@ test('R7 : un résultat obtenu dans un onglet met à jour le tableau de bord ouv
   await expect(ex.getByText('✓ Bonne réponse')).toBeVisible();
   await expect(chapitre).toContainText('En cours');
 });
+
+test('R8 : une question d\'ordre non traitée compte comme sans réponse, même si l\'ordre affiché est juste', async ({ page }) => {
+  await page.goto(QCM);
+  await page.getByRole('button', { name: 'Commencer le QCM' }).click();
+  await page.getByRole('button', { name: 'Valider mes réponses' }).click();
+  await expect(page.getByText('10 question(s) sans réponse')).toBeVisible();
+  await page.getByRole('button', { name: 'Valider quand même' }).click();
+  await expect(page.getByTestId('qcm-resultat').locator('.score')).toHaveText('0 %');
+});
+
+test('R9 : téléphone, en-tête non fixé pour laisser la place au contenu', async ({ page }, info) => {
+  test.skip(info.project.name !== 'telephone', 'propre au format téléphone');
+  await page.goto(LECON);
+  expect(await page.locator('.entete').evaluate((el) => getComputedStyle(el).position)).toBe('static');
+});

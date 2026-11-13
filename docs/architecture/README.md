@@ -23,7 +23,7 @@ qui garde les résultats de l'apprenant **dans l'appareil** avec export / import
 | 5 | [Tests et validation](05-tests-et-validation.md) | Structure des tests, validation du contenu en trois barrières, **critères d'acceptation du prototype** |
 | 6 | [Risques](06-risques.md) | 15 risques et leurs mesures |
 | 7 | [Prototype](07-prototype.md) | Ce qui est livré, critères d'acceptation vérifiés, écarts |
-| 8 | [Test tablette](08-test-tablette.md) | Phase 4 : tests de robustesse, corrections, procédure de test sur la tablette de l'atelier |
+| 8 | [Test sur appareil](08-test-appareil.md) | Phase 4 : tests de robustesse, corrections, procédure de test sur iPhone |
 
 Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges-plateforme.md)
 (fil pédagogique, branche `claude/project-thread-7tl6vf` ; ce lien fonctionnera une fois les deux PR fusionnées).

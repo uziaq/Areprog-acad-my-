@@ -41,7 +41,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   max-width: 64rem; margin: 0 auto; padding: 0.25rem 1rem;
   display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem;
 }
-.marque { font-family: var(--police-titres); font-weight: 700; color: var(--texte-fort); text-decoration: none; font-size: 1.15rem; min-height: var(--cible-tactile-min); display: flex; align-items: center; }
+.marque { font-family: var(--police-titres); font-weight: 700; color: var(--texte-fort); text-decoration: none; font-size: 1.15rem; min-height: var(--cible-tactile-min); display: flex; flex-wrap: wrap; align-items: center; column-gap: 0.3em; }
 .marque span { color: var(--lien); }
 .nav { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-left: auto; }
 .nav a {
@@ -97,7 +97,7 @@ label { cursor: pointer; }
 /* ---------- Badges ---------- */
 .badge {
   display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.1rem 0.6rem;
-  border-radius: 999px; border: 1px solid currentColor; font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+  border-radius: 999px; border: 1px solid currentColor; font-size: 0.85rem; font-weight: 600; white-space: normal; max-width: 100%;
 }
 .badge--succes { color: var(--succes); }
 .badge--erreur { color: var(--erreur); }
@@ -109,7 +109,7 @@ label { cursor: pointer; }
 .etiquette {
   display: inline-flex; align-items: center; gap: 0.3rem; margin: 0 0.15rem; padding: 0 0.45rem;
   border: 1px solid currentColor; border-radius: 6px; font-size: 0.78rem; font-weight: 700;
-  letter-spacing: 0.02em; vertical-align: 0.1em; text-decoration: none; white-space: nowrap;
+  letter-spacing: 0.02em; vertical-align: 0.1em; text-decoration: none; white-space: normal; -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
 .etiquette-picto { font-weight: 800; }
 .etiquette--source { color: var(--etiquette-source); }
@@ -177,4 +177,10 @@ label { cursor: pointer; }
 @media print {
   .entete, .actions, .nav { display: none; }
   body { background: white; color: black; }
+}
+
+/* ---------- Téléphone : l'en-tête ne reste pas fixé (il occuperait un tiers de l'écran) ---------- */
+@media (max-width: 600px) {
+  .entete { position: static; }
+  .nav a { padding: 0 0.6rem; }
 }
