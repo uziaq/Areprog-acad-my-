@@ -42,6 +42,13 @@ export function competencesAVenir(): string[] {
   return referentiel.map((c) => c.code).filter((c) => !publiees.has(c));
 }
 
+/** Première semaine du programme pas encore rédigée (null si toutes le sont). */
+export function premiereSemaineAVenir(): string | null {
+  const programme = parse(readFileSync(join(process.cwd(), 'content', 'programme.yaml'), 'utf8')) as { semaines: { id: string }[] };
+  const publies = new Set(chapitresPublies().map((c) => c.id));
+  return programme.semaines.map((w) => w.id).find((id) => !publies.has(id)) ?? null;
+}
+
 export function chapitre(id: string): InfoChapitre {
   const c = chapitres().find((x) => x.id === id);
   if (!c) throw new Error(`Chapitre ${id} absent de content/parcours`);
