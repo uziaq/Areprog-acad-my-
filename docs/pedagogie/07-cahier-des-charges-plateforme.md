@@ -52,7 +52,7 @@ d'AREPROG (journal, dossiers de réparation, base de connaissances sourcée).
 
 - **F17** Journal d'atelier : une entrée par séance, avec texte, photos (microscope, carte), captures d'oscilloscope importées, tableau de mesures (valeur théorique, tolérance, mesure, écart, commentaire).
 - **F18** Dossier de réparation structuré : réception, symptôme, hypothèses (étiquetées), mesures, intervention, composants remplacés (référence, source d'achat), validation, limites, sources.
-- **F19** Inventaire des calculateurs de récupération et de leur usage en TP.
+- **F19** Registre des calculateurs d'exercice (référence, panne, tout venant), suivi de la liste d'achats et de son usage en TP.
 - **F20** Base de connaissances : chaque fiche porte obligatoirement une étiquette de fiabilité, un nombre d'observations, et les dossiers qui la justifient. Une fiche [À VÉRIFIER] ne peut passer en [SOURCÉ] qu'avec une référence.
 
 ### 3.6 Bibliothèque documentaire

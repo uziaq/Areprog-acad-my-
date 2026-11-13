@@ -67,7 +67,7 @@ reste [À VÉRIFIER] et la mesure prime. Il est vérifié par la
 
 S'applique à tout TP sur véhicule d'atelier (TP-15, TP-34, TP-55, TP-57, TP-58, TP-59, S41).
 
-1. **Véhicules électrifiés exclus** (hybrides, électriques, et 48 V tant que la question n'est pas tranchée) sans habilitation électrique adaptée. [À VÉRIFIER : NF C18-550 et niveau d'habilitation requis]
+1. **Véhicules électrifiés exclus pour l'instant** (hybrides, électriques, 48 V) : décision d'Arthur du 13/11/2026 (D-15). Une réintégration supposerait une habilitation électrique adaptée. [À VÉRIFIER : NF C18-550 et niveau d'habilitation requis]
 2. Immobilisation : frein de stationnement, cales, boîte en position de stationnement ; levage sur pont ou chandelles selon la notice ; zone dégagée.
 3. Connexions et déconnexions **batterie débranchée**, selon l'ordre prévu par le constructeur.
 4. **Airbag** : pour un calculateur d'airbag réparé pendant le cursus, tous les modules pyrotechniques du véhicule sont débranchés selon la procédure constructeur et remplacés par des simulateurs ; batterie débranchée pendant les connexions ; personne dans l'habitacle à la première mise sous contact. Un calculateur d'airbag réparé n'est **jamais** mis sous tension face à des allumeurs réels pendant le cursus.
@@ -191,14 +191,14 @@ selon le budget (voir [décisions](08-decisions-et-lacunes.md)). Aucune marque n
 |---|---|---|---|
 | Indispensable | Poste ESD (tapis relié à la terre, bracelet, testeur) | Protéger les cartes | S1 |
 | Indispensable | Alimentation de labo réglable avec limitation de courant (au moins 0–30 V, quelques ampères) | TP et mise sous tension sur banc | S1 |
-| Indispensable | Multimètre TRMS, catégorie de mesure adaptée, notice avec spécifications de précision | Toutes les mesures | S1 |
+| Indispensable | Multimètre : celui de l'atelier (basique) suffit de S1 à S3 s'il porte une catégorie de mesure, une entrée courant protégée par fusible et une notice ; un multimètre TRMS avec spécifications de précision publiées est recommandé avant S4 (voir D-05) | Toutes les mesures | S1 |
 | Indispensable | Kits de composants, plaques d'essai, cartes d'entraînement à la soudure | TP | S2 |
 | Indispensable | Fer à souder régulé avec pannes fines, flux, tresse, alliage ; second fer ou pince chauffante ; alliage à bas point de fusion | Fil rouge | S4 |
 | Indispensable | Extracteur de fumées de soudure | Sécurité | S4 |
 | Indispensable | Générateur de fonctions (ou générateur intégré à l'oscilloscope) | Signaux de test | S6 |
 | Indispensable | Oscilloscope numérique 4 voies conseillé, sondes ×10, fonctions math et FFT | Mesures de signaux | S6 |
 | Indispensable | Microscope stéréo ou numérique avec éclairage | Inspection, microsoudure | S7 |
-| Indispensable | Calculateurs de récupération (voir D-11) | TP réels | S7 |
+| Indispensable | Calculateurs de récupération, selon la [liste d'achats](#liste-dachats-des-calculateurs-dexercice) | TP réels | S7 |
 | Indispensable | Pince de courant pour oscilloscope | Courants d'actionneurs | S11 |
 | Indispensable | Préchauffeur de carte | Cuivre épais, DPAK | S15 |
 | Indispensable | Testeur ESR / LCR | Condensateurs vieillis | S16 |
@@ -215,6 +215,30 @@ selon le budget (voir [décisions](08-decisions-et-lacunes.md)). Aucune marque n
 | Indispensable (M9) | Charges de substitution de puissance réduites (électrovannes, moteurs) + fusibles | ABS / ESP, direction | S37 |
 | Indispensable (M9) | Alimentation de puissance ou batterie avec chargeur de maintien, si les charges réduites ne suffisent pas | ABS / ESP, direction | S37 |
 | Indispensable (M9) | Véhicules d'atelier compatibles + outil de diagnostic constructeur + pont ou chandelles | Validation véhicule | S10 (VA), S37 |
+
+## Liste d'achats des calculateurs d'exercice
+
+Décision d'Arthur (13/11/2026) : l'état des calculateurs déjà en stock n'a pas d'importance,
+les calculateurs d'exercice sont achetés. Pour chaque famille : **un exemplaire de référence**
+(fonctionnel, sert de comparaison au TP-44 et de support aux relevés) et **un exemplaire en panne**
+(panne réelle, ou panne provoquée et scellée par un tiers sur un exemplaire sain).
+Le stock actuel (BMW CAS3, airbag VW T-Cross, Bosch EDC17C60) peut servir de premier exemplaire
+dans sa famille.
+
+| Famille | Exemplaires | Première semaine d'usage | Condition d'achat |
+|---|---|---|---|
+| Calculateurs « tout venant » (toutes familles, état indifférent) | 3 à 5 | S7 (TP-10), puis S13, S17, S20, S27, S28 | Les moins chers ; servent à l'inventaire, aux relevés et à la microsoudure destructive |
+| ECU moteur | 2 identiques (référence + panne) | S18 (TP-25), S30 (TP-44, TP-45) | Même référence matérielle que l'EDC17C60 en stock, ou une paire neuve ; compatible avec un véhicule d'atelier pour TP-58 |
+| TCU | 2 identiques | S31 (TP-46) | Préférer un TCU séparé de la boîte (plus simple à manipuler qu'une mécatronique) [HYPOTHÈSE pédagogique] |
+| BCM / BSI | 2 identiques | S32 (TP-47) | Compatible avec un véhicule d'atelier si possible |
+| FRM ou module d'éclairage équivalent | 1 à 2 | S32 (TP-47) | Optionnel si le BCM / BSI couvre le TP |
+| CAS (ou module d'accès équivalent) | 2 identiques | S32 (TP-48) | Le CAS3 en stock compte pour un ; provenance légitime documentée |
+| Airbag | 2 identiques | S35 (TP-52), S36 (TP-53) | Le calculateur T-Cross en stock compte pour un ; **compatible avec un véhicule d'atelier** pour TP-59 ; aucun module pyrotechnique acheté |
+| ABS / ESP (partie électronique) | 2 identiques | S37 (TP-54) | Compatible avec un véhicule d'atelier ; vérifier si la partie électronique se sépare du bloc hydraulique [À VÉRIFIER par référence] |
+| Direction assistée électrique | 2 identiques | S38 (TP-56) | Compatible avec un véhicule d'atelier ; calculateur séparable de la crémaillère ou colonne si possible [À VÉRIFIER par référence] |
+
+Échéances : les « tout venant » avant S7 ; ECU moteur avant S18 ; TCU, BCM / BSI, FRM, CAS avant S29 ;
+airbag, ABS / ESP et direction avant S35.
 
 ## Sécurité chimique et thermique (à détailler dans le cours S1)
 

@@ -72,7 +72,7 @@ En pratique, prévoir 2 à 4 semaines tampon dans le calendrier réel (échec de
 
 - **Prérequis** : S3.
 - **Objectifs** : choisir le bon calibre et les bonnes bornes ; calculer l'incertitude d'une lecture à partir de la notice de son multimètre ; mettre en évidence l'effet de charge d'un voltmètre ; mesurer un courant sans détruire le fusible.
-- **Contenu** : architecture d'un multimètre ; impédance d'entrée ; spécification « ±(x % lecture + n digits) » ; TRMS ; mesures de continuité et de jonction ; mesures en circuit hors tension ; faux contacts et pointes de touche.
+- **Contenu** : architecture d'un multimètre ; impédance d'entrée ; spécification « ±(x % lecture + n digits) » ; TRMS et limites d'un multimètre basique (valeur efficace fausse sur un signal non sinusoïdal : vérification à l'oscilloscope en S6) ; mesures de continuité et de jonction ; mesures en circuit hors tension ; faux contacts et pointes de touche.
 - **TP** : TP-06 Incertitude et effet de charge ; **FR-01** Fer à souder : étamage, soudure de fils et de traversants.
 
 ### S5 — Condensateurs, inductances, régimes transitoires

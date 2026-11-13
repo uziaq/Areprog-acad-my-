@@ -239,7 +239,7 @@ Quinze apports. Les calculs ont été refaits à la rédaction de cette section 
 | Modèle de dossier de réparation | Réception, symptômes, hypothèses, mesures, intervention, validation, sources | S1, enrichi en S33 et S39 |
 | Bibliothèque de datasheets | Fichiers + fiche source | Au fil des semaines |
 | Base de connaissances calculateurs | Relevés de cartes et observations, **toujours étiquetés** | À partir de S13 |
-| Inventaire des calculateurs de récupération | Référence, origine, état, usage TP | Avant S7 |
+| Registre des calculateurs d'exercice | Référence, origine, date d'achat, rôle (référence / panne / tout venant), usage TP, d'après la [liste d'achats](03-travaux-pratiques.md#liste-dachats-des-calculateurs-dexercice) | Avant S7 |
 | Banque de questions QCM | 25 questions par cours, dont calculs paramétrés | Avec chaque cours |
 
 ## Ce qui n'existe pas publiquement (et comment le cursus le gère)
