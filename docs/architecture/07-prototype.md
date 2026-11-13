@@ -35,7 +35,7 @@ En plus : fiche source, service worker hors ligne, manifeste (installation sur l
 | T6 | Couleurs AREPROG via jetons, contraste AA | ✓ avec un ajustement (voir ci-dessous) | `tests/architecture/contraste.test.ts` |
 | T7 | JavaScript de la leçon < 60 Ko compressé | ✓ 11,7 Ko | e2e « T7 » |
 | T8 | Dépendances limitées | ✓ | 3 en production, aucune ajoutée en phase 3 |
-| T9 | Aucun déploiement | ✓ | dépôt relié à aucun site |
+| T9 | Aucun déploiement public | ✓ | seul un aperçu privé non listé et non indexé, autorisé par Arthur pour le test iPhone |
 | C1 | Aucune valeur non étiquetée | ✓ | `npm run valider` : 0 erreur |
 | C2 | Aucune donnée constructeur, schéma `origine: areprog` | ✓ | validateur |
 | C3 | Texte repris du cours pilote ou marqué démonstration | Partiel | le cours pilote S2 n'est pas encore rédigé : la leçon a été écrite pour le prototype à partir du programme S2, en `statut: brouillon`, à relire |
@@ -61,5 +61,5 @@ npm run preview    # http://localhost:4321, aussi accessible depuis la tablette 
 ## Suite (phase 4 puis 5)
 
 - Relecture de la leçon S02-L01 par Arthur (et les agents `expert-electronique`, `verificateur-documentaire`).
-- Test sur l'iPhone d'Arthur (pas de tablette) : écran d'accueil, hors ligne, conservation des données par Safari (risque R3). Procédure dans [08-test-appareil.md](08-test-appareil.md).
+- ✓ Fait le 2026-11-13, validé par Arthur sur l'aperçu Netlify privé. Test sur l'iPhone d'Arthur (pas de tablette) : écran d'accueil, hors ligne, conservation des données par Safari (risque R3). Procédure dans [08-test-appareil.md](08-test-appareil.md).
 - Compléter la banque QCM à 40 questions, ajouter les leçons S02-L02 et S02-L03, puis S01.

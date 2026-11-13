@@ -67,6 +67,12 @@ désormais couvert par les tests automatiques ; le test réel vérifie ce qu'ils
 10. (Aperçu HTTPS seulement) Partager → « Sur l'écran d'accueil » crée l'icône AREPROG Academy ; en mode
     avion, l'application ouverte depuis cette icône affiche la leçon, l'exercice et le QCM.
 
+### Résultat (2026-11-13)
+
+Test fait par Arthur sur son iPhone, à partir de l'aperçu Netlify privé (projet
+`areprog-academy-apercu-6beacc01`, adresse non listée, en-têtes `noindex`) : « tout est bon et
+fonctionnel ». Phase 4 validée. L'aperçu reste privé et pourra être supprimé à sa demande.
+
 ### Point d'attention propre à l'iPhone
 
 Safari peut effacer les données d'un site qui n'a pas été ouvert depuis plusieurs jours, sauf s'il est
