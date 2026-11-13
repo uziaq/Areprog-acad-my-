@@ -15,6 +15,7 @@
 | Gabarit v0.3 | règle `rubriques` | rubriques 13 « Lien atelier » et 14 « Sécurité spécifique » (obligatoire et non vide à partir de S18) contrôlées |
 | Parcours | `/parcours/` | les 41 semaines par module ; les semaines rédigées sont ouvertes, les autres marquées « À venir » ; jalons et protocole renforcé signalés |
 | Compétences | `/competences/` | les 56 compétences, celles à venir regroupées par domaine |
+| Évaluation pratique (lot L2) | `content/evaluation/grilles.yaml`, page `/parcours/…/tp/tp-xx/` | grille générique et grille protocole renforcé, fautes éliminatoires par module, preuves photo ou note stockées sur l'appareil et sauvegardées ; un chapitre devient « validé » (QCM + TP) |
 | Générateur | `node scripts/nouveau-chapitre.ts S03 kirchhoff-diviseurs` | crée le dossier du module s'il manque, et le squelette du chapitre avec titre, module, prérequis, TP et compétences tirés du programme et du référentiel |
 
 Règle de synchronisation : `docs/pedagogie/02-programme-41-semaines.md` reste la référence rédigée ;
@@ -29,7 +30,7 @@ d'Arthur. L'application s'étend par lots, chacun déclenché quand le contenu e
 | Ordre | Lot | Contenu | Déclencheur | Critère de fin |
 |---|---|---|---|---|
 | 1 | Contenu S01 et fin de S02 | S01 complet, S02-L02 et S02-L03, banques QCM | Maintenant | `npm run valider` sans erreur, S01 et S02 en « relu », relecture d'Arthur |
-| 2 | **L2 : grilles pratiques** (F15) | TP noté avec critères, preuve photo obligatoire avant de cocher, fautes éliminatoires bloquantes ; un chapitre devient enfin « validé » | Avant la fin de S02 (aujourd'hui aucun chapitre ne peut être validé) | Un TP-03 noté de bout en bout, photo stockée sur l'appareil et incluse dans la sauvegarde |
+| 2 | **L2 : grilles pratiques** (F15) (fait) | TP noté avec critères, preuve photo obligatoire avant de cocher, fautes éliminatoires bloquantes ; un chapitre devient enfin « validé » | Avant la fin de S02 (aujourd'hui aucun chapitre ne peut être validé) | Un TP-03 noté de bout en bout, photo stockée sur l'appareil et incluse dans la sauvegarde |
 | 3 | L1 fin : glossaire (F7), navigation par rubrique (F5), temps passé (F4) | | Avec S03–S04 | Glossaire relié aux cours, temps par semaine affiché |
 | 4 | **L3 : journal d'atelier, dossiers de réparation, inventaire, mode atelier** (F8, F17–F19) | Procédure de TP pas à pas avec cases à cocher, journal avec photos et tableau de mesures | Avant S18 (premiers calculateurs réels) | Une séance de TP complète saisie hors ligne, exportée en PDF |
 | 5 | L4 : calculateurs et simulateur d'oscilloscope (F9–F12) | Un outil par besoin : diviseur chargé (S3), RC (S5), filtre (S6), oscilloscope simulé (avant S6 et S11), incertitude (S4) | Une à deux semaines avant le cours qui l'utilise | Chaque outil affiche ses hypothèses, testé contre des valeurs de référence |

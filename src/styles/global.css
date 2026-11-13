@@ -194,3 +194,15 @@ label { cursor: pointer; }
 .semaine--a-venir .semaine-id { color: var(--texte-attenue); }
 details > summary { padding: 0.75rem 0; cursor: pointer; font-weight: 600; }
 .champ-fichier:disabled + label { opacity: 0.6; }
+
+/* Évaluation pratique (TP noté) */
+.liste-preuves { list-style: none; padding: 0; display: grid; gap: 0.5rem; margin: 0.75rem 0; }
+.liste-preuves li { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; padding: 0.5rem; border: 1px solid var(--bordure); border-radius: var(--rayon); background: var(--fond-1); }
+.liste-preuves li > span { flex: 1; min-width: 12rem; overflow-wrap: anywhere; }
+.vignette { width: 8rem; height: 6rem; object-fit: cover; border-radius: var(--rayon); }
+.note-rapide { display: grid; gap: 0.5rem; width: 100%; }
+.note-rapide textarea { width: 100%; font: inherit; color: var(--texte); background: var(--fond-1); border: 2px solid var(--bordure); border-radius: var(--rayon); padding: 0.5rem; }
+.liste-criteres li + li { margin-top: 0.4rem; }
+/* Un fieldset garde par défaut la largeur de son contenu : au zoom 200 % sur téléphone, il déborderait. */
+fieldset { min-width: 0; }
+.choix label span { min-width: 0; overflow-wrap: anywhere; }

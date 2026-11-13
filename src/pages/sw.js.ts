@@ -14,7 +14,7 @@ export const GET: APIRoute = () => {
     '/competences/',
     '/historique/',
     '/sauvegarde/',
-    ...site.plan.modules.flatMap((m) => [m.url, ...m.chapitres.flatMap((c) => [c.urlQcm, ...c.lecons.map((l) => l.url)])]),
+    ...site.plan.modules.flatMap((m) => [m.url, ...m.chapitres.flatMap((c) => [c.urlQcm, ...c.lecons.map((l) => l.url), ...c.tp.map((t) => t.url)])]),
     ...[...site.sources.keys()].map(urlSource),
   ];
   const fichiers = [

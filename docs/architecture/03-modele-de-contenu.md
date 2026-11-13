@@ -188,6 +188,53 @@ lien: https://…
 fichier_local: null      # jamais de fichier sous licence restrictive dans le dépôt
 ```
 
+## 3.8 bis Travaux pratiques et grilles d'évaluation pratique
+
+Un TP est un fichier `<chapitre>/tp/TP-xx.md`, listé dans `tp:` de `chapitre.md` et du programme.
+En-tête : `id`, `titre`, `chapitre`, `version`, `statut`, `support`, `securite` (`standard` ou
+`renforcee`), `domaines_risque`, `competences`, et `livrables` : la liste des preuves attendues
+(photo du montage, du réglage de la limite de courant, tableau de mesures…), affichée à l'apprenant
+au moment de l'évaluation.
+
+Les grilles sont communes à tous les TP : `content/evaluation/grilles.yaml`.
+
+```yaml
+fautes_eliminatoires:
+  - id: FE-01
+    texte: Manipulation de carte hors poste ESD ou sans bracelet
+    modules: []            # vide = tous les modules ; sinon [M1, M2]
+grilles:
+  - id: generique          # appliquée à tout TP
+    titre: Grille générique d'évaluation pratique
+    criteres:
+      - id: preparation
+        texte: Préparation (…)
+        poids: 20          # en points sur 100 ; la grille générique totalise 100
+        eliminatoire_si: Absence de valeur théorique calculée avant la mesure
+  - id: renforcee          # ajoutée pour un TP « securite: renforcee »
+    titre: Grille protocole renforcé
+    criteres:
+      - id: decharge-mesuree
+        texte: Décharge de la réserve d'énergie mesurée avant manipulation
+        poids: 0           # critère purement éliminatoire : eliminatoire_si obligatoire
+        eliminatoire_si: Critère non respecté ou sans preuve
+        sans_objet_possible: false
+```
+
+Notation (`src/lib/evaluation/pratique.ts`, d'après `docs/pedagogie/04-evaluation.md`) :
+
+- niveau par critère : atteint (100 %), partiellement atteint (50 %), non atteint (0) ;
+- **un critère sans preuve vaut 0** (photo prise sur l'appareil, ou note : valeurs relevées) ;
+- chaque faute éliminatoire du module est écartée une à une par l'apprenant ; une seule non écartée,
+  ou une condition « éliminatoire si » non écartée, rend l'évaluation nulle ;
+- un critère de la grille renforcée n'est respecté qu'avec confirmation **et** preuve, ou « sans objet »
+  quand il le permet (étape sur véhicule lors d'un TP sur banc) ;
+- réussite : note ≥ `pratique.seuil_reussite` (70 %) et aucune élimination.
+
+Un chapitre est **validé** quand son dernier QCM est réussi et que la dernière évaluation pratique
+de chacun de ses TP est réussie. Les photos sont réduites (1600 px, JPEG) et stockées sur l'appareil ;
+elles font partie de la sauvegarde (format version 2).
+
 ## 3.9 Étude de cas ECU
 
 Chaque cas porte obligatoirement `nature: fictif_pedagogique` ou `nature: dossier_reel_anonymise`.

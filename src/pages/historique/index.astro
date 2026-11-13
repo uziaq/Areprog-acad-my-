@@ -6,6 +6,7 @@ const site = chargerSite();
 const versions: Record<string, string> = Object.fromEntries([
   ...site.versionsExercices,
   ...[...site.chapitres.values()].map(({ chapitre }) => [chapitre.id, chapitre.version] as [string, string]),
+  ...[...site.tps.values()].map(({ tp }) => [tp.id, tp.version] as [string, string]),
 ]);
 ---
 <Base titre="Historique" actif="historique">

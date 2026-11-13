@@ -6,7 +6,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 const LECON = '/parcours/m1/s02/s02-l01/';
 const QCM = '/parcours/m1/s02/qcm/';
-const PAGES = ['/', '/parcours/', '/parcours/m1/', LECON, QCM, '/competences/', '/historique/', '/sauvegarde/', '/sources/src-0001/'];
+const PAGES = ['/', '/parcours/', '/parcours/m1/', LECON, QCM, '/parcours/m1/s02/tp/tp-03/', '/competences/', '/historique/', '/sauvegarde/', '/sources/src-0001/'];
 
 function surveillerErreurs(page: Page): string[] {
   const erreurs: string[] = [];

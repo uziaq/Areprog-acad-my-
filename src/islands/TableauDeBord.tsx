@@ -61,7 +61,23 @@ export default function TableauDeBord({ plan }: { plan: Plan }) {
                     <p class="note" style={{ margin: 0 }}>Prérequis {s.prerequisAbsents.join(', ')} : pas encore publié dans l'application.</p>
                   )}
                   {s.etat === 'a_rejouer' && <p class="alerte">Deux échecs consécutifs au QCM : rejouez la semaine avant de continuer.</p>}
-                  {s.etat === 'qcm_reussi' && <p class="note">Validation complète du chapitre : évaluation pratique (TP noté) à venir dans l'application.</p>}
+                  {s.etat === 'qcm_reussi' && s.pratiqueIndisponible && <p class="note">Validation complète du chapitre : TP noté pas encore publié dans l'application.</p>}
+                  {s.etat === 'qcm_reussi' && s.tpRestants.length > 0 && <p class="note">Pour valider le chapitre, réussissez l'évaluation pratique : {s.tpRestants.map((t) => t.id).join(', ')}.</p>}
+                  {c.tp.length > 0 && (
+                    <p class="note" style={{ margin: '0.25rem 0' }}>
+                      TP notés :{' '}
+                      {c.tp.map((t, i) => {
+                        const derniere = tentatives.filter((x) => x.type === 'pratique' && x.ref === t.id).sort((a, b) => a.date.localeCompare(b.date)).at(-1);
+                        return (
+                          <>
+                            {i > 0 && ' · '}
+                            <a href={t.url}>{t.id}</a>
+                            {derniere && <> : <strong data-testid={`dernier-tp-${t.id}`}>{pourcentage(derniere.score)}</strong> {derniere.reussi ? '✓' : '✗'}</>}
+                          </>
+                        );
+                      })}
+                    </p>
+                  )}
                   <div class="actions">
                     {prochaine ? (
                       <a class="bouton" href={prochaine.url}>{consultees.size ? 'Continuer' : 'Commencer'} : {prochaine.titre}</a>
@@ -72,6 +88,9 @@ export default function TableauDeBord({ plan }: { plan: Plan }) {
                       <a class={`bouton ${prochaine ? 'bouton--secondaire' : ''}`} href={c.urlQcm}>
                         {s.dernierQcm ? 'Repasser le QCM' : 'Passer le QCM'}
                       </a>
+                    )}
+                    {s.etat === 'qcm_reussi' && s.tpRestants[0] && (
+                      <a class="bouton" href={s.tpRestants[0].url}>Évaluation pratique {s.tpRestants[0].id}</a>
                     )}
                   </div>
                 </li>

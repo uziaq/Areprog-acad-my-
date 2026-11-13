@@ -21,12 +21,13 @@ export default function Historique({ versions }: { versions: Record<string, stri
             return (
               <tr>
                 <td>{formaterDate(t.date)}</td>
-                <td>{t.type === 'qcm' ? `QCM du chapitre ${t.chapitre}` : `Exercice ${t.ref}`}</td>
+                <td>{t.type === 'qcm' ? `QCM du chapitre ${t.chapitre}` : t.type === 'pratique' ? `TP noté ${t.ref}` : `Exercice ${t.ref}`}</td>
                 <td>
                   <span class={`badge badge--${t.reussi ? 'succes' : 'erreur'}`}>
-                    {t.type === 'qcm' ? pourcentage(t.score) : t.reussi ? 'Réussi' : 'Échoué'}
+                    {t.type === 'exercice' ? (t.reussi ? 'Réussi' : 'Échoué') : pourcentage(t.score)}
                   </span>
                   {t.type === 'qcm' && !t.securite_ok && <span class="note"> · erreur sécurité</span>}
+                  {t.type === 'pratique' && !t.securite_ok && <span class="note"> · faute éliminatoire</span>}
                 </td>
                 <td>
                   {t.version}
