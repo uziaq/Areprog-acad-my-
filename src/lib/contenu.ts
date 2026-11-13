@@ -2,7 +2,8 @@
  * Lecture du contenu à la génération du site (côté serveur de build uniquement).
  * Produit le « plan » sans solutions, et les corrections servies à part.
  */
-import { resolve } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
+import { estVectorielle, urlFigure } from '../markdown/enrichir-html.ts';
 import type { z } from 'astro/zod';
 import {
   chapitreSchema,
@@ -33,6 +34,8 @@ export interface ContenuSite {
   sources: Map<string, Source>;
   lecons: Map<string, { lecon: Lecon; chapitre: PlanChapitre; module: PlanModule }>;
   chapitres: Map<string, { chapitre: PlanChapitre; module: PlanModule; dossier: string }>;
+  /** Images (photos, illustrations) des leçons publiées : URL publiée → chemin du fichier source. */
+  images: Map<string, string>;
 }
 
 const bas = (s: string) => s.toLowerCase();
@@ -60,6 +63,7 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
   const corrections = new Map<string, CorrectionsChapitre>();
   const lecons: ContenuSite['lecons'] = new Map();
   const chapitres: ContenuSite['chapitres'] = new Map();
+  const images: ContenuSite['images'] = new Map();
   const modules: PlanModule[] = [];
 
   const modulesTries = brut.modules
@@ -73,10 +77,12 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
       if (!STATUTS_PUBLIES.has(c.statut)) continue;
 
       const corpsLecons = new Map<string, string>();
+      const cheminsLecons = new Map<string, string>();
       const leconsParsees = cb.lecons
         .map((f) => {
           const l = leconSchema.parse(f.entete);
           corpsLecons.set(l.id, f.corps);
+          cheminsLecons.set(l.id, f.chemin);
           return l;
         })
         .filter((l) => STATUTS_PUBLIES.has(l.statut))
@@ -139,7 +145,12 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
       };
       planModule.chapitres.push(planChapitre);
       chapitres.set(c.id, { chapitre: planChapitre, module: planModule, dossier: cb.dossier });
-      for (const l of leconsParsees) lecons.set(l.id, { lecon: l, chapitre: planChapitre, module: planModule });
+      for (const l of leconsParsees) {
+        lecons.set(l.id, { lecon: l, chapitre: planChapitre, module: planModule });
+        for (const fig of l.figures) {
+          if (!estVectorielle(fig.fichier)) images.set(urlFigure(fig), join(racine, dirname(cheminsLecons.get(l.id)!), fig.fichier));
+        }
+      }
     }
     planModule.chapitres.sort((a, b) => m.chapitres.indexOf(a.id) - m.chapitres.indexOf(b.id));
     modules.push(planModule);
@@ -167,6 +178,7 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
     sources,
     lecons,
     chapitres,
+    images,
   };
   return cache;
 }

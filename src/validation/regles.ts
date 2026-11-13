@@ -2,7 +2,7 @@
  * Contrôle de conformité du contenu (exigence F25).
  * Règles décrites dans docs/architecture/03-modele-de-contenu.md §3.10.
  */
-import { existsSync } from 'node:fs';
+import { existsSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import type { z } from 'astro/zod';
 import {
@@ -72,6 +72,9 @@ function clesSolutionPresentes(objet: unknown): string[] {
   if (!objet || typeof objet !== 'object') return [];
   return Object.keys(objet).filter((k) => CLES_SOLUTION.includes(k));
 }
+
+/** Poids maximal conseillé d'une image de leçon (chargement sur la tablette d'atelier). */
+const TAILLE_MAX_IMAGE = 400_000;
 
 const RUBRIQUES_CHAPITRE = ['Mesures attendues et tolérances', 'Erreurs fréquentes'];
 
@@ -289,8 +292,12 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
         for (const fig of l.figures) {
           declarerId(fig.id, lf.chemin);
           figures.add(fig.id);
-          if (!existsSync(join(contenu.racine, dirname(lf.chemin), fig.fichier))) ajouter('figure', 'erreur', lf.chemin, `fichier de figure introuvable : ${fig.fichier}`);
-          if (fig.origine !== 'areprog' && !sources.has(fig.origine)) ajouter('figure', 'erreur', lf.chemin, `origine de figure ${fig.origine} absente de la bibliothèque`);
+          const fichierFigure = join(contenu.racine, dirname(lf.chemin), fig.fichier);
+          if (!existsSync(fichierFigure)) ajouter('figure', 'erreur', lf.chemin, `fichier de figure introuvable : ${fig.fichier}`);
+          else if (statSync(fichierFigure).size > TAILLE_MAX_IMAGE) {
+            ajouter('figure', 'avertissement', lf.chemin, `image ${fig.fichier} trop lourde pour la tablette (plus de ${TAILLE_MAX_IMAGE / 1000} Ko) : la réduire ou la convertir en WebP`);
+          }
+          if (fig.origine !== 'areprog' && fig.origine !== 'illustration-generee' && !sources.has(fig.origine)) ajouter('figure', 'erreur', lf.chemin, `origine de figure ${fig.origine} absente de la bibliothèque`);
         }
         for (const d of lf.corps.matchAll(/^::(figure|exercice|simulateur)\{id=([^}\s]+)\}/gm)) {
           const [, type, id] = d;

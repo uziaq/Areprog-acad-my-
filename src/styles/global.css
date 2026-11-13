@@ -123,6 +123,8 @@ label { cursor: pointer; }
 .contenu li + li { margin-top: 0.3rem; }
 .figure { margin: 1.5rem 0; padding: 1rem; background: var(--fond-2); border-radius: var(--rayon); }
 .figure-svg { display: block; width: 100%; max-width: 30rem; height: auto; margin: 0 auto; color: var(--texte-fort); }
+.figure-image { display: block; width: 100%; max-width: 40rem; height: auto; margin: 0 auto; border-radius: var(--rayon); }
+.figure-origine--generee { color: var(--etiquette-exemple); }
 .figure figcaption { margin-top: 0.75rem; font-size: 0.95rem; }
 .figure-origine { display: block; color: var(--texte-attenue); font-size: 0.85rem; margin-top: 0.25rem; }
 :target { scroll-margin-top: 5rem; }

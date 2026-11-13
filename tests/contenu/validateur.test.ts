@@ -97,6 +97,19 @@ describe('règles bloquantes', () => {
     expect(regles(valider(r))).toContain('figure');
   });
 
+  it('figure dans un format non pris en charge', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) => t.replace('S02-F01-test.svg', 'S02-F01-test.gif'));
+    expect(regles(valider(r))).toContain('schema');
+  });
+
+  it('photo déclarée mais fichier absent', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) =>
+      t.replace('S02-F01-test.svg', 'S02-F01-photo.webp').replace('origine: areprog', 'origine: illustration-generee'));
+    expect(regles(valider(r))).toContain('figure');
+  });
+
   it('objectif sans critère d\'évaluation', () => {
     const r = copie();
     modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) => t.replace(/  - objectif: O3\n    critere: .*\n/, ''));
@@ -136,6 +149,16 @@ describe('règles qui durcissent avec le statut', () => {
     const r = copie();
     modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) => `${t.replace('statut: brouillon', 'statut: valide')}\nPoint ouvert [À VÉRIFIER : révision].\n`);
     expect(regles(valider(r))).toContain('a-verifier');
+  });
+
+  it('illustration générée légère : acceptée ; image trop lourde : avertissement', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) =>
+      t.replace('S02-F01-test.svg', 'S02-F01-photo.webp').replace('origine: areprog', 'origine: illustration-generee'));
+    writeFileSync(join(r, CHAP, 'figures', 'S02-F01-photo.webp'), Buffer.alloc(1000));
+    expect(valider(r).filter((d) => d.regle === 'figure')).toEqual([]);
+    writeFileSync(join(r, CHAP, 'figures', 'S02-F01-photo.webp'), Buffer.alloc(500_000));
+    expect(valider(r).filter((d) => d.regle === 'figure').map((d) => d.gravite)).toEqual(['avertissement']);
   });
 
   it('prérequis absent : avertissement en brouillon', () => {

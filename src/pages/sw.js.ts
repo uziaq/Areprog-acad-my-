@@ -19,6 +19,7 @@ export const GET: APIRoute = () => {
   ];
   const fichiers = [
     ...[...site.corrections.keys()].map(urlCorrections),
+    ...site.images.keys(),
     '/manifest.webmanifest',
     '/icones/icone.svg',
     '/icones/icone-192.png',

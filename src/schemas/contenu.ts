@@ -76,12 +76,18 @@ export const chapitreSchema = z.strictObject({
 // ---------- Leçon ----------
 export const figureSchema = z.strictObject({
   id: id(RE_ID.figure, 'figure'),
-  fichier: z.string().min(1),
+  /** Schéma vectoriel (.svg, intégré à la page) ou image (.webp, .jpg, .png, servie à part). */
+  fichier: z.string().regex(/\.(svg|webp|jpe?g|png)$/i, { message: 'figure : fichier .svg, .webp, .jpg ou .png attendu' }),
   legende: z.string().min(1, { message: 'figure sans légende' }),
   alt: z.string().min(1, { message: 'figure sans texte alternatif' }),
-  /** « areprog » = figure réalisée par AREPROG ; sinon identifiant de fiche source. */
-  origine: z.union([z.literal('areprog'), id(RE_ID.source, 'source')], {
-    message: 'origine de figure obligatoire : "areprog" ou un identifiant SRC-xxxx',
+  /**
+   * « areprog » = figure ou photo réalisée par AREPROG ;
+   * « illustration-generee » = image générée (IA), affichée avec une mention qui interdit
+   * de la prendre pour un matériel réel ou une donnée constructeur ;
+   * sinon identifiant de fiche source (photo sous licence, avec crédit).
+   */
+  origine: z.union([z.literal('areprog'), z.literal('illustration-generee'), id(RE_ID.source, 'source')], {
+    message: 'origine de figure obligatoire : "areprog", "illustration-generee" ou un identifiant SRC-xxxx',
   }),
 });
 

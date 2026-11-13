@@ -21,6 +21,7 @@ Chaque valeur numérique, brochage, caractéristique de composant ou affirmation
 
 - Inventer un brochage, une valeur de datasheet, une valeur ou tolérance constructeur, un schéma de calculateur réel, une panne « connue ».
 - Attribuer une panne fictive à un calculateur commercial nommé.
+- Utiliser une illustration générée (`origine: illustration-generee`) comme support d'une mesure, d'un brochage, d'un repérage de composant ou d'une procédure, ou la présenter comme une photo de matériel réel.
 - Remplacer une source manquante par une valeur « typique » non étiquetée.
 - Recopier une norme ou une datasheet sous licence restrictive : citer la référence et la section.
 

@@ -83,6 +83,21 @@ Soit une résistance R = 220 Ω alimentée en 5 V [EXEMPLE] …
 Le corps est du Markdown standard, plus deux directives (`::figure`, `::exercice`) qui
 placent une figure ou un exercice interactif au bon endroit du texte.
 
+**Figures et images.** `fichier` est un schéma `.svg` (intégré à la page, couleurs en
+`currentColor`) ou une image `.webp`, `.jpg` ou `.png` (copiée sous `/figures/` à la
+construction et mise en cache pour l'usage hors ligne). `origine` vaut :
+
+| Valeur | Usage | Mention affichée |
+|---|---|---|
+| `areprog` | Schéma dessiné ou photo prise par AREPROG | « Figure réalisée / Photo prise par AREPROG » |
+| `illustration-generee` | Image générée (IA), décorative ou d'ambiance | « Illustration générée : elle ne représente pas un matériel réel ni une donnée constructeur. » |
+| `SRC-xxxx` | Photo sous licence (ex. Wikimedia Commons), avec fiche source et crédit | Lien vers la fiche source |
+
+Une illustration générée ne sert jamais de support à une mesure, un brochage, un repérage
+de composant ou une procédure : pour cela, une photo réelle (`areprog` ou sourcée) ou un
+schéma de principe. Aucune image ne montre de VIN ni de plaque d'immatriculation.
+Le validateur avertit au-delà de 400 Ko par image (tablette d'atelier).
+
 ## 3.5 Exercice (sans solution) et correction (séparée)
 
 `exercices/S02-L01.yaml`

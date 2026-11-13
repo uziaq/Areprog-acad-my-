@@ -1,7 +1,7 @@
 /**
  * Enrichissement du HTML d'une leçon, appliqué après le rendu Markdown d'Astro :
  * - étiquettes de fiabilité [SOURCÉ : SRC-0001 §…], [EXEMPLE], [HYPOTHÈSE], [À VÉRIFIER : …] → badges ;
- * - directives ::figure{id=…} (SVG intégré, légende, origine), ::exercice{id=…}, ::simulateur{id=…}
+ * - directives ::figure{id=…} (SVG intégré ou image servie à part, légende, origine), ::exercice{id=…}, ::simulateur{id=…}
  *   → emplacements où l'application monte les composants interactifs.
  * Travaille sur une chaîne HTML (pas de dépendance au moteur Markdown) ; le code (<pre>, <code>) n'est pas modifié.
  */
@@ -15,6 +15,13 @@ export interface FigureLecon {
   alt: string;
   origine: string;
 }
+
+/** Une figure vectorielle est intégrée à la page ; une image est servie à part sous /figures/. */
+export const estVectorielle = (fichier: string) => /\.svg$/i.test(fichier);
+export const urlFigure = (fig: Pick<FigureLecon, 'id' | 'fichier'>) =>
+  `/figures/${fig.id.toLowerCase()}${/\.[a-z]+$/i.exec(fig.fichier)![0].toLowerCase().replace('.jpeg', '.jpg')}`;
+
+export const MENTION_GENEREE = 'Illustration générée : elle ne représente pas un matériel réel ni une donnée constructeur.';
 
 const echapper = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -42,16 +49,23 @@ export function htmlEtiquette(type: string, detail: string): string {
 }
 
 function htmlFigure(fig: FigureLecon, fichierLecon: string): string {
-  let svg = readFileSync(resolve(dirname(fichierLecon), fig.fichier), 'utf8')
-    .replace(/<\?xml[^>]*>/g, '')
-    .replace(/<!--[\s\S]*?-->/g, '')
-    .trim();
-  svg = svg.replace(/<svg\b/, `<svg role="img" aria-label="${echapper(fig.alt)}" class="figure-svg"`);
+  let visuel: string;
+  if (estVectorielle(fig.fichier)) {
+    visuel = readFileSync(resolve(dirname(fichierLecon), fig.fichier), 'utf8')
+      .replace(/<\?xml[^>]*>/g, '')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .trim()
+      .replace(/<svg\b/, `<svg role="img" aria-label="${echapper(fig.alt)}" class="figure-svg"`);
+  } else {
+    visuel = `<img class="figure-image" src="${urlFigure(fig)}" alt="${echapper(fig.alt)}" loading="lazy" decoding="async">`;
+  }
   const origine =
     fig.origine === 'areprog'
-      ? 'Figure réalisée par AREPROG'
-      : `Source : <a href="/sources/${fig.origine.toLowerCase()}/">${echapper(fig.origine)}</a>`;
-  return `<figure class="figure" id="${echapper(fig.id.toLowerCase())}">${svg}<figcaption><strong>Figure ${echapper(fig.id)}.</strong> ${echapper(fig.legende)} <span class="figure-origine">${origine}</span></figcaption></figure>`;
+      ? `${estVectorielle(fig.fichier) ? 'Figure réalisée' : 'Photo prise'} par AREPROG`
+      : fig.origine === 'illustration-generee'
+        ? `<span class="figure-origine--generee"><span class="etiquette-picto" aria-hidden="true">◆</span>${MENTION_GENEREE}</span>`
+        : `Source : <a href="/sources/${fig.origine.toLowerCase()}/">${echapper(fig.origine)}</a>`;
+  return `<figure class="figure" id="${echapper(fig.id.toLowerCase())}">${visuel}<figcaption><strong>Figure ${echapper(fig.id)}.</strong> ${echapper(fig.legende)} <span class="figure-origine">${origine}</span></figcaption></figure>`;
 }
 
 export function enrichirHtml(html: string, figures: FigureLecon[], fichierLecon: string): string {
