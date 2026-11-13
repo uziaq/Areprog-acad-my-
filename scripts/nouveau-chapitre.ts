@@ -1,26 +1,48 @@
 /**
- * Crée le squelette d'un chapitre conforme au gabarit (statut brouillon).
- * Usage : node scripts/nouveau-chapitre.ts <module> <chapitre> <slug> "<titre>"
- * Exemple : node scripts/nouveau-chapitre.ts M1 S02 loi-ohm "Grandeurs, loi d'Ohm, puissance"
- * Ne remplace jamais un fichier existant.
+ * Crée le squelette d'un chapitre (une semaine du programme), pré-rempli depuis content/programme.yaml
+ * et le référentiel : titre, module, prérequis, TP, compétences enseignées. Statut brouillon.
+ * Usage : node scripts/nouveau-chapitre.ts <semaine> <slug>
+ * Exemple : node scripts/nouveau-chapitre.ts S03 kirchhoff-diviseurs
+ * Crée le dossier et le module.yaml du module s'ils n'existent pas. Ne remplace jamais un fichier existant.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { parseDocument } from 'yaml';
+import { parse, parseDocument } from 'yaml';
+import { competenceSchema, programmeSchema } from '../src/schemas/contenu.ts';
 
-const [moduleId, chapitreId, slug, titre] = process.argv.slice(2);
-if (!moduleId || !chapitreId || !slug || !titre || !/^M\d+$/.test(moduleId) || !/^S\d{2}$/.test(chapitreId)) {
-  console.error('Usage : node scripts/nouveau-chapitre.ts M1 S02 loi-ohm "Titre du chapitre"');
+const [chapitreId, slug] = process.argv.slice(2);
+if (!chapitreId || !slug || !/^S\d{2}$/.test(chapitreId) || !/^[a-z0-9-]+$/.test(slug)) {
+  console.error('Usage : node scripts/nouveau-chapitre.ts S03 kirchhoff-diviseurs   (slug en minuscules, sans accent)');
   process.exit(2);
 }
 
+const programme = programmeSchema.parse(parse(readFileSync(join('content', 'programme.yaml'), 'utf8')));
+const referentiel = competenceSchema.array().parse(parse(readFileSync(join('content', 'referentiel', 'competences.yaml'), 'utf8')));
+const semaine = programme.semaines.find((w) => w.id === chapitreId);
+if (!semaine) {
+  console.error(`${chapitreId} absente de content/programme.yaml : l'ajouter d'abord au programme.`);
+  process.exit(1);
+}
+const mod = programme.modules.find((m) => m.id === semaine.module)!;
+const titre = semaine.titre;
+const moduleId = mod.id;
+const competences = referentiel.filter((c) => c.enseignee_en.includes(chapitreId)).map((c) => c.code);
+const liste = (xs: string[]) => `[${xs.join(', ')}]`;
+const sansAccent = (t: string) =>
+  t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
 const parcours = join('content', 'parcours');
-const dossierModule = existsSync(parcours)
+let dossierModule = existsSync(parcours)
   ? readdirSync(parcours).find((d) => d === moduleId || d.startsWith(`${moduleId}-`))
   : undefined;
 if (!dossierModule) {
-  console.error(`Module ${moduleId} introuvable : créer d'abord content/parcours/${moduleId}-<nom>/module.yaml`);
-  process.exit(1);
+  dossierModule = `${moduleId}-${sansAccent(mod.titre)}`;
+  mkdirSync(join(parcours, dossierModule), { recursive: true });
+  writeFileSync(
+    join(parcours, dossierModule, 'module.yaml'),
+    `id: ${moduleId}\ntitre: ${JSON.stringify(mod.titre)}\nordre: ${Number(moduleId.slice(1))}\nchapitres: []\n`,
+  );
+  console.log(`créé : module ${moduleId} (${join(parcours, dossierModule, 'module.yaml')})`);
 }
 
 const aujourdhui = new Date().toISOString().slice(0, 10);
@@ -35,16 +57,16 @@ id: ${chapitreId}
 titre: ${JSON.stringify(titre)}
 module: ${moduleId}
 duree_h: 8
-competences: []      # codes du référentiel, ex. [D2.2]
-prerequis: []        # chapitres, ex. [S01]
+competences: ${liste(competences)}      # d'après le référentiel (enseignee_en)
+prerequis: ${liste(semaine.prerequis)}        # d'après le programme
 lecons: [${lecon}]
-tp: []               # ex. [TP-03]
+tp: ${liste(semaine.tp)}               # d'après le programme ; un fichier tp/TP-xx.md par TP
 sources: []          # fiches de content/bibliotheque/sources/
 version: "0.1"
 statut: brouillon
 derniere_verification_sources: ${aujourdhui}
 ${historique}---
-
+${semaine.protocole === 'renforce' ? '\n<!-- Semaine sous protocole de sécurité renforcé : chaque TP porte securite: renforcee (voir .claude/rules/securite-et-deploiement.md). -->\n' : ''}${semaine.evaluation ? `\n<!-- Semaine d'épreuve (${semaine.evaluation}) : voir docs/pedagogie/04-evaluation.md. -->\n` : ''}
 ## Mesures attendues et tolérances
 
 ## Erreurs fréquentes
@@ -89,7 +111,8 @@ const moduleYaml = join(parcours, dossierModule, 'module.yaml');
 const doc = parseDocument(readFileSync(moduleYaml, 'utf8'));
 const chapitres = (doc.get('chapitres') as { items: { value: string }[] } | undefined)?.items.map((i) => i.value) ?? [];
 if (!chapitres.includes(chapitreId)) {
-  doc.addIn(['chapitres'], chapitreId);
+  const ordre = mod.semaines.filter((x) => x === chapitreId || chapitres.includes(x));
+  doc.set('chapitres', doc.createNode(ordre, { flow: true }));
   writeFileSync(moduleYaml, doc.toString());
   console.log(`${chapitreId} ajouté à ${moduleYaml}`);
 }

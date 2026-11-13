@@ -9,7 +9,7 @@ description: Rédiger un chapitre (semaine) ou une leçon AREPROG Academy au for
 
 1. Lire la semaine visée dans `docs/pedagogie/02-programme-32-semaines.md` (ou le programme à jour), le gabarit `docs/pedagogie/06-gabarit-cours.md`, et les compétences concernées dans `docs/pedagogie/01-referentiel-competences.md`.
 2. Lire `.claude/rules/fiabilite-contenu.md` et `.claude/rules/format-contenu.md`.
-3. Si le chapitre n'existe pas : `node scripts/nouveau-chapitre.ts <M> <Sxx> <slug> "<titre>"`.
+3. Si le chapitre n'existe pas : `node scripts/nouveau-chapitre.ts <Sxx> <slug>` (titre, module, prérequis, TP et compétences viennent du programme et du référentiel).
 
 ## Rédaction
 

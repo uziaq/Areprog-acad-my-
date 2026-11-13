@@ -8,13 +8,16 @@ prerequis: [S01]
 lecons: [S02-L01]
 tp: [TP-03]
 sources: [SRC-0001]
-version: "0.1"
+version: "0.2"
 statut: brouillon
 derniere_verification_sources: 2026-11-13
 historique:
   - version: "0.1"
     date: 2026-11-13
     resume: Chapitre du prototype (une seule leçon rédigée sur les 3 prévues)
+  - version: "0.2"
+    date: 2026-11-13
+    resume: Ajout de la rubrique « Lien atelier » (gabarit v0.3, 14 rubriques)
 ---
 
 Première semaine du module M1. Elle pose les grandeurs de base (tension, courant,
@@ -37,3 +40,13 @@ de l'atelier [À VÉRIFIER : tolérances à relever sur les composants et la not
 - **Inverser la formule** : écrire I = R / U. Détection : vérifier les unités, des ohms divisés par des volts ne donnent pas des ampères.
 - **Ignorer la puissance nominale** : une résistance correcte en valeur peut brûler si elle dissipe plus que sa puissance nominale. Détection : calculer P à chaque fois qu'on choisit une résistance.
 - **Mesurer un courant en parallèle** : brancher l'ampèremètre aux bornes d'un composant met la source en court-circuit à travers l'appareil. Détection : l'ampèremètre se place toujours en série, circuit ouvert à l'endroit de la mesure.
+
+## Lien atelier
+
+Un faisceau dont une connexion est oxydée se comporte comme une résistance en série avec le
+récepteur. Tant que le circuit est au repos, aucun courant ne circule dans cette résistance :
+le voltmètre affiche alors une tension normale. Dès que le récepteur est commandé, le courant
+crée une chute de tension dans la connexion, qui chauffe, et le récepteur reçoit moins que la
+tension de la batterie. D'où la règle d'atelier : contrôler une tension **sous charge**, entre
+le récepteur et la batterie, et pas seulement circuit au repos. L'exemple 3 de la leçon S02-L01
+chiffre cette situation avec des valeurs d'exemple.

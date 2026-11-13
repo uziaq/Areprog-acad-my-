@@ -15,9 +15,9 @@ en français. Ce dépôt est celui de la formation : **ne jamais modifier le dé
 ## Commandes
 
 - `npm run valider` : contrôle du contenu (bloque la construction en cas d'erreur)
-- `npm test` : tests Vitest · `npm run test:e2e` : Playwright (tablette + bureau)
+- `npm test` : tests Vitest · `npm run test:e2e` : Playwright (tablette, téléphone, bureau)
 - `npm run check` : types · `npm run build` : validation + construction · `npm run dev` : serveur local
-- `node scripts/nouveau-chapitre.ts M1 S02 slug "Titre"` : squelette de chapitre
+- `node scripts/nouveau-chapitre.ts S03 slug` : squelette de chapitre pré-rempli depuis `content/programme.yaml`
 
 ## Règles absolues
 

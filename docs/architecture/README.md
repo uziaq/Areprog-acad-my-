@@ -24,6 +24,7 @@ qui garde les résultats de l'apprenant **dans l'appareil** avec export / import
 | 6 | [Risques](06-risques.md) | 15 risques et leurs mesures |
 | 7 | [Prototype](07-prototype.md) | Ce qui est livré, critères d'acceptation vérifiés, écarts |
 | 8 | [Test sur appareil](08-test-appareil.md) | Phase 4 : tests de robustesse, corrections, procédure de test sur iPhone |
+| 9 | [Plan d'extension](09-plan-extension.md) | Phase 5 : programme des 41 semaines dans l'application, ordre des lots, décisions E-01 à E-04 |
 
 Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges-plateforme.md)
 (fil pédagogique, branche `claude/project-thread-7tl6vf` ; ce lien fonctionnera une fois les deux PR fusionnées).
@@ -48,4 +49,4 @@ Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges
 | 2 | Structure du projet, `CLAUDE.md`, règles, Skills, agents, CI, validateur de contenu (lot L0) | Ton accord sur ce plan |
 | 3 | Prototype : tableau de bord, 1 module, 1 leçon, 1 exercice, 1 QCM, suivi de progression | Phase 2 fusionnée |
 | 4 | Tests et corrections jusqu'à validation des critères [P1–P8, T1–T9, C1–C3](05-tests-et-validation.md#53-critères-de-validation-du-prototype-phase-3) | Prototype livré |
-| 5 | Préparation de l'extension aux 35 semaines (générateur de chapitres, lots L1 à L5, TP sur véhicule et protocole renforcé) | Prototype validé |
+| 5 | Préparation de l'extension aux 41 semaines (programme et référentiel complets, générateur de chapitres, ordre des lots L1 à L5) | Prototype validé ✓ |

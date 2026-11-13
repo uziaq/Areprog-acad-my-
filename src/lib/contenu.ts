@@ -13,6 +13,7 @@ import {
   leconSchema,
   moduleSchema,
   parametresSchema,
+  programmeSchema,
   questionSchema,
   reponseQuestionSchema,
   sourceSchema,
@@ -55,6 +56,7 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
   if (cache) return cache;
   const brut = chargerContenu(racine);
   const parametres = parametresSchema.parse(brut.parametres?.donnees);
+  const programme = programmeSchema.parse(brut.programme?.donnees);
   const competences = competenceSchema.array().parse(brut.referentiel?.donnees ?? []);
   const sources = new Map(brut.sources.map((f) => sourceSchema.parse(f.donnees)).map((s) => [s.id, s]));
 
@@ -156,8 +158,29 @@ export function chargerSite(racine = resolve('content')): ContenuSite {
     modules.push(planModule);
   }
 
+  const publiees = new Map(modules.flatMap((m) => m.chapitres.map((c) => [c.id, m.url] as const)));
+  const semaines = new Map(programme.semaines.map((w) => [w.id, w]));
   cache = {
     plan: {
+      programme: {
+        version: programme.version,
+        domaines: programme.domaines,
+        modules: programme.modules.map((m) => ({
+          id: m.id,
+          titre: m.titre,
+          semaines: m.semaines.map((sid) => {
+            const w = semaines.get(sid)!;
+            return {
+              id: w.id,
+              titre: w.titre,
+              url: publiees.get(w.id) ?? null,
+              tp: w.tp,
+              ...(w.evaluation ? { evaluation: w.evaluation } : {}),
+              ...(w.protocole ? { protocole: w.protocole } : {}),
+            };
+          }),
+        })),
+      },
       modules,
       competences: competences.map((k) => ({
         code: k.code,

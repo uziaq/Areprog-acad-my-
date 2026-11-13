@@ -19,7 +19,9 @@ import {
   questionSchema,
   reponseQuestionSchema,
   sourceSchema,
+  programmeSchema,
   tpSchema,
+  type Programme,
   type Statut,
 } from '../schemas/contenu.ts';
 import type { ContenuBrut, FichierMarkdown } from './charger.ts';
@@ -76,7 +78,13 @@ function clesSolutionPresentes(objet: unknown): string[] {
 /** Poids maximal conseillé d'une image de leçon (chargement sur la tablette d'atelier). */
 const TAILLE_MAX_IMAGE = 400_000;
 
-const RUBRIQUES_CHAPITRE = ['Mesures attendues et tolérances', 'Erreurs fréquentes'];
+const RUBRIQUES_CHAPITRE: [string, string][] = [
+  ['8', 'Mesures attendues et tolérances'],
+  ['9', 'Erreurs fréquentes'],
+  ['13', 'Lien atelier'],
+];
+/** Rubrique 14 « Sécurité spécifique » : obligatoire et non vide à partir de cette semaine (gabarit v0.3). */
+const SEMAINE_SECURITE_OBLIGATOIRE = 18;
 
 export function validerContenu(contenu: ContenuBrut, options: OptionsValidation = {}): Diagnostic[] {
   const diags: Diagnostic[] = [];
@@ -110,6 +118,37 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
   }
   const delaiSources = parametres.sources.delai_reverification_mois;
 
+  // ---------- Programme du cursus ----------
+  let programme: Programme | null = null;
+  const fp = contenu.programme?.chemin ?? 'programme.yaml';
+  if (!contenu.programme) {
+    ajouter('programme', 'erreur', fp, 'programme du cursus absent (content/programme.yaml)');
+  } else if (contenu.programme.erreurLecture) {
+    ajouter('yaml', 'erreur', fp, contenu.programme.erreurLecture);
+  } else {
+    programme = verifierSchema(programmeSchema, contenu.programme.donnees, fp);
+  }
+  const semaines = new Map((programme?.semaines ?? []).map((w) => [w.id, w]));
+  const rang = new Map((programme?.semaines ?? []).map((w, i) => [w.id, i]));
+  if (programme) {
+    if (semaines.size !== programme.semaines.length) ajouter('programme', 'erreur', fp, 'semaine déclarée deux fois');
+    for (const w of programme.semaines) {
+      const mod = programme.modules.find((m) => m.id === w.module);
+      if (!mod) ajouter('programme', 'erreur', fp, `${w.id} : module ${w.module} absent de la liste des modules`);
+      else if (!mod.semaines.includes(w.id)) ajouter('programme', 'erreur', fp, `${w.id} : absente de la liste des semaines du module ${w.module}`);
+      for (const p of w.prerequis) {
+        if (!semaines.has(p)) ajouter('programme', 'erreur', fp, `${w.id} : prérequis ${p} absent du programme`);
+        else if (rang.get(p)! >= rang.get(w.id)!) ajouter('programme', 'erreur', fp, `${w.id} : le prérequis ${p} doit venir avant dans le cursus`);
+      }
+    }
+    for (const m of programme.modules) {
+      for (const sid of m.semaines) {
+        if (semaines.get(sid)?.module !== m.id) ajouter('programme', 'erreur', fp, `module ${m.id} : la semaine ${sid} n'y est pas rattachée`);
+      }
+    }
+  }
+  const domaines = new Set((programme?.domaines ?? []).map((d) => d.id));
+
   // ---------- Référentiel ----------
   const competences = new Set<string>();
   if (!contenu.referentiel) {
@@ -124,6 +163,12 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
       if (!c) continue;
       declarerId(c.code, contenu.referentiel.chemin);
       competences.add(c.code);
+      if (programme) {
+        const fr = contenu.referentiel.chemin;
+        if (!domaines.has(c.domaine)) ajouter('programme', 'erreur', fr, `${c.code} : domaine ${c.domaine} absent du programme`);
+        for (const sid of c.enseignee_en) if (!semaines.has(sid)) ajouter('programme', 'erreur', fr, `${c.code} : enseignée en ${sid}, semaine absente du programme`);
+        if (c.jalon && !semaines.has(c.jalon)) ajouter('programme', 'erreur', fr, `${c.code} : vérifiée en ${c.jalon}, semaine absente du programme`);
+      }
     }
   }
   function verifierCompetences(codes: string[], fichier: string, quoi: string) {
@@ -185,6 +230,11 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
     if (!m) continue;
     declarerId(m.id, mod.module.chemin);
     const chapitresDuModule = new Set<string>();
+    const moduleProgramme = programme?.modules.find((x) => x.id === m.id);
+    if (programme && !moduleProgramme) ajouter('programme', 'erreur', mod.module.chemin, `module ${m.id} absent du programme`);
+    else if (moduleProgramme && moduleProgramme.titre !== m.titre) {
+      ajouter('programme', 'avertissement', mod.module.chemin, `titre différent du programme : « ${moduleProgramme.titre} »`);
+    }
 
     for (const ch of mod.chapitres) {
       if (!ch.chapitre) {
@@ -206,6 +256,15 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
       if (!m.chapitres.includes(c.id)) ajouter('reference', 'erreur', mod.module.chemin, `le chapitre ${c.id} existe mais n'est pas listé dans module.yaml`);
       prerequisAVerifier.push({ ids: c.prerequis, fichier: fc, statut: c.statut });
       verifierCompetences(c.competences, fc, 'chapitre');
+      const semaine = semaines.get(c.id);
+      if (programme && !semaine) ajouter('programme', 'erreur', fc, `chapitre ${c.id} absent du programme`);
+      if (semaine) {
+        if (semaine.module !== c.module) ajouter('programme', 'erreur', fc, `chapitre rattaché à ${c.module}, le programme le place en ${semaine.module}`);
+        if (semaine.titre !== c.titre) ajouter('programme', 'avertissement', fc, `titre différent du programme : « ${semaine.titre} »`);
+        const memes = (a: string[], b: string[]) => a.length === b.length && a.every((x) => b.includes(x));
+        if (!memes(semaine.prerequis, c.prerequis)) ajouter('programme', gr, fc, `prérequis différents du programme (${semaine.prerequis.join(', ') || 'aucun'})`);
+        if (!memes(semaine.tp, c.tp)) ajouter('programme', gr, fc, `TP différents du programme (${semaine.tp.join(', ') || 'aucun'})`);
+      }
       for (const s of c.sources) if (!sources.has(s)) ajouter('reference', 'erreur', fc, `source ${s} introuvable dans la bibliothèque`);
       if (moisEntre(c.derniere_verification_sources, aujourdhui) > delaiSources) {
         ajouter('source-perimee', 'avertissement', fc, `sources vérifiées pour la dernière fois le ${c.derniere_verification_sources}`);
@@ -367,7 +426,10 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
       if (nbExemples < 3) manquantes.push('5. exemples numériques (3 sections « ### Exemple »)');
       if (exercices.size < 5) manquantes.push('6. exercices (5 au minimum)');
       if (c.tp.length < 1) manquantes.push('7. travaux pratiques');
-      for (const r of RUBRIQUES_CHAPITRE) if (section(ch.chapitre.corps, r) === null) manquantes.push(`${r === RUBRIQUES_CHAPITRE[0] ? '8' : '9'}. ${r.toLowerCase()} (section « ## ${r} » dans chapitre.md)`);
+      for (const [n, r] of RUBRIQUES_CHAPITRE) if (section(ch.chapitre.corps, r) === null) manquantes.push(`${n}. ${r.toLowerCase()} (section « ## ${r} » dans chapitre.md)`);
+      if (Number(c.id.slice(1)) >= SEMAINE_SECURITE_OBLIGATOIRE && !section(ch.chapitre.corps, 'Sécurité spécifique')?.trim()) {
+        manquantes.push('14. sécurité spécifique (section « ## Sécurité spécifique » non vide dans chapitre.md, obligatoire à partir de S18)');
+      }
       if (!ch.banque) manquantes.push('10. QCM (qcm/banque.yaml)');
       if (!ch.corrigeChapitre) manquantes.push('11. corrigé séparé (corrections/corrige-chapitre.md)');
       if (c.sources.length < 1) manquantes.push('12. sources documentaires');
@@ -380,6 +442,9 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
         if (!t) continue;
         declarerId(t.id, tf.chemin);
         if (!c.tp.includes(t.id)) ajouter('reference', 'avertissement', fc, `TP ${t.id} présent mais non listé dans le chapitre`);
+        if (semaine?.protocole === 'renforce' && t.securite !== 'renforcee') {
+          ajouter('securite-renforcee', 'erreur', tf.chemin, `${c.id} relève du protocole renforcé (programme) : le TP doit porter securite: renforcee`);
+        }
         if (t.domaines_risque.length && t.securite !== 'renforcee') {
           ajouter('securite-renforcee', 'erreur', tf.chemin, `un TP touchant ${t.domaines_risque.join(', ')} doit porter securite: renforcee`);
         }
@@ -422,7 +487,8 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
   for (const p of prerequisAVerifier) {
     for (const id of p.ids) {
       if (!ids.has(id) && !chapitresConnus.has(id)) {
-        ajouter('prerequis', selonStatut(p.statut), p.fichier, `prérequis ${id} introuvable dans le contenu`);
+        const message = semaines.has(id) ? `prérequis ${id} pas encore rédigé` : `prérequis ${id} introuvable dans le contenu et dans le programme`;
+        ajouter('prerequis', selonStatut(p.statut), p.fichier, message);
       }
     }
   }

@@ -98,6 +98,15 @@ de composant ou une procédure : pour cela, une photo réelle (`areprog` ou sour
 schéma de principe. Aucune image ne montre de VIN ni de plaque d'immatriculation.
 Le validateur avertit au-delà de 400 Ko par image (tablette d'atelier).
 
+## 3.4 bis Programme du cursus
+
+`content/programme.yaml` décrit les 41 semaines, rédigées ou non : domaines, modules (avec la liste
+ordonnée de leurs semaines) et, pour chaque semaine, `titre`, `module`, `prerequis`, `tp`,
+`fil_rouge`, et éventuellement `evaluation: jalon | finale` et `protocole: renforce`.
+L'évaluation finale (S40–S41) est rangée sous un module technique `M10`.
+Un chapitre rédigé doit y figurer avec le même module ; ses prérequis et ses TP doivent
+correspondre (avertissement en brouillon, erreur à partir de « relu »).
+
 ## 3.5 Exercice (sans solution) et correction (séparée)
 
 `exercices/S02-L01.yaml`

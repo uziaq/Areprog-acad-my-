@@ -81,6 +81,16 @@ export default function TableauDeBord({ plan }: { plan: Plan }) {
         </section>
       ))}
 
+      {(() => {
+        const toutes = plan.programme.modules.flatMap((m) => m.semaines);
+        const dispo = toutes.filter((w) => w.url).length;
+        return (
+          <p class="note" data-testid="avancement-cursus">
+            Cursus : {dispo} semaine{dispo > 1 ? 's' : ''} disponible{dispo > 1 ? 's' : ''} sur {toutes.length}. <a href="/parcours/">Voir tout le programme</a>
+          </p>
+        );
+      })()}
+
       <div class="grille">
         <section class="carte pile" aria-labelledby="titre-competences">
           <h2 id="titre-competences">Compétences en cours</h2>

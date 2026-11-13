@@ -139,6 +139,18 @@ describe('règles qui durcissent avec le statut', () => {
     expect(regles(valider(r))).toContain('rubriques');
   });
 
+  it('rubrique « Sécurité spécifique » obligatoire à partir de S18', () => {
+    const r = copie();
+    // Le chapitre de test devient S18 (identifiants renommés partout ; les noms de fichiers ne comptent pas).
+    for (const f of [`${CHAP}/chapitre.md`, `${CHAP}/lecons/S02-L01-test.md`, `${CHAP}/exercices/S02-L01.yaml`, `${CHAP}/corrections/S02-L01.yaml`, `${CHAP}/qcm/banque.yaml`, `${CHAP}/qcm/reponses.yaml`, `${CHAP}/tp/TP-03.md`, 'parcours/M1-test/module.yaml', 'referentiel/competences.yaml', 'programme.yaml']) {
+      modifier(r, f, (t) => t.replaceAll('S02', 'S18'));
+    }
+    const message = () => valider(r).filter((x) => x.regle === 'rubriques').map((x) => x.message).join(' ');
+    expect(message()).toContain('14. sécurité spécifique');
+    modifier(r, `${CHAP}/chapitre.md`, (t) => `${t}\n## Sécurité spécifique\n\nRisques de la semaine.\n`);
+    expect(message()).not.toContain('14. sécurité spécifique');
+  });
+
   it('banque QCM trop petite : bloquante pour un chapitre validé', () => {
     const r = copie();
     modifier(r, `${CHAP}/chapitre.md`, (t) => t.replace('statut: brouillon', 'statut: valide'));
@@ -222,6 +234,41 @@ describe('référentiel et directives', () => {
     const r = copie();
     rmSync(join(r, 'referentiel'), { recursive: true });
     expect(regles(valider(r))).toContain('referentiel');
+  });
+});
+
+describe('programme du cursus', () => {
+  it('programme absent', () => {
+    const r = copie();
+    rmSync(join(r, 'programme.yaml'));
+    expect(regles(valider(r))).toContain('programme');
+  });
+  it('chapitre rédigé absent du programme', () => {
+    const r = copie();
+    modifier(r, 'programme.yaml', (t) => t.replace('semaines: [S02, S14]', 'semaines: [S03, S14]').replace('id: S02\n', 'id: S03\n').replace('prerequis: [S02]', 'prerequis: [S03]'));
+    expect(regles(valider(r))).toContain('programme');
+  });
+  it('prérequis placé après la semaine qui en dépend', () => {
+    const r = copie();
+    modifier(r, 'programme.yaml', (t) => t.replace('    prerequis: []\n', '    prerequis: [S14]\n'));
+    expect(regles(valider(r))).toContain('programme');
+  });
+  it('compétence enseignée dans une semaine absente du programme', () => {
+    const r = copie();
+    modifier(r, 'referentiel/competences.yaml', (t) => t.replace('enseignee_en: [S02]', 'enseignee_en: [S07]'));
+    expect(regles(valider(r))).toContain('programme');
+  });
+  it('TP du chapitre différent du programme : avertissement en brouillon, erreur en relu', () => {
+    const r = copie();
+    modifier(r, 'programme.yaml', (t) => t.replace('tp: [TP-03]', 'tp: [TP-04]'));
+    expect(valider(r).filter((d) => d.regle === 'programme').map((d) => d.gravite)).toEqual(['avertissement']);
+    modifier(r, `${CHAP}/chapitre.md`, (t) => t.replace('statut: brouillon', 'statut: relu'));
+    expect(regles(valider(r))).toContain('programme');
+  });
+  it('semaine sous protocole renforcé : TP standard refusé', () => {
+    const r = copie();
+    modifier(r, 'programme.yaml', (t) => t.replace('    tp: [TP-03]\n    fil_rouge: []\n', '    tp: [TP-03]\n    fil_rouge: []\n    protocole: renforce\n'));
+    expect(regles(valider(r))).toContain('securite-renforcee');
   });
 });
 

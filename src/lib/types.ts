@@ -68,7 +68,27 @@ export interface Seuils {
   questions_par_tirage: number;
 }
 
+/** Semaine du programme (rédigée ou non). */
+export interface PlanSemaine {
+  id: string;
+  titre: string;
+  /** Page du module si la semaine est rédigée et publiée, sinon null (« à venir »). */
+  url: string | null;
+  tp: string[];
+  evaluation?: 'jalon' | 'finale';
+  protocole?: 'renforce';
+}
+
+export interface PlanProgramme {
+  version: string;
+  domaines: { id: string; titre: string }[];
+  modules: { id: string; titre: string; semaines: PlanSemaine[] }[];
+}
+
 export interface Plan {
+  /** Plan complet du cursus (toutes les semaines). */
+  programme: PlanProgramme;
+  /** Contenu publié. */
   modules: PlanModule[];
   competences: PlanCompetence[];
   seuils: Seuils;

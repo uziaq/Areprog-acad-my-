@@ -162,7 +162,7 @@ test.describe('prototype AREPROG Academy', () => {
     const lignes = page.getByTestId('historique').locator('tbody tr');
     await expect(lignes).toHaveCount(2);
     await expect(lignes.first()).toContainText('QCM du chapitre S02');
-    await expect(lignes.first()).toContainText('0.1');
+    await expect(lignes.first()).toContainText('0.2'); // version du chapitre S02
 
     // P1 + P7 : tableau de bord et compétences mis à jour, sans niveau non mérité.
     await page.goto('/');

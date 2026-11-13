@@ -16,13 +16,22 @@ export default function Competences({ plan }: { plan: Plan }) {
         {publiees.map((p) => <BarreCompetence p={p} />)}
       </section>
       {aVenir.length > 0 && (
-        <section class="carte">
-          <h2>À venir</h2>
-          <ul class="liste-simple">
-            {aVenir.map((c) => (
-              <li><strong>{c.code}</strong> {c.intitule} <span class="note">(niveau {c.niveauVise} visé)</span></li>
-            ))}
-          </ul>
+        <section class="carte pile" data-testid="competences-a-venir">
+          <h2>À venir ({aVenir.length})</h2>
+          {plan.programme.domaines.map((d) => {
+            const liste = aVenir.filter((c) => c.code.startsWith(`${d.id}.`));
+            if (!liste.length) return null;
+            return (
+              <details>
+                <summary>{d.id} · {d.titre} ({liste.length})</summary>
+                <ul class="liste-simple">
+                  {liste.map((c) => (
+                    <li><strong>{c.code}</strong> {c.intitule} <span class="note">(niveau {c.niveauVise} visé)</span></li>
+                  ))}
+                </ul>
+              </details>
+            );
+          })}
         </section>
       )}
     </div>

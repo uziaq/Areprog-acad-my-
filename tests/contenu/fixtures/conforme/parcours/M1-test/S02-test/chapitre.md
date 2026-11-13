@@ -26,3 +26,7 @@ Courant attendu de 22,7 mA [EXEMPLE], tolérance justifiée dans le TP.
 ## Erreurs fréquentes
 
 Oublier de convertir les milliampères en ampères.
+
+## Lien atelier
+
+Situation d'atelier fictive utilisée par les tests.

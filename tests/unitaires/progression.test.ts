@@ -3,6 +3,7 @@ import { progressionCompetences, syntheseChapitre } from '../../src/lib/progress
 import type { Evenement, Plan, Tentative } from '../../src/lib/types.ts';
 
 const plan: Plan = {
+  programme: { version: '0.3', domaines: [{ id: 'D2', titre: 'Électricité' }], modules: [] },
   seuils: { qcm_reussite: 0.8, qcm_securite: 1, questions_par_tirage: 20 },
   competences: [
     { code: 'D2.1', intitule: 'Préfixes', niveau_vise: 'N3', enseignee_en: ['S02'], jalon: 'S14' },

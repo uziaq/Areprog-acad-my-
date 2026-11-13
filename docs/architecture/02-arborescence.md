@@ -44,6 +44,7 @@ Areprog-acad-my-/
 │
 ├── content/                           CONTENU PÉDAGOGIQUE, séparé du code
 │   ├── parametres.yaml                (P3) seuils de validation (D-04), durée hebdo
+│   ├── programme.yaml                 (P5) plan des 41 semaines : modules, prérequis, TP, jalons, protocole renforcé
 │   ├── referentiel/
 │   │   └── competences.yaml           (P3) D1.1 … D8.x, niveaux visés
 │   ├── glossaire.yaml                 (L1) terme FR, terme EN, chapitre de définition

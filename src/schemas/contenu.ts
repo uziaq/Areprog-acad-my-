@@ -21,6 +21,8 @@ export const RE_ID = {
   figure: /^S\d{2}-F\d{2}$/,
   competence: /^D\d+\.\d+$/,
   cas: /^CAS-\d{3}$/,
+  filRouge: /^FR-\d{2}$/,
+  domaine: /^D\d+$/,
 };
 
 /** Renvoi vers une section de leçon : « S02-L01#ancre ». */
@@ -47,6 +49,32 @@ export type Statut = z.infer<typeof statut>;
 const historique = z
   .array(z.strictObject({ version, date: dateIso, resume: z.string().min(1) }))
   .min(1, { message: 'historique : au moins une entrée' });
+
+// ---------- Programme du cursus (plan des semaines, rédigées ou non) ----------
+export const programmeSchema = z.strictObject({
+  version,
+  domaines: z.array(z.strictObject({ id: id(RE_ID.domaine, 'domaine'), titre: z.string().min(1) })).min(1),
+  modules: z
+    .array(z.strictObject({ id: id(RE_ID.module, 'module'), titre: z.string().min(1), semaines: z.array(id(RE_ID.chapitre, 'chapitre')).min(1) }))
+    .min(1),
+  semaines: z
+    .array(
+      z.strictObject({
+        id: id(RE_ID.chapitre, 'chapitre'),
+        titre: z.string().min(1),
+        module: id(RE_ID.module, 'module'),
+        prerequis: z.array(id(RE_ID.chapitre, 'chapitre')),
+        tp: z.array(id(RE_ID.tp, 'TP')),
+        fil_rouge: z.array(id(RE_ID.filRouge, 'séance de fil rouge')),
+        /** Semaine d'épreuve : jalon ou évaluation finale. */
+        evaluation: z.enum(['jalon', 'finale']).optional(),
+        /** Protocole de sécurité renforcé (airbag, ABS / ESP, direction, véhicule). */
+        protocole: z.literal('renforce').optional(),
+      }),
+    )
+    .min(1),
+});
+export type Programme = z.infer<typeof programmeSchema>;
 
 // ---------- Module ----------
 export const moduleSchema = z.strictObject({

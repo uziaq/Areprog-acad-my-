@@ -2,16 +2,35 @@
 import Base from '../../layouts/Base.astro';
 import { chargerSite } from '../../lib/contenu.ts';
 const { plan } = chargerSite();
+const toutes = plan.programme.modules.flatMap((m) => m.semaines);
+const redigees = toutes.filter((w) => w.url).length;
 ---
 <Base titre="Parcours" actif="parcours">
   <h1>Parcours</h1>
-  <p class="note">Contenu publié dans le prototype. Les autres modules du cursus seront ajoutés au fil de la rédaction.</p>
+  <p data-testid="avancement-cursus">
+    Cursus de {toutes.length} semaines (programme v{plan.programme.version}) :
+    <strong>{redigees} semaine{redigees > 1 ? 's' : ''} disponible{redigees > 1 ? 's' : ''}</strong>, les autres sont marquées « à venir » et s'ajoutent au fil de la rédaction.
+  </p>
   <div class="pile">
-    {plan.modules.map((m) => (
-      <section class="carte">
-        <h2><a href={m.url}>{m.id} · {m.titre}</a></h2>
-        <p>{m.chapitres.length} chapitre(s) : {m.chapitres.map((c) => `${c.id} ${c.titre}`).join(' ; ')}</p>
-      </section>
-    ))}
+    {plan.programme.modules.map((m) => {
+      const publie = plan.modules.find((x) => x.id === m.id);
+      return (
+        <section class="carte" data-testid={`programme-${m.id}`}>
+          <h2>{publie ? <a href={publie.url}>{m.id} · {m.titre}</a> : <>{m.id} · {m.titre}</>}</h2>
+          <ol class="liste-semaines">
+            {m.semaines.map((w) => (
+              <li data-testid={`semaine-${w.id}`} class={w.url ? '' : 'semaine--a-venir'}>
+                <span class="semaine-id">{w.id}</span>
+                {w.url ? <a href={w.url}>{w.titre}</a> : <span>{w.titre}</span>}
+                {w.evaluation === 'jalon' && <span class="badge badge--alerte">Jalon</span>}
+                {w.evaluation === 'finale' && <span class="badge badge--alerte">Évaluation finale</span>}
+                {w.protocole === 'renforce' && <span class="badge badge--erreur">Protocole renforcé</span>}
+                {!w.url && <span class="badge badge--neutre">À venir</span>}
+              </li>
+            ))}
+          </ol>
+        </section>
+      );
+    })}
   </div>
 </Base>
