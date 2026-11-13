@@ -1,0 +1,12 @@
+# Code couleur des résistances, exemples de lecture (cours S02, leçon S02-L03).
+# La page renvoie à la norme IEC 60062 ; seuls les exemples rédigés en texte ont été lus
+# (le tableau complet est une image). Sections citées par leur titre anglais.
+id: SRC-0007
+titre: "Resistor color codes"
+editeur: TE Connectivity
+reference: "Page technique TE Connectivity, rubrique Passive components / Resistors"
+revision: "page mise à jour le 2026-10-19"
+date_consultation: 2026-11-13
+type: site
+licence: lien_seulement
+lien: https://te.com/en/products/passive-components/resistors/intersection/resistor-color-codes.html

@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S01-L01-EX01
+  bonnes: [c]
+  explication: "3 × 10¹² Ω est supérieur ou égal à 1 × 10¹¹ Ω : le plateau est isolant. Il garde sa charge et ne se décharge pas en le reliant à la terre : on l'écarte de la zone protégée."
+  renvoi_section: "S01-L01#conducteur-dissipatif-isolant"
+- id: S01-L01-EX02
+  ordre: [c, d, a, b]
+  explication: "On se relie d'abord à la terre, on contrôle que la liaison fonctionne, puis seulement on ouvre le sachet. Les photos des deux faces se prennent avant toute intervention."
+  renvoi_section: "S01-L01#organisation-de-la-zone-protégée"
