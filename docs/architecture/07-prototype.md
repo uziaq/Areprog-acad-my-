@@ -27,7 +27,7 @@ En plus : fiche source, service worker hors ligne, manifeste (installation sur l
 | P6 | Tentatives enregistrées avec date, score, version | ✓ | e2e « P6, P7, P8 » |
 | P7 | Progression par compétence, jamais de niveau non mérité | ✓ | tests unitaires `progression` + e2e |
 | P8 | Persistance et export / import aller-retour | ✓ | test unitaire `sauvegarde` + e2e (profil vierge) |
-| T1 | Contenu, types, tests, build, e2e | ✓ en local | 90 tests Vitest, 22 tests Playwright (3 formats) |
+| T1 | Contenu, types, tests, build, e2e | ✓ en local et en CI | 95 tests Vitest, 43 tests Playwright (3 formats), dont la robustesse de la phase 4 |
 | T2 | Contenu entièrement dans `content/` | ✓ | aucun texte pédagogique dans `src/` |
 | T3 | Contenu non conforme = build bloqué | ✓ | `npm run build` lance `npm run valider` ; tests du validateur |
 | T4 | Hors ligne après une première visite | ✓ | e2e « T4 » (réseau coupé : leçon, exercice, QCM) |
@@ -61,5 +61,5 @@ npm run preview    # http://localhost:4321, aussi accessible depuis la tablette 
 ## Suite (phase 4 puis 5)
 
 - Relecture de la leçon S02-L01 par Arthur (et les agents `expert-electronique`, `verificateur-documentaire`).
-- Test sur la tablette réelle de l'atelier (installation sur l'écran d'accueil, hors ligne, stockage persistant : risque R3).
+- Test sur la tablette réelle de l'atelier (installation sur l'écran d'accueil, hors ligne, stockage persistant : risque R3) : procédure dans [08-test-tablette.md](08-test-tablette.md).
 - Compléter la banque QCM à 40 questions, ajouter les leçons S02-L02 et S02-L03, puis S01.

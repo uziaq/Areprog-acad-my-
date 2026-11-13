@@ -11,9 +11,18 @@ type Magasin = (typeof MAGASINS)[number];
 
 let ouverture: Promise<IDBDatabase> | null = null;
 
+/** Prévient les autres onglets ouverts de l'application qu'une donnée a changé. */
+const canal: BroadcastChannel | null = typeof BroadcastChannel === 'undefined' ? null : new BroadcastChannel('areprog-donnees');
+canal?.addEventListener('message', () => window.dispatchEvent(new CustomEvent('areprog:donnees')));
+
+function signalerChangement() {
+  window.dispatchEvent(new CustomEvent('areprog:donnees'));
+  canal?.postMessage('change');
+}
+
 function ouvrir(): Promise<IDBDatabase> {
   if (ouverture) return ouverture;
-  ouverture = new Promise((resolve, reject) => {
+  ouverture = new Promise<IDBDatabase>((resolve, reject) => {
     const req = indexedDB.open(NOM_BASE, VERSION_SCHEMA);
     req.onupgradeneeded = () => {
       const db = req.result;
@@ -22,8 +31,21 @@ function ouvrir(): Promise<IDBDatabase> {
       if (!db.objectStoreNames.contains('evenements')) db.createObjectStore('evenements', { keyPath: 'id' });
       if (!db.objectStoreNames.contains('meta')) db.createObjectStore('meta');
     };
-    req.onsuccess = () => resolve(req.result);
+    req.onsuccess = () => {
+      const db = req.result;
+      // Une nouvelle version de l'application (migration) est ouverte dans un autre onglet :
+      // libérer la base pour ne pas bloquer sa mise à jour, puis rouvrir à la prochaine demande.
+      db.onversionchange = () => {
+        db.close();
+        ouverture = null;
+      };
+      resolve(db);
+    };
     req.onerror = () => reject(req.error);
+  }).catch((e: unknown) => {
+    // Échec (navigation privée, quota…) : ne pas mémoriser l'échec, réessayer à la prochaine demande.
+    ouverture = null;
+    throw e;
   });
   return ouverture;
 }
@@ -49,7 +71,7 @@ async function ecrire(magasin: Magasin, valeur: unknown, cle?: IDBValidKey): Pro
     tx.onerror = () => reject(tx.error);
     tx.onabort = () => reject(tx.error);
   });
-  window.dispatchEvent(new CustomEvent('areprog:donnees'));
+  signalerChangement();
 }
 
 export function nouvelId(): string {
@@ -82,7 +104,7 @@ export async function remplacerDonnees(s: Sauvegarde): Promise<void> {
     tx.onerror = () => reject(tx.error);
     tx.onabort = () => reject(tx.error);
   });
-  window.dispatchEvent(new CustomEvent('areprog:donnees'));
+  signalerChangement();
 }
 
 /** Demande au navigateur de ne pas effacer les données (NF5). */

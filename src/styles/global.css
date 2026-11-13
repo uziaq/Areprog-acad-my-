@@ -28,6 +28,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 .saut { position: absolute; left: -999px; }
 .saut:focus { left: 1rem; top: 1rem; background: var(--fond-2); padding: 0.5rem 1rem; z-index: 10; }
+.champ-fichier { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.champ-fichier:focus-visible + label { outline: 3px solid var(--lien); outline-offset: 3px; }
 
 /* ---------- En-tête et navigation ---------- */
 .entete {

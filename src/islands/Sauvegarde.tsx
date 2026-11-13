@@ -33,9 +33,13 @@ export default function Sauvegarde() {
   }
 
   async function choisirFichier(ev: Event) {
-    const f = (ev.target as HTMLInputElement).files?.[0];
+    const champ = ev.target as HTMLInputElement;
+    const f = champ.files?.[0];
     if (!f) return;
-    const r = lireSauvegarde(await f.text());
+    const texte = await f.text();
+    // Vider le champ : choisir de nouveau le même fichier (corrigé) doit relancer l'analyse.
+    champ.value = '';
+    const r = lireSauvegarde(texte);
     if (!r.ok) {
       setApercu(null);
       setMessage(r.erreur);
@@ -47,8 +51,12 @@ export default function Sauvegarde() {
 
   async function confirmerImport() {
     if (!apercu) return;
-    await remplacerDonnees(apercu);
-    setMessage(`Import terminé : ${apercu.tentatives.length} tentative(s) restaurée(s).`);
+    try {
+      await remplacerDonnees(apercu);
+      setMessage(`Import terminé : ${apercu.tentatives.length} tentative(s) restaurée(s).`);
+    } catch {
+      setMessage('Import impossible : le stockage local de ce navigateur est indisponible. Vos données actuelles n\'ont pas été modifiées.');
+    }
     setApercu(null);
   }
 
@@ -73,8 +81,9 @@ export default function Sauvegarde() {
       <section class="carte">
         <h2>Importer</h2>
         <p>L'import <strong>remplace</strong> toutes les données de cet appareil par celles du fichier.</p>
+        {/* Champ masqué visuellement mais atteignable au clavier : le focus s'affiche sur le bouton (voir global.css). */}
+        <input id="fichier-sauvegarde" class="champ-fichier" type="file" accept="application/json,.json" onChange={choisirFichier} />
         <label class="bouton bouton--secondaire" for="fichier-sauvegarde">Choisir un fichier de sauvegarde</label>
-        <input id="fichier-sauvegarde" type="file" accept="application/json,.json" onChange={choisirFichier} style={{ position: 'absolute', left: '-999px' }} />
         {apercu && (
           <div class="alerte" style={{ marginTop: '1rem' }} data-testid="apercu-import">
             <p>

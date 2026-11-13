@@ -29,9 +29,9 @@
   competences: [D2.1]
   objectif: O1
 - id: S02-L01-EX05
-  version: "0.1"
+  version: "0.2"
   type: calcul
-  enonce: Une résistance de 100 Ω est branchée directement sous 12 V. Quelle puissance dissipe-t-elle ? Une résistance de 0,25 W conviendrait-elle ?
+  enonce: Une résistance de 100 Ω est branchée directement sous 12 V. Quelle puissance dissipe-t-elle ? (La correction la compare ensuite à une résistance de puissance nominale 0,25 W.)
   unite_attendue: W
   competences: [D2.2]
   objectif: O3
