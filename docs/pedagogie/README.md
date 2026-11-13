@@ -24,7 +24,7 @@ Objectif central : **diagnostic et réparation au niveau carte en autonomie (N3)
 | 2 | [Programme 41 semaines](02-programme-41-semaines.md) | 10 modules + examen, prérequis, objectifs, contenu et TP semaine par semaine |
 | 3 | [Travaux pratiques et équipement](03-travaux-pratiques.md) | 60 TP, fil rouge, banc de test, protocoles de sécurité (calculateur réel, sécurité, véhicule), matériel |
 | 4 | [Évaluation](04-evaluation.md) | QCM, grilles, 3 jalons, fautes éliminatoires, grille protocole renforcé, examen final |
-| 5 | [Ressources documentaires](05-ressources-documentaires.md) | Normes, ouvrages, datasheets, règles de sourçage |
+| 5 | [Ressources documentaires](05-ressources-documentaires.md) | Normes, ouvrages, datasheets, vidéos, règles de sourçage |
 | 6 | [Gabarit de cours](06-gabarit-cours.md) | Structure obligatoire en 14 rubriques de chaque cours |
 | 7 | [Cahier des charges de la plateforme](07-cahier-des-charges-plateforme.md) | Besoins de la plateforme interactive à développer avec Claude Code |
 | 8 | [Décisions à valider et lacunes](08-decisions-et-lacunes.md) | Ce qu'Arthur doit trancher avant la rédaction |
