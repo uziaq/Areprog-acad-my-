@@ -11,14 +11,40 @@
 
 ## Règle « calculateurs de sécurité »
 
-| Situation | Règle |
-|---|---|
-| Calculateur d'airbag / prétensionneurs | **Exclu des TP.** Présence possible d'énergie stockée pour le déclenchement et réglementation spécifique des pyrotechnies : à traiter hors cursus avec une formation dédiée. [À VÉRIFIER : cadre réglementaire applicable à l'atelier] |
-| ABS / ESP, direction assistée | Observation et mesures sur banc autorisées sur pièces de récupération. Aucune réparation remise en circulation dans le cadre du cursus. |
-| ECU moteur, TCU | Diagnostic et réparation autorisés sur récupération. La validation (S31) doit lister ce qui n'a pas pu être testé. |
-| BCM / BSI / FRM | Diagnostic et réparation autorisés sur récupération. Attention aux fonctions éclairage et verrouillage, qui touchent la sécurité routière et des personnes. |
+Décision d'Arthur (13/11/2026) : les calculateurs d'airbag, d'ABS / ESP et de direction
+assistée sont **diagnostiqués et réparés** dans le cursus, pas seulement observés. Ils
+sont traités en S31, après validation de tout le reste, avec le protocole renforcé ci-dessous.
 
-Cette règle est une proposition de l'académie, à valider (voir [décisions](08-decisions-et-lacunes.md)).
+| Famille | Quand | Cadre |
+|---|---|---|
+| ECU moteur, TCU | S29–S30 | Diagnostic et réparation sur récupération. La validation doit lister ce qui n'a pas pu être testé. |
+| BCM / BSI / FRM / CAS | S30 | Diagnostic et réparation sur récupération. Éclairage, verrouillage et antidémarrage touchent la sécurité des personnes et des biens. |
+| Airbag | S31 | Diagnostic et réparation sur récupération, protocole renforcé, **jamais de pyrotechnie à l'atelier**. |
+| ABS / ESP, direction assistée | S31 | Diagnostic et réparation sur récupération, protocole renforcé, validation finale sur véhicule. |
+
+## Protocole renforcé pour les calculateurs de sécurité
+
+Ce protocole est une proposition pédagogique. Toute valeur (résistance de substitution,
+temps de décharge, tension de réserve) doit venir d'une source identifiée, sinon elle
+reste [À VÉRIFIER] et la mesure prime.
+
+**Avant l'intervention**
+
+1. Le calculateur arrive **seul** : aucun module d'airbag, prétensionneur ou autre élément pyrotechnique n'entre dans l'atelier de formation. [À VÉRIFIER : réglementation applicable au stockage et à la manipulation des pyrotechnies automobiles]
+2. Identifier sur la carte la réserve d'énergie (condensateurs de réserve) et les étages de commande des allumeurs, à partir de la carte elle-même et de datasheets publiques, et marquer le relevé [À VÉRIFIER].
+3. Vérifier **par la mesure** que la réserve d'énergie est déchargée avant toute manipulation ou soudure. Ne jamais supposer qu'un temps d'attente suffit.
+4. Sauvegarder la mémoire (EEPROM / Flash) deux fois, empreintes identiques, avant toute intervention. Noter l'état de la mémoire d'événements sans la modifier dans le cadre du cursus.
+
+**Sur banc**
+
+5. Alimentation de labo limitée en courant, mise sous tension progressive (méthode S18).
+6. Sorties d'allumeurs reliées **uniquement** à des charges de substitution résistives (simulateurs d'allumeurs du commerce ou résistances), dont la valeur provient de la documentation de l'outil ou du constructeur. [À VÉRIFIER : valeur par calculateur]
+7. ABS / ESP et direction : charges de substitution pour électrovannes et moteurs dimensionnées d'après les mesures sur l'organe réel ; protection contre les courants élevés (fusible, limitation).
+
+**Validation et traçabilité**
+
+8. Dossier de validation renforcée : ce qui est validé sur banc, ce qui doit l'être sur véhicule avec l'outil de diagnostic (lecture des défauts, codages, apprentissages, essais dynamiques prévus par le constructeur), ce qui ne peut pas l'être en atelier.
+9. Remise en circulation d'un calculateur de sécurité : régie par la [décision D-14](08-decisions-et-lacunes.md), jamais pendant le cursus sans protocole écrit.
 
 ## Catalogue des TP
 
@@ -69,9 +95,12 @@ Durée indicative : 1 à 3 h. « CE » = carte d'entraînement ou plaque d'essai
 | TP-41 | S28 | Zone corrodée | CR | Avant / après, mesures d'isolement |
 | TP-42 | S29 | Banc de test et simulateur de charges | Matériel atelier | Banc documenté et sécurisé |
 | TP-43 | S29 | Diagnostic complet ECU moteur | CR | Dossier de réparation |
-| TP-44 | S30 | Diagnostic TCU ou BCM / BSI / FRM | CR | Dossier de réparation |
+| TP-44 | S30 | Diagnostic TCU ou BCM / BSI / FRM / CAS | CR | Dossier de réparation |
 | TP-45 | S30 | Consommation au repos et réveil | CR | Courbe de consommation, analyse |
-| TP-46 | S31 | Validation et dossier | CR réparé | Dossier complet avec limites de validation |
+| TP-46 | S30 | Validation et dossier | CR réparé | Dossier complet avec limites de validation |
+| TP-47 | S31 | Airbag sur banc avec charges de substitution | CR airbag (sans pyrotechnie) | Décharge de la réserve mesurée, sauvegardes, diagnostic |
+| TP-48 | S31 | ABS / ESP ou direction sur banc | CR | Étage de puissance diagnostiqué, charges de substitution documentées |
+| TP-49 | S31 | Dossier de validation renforcée | CR réparé de TP-47 ou TP-48 | Banc / véhicule / non validable clairement séparés |
 
 ## Fil rouge microsoudure (S4 à S25, 1 h par semaine)
 
@@ -125,6 +154,8 @@ selon le budget (voir [décisions](08-decisions-et-lacunes.md)). Aucune marque n
 | Utile | Milliohmmètre (ou méthode 4 fils) | Localisation de court-circuit | S18 |
 | Utile | Sonde différentielle haute tension | Mesures flottantes | S29 |
 | Utile | Banc / simulateur de charges construit en TP-42 | Diagnostic | S29 |
+| Indispensable (S31) | Simulateurs d'allumeurs d'airbag (charges résistives de substitution) | Airbag sur banc sans pyrotechnie | S31 |
+| Indispensable (S31) | Charges de substitution de puissance (électrovannes, moteurs) | ABS / ESP, direction | S31 |
 
 ## Sécurité chimique et thermique (à détailler dans le cours S1)
 

@@ -117,10 +117,11 @@ Colonne « Visé » : niveau attendu en fin de cursus.
 |---|---|---|---|
 | D10.1 | Mettre un calculateur sous tension sur banc de façon sûre et observer son état | E S18, S29 | N3 |
 | D10.2 | Analyser un étage de sortie (low-side, high-side, pont en H) et ses protections | E S29 | N2 |
-| D10.3 | Conduire un diagnostic carte complet sur ECU / TCU / BCM / BSI / FRM de récupération | E S29–S31 | N2 |
-| D10.4 | Valider une réparation (essais fonctionnels, mesures avant / après, durée d'essai) | E S31 | N3 |
-| D10.5 | Rédiger un dossier de réparation traçable et réutilisable | E S1, S31, V S32 | N3 |
-| D10.6 | Identifier les calculateurs liés à la sécurité et appliquer les règles de refus ou de validation renforcée | E S17, S29 | N3 |
+| D10.3 | Conduire un diagnostic carte complet sur ECU / TCU / BCM / BSI / FRM / CAS de récupération | E S29–S30 | N2 |
+| D10.4 | Valider une réparation (essais fonctionnels, mesures avant / après, durée d'essai) | E S30, S31 | N3 |
+| D10.5 | Rédiger un dossier de réparation traçable et réutilisable | E S1, S30, V S32 | N3 |
+| D10.6 | Identifier les calculateurs liés à la sécurité et appliquer le protocole renforcé (énergie stockée, absence de pyrotechnie, validation) | E S17, S31 | N3 |
+| D10.7 | Diagnostiquer et réparer un calculateur de sécurité (airbag, ABS / ESP, direction) de récupération et documenter une validation renforcée | E S31 | N2 |
 
 ## Synthèse
 
@@ -135,7 +136,7 @@ Colonne « Visé » : niveau attendu en fin de cursus.
 | D7 Numérique et mémoires | 5 | ≈ 32 h |
 | D8 Réseaux | 3 | ≈ 24 h |
 | D9 Microsoudure | 5 | ≈ 46 h (22 h fil rouge + 24 h intensif) |
-| D10 Diagnostic calculateurs | 6 | ≈ 32 h |
+| D10 Diagnostic calculateurs | 7 | ≈ 32 h |
 
 Les heures se recouvrent (un TP d'alimentation mobilise aussi les instruments) ; elles
 servent à vérifier l'équilibre, pas à tenir une comptabilité.

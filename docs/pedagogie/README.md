@@ -18,7 +18,7 @@ Format : **32 semaines × 8 h = 256 h**, en autonomie, dans l'atelier AREPROG.
 
 | # | Document | Contenu |
 |---|---|---|
-| 1 | [Référentiel de compétences](01-referentiel-competences.md) | 10 domaines, 54 compétences, niveaux visés |
+| 1 | [Référentiel de compétences](01-referentiel-competences.md) | 10 domaines, 55 compétences, niveaux visés |
 | 2 | [Programme 32 semaines](02-programme-32-semaines.md) | 9 modules, prérequis, objectifs, contenu et TP semaine par semaine |
 | 3 | [Travaux pratiques et équipement](03-travaux-pratiques.md) | Catalogue des TP, règles de sécurité, matériel nécessaire |
 | 4 | [Évaluation](04-evaluation.md) | QCM, évaluations pratiques, grilles, jalons, règles de validation |
@@ -58,7 +58,9 @@ documentant la méthode.
  S32        S29–S31         S26–S28        S23–S25        S19–S22
 [EXAMEN]←[Diagnostic  ]←[Microsoudure]←[Réseaux    ]←[Numérique,  ]
  final     ECU/TCU/BCM    intensive      CAN/LIN/K      MCU, mémoires
-           BSI/FRM                        + JALON 2
+           BSI/FRM/CAS                    + JALON 2
+           + airbag,
+           ABS, direction
             ────── fil rouge microsoudure 1 h/semaine de S4 à S25 ──────
 ```
 

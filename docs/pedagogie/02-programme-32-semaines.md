@@ -20,7 +20,7 @@ Conventions :
 | M5 | S19–S22 | 32 | Numérique, microcontrôleurs, mémoires | M4 (S15, S18 au minimum) |
 | M6 | S23–S25 | 24 | Réseaux CAN, LIN, K-Line, **jalon 2** | M5 (S19) |
 | M7 | S26–S28 | 24 | Microsoudure intensive et réparation de carte | Fil rouge S4–S25 validé |
-| M8 | S29–S31 | 24 | Diagnostic de calculateurs ECU, TCU, BCM, BSI, FRM | M4 à M7 |
+| M8 | S29–S31 | 24 | Diagnostic de calculateurs ECU, TCU, BCM, BSI, FRM, CAS, puis calculateurs de sécurité (airbag, ABS / ESP, direction) | M4 à M7 |
 | — | S32 | 8 | **Évaluation finale** | Tout le cursus |
 | | | **256** | | |
 
@@ -274,14 +274,18 @@ Conventions :
 - **Prérequis** : S29.
 - **Objectifs** : décrire l'architecture générique d'un TCU, d'un BCM / BSI et d'un module d'éclairage / carrosserie de type FRM ; conduire le diagnostic d'au moins deux types de calculateurs de récupération différents.
 - **Contenu** : spécificités par famille (étages de commande d'électrovannes, éclairage, gestion veille / réveil, consommation au repos) ; aucune « panne connue » n'est enseignée sans source vérifiable ; les observations de l'apprenant sont versées dans sa base avec l'étiquette adaptée.
-- **TP** : TP-44 Diagnostic d'un TCU ou BCM / BSI / FRM de récupération ; TP-45 Mesure de consommation au repos et analyse du réveil.
+- **TP** : TP-44 Diagnostic d'un TCU ou BCM / BSI / FRM / CAS de récupération ; TP-45 Mesure de consommation au repos et analyse du réveil ; TP-46 Validation et dossier de la réparation de S29 ou S30.
+- **Validation** (déplacée de S31) : protocole d'essais fonctionnels, mesures avant / après, durée d'essai, limites d'un banc d'atelier, traçabilité, communication au client.
 
-### S31 — Validation et documentation de la réparation
+### S31 — Calculateurs de sécurité : airbag, ABS / ESP, direction assistée
 
-- **Prérequis** : S30.
-- **Objectifs** : définir un protocole de validation (essais fonctionnels, cyclage thermique simple, durée d'essai) ; comparer mesures avant / après ; rédiger un dossier de réparation complet ; définir ce qui ne peut pas être validé en atelier.
-- **Contenu** : critères de validation ; limites d'un banc d'atelier vs essais constructeur ; traçabilité (photos, mesures, composants, sources) ; communication au client.
-- **TP** : TP-46 Validation et dossier de la réparation de S29 ou S30.
+- **Prérequis** : S30, TP-46 validé, [protocole sécurité renforcé](03-travaux-pratiques.md#protocole-renforcé-pour-les-calculateurs-de-sécurité) lu et signé.
+- **Objectifs**
+  - Expliquer, à partir de documentation publique, l'architecture générique d'un calculateur d'airbag (alimentation, réserve d'énergie, étages de commande des allumeurs, capteurs, mémoire d'événements), d'un calculateur ABS / ESP (commande d'électrovannes et de moteur de pompe, capteurs de roue) et d'un calculateur de direction assistée électrique (étage de puissance moteur, capteur de couple).
+  - Mettre un calculateur d'airbag de récupération sous tension sur banc **sans aucun élément pyrotechnique**, avec des charges de substitution, et vérifier la décharge de sa réserve d'énergie avant toute intervention.
+  - Diagnostiquer un défaut de niveau carte sur un calculateur de sécurité de récupération, et rédiger un protocole de validation renforcé qui distingue ce qui est validé sur banc, ce qui doit l'être sur véhicule avec l'outil de diagnostic (ODIS, ISTA… selon marque), et ce qui ne peut pas l'être en atelier.
+- **Contenu** : principes de sécurité fonctionnelle (ISO 26262, notions) et redondances ; spécificités airbag (réserve d'énergie, mémoire de collision et éventuel verrouillage après choc [À VÉRIFIER par constructeur], codage) ; spécificités ABS / ESP et direction (étages de forte puissance, autodiagnostic, apprentissages et calibrations après intervention [À VÉRIFIER par constructeur]) ; responsabilité de l'atelier et conditions de remise en circulation (voir [décision D-14](08-decisions-et-lacunes.md)).
+- **TP** : TP-47 Calculateur d'airbag sur banc avec charges de substitution ; TP-48 Calculateur ABS / ESP ou direction sur banc ; TP-49 Dossier de validation renforcée.
 
 ---
 
