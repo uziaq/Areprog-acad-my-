@@ -112,7 +112,7 @@ Règles :
 - demande de **stockage persistant** au navigateur (`navigator.storage.persist()`) ;
 - **export complet** en un fichier JSON daté, rappel d'export hebdomadaire sur le tableau de bord, **import** avec contrôle de format et aperçu avant remplacement ;
 - **migrations** numérotées et testées à chaque changement du schéma de données ;
-- aucune donnée client ni donnée véhicule identifiante (NF6) : le formulaire du journal ne prévoit pas de champ VIN ou plaque.
+- aucune donnée client ni donnée véhicule identifiante (NF6) : le formulaire du journal ne prévoit pas de champ VIN ou plaque. Les véhicules dédiés de l'atelier (utilisés pour la validation sur véhicule) sont désignés par un code interne (`VEH-01`…) dont la correspondance avec le VIN reste hors de l'application.
 
 La synchronisation entre appareils (PC + tablette) est reportée à un lot ultérieur
 (voir décision A-03) ; d'ici là, l'export / import fait office de transfert.
@@ -158,6 +158,14 @@ elle **l'impose** :
 - un critère de sécurité non coché bloque la validation, quel que soit le score ;
 - un bandeau rouge rappelle en permanence le domaine de risque pendant le TP ;
 - le validateur de contenu refuse un TP `renforcee` sans section « Protocole de sécurité », sans source pour chaque consigne réglementaire, ou avec une consigne étiquetée [À VÉRIFIER] (une consigne de sécurité non vérifiée ne peut pas être publiée).
+
+### Validation sur véhicule
+
+Le cursus passe à 35 semaines, avec des semaines supplémentaires sur les calculateurs de
+sécurité et la validation sur véhicule (véhicules dédiés de l'atelier). Le même mécanisme
+s'applique à un TP `support: vehicule` : verrou tant que la réparation sur banc n'est pas
+validée, check-list avant et après essai avec preuves (captures de diagnostic, photos),
+et fiche de validation listant explicitement ce qui n'a pas pu être testé.
 
 ## 1.10 Accès privé et déploiement
 

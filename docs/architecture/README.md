@@ -35,7 +35,7 @@ Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges
 | **A-04** | Protection du site lors du premier déploiement | A. Mot de passe par fonction de bord Netlify (gratuit, secret dans les variables Netlify) ; B. Protection par mot de passe intégrée de Netlify [À VÉRIFIER : offre payante requise] ; C. Pas de déploiement avant L3, usage local uniquement | **C puis A** | Le prototype n'a pas besoin d'être en ligne ; quand tu voudras l'utiliser sur la tablette hors atelier, A suffit |
 | **A-05** | Masquage des corrections | A. Côté navigateur, chargées après soumission ; B. Vérifiées par un serveur | **A** | Suffisant pour un apprenant unique ; B devient nécessaire avec de futurs apprenants |
 | **A-06** | Contenu du prototype | Leçon S02-L01 « Grandeurs et loi d'Ohm » ; exercice = calcul du courant avec un petit circuit interactif (curseurs U et R) ; QCM de 10 questions | **Oui** | S2 est un cours pilote du fil pédagogique ; l'exercice préfigure les simulateurs sans en être un |
-| **A-07** | Protocole airbag / ABS / direction | La plateforme impose le protocole (verrou sans dérogation, check-list avec preuves, critère éliminatoire) ; le texte du protocole est rédigé et sourcé dans le fil pédagogique | **Oui** | Sépare la règle (code) de la consigne (contenu vérifié) ; les documents D-02 / D-03 sont encore à mettre à jour |
+| **A-07** | Protocole airbag / ABS / direction et validation sur véhicule | La plateforme impose le protocole (verrou sans dérogation, check-list avec preuves, critère éliminatoire), y compris pour les TP sur véhicule dédié ; le texte du protocole est rédigé et sourcé dans le fil pédagogique | **Oui** | Sépare la règle (code) de la consigne (contenu vérifié) ; les documents D-02 / D-03 sont encore à mettre à jour |
 | **A-08** | Branche principale et revue | `main` protégée, tout passe par PR, CI obligatoire | **Oui** | Sauvegarde et historique de tout le contenu |
 
 ## Phases suivantes (rappel)
@@ -45,4 +45,4 @@ Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges
 | 2 | Structure du projet, `CLAUDE.md`, règles, Skills, agents, CI, validateur de contenu (lot L0) | Ton accord sur ce plan |
 | 3 | Prototype : tableau de bord, 1 module, 1 leçon, 1 exercice, 1 QCM, suivi de progression | Phase 2 fusionnée |
 | 4 | Tests et corrections jusqu'à validation des critères [P1–P8, T1–T9, C1–C3](05-tests-et-validation.md#53-critères-de-validation-du-prototype-phase-3) | Prototype livré |
-| 5 | Préparation de l'extension aux 32 semaines (générateur de chapitres, lots L1 à L5) | Prototype validé |
+| 5 | Préparation de l'extension aux 35 semaines (générateur de chapitres, lots L1 à L5, TP sur véhicule et protocole renforcé) | Prototype validé |

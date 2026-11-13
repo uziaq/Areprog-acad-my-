@@ -4,13 +4,17 @@
 
 | Niveau | Correspond à | Exemple d'identifiant | Porte |
 |---|---|---|---|
-| **Module** | Un module du [programme](../pedagogie/02-programme-32-semaines.md) (M0 à M8) | `M1` | Titre, ordre, liste des chapitres |
+| **Module** | Un module du [programme](../pedagogie/02-programme-32-semaines.md) (M0 à M8, plus les modules ajoutés) | `M1` | Titre, ordre, liste des chapitres |
 | **Chapitre** | Une semaine = un « cours » du [gabarit](../pedagogie/06-gabarit-cours.md) (8 h) | `S02` | En-tête du gabarit, prérequis, compétences, TP, QCM, corrigé, sources, statut de relecture |
 | **Leçon** | Une séquence de 1 à 2 h à l'intérieur de la semaine | `S02-L01` | Les champs demandés : identifiant, version, objectifs, prérequis, contenu, exercices, références, critères d'évaluation |
 
 Les 12 rubriques du gabarit restent vérifiées **au niveau du chapitre** : théorie, schémas,
 exemples et exercices sont répartis dans les leçons ; prérequis, TP, mesures attendues,
 erreurs fréquentes, QCM, corrigé et sources sont au niveau du chapitre. Voir décision A-02.
+
+Le nombre de semaines n'est codé nulle part dans l'application : le parcours est la liste
+des modules et chapitres présents dans `content/`. Passer de 32 à 35 semaines (ou plus)
+ne demande qu'à ajouter des dossiers de contenu.
 
 ## 3.2 Identifiants stables
 
