@@ -20,7 +20,7 @@ qui garde les résultats de l'apprenant **dans l'appareil** avec export / import
 | 3 | [Modèle de contenu](03-modele-de-contenu.md) | Module / chapitre / leçon, identifiants, versions, exercices et corrections, QCM, étiquettes, sources, études de cas, contrôle de conformité |
 | 4 | [Configuration Claude Code](04-configuration-claude-code.md) | `CLAUDE.md`, 7 règles, 5 Skills, 4 sous-agents, permissions |
 | 5 | [Tests et validation](05-tests-et-validation.md) | Structure des tests, validation du contenu en trois barrières, **critères d'acceptation du prototype** |
-| 6 | [Risques](06-risques.md) | 14 risques et leurs mesures |
+| 6 | [Risques](06-risques.md) | 15 risques et leurs mesures |
 
 Référence : [cahier des charges plateforme](../pedagogie/07-cahier-des-charges-plateforme.md)
 (fil pédagogique, branche `claude/project-thread-7tl6vf` ; ce lien fonctionnera une fois les deux PR fusionnées).
