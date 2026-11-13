@@ -92,6 +92,7 @@ test('R5 : sauvegarde corrompue refusée, données intactes, même fichier rées
   await page.goto('/sauvegarde/');
   const fichier = { name: 'sauvegarde.json', mimeType: 'application/json', buffer: Buffer.from('{"format": "autre chose"') };
   const champ = page.locator('#fichier-sauvegarde');
+  await expect(champ).toBeEnabled();
   await champ.setInputFiles(fichier);
   await expect(page.getByTestId('message-sauvegarde')).toBeVisible();
   await expect(page.getByTestId('apercu-import')).toHaveCount(0);
@@ -104,6 +105,7 @@ test('R5 : sauvegarde corrompue refusée, données intactes, même fichier rées
 test('R6 : le champ d\'import est atteignable au clavier avec un focus visible', async ({ page }) => {
   await page.goto('/sauvegarde/');
   const champ = page.locator('#fichier-sauvegarde');
+  await expect(champ).toBeEnabled();
   await champ.focus();
   const contour = await page.locator('label[for="fichier-sauvegarde"]').evaluate((el) => getComputedStyle(el).outlineStyle);
   expect(contour).not.toBe('none');

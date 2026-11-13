@@ -193,3 +193,4 @@ label { cursor: pointer; }
 .semaine--a-venir { color: var(--texte-attenue); }
 .semaine--a-venir .semaine-id { color: var(--texte-attenue); }
 details > summary { padding: 0.75rem 0; cursor: pointer; font-weight: 600; }
+.champ-fichier:disabled + label { opacity: 0.6; }

@@ -13,6 +13,10 @@ export default function Sauvegarde() {
   const [dernierExport, setDernierExport] = useState<string | null>(null);
   const [apercu, setApercu] = useState<S | null>(null);
   const [message, setMessage] = useState<string | null>(null);
+  // Le champ d'import reste inactif tant que le composant n'est pas actif dans le navigateur :
+  // sinon un fichier choisi pendant le chargement (téléphone lent) serait ignoré sans message.
+  const [actif, setActif] = useState(false);
+  useEffect(() => setActif(true), []);
 
   useEffect(() => {
     demanderStockagePersistant().then(setPersistant);
@@ -82,7 +86,7 @@ export default function Sauvegarde() {
         <h2>Importer</h2>
         <p>L'import <strong>remplace</strong> toutes les données de cet appareil par celles du fichier.</p>
         {/* Champ masqué visuellement mais atteignable au clavier : le focus s'affiche sur le bouton (voir global.css). */}
-        <input id="fichier-sauvegarde" class="champ-fichier" type="file" accept="application/json,.json" onChange={choisirFichier} />
+        <input id="fichier-sauvegarde" class="champ-fichier" type="file" accept="application/json,.json" onChange={choisirFichier} disabled={!actif} />
         <label class="bouton bouton--secondaire" for="fichier-sauvegarde">Choisir un fichier de sauvegarde</label>
         {apercu && (
           <div class="alerte" style={{ marginTop: '1rem' }} data-testid="apercu-import">
