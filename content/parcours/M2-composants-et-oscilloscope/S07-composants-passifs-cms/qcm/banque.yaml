@@ -1,0 +1,249 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S07-Q001
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L01#le-code-de-taille-dune-puce-passive"
+  enonce: "Que représentent les quatre chiffres d'un code de taille comme 0805 en pouces ?"
+  propositions:
+    - {id: a, texte: "La longueur puis la largeur, en centièmes de pouce"}
+    - {id: b, texte: "La valeur de la résistance"}
+    - {id: c, texte: "La puissance en milliwatts"}
+    - {id: d, texte: "La tension maximale"}
+- id: S07-Q002
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L01#le-code-de-taille-dune-puce-passive"
+  enonce: "D'après la fiche Vishay de la leçon, quelles sont les dimensions d'une puce 0805 ?"
+  propositions:
+    - {id: a, texte: "2,0 × 1,25 mm"}
+    - {id: b, texte: "0,8 × 0,5 mm"}
+    - {id: c, texte: "3,2 × 1,6 mm"}
+    - {id: d, texte: "1,0 × 0,5 mm"}
+- id: S07-Q003
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L01#le-code-de-taille-dune-puce-passive"
+  enonce: "Pourquoi faut-il vérifier si un code de taille est en pouces ou en millimètres ?"
+  propositions:
+    - {id: a, texte: "Le même nombre peut désigner deux tailles différentes selon le système"}
+    - {id: b, texte: "Les deux systèmes donnent toujours la même taille"}
+    - {id: c, texte: "Seul le système métrique existe"}
+    - {id: d, texte: "Ce n'est jamais nécessaire"}
+- id: S07-Q004
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L01#les-autres-familles-de-boîtiers"
+  enonce: "Un boîtier SOT-23 contient :"
+  propositions:
+    - {id: a, texte: "Un composant dont la fonction ne se déduit pas du boîtier : transistor, diode double, régulateur…"}
+    - {id: b, texte: "Toujours un transistor"}
+    - {id: c, texte: "Toujours une résistance"}
+    - {id: d, texte: "Toujours un condensateur"}
+- id: S07-Q005
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L01#les-autres-familles-de-boîtiers"
+  enonce: "Comment repère-t-on la broche 1 d'un boîtier SOIC ?"
+  propositions:
+    - {id: a, texte: "Par un point ou un chanfrein sur le boîtier"}
+    - {id: b, texte: "C'est toujours la broche la plus proche du bord de la carte"}
+    - {id: c, texte: "Par sa couleur"}
+    - {id: d, texte: "Elle n'est jamais repérée"}
+- id: S07-Q006
+  type: choix_unique
+  securite: false
+  competences: [D3.5, D4.1]
+  section: "S07-L01#identifier-au-microscope"
+  enonce: "Quelle est la première action avant d'intervenir sur une zone de carte ?"
+  propositions:
+    - {id: a, texte: "La photographier avec un repère d'échelle"}
+    - {id: b, texte: "Dessouder le composant suspect"}
+    - {id: c, texte: "Nettoyer au solvant"}
+    - {id: d, texte: "Alimenter la carte pour voir"}
+- id: S07-Q007
+  type: calcul
+  securite: false
+  competences: [D4.1, D4.6]
+  section: "S07-L01#taille-et-puissance"
+  enonce: "Une résistance de 220 Ω est parcourue par 20 mA. Quelle puissance dissipe-t-elle ?"
+  unite_attendue: mW
+- id: S07-Q008
+  type: choix_unique
+  securite: false
+  competences: [D4.1, D4.6]
+  section: "S07-L01#taille-et-puissance"
+  enonce: "Dans la série D/CRCW e3, quelle est la puissance admissible à 70 °C d'une puce 1206 ?"
+  propositions:
+    - {id: a, texte: "0,25 W"}
+    - {id: b, texte: "0,063 W"}
+    - {id: c, texte: "1,0 W"}
+    - {id: d, texte: "La même pour toutes les tailles"}
+- id: S07-Q009
+  type: choix_unique
+  securite: false
+  competences: [D4.1, D4.6]
+  section: "S07-L01#taille-et-puissance"
+  enonce: "La puissance nominale d'une résistance CMS vaut-elle à toute température ?"
+  propositions:
+    - {id: a, texte: "Non : au-dessus de 70 °C, la fiche donne une courbe de déclassement"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Oui, si la résistance est grande"}
+    - {id: d, texte: "Non, elle augmente avec la température"}
+- id: S07-Q010
+  type: calcul
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#le-code-à-chiffres"
+  enonce: "Quelle est la valeur d'une résistance CMS marquée « 682 » ?"
+  unite_attendue: kΩ
+- id: S07-Q011
+  type: calcul
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#le-code-à-chiffres"
+  enonce: "Quelle est la valeur d'une résistance CMS marquée « 100 » ?"
+  unite_attendue: Ω
+- id: S07-Q012
+  type: calcul
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#le-code-à-chiffres"
+  enonce: "Quelle est la valeur d'une résistance CMS marquée « 2491 » ?"
+  unite_attendue: kΩ
+- id: S07-Q013
+  type: calcul
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#la-lettre-r"
+  enonce: "Quelle est la valeur d'une résistance CMS marquée « 2R2 » ?"
+  unite_attendue: Ω
+- id: S07-Q014
+  type: calcul
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#le-code-eia-96"
+  enonce: "D'après la table de la note TN004, quelle est la valeur d'une résistance marquée « 01C » ?"
+  unite_attendue: kΩ
+- id: S07-Q015
+  type: calcul
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#le-code-eia-96"
+  enonce: "D'après la table de la note TN004, quelle est la valeur d'une résistance marquée « 68A » ?"
+  unite_attendue: Ω
+- id: S07-Q016
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#le-code-eia-96"
+  enonce: "Dans un code EIA-96 comme « 07B », que représentent les deux chiffres ?"
+  propositions:
+    - {id: a, texte: "Un numéro de valeur à chercher dans la table"}
+    - {id: b, texte: "Les chiffres significatifs de la valeur"}
+    - {id: c, texte: "La tolérance"}
+    - {id: d, texte: "La taille du boîtier"}
+- id: S07-Q017
+  type: choix_unique
+  securite: false
+  competences: [D4.1, D4.2]
+  section: "S07-L02#ce-que-le-marquage-ne-dit-pas"
+  enonce: "Une puce CMS ne porte aucun marquage. Que faites-vous pour connaître sa valeur ?"
+  propositions:
+    - {id: a, texte: "Je cherche dans le schéma et la nomenclature, ou je la mesure hors circuit"}
+    - {id: b, texte: "Je retiens une valeur typique pour sa taille"}
+    - {id: c, texte: "Je déduis la valeur de sa couleur"}
+    - {id: d, texte: "Je la remplace par une résistance de 10 kΩ"}
+- id: S07-Q018
+  type: choix_unique
+  securite: false
+  competences: [D4.1]
+  section: "S07-L02#ce-que-le-marquage-ne-dit-pas"
+  enonce: "Un SOT-23 porte le marquage « 1A ». Comment l'interpréter ?"
+  propositions:
+    - {id: a, texte: "Comme un code d'identification du fabricant, à chercher dans ses tables puis à confirmer par la fiche technique"}
+    - {id: b, texte: "Comme une résistance de 1 Ω"}
+    - {id: c, texte: "Comme un courant maximal de 1 A"}
+    - {id: d, texte: "Comme un code EIA-96"}
+- id: S07-Q019
+  type: choix_unique
+  securite: false
+  competences: [D4.6]
+  section: "S07-L03#les-valeurs-maximales-absolues"
+  enonce: "Que se passe-t-il si l'on dépasse une valeur maximale absolue ?"
+  propositions:
+    - {id: a, texte: "Le composant peut subir des dommages permanents"}
+    - {id: b, texte: "Il fonctionne mieux"}
+    - {id: c, texte: "Rien, c'est une valeur indicative"}
+    - {id: d, texte: "Il passe en mode de protection garanti"}
+- id: S07-Q020
+  type: choix_unique
+  securite: true
+  competences: [D4.6, D1.3]
+  section: "S07-L03#les-valeurs-maximales-absolues"
+  enonce: "La fiche d'un composant donne 6 V en valeur maximale absolue et 3,0 à 5,5 V en conditions recommandées. Comment réglez-vous l'alimentation de laboratoire pour l'essayer ?"
+  propositions:
+    - {id: a, texte: "Dans la plage recommandée, limite de courant réglée et écrite avant la mise sous tension"}
+    - {id: b, texte: "À 6 V, pour tester le composant à fond"}
+    - {id: c, texte: "À 6 V sans limite de courant"}
+    - {id: d, texte: "Au hasard, puis j'ajuste"}
+- id: S07-Q021
+  type: choix_unique
+  securite: false
+  competences: [D4.6]
+  section: "S07-L03#la-structure-type"
+  enonce: "Dans un tableau de caractéristiques électriques, une valeur « typique » :"
+  propositions:
+    - {id: a, texte: "N'est pas garantie ; seules les valeurs minimales et maximales, dans les conditions indiquées, le sont"}
+    - {id: b, texte: "Est garantie pour tous les exemplaires"}
+    - {id: c, texte: "Est la valeur maximale absolue"}
+    - {id: d, texte: "Ne dépend d'aucune condition"}
+- id: S07-Q022
+  type: choix_unique
+  securite: false
+  competences: [D4.6]
+  section: "S07-L03#trouver-la-bonne-fiche-technique"
+  enonce: "Où télécharger de préférence la fiche technique d'un composant ?"
+  propositions:
+    - {id: a, texte: "Chez le fabricant, en notant sa référence et sa révision"}
+    - {id: b, texte: "Sur n'importe quel forum"}
+    - {id: c, texte: "Dans une vidéo"}
+    - {id: d, texte: "Nulle part : on se fie à sa mémoire"}
+- id: S07-Q023
+  type: choix_unique
+  securite: false
+  competences: [D4.2]
+  section: "S07-L03#pourquoi-une-mesure-en-circuit-peut-tromper"
+  enonce: "Une résistance de 1 kΩ est lue 1,4 kΩ en circuit, carte hors tension. Que penser ?"
+  propositions:
+    - {id: a, texte: "Elle est suspecte : des composants en parallèle ne peuvent qu'abaisser la lecture"}
+    - {id: b, texte: "C'est normal : les composants en parallèle augmentent la lecture"}
+    - {id: c, texte: "Elle est conforme"}
+    - {id: d, texte: "Le schéma suffit à conclure sans autre mesure"}
+- id: S07-Q024
+  type: choix_unique
+  securite: true
+  competences: [D4.2, D1.3]
+  section: "S07-L03#tester-un-condensateur-hors-circuit"
+  enonce: "Avant de mesurer un condensateur électrolytique dessoudé, que faut-il faire ?"
+  propositions:
+    - {id: a, texte: "Le décharger à travers une résistance et vérifier au voltmètre"}
+    - {id: b, texte: "Rien, il est dessoudé"}
+    - {id: c, texte: "Le court-circuiter avec la panne du fer"}
+    - {id: d, texte: "Le chauffer pour l'activer"}
+- id: S07-Q025
+  type: choix_unique
+  securite: true
+  competences: [D4.1, D1.1]
+  section: "S07-L01#identifier-au-microscope"
+  enonce: "Vous allez manipuler la carte d'un calculateur de récupération pour l'inventaire. Quelle condition est obligatoire ?"
+  propositions:
+    - {id: a, texte: "Poste ESD et bracelet au poignet, carte non alimentée, tensions des électrolytiques mesurées"}
+    - {id: b, texte: "Carte alimentée pour faciliter le repérage"}
+    - {id: c, texte: "Gants de laine"}
+    - {id: d, texte: "Aucune, la carte est hors service"}
