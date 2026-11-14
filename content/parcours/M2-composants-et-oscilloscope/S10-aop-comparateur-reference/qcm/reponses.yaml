@@ -1,0 +1,189 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S10-Q001
+  bonnes: [a]
+  explication: "Un AOP est un amplificateur de différence à très grand gain."
+  pourquoi_faux:
+    b: "Il amplifie la différence entre + et −."
+    c: "Ses entrées ne consomment pratiquement pas de courant."
+    d: "Sans rapport."
+  source: "S10-L01#un-amplificateur-de-différence-à-très-grand-gain"
+- id: S10-Q002
+  bonnes: [a]
+  explication: "Résistance d'entrée infinie : les courants d'entrée sont nuls, ce qui simplifie les calculs."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Ce serait une très faible résistance d'entrée."
+    d: "La charge est alimentée par la sortie."
+  source: "S10-L01#un-amplificateur-de-différence-à-très-grand-gain"
+- id: S10-Q003
+  bonnes: [a]
+  explication: "Avec un gain énorme et sans contre-réaction, l'AOP fonctionne en comparateur."
+  pourquoi_faux:
+    b: "Le gain très élevé pousse la sortie en saturation."
+    c: "C'est le suiveur, qui a une contre-réaction."
+    d: "C'est le cas où l'entrée − est la plus positive."
+  source: "S10-L01#le-comparateur--laop-sans-contre-réaction"
+- id: S10-Q004
+  bonnes: [a]
+  explication: "Le suiveur recopie l'entrée avec une forte impédance d'entrée : il sert de tampon."
+  pourquoi_faux:
+    b: "L'inverseur reçoit le signal sur l'entrée − par une résistance."
+    c: "Un comparateur n'a pas de contre-réaction."
+    d: "Il faudrait un pont de deux résistances égales."
+  source: "S10-L01#la-contre-réaction--la-sortie-vient-équilibrer-les-entrées"
+- id: S10-Q005
+  valeur: 2.85
+  tolerance_relative: 0.02
+  unite: V
+  explication: "AV = 47 / 10 + 1 = 5,7 ; sortie = 0,5 × 5,7 = 2,85 V."
+  source: "S10-L01#exemple-1--gain-dun-non-inverseur"
+- id: S10-Q006
+  valeur: -1.65
+  tolerance_relative: 0.02
+  unite: V
+  explication: "AV = −33 / 10 = −3,3 ; sortie = 0,5 × (−3,3) = −1,65 V."
+  source: "S10-L01#exemple-2--gain-dun-inverseur"
+- id: S10-Q007
+  bonnes: [a]
+  explication: "La sortie s'ajuste pour annuler la différence entre les entrées : l'entrée − reste à 0 V."
+  pourquoi_faux:
+    b: "Elle n'est pas branchée à la masse, sinon le montage ne fonctionnerait pas."
+    c: "Elle reçoit le signal par R1."
+    d: "Sans rapport."
+  source: "S10-L01#la-contre-réaction--la-sortie-vient-équilibrer-les-entrées"
+- id: S10-Q008
+  bonnes: [a]
+  explication: "La limite dépend alors de la charge ; VOH et VOL se lisent dans la fiche."
+  pourquoi_faux:
+    b: "Aucune sortie ne dépasse l'alimentation."
+    c: "Sans rapport avec la tension de décalage."
+    d: "Sans rapport."
+  source: "S10-L01#laop-réel"
+- id: S10-Q009
+  bonnes: [a]
+  explication: "Elle vient des dissymétries internes, dérive avec la température et le temps, et se retrouve en sortie multipliée par le gain."
+  pourquoi_faux:
+    b: "C'est VOH."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S10-L01#laop-réel"
+- id: S10-Q010
+  bonnes: [a]
+  explication: "Une sortie bloquée en saturation a plusieurs causes possibles, que la mesure des entrées départage."
+  pourquoi_faux:
+    b: "On remplace après avoir établi la cause."
+    c: "Un gain trop fort conduit plutôt à la saturation."
+    d: "Ce n'est qu'une étape."
+  source: "S10-L01#exemple-3--une-sortie-qui-sature"
+- id: S10-Q011
+  bonnes: [a]
+  explication: "Un signal lent et bruité traverse le seuil plusieurs fois ; la sortie suit chaque passage."
+  pourquoi_faux:
+    b: "Le gain d'un comparateur est très grand."
+    c: "Sans rapport."
+    d: "Sans hystérésis, le seuil est fixe."
+  source: "S10-L02#le-problème-du-bruit"
+- id: S10-Q012
+  bonnes: [a]
+  explication: "La réaction positive fait que la sortie tend à rester dans son état : deux seuils apparaissent."
+  pourquoi_faux:
+    b: "La contre-réaction donne un amplificateur, pas un comparateur à hystérésis."
+    c: "C'est un découplage."
+    d: "Sans rapport."
+  source: "S10-L02#lhystérésis--deux-seuils-au-lieu-dun"
+- id: S10-Q013
+  bonnes: [a]
+  explication: "Rh et Rx sont alors toutes deux reliées au niveau haut : le seuil monte, c'est le seuil haut."
+  pourquoi_faux:
+    b: "C'est le cas sortie au niveau bas."
+    c: "Rh est toujours en parallèle sur l'une des deux."
+    d: "Sans rapport."
+  source: "S10-L02#lhystérésis--deux-seuils-au-lieu-dun"
+- id: S10-Q014
+  valeur: 2.38
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Ry∥Rh = 9,09 kΩ ; VL = 5 × 9,09 / (10 + 9,09) = 2,38 V."
+  source: "S10-L02#calculer-les-seuils"
+- id: S10-Q015
+  valeur: 0.4
+  tolerance_relative: 0.02
+  unite: V
+  explication: "VH − VL = 3,1 − 2,7 = 0,4 V ; elle doit dépasser le bruit à rejeter."
+  source: "S10-L02#exemple-5--calculer-les-seuils-dhystérésis"
+- id: S10-Q016
+  bonnes: [a]
+  explication: "L'hystérésis doit être plus large que le bruit."
+  pourquoi_faux:
+    b: "Elle est ici plus étroite que le bruit."
+    c: "Le signal finit par franchir les seuils."
+    d: "La sortie reste à deux états."
+  source: "S10-L02#exemple-6--une-hystérésis-trop-étroite"
+- id: S10-Q017
+  bonnes: [a]
+  explication: "Tous les convertisseurs comparent l'entrée à une référence connue : le code est un rapport."
+  pourquoi_faux:
+    b: "La masse est le zéro, pas l'échelle."
+    c: "Seulement si elle sert de référence, ce qui serait rare."
+    d: "La mesure est toujours relative à la référence."
+  source: "S10-L03#ce-que-fait-un-convertisseur-analogique-numérique"
+- id: S10-Q018
+  bonnes: [a]
+  explication: "Le code est le rapport entrée / référence : une référence trop haute fait baisser ce rapport."
+  pourquoi_faux:
+    b: "C'est l'inverse."
+    c: "La référence fixe l'échelle de toutes les mesures."
+    d: "Une erreur de gain touche toutes les mesures, proportionnellement."
+  source: "S10-L03#le-rôle-de-la-référence-de-tension"
+- id: S10-Q019
+  valeur: 1.25
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = 256 / 1 024 × 5 = 1,25 V."
+  source: "S10-L03#exemple-7--lire-le-code-dun-convertisseur"
+- id: S10-Q020
+  valeur: 25
+  tolerance_relative: 0.02
+  unite: mV
+  explication: "100 × 10⁻⁶ × 50 = 0,005 ; 0,005 × 5 V = 25 mV."
+  source: "S10-L03#exemple-9--erreur-due-à-la-dérive-dune-référence"
+- id: S10-Q021
+  bonnes: [a]
+  explication: "Seul compte le rapport entre l'alimentation du capteur et la référence ; tirés de la même source, il reste constant."
+  pourquoi_faux:
+    b: "Ce n'est pas le principe ratiométrique."
+    c: "Aucune correction n'est nécessaire."
+    d: "C'est justement l'intérêt de la mesure ratiométrique."
+  source: "S10-L03#la-mesure-ratiométrique"
+- id: S10-Q022
+  bonnes: [a]
+  explication: "Le rapport est le même que 2,5 V sous 5 V : la mesure du calculateur est juste, c'est l'alimentation qu'il faut expliquer."
+  pourquoi_faux:
+    b: "Rien ne prouve que le capteur soit en cause."
+    c: "C'est l'erreur de qui ne mesure que le signal."
+    d: "C'est l'inverse de la bonne démarche."
+  source: "S10-L03#exemple-8--un-capteur-ratiométrique-sous-une-alimentation-basse"
+- id: S10-Q023
+  bonnes: [a]
+  explication: "Une entrée au-delà des alimentations peut rendre l'AOP imprévisible ou le détruire."
+  pourquoi_faux:
+    b: "La fiche et la source disent le contraire."
+    c: "La saturation s'observe sans dépasser l'alimentation à l'entrée."
+    d: "Sans rapport."
+  source: "S10-L01#laop-réel"
+- id: S10-Q024
+  bonnes: [a]
+  explication: "Les règles de sécurité véhicule du catalogue imposent l'immobilisation et des connexions batterie débranchée."
+  pourquoi_faux:
+    b: "Les connexions se font batterie débranchée."
+    c: "Le TP prévoit des mesures moteur arrêté."
+    d: "Une erreur de pointe peut créer un court-circuit."
+  source: "S10-L03#ce-que-cela-change-pour-le-dépanneur"
+- id: S10-Q025
+  bonnes: [a]
+  explication: "Chaque sortie a sa limite écrite (FE-02) ; une alimentation symétrique inversée peut détruire l'AOP (FE-03)."
+  pourquoi_faux:
+    b: "Chaque sortie doit être limitée."
+    c: "Une alimentation non limitée est une faute éliminatoire."
+    d: "Sans rapport, et dangereux pour l'AOP."
+  source: "S10-L01#exemple-2--gain-dun-inverseur"

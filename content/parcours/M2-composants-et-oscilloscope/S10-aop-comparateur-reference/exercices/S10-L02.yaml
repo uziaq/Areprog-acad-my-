@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S10-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S10-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un comparateur à hystérésis alimenté en 5 V a Rx = Ry = 10 kΩ et Rh = 47 kΩ (sortie de 0 V à 5 V). Quel est son seuil haut VH ?"
+  unite_attendue: V
+  competences: [D4.5]
+  objectif: O2
+- id: S10-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un comparateur sans hystérésis commande un ventilateur d'après une tension de température bruitée. Près du seuil, le ventilateur démarre et s'arrête plusieurs fois par seconde. Quelle modification est la plus adaptée ?"
+  propositions:
+    - {id: a, texte: "Ajouter une hystérésis plus large que le bruit"}
+    - {id: b, texte: "Augmenter le gain du comparateur"}
+    - {id: c, texte: "Remplacer le comparateur par un suiveur"}
+    - {id: d, texte: "Monter la tension d'alimentation"}
+  competences: [D4.5]
+  objectif: O1

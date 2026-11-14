@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S10-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S10-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un convertisseur de 12 bits (4 096 pas) a une référence de 5 V. Il lit le code 1 024. Quelle tension a-t-il à son entrée ?"
+  unite_attendue: V
+  competences: [D4.5]
+  objectif: O1
+- id: S10-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une référence de 2,5 V a une dérive moyenne de 20 ppm/°C. De combien sa tension varie-t-elle pour un écart de température de 80 °C ?"
+  unite_attendue: mV
+  competences: [D4.5]
+  objectif: O1
+- id: S10-L03-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur un capteur ratiométrique à trois fils, vous mesurez 2,35 V de signal. L'alimentation du capteur, qui sert aussi de référence au convertisseur, vaut 4,7 V au lieu de 5 V. Quelle fraction de son alimentation le capteur fournit-il ?"
+  propositions:
+    - {id: a, texte: "0,5 : le calculateur lit la même valeur que si le capteur fournissait 2,5 V sous 5 V"}
+    - {id: b, texte: "0,47 : le capteur est en dérive"}
+    - {id: c, texte: "On ne peut rien dire sans débrancher le capteur"}
+    - {id: d, texte: "2,35 : le rapport n'a pas de sens"}
+  competences: [D4.5]
+  objectif: O2

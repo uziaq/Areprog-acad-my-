@@ -1,0 +1,12 @@
+# Comparateur à hystérésis : transitions multiples dues au bruit, deux seuils fixés par une
+# résistance de réaction (cours S10). Les valeurs de la conception TI ne sont pas reprises comme
+# données d'atelier. Sections citées par leur numéro et leur titre anglais.
+id: SRC-0025
+titre: "Comparator with Hysteresis Reference Design"
+editeur: Texas Instruments
+reference: "TI Designs TIDU020A"
+revision: "Rev. A, juin 2014"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/ug/tidu020a/tidu020a.pdf

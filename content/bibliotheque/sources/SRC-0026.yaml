@@ -1,0 +1,11 @@
+# Référence de tension d'un convertisseur : rôle, erreur continue vue comme une erreur de gain,
+# précision initiale, dérive en température (cours S10). Sections citées par leur numéro et leur titre anglais.
+id: SRC-0026
+titre: "Voltage Reference Selection and Design Tips For Data Converters"
+editeur: Texas Instruments
+reference: "Application note SNAA320B"
+revision: "Rev. B, janvier 2024"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/snaa320a/snaa320a.pdf

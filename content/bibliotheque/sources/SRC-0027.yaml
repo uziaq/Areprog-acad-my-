@@ -1,0 +1,11 @@
+# Mesure ratiométrique : capteur et référence du convertisseur alimentés par la même source
+# (cours S10). Sections citées par leur titre anglais.
+id: SRC-0027
+titre: "Design Considerations for a Low-Cost Sensor and A/D Interface"
+editeur: Analog Devices (Maxim Integrated)
+reference: "Application note 3775"
+revision: "24 mars 2006"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.analog.com/en/resources/technical-articles/design-considerations-for-a-lowcost-sensor-and-ad-interface.html

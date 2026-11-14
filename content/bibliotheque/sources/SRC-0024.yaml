@@ -1,0 +1,11 @@
+# Spécifications d'un AOP : modèle idéal, tension de décalage, plage de mode commun, excursion de
+# sortie, entrées et sorties rail-to-rail (cours S10). Sections citées par leur numéro et leur titre anglais.
+id: SRC-0024
+titre: "Understanding Operational Amplifier Specifications"
+editeur: Texas Instruments
+reference: "Application report SLOA011B"
+revision: "Rev. B, juillet 2021"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/sloa011b/sloa011b.pdf
