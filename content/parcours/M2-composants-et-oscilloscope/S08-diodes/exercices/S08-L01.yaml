@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S08-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S08-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Hors circuit, une diode affiche environ 0,02 V au test de jonction dans les deux sens. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Elle est probablement en court-circuit"}
+    - {id: b, texte: "Elle est saine"}
+    - {id: c, texte: "Elle est coupée"}
+    - {id: d, texte: "C'est une Schottky saine"}
+  competences: [D4.3, D4.2]
+  objectif: O2
+- id: S08-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une diode au silicium (seuil d'environ 0,7 V) est en série avec une résistance de 470 Ω sous 9 V, dans le sens passant. Quel courant circule ?"
+  unite_attendue: mA
+  competences: [D4.3]
+  objectif: O3
+- id: S08-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un pont de diodes au silicium reçoit une tension de valeur crête 24 V. Quelle est la valeur crête en sortie, en comptant deux seuils d'environ 0,7 V ?"
+  unite_attendue: V
+  competences: [D4.3]
+  objectif: O3

@@ -1,0 +1,249 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S08-Q001
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L01#une-valve-à-courant"
+  enonce: "Sur un composant traversant, comment repère-t-on la cathode d'une diode ?"
+  propositions:
+    - {id: a, texte: "Par la bague peinte à une extrémité"}
+    - {id: b, texte: "C'est toujours la patte la plus longue"}
+    - {id: c, texte: "Par la couleur du corps"}
+    - {id: d, texte: "Elle n'est jamais repérée"}
+- id: S08-Q002
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L01#une-valve-à-courant"
+  enonce: "Quelle est la tension de seuil approximative d'une diode au silicium ?"
+  propositions:
+    - {id: a, texte: "Environ 0,7 V"}
+    - {id: b, texte: "Environ 0,3 V"}
+    - {id: c, texte: "Environ 3 V"}
+    - {id: d, texte: "0 V"}
+- id: S08-Q003
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L01#une-valve-à-courant"
+  enonce: "Que se passe-t-il si la tension inverse appliquée à une diode de redressement devient trop forte ?"
+  propositions:
+    - {id: a, texte: "Elle claque, ce qui est en général destructeur"}
+    - {id: b, texte: "Elle conduit mieux en direct"}
+    - {id: c, texte: "Rien, elle bloque toujours"}
+    - {id: d, texte: "Elle devient une LED"}
+- id: S08-Q004
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L01#exemple-1--sens-de-conduction"
+  enonce: "Une diode au silicium (seuil d'environ 0,7 V) est en série avec 2,2 kΩ sous 12 V, dans le sens passant. Quel courant circule ?"
+  unite_attendue: mA
+- id: S08-Q005
+  type: choix_unique
+  securite: false
+  competences: [D4.3, D4.2]
+  section: "S08-L01#tester-une-diode-au-multimètre"
+  enonce: "Que mesure la fonction test de jonction d'un multimètre ?"
+  propositions:
+    - {id: a, texte: "La chute de tension directe de la jonction sous un petit courant"}
+    - {id: b, texte: "La résistance de la diode en ohms"}
+    - {id: c, texte: "Le courant maximal de la diode"}
+    - {id: d, texte: "La tension de claquage"}
+- id: S08-Q006
+  type: choix_unique
+  securite: false
+  competences: [D4.3, D4.2]
+  section: "S08-L01#tester-une-diode-au-multimètre"
+  enonce: "Hors circuit, une diode affiche un dépassement dans les deux sens au test de jonction. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Elle est probablement coupée"}
+    - {id: b, texte: "Elle est saine"}
+    - {id: c, texte: "Elle est en court-circuit"}
+    - {id: d, texte: "C'est une Zener saine"}
+- id: S08-Q007
+  type: choix_unique
+  securite: false
+  competences: [D4.3, D4.6]
+  section: "S08-L01#les-valeurs-nominales-dune-diode"
+  enonce: "Dans la fiche d'une diode de redressement, que désigne VRRM ?"
+  propositions:
+    - {id: a, texte: "La tension inverse répétitive maximale"}
+    - {id: b, texte: "Le courant direct moyen"}
+    - {id: c, texte: "La tension de seuil"}
+    - {id: d, texte: "Le temps de recouvrement"}
+- id: S08-Q008
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L01#le-redressement"
+  enonce: "Un pont de diodes au silicium reçoit une valeur crête de 17 V. Quelle valeur crête obtient-on en sortie ?"
+  unite_attendue: V
+- id: S08-Q009
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L01#le-redressement"
+  enonce: "Quel avantage le pont de diodes offre-t-il sur une alimentation continue ?"
+  propositions:
+    - {id: a, texte: "Le courant traverse la charge dans le même sens quelle que soit la polarité d'entrée"}
+    - {id: b, texte: "Il augmente la tension"}
+    - {id: c, texte: "Il supprime toute perte"}
+    - {id: d, texte: "Il régule la tension"}
+- id: S08-Q010
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#exemple-4--dimensionner-une-zener"
+  enonce: "Une Zener de 3,3 V est alimentée sous 9 V. On veut 15 mA dans la résistance série. Quelle valeur faut-il ?"
+  unite_attendue: Ω
+- id: S08-Q011
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#la-zener--utiliser-le-claquage"
+  enonce: "Une Zener de 5,6 V est traversée par 20 mA. Quelle puissance dissipe-t-elle ?"
+  unite_attendue: mW
+- id: S08-Q012
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#la-zener--utiliser-le-claquage"
+  enonce: "Pourquoi une Zener doit-elle toujours avoir une résistance série ?"
+  propositions:
+    - {id: a, texte: "C'est la résistance qui fixe le courant ; sans elle, la Zener serait détruite"}
+    - {id: b, texte: "Pour augmenter la tension de sortie"}
+    - {id: c, texte: "Pour la protéger de l'électricité statique"}
+    - {id: d, texte: "Ce n'est pas nécessaire"}
+- id: S08-Q013
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#la-zener--utiliser-le-claquage"
+  enonce: "Un montage Zener régule à vide. On branche une charge de très faible résistance. Que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "La charge prend plus de courant que la résistance n'en fournit : la sortie tombe sous Uz"}
+    - {id: b, texte: "La sortie reste à Uz quoi qu'il arrive"}
+    - {id: c, texte: "La sortie monte"}
+    - {id: d, texte: "La Zener conduit davantage"}
+- id: S08-Q014
+  type: choix_unique
+  securite: false
+  competences: [D4.3, D4.6]
+  section: "S08-L02#la-tvs--écrêter-les-surtensions"
+  enonce: "Quelle tension d'une TVS doit rester supportable par le circuit protégé pendant une surtension ?"
+  propositions:
+    - {id: a, texte: "VCL, la tension d'écrêtage"}
+    - {id: b, texte: "VRM, la tension de veille"}
+    - {id: c, texte: "VBR, la tension de claquage"}
+    - {id: d, texte: "La tension de seuil en direct"}
+- id: S08-Q015
+  type: choix_unique
+  securite: false
+  competences: [D4.3, D4.6]
+  section: "S08-L02#la-tvs--écrêter-les-surtensions"
+  enonce: "Peut-on utiliser une TVS à la place d'une Zener pour réguler une tension continue ?"
+  propositions:
+    - {id: a, texte: "Non : une TVS écrête des transitoires et ne sert pas à réguler en continu"}
+    - {id: b, texte: "Oui, c'est la même chose"}
+    - {id: c, texte: "Oui, si sa VBR convient"}
+    - {id: d, texte: "Oui, en la montant en direct"}
+- id: S08-Q016
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#la-tvs--écrêter-les-surtensions"
+  enonce: "Une ligne transporte un signal positif et négatif. Quelle TVS choisir ?"
+  propositions:
+    - {id: a, texte: "Une TVS bidirectionnelle"}
+    - {id: b, texte: "Une TVS unidirectionnelle"}
+    - {id: c, texte: "Une Schottky"}
+    - {id: d, texte: "Une LED"}
+- id: S08-Q017
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#la-schottky--un-seuil-plus-bas"
+  enonce: "Quel est l'intérêt principal d'une diode Schottky ?"
+  propositions:
+    - {id: a, texte: "Un seuil plus bas et une commutation rapide"}
+    - {id: b, texte: "Une tension inverse très élevée"}
+    - {id: c, texte: "Elle émet de la lumière"}
+    - {id: d, texte: "Elle régule la tension"}
+- id: S08-Q018
+  type: choix_unique
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#protéger-contre-linversion-de-polarité"
+  enonce: "Quelle est la contrepartie d'une diode série de protection contre l'inversion de polarité ?"
+  propositions:
+    - {id: a, texte: "Elle fait perdre son seuil en permanence et dissipe de la puissance"}
+    - {id: b, texte: "Elle laisse passer la tension inverse"}
+    - {id: c, texte: "Elle grille au premier branchement"}
+    - {id: d, texte: "Aucune"}
+- id: S08-Q019
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L02#exemple-6--perte-dune-diode-série"
+  enonce: "Une diode série au silicium, de seuil d'environ 0,7 V, est traversée par 1,5 A. Quelle puissance dissipe-t-elle ?"
+  unite_attendue: W
+- id: S08-Q020
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L03#exemple-7--résistance-dune-led"
+  enonce: "Une LED de seuil 2,2 V doit être parcourue par 20 mA sous 5 V. Quelle résistance série faut-il ?"
+  unite_attendue: Ω
+- id: S08-Q021
+  type: calcul
+  securite: false
+  competences: [D4.3]
+  section: "S08-L03#exemple-8--la-même-led-sous-une-tension-plus-élevée"
+  enonce: "Une LED de seuil 2,0 V est parcourue par 20 mA sous 24 V. Quelle puissance dissipe sa résistance série ?"
+  unite_attendue: mW
+- id: S08-Q022
+  type: choix_unique
+  securite: true
+  competences: [D4.3, D4.2, D1.3]
+  section: "S08-L03#exemple-9--tester-une-diode-de-roue-libre"
+  enonce: "Vous devez tester une diode de roue libre soudée sur une carte. Dans quel état doit être la carte ?"
+  propositions:
+    - {id: a, texte: "Hors tension et débranchée, condensateurs déchargés, puis une patte de la diode dessoudée"}
+    - {id: b, texte: "Sous tension, pour voir la diode travailler"}
+    - {id: c, texte: "Sous tension, mais avec une limite de courant basse"}
+    - {id: d, texte: "Peu importe, le test de jonction est protégé"}
+- id: S08-Q023
+  type: choix_unique
+  securite: false
+  competences: [D4.3, D4.2]
+  section: "S08-L03#la-diode-de-roue-libre-vue-du-dépanneur"
+  enonce: "Où trouve-t-on typiquement une diode de roue libre sur un schéma ?"
+  propositions:
+    - {id: a, texte: "Aux bornes d'une bobine de relais ou d'électrovanne, cathode côté alimentation positive"}
+    - {id: b, texte: "En série avec la batterie"}
+    - {id: c, texte: "Aux bornes d'une LED"}
+    - {id: d, texte: "Sur une ligne de communication"}
+- id: S08-Q024
+  type: choix_unique
+  securite: true
+  competences: [D4.3, D1.3]
+  section: "S08-L02#exemple-4--dimensionner-une-zener"
+  enonce: "Avant de mettre sous tension un montage Zener sur l'alimentation de labo, que faut-il avoir fait ?"
+  propositions:
+    - {id: a, texte: "Calculer le courant et la puissance, régler et écrire la limite de courant, vérifier le sens de la Zener"}
+    - {id: b, texte: "Régler la tension au maximum pour voir la Zener travailler"}
+    - {id: c, texte: "Retirer la résistance série pour mieux mesurer"}
+    - {id: d, texte: "Rien de particulier"}
+- id: S08-Q025
+  type: choix_unique
+  securite: true
+  competences: [D4.3, D1.3]
+  section: "S08-L02#protéger-contre-linversion-de-polarité"
+  enonce: "Vous alimentez une carte d'entraînement sans protection contre l'inversion de polarité. Quelle précaution prenez-vous ?"
+  propositions:
+    - {id: a, texte: "Je vérifie la polarité au multimètre avant de brancher, et je règle une limite de courant basse écrite au journal"}
+    - {id: b, texte: "Je branche et j'observe"}
+    - {id: c, texte: "Je compte sur la diode interne d'un circuit intégré"}
+    - {id: d, texte: "J'inverse pour tester"}

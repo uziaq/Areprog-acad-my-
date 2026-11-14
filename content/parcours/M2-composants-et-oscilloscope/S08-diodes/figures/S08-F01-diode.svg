@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : symbole, composant et allure de la caractéristique d'une diode, sans valeur. -->
+  <path d="M10 80 H40 M40 62 V98 L70 80 Z M70 62 V98 M70 80 H100" />
+  <text x="22" y="120" fill="currentColor" stroke="none">anode</text>
+  <text x="62" y="120" fill="currentColor" stroke="none">cathode</text>
+  <path d="M130 80 H150 M220 80 H240" />
+  <rect x="150" y="66" width="70" height="28" rx="6" />
+  <rect x="200" y="66" width="10" height="28" fill="currentColor" />
+  <text x="180" y="120" fill="currentColor" stroke="none">bague = cathode</text>
+  <path d="M280 120 H470 M380 20 V190" stroke-width="1" />
+  <path d="M290 186 C 300 186, 302 124, 306 121 L 380 120 L 412 118 C 422 112, 428 70, 432 24" />
+  <text x="440" y="136" fill="currentColor" stroke="none">U</text>
+  <text x="386" y="30" fill="currentColor" stroke="none">I</text>
+  <text x="410" y="136" fill="currentColor" stroke="none" font-size="10">seuil</text>
+  <text x="286" y="150" fill="currentColor" stroke="none" font-size="10">claquage</text>
+</svg>

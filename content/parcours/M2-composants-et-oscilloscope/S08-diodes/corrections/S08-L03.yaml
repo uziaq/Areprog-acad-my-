@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S08-L03-EX01
+  valeur: 600
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "R = (12 − 3,0) / 0,015 = 600 Ω ; puissance (12 − 3,0) × 0,015 = 0,135 W. On choisit une valeur normalisée proche et une puissance avec marge."
+  renvoi_section: "S08-L03#la-led"
+- id: S08-L03-EX02
+  bonnes: [a]
+  explication: "En circuit, la bobine de faible résistance est en parallèle sur la diode et fausse le test. On dessoude une patte et l'on teste hors circuit. Remplacer par une Zener changerait le comportement du montage."
+  renvoi_section: "S08-L03#la-diode-de-roue-libre-vue-du-dépanneur"

@@ -1,0 +1,187 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S08-Q001
+  bonnes: [a]
+  explication: "La bague repère la cathode ; sur le symbole, c'est la barre."
+  pourquoi_faux:
+    b: "C'est une règle de certaines LED, pas des diodes."
+    c: "La couleur ne code pas la polarité."
+    d: "Elle l'est toujours."
+  source: "S08-L01#une-valve-à-courant"
+- id: S08-Q002
+  bonnes: [a]
+  explication: "Environ 0,7 V pour le silicium, 0,3 V pour le germanium."
+  pourquoi_faux:
+    b: "C'est le germanium."
+    c: "C'est l'ordre de grandeur de certaines LED."
+    d: "Une diode a toujours un seuil."
+  source: "S08-L01#une-valve-à-courant"
+- id: S08-Q003
+  bonnes: [a]
+  explication: "Au-delà de sa tension inverse maximale, la diode claque ; pour une diode de redressement, c'est en général destructeur."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Le blocage a une limite."
+    d: "Aucun rapport."
+  source: "S08-L01#une-valve-à-courant"
+- id: S08-Q004
+  valeur: 5.136
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "(12 − 0,7) / 2 200 = 0,005 14 A, soit 5,14 mA."
+  source: "S08-L01#exemple-1--sens-de-conduction"
+- id: S08-Q005
+  bonnes: [a]
+  explication: "Elle fait passer un petit courant et affiche la chute de tension directe en volts."
+  pourquoi_faux:
+    b: "Ce serait la fonction ohmmètre."
+    c: "Le courant maximal se lit dans la fiche."
+    d: "Elle n'applique pas une tension suffisante pour cela."
+  source: "S08-L01#tester-une-diode-au-multimètre"
+- id: S08-Q006
+  bonnes: [a]
+  explication: "Une diode saine affiche un seuil dans un sens ; circuit ouvert dans les deux sens signe une coupure."
+  pourquoi_faux:
+    b: "Il manque le seuil en direct."
+    c: "Un court-circuit afficherait près de 0 V."
+    d: "Une Zener affiche aussi un seuil en direct."
+  source: "S08-L01#tester-une-diode-au-multimètre"
+- id: S08-Q007
+  bonnes: [a]
+  explication: "VRRM est la tension inverse répétitive maximale ; le courant direct moyen est IF(AV), le temps de recouvrement trr."
+  pourquoi_faux:
+    b: "C'est IF(AV)."
+    c: "Le seuil se lit sur la courbe de tension directe."
+    d: "C'est trr."
+  source: "S08-L01#les-valeurs-nominales-dune-diode"
+- id: S08-Q008
+  valeur: 15.6
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Deux seuils d'environ 0,7 V : 17 − 1,4 = 15,6 V."
+  source: "S08-L01#le-redressement"
+- id: S08-Q009
+  bonnes: [a]
+  explication: "Quelle que soit la polarité, le courant traverse la charge dans le même sens, au prix de deux seuils."
+  pourquoi_faux:
+    b: "Il fait perdre deux seuils."
+    c: "Il perd environ 1,4 V."
+    d: "Il ne régule pas."
+  source: "S08-L01#le-redressement"
+- id: S08-Q010
+  valeur: 380
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "R = (9 − 3,3) / 0,015 = 380 Ω."
+  source: "S08-L02#exemple-4--dimensionner-une-zener"
+- id: S08-Q011
+  valeur: 112
+  tolerance_relative: 0.02
+  unite: mW
+  explication: "P = Uz × Iz = 5,6 × 0,02 = 0,112 W, soit 112 mW."
+  source: "S08-L02#la-zener--utiliser-le-claquage"
+- id: S08-Q012
+  bonnes: [a]
+  explication: "La résistance série fixe le courant ; branchée directement sur une source, la Zener serait détruite."
+  pourquoi_faux:
+    b: "Elle ne l'augmente pas."
+    c: "Ce n'est pas son rôle."
+    d: "Elle est indispensable."
+  source: "S08-L02#la-zener--utiliser-le-claquage"
+- id: S08-Q013
+  bonnes: [a]
+  explication: "La régulation ne tient que si la charge prend moins de courant que ce que la résistance fournit."
+  pourquoi_faux:
+    b: "La régulation a une limite."
+    c: "Elle baisse."
+    d: "Elle conduit moins, voire plus du tout."
+  source: "S08-L02#la-zener--utiliser-le-claquage"
+- id: S08-Q014
+  bonnes: [a]
+  explication: "VCL est la tension aux bornes de la TVS pendant la surtension : c'est elle que voit le circuit protégé."
+  pourquoi_faux:
+    b: "VRM sert à vérifier que la TVS ne conduit pas en fonctionnement normal."
+    c: "VBR est le début de l'écrêtage, mesuré sous faible courant."
+    d: "Sans rapport avec la protection."
+  source: "S08-L02#la-tvs--écrêter-les-surtensions"
+- id: S08-Q015
+  bonnes: [a]
+  explication: "La note ST précise qu'une TVS ne peut pas servir à la régulation en continu et ne remplace pas une Zener."
+  pourquoi_faux:
+    b: "Elles n'ont pas le même rôle."
+    c: "La VBR ne suffit pas."
+    d: "En direct, elle se comporte comme une diode ordinaire."
+  source: "S08-L02#la-tvs--écrêter-les-surtensions"
+- id: S08-Q016
+  bonnes: [a]
+  explication: "Pour un signal positif et négatif, la note recommande une TVS bidirectionnelle."
+  pourquoi_faux:
+    b: "Elle conduirait en direct sur l'alternance négative."
+    c: "Ce n'est pas un composant d'écrêtage."
+    d: "Sans rapport."
+  source: "S08-L02#la-tvs--écrêter-les-surtensions"
+- id: S08-Q017
+  bonnes: [a]
+  explication: "Seuil typique de 0,25 à 0,4 V et temps de recouvrement faible."
+  pourquoi_faux:
+    b: "Ce n'est pas sa caractéristique principale."
+    c: "C'est la LED."
+    d: "C'est la Zener."
+  source: "S08-L02#la-schottky--un-seuil-plus-bas"
+- id: S08-Q018
+  bonnes: [a]
+  explication: "Elle chute son seuil et dissipe U × I en permanence ; une Schottky réduit cette perte."
+  pourquoi_faux:
+    b: "Elle la bloque, c'est son rôle."
+    c: "Pas si elle est bien choisie."
+    d: "La perte est réelle."
+  source: "S08-L02#protéger-contre-linversion-de-polarité"
+- id: S08-Q019
+  valeur: 1.05
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 0,7 × 1,5 = 1,05 W."
+  source: "S08-L02#exemple-6--perte-dune-diode-série"
+- id: S08-Q020
+  valeur: 140
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "R = (5 − 2,2) / 0,02 = 140 Ω."
+  source: "S08-L03#exemple-7--résistance-dune-led"
+- id: S08-Q021
+  valeur: 440
+  tolerance_relative: 0.02
+  unite: mW
+  explication: "P = (24 − 2,0) × 0,02 = 0,44 W, soit 440 mW : une résistance de 0,25 W chaufferait trop."
+  source: "S08-L03#exemple-8--la-même-led-sous-une-tension-plus-élevée"
+- id: S08-Q022
+  bonnes: [a]
+  explication: "Le test de jonction se fait sur un circuit hors tension, condensateurs déchargés (FE-06) ; en circuit, la bobine en parallèle fausse le résultat, d'où la patte dessoudée."
+  pourquoi_faux:
+    b: "Le test de jonction ne se fait jamais sous tension."
+    c: "La limite de courant ne rend pas le test valable sous tension."
+    d: "Le multimètre peut être endommagé et la mesure est fausse."
+  source: "S08-L03#exemple-9--tester-une-diode-de-roue-libre"
+- id: S08-Q023
+  bonnes: [a]
+  explication: "Elle est en parallèle sur la charge inductive, bloquée en fonctionnement normal."
+  pourquoi_faux:
+    b: "C'est la protection contre l'inversion de polarité."
+    c: "Sans rapport."
+    d: "On y trouve plutôt des TVS."
+  source: "S08-L03#la-diode-de-roue-libre-vue-du-dépanneur"
+- id: S08-Q024
+  bonnes: [a]
+  explication: "Calculs préalables, limite écrite avant la mise sous tension (FE-02) et polarité vérifiée."
+  pourquoi_faux:
+    b: "Risque de détruire la Zener."
+    c: "Sans résistance série, la Zener est détruite."
+    d: "Une alimentation non limitée est une faute éliminatoire."
+  source: "S08-L02#exemple-4--dimensionner-une-zener"
+- id: S08-Q025
+  bonnes: [a]
+  explication: "Une inversion non protégée est une faute éliminatoire (FE-03) : on vérifie la polarité avant, avec une limite de courant écrite (FE-02)."
+  pourquoi_faux:
+    b: "L'erreur serait immédiate."
+    c: "Rien ne garantit une telle protection."
+    d: "Geste destructeur."
+  source: "S08-L02#protéger-contre-linversion-de-polarité"

@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S08-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S08-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une LED de seuil 3,0 V doit être parcourue par 15 mA sous 12 V. Quelle résistance série faut-il ?"
+  unite_attendue: Ω
+  competences: [D4.3]
+  objectif: O1
+- id: S08-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous voulez vérifier la diode de roue libre soudée aux bornes d'une bobine de relais. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je dessoude une patte et je fais le test de jonction hors circuit"}
+    - {id: b, texte: "Je fais le test de jonction en circuit : il suffit"}
+    - {id: c, texte: "Je mesure la tension à ses bornes, relais au repos"}
+    - {id: d, texte: "Je la remplace par une Zener de même tension"}
+  competences: [D4.3, D4.2]
+  objectif: O2

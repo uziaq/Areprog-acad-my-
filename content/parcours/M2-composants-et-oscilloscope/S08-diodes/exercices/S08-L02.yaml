@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S08-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S08-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une Zener de 6,2 V est alimentée sous 15 V à travers une résistance. On veut 20 mA dans la résistance. Quelle valeur faut-il ?"
+  unite_attendue: Ω
+  competences: [D4.3]
+  objectif: O1
+- id: S08-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une ligne fonctionne normalement jusqu'à 13 V. Quelle condition doit remplir la tension VRM de la TVS qui la protège ?"
+  propositions:
+    - {id: a, texte: "VRM supérieure ou égale à 13 V"}
+    - {id: b, texte: "VRM inférieure à 13 V, pour écrêter plus tôt"}
+    - {id: c, texte: "VRM égale à la tension que supporte le circuit protégé"}
+    - {id: d, texte: "VRM sans importance, seule VCL compte"}
+  competences: [D4.3, D4.6]
+  objectif: O2
+- id: S08-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Une diode Schottky de protection série, de seuil d'environ 0,35 V, est traversée par 3 A. Quelle puissance dissipe-t-elle ?"
+  unite_attendue: W
+  competences: [D4.3]
+  objectif: O3

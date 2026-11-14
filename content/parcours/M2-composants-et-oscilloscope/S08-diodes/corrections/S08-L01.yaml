@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S08-L01-EX01
+  bonnes: [a]
+  explication: "Une diode saine affiche un seuil plausible dans un sens et un circuit ouvert dans l'autre. Près de 0 V dans les deux sens, hors circuit, signe un court-circuit. Une diode coupée afficherait un dépassement dans les deux sens."
+  renvoi_section: "S08-L01#tester-une-diode-au-multimètre"
+- id: S08-L01-EX02
+  valeur: 17.66
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "Tension aux bornes de la résistance : 9 − 0,7 = 8,3 V. Courant : 8,3 / 470 = 0,0177 A, soit 17,7 mA."
+  renvoi_section: "S08-L01#une-valve-à-courant"
+- id: S08-L01-EX03
+  valeur: 22.6
+  tolerance_relative: 0.01
+  unite: V
+  explication: "Le courant traverse deux diodes du pont : 24 − 1,4 = 22,6 V."
+  renvoi_section: "S08-L01#le-redressement"
