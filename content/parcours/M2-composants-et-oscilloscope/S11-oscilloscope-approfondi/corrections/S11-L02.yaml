@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S11-L02-EX01
+  bonnes: [a]
+  explication: "Une sonde sous-compensée arrondit les fronts et réduit l'amplitude apparente ; on règle la vis de compensation jusqu'à des coins carrés."
+  renvoi_section: "S11-L02#la-sonde-10-et-sa-compensation"
+- id: S11-L02-EX02
+  bonnes: [a]
+  explication: "La masse de la sonde est à la terre : posée sur un côté de la résistance, elle le relierait à la terre (FE-07). On utilise deux voies en soustraction ou une sonde différentielle ; on ne neutralise jamais la terre de l'appareil."
+  renvoi_section: "S11-L02#mesurer-entre-deux-points-dont-aucun-nest-à-la-masse"
+- id: S11-L02-EX03
+  valeur: 4
+  tolerance_relative: 0.02
+  unite: A
+  explication: "Tension aux bornes : 12,0 − 11,8 = 0,2 V ; courant : 0,2 / 0,05 = 4 A. Une petite différence entre deux grandes tensions demande des voies bien réglées et des sondes identiques."
+  renvoi_section: "S11-L02#exemple-5--la-tension-aux-bornes-dune-résistance-de-mesure-de-courant"

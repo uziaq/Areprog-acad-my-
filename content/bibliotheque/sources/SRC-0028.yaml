@@ -1,0 +1,12 @@
+# Signaux non sinusoïdaux : un signal carré est une somme d'harmoniques impaires, analyse de
+# Fourier et FFT (cours S11). Manuel libre ; sections citées par leur titre anglais,
+# chapitre 7 (Mixed-frequency AC signals).
+id: SRC-0028
+titre: "Lessons In Electric Circuits, Volume II : AC, chapitre 7"
+editeur: Tony R. Kuphaldt (ibiblio.org)
+reference: "Chapitre 7, Mixed-Frequency AC Signals, version HTML"
+revision: "copyright 2000-2023"
+date_consultation: 2026-11-14
+type: cours
+licence: libre
+lien: https://ibiblio.org/kuphaldt/electricCircuits/AC/AC_7.html
