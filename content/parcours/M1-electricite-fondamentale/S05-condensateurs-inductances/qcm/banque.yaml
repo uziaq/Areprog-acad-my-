@@ -1,0 +1,237 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S05-Q001
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#ce-quest-un-condensateur"
+  enonce: "Où un condensateur stocke-t-il son énergie ?"
+  propositions:
+    - {id: a, texte: "Dans le champ électrique entre ses armatures"}
+    - {id: b, texte: "Dans un champ magnétique"}
+    - {id: c, texte: "Dans la chaleur de son boîtier"}
+    - {id: d, texte: "Il ne stocke pas d'énergie"}
+- id: S05-Q002
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#ce-quest-un-condensateur"
+  enonce: "On coupe l'alimentation d'une carte. Que devient la charge de ses condensateurs ?"
+  propositions:
+    - {id: a, texte: "Elle reste, et ne disparaît que lentement par les fuites ou par ce qui est relié à leurs bornes"}
+    - {id: b, texte: "Elle disparaît instantanément"}
+    - {id: c, texte: "Elle passe dans la masse du châssis"}
+    - {id: d, texte: "Elle double"}
+- id: S05-Q003
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#associer-des-condensateurs"
+  enonce: "Trois condensateurs de 10 nF, 22 nF et 68 nF sont branchés en parallèle. Quelle est la capacité équivalente ?"
+  unite_attendue: nF
+- id: S05-Q004
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#associer-des-condensateurs"
+  enonce: "Deux condensateurs de 220 µF sont branchés en série. Quelle est la capacité équivalente ?"
+  unite_attendue: µF
+- id: S05-Q005
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#associer-des-condensateurs"
+  enonce: "Comparées aux résistances, les règles d'association des condensateurs :"
+  propositions:
+    - {id: a, texte: "sont inversées : les capacités s'additionnent en parallèle"}
+    - {id: b, texte: "sont identiques : les capacités s'additionnent en série"}
+    - {id: c, texte: "n'existent pas : on ne peut pas associer des condensateurs"}
+    - {id: d, texte: "dépendent de la technologie"}
+- id: S05-Q006
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#exemple-2--convertir"
+  enonce: "Convertissez 0,1 µF en nanofarads."
+  unite_attendue: nF
+- id: S05-Q007
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#les-technologies"
+  enonce: "Laquelle de ces technologies est polarisée ?"
+  propositions:
+    - {id: a, texte: "Électrolytique aluminium"}
+    - {id: b, texte: "Céramique"}
+    - {id: c, texte: "Film plastique"}
+    - {id: d, texte: "Aucune"}
+- id: S05-Q008
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L01#le-vieillissement-de-lélectrolytique"
+  enonce: "Pourquoi un électrolytique placé près d'une source de chaleur vieillit-il plus vite ?"
+  propositions:
+    - {id: a, texte: "Sa durée de vie double environ pour chaque baisse de 10 °C, donc elle diminue quand la température monte"}
+    - {id: b, texte: "La chaleur augmente sa capacité indéfiniment"}
+    - {id: c, texte: "La chaleur n'a aucun effet"}
+    - {id: d, texte: "Il se recharge tout seul"}
+- id: S05-Q009
+  type: choix_unique
+  securite: true
+  competences: [D2.5, D1.3]
+  section: "S05-L01#polarité-et-tension-nominale-de-lélectrolytique"
+  enonce: "Un électrolytique est monté à l'envers et mis sous tension. Que risque-t-on ?"
+  propositions:
+    - {id: a, texte: "Un fort courant, de la chaleur, du gaz et l'ouverture de la soupape"}
+    - {id: b, texte: "Rien, il fonctionne dans les deux sens"}
+    - {id: c, texte: "Une simple baisse de capacité sans danger"}
+    - {id: d, texte: "Il devient une résistance"}
+- id: S05-Q010
+  type: choix_unique
+  securite: true
+  competences: [D2.5, D1.3]
+  section: "S05-L01#décharger-en-sécurité"
+  enonce: "Comment décharger un condensateur avant de le manipuler ?"
+  propositions:
+    - {id: a, texte: "À travers une résistance, puis vérifier au voltmètre"}
+    - {id: b, texte: "Par un court-circuit franc avec un tournevis"}
+    - {id: c, texte: "En attendant sans mesurer"}
+    - {id: d, texte: "En le chauffant au fer"}
+- id: S05-Q011
+  type: choix_unique
+  securite: true
+  competences: [D2.5, D1.3]
+  section: "S05-L01#décharger-en-sécurité"
+  enonce: "Vous avez déchargé un électrolytique et lu 0 V. Pourquoi mesurer encore juste avant de le toucher ?"
+  propositions:
+    - {id: a, texte: "Une tension de recouvrement peut réapparaître à ses bornes après la décharge"}
+    - {id: b, texte: "Le voltmètre se trompe toujours la première fois"}
+    - {id: c, texte: "C'est inutile"}
+    - {id: d, texte: "Pour recharger le condensateur"}
+- id: S05-Q012
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L02#la-constante-de-temps"
+  enonce: "Quelle est la constante de temps d'un circuit RC de 10 kΩ et 4,7 µF ?"
+  unite_attendue: ms
+- id: S05-Q013
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L02#la-constante-de-temps"
+  enonce: "Quelle est la constante de temps d'un circuit RC de 1 MΩ et 100 nF ?"
+  unite_attendue: ms
+- id: S05-Q014
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L02#la-règle-des-63-"
+  enonce: "Un condensateur se charge sous 5 V à partir de 0 V. Quelle tension atteint-il après 1τ ?"
+  unite_attendue: V
+- id: S05-Q015
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L02#la-règle-des-63-"
+  enonce: "Un condensateur chargé à 20 V se décharge à travers une résistance. Quelle tension reste-t-il après 1τ ?"
+  unite_attendue: V
+- id: S05-Q016
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L02#la-règle-des-63-"
+  enonce: "Au bout de combien de constantes de temps considère-t-on, par convention, un condensateur comme chargé ?"
+  propositions:
+    - {id: a, texte: "5τ"}
+    - {id: b, texte: "1τ"}
+    - {id: c, texte: "2τ"}
+    - {id: d, texte: "Jamais, il faut une durée infinie"}
+- id: S05-Q017
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L02#exemple-4--calculer-τ"
+  enonce: "Un circuit a R = 100 kΩ et C = 220 µF. Combien de temps faut-il pour atteindre 5τ ?"
+  unite_attendue: s
+- id: S05-Q018
+  type: choix_unique
+  securite: true
+  competences: [D2.5, D1.3]
+  section: "S05-L02#lire-une-décharge-à-latelier"
+  enonce: "Le calcul indique qu'un condensateur doit être déchargé après 30 s. Que faites-vous avant de le toucher ?"
+  propositions:
+    - {id: a, texte: "J'attends au moins ce temps, puis je mesure la tension à ses bornes"}
+    - {id: b, texte: "J'attends 30 s et je le touche"}
+    - {id: c, texte: "Je le touche tout de suite, le calcul suffit"}
+    - {id: d, texte: "Je double le temps et je le touche sans mesurer"}
+- id: S05-Q019
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#la-constante-de-temps-lr"
+  enonce: "Une bobine de 50 mH est en série avec une résistance totale de 25 Ω. Quelle est la constante de temps ?"
+  unite_attendue: ms
+- id: S05-Q020
+  type: calcul
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#la-constante-de-temps-lr"
+  enonce: "Une bobine de résistance 60 Ω est alimentée sous 12 V. Quel est le courant établi ?"
+  unite_attendue: mA
+- id: S05-Q021
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#linductance"
+  enonce: "À quoi s'oppose une bobine ?"
+  propositions:
+    - {id: a, texte: "Aux variations du courant qui la traverse"}
+    - {id: b, texte: "Aux variations de la tension à ses bornes"}
+    - {id: c, texte: "Au passage du courant continu établi"}
+    - {id: d, texte: "À rien"}
+- id: S05-Q022
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#la-surtension-à-louverture"
+  enonce: "Pourquoi l'ouverture brutale d'un circuit inductif crée-t-elle une surtension ?"
+  propositions:
+    - {id: a, texte: "La bobine s'oppose à la chute rapide du courant en créant une tension inverse, qui peut atteindre des centaines de volts"}
+    - {id: b, texte: "La source augmente sa tension"}
+    - {id: c, texte: "Le fil chauffe"}
+    - {id: d, texte: "Elle n'en crée pas"}
+- id: S05-Q023
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#la-diode-de-roue-libre"
+  enonce: "Comment est montée une diode de roue libre ?"
+  propositions:
+    - {id: a, texte: "En parallèle sur la bobine, bloquée tant que la bobine est alimentée"}
+    - {id: b, texte: "En série avec la bobine, passante"}
+    - {id: c, texte: "En parallèle sur la source"}
+    - {id: d, texte: "En série avec le transistor, bloquée"}
+- id: S05-Q024
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#la-diode-de-roue-libre"
+  enonce: "Quelle est la contrepartie d'une diode seule en roue libre sur un relais ?"
+  propositions:
+    - {id: a, texte: "Le courant s'éteint plus lentement, le relais décolle plus lentement et ses contacts peuvent en souffrir"}
+    - {id: b, texte: "La surtension augmente"}
+    - {id: c, texte: "Le relais ne colle plus"}
+    - {id: d, texte: "Aucune"}
+- id: S05-Q025
+  type: choix_unique
+  securite: false
+  competences: [D2.5]
+  section: "S05-L03#le-découplage--premier-aperçu"
+  enonce: "Sur un schéma, un petit condensateur relie l'alimentation d'un circuit intégré à la masse, tout près de lui. Quel est son rôle principal ?"
+  propositions:
+    - {id: a, texte: "Fournir localement les pointes de courant et stabiliser la tension d'alimentation : c'est un découplage"}
+    - {id: b, texte: "Mesurer le courant consommé"}
+    - {id: c, texte: "Protéger contre l'inversion de polarité"}
+    - {id: d, texte: "Fixer la fréquence d'horloge"}

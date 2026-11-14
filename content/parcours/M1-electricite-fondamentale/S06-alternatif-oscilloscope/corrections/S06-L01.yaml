@@ -1,0 +1,19 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S06-L01-EX01
+  valeur: 250
+  tolerance_relative: 0.01
+  unite: Hz
+  explication: "f = 1 / T = 1 / 0,004 = 250 Hz."
+  renvoi_section: "S06-L01#période-et-fréquence"
+- id: S06-L01-EX02
+  valeur: 7.07
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Valeur crête : 20 / 2 = 10 V. Valeur efficace d'une sinusoïde : 0,707 × 10 = 7,07 V."
+  renvoi_section: "S06-L01#les-valeurs-dune-sinusoïde"
+- id: S06-L01-EX03
+  valeur: 5.6
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Umoy = D × Umax = 0,4 × 14 = 5,6 V."
+  renvoi_section: "S06-L01#le-signal-carré-et-le-signal-rectangulaire"

@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S07-L03-EX01
+  bonnes: [c]
+  explication: "Valeur nominale : 470 Ω ; tolérance de 465,3 à 474,7 Ω. Intervalle de mesure : de 472 à 480 Ω, à cheval sur la borne haute : non concluant. Il faut un instrument plus précis ou une autre méthode."
+  renvoi_section: "S07-L03#tester-une-résistance-hors-circuit"
+- id: S07-L03-EX02
+  bonnes: [a]
+  explication: "472 vaut 4,7 kΩ. Une lecture plus faible en circuit peut venir d'un composant défectueux ou de composants en parallèle : c'est non concluant tant que le schéma n'est pas lu ou qu'une patte n'est pas dessoudée."
+  renvoi_section: "S07-L03#pourquoi-une-mesure-en-circuit-peut-tromper"

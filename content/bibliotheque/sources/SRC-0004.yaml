@@ -1,0 +1,13 @@
+# Catégories de mesure et sécurité du multimètre (cours S01, leçon S01-L02).
+# Document de 2002 : il décrit les catégories de l'IEC 61010 de l'époque. L'édition en vigueur
+# de la norme reste à consulter (docs/pedagogie/05-ressources-documentaires.md).
+# Sections citées par leur titre anglais.
+id: SRC-0004
+titre: "ABCs of multimeter safety"
+editeur: Fluke Corporation
+reference: "Note d'application Fluke, Pub_ID 10046-eng"
+revision: "Rev. 02, 05/2002"
+date_consultation: 2026-11-13
+type: notice
+licence: lien_seulement
+lien: https://www.eit.lth.se/fileadmin/eit/courses/etef15/Fluke/Matsakerhet_10046-eng-02-A.pdf

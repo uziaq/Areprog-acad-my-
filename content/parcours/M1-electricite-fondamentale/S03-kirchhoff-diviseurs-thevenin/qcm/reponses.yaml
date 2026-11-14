@@ -1,0 +1,177 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S03-Q001
+  bonnes: [a]
+  explication: "Un nœud est un point de jonction d'au moins trois conducteurs ; tous les fils reliés sans composant entre eux forment un seul nœud."
+  pourquoi_faux:
+    b: "Deux fils qui se prolongent sans dérivation ne forment pas un nœud."
+    c: "Un composant appartient à une branche, entre deux nœuds."
+    d: "Le voltmètre se branche entre deux points quelconques ; cela ne définit pas un nœud."
+  source: "S03-L01#le-vocabulaire-dun-circuit"
+- id: S03-Q002
+  bonnes: [a]
+  explication: "La masse est le nœud de référence : on lui attribue 0 V, et une tension « en un point » est mesurée par rapport à elle."
+  pourquoi_faux:
+    b: "La borne positive de la source n'est pas la référence."
+    c: "Aucune règle ne place la masse à mi-tension."
+    d: "On lui attribue justement une valeur de référence, 0 V."
+  source: "S03-L01#le-vocabulaire-dun-circuit"
+- id: S03-Q003
+  bonnes: [b]
+  explication: "Maille 1 : source, R1, R2. Maille 2 : R2, R3. Le grand tour source, R1, R3 existe aussi, mais il englobe les deux mailles simples."
+  pourquoi_faux:
+    a: "R3 forme une seconde maille avec R2."
+    c: "Le grand tour n'est pas une maille simple : il en englobe deux."
+    d: "Il n'y a que deux nœuds principaux et trois branches."
+  source: "S03-L01#le-vocabulaire-dun-circuit"
+- id: S03-Q004
+  valeur: 20
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "Loi des nœuds : ce qui entre ressort. 5 + 12 + 3 = 20 mA."
+  source: "S03-L01#la-loi-des-nœuds"
+- id: S03-Q005
+  valeur: 8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Loi des mailles : 24 − 6 − 10 − U3 = 0, donc U3 = 8 V."
+  source: "S03-L01#la-loi-des-mailles"
+- id: S03-Q006
+  valeur: 5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "R2 // R3 = (6 × 3) / 9 = 2 kΩ. Le circuit devient R1 = 2 kΩ en série avec 2 kΩ : UA = 10 × 2 / 4 = 5 V."
+  source: "S03-L01#exemple-1--résoudre-un-circuit-à-deux-mailles"
+- id: S03-Q007
+  valeur: 2.791
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Us = 12 × 1 / (3,3 + 1) = 12 / 4,3 = 2,79 V."
+  source: "S03-L02#le-diviseur-de-tension-à-vide"
+- id: S03-Q008
+  bonnes: [a]
+  explication: "Us = Ue × R2 / (R1 + R2) et R2 / (R1 + R2) < 1 : un diviseur abaisse toujours la tension."
+  pourquoi_faux:
+    b: "Même avec R2 grande, le rapport reste inférieur à 1."
+    c: "Une charge fait au contraire baisser la sortie."
+    d: "Avec deux résistances identiques, la sortie vaut la moitié de l'entrée."
+  source: "S03-L02#le-diviseur-de-tension-à-vide"
+- id: S03-Q009
+  valeur: 30
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "R1 = R2 × (Ue − Us) / Us = 10 × 7,5 / 2,5 = 30 kΩ. Contrôle : 10 × 10 / 40 = 2,5 V."
+  source: "S03-L02#dimensionner-un-diviseur"
+- id: S03-Q010
+  valeur: 4
+  tolerance_relative: 0.02
+  unite: V
+  explication: "R2 // RL = 10 kΩ. Us = 12 × 10 / (20 + 10) = 4 V, au lieu de 6 V à vide."
+  source: "S03-L02#le-diviseur-chargé"
+- id: S03-Q011
+  bonnes: [a]
+  explication: "La charge se met en parallèle sur R2 : la résistance du bas diminue, donc la sortie baisse. La baisse est faible si la charge est très grande devant R2."
+  pourquoi_faux:
+    b: "Le courant augmente, mais la résistance du bas du diviseur diminue : la sortie baisse."
+    c: "Elle ne change pas seulement avec une charge infinie (à vide)."
+    d: "Seul un court-circuit de la sortie l'annulerait."
+  source: "S03-L02#le-diviseur-chargé"
+- id: S03-Q012
+  bonnes: [a]
+  explication: "La règle pratique demande une charge au moins cent fois plus grande que la résistance vue de la sortie : 100 × 10 kΩ = 1 MΩ. Elle se vérifie toujours par le calcul."
+  pourquoi_faux:
+    b: "Une charge égale à Rth divise la tension par deux."
+    c: "Une charge plus petite que Rth écrase la sortie."
+    d: "Un diviseur débite dans sa charge, et sa sortie baisse."
+  source: "S03-L02#le-diviseur-chargé"
+- id: S03-Q013
+  valeur: 20
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "I2 = I × R1 / (R1 + R2) = 60 × 100 / 300 = 20 mA. Contrôle : I1 = 40 mA, et 40 + 20 = 60 mA."
+  source: "S03-L02#le-diviseur-de-courant"
+- id: S03-Q014
+  bonnes: [a]
+  explication: "Les branches ont la même tension : I = U / R, donc la plus faible résistance laisse passer le plus grand courant."
+  pourquoi_faux:
+    b: "C'est l'inverse : I = U / R."
+    c: "Seulement si les deux résistances sont égales."
+    d: "La position sur le dessin ne change rien."
+  source: "S03-L02#le-diviseur-de-courant"
+- id: S03-Q015
+  valeur: 2
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "r = (E0 − U) / I = (6 − 5,4) / 0,3 = 0,6 / 0,3 = 2 Ω."
+  source: "S03-L03#mesurer-une-résistance-interne"
+- id: S03-Q016
+  valeur: 11
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = E0 − r × I = 12 − 0,5 × 2 = 11 V."
+  source: "S03-L03#source-idéale-source-réelle"
+- id: S03-Q017
+  bonnes: [a]
+  explication: "La chute r × I n'apparaît que quand le courant circule : seule une mesure sous charge la révèle."
+  pourquoi_faux:
+    b: "Au repos, I est nul et la chute interne aussi."
+    c: "On ne mesure jamais une source sous tension à l'ohmmètre : l'appareil et la mesure seraient faussés."
+    d: "La durée ne change rien : sans courant, pas de chute."
+  source: "S03-L03#pourquoi-cest-utile-à-latelier"
+- id: S03-Q018
+  valeur: 5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Eth est la tension à vide : 20 × 10 / (30 + 10) = 5 V."
+  source: "S03-L03#le-théorème-de-thévenin"
+- id: S03-Q019
+  valeur: 7.5
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "Rth = R1 // R2 = (30 × 10) / 40 = 7,5 kΩ, en remplaçant la source par un court-circuit."
+  source: "S03-L03#le-théorème-de-thévenin"
+- id: S03-Q020
+  valeur: 2.5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = Eth × RL / (Rth + RL) = 5 × 7,5 / 15 = 2,5 V : une charge égale à Rth divise la tension par deux."
+  source: "S03-L03#exemple-8--thévenin-dun-diviseur"
+- id: S03-Q021
+  bonnes: [a]
+  explication: "Une source de tension idéale a une résistance nulle : pour calculer Rth, on la remplace par un court-circuit."
+  pourquoi_faux:
+    b: "Le circuit ouvert remplace une source de courant, pas une source de tension."
+    c: "La valeur de la source n'intervient pas dans Rth."
+    d: "Avec la source en place, on ne mesure pas une résistance."
+  source: "S03-L03#le-théorème-de-thévenin"
+- id: S03-Q022
+  bonnes: [a]
+  explication: "Seule une pile est autorisée : une batterie de véhicule ou lithium peut débiter un courant dangereux dans une erreur de câblage."
+  pourquoi_faux:
+    b: "Une batterie de véhicule peut débiter un courant énorme : interdite dans ce TP."
+    c: "Une batterie lithium en court-circuit peut chauffer et s'enflammer."
+    d: "Court-circuiter une source est interdit."
+  source: "S03-L03#source-idéale-source-réelle"
+- id: S03-Q023
+  bonnes: [a]
+  explication: "Un essai long chauffe la charge et la pile, et décharge la pile : E0 dérive et le résultat est faussé."
+  pourquoi_faux:
+    b: "Une mesure de tension prolongée ne dégrade pas le multimètre."
+    c: "La résistance interne ne disparaît pas."
+    d: "Un essai long fausse la mesure et chauffe les composants."
+  source: "S03-L03#mesurer-une-résistance-interne"
+- id: S03-Q024
+  bonnes: [a]
+  explication: "Toute modification du montage se fait alimentation coupée : c'est la règle de tous les TP."
+  pourquoi_faux:
+    b: "La règle s'applique quelle que soit la tension."
+    c: "La limite se règle avant l'essai et ne s'augmente pas pour modifier un montage."
+    d: "Le montage reste sous tension pendant la modification."
+  source: "S03-L02#le-diviseur-chargé"
+- id: S03-Q025
+  bonnes: [a]
+  explication: "La limite se règle un peu au-dessus du courant prévu : le montage fonctionne normalement et un défaut reste limité."
+  pourquoi_faux:
+    b: "Une limite maximale ne protège plus rien."
+    c: "Une limite non écrite est une faute éliminatoire, quel que soit le courant."
+    d: "Sous le courant prévu, l'alimentation passerait en CC et fausserait toutes les mesures."
+  source: "S03-L02#le-diviseur-chargé"

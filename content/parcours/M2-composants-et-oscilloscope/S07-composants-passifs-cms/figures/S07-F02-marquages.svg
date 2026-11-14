@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 170" width="480" height="170" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : trois formes de marquage de résistance CMS, marquages génériques. -->
+  <rect x="30" y="30" width="110" height="50" />
+  <text x="62" y="62" fill="currentColor" stroke="none" font-size="18" font-weight="600">abc</text>
+  <text x="20" y="110" fill="currentColor" stroke="none">a b : chiffres significatifs</text>
+  <text x="20" y="128" fill="currentColor" stroke="none">c : nombre de zéros</text>
+  <rect x="185" y="30" width="110" height="50" />
+  <text x="215" y="62" fill="currentColor" stroke="none" font-size="18" font-weight="600">aRb</text>
+  <text x="180" y="110" fill="currentColor" stroke="none">R : virgule</text>
+  <text x="180" y="128" fill="currentColor" stroke="none">a,b ohms</text>
+  <rect x="340" y="30" width="110" height="50" />
+  <text x="372" y="62" fill="currentColor" stroke="none" font-size="18" font-weight="600">nnL</text>
+  <text x="330" y="110" fill="currentColor" stroke="none">nn : numéro (table EIA-96)</text>
+  <text x="330" y="128" fill="currentColor" stroke="none">L : lettre multiplicateur</text>
+  <text x="330" y="146" fill="currentColor" stroke="none">table du fabricant</text>
+</svg>

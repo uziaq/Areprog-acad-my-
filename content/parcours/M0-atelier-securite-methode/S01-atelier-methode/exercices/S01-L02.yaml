@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S01-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S01-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une alimentation est réglée sur 12 V avec une limite de 0,5 A. Quelle est la résistance de charge pour laquelle elle bascule de CV en CC ?"
+  unite_attendue: Ω
+  competences: [D1.3, D3.2]
+  objectif: O2
+- id: S01-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "La même alimentation est réglée sur 12 V avec une limite de 0,1 A, et alimente une résistance de 47 Ω. Quelle tension lit-on à ses bornes ?"
+  unite_attendue: V
+  competences: [D1.3, D3.2]
+  objectif: O2
+- id: S01-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "D'après la note Fluke étudiée, lequel de ces multimètres résiste le mieux aux surtensions transitoires ?"
+  propositions:
+    - {id: a, texte: "CAT II 1 000 V"}
+    - {id: b, texte: "CAT III 600 V"}
+    - {id: c, texte: "CAT I 1 000 V"}
+    - {id: d, texte: "CAT II 600 V"}
+  competences: [D1.2]
+  objectif: O1

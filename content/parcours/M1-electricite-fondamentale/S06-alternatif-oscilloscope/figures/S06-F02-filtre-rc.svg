@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" width="440" height="200" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : filtre RC passe-bas et allure de sa réponse en fréquence, sans valeur. -->
+  <text x="6" y="54" fill="currentColor" stroke="none" font-weight="600">Ue</text>
+  <path d="M30 50 H60" />
+  <rect x="60" y="40" width="44" height="20" />
+  <text x="74" y="34" fill="currentColor" stroke="none" font-weight="600">R</text>
+  <path d="M104 50 H170" />
+  <circle cx="140" cy="50" r="3" fill="currentColor" />
+  <text x="174" y="54" fill="currentColor" stroke="none" font-weight="600">Us</text>
+  <path d="M140 50 V96 M126 96 H154 M126 106 H154 M140 106 V150 M30 150 H170" />
+  <text x="158" y="106" fill="currentColor" stroke="none" font-weight="600">C</text>
+  <path d="M30 150 H40" />
+  <path d="M240 160 H430 M240 160 V20" stroke-width="1.5" />
+  <path d="M240 40 C 300 40, 320 42, 340 56 S 380 120, 425 150" />
+  <path d="M240 58 H338 V160" stroke-width="1" stroke-dasharray="3 3" />
+  <text x="200" y="44" fill="currentColor" stroke="none">1</text>
+  <text x="194" y="62" fill="currentColor" stroke="none">0,707</text>
+  <text x="332" y="176" fill="currentColor" stroke="none">fc</text>
+  <text x="380" y="192" fill="currentColor" stroke="none">fréquence</text>
+  <text x="248" y="16" fill="currentColor" stroke="none">Us / Ue</text>
+</svg>

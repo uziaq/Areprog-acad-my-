@@ -1,0 +1,42 @@
+# Énoncés seulement : les solutions sont dans corrections/S01-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S01-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les cinq étapes de la méthode de diagnostic."
+  propositions:
+    - {id: a, texte: "Mesurer pour départager"}
+    - {id: b, texte: "Intervenir, valider, documenter"}
+    - {id: c, texte: "Recueillir et constater le symptôme"}
+    - {id: d, texte: "Conclure sur une preuve"}
+    - {id: e, texte: "Formuler des hypothèses"}
+  competences: [D1.6]
+  objectif: O3
+- id: S01-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un TP prévoit 12 V théoriques ; le multimètre affiche 11,7 V. Quel est l'écart absolu à écrire dans le tableau du journal (mesure moins théorique) ?"
+  unite_attendue: V
+  competences: [D1.5]
+  objectif: O1
+- id: S01-L03-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Test de positionnement, règle de trois : trois relais identiques consomment ensemble 0,45 A. Combien consomment cinq de ces relais ?"
+  unite_attendue: A
+  competences: [D2.1]
+  objectif: O4
+- id: S01-L03-EX04
+  version: "0.1"
+  type: calcul
+  enonce: "Test de positionnement, équation du premier degré : trouvez R sachant que 3 × R + 40 = 100 (R en ohms)."
+  unite_attendue: Ω
+  competences: [D2.1]
+  objectif: O4
+- id: S01-L03-EX05
+  version: "0.1"
+  type: calcul
+  enonce: "Test de positionnement, puissances de 10 : exprimez un courant de 4,7 × 10⁻³ A en milliampères."
+  unite_attendue: mA
+  competences: [D2.1]
+  objectif: O4

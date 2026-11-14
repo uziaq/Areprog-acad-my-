@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S07-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S07-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une résistance CMS porte le marquage « 563 ». Quelle est sa valeur ?"
+  unite_attendue: kΩ
+  competences: [D4.1]
+  objectif: O1
+- id: S07-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une résistance CMS 0603 porte le marquage EIA-96 « 30C ». D'après la table de la note TN004 citée en leçon, quelle est sa valeur ?"
+  unite_attendue: kΩ
+  competences: [D4.1]
+  objectif: O2
+- id: S07-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une résistance CMS est marquée « 102 ». Que pouvez-vous affirmer sur sa tolérance ?"
+  propositions:
+    - {id: a, texte: "Rien : la tolérance n'est pas marquée ; elle se lit dans la nomenclature ou la fiche technique"}
+    - {id: b, texte: "Elle vaut 2 %, d'après le dernier chiffre"}
+    - {id: c, texte: "Elle vaut 1 %, car c'est un code à trois chiffres"}
+    - {id: d, texte: "Elle vaut 5 %, valeur typique des CMS"}
+  competences: [D4.1, D4.2]
+  objectif: O3

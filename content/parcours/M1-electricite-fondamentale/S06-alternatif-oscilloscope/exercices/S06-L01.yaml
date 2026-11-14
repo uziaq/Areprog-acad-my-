@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S06-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S06-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un signal a une période de 4 ms. Quelle est sa fréquence ?"
+  unite_attendue: Hz
+  competences: [D2.6]
+  objectif: O1
+- id: S06-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une sinusoïde centrée sur zéro mesure 20 V crête à crête. Quelle est sa valeur efficace ?"
+  unite_attendue: V
+  competences: [D2.6]
+  objectif: O2
+- id: S06-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un signal PWM de 0 à 14 V a un rapport cyclique de 40 %. Quelle est sa valeur moyenne ?"
+  unite_attendue: V
+  competences: [D2.6]
+  objectif: O3

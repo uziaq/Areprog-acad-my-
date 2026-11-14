@@ -1,0 +1,12 @@
+# Modes tension constante (CV) et courant constant (CC) d'une alimentation de laboratoire
+# (cours S01, leçon S01-L02, TP-02). Les réglages propres à l'alimentation de l'atelier
+# viennent de sa notice, à ajouter comme fiche distincte.
+id: SRC-0005
+titre: "Understanding Constant Voltage (CV) and Constant Current (CC) Modes in Regulated Power Supplies"
+editeur: B&K Precision
+reference: "Note technique B&K Precision n° 5"
+revision: "publiée le 2025-06-05"
+date_consultation: 2026-11-13
+type: site
+licence: lien_seulement
+lien: https://www.bkprecision.com/knowledge/technical-notes/5/understanding-constant-voltage-cv-and-constant-current-cc-modes-in-regulated-power-supplies

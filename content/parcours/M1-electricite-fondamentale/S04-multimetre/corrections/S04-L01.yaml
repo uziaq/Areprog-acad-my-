@@ -1,0 +1,19 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S04-L01-EX01
+  valeur: 1.7
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "On soustrait la résistance des cordons : 2,1 − 0,4 = 1,7 Ω. Des cordons à 0,4 Ω restent sous le seuil de remplacement de 1 Ω cité par la note Fluke."
+  renvoi_section: "S04-L01#résistance-continuité-et-jonction"
+- id: S04-L01-EX02
+  valeur: 0.01
+  tolerance_relative: 0.01
+  unite: V
+  explication: "Résolution = pleine échelle / nombre de points = 40 / 4 000 = 0,01 V."
+  renvoi_section: "S04-L01#résolution-digits-et-points"
+- id: S04-L01-EX03
+  valeur: 2.35
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "L'ohmmètre voit les deux en parallèle : 4,7 / 2 = 2,35 kΩ. Une mesure en circuit lit une valeur plus faible ou égale à la vraie valeur."
+  renvoi_section: "S04-L01#pourquoi-une-mesure-en-circuit-peut-mentir"

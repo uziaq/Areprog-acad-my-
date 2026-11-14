@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S05-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S05-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Quelle est la constante de temps d'un circuit RC formé d'une résistance de 22 kΩ et d'un condensateur de 10 µF ?"
+  unite_attendue: ms
+  competences: [D2.5]
+  objectif: O1
+- id: S05-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un condensateur se charge sous 12 V à partir de 0 V à travers une résistance. Quelle tension atteint-il après une constante de temps (règle des 63 %) ?"
+  unite_attendue: V
+  competences: [D2.5]
+  objectif: O2
+- id: S05-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un condensateur de 1 000 µF se décharge à travers 4,7 kΩ. Combien de temps faut-il compter pour atteindre 5τ (décharge considérée comme terminée par convention, avant vérification au voltmètre) ?"
+  unite_attendue: s
+  competences: [D2.5, D1.3]
+  objectif: O3

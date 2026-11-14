@@ -1,0 +1,187 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S07-Q001
+  bonnes: [a]
+  explication: "Deux chiffres pour la longueur, deux pour la largeur : 08 et 05 centièmes de pouce."
+  pourquoi_faux:
+    b: "La valeur est donnée par le marquage."
+    c: "La puissance se lit dans la fiche technique."
+    d: "La tension aussi."
+  source: "S07-L01#le-code-de-taille-dune-puce-passive"
+- id: S07-Q002
+  bonnes: [a]
+  explication: "La fiche donne 2,0 × 1,25 mm pour la taille 0805 (code métrique RR2012M)."
+  pourquoi_faux:
+    b: "Ce serait lire le code en millimètres."
+    c: "C'est la 1206."
+    d: "C'est la 0402."
+  source: "S07-L01#le-code-de-taille-dune-puce-passive"
+- id: S07-Q003
+  bonnes: [a]
+  explication: "« 0603 » en pouces et « 0603 » en métrique ne sont pas la même puce : la fiche technique dit dans quel système le code est écrit."
+  pourquoi_faux:
+    b: "C'est justement faux."
+    c: "Les deux systèmes sont employés."
+    d: "L'erreur fait commander la mauvaise taille."
+  source: "S07-L01#le-code-de-taille-dune-puce-passive"
+- id: S07-Q004
+  bonnes: [a]
+  explication: "Le nom du boîtier ne dit pas la fonction : seul le marquage rapproché d'une fiche technique identifie le composant."
+  pourquoi_faux:
+    b: "C'est fréquent, pas systématique."
+    c: "Les résistances sont en puces ou MELF."
+    d: "Les condensateurs CMS sont en puces."
+  source: "S07-L01#les-autres-familles-de-boîtiers"
+- id: S07-Q005
+  bonnes: [a]
+  explication: "Un point ou un chanfrein repère la broche 1 ; la fiche technique confirme la numérotation."
+  pourquoi_faux:
+    b: "L'orientation sur la carte varie."
+    c: "Les broches ne sont pas colorées."
+    d: "Elle l'est toujours."
+  source: "S07-L01#les-autres-familles-de-boîtiers"
+- id: S07-Q006
+  bonnes: [a]
+  explication: "La photo avant intervention documente l'état initial et l'échelle permet d'estimer les tailles."
+  pourquoi_faux:
+    b: "On identifie avant de dessouder."
+    c: "Le nettoyage peut effacer des indices."
+    d: "Le calculateur n'est pas alimenté cette semaine."
+  source: "S07-L01#identifier-au-microscope"
+- id: S07-Q007
+  valeur: 88
+  tolerance_relative: 0.02
+  unite: mW
+  explication: "P = R × I² = 220 × 0,02² = 0,088 W, soit 88 mW."
+  source: "S07-L01#taille-et-puissance"
+- id: S07-Q008
+  bonnes: [a]
+  explication: "La fiche donne 0,25 W pour la 1206 dans cette série ; une autre série peut annoncer une autre valeur."
+  pourquoi_faux:
+    b: "C'est la 0402."
+    c: "C'est la 2512."
+    d: "La puissance croît avec la taille."
+  source: "S07-L01#taille-et-puissance"
+- id: S07-Q009
+  bonnes: [a]
+  explication: "La puissance nominale ne vaut que si la température admissible n'est pas dépassée ; au-delà de 70 °C, on suit la courbe de déclassement."
+  pourquoi_faux:
+    b: "La fiche dit le contraire."
+    c: "La taille ne supprime pas le déclassement."
+    d: "Elle diminue."
+  source: "S07-L01#taille-et-puissance"
+- id: S07-Q010
+  valeur: 6.8
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "68 suivi de 2 zéros : 6 800 Ω, soit 6,8 kΩ."
+  source: "S07-L02#le-code-à-chiffres"
+- id: S07-Q011
+  valeur: 10
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "10 suivi d'aucun zéro : 10 Ω, et non 100 Ω."
+  source: "S07-L02#le-code-à-chiffres"
+- id: S07-Q012
+  valeur: 2.49
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "249 suivi d'un zéro : 2 490 Ω, soit 2,49 kΩ."
+  source: "S07-L02#le-code-à-chiffres"
+- id: S07-Q013
+  valeur: 2.2
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "La lettre R tient lieu de virgule : 2,2 Ω."
+  source: "S07-L02#la-lettre-r"
+- id: S07-Q014
+  valeur: 10
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "Numéro 01, colonne C : 10K, soit 10 kΩ."
+  source: "S07-L02#le-code-eia-96"
+- id: S07-Q015
+  valeur: 499
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "Numéro 68, colonne A : 499R, soit 499 Ω."
+  source: "S07-L02#le-code-eia-96"
+- id: S07-Q016
+  bonnes: [a]
+  explication: "Les deux chiffres renvoient à une ligne de la table (07 : 115, 1K15…) ; la lettre est le multiplicateur. « 07B » vaut 1,15 kΩ."
+  pourquoi_faux:
+    b: "07 donnerait 7, alors que la valeur est 1,15 kΩ."
+    c: "La tolérance n'est pas marquée."
+    d: "La taille n'est pas codée dans le marquage."
+  source: "S07-L02#le-code-eia-96"
+- id: S07-Q017
+  bonnes: [a]
+  explication: "Sans marquage, on documente ou on mesure ; jamais de valeur supposée."
+  pourquoi_faux:
+    b: "Aucune valeur n'est liée à une taille."
+    c: "La couleur ne code pas la valeur d'une puce."
+    d: "Remplacer sans savoir est une faute."
+  source: "S07-L02#ce-que-le-marquage-ne-dit-pas"
+- id: S07-Q018
+  bonnes: [a]
+  explication: "Les codes des boîtiers SOT et SOD sont propres aux fabricants ; ce ne sont pas des codes de résistance."
+  pourquoi_faux:
+    b: "Ce n'est pas un code de résistance."
+    c: "Un marquage ne donne pas un courant."
+    d: "EIA-96 concerne les résistances."
+  source: "S07-L02#ce-que-le-marquage-ne-dit-pas"
+- id: S07-Q019
+  bonnes: [a]
+  explication: "La note type le dit : dépasser ces valeurs peut causer des dommages permanents."
+  pourquoi_faux:
+    b: "C'est l'inverse."
+    c: "Ce sont des limites de contrainte."
+    d: "Aucune protection n'est garantie."
+  source: "S07-L03#les-valeurs-maximales-absolues"
+- id: S07-Q020
+  bonnes: [a]
+  explication: "On travaille dans les conditions recommandées ; la valeur maximale absolue n'est pas un point de fonctionnement, et le fonctionnement n'y est pas garanti. La limite de courant s'écrit avant la mise sous tension (FE-02)."
+  pourquoi_faux:
+    b: "Le composant peut être endommagé de façon permanente."
+    c: "Double faute : maximum absolu et alimentation non limitée."
+    d: "Un réglage se prépare et s'écrit avant."
+  source: "S07-L03#les-valeurs-maximales-absolues"
+- id: S07-Q021
+  bonnes: [a]
+  explication: "Les valeurs typiques sont indicatives ; chaque valeur est donnée dans des conditions précisées."
+  pourquoi_faux:
+    b: "Ce sont les limites min et max qui le sont."
+    c: "C'est un autre tableau."
+    d: "Les conditions de mesure sont toujours précisées."
+  source: "S07-L03#la-structure-type"
+- id: S07-Q022
+  bonnes: [a]
+  explication: "La fiche du fabricant fait foi ; sa révision se note au journal comme pour une source de la bibliothèque."
+  pourquoi_faux:
+    b: "Un forum n'est pas une source fiable."
+    c: "Une vidéo ne remplace pas la fiche."
+    d: "La mémoire n'est pas une source."
+  source: "S07-L03#trouver-la-bonne-fiche-technique"
+- id: S07-Q023
+  bonnes: [a]
+  explication: "Un parallèle abaisse la lecture ; une lecture plus forte désigne la résistance ou sa soudure, à confirmer hors circuit et au microscope."
+  pourquoi_faux:
+    b: "C'est l'inverse."
+    c: "1,4 kΩ s'écarte nettement de 1 kΩ."
+    d: "On confirme par une mesure hors circuit."
+  source: "S07-L03#pourquoi-une-mesure-en-circuit-peut-tromper"
+- id: S07-Q024
+  bonnes: [a]
+  explication: "Un condensateur dessoudé peut rester chargé : décharge à travers une résistance, puis vérification au voltmètre (S05)."
+  pourquoi_faux:
+    b: "Il garde sa charge hors circuit."
+    c: "Un court-circuit franc est à proscrire."
+    d: "Aucun sens, et dangereux."
+  source: "S07-L03#tester-un-condensateur-hors-circuit"
+- id: S07-Q025
+  bonnes: [a]
+  explication: "Une manipulation hors poste ESD est une faute éliminatoire (FE-01), comme un condensateur non déchargé (FE-06). La carte n'est pas alimentée cette semaine."
+  pourquoi_faux:
+    b: "Interdit pendant ce TP."
+    c: "La laine favorise l'électricité statique."
+    d: "Une carte de récupération reste sensible et peut garder des charges."
+  source: "S07-L01#identifier-au-microscope"

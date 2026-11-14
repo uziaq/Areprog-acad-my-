@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S07-L02-EX01
+  valeur: 56
+  tolerance_relative: 0.01
+  unite: kΩ
+  explication: "56 suivi de 3 zéros : 56 000 Ω, soit 56 kΩ."
+  renvoi_section: "S07-L02#le-code-à-chiffres"
+- id: S07-L02-EX02
+  valeur: 20
+  tolerance_relative: 0.01
+  unite: kΩ
+  explication: "Numéro 30 : la table donne 200 Ω en colonne A, 2,0 kΩ en B et 20 kΩ en C. « 30C » vaut donc 20 kΩ. Les deux chiffres sont un numéro de valeur, pas des chiffres significatifs."
+  renvoi_section: "S07-L02#le-code-eia-96"
+- id: S07-L02-EX03
+  bonnes: [a]
+  explication: "Le dernier chiffre est le multiplicateur (102 = 1 kΩ). La tolérance n'est pas marquée sur les résistances CMS : on la cherche dans la nomenclature ou la fiche technique, jamais une valeur supposée « typique »."
+  renvoi_section: "S07-L02#ce-que-le-marquage-ne-dit-pas"

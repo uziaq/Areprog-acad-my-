@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S02-L03-EX01
+  bonnes: [b]
+  explication: "Marron = 1, noir = 0 : chiffres 10. Rouge = × 100 : 10 × 100 = 1 000 Ω = 1 kΩ. Or = ±5 %."
+  renvoi_section: "S02-L03#le-code-couleur"
+- id: S02-L03-EX02
+  valeur: 2.42
+  tolerance_relative: 0.01
+  unite: kΩ
+  explication: "2,2 × (1 + 0,10) = 2,42 kΩ. La plus petite valeur admise est 2,2 × 0,90 = 1,98 kΩ."
+  renvoi_section: "S02-L03#valeur-nominale-et-tolérance"

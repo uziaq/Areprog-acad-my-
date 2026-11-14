@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 220" width="380" height="220" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="13">
+  <!-- Figure réalisée par AREPROG : circuit de principe à deux mailles, sans valeur. -->
+  <!-- source -->
+  <line x1="30" y1="104" x2="70" y2="104" stroke-width="3" />
+  <line x1="40" y1="116" x2="60" y2="116" stroke-width="3" />
+  <text x="76" y="102" fill="currentColor" stroke="none">+</text>
+  <text x="8" y="114" fill="currentColor" stroke="none" font-weight="600">U</text>
+  <path d="M50 104 V40 H110" />
+  <path d="M50 116 V180 H330" />
+  <!-- R1 -->
+  <rect x="110" y="30" width="50" height="20" />
+  <text x="124" y="22" fill="currentColor" stroke="none">R1</text>
+  <path d="M160 40 H330" />
+  <!-- nœud A -->
+  <circle cx="210" cy="40" r="5" fill="currentColor" stroke="none" />
+  <text x="204" y="26" fill="currentColor" stroke="none" font-weight="600">A</text>
+  <!-- R2 -->
+  <path d="M210 40 V85" />
+  <rect x="200" y="85" width="20" height="50" />
+  <text x="226" y="114" fill="currentColor" stroke="none">R2</text>
+  <path d="M210 135 V180" />
+  <!-- R3 -->
+  <path d="M330 40 V85" />
+  <rect x="320" y="85" width="20" height="50" />
+  <text x="346" y="114" fill="currentColor" stroke="none">R3</text>
+  <path d="M330 135 V180" />
+  <!-- nœud B et masse -->
+  <circle cx="210" cy="180" r="5" fill="currentColor" stroke="none" />
+  <text x="204" y="200" fill="currentColor" stroke="none" font-weight="600">B</text>
+  <line x1="120" y1="192" x2="150" y2="192" />
+  <line x1="126" y1="198" x2="144" y2="198" />
+  <line x1="132" y1="204" x2="138" y2="204" />
+  <path d="M135 180 V192" />
+  <text x="70" y="212" fill="currentColor" stroke="none" font-size="12">Masse (0 V)</text>
+  <text x="100" y="140" fill="currentColor" stroke="none" font-size="12">Maille 1</text>
+  <text x="250" y="140" fill="currentColor" stroke="none" font-size="12">Maille 2</text>
+</svg>

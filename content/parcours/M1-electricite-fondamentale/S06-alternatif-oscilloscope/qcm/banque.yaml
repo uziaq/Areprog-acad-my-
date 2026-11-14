@@ -1,0 +1,241 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S06-Q001
+  type: calcul
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#période-et-fréquence"
+  enonce: "Un signal a une période de 20 ms. Quelle est sa fréquence ?"
+  unite_attendue: Hz
+- id: S06-Q002
+  type: calcul
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#période-et-fréquence"
+  enonce: "Quelle est la période d'un signal de 25 kHz ?"
+  unite_attendue: µs
+- id: S06-Q003
+  type: choix_unique
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#les-valeurs-dune-sinusoïde"
+  enonce: "Qu'est-ce que la valeur efficace d'un signal ?"
+  propositions:
+    - {id: a, texte: "La tension continue qui produirait le même échauffement dans une résistance"}
+    - {id: b, texte: "La moitié de la valeur crête à crête"}
+    - {id: c, texte: "La valeur la plus haute atteinte"}
+    - {id: d, texte: "La moyenne arithmétique des points sur une période"}
+- id: S06-Q004
+  type: calcul
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#les-valeurs-dune-sinusoïde"
+  enonce: "Une sinusoïde a une valeur crête de 10 V. Quelle est sa valeur efficace ?"
+  unite_attendue: V
+- id: S06-Q005
+  type: choix_unique
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#les-valeurs-dune-sinusoïde"
+  enonce: "Quelle est la valeur moyenne d'une sinusoïde centrée sur zéro ?"
+  propositions:
+    - {id: a, texte: "0 V"}
+    - {id: b, texte: "0,707 fois la valeur crête"}
+    - {id: c, texte: "La valeur crête"}
+    - {id: d, texte: "La moitié de la valeur crête"}
+- id: S06-Q006
+  type: choix_unique
+  securite: true
+  competences: [D3.3]
+  section: "S06-L03#sondes-et-sécurité"
+  enonce: "Le cordon secteur de votre oscilloscope a perdu sa broche de terre, et sa notice n'indique pas de boîtier isolé. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je ne l'utilise pas tant que le cordon n'est pas remplacé par un cordon avec conducteur de terre"}
+    - {id: b, texte: "Je l'utilise en évitant de toucher les boutons"}
+    - {id: c, texte: "Je l'utilise : la terre ne sert qu'à la précision"}
+    - {id: d, texte: "Je relie la masse de sonde au secteur pour compenser"}
+- id: S06-Q007
+  type: calcul
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#le-signal-carré-et-le-signal-rectangulaire"
+  enonce: "Un signal PWM de 0 à 12 V a un rapport cyclique de 36 %. Quelle est sa valeur efficace ?"
+  unite_attendue: V
+- id: S06-Q008
+  type: choix_unique
+  securite: false
+  competences: [D2.6]
+  section: "S06-L01#ce-que-lit-le-multimètre"
+  enonce: "Un multimètre non TRMS, réglé en alternatif, mesure un signal PWM. Que penser de sa lecture ?"
+  propositions:
+    - {id: a, texte: "Elle peut être fausse : il n'est exact que pour une sinusoïde pure"}
+    - {id: b, texte: "Elle est exacte, comme pour tout signal"}
+    - {id: c, texte: "Elle donne la valeur crête"}
+    - {id: d, texte: "Elle donne la fréquence"}
+- id: S06-Q009
+  type: calcul
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#la-réactance-du-condensateur"
+  enonce: "Quelle est la réactance d'un condensateur de 10 µF à 1 kHz ?"
+  unite_attendue: Ω
+- id: S06-Q010
+  type: choix_unique
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#la-réactance-du-condensateur"
+  enonce: "Que devient la réactance d'un condensateur quand la fréquence double ?"
+  propositions:
+    - {id: a, texte: "Elle est divisée par deux"}
+    - {id: b, texte: "Elle double"}
+    - {id: c, texte: "Elle ne change pas"}
+    - {id: d, texte: "Elle devient nulle"}
+- id: S06-Q011
+  type: choix_unique
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#la-réactance-du-condensateur"
+  enonce: "Comment se comporte un condensateur idéal en continu, une fois chargé ?"
+  propositions:
+    - {id: a, texte: "Comme un circuit ouvert : il bloque le continu"}
+    - {id: b, texte: "Comme un court-circuit"}
+    - {id: c, texte: "Comme une résistance de 1 Ω"}
+    - {id: d, texte: "Comme une source"}
+- id: S06-Q012
+  type: calcul
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#le-filtre-rc-passe-bas"
+  enonce: "Quelle est la fréquence de coupure d'un filtre RC passe-bas avec R = 4,7 kΩ et C = 22 nF ?"
+  unite_attendue: kHz
+- id: S06-Q013
+  type: choix_unique
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#le-filtre-rc-passe-bas"
+  enonce: "Dans un filtre RC passe-bas, où est placé le condensateur ?"
+  propositions:
+    - {id: a, texte: "Entre la sortie et la masse"}
+    - {id: b, texte: "En série entre l'entrée et la sortie"}
+    - {id: c, texte: "En parallèle sur la résistance"}
+    - {id: d, texte: "Entre l'entrée et la masse, avant la résistance"}
+- id: S06-Q014
+  type: choix_unique
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#le-filtre-rc-passe-bas"
+  enonce: "À la fréquence de coupure d'un filtre RC passe-bas, que vaut la sortie ?"
+  propositions:
+    - {id: a, texte: "70,7 % de l'entrée"}
+    - {id: b, texte: "50 % de l'entrée"}
+    - {id: c, texte: "100 % de l'entrée"}
+    - {id: d, texte: "0"}
+- id: S06-Q015
+  type: calcul
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#exemple-6--choisir-un-condensateur"
+  enonce: "On veut une fréquence de coupure de 1 kHz avec R = 3,3 kΩ. Quelle capacité faut-il ?"
+  unite_attendue: nF
+- id: S06-Q016
+  type: choix_unique
+  securite: false
+  competences: [D2.7]
+  section: "S06-L02#les-décibels"
+  enonce: "Un rapport de tensions de 0,707 correspond à :"
+  propositions:
+    - {id: a, texte: "−3 dB"}
+    - {id: b, texte: "−20 dB"}
+    - {id: c, texte: "0 dB"}
+    - {id: d, texte: "+3 dB"}
+- id: S06-Q017
+  type: calcul
+  securite: false
+  competences: [D3.3]
+  section: "S06-L03#exemple-8--lire-une-période-et-une-fréquence"
+  enonce: "Sur un écran réglé à 2 ms/div, une période occupe 5 divisions. Quelle est la fréquence ?"
+  unite_attendue: Hz
+- id: S06-Q018
+  type: calcul
+  securite: false
+  competences: [D3.3, D2.6]
+  section: "S06-L03#exemple-9--lire-un-rapport-cyclique"
+  enonce: "Sur un écran réglé à 1 V/div, un signal PWM a son niveau haut à 3,5 divisions au-dessus du zéro. Quelle est sa tension à l'état haut ?"
+  unite_attendue: V
+- id: S06-Q019
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S06-L03#le-système-vertical"
+  enonce: "Pourquoi observer un signal PWM en couplage DC plutôt qu'en AC ?"
+  propositions:
+    - {id: a, texte: "En AC, la composante continue est bloquée et le signal est recentré sur zéro, ce qui fausse la lecture des niveaux"}
+    - {id: b, texte: "En AC, l'oscilloscope ne déclenche jamais"}
+    - {id: c, texte: "En DC, le signal est filtré"}
+    - {id: d, texte: "Il n'y a aucune différence"}
+- id: S06-Q020
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S06-L03#le-déclenchement"
+  enonce: "L'image d'un signal défile sur l'écran. Quelle est la cause la plus probable ?"
+  propositions:
+    - {id: a, texte: "Le niveau de déclenchement est en dehors du signal, ou la source de déclenchement n'est pas la bonne voie"}
+    - {id: b, texte: "Le calibre vertical est trop grand"}
+    - {id: c, texte: "La sonde est en ×10"}
+    - {id: d, texte: "Le couplage est en DC"}
+- id: S06-Q021
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S06-L03#le-déclenchement"
+  enonce: "À quoi sert le mode de déclenchement « auto » ?"
+  propositions:
+    - {id: a, texte: "L'oscilloscope balaie même sans déclenchement, ce qui aide à trouver le signal"}
+    - {id: b, texte: "Il choisit seul tous les réglages"}
+    - {id: c, texte: "Il n'affiche une trace que s'il y a déclenchement"}
+    - {id: d, texte: "Il enregistre une seule acquisition"}
+- id: S06-Q022
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S06-L03#le-système-horizontal"
+  enonce: "Combien de périodes conseille-t-on d'afficher pour une première lecture ?"
+  propositions:
+    - {id: a, texte: "Deux à cinq"}
+    - {id: b, texte: "Une demi"}
+    - {id: c, texte: "Cinquante"}
+    - {id: d, texte: "Le plus possible"}
+- id: S06-Q023
+  type: choix_unique
+  securite: true
+  competences: [D3.3]
+  section: "S06-L03#sondes-et-sécurité"
+  enonce: "Pourquoi l'oscilloscope relié au secteur doit-il être branché sur une prise reliée à la terre ?"
+  propositions:
+    - {id: a, texte: "Pour la sécurité : en cas de défaut, le courant passe par la terre plutôt que par l'opérateur"}
+    - {id: b, texte: "Pour augmenter la bande passante"}
+    - {id: c, texte: "Ce n'est pas nécessaire"}
+    - {id: d, texte: "Pour recharger la sonde"}
+- id: S06-Q024
+  type: choix_unique
+  securite: true
+  competences: [D3.3]
+  section: "S06-L03#sondes-et-sécurité"
+  enonce: "Pendant les TP de S06, où relie-t-on la pince de masse de la sonde ?"
+  propositions:
+    - {id: a, texte: "Uniquement à la masse du générateur ou du montage étudié"}
+    - {id: b, texte: "À n'importe quel point du montage"}
+    - {id: c, texte: "Au secteur, pour référence"}
+    - {id: d, texte: "Nulle part, on la laisse en l'air"}
+- id: S06-Q025
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S06-L03#sondes-et-sécurité"
+  enonce: "Une amplitude lue paraît dix fois trop petite. Quelle vérification faites-vous d'abord ?"
+  propositions:
+    - {id: a, texte: "Le facteur de sonde (×1 ou ×10) réglé sur la sonde et sur l'oscilloscope"}
+    - {id: b, texte: "La pile du générateur"}
+    - {id: c, texte: "La base de temps"}
+    - {id: d, texte: "Le mode de déclenchement"}

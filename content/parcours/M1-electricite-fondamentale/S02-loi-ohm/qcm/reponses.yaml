@@ -67,3 +67,113 @@
   ordre: [b, a, c, d]
   explication: "On relève les données, on calcule, on compare à la puissance nominale, puis on conclut."
   source: "S02-L01#exemple-2--vérifier-la-puissance-dune-résistance"
+- id: S02-Q011
+  valeur: 3.2
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "En série, les résistances s'ajoutent : 1 + 2,2 = 3,2 kΩ."
+  source: "S02-L02#résistances-en-série"
+- id: S02-Q012
+  valeur: 1.2
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "Req = (2 × 3) / (2 + 3) = 6 / 5 = 1,2 kΩ. Contrôle : le résultat est plus petit que la plus petite des deux résistances."
+  source: "S02-L02#résistances-en-parallèle"
+- id: S02-Q013
+  bonnes: [a]
+  explication: "En parallèle, la résistance équivalente est plus petite que la plus petite des résistances. Ici, (1 000 × 1 000 000) / 1 001 000 ≈ 999 Ω : la grande résistance ne change presque rien."
+  pourquoi_faux:
+    b: "Ce serait le cas en série, pas en parallèle."
+    c: "Une association ne donne jamais la moyenne des résistances."
+    d: "1,001 MΩ est la somme : c'est le résultat en série."
+  source: "S02-L02#résistances-en-parallèle"
+- id: S02-Q014
+  bonnes: [a]
+  explication: "100 nF = 100 × 10⁻⁹ F = 0,1 × 10⁻⁶ F = 0,1 µF."
+  pourquoi_faux:
+    b: "Facteur 1 000 de trop : 100 µF = 100 000 nF."
+    c: "pico (10⁻¹²) est 1 000 fois plus petit que nano : 100 nF = 100 000 pF."
+    d: "1 µF = 1 000 nF."
+  source: "S02-L03#compléter-les-préfixes--nano-et-pico"
+- id: S02-Q015
+  valeur: 4.7
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Req = 470 + 330 = 800 Ω ; I = 8 / 800 = 0,01 A ; U = 470 × 0,01 = 4,7 V. Contrôle : la résistance de 330 Ω reçoit 3,3 V, et 4,7 + 3,3 = 8 V."
+  source: "S02-L02#exemple-4--deux-résistances-en-série"
+- id: S02-Q016
+  valeur: 160
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "Chaque branche reçoit 12 V : I1 = 12 / 100 = 0,12 A et I2 = 12 / 300 = 0,04 A. Total : 0,16 A = 160 mA. Contrôle : Req = 75 Ω et 12 / 75 = 0,16 A."
+  source: "S02-L02#résistances-en-parallèle"
+- id: S02-Q017
+  bonnes: [a]
+  explication: "En parallèle, la tension est la même : avec P = U² / R, la plus petite résistance dissipe le plus. Celle de 100 Ω dissipe dix fois plus que celle de 1 kΩ."
+  pourquoi_faux:
+    b: "C'est vrai en série (même courant, P = R × I²), pas en parallèle."
+    c: "La puissance se partage selon les résistances, pas à égalité."
+    d: "Chaque résistance se vérifie contre sa propre puissance nominale."
+  source: "S02-L02#qui-chauffe-le-plus-"
+- id: S02-Q018
+  bonnes: [a]
+  explication: "Un courant se mesure à travers le conducteur : l'ampèremètre se place en série, circuit ouvert à l'endroit de la mesure, alimentation coupée pendant le branchement."
+  pourquoi_faux:
+    b: "En parallèle, l'ampèremètre court-circuite la résistance et reçoit tout le courant que la source peut fournir."
+    c: "Aux bornes de l'alimentation, l'ampèremètre la met en court-circuit."
+    d: "Le multimètre mesure ce que ses bornes et son sélecteur lui imposent."
+  source: "S02-L01#les-quatre-grandeurs"
+- id: S02-Q019
+  bonnes: [b]
+  explication: "Marron = 1, noir = 0 : chiffres 10. Orange = × 1 000 : 10 000 Ω = 10 kΩ. Or = ±5 %."
+  pourquoi_faux:
+    a: "Le multiplicateur orange vaut × 1 000, pas × 100."
+    c: "La troisième bague d'une résistance à quatre bagues est un multiplicateur, pas un chiffre."
+    d: "L'or indique ±5 % ; l'argent indique ±10 %."
+  source: "S02-L03#le-code-couleur"
+- id: S02-Q020
+  bonnes: [c]
+  explication: "Rouge = 2, violet = 7 : chiffres 27. Rouge = × 100 : 2 700 Ω = 2,7 kΩ. Argent = ±10 %."
+  pourquoi_faux:
+    a: "La troisième bague est un multiplicateur, pas un troisième chiffre."
+    b: "L'argent indique ±10 %, l'or ±5 %."
+    d: "Le multiplicateur rouge vaut × 100, pas × 1 000."
+  source: "S02-L03#le-code-couleur"
+- id: S02-Q021
+  bonnes: [d]
+  explication: "Une résistance à trois bagues porte deux chiffres et un multiplicateur, sans bague de tolérance : sa tolérance est ±20 %."
+  pourquoi_faux:
+    a: "Les résistances précises ont plus de bagues, pas moins."
+    b: "±5 % correspond à une bague de tolérance or."
+    c: "±10 % correspond à une bague de tolérance argent."
+  source: "SRC-0007 §Resistor color codes"
+- id: S02-Q022
+  valeur: 1.425
+  tolerance_relative: 0.01
+  unite: kΩ
+  explication: "1,5 × (1 − 0,05) = 1,5 × 0,95 = 1,425 kΩ, soit 1 425 Ω."
+  source: "S02-L03#valeur-nominale-et-tolérance"
+- id: S02-Q023
+  bonnes: [b]
+  explication: "L'intervalle admis va de 10 × 0,95 = 9,5 kΩ à 10 × 1,05 = 10,5 kΩ : 10,8 kΩ est en dehors. Avant de déclarer la résistance défectueuse, on vérifie que la mesure est faite hors circuit et on tient compte de l'incertitude du multimètre (S04)."
+  pourquoi_faux:
+    a: "« Proche » ne suffit pas : on compare à l'intervalle calculé."
+    c: "Une mesure de résistance hors circuit est justement la méthode qui tranche."
+    d: "La tolérance s'applique dans les deux sens, au-dessus et au-dessous."
+  source: "S02-L03#exemple-9--une-mesure-est-elle-conforme-"
+- id: S02-Q024
+  bonnes: [a]
+  explication: "Avec une progression géométrique, chaque valeur dépasse la précédente d'un même pourcentage : la série couvre toute la décade avec un écart relatif constant, adapté à une tolérance exprimée en pourcentage."
+  pourquoi_faux:
+    b: "Les valeurs ne sont pas toutes entières (4,7 ; 2,2…)."
+    c: "L'écart en ohms grandit avec la valeur ; c'est l'écart relatif qui reste constant."
+    d: "Les séries E sont définies indépendamment du marquage en couleurs."
+  source: "SRC-0006 §1 Scope"
+- id: S02-Q025
+  bonnes: [a]
+  explication: "IEC 60063 définit les séries de valeurs normalisées des résistances et des condensateurs."
+  pourquoi_faux:
+    b: "IEC 61010 traite de la sécurité des appareils de mesure (catégories de mesure, S01)."
+    c: "IEC 61340-5-1 traite de la maîtrise des décharges électrostatiques (S01)."
+    d: "ISO 11898 traite du bus CAN (S23)."
+  source: "SRC-0006 §1 Scope"

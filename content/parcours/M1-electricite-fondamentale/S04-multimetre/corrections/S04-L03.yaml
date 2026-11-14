@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S04-L03-EX01
+  valeur: 5.455
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U lue = Eth × Rin / (Rth + Rin) = 6 × 10 / 11 = 5,45 V, soit −9 % : l'effet de charge n'est pas négligeable."
+  renvoi_section: "S04-L03#le-voltmètre-est-une-charge"
+- id: S04-L03-EX02
+  valeur: 80
+  tolerance_relative: 0.02
+  unite: mV
+  explication: "U = R × I = 2 × 0,04 = 0,08 V = 80 mV, retirés à la tension disponible pour le circuit."
+  renvoi_section: "S04-L03#mesurer-un-courant"

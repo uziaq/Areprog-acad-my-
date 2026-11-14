@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S01-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S01-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous mesurez 3 × 10¹² Ω entre deux points d'un plateau en plastique. Dans quelle classe ce matériau se range-t-il ?"
+  propositions:
+    - {id: a, texte: "Conducteur"}
+    - {id: b, texte: "Dissipatif"}
+    - {id: c, texte: "Isolant"}
+  competences: [D1.1]
+  objectif: O2
+- id: S01-L01-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Une carte arrive dans son sachet. Remettez dans l'ordre les gestes à faire avant de commencer à travailler dessus."
+  propositions:
+    - {id: a, texte: "Ouvrir le sachet de la carte"}
+    - {id: b, texte: "Photographier les deux faces de la carte"}
+    - {id: c, texte: "Mettre le bracelet et le relier au point de terre commun"}
+    - {id: d, texte: "Contrôler le bracelet et la liaison du tapis selon leur notice"}
+  competences: [D1.1]
+  objectif: O3

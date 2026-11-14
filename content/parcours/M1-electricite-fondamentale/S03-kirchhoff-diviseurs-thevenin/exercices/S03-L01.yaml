@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S03-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S03-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Dans le circuit de la figure S03-F01, U = 9 V, R1 = 1 kΩ, R2 = 2 kΩ et R3 = 2 kΩ. Quel est le courant I1 fourni par la source ?"
+  unite_attendue: mA
+  competences: [D2.3]
+  objectif: O2
+- id: S03-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Au nœud A, le courant entrant I1 vaut 20 mA et le courant I2 dans R2 vaut 12 mA. Quel est le courant I3 dans R3 ?"
+  unite_attendue: mA
+  competences: [D2.3]
+  objectif: O2
+- id: S03-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Dans la maille 1, la source fournit 12 V et la chute de tension dans R1 vaut 4 V. Quelle est la tension aux bornes de R2 ?"
+  unite_attendue: V
+  competences: [D2.3]
+  objectif: O2

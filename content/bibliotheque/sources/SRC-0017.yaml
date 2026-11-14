@@ -1,0 +1,11 @@
+# Exemple de rubrique « Absolute Maximum Ratings » d'une fiche technique et de sa note type
+# (cours S07). Composant DS2488 (Analog Devices), fiche en ligne.
+id: SRC-0017
+titre: "DS2488, fiche technique en ligne : Absolute Maximum Ratings"
+editeur: Analog Devices
+reference: "Fiche technique DS2488, rubrique Absolute Maximum Ratings"
+revision: "version en ligne consultée le 2026-11-14"
+date_consultation: 2026-11-14
+type: datasheet
+licence: lien_seulement
+lien: https://assets2.analog.com/cdp/onlinedatasheet/ds2488-en/absolute_maximum_ratings.html

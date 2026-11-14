@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S02-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S02-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Trois résistances de 470 Ω, 680 Ω et 1 kΩ sont en série. Quelle est la résistance équivalente ?"
+  unite_attendue: kΩ
+  competences: [D2.2]
+  objectif: O1
+- id: S02-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Deux résistances de 4,7 kΩ sont en parallèle. Quelle est la résistance équivalente ?"
+  unite_attendue: kΩ
+  competences: [D2.2]
+  objectif: O1
+- id: S02-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Deux résistances de 100 Ω sont en série sous 12 V. Quelle puissance dissipe chacune d'elles ?"
+  unite_attendue: W
+  competences: [D2.2]
+  objectif: O2

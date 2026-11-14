@@ -1,0 +1,19 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S03-L03-EX01
+  valeur: 2.112
+  tolerance_relative: 0.03
+  unite: Ω
+  explication: "I = 8,9 / 47 = 0,189 A. r = (9,3 − 8,9) / 0,189 = 0,4 / 0,189 = 2,11 Ω."
+  renvoi_section: "S03-L03#mesurer-une-résistance-interne"
+- id: S03-L03-EX02
+  valeur: 11
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "Rth = R1 // R2 = 22 / 2 = 11 kΩ (source de tension remplacée par un court-circuit)."
+  renvoi_section: "S03-L03#le-théorème-de-thévenin"
+- id: S03-L03-EX03
+  valeur: 5.405
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = Eth × RL / (Rth + RL) = 6 × 100 / 111 = 5,41 V, soit environ 10 % de moins qu'à vide."
+  renvoi_section: "S03-L03#le-théorème-de-thévenin"
