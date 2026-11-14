@@ -136,6 +136,11 @@ correspondre (avertissement en brouillon, erreur à partir de « relu »).
   renvoi_section: "S02-L01#loi-dohm"
 ```
 
+Unités reconnues pour les calculs (`unite_attendue`, `unite`) : V, A, Ω, W, s, Hz, F, J, avec les
+préfixes p, n, µ (ou u), m, k, M. La réponse est acceptée dans toute unité de la même grandeur
+(0,1 µF = 100 nF). Une unité inconnue ou de grandeur différente entre énoncé et corrigé bloque
+la construction (règle `unite`).
+
 ## 3.6 Question de QCM
 
 `qcm/banque.yaml` (affiché) et `qcm/reponses.yaml` (chargé après soumission) partagent les identifiants.

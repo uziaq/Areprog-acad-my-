@@ -27,6 +27,31 @@ describe('unités et saisie', () => {
   });
   it('propose les unités de la même grandeur', () => {
     expect(unitesProposees('mA')).toEqual(['µA', 'mA', 'A']);
+    expect(unitesProposees('ms')).toEqual(['µs', 'ms', 's']);
+    expect(unitesProposees('kHz')).toEqual(['Hz', 'kHz', 'MHz']);
+    expect(unitesProposees('nF')).toEqual(['pF', 'nF', 'µF', 'mF']);
+    expect(unitesProposees('J')).toEqual(['mJ', 'J', 'kJ']);
+  });
+  it('temps, fréquence, capacité, énergie et préfixes n et p', () => {
+    expect(lireUnite('ms')).toMatchObject({ base: 's', facteur: 1e-3 });
+    expect(lireUnite('µs')).toMatchObject({ base: 's', facteur: 1e-6 });
+    expect(lireUnite('kHz')).toMatchObject({ base: 'Hz', facteur: 1e3 });
+    expect(lireUnite('Hz')).toMatchObject({ base: 'Hz', facteur: 1 });
+    expect(lireUnite('nF')).toMatchObject({ base: 'F', facteur: 1e-9 });
+    expect(lireUnite('pF')).toMatchObject({ base: 'F', facteur: 1e-12 });
+    expect(lireUnite('μF')).toMatchObject({ base: 'F', facteur: 1e-6 }); // mu grec
+    expect(lireUnite('mJ')).toMatchObject({ base: 'J', facteur: 1e-3 });
+    expect(lireUnite('xs')).toBeNull();
+    expect(lireUnite('z')).toBeNull();
+  });
+  it('convertit les nouvelles grandeurs, refuse les mélanges', () => {
+    expect(convertir(4.7, 'ms', 'µs')).toBeCloseTo(4700);
+    expect(convertir(100, 'nF', 'µF')).toBeCloseTo(0.1);
+    expect(convertir(220, 'pF', 'nF')).toBeCloseTo(0.22);
+    expect(convertir(1.5, 'kHz', 'Hz')).toBeCloseTo(1500);
+    expect(convertir(250, 'mJ', 'J')).toBeCloseTo(0.25);
+    expect(convertir(1, 'ms', 'Hz')).toBeNull();
+    expect(convertir(1, 'F', 'J')).toBeNull();
   });
 });
 

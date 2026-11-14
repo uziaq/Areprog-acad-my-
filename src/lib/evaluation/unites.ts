@@ -2,8 +2,9 @@
  * Unités et préfixes pour la saisie des réponses numériques.
  */
 
-const PREFIXES: Record<string, number> = { µ: 1e-6, u: 1e-6, m: 1e-3, '': 1, k: 1e3, M: 1e6 };
-const BASES = ['V', 'A', 'Ω', 'W'] as const;
+const PREFIXES: Record<string, number> = { p: 1e-12, n: 1e-9, µ: 1e-6, u: 1e-6, m: 1e-3, '': 1, k: 1e3, M: 1e6 };
+/** Grandeurs reconnues : tension, courant, résistance, puissance, temps, fréquence, capacité, énergie. */
+const BASES = ['V', 'A', 'Ω', 'W', 's', 'Hz', 'F', 'J'] as const;
 export type UniteBase = (typeof BASES)[number];
 
 export interface Unite {
@@ -13,7 +14,8 @@ export interface Unite {
 }
 
 export function lireUnite(symbole: string): Unite | null {
-  const s = symbole.trim().replace(/^ohms?$/i, 'Ω').replace(/ohms?$/i, 'Ω');
+  // « μ » (lettre grecque) et « µ » (signe micro) se ressemblent : les deux sont acceptés.
+  const s = symbole.trim().replace(/^ohms?$/i, 'Ω').replace(/ohms?$/i, 'Ω').replace(/^μ/, 'µ');
   const base = BASES.find((b) => s.endsWith(b));
   if (!base) return null;
   const prefixe = s.slice(0, s.length - base.length);
@@ -31,6 +33,10 @@ export function unitesProposees(attendue: string): string[] {
     A: ['µA', 'mA', 'A'],
     Ω: ['Ω', 'kΩ', 'MΩ'],
     W: ['mW', 'W', 'kW'],
+    s: ['µs', 'ms', 's'],
+    Hz: ['Hz', 'kHz', 'MHz'],
+    F: ['pF', 'nF', 'µF', 'mF'],
+    J: ['mJ', 'J', 'kJ'],
   };
   return parBase[u.base];
 }

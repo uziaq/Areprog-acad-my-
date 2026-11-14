@@ -43,6 +43,15 @@ describe('fixture conforme', () => {
 });
 
 describe('règles bloquantes', () => {
+  it('unité de calcul inconnue de la saisie, ou de grandeur différente', () => {
+    const r = copie();
+    modifier(r, `${CHAP}/corrections/S02-L01.yaml`, (t) => t.replace('unite: mA', 'unite: mX'));
+    expect(regles(valider(r))).toContain('unite');
+    const r2 = copie();
+    modifier(r2, `${CHAP}/qcm/reponses.yaml`, (t) => t.replace('unite: mA', 'unite: ms'));
+    expect(regles(valider(r2))).toContain('unite');
+  });
+
   it('en-tête non conforme au schéma', () => {
     const r = copie();
     modifier(r, `${CHAP}/lecons/S02-L01-test.md`, (t) => t.replace('version: "0.1"', 'version: 0.1'));

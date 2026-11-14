@@ -27,6 +27,7 @@ import {
 } from '../schemas/contenu.ts';
 import type { ContenuBrut, FichierMarkdown } from './charger.ts';
 import { ancres, section, trouverEtiquettes, valeursNonEtiquetees } from './etiquettes.ts';
+import { lireUnite } from '../lib/evaluation/unites.ts';
 
 export type Gravite = 'erreur' | 'avertissement';
 
@@ -92,6 +93,15 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
   const aujourdhui = options.aujourdhui ?? new Date().toISOString().slice(0, 10);
   const ajouter = (regle: string, gravite: Gravite, fichier: string, message: string) =>
     diags.push({ regle, gravite, fichier, message });
+
+  /** Calcul : unités reconnues par la saisie (src/lib/evaluation/unites.ts) et de même grandeur. */
+  const verifierUnites = (id: string, attendue: string | undefined, corrigee: string | undefined, fichier: string) => {
+    const a = attendue ? lireUnite(attendue) : null;
+    const b = corrigee ? lireUnite(corrigee) : null;
+    if (attendue && !a) ajouter('unite', 'erreur', fichier, `${id} : unité attendue « ${attendue} » inconnue de la saisie (V, A, Ω, W, s, Hz, F, J avec p, n, µ, m, k, M)`);
+    if (corrigee && !b) ajouter('unite', 'erreur', fichier, `${id} : unité du corrigé « ${corrigee} » inconnue de la saisie (V, A, Ω, W, s, Hz, F, J avec p, n, µ, m, k, M)`);
+    if (a && b && a.base !== b.base) ajouter('unite', 'erreur', fichier, `${id} : unité attendue « ${attendue} » et unité du corrigé « ${corrigee} » de grandeurs différentes`);
+  };
 
   function verifierSchema<T extends z.ZodType>(schema: T, donnees: unknown, fichier: string): z.infer<T> | null {
     const r = schema.safeParse(donnees);
@@ -337,6 +347,7 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           if (e.type === 'calcul' && (k.valeur === undefined || k.tolerance_relative === undefined || !k.unite)) {
             ajouter('correction', 'erreur', f.chemin, `${k.id} : un exercice de calcul exige valeur, tolerance_relative et unite`);
           }
+          if (e.type === 'calcul') verifierUnites(k.id, e.unite_attendue, k.unite, f.chemin);
           if ((e.type === 'choix_unique' || e.type === 'choix_multiple') && e.propositions) {
             const props = new Set(e.propositions.map((p) => p.id));
             if (!k.bonnes?.length || k.bonnes.some((b) => !props.has(b))) {
@@ -439,6 +450,7 @@ export function validerContenu(contenu: ContenuBrut, options: OptionsValidation 
           if (q.type === 'calcul' && (r.valeur === undefined || r.tolerance_relative === undefined || !r.unite)) {
             ajouter('correction', 'erreur', f.chemin, `${r.id} : une question de calcul exige valeur, tolerance_relative et unite`);
           }
+          if (q.type === 'calcul') verifierUnites(r.id, q.unite_attendue, r.unite, f.chemin);
           if ((q.type === 'choix_unique' || q.type === 'choix_multiple') && q.propositions) {
             const props = new Set(q.propositions.map((p) => p.id));
             if (!r.bonnes?.length || r.bonnes.some((b) => !props.has(b))) ajouter('correction', 'erreur', f.chemin, `${r.id} : « bonnes » doit lister des propositions existantes`);
