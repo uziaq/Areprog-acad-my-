@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S09-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S09-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un NPN commande une charge de 0,2 A depuis une sortie de 5 V. Le β minimal de la fiche vaut 40 et l'on retient une marge de 2 sur le courant de base. Avec VBE = 0,7 V, quelle résistance de base faut-il (avant de choisir la valeur normalisée) ?"
+  unite_attendue: Ω
+  competences: [D4.4]
+  objectif: O2
+- id: S09-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un transistor saturé conduit 0,5 A avec VCE(sat) = 0,25 V. Quelle puissance dissipe-t-il ?"
+  unite_attendue: W
+  competences: [D4.4]
+  objectif: O2
+- id: S09-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Hors circuit, au test de jonction, un transistor bipolaire conduit dans quatre des six combinaisons de pointes. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Il est défectueux, ou ce n'est pas un transistor bipolaire"}
+    - {id: b, texte: "C'est un NPN sain"}
+    - {id: c, texte: "C'est un PNP sain"}
+    - {id: d, texte: "Le test de jonction ne permet rien de dire"}
+  competences: [D4.4, D4.2]
+  objectif: O3

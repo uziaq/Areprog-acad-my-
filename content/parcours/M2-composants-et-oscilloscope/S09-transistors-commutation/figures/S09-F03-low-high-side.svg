@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : étages low-side et high-side, sans valeur ni brochage réel. -->
+  <text x="40" y="18" fill="currentColor" stroke="none" font-weight="600">Low-side</text>
+  <text x="70" y="38" fill="currentColor" stroke="none">+</text>
+  <path d="M80 42 V56" /><rect x="64" y="56" width="32" height="40" /><text x="102" y="80" fill="currentColor" stroke="none">charge</text>
+  <path d="M80 96 V126" /><circle cx="80" cy="112" r="3" fill="currentColor" /><text x="88" y="116" fill="currentColor" stroke="none" font-size="11">sortie</text>
+  <rect x="64" y="126" width="32" height="40" /><text x="102" y="150" fill="currentColor" stroke="none">transistor</text>
+  <path d="M80 166 V196 M68 196 H92 M72 202 H88 M76 208 H84" />
+  <text x="240" y="18" fill="currentColor" stroke="none" font-weight="600">High-side</text>
+  <text x="270" y="38" fill="currentColor" stroke="none">+</text>
+  <path d="M280 42 V56" /><rect x="264" y="56" width="32" height="40" /><text x="302" y="80" fill="currentColor" stroke="none">transistor</text>
+  <path d="M280 96 V126" /><circle cx="280" cy="112" r="3" fill="currentColor" /><text x="288" y="116" fill="currentColor" stroke="none" font-size="11">sortie</text>
+  <rect x="264" y="126" width="32" height="40" /><text x="302" y="150" fill="currentColor" stroke="none">charge</text>
+  <path d="M280 166 V196 M268 196 H292 M272 202 H288 M276 208 H284" />
+</svg>

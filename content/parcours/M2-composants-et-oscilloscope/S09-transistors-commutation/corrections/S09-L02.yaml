@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S09-L02-EX01
+  valeur: 0.96
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = I² × RDS(on) = 8² × 0,015 = 0,96 W. On prend la RDS(on) maximale à la VGS appliquée, avec de la marge pour l'échauffement."
+  renvoi_section: "S09-L02#chute-de-tension-et-pertes-en-conduction"
+- id: S09-L02-EX02
+  bonnes: [a]
+  explication: "À VGS(th), le MOSFET fait passer un petit courant de test ; la RDS(on) n'est garantie qu'à la VGS indiquée dans la fiche. Près du coude, les pertes augmentent fortement."
+  renvoi_section: "S09-L02#les-grandeurs-de-la-fiche-technique"
+- id: S09-L02-EX03
+  bonnes: [a]
+  explication: "Pour un canal N, la diode interne conduit de la source vers le drain : pointe rouge sur la source, elle affiche son seuil. Un court-circuit afficherait près de 0 V dans les deux sens."
+  renvoi_section: "S09-L02#tester-un-mosfet-canal-n-hors-circuit"

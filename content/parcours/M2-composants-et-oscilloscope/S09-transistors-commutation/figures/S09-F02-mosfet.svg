@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : symbole du MOSFET canal N avec diode interne, et commande côté masse, sans valeur. -->
+  <!-- symbole -->
+  <path d="M30 120 H60 M60 96 V144" />
+  <path d="M68 92 V104 M68 114 V126 M68 136 V148" />
+  <path d="M68 98 H100 V70 M68 142 H100 V170 M68 120 H100 V142" />
+  <path d="M76 120 L84 115 L84 125 Z" />
+  <text x="18" y="116" fill="currentColor" stroke="none" font-weight="600">G</text>
+  <text x="106" y="72" fill="currentColor" stroke="none" font-weight="600">D</text>
+  <text x="106" y="176" fill="currentColor" stroke="none" font-weight="600">S</text>
+  <!-- diode interne : anode source, cathode drain -->
+  <path d="M100 70 H130 V106 M100 170 H130 V134" />
+  <path d="M120 134 L130 108 L140 134 Z M120 106 H140" />
+  <text x="96" y="200" fill="currentColor" stroke="none" font-size="11">diode interne</text>
+  <!-- montage low-side -->
+  <text x="290" y="20" fill="currentColor" stroke="none" font-weight="600">+</text>
+  <path d="M300 26 V40" /><rect x="284" y="40" width="32" height="40" /><text x="322" y="64" fill="currentColor" stroke="none">charge</text>
+  <path d="M300 80 V110" />
+  <path d="M300 110 H310 V130 M300 170 H310 V150" />
+  <path d="M302 112 V168" /><path d="M296 120 V160 M260 140 H296" />
+  <path d="M300 170 V200 M288 200 H312 M292 206 H308 M296 212 H304" />
+  <text x="318" y="112" fill="currentColor" stroke="none" font-size="11">D</text>
+  <text x="318" y="176" fill="currentColor" stroke="none" font-size="11">S</text>
+  <rect x="220" y="130" width="40" height="20" /><text x="226" y="124" fill="currentColor" stroke="none" font-size="11">série</text>
+  <path d="M220 140 H190" /><text x="186" y="160" fill="currentColor" stroke="none" font-size="11">commande</text>
+  <path d="M270 140 V160" /><rect x="262" y="160" width="16" height="28" /><path d="M270 188 V200 H288" />
+  <text x="230" y="206" fill="currentColor" stroke="none" font-size="11">rappel</text>
+</svg>

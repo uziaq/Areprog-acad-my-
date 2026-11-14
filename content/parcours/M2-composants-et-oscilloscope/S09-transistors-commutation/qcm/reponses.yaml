@@ -1,0 +1,189 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S09-Q001
+  bonnes: [a]
+  explication: "Le courant commandé passe du collecteur à l'émetteur ; le courant de commande passe entre base et émetteur."
+  pourquoi_faux:
+    b: "C'est le courant de commande."
+    c: "Ce n'est pas le trajet du courant de charge."
+    d: "Ce sont les broches d'un MOSFET."
+  source: "S09-L01#un-interrupteur-commandé-par-un-courant"
+- id: S09-Q002
+  bonnes: [a]
+  explication: "Saturé, le courant de collecteur est le plus grand que permettent l'alimentation et la charge."
+  pourquoi_faux:
+    b: "Bloqué, il est ouvert."
+    c: "En mode actif, il freine le courant : c'est le mode des amplificateurs."
+    d: "Le claquage est un défaut."
+  source: "S09-L01#un-interrupteur-commandé-par-un-courant"
+- id: S09-Q003
+  bonnes: [a]
+  explication: "β varie beaucoup d'un exemplaire à l'autre ; avec le minimum et une marge, tous les exemplaires saturent."
+  pourquoi_faux:
+    b: "Un exemplaire à faible β ne saturerait pas."
+    c: "C'est le cas le plus favorable, pas le pire."
+    d: "β dépend de la référence et des conditions."
+  source: "S09-L01#le-rapport-β-et-pourquoi-on-sature-franchement"
+- id: S09-Q004
+  valeur: 6
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "IB min = 0,15 / 50 = 3 mA ; avec la marge de 2 : 6 mA."
+  source: "S09-L01#exemple-1--résistance-de-base-dune-commande-de-relais"
+- id: S09-Q005
+  valeur: 520
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "RB = (3,3 − 0,7) / 0,005 = 520 Ω ; on prendrait la valeur normalisée inférieure."
+  source: "S09-L01#dimensionner-la-résistance-de-base"
+- id: S09-Q006
+  valeur: 0.4
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = IC × VCE = 0,08 × 5 = 0,4 W : bien plus qu'en saturation."
+  source: "S09-L01#tension-de-saturation-et-dissipation"
+- id: S09-Q007
+  bonnes: [a]
+  explication: "En mode actif, VCE est grande et la puissance IC × VCE aussi ; on mesure VCE et VBE pour confirmer."
+  pourquoi_faux:
+    b: "Un β élevé aide à saturer."
+    c: "Une faible VCE(sat) réduit l'échauffement."
+    d: "Une charge plus résistante réduit le courant et l'échauffement."
+  source: "S09-L01#exemple-2--saturé-ou-pas-la-différence-en-chaleur"
+- id: S09-Q008
+  bonnes: [a]
+  explication: "Pointe rouge sur la base pour conduire : la base est de type P, le transistor est un NPN."
+  pourquoi_faux:
+    b: "Pour un PNP, c'est la pointe noire sur la base qui fait conduire."
+    c: "Un MOSFET a une grille isolée."
+    d: "Le sens de conduction donne le type."
+  source: "S09-L01#tester-un-transistor-bipolaire-au-multimètre"
+- id: S09-Q009
+  bonnes: [a]
+  explication: "L'émetteur est plus dopé : sa jonction avec la base affiche une chute un peu plus forte. On confirme avec la fiche."
+  pourquoi_faux:
+    b: "Le brochage n'est pas normalisé."
+    c: "La jonction base-collecteur conduit en direct."
+    d: "La différence de tension permet de les distinguer."
+  source: "S09-L01#exemple-3--identifier-un-transistor-inconnu"
+- id: S09-Q010
+  bonnes: [a]
+  explication: "La grille est isolée : c'est la tension VGS qui commande la conduction entre drain et source."
+  pourquoi_faux:
+    b: "C'est la commande d'un bipolaire."
+    c: "VDS est la tension aux bornes de l'interrupteur."
+    d: "C'est le courant commandé."
+  source: "S09-L02#un-interrupteur-commandé-par-une-tension"
+- id: S09-Q011
+  bonnes: [a]
+  explication: "À VGS(th), le MOSFET commence juste à conduire ; la RDS(on) est garantie à une VGS plus élevée."
+  pourquoi_faux:
+    b: "C'est la VGS à laquelle la fiche donne la RDS(on)."
+    c: "C'est la VGS maximale."
+    d: "C'est BVDSS."
+  source: "S09-L02#les-grandeurs-de-la-fiche-technique"
+- id: S09-Q012
+  bonnes: [a]
+  explication: "La RDS(on) augmente à chaud : on garde de la marge dans le calcul des pertes."
+  pourquoi_faux:
+    b: "C'est VGS(th) qui baisse avec la température."
+    c: "La fiche montre une courbe en fonction de la température."
+    d: "Sans rapport."
+  source: "S09-L02#les-grandeurs-de-la-fiche-technique"
+- id: S09-Q013
+  valeur: 0.15
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = I × RDS(on) = 6 × 0,025 = 0,15 V."
+  source: "S09-L02#chute-de-tension-et-pertes-en-conduction"
+- id: S09-Q014
+  valeur: 1
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = I² × RDS(on) = 10² × 0,010 = 1 W."
+  source: "S09-L02#exemple-4--pertes-dun-mosfet-de-commande"
+- id: S09-Q015
+  valeur: 30
+  tolerance_relative: 0.02
+  unite: mΩ
+  explication: "RDS(on) = 0,09 / 3 = 0,03 Ω = 30 mΩ."
+  source: "S09-L02#exemple-6--calculer-rdson-à-partir-dune-mesure"
+- id: S09-Q016
+  bonnes: [a]
+  explication: "Près du coude de la courbe, la RDS(on) est grande et les pertes I² × RDS(on) augmentent."
+  pourquoi_faux:
+    b: "C'est l'inverse."
+    c: "RDS(on) dépend fortement de VGS dans cette zone."
+    d: "La diode interne ne dépend pas de VGS."
+  source: "S09-L02#exemple-5--une-tension-de-grille-trop-faible"
+- id: S09-Q017
+  bonnes: [a]
+  explication: "Son anode est côté source et sa cathode côté drain : un MOSFET ne bloque le courant que dans un sens."
+  pourquoi_faux:
+    b: "Ce serait le sens de la conduction commandée."
+    c: "La grille est isolée."
+    d: "Elle conduit comme une diode ordinaire."
+  source: "S09-L02#la-diode-interne"
+- id: S09-Q018
+  bonnes: [a]
+  explication: "Sain, il affiche le seuil de la diode interne dans un sens et un dépassement dans l'autre."
+  pourquoi_faux:
+    b: "Un MOSFET sain bloque dans un sens."
+    c: "La diode interne ne conduit que dans un sens."
+    d: "Ce test ne montre pas l'état de la grille."
+  source: "S09-L02#tester-un-mosfet-canal-n-hors-circuit"
+- id: S09-Q019
+  bonnes: [a]
+  explication: "La charge est reliée au plus ; le transistor la relie à la masse quand il conduit."
+  pourquoi_faux:
+    b: "C'est un high-side."
+    c: "C'est la place d'une diode de roue libre."
+    d: "Sans rapport."
+  source: "S09-L03#la-place-du-transistor"
+- id: S09-Q020
+  bonnes: [a]
+  explication: "La source est reliée à la charge ; sortie à plein, elle est à la tension d'alimentation."
+  pourquoi_faux:
+    b: "La VGS(th) d'un canal N à enrichissement est positive."
+    c: "Sans rapport."
+    d: "Sans cette tension, le MOSFET conduit mal."
+  source: "S09-L03#la-commande-dun-high-side"
+- id: S09-Q021
+  bonnes: [a]
+  explication: "Les transistors protégés low-side intègrent un écrêteur qui limite la surtension inductive."
+  pourquoi_faux:
+    b: "L'écrêtage peut être intégré au transistor."
+    c: "Sans rapport."
+    d: "Une électrovanne est une charge inductive."
+  source: "S09-L03#couper-une-charge-inductive"
+- id: S09-Q022
+  bonnes: [a]
+  explication: "Transistor bloqué, aucun courant : la sortie est au potentiel du plus à travers la charge. Une sortie proche de 0 V au repos serait suspecte."
+  pourquoi_faux:
+    b: "Un court-circuit tirerait la sortie vers la masse."
+    c: "Une charge coupée laisserait la sortie près de 0 V."
+    d: "Ce n'est pas ce que montre cette mesure."
+  source: "S09-L03#ce-que-lon-mesure-sur-une-sortie-au-repos"
+- id: S09-Q023
+  bonnes: [a]
+  explication: "La grille isolée est sensible aux décharges électrostatiques ; manipuler hors du poste ESD est une faute éliminatoire (FE-01)."
+  pourquoi_faux:
+    b: "Neuf ou non, il est sensible aux décharges."
+    c: "Geste sans fondement."
+    d: "Hors du poste ESD : faute éliminatoire."
+  source: "S09-L02#un-interrupteur-commandé-par-une-tension"
+- id: S09-Q024
+  bonnes: [a]
+  explication: "Une limite écrite par sortie avant la mise sous tension (FE-02) et des polarités vérifiées (FE-03)."
+  pourquoi_faux:
+    b: "Chaque sortie a sa propre limite."
+    c: "Une alimentation non limitée est une faute éliminatoire."
+    d: "Rien ne garantit une telle protection."
+  source: "S09-L01#exemple-1--résistance-de-base-dune-commande-de-relais"
+- id: S09-Q025
+  bonnes: [a]
+  explication: "La consigne arrête l'essai dès que le boîtier chauffe vite ; un composant chaud ne se touche pas et l'on coupe avant toute modification."
+  pourquoi_faux:
+    b: "Risque de brûlure : la température se mesure à l'instrument."
+    c: "Risque de destruction et de brûlure."
+    d: "On coupe toujours l'alimentation avant de modifier le montage."
+  source: "S09-L02#exemple-5--une-tension-de-grille-trop-faible"

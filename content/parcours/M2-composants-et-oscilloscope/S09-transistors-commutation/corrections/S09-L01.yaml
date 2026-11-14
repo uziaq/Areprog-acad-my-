@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S09-L01-EX01
+  valeur: 430
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "IB min = 0,2 / 40 = 5 mA ; avec la marge de 2 : 10 mA. RB = (5 − 0,7) / 0,010 = 430 Ω. On prend ensuite la valeur normalisée inférieure (390 Ω en E12) et l'on vérifie que la sortie de commande fournit ce courant."
+  renvoi_section: "S09-L01#dimensionner-la-résistance-de-base"
+- id: S09-L01-EX02
+  valeur: 0.125
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = IC × VCE = 0,5 × 0,25 = 0,125 W."
+  renvoi_section: "S09-L01#tension-de-saturation-et-dissipation"
+- id: S09-L01-EX03
+  bonnes: [a]
+  explication: "Un bipolaire sain se comporte comme deux diodes tête-bêche : exactement deux combinaisons conduisent. Plus ou moins de deux signale un composant défectueux, ou un composant d'un autre type."
+  renvoi_section: "S09-L01#tester-un-transistor-bipolaire-au-multimètre"

@@ -1,0 +1,253 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S09-Q001
+  type: choix_unique
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#un-interrupteur-commandé-par-un-courant"
+  enonce: "Entre quelles broches d'un transistor bipolaire passe le courant commandé ?"
+  propositions:
+    - {id: a, texte: "Entre le collecteur et l'émetteur"}
+    - {id: b, texte: "Entre la base et l'émetteur"}
+    - {id: c, texte: "Entre la base et le collecteur"}
+    - {id: d, texte: "Entre la grille et la source"}
+- id: S09-Q002
+  type: choix_unique
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#un-interrupteur-commandé-par-un-courant"
+  enonce: "Dans quel état un transistor en commutation se comporte-t-il comme un interrupteur fermé ?"
+  propositions:
+    - {id: a, texte: "Saturé"}
+    - {id: b, texte: "Bloqué"}
+    - {id: c, texte: "En mode actif"}
+    - {id: d, texte: "En claquage"}
+- id: S09-Q003
+  type: choix_unique
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#le-rapport-β-et-pourquoi-on-sature-franchement"
+  enonce: "Avec quelle valeur de β calcule-t-on le courant de base d'un transistor de commutation ?"
+  propositions:
+    - {id: a, texte: "Le β minimal de la fiche, au courant prévu, puis une marge"}
+    - {id: b, texte: "Le β typique"}
+    - {id: c, texte: "Le β maximal"}
+    - {id: d, texte: "Un β de 100 pour tous les transistors"}
+- id: S09-Q004
+  type: calcul
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#exemple-1--résistance-de-base-dune-commande-de-relais"
+  enonce: "Une charge prend 0,15 A. Le β minimal vaut 50 et l'on retient une marge de 2. Quel courant de base faut-il ?"
+  unite_attendue: mA
+- id: S09-Q005
+  type: calcul
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#dimensionner-la-résistance-de-base"
+  enonce: "On veut 5 mA de courant de base depuis une sortie de 3,3 V, avec VBE = 0,7 V. Quelle résistance de base faut-il ?"
+  unite_attendue: Ω
+- id: S09-Q006
+  type: calcul
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#tension-de-saturation-et-dissipation"
+  enonce: "Un transistor en mode actif conduit 80 mA avec VCE = 5 V. Quelle puissance dissipe-t-il ?"
+  unite_attendue: W
+- id: S09-Q007
+  type: choix_unique
+  securite: false
+  competences: [D4.4]
+  section: "S09-L01#exemple-2--saturé-ou-pas-la-différence-en-chaleur"
+  enonce: "Un transistor de commande chauffe alors que sa charge est faible. Quelle hypothèse vérifier en premier ?"
+  propositions:
+    - {id: a, texte: "Un courant de base insuffisant qui le laisse en mode actif"}
+    - {id: b, texte: "Un β trop élevé"}
+    - {id: c, texte: "Une VCE(sat) trop faible"}
+    - {id: d, texte: "Une charge trop résistante"}
+- id: S09-Q008
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.2]
+  section: "S09-L01#tester-un-transistor-bipolaire-au-multimètre"
+  enonce: "Au test de jonction, la base d'un transistor conduit vers les deux autres broches avec la pointe rouge posée sur elle. Quel est le type du transistor ?"
+  propositions:
+    - {id: a, texte: "NPN"}
+    - {id: b, texte: "PNP"}
+    - {id: c, texte: "MOSFET canal N"}
+    - {id: d, texte: "On ne peut pas savoir"}
+- id: S09-Q009
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.2]
+  section: "S09-L01#exemple-3--identifier-un-transistor-inconnu"
+  enonce: "Comment distingue-t-on l'émetteur du collecteur au test de jonction ?"
+  propositions:
+    - {id: a, texte: "La jonction base-émetteur affiche une tension un peu plus élevée"}
+    - {id: b, texte: "L'émetteur est toujours la broche du milieu"}
+    - {id: c, texte: "Le collecteur ne conduit jamais"}
+    - {id: d, texte: "On ne peut pas les distinguer"}
+- id: S09-Q010
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.6]
+  section: "S09-L02#un-interrupteur-commandé-par-une-tension"
+  enonce: "Qu'est-ce qui commande un MOSFET ?"
+  propositions:
+    - {id: a, texte: "La tension entre grille et source"}
+    - {id: b, texte: "Le courant de base"}
+    - {id: c, texte: "La tension entre drain et source"}
+    - {id: d, texte: "Le courant de drain"}
+- id: S09-Q011
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.6]
+  section: "S09-L02#les-grandeurs-de-la-fiche-technique"
+  enonce: "Que désigne VGS(th) dans la fiche d'un MOSFET ?"
+  propositions:
+    - {id: a, texte: "La tension de grille minimale pour faire passer un petit courant de drain précisé"}
+    - {id: b, texte: "La tension de grille de pleine conduction"}
+    - {id: c, texte: "La tension maximale de grille"}
+    - {id: d, texte: "La tension de claquage drain-source"}
+- id: S09-Q012
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.6]
+  section: "S09-L02#les-grandeurs-de-la-fiche-technique"
+  enonce: "Comment évolue la RDS(on) d'un MOSFET quand sa température de jonction monte ?"
+  propositions:
+    - {id: a, texte: "Elle augmente"}
+    - {id: b, texte: "Elle diminue"}
+    - {id: c, texte: "Elle reste constante"}
+    - {id: d, texte: "Elle devient nulle"}
+- id: S09-Q013
+  type: calcul
+  securite: false
+  competences: [D4.4]
+  section: "S09-L02#chute-de-tension-et-pertes-en-conduction"
+  enonce: "Un MOSFET de RDS(on) égale à 25 mΩ conduit 6 A. Quelle chute de tension a-t-il ?"
+  unite_attendue: V
+- id: S09-Q014
+  type: calcul
+  securite: false
+  competences: [D4.4]
+  section: "S09-L02#exemple-4--pertes-dun-mosfet-de-commande"
+  enonce: "Un MOSFET de RDS(on) égale à 10 mΩ conduit 10 A. Quelles pertes de conduction dissipe-t-il ?"
+  unite_attendue: W
+- id: S09-Q015
+  type: calcul
+  securite: false
+  competences: [D4.4]
+  section: "S09-L02#exemple-6--calculer-rdson-à-partir-dune-mesure"
+  enonce: "Un MOSFET conduit 3 A et l'on mesure VDS = 0,09 V. Quelle est sa RDS(on) ?"
+  unite_attendue: mΩ
+- id: S09-Q016
+  type: choix_unique
+  securite: false
+  competences: [D4.4]
+  section: "S09-L02#exemple-5--une-tension-de-grille-trop-faible"
+  enonce: "La commande d'un MOSFET n'applique qu'une VGS proche de sa VGS(th). Que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "La RDS(on) est élevée : le MOSFET chauffe davantage"}
+    - {id: b, texte: "Le MOSFET conduit mieux"}
+    - {id: c, texte: "Rien ne change"}
+    - {id: d, texte: "La diode interne se bloque"}
+- id: S09-Q017
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.2]
+  section: "S09-L02#la-diode-interne"
+  enonce: "Dans quel sens conduit la diode interne d'un MOSFET canal N ?"
+  propositions:
+    - {id: a, texte: "De la source vers le drain"}
+    - {id: b, texte: "Du drain vers la source"}
+    - {id: c, texte: "De la grille vers la source"}
+    - {id: d, texte: "Elle ne conduit jamais"}
+- id: S09-Q018
+  type: choix_unique
+  securite: false
+  competences: [D4.4, D4.2]
+  section: "S09-L02#tester-un-mosfet-canal-n-hors-circuit"
+  enonce: "Hors circuit, grille déchargée, un MOSFET canal N affiche près de 0 V entre drain et source dans les deux sens. Que pensez-vous ?"
+  propositions:
+    - {id: a, texte: "Il est probablement en court-circuit : à confirmer par comparaison avec un neuf"}
+    - {id: b, texte: "Il est sain"}
+    - {id: c, texte: "C'est la diode interne normale"}
+    - {id: d, texte: "Sa grille est coupée"}
+- id: S09-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S09-L03#la-place-du-transistor"
+  enonce: "Dans un étage low-side, où se trouve le transistor ?"
+  propositions:
+    - {id: a, texte: "Entre la charge et la masse"}
+    - {id: b, texte: "Entre le plus et la charge"}
+    - {id: c, texte: "En parallèle sur la charge"}
+    - {id: d, texte: "En série avec la grille"}
+- id: S09-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.2, D4.4]
+  section: "S09-L03#la-commande-dun-high-side"
+  enonce: "Pourquoi un high-side à MOSFET canal N demande-t-il une tension de grille supérieure à l'alimentation ?"
+  propositions:
+    - {id: a, texte: "Sa source monte avec la sortie, et la grille doit la dépasser d'au moins la VGS nécessaire"}
+    - {id: b, texte: "Parce que sa VGS(th) est négative"}
+    - {id: c, texte: "Pour charger la diode interne"}
+    - {id: d, texte: "Ce n'est pas nécessaire"}
+- id: S09-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.2, D4.4]
+  section: "S09-L03#couper-une-charge-inductive"
+  enonce: "Un étage low-side commande une électrovanne sans diode de roue libre sur le schéma. Que vérifiez-vous avant de conclure à une anomalie ?"
+  propositions:
+    - {id: a, texte: "Si le transistor est un modèle protégé avec écrêteur interne"}
+    - {id: b, texte: "Rien : c'est forcément une erreur"}
+    - {id: c, texte: "La couleur du fil"}
+    - {id: d, texte: "Si l'électrovanne est résistive"}
+- id: S09-Q022
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S09-L03#ce-que-lon-mesure-sur-une-sortie-au-repos"
+  enonce: "Une sortie low-side, charge branchée, est au potentiel du plus au repos. Que pensez-vous ?"
+  propositions:
+    - {id: a, texte: "C'est le comportement attendu : le plus arrive à travers la charge"}
+    - {id: b, texte: "Le transistor est en court-circuit"}
+    - {id: c, texte: "La charge est coupée"}
+    - {id: d, texte: "La masse est coupée"}
+- id: S09-Q023
+  type: choix_unique
+  securite: true
+  competences: [D4.4, D1.3]
+  section: "S09-L02#un-interrupteur-commandé-par-une-tension"
+  enonce: "Vous sortez un MOSFET de son sachet pour le TP-14. Que faites-vous d'abord ?"
+  propositions:
+    - {id: a, texte: "Je me relie au poste ESD (bracelet et tapis) avant de le manipuler"}
+    - {id: b, texte: "Je le prends à la main, il est encore neuf"}
+    - {id: c, texte: "Je relie sa grille au plus pour le protéger"}
+    - {id: d, texte: "Je le pose sur la paillasse non protégée"}
+- id: S09-Q024
+  type: choix_unique
+  securite: true
+  competences: [D4.4, D1.3]
+  section: "S09-L01#exemple-1--résistance-de-base-dune-commande-de-relais"
+  enonce: "Avant de mettre sous tension le montage du TP-13 à deux sorties d'alimentation, que devez-vous avoir fait ?"
+  propositions:
+    - {id: a, texte: "Régler et écrire une limite de courant par sortie, vérifier les polarités et relier les masses"}
+    - {id: b, texte: "Régler une seule limite pour les deux sorties"}
+    - {id: c, texte: "Laisser les limites au maximum pour ne pas gêner la mesure"}
+    - {id: d, texte: "Rien, la carte est protégée"}
+- id: S09-Q025
+  type: choix_unique
+  securite: true
+  competences: [D4.4, D1.3]
+  section: "S09-L02#exemple-5--une-tension-de-grille-trop-faible"
+  enonce: "Pendant la partie B du TP-14, le boîtier du MOSFET chauffe vite. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je ramène la grille au minimum, je coupe et je le laisse refroidir sans le toucher"}
+    - {id: b, texte: "Je vérifie au doigt s'il est très chaud"}
+    - {id: c, texte: "Je continue pour finir le tableau"}
+    - {id: d, texte: "Je retire le MOSFET sous tension"}
