@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S12-Q001
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#le-schéma-carte-du-circuit"
+  enonce: "Que montre un schéma électronique ?"
+  propositions:
+    - {id: a, texte: "Comment les composants sont reliés entre eux"}
+    - {id: b, texte: "L'emplacement exact de chaque composant sur la carte"}
+    - {id: c, texte: "La couleur des pistes"}
+    - {id: d, texte: "Le boîtier de chaque composant"}
+- id: S12-Q002
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#le-schéma-carte-du-circuit"
+  enonce: "Quels schémas utilise-t-on pour s'entraîner dans cette formation ?"
+  propositions:
+    - {id: a, texte: "Des schémas publics : cartes d'évaluation et matériel ouvert"}
+    - {id: b, texte: "Des schémas de calculateurs non publiés trouvés en ligne"}
+    - {id: c, texte: "Des schémas redessinés de mémoire"}
+    - {id: d, texte: "N'importe quel schéma, sans vérifier son origine"}
+- id: S12-Q003
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#les-symboles-et-leurs-variantes"
+  enonce: "Sur un schéma aux symboles internationaux, comment est dessinée une résistance ?"
+  propositions:
+    - {id: a, texte: "Par un rectangle vide"}
+    - {id: b, texte: "Par un rectangle plein"}
+    - {id: c, texte: "Par deux plaques parallèles"}
+    - {id: d, texte: "Par un triangle contre un trait"}
+- id: S12-Q004
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#les-symboles-et-leurs-variantes"
+  enonce: "Sur le symbole d'une diode, où est la cathode ?"
+  propositions:
+    - {id: a, texte: "Du côté du trait"}
+    - {id: b, texte: "Du côté plat du triangle"}
+    - {id: c, texte: "Au milieu"}
+    - {id: d, texte: "Elle n'est pas indiquée"}
+- id: S12-Q005
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#les-symboles-et-leurs-variantes"
+  enonce: "Un transistor a sa flèche sur l'émetteur, pointée vers l'extérieur. Lequel est-ce ?"
+  propositions:
+    - {id: a, texte: "Un NPN"}
+    - {id: b, texte: "Un PNP"}
+    - {id: c, texte: "Un MOSFET canal P"}
+    - {id: d, texte: "Une diode Zener"}
+- id: S12-Q006
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#les-symboles-et-leurs-variantes"
+  enonce: "Sur un symbole de MOSFET, la flèche du milieu pointe vers l'intérieur. De quel type est-il ?"
+  propositions:
+    - {id: a, texte: "Canal N"}
+    - {id: b, texte: "Canal P"}
+    - {id: c, texte: "Bipolaire NPN"}
+    - {id: d, texte: "On ne peut pas savoir"}
+- id: S12-Q007
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#référence-et-valeur"
+  enonce: "Quel préfixe de référence désigne en général un circuit intégré ?"
+  propositions:
+    - {id: a, texte: "U"}
+    - {id: b, texte: "Q"}
+    - {id: c, texte: "L"}
+    - {id: d, texte: "Y"}
+- id: S12-Q008
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#référence-et-valeur"
+  enonce: "Quel préfixe désigne en général un quartz ?"
+  propositions:
+    - {id: a, texte: "Y, parfois XTAL"}
+    - {id: b, texte: "Q"}
+    - {id: c, texte: "C"}
+    - {id: d, texte: "D"}
+- id: S12-Q009
+  type: calcul
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#référence-et-valeur"
+  enonce: "Une résistance est marquée « 4K7 » sur un schéma. Quelle est sa valeur, en kΩ ?"
+  unite_attendue: kΩ
+- id: S12-Q010
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L01#la-nomenclature"
+  enonce: "À quoi sert la nomenclature (BOM) d'une carte ?"
+  propositions:
+    - {id: a, texte: "À lister les composants : référence, valeur, et souvent boîtier et référence de fabricant"}
+    - {id: b, texte: "À montrer les liaisons entre composants"}
+    - {id: c, texte: "À donner les tensions mesurées"}
+    - {id: d, texte: "À remplacer le schéma"}
+- id: S12-Q011
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#jonction-ou-simple-croisement"
+  enonce: "Deux fils se croisent sur un schéma et un point est dessiné au croisement. Que signifie-t-il ?"
+  propositions:
+    - {id: a, texte: "Les fils sont reliés"}
+    - {id: b, texte: "Les fils passent l'un sur l'autre sans liaison"}
+    - {id: c, texte: "Il y a un composant caché"}
+    - {id: d, texte: "Le fil est coupé"}
+- id: S12-Q012
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#les-étiquettes-de-réseau"
+  enonce: "Deux fils éloignés portent la même étiquette TX, sans fil visible entre eux. Sont-ils reliés ?"
+  propositions:
+    - {id: a, texte: "Oui : les réseaux de même nom sont reliés"}
+    - {id: b, texte: "Non, il faut un fil visible"}
+    - {id: c, texte: "Seulement s'ils sont sur la même feuille"}
+    - {id: d, texte: "Seulement s'ils ont la même couleur"}
+- id: S12-Q013
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#exemple-4--suivre-un-réseau-par-son-étiquette"
+  enonce: "Un schéma porte une étiquette SENS sur une feuille et une étiquette SENSE sur une autre. Que conclure ?"
+  propositions:
+    - {id: a, texte: "Ce sont deux réseaux différents, sauf preuve contraire"}
+    - {id: b, texte: "C'est le même réseau, à une faute de frappe près"}
+    - {id: c, texte: "Ils sont reliés par la masse"}
+    - {id: d, texte: "Ils sont toujours reliés"}
+- id: S12-Q014
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#alimentations-et-masses"
+  enonce: "Sur un schéma, plusieurs bornes sont reliées à des symboles de masse GND dispersés. Que signifie-t-il ?"
+  propositions:
+    - {id: a, texte: "Toutes ces bornes sont reliées entre elles"}
+    - {id: b, texte: "Chaque symbole est une masse séparée"}
+    - {id: c, texte: "Seule la première est reliée"}
+    - {id: d, texte: "Ce sont des points de test"}
+- id: S12-Q015
+  type: calcul
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#exemple-5--lire-un-diviseur-sur-un-schéma"
+  enonce: "R1 = 10 kΩ relie +5V au réseau MES ; R2 = 10 kΩ relie MES à GND. Rien d'autre ne touche MES. Quelle tension attendez-vous sur MES ?"
+  unite_attendue: V
+- id: S12-Q016
+  type: calcul
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#exemple-5--lire-un-diviseur-sur-un-schéma"
+  enonce: "R1 = 47 kΩ relie +12V au réseau ENT ; R2 = 10 kΩ relie ENT à GND. Rien d'autre ne touche ENT. Quelle tension attendez-vous sur ENT ?"
+  unite_attendue: V
+- id: S12-Q017
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#les-masses-multiples"
+  enonce: "Que décrivent les broches AGND et DGND d'un convertisseur ?"
+  propositions:
+    - {id: a, texte: "Ce qui se passe à l'intérieur du composant, sans imposer seules le câblage extérieur des masses"}
+    - {id: b, texte: "Deux masses qu'il ne faut jamais relier"}
+    - {id: c, texte: "L'alimentation positive"}
+    - {id: d, texte: "Deux broches de test"}
+- id: S12-Q018
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L02#les-masses-multiples"
+  enonce: "Que signifie « masse en étoile » ?"
+  propositions:
+    - {id: a, texte: "Toutes les tensions sont mesurées par rapport à un point précis du réseau de masse"}
+    - {id: b, texte: "Une masse dessinée en forme d'étoile"}
+    - {id: c, texte: "Une masse reliée au plus"}
+    - {id: d, texte: "Plusieurs masses jamais reliées"}
+- id: S12-Q019
+  type: choix_unique
+  securite: true
+  competences: [D5.1, D3.4]
+  section: "S12-L02#les-masses-multiples"
+  enonce: "Un schéma a une masse GND et une masse AGND. Avant une mesure à l'oscilloscope, que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je vérifie sur le schéma à quelle masse le signal est rapporté et où les masses se rejoignent"}
+    - {id: b, texte: "Je pose la masse de la sonde sur n'importe quel point marqué masse"}
+    - {id: c, texte: "Je relie les deux masses par un fil"}
+    - {id: d, texte: "Je débranche la terre de l'oscilloscope"}
+- id: S12-Q020
+  type: choix_unique
+  securite: false
+  competences: [D5.2]
+  section: "S12-L03#pourquoi-découper-en-blocs"
+  enonce: "Pourquoi découper un schéma en blocs fonctionnels ?"
+  propositions:
+    - {id: a, texte: "Pour savoir où chercher un défaut selon son symptôme"}
+    - {id: b, texte: "Pour réduire le nombre de composants"}
+    - {id: c, texte: "Pour remplacer la nomenclature"}
+    - {id: d, texte: "Pour changer les références"}
+- id: S12-Q021
+  type: choix_unique
+  securite: false
+  competences: [D5.2]
+  section: "S12-L03#les-blocs-dune-carte-à-microcontrôleur"
+  enonce: "Un quartz et ses deux petits condensateurs, près du microcontrôleur, forment quel bloc ?"
+  propositions:
+    - {id: a, texte: "L'horloge"}
+    - {id: b, texte: "L'alimentation"}
+    - {id: c, texte: "La communication"}
+    - {id: d, texte: "Les sorties"}
+- id: S12-Q022
+  type: choix_unique
+  securite: false
+  competences: [D5.2]
+  section: "S12-L03#les-blocs-dune-carte-à-microcontrôleur"
+  enonce: "Sur un schéma inconnu, quel composant chercher en premier pour découper les blocs ?"
+  propositions:
+    - {id: a, texte: "Le composant principal, souvent le plus gros et au centre, et sa fiche technique"}
+    - {id: b, texte: "La plus petite résistance"}
+    - {id: c, texte: "Le premier condensateur de la nomenclature"}
+    - {id: d, texte: "Un point de test au hasard"}
+- id: S12-Q023
+  type: choix_unique
+  securite: true
+  competences: [D5.1]
+  section: "S12-L03#le-schéma-électrique-officiel-du-constructeur"
+  enonce: "Où lire le brochage du connecteur d'un capteur sur un véhicule d'atelier ?"
+  propositions:
+    - {id: a, texte: "Sur le schéma électrique officiel du constructeur"}
+    - {id: b, texte: "Sur un forum spécialisé"}
+    - {id: c, texte: "Sur le schéma d'un autre modèle de la marque"}
+    - {id: d, texte: "D'après la couleur des fils seule"}
+- id: S12-Q024
+  type: choix_unique
+  securite: false
+  competences: [D5.1]
+  section: "S12-L03#le-schéma-électrique-officiel-du-constructeur"
+  enonce: "Avant de compter les alvéoles d'un connecteur sur le schéma constructeur, que lire ?"
+  propositions:
+    - {id: a, texte: "La légende : vue côté faisceau ou côté composant, abréviations des couleurs"}
+    - {id: b, texte: "Rien, la numérotation est toujours la même"}
+    - {id: c, texte: "La nomenclature de la carte"}
+    - {id: d, texte: "La fiche du microcontrôleur"}
+- id: S12-Q025
+  type: choix_unique
+  securite: true
+  competences: [D5.1, D5.2]
+  section: "S12-L03#exemple-8--relever-le-brochage-dun-connecteur"
+  enonce: "Une ligne de votre tableau de brochage n'est pas lue sur le document officiel. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je la marque [À VÉRIFIER] et je cherche l'information dans le document officiel"}
+    - {id: b, texte: "Je la complète avec une valeur plausible"}
+    - {id: c, texte: "Je la supprime sans le dire"}
+    - {id: d, texte: "Je la copie d'un autre véhicule"}

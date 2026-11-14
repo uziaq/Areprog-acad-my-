@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S12-L03.yaml
+- id: S12-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les étapes du découpage d'un schéma en blocs."
+  propositions:
+    - {id: a, texte: "Partir des broches du composant principal et suivre chaque réseau jusqu'à un connecteur ou une charge"}
+    - {id: b, texte: "Repérer les nœuds d'alimentation et de masse, et remonter jusqu'à l'entrée d'alimentation"}
+    - {id: c, texte: "Encadrer chaque bloc, écrire son nom et la liste de ses références"}
+    - {id: d, texte: "Repérer le composant principal et lire sa fiche technique"}
+  competences: [D5.2]
+  objectif: O1
+- id: S12-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous devez connaître la broche d'alimentation du connecteur d'un capteur sur un véhicule d'atelier. Quelle source utilisez-vous ?"
+  propositions:
+    - {id: a, texte: "Le schéma électrique officiel du constructeur, après avoir lu sa légende"}
+    - {id: b, texte: "Un brochage trouvé sur un forum"}
+    - {id: c, texte: "Le brochage d'un autre véhicule de la même marque"}
+    - {id: d, texte: "La couleur du fil seule"}
+  competences: [D5.1]
+  objectif: O2

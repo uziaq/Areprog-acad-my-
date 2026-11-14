@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S12-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S12-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Deux fils se croisent sur un schéma, sans point à l'intersection. Sont-ils reliés ?"
+  propositions:
+    - {id: a, texte: "Non : sans point de jonction, ils passent l'un sur l'autre"}
+    - {id: b, texte: "Oui, tout croisement est une liaison"}
+    - {id: c, texte: "Oui, si les fils ont la même couleur"}
+    - {id: d, texte: "Cela dépend de la tension"}
+  competences: [D5.1]
+  objectif: O1
+- id: S12-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un schéma comporte des symboles de masse marqués GND et d'autres marqués AGND. Que faites-vous avant de les considérer comme un seul réseau ?"
+  propositions:
+    - {id: a, texte: "Je cherche sur le schéma où ils se rejoignent, et je confirme au multimètre carte hors tension"}
+    - {id: b, texte: "Rien : toutes les masses sont reliées"}
+    - {id: c, texte: "Je les relie avec un fil"}
+    - {id: d, texte: "Je mesure la résistance entre elles carte sous tension"}
+  competences: [D5.1]
+  objectif: O2
+- id: S12-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "R8 = 33 kΩ relie le réseau +5V au réseau MES ; R9 = 10 kΩ relie MES à GND. Rien d'autre ne touche MES. Quelle tension attendez-vous sur MES ?"
+  unite_attendue: V
+  competences: [D5.1]
+  objectif: O1

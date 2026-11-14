@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S12-Q001
+  bonnes: [a]
+  explication: "Le schéma est la carte des liaisons ; l'emplacement sur la carte se lit sur le circuit imprimé (S13)."
+  pourquoi_faux:
+    b: "C'est le rôle du dessin du circuit imprimé."
+    c: "Sans rapport."
+    d: "Le boîtier se lit dans la nomenclature."
+  source: "S12-L01#le-schéma-carte-du-circuit"
+- id: S12-Q002
+  bonnes: [a]
+  explication: "On ne travaille jamais sur un schéma de calculateur non publié."
+  pourquoi_faux:
+    b: "Interdit dans la formation."
+    c: "Un schéma de mémoire n'est pas une source."
+    d: "L'origine doit être publique et connue."
+  source: "S12-L01#le-schéma-carte-du-circuit"
+- id: S12-Q003
+  bonnes: [a]
+  explication: "Le zigzag et le rectangle vide sont deux variantes du même symbole."
+  pourquoi_faux:
+    b: "Le rectangle plein est l'inductance internationale."
+    c: "C'est un condensateur."
+    d: "C'est une diode."
+  source: "S12-L01#les-symboles-et-leurs-variantes"
+- id: S12-Q004
+  bonnes: [a]
+  explication: "L'anode entre par le côté plat du triangle, la cathode sort par le trait."
+  pourquoi_faux:
+    b: "C'est l'anode."
+    c: "Sans rapport."
+    d: "Le trait l'indique."
+  source: "S12-L01#les-symboles-et-leurs-variantes"
+- id: S12-Q005
+  bonnes: [a]
+  explication: "« NPN : not pointing in » : flèche sortante pour un NPN."
+  pourquoi_faux:
+    b: "Le PNP a une flèche entrante."
+    c: "Un MOSFET a une grille, pas d'émetteur."
+    d: "Sans rapport."
+  source: "S12-L01#les-symboles-et-leurs-variantes"
+- id: S12-Q006
+  bonnes: [a]
+  explication: "« n is in » : flèche entrante pour un canal N."
+  pourquoi_faux:
+    b: "Le canal P a une flèche sortante."
+    c: "Un bipolaire n'a pas de grille."
+    d: "La flèche l'indique."
+  source: "S12-L01#les-symboles-et-leurs-variantes"
+- id: S12-Q007
+  bonnes: [a]
+  explication: "On rencontre aussi IC au lieu de U."
+  pourquoi_faux:
+    b: "Q : transistor."
+    c: "L : inductance."
+    d: "Y : quartz ou oscillateur."
+  source: "S12-L01#référence-et-valeur"
+- id: S12-Q008
+  bonnes: [a]
+  explication: "Les préfixes ne sont pas suivis partout : XTAL remplace parfois Y."
+  pourquoi_faux:
+    b: "Q : transistor."
+    c: "C : condensateur."
+    d: "D : diode."
+  source: "S12-L01#référence-et-valeur"
+- id: S12-Q009
+  valeur: 4.7
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "La lettre K remplace la virgule : 4K7 vaut 4,7 kΩ."
+  source: "S12-L01#référence-et-valeur"
+- id: S12-Q010
+  bonnes: [a]
+  explication: "Elle complète le schéma ; un écart entre les deux se note et se vérifie sur la carte."
+  pourquoi_faux:
+    b: "C'est le rôle du schéma."
+    c: "Sans rapport."
+    d: "Elle le complète, sans le remplacer."
+  source: "S12-L01#la-nomenclature"
+- id: S12-Q011
+  bonnes: [a]
+  explication: "Le point marque une jonction ; sans point, pas de liaison."
+  pourquoi_faux:
+    b: "C'est le cas sans point."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S12-L02#jonction-ou-simple-croisement"
+- id: S12-Q012
+  bonnes: [a]
+  explication: "L'étiquette remplace le fil ; on cherche toutes les apparitions du nom, sur toutes les feuilles."
+  pourquoi_faux:
+    b: "L'étiquette suffit."
+    c: "Les étiquettes globales et les ports relient aussi les feuilles."
+    d: "La couleur n'a pas de sens électrique."
+  source: "S12-L02#les-étiquettes-de-réseau"
+- id: S12-Q013
+  bonnes: [a]
+  explication: "On compare les noms lettre à lettre."
+  pourquoi_faux:
+    b: "On ne corrige pas un schéma par supposition."
+    c: "Sans rapport."
+    d: "Des noms différents désignent des réseaux différents."
+  source: "S12-L02#exemple-4--suivre-un-réseau-par-son-étiquette"
+- id: S12-Q014
+  bonnes: [a]
+  explication: "Les nœuds de tension de même nom sont reliés, même sans fil visible."
+  pourquoi_faux:
+    b: "Même nom, même réseau."
+    c: "Toutes sont reliées."
+    d: "Sans rapport."
+  source: "S12-L02#alimentations-et-masses"
+- id: S12-Q015
+  valeur: 2.5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Diviseur : 5 × 10 / (10 + 10) = 2,5 V."
+  source: "S12-L02#exemple-5--lire-un-diviseur-sur-un-schéma"
+- id: S12-Q016
+  valeur: 2.105
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Diviseur : 12 × 10 / (47 + 10) = 120 / 57 ≈ 2,11 V."
+  source: "S12-L02#exemple-5--lire-un-diviseur-sur-un-schéma"
+- id: S12-Q017
+  bonnes: [a]
+  explication: "La façon de relier les masses à l'extérieur se lit dans la fiche du composant et le schéma."
+  pourquoi_faux:
+    b: "Les fiches recommandent souvent de les relier près du composant."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S12-L02#les-masses-multiples"
+- id: S12-Q018
+  bonnes: [a]
+  explication: "On mesure par rapport à un point défini, pas n'importe où l'on pince une sonde."
+  pourquoi_faux:
+    b: "Sans rapport avec le dessin."
+    c: "Sans rapport."
+    d: "Elles se rejoignent en un point."
+  source: "S12-L02#les-masses-multiples"
+- id: S12-Q019
+  bonnes: [a]
+  explication: "Une masse de sonde posée sur un point qui n'est pas la masse de référence peut créer un court-circuit à travers la sonde (FE-07, S11-L02)."
+  pourquoi_faux:
+    b: "Des masses de noms différents ne sont pas forcément au même potentiel."
+    c: "On ne modifie pas la carte pour mesurer."
+    d: "Interdit."
+  source: "S12-L02#les-masses-multiples"
+- id: S12-Q020
+  bonnes: [a]
+  explication: "Un symptôme d'alimentation se cherche dans le bloc alimentation."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Les références ne changent pas."
+  source: "S12-L03#pourquoi-découper-en-blocs"
+- id: S12-Q021
+  bonnes: [a]
+  explication: "Le quartz ou le résonateur fournit le signal d'horloge au microcontrôleur."
+  pourquoi_faux:
+    b: "L'alimentation regroupe régulateurs et protections."
+    c: "La communication regroupe interfaces et connecteurs."
+    d: "Les sorties commandent les charges."
+  source: "S12-L03#les-blocs-dune-carte-à-microcontrôleur"
+- id: S12-Q022
+  bonnes: [a]
+  explication: "La fiche du composant principal donne ses broches d'alimentation, d'horloge et ses fonctions."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans méthode."
+  source: "S12-L03#les-blocs-dune-carte-à-microcontrôleur"
+- id: S12-Q023
+  bonnes: [a]
+  explication: "C'est la seule source légitime de brochage ; une erreur de broche peut endommager un calculateur."
+  pourquoi_faux:
+    b: "Un forum n'est pas une source de brochage."
+    c: "Le brochage peut changer d'un modèle à l'autre."
+    d: "Les couleurs ne suffisent pas."
+  source: "S12-L03#le-schéma-électrique-officiel-du-constructeur"
+- id: S12-Q024
+  bonnes: [a]
+  explication: "Les deux vues sont le miroir l'une de l'autre : une erreur de vue inverse les broches."
+  pourquoi_faux:
+    b: "La vue change la numérotation apparente."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S12-L03#le-schéma-électrique-officiel-du-constructeur"
+- id: S12-Q025
+  bonnes: [a]
+  explication: "Une information non confirmée n'est jamais présentée comme une donnée ; un brochage faux peut détruire un calculateur."
+  pourquoi_faux:
+    b: "Interdit : jamais de valeur plausible."
+    c: "On signale ce qui manque."
+    d: "Le brochage peut changer d'un véhicule à l'autre."
+  source: "S12-L03#exemple-8--relever-le-brochage-dun-connecteur"

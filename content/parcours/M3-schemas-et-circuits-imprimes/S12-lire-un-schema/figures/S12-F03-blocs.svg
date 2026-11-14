@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="13">
+  <!-- Figure réalisée par AREPROG : découpage pédagogique en blocs d'une carte à microcontrôleur, sans composant ni valeur. -->
+  <defs>
+    <marker id="s12f03-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="210" y="20" width="140" height="44" rx="6" />
+  <text x="280" y="47" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">alimentation</text>
+  <rect x="200" y="120" width="160" height="60" rx="6" stroke-width="3" />
+  <text x="280" y="155" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">microcontrôleur</text>
+  <rect x="20" y="128" width="120" height="44" rx="6" />
+  <text x="80" y="155" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">entrées</text>
+  <rect x="420" y="128" width="120" height="44" rx="6" />
+  <text x="480" y="155" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">sorties</text>
+  <rect x="120" y="236" width="130" height="44" rx="6" />
+  <text x="185" y="263" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">horloge</text>
+  <rect x="310" y="236" width="150" height="44" rx="6" />
+  <text x="385" y="263" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">communication</text>
+  <path d="M280 64 V118" marker-end="url(#s12f03-fl)" />
+  <path d="M230 64 L95 126" marker-end="url(#s12f03-fl)" stroke-width="1.5" stroke-dasharray="5 4" />
+  <path d="M330 64 L465 126" marker-end="url(#s12f03-fl)" stroke-width="1.5" stroke-dasharray="5 4" />
+  <path d="M140 150 H198" marker-end="url(#s12f03-fl)" />
+  <path d="M360 150 H418" marker-end="url(#s12f03-fl)" />
+  <path d="M185 234 L235 182" marker-end="url(#s12f03-fl)" />
+  <path d="M385 234 L330 182" marker-start="url(#s12f03-fl)" marker-end="url(#s12f03-fl)" />
+  <text x="362" y="46" fill="currentColor" stroke="none" font-size="11">alimente tous les blocs</text>
+</svg>

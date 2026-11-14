@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S12-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S12-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur un schéma, un symbole à trois bornes porte la référence Q4. La flèche est sur une borne et pointe vers l'intérieur. Qu'est-ce ?"
+  propositions:
+    - {id: a, texte: "Un transistor bipolaire PNP"}
+    - {id: b, texte: "Un transistor bipolaire NPN"}
+    - {id: c, texte: "Un circuit intégré"}
+    - {id: d, texte: "Une diode"}
+  competences: [D5.1]
+  objectif: O1
+- id: S12-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un condensateur est dessiné avec une plaque droite marquée + et une plaque courbe. Que déduisez-vous ?"
+  propositions:
+    - {id: a, texte: "Il est polarisé ; la plaque courbe est en général la cathode, côté le moins positif"}
+    - {id: b, texte: "Il est non polarisé"}
+    - {id: c, texte: "La plaque courbe va au plus"}
+    - {id: d, texte: "C'est une inductance"}
+  competences: [D5.1]
+  objectif: O1
+- id: S12-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Une résistance est marquée « R14 2K2 » sur le schéma. Quelle est sa valeur, en kΩ ?"
+  unite_attendue: kΩ
+  competences: [D5.1]
+  objectif: O2
