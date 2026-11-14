@@ -1,0 +1,10 @@
+# Fiche fictive pour les tests du validateur.
+id: SRC-0001
+titre: Source de test
+editeur: Éditeur fictif
+reference: TEST-001
+revision: "A"
+date_consultation: 2026-11-01
+type: ouvrage
+licence: lien_seulement
+lien: https://example.org/source-de-test

@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S06-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S06-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous voulez afficher environ quatre périodes d'un signal de 2 kHz sur un écran de 10 divisions horizontales. Quelle base de temps choisissez-vous ?"
+  propositions:
+    - {id: a, texte: "0,2 ms/div"}
+    - {id: b, texte: "2 ms/div"}
+    - {id: c, texte: "20 µs/div"}
+    - {id: d, texte: "1 s/div"}
+  competences: [D3.3]
+  objectif: O1
+- id: S06-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Sur un écran réglé à 50 µs/div, une période complète d'un signal occupe 4 divisions. Quelle est sa fréquence ?"
+  unite_attendue: kHz
+  competences: [D3.3, D2.6]
+  objectif: O3

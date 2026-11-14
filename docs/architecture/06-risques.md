@@ -1,0 +1,19 @@
+# 6. Risques
+
+| # | Risque | Probabilité | Impact | Mesure proposée |
+|---|---|---|---|---|
+| R1 | **Contenu inexact généré par IA** (valeur plausible mais inventée, faux brochage, panne « connue » non sourcée) | Élevée | Élevé | Étiquettes obligatoires, validateur bloquant, relecture par deux agents, validation finale humaine ; règle « en cas de doute : [À VÉRIFIER], jamais une valeur plausible » |
+| R2 | **Perte des données de l'apprenant** (effacement du navigateur, tablette réinitialisée) | Moyenne | Élevé | Stockage persistant demandé, application installée sur l'écran d'accueil, rappel d'export hebdomadaire, import testé ; synchronisation serveur en lot ultérieur (A-03) |
+| R3 | **Safari / iPadOS efface les données** d'un site non installé après une période sans visite [À VÉRIFIER : comportement exact de la version d'iPadOS utilisée] | Moyenne si iPad | Élevé | Installer l'application sur l'écran d'accueil (PWA) ; test sur l'appareil réel d'Arthur avant L3 (journal + photos) |
+| R4 | **Corrections visibles** en inspectant le code du navigateur | Certaine techniquement | Faible (apprenant unique) | Chargement après soumission ; vérification côté serveur si plusieurs apprenants (A-05) |
+| R5 | **Accès non autorisé** au site déployé (contenu privé, futures photos d'atelier) | Moyenne | Moyen | Pas de déploiement sans accord ; protection par mot de passe ; `noindex` ; pas de donnée client (NF6) |
+| R6 | **Licences** : publication d'une datasheet, d'une norme ou d'un extrait non autorisé | Moyenne | Moyen | Bibliothèque = références et liens ; champ `licence` obligatoire ; règle bloquante sur `fichier_local` |
+| R7 | **Sécurité physique sur les TP airbag, ABS, direction** (énergie stockée des pyrotechnies, réglementation, remise en circulation d'une pièce de sécurité) | Moyenne | Très élevé | La plateforme impose le protocole renforcé (§1.9) mais **ne remplace pas** un protocole rédigé à partir de sources réglementaires et, idéalement, relu par un professionnel ; aucune consigne [À VÉRIFIER] publiable ; cadre réglementaire de l'atelier [À VÉRIFIER] |
+| R8 | **Volume de contenu** : 35 chapitres, environ 1 400 questions de QCM, TP, corrigés | Certaine | Moyen | Skills et gabarits générateurs ; rythme « une semaine d'avance » (D-09) ; prototype sur une seule leçon d'abord |
+| R9 | **Évolution du gabarit** pédagogique (v0.1) pendant le développement | Élevée | Moyen | Schémas centralisés dans `src/schemas/` ; versions de format ; migration de contenu par script si le format change |
+| R10 | **Dérive du périmètre** (tout développer d'un coup) | Moyenne | Moyen | Lots L0 → L5 ; prototype limité à 6 éléments ; accord d'Arthur à chaque phase |
+| R11 | **Dépendances** qui vieillissent ou alourdissent l'application | Faible | Moyen | 4 dépendances de production ; versions épinglées ; règle d'ajout justifié |
+| R12 | **Deux fils travaillent dans le même dépôt** (pédagogie et application) | Moyenne | Faible | Dossiers distincts (`docs/pedagogie/` vs `docs/architecture/`, puis `content/` vs `src/`) ; PR séparées |
+| R13 | **Lisibilité sur fond sombre** (texte #C7CCD1, bleu #1E88E5 en texte) en atelier éclairé | Moyenne | Faible | Contrôle de contraste automatique ; mode atelier à contraste renforcé |
+| R14 | **Confusion entre simulateur et réalité** (un résultat de simulateur pris pour une valeur de calculateur réel) | Moyenne | Moyen | Séparation du code, bandeau permanent, hypothèses affichées, test d'architecture |
+| R15 | **Essais sur véhicule** après réparation d'un calculateur de sécurité (comportement non validable intégralement en atelier) | Moyenne | Très élevé | TP `support: vehicule` verrouillé derrière la validation sur banc ; check-lists avant / après avec preuves ; fiche de limites obligatoire ; protocole d'essai sourcé, rédigé côté pédagogie |

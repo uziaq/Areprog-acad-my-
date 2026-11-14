@@ -1,0 +1,30 @@
+# Énoncés seulement : les solutions sont dans corrections/S03-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S03-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un diviseur à vide est formé de R1 = 6,8 kΩ et R2 = 3,3 kΩ, alimenté sous 5 V. Quelle est la tension de sortie ?"
+  unite_attendue: V
+  competences: [D2.3]
+  objectif: O1
+- id: S03-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "On veut 3 V en sortie d'un diviseur alimenté sous 12 V, avec R2 = 1 kΩ. Quelle valeur faut-il pour R1 ?"
+  unite_attendue: kΩ
+  competences: [D2.3]
+  objectif: O1
+- id: S03-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un diviseur R1 = R2 = 10 kΩ est alimenté sous 10 V. On branche une charge de 10 kΩ sur sa sortie. Quelle tension lit-on en sortie ?"
+  unite_attendue: V
+  competences: [D2.3]
+  objectif: O2
+- id: S03-L02-EX04
+  version: "0.1"
+  type: calcul
+  enonce: "Un courant de 30 mA se partage entre R1 = 1 kΩ et R2 = 2 kΩ en parallèle. Quel courant traverse R1 ?"
+  unite_attendue: mA
+  competences: [D2.3]
+  objectif: O3

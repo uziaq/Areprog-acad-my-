@@ -1,0 +1,15 @@
+# Grilles de test (même structure que content/evaluation/grilles.yaml).
+fautes_eliminatoires:
+  - {id: FE-01, texte: Faute valable pour tous les modules, modules: []}
+  - {id: FE-02, texte: Faute propre au module M1, modules: [M1]}
+grilles:
+  - id: generique
+    titre: Grille générique de test
+    criteres:
+      - {id: preparation, texte: Préparation, poids: 40, eliminatoire_si: Absence de valeur théorique}
+      - {id: execution, texte: Exécution, poids: 60}
+  - id: renforcee
+    titre: Grille renforcée de test
+    criteres:
+      - {id: decharge-mesuree, texte: Décharge mesurée, poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: essais-vehicule, texte: Essais sur véhicule, poids: 0, eliminatoire_si: Critère non respecté ou sans preuve, sans_objet_possible: true}

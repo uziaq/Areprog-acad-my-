@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="13">
+  <!-- Figure réalisée par AREPROG : bobine commandée par un interrupteur, diode de roue libre en parallèle, sans valeur. -->
+  <circle cx="50" cy="120" r="20" />
+  <text x="44" y="116" fill="currentColor" stroke="none" font-size="12">+</text>
+  <path d="M50 100 V30 H200 V50" />
+  <path d="M200 50 c 12 0 12 14 0 14 c 12 0 12 14 0 14 c 12 0 12 14 0 14 c 12 0 12 14 0 14" />
+  <text x="150" y="86" fill="currentColor" stroke="none" font-weight="600">L</text>
+  <path d="M200 106 V140" />
+  <path d="M200 140 L224 160" />
+  <path d="M200 170 V210 H50 V140" />
+  <text x="232" y="160" fill="currentColor" stroke="none" font-size="12">interrupteur</text>
+  <path d="M200 30 H290 V60" />
+  <path d="M278 60 H302 M290 60 L278 84 H302 Z" />
+  <path d="M290 84 V120 H200" />
+  <text x="306" y="78" fill="currentColor" stroke="none" font-size="12">diode</text>
+  <path d="M250 44 A 30 30 0 1 1 250 110" stroke-dasharray="4 3" stroke-width="1.5" />
+  <path d="M250 110 l -8 -2 m 8 2 l -3 -7" stroke-width="1.5" />
+</svg>

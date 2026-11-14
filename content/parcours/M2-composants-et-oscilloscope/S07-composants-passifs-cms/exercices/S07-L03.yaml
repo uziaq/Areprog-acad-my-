@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S07-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S07-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une résistance dessoudée, marquée « 471 », tolérance 1 % d'après la nomenclature, est lue 476 Ω avec une incertitude de 4 Ω. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Conforme"}
+    - {id: b, texte: "Non conforme"}
+    - {id: c, texte: "Non concluant"}
+  competences: [D4.2]
+  objectif: O2
+- id: S07-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une résistance marquée « 472 » est lue 2,1 kΩ en circuit, carte hors tension. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Rien de sûr : des composants en parallèle peuvent abaisser la lecture ; lire le schéma ou dessouder une patte"}
+    - {id: b, texte: "Elle est défectueuse et doit être remplacée"}
+    - {id: c, texte: "Elle est conforme"}
+    - {id: d, texte: "Le multimètre est en panne"}
+  competences: [D4.2]
+  objectif: O3

@@ -1,0 +1,19 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S03-L01-EX01
+  valeur: 4.5
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "R2 // R3 = 2 / 2 = 1 kΩ (deux résistances identiques). Req = 1 + 1 = 2 kΩ. I1 = 9 / 2 000 = 0,004 5 A = 4,5 mA."
+  renvoi_section: "S03-L01#exemple-1--résoudre-un-circuit-à-deux-mailles"
+- id: S03-L01-EX02
+  valeur: 8
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "Loi des nœuds : I1 = I2 + I3, donc I3 = 20 − 12 = 8 mA."
+  renvoi_section: "S03-L01#la-loi-des-nœuds"
+- id: S03-L01-EX03
+  valeur: 8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Loi des mailles : U − U(R1) − U(R2) = 0, donc U(R2) = 12 − 4 = 8 V."
+  renvoi_section: "S03-L01#la-loi-des-mailles"

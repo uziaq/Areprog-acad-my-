@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="14">
+  <!-- Figure réalisée par AREPROG : circuit de principe, valeurs non indiquées. -->
+  <!-- fils -->
+  <path d="M60 60 V30 H130" />
+  <path d="M170 30 H260 V75" />
+  <path d="M260 125 V170 H60 V120" />
+  <!-- source de tension (deux traits) -->
+  <line x1="40" y1="100" x2="80" y2="100" stroke-width="3" />
+  <line x1="50" y1="112" x2="70" y2="112" stroke-width="3" />
+  <path d="M60 60 V100" />
+  <path d="M60 112 V120" />
+  <text x="86" y="98" fill="currentColor" stroke="none">+</text>
+  <text x="86" y="122" fill="currentColor" stroke="none">−</text>
+  <text x="14" y="110" fill="currentColor" stroke="none" font-weight="600">U</text>
+  <!-- ampèremètre -->
+  <circle cx="150" cy="30" r="20" />
+  <text x="144" y="35" fill="currentColor" stroke="none" font-weight="600">A</text>
+  <!-- résistance -->
+  <rect x="248" y="75" width="24" height="50" />
+  <text x="282" y="105" fill="currentColor" stroke="none" font-weight="600">R</text>
+  <!-- courant -->
+  <path d="M200 30 L212 30" stroke-width="2" />
+  <path d="M206 24 L216 30 L206 36 Z" fill="currentColor" stroke="none" />
+  <text x="196" y="20" fill="currentColor" stroke="none" font-weight="600">I</text>
+</svg>

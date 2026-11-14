@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import { enrichirHtml } from '../../../../../markdown/enrichir-html.ts';
+import Base from '../../../../../layouts/Base.astro';
+import EvaluationPratique from '../../../../../islands/EvaluationPratique.tsx';
+import { chargerSite } from '../../../../../lib/contenu.ts';
+import { fautesDuModule, type CriterePratique } from '../../../../../lib/evaluation/pratique.ts';
+
+export async function getStaticPaths() {
+  const site = chargerSite();
+  const entrees = await getCollection('tp');
+  return entrees
+    .filter((e) => site.tps.has(e.id))
+    .map((e) => {
+      const { chapitre, module } = site.tps.get(e.id)!;
+      return {
+        params: { module: module.id.toLowerCase(), chapitre: chapitre.id.toLowerCase(), tp: e.id.toLowerCase() },
+        props: { entree: e },
+      };
+    });
+}
+
+const { entree } = Astro.props;
+const site = chargerSite();
+const { tp, chapitre, module } = site.tps.get(entree.id)!;
+const html = enrichirHtml(entree.rendered?.html ?? '', [], entree.filePath ? `${process.cwd()}/${entree.filePath}` : '');
+const libellesStatut: Record<string, string> = { brouillon: 'Brouillon', relu: 'Relu', valide: 'Validé', retire: 'Retiré' };
+
+// Grille générique pour tout TP ; grille « protocole renforcé » en plus pour un TP renforcé (M9).
+const grillesAppliquees = tp.securite === 'renforcee' ? ['generique', 'renforcee'] : ['generique'];
+const criteres: CriterePratique[] = site.grilles.grilles
+  .filter((g) => grillesAppliquees.includes(g.id))
+  .flatMap((g) => g.criteres.map((c) => ({ ...c, grille: g.id })));
+const fautes = fautesDuModule(site.grilles.fautes_eliminatoires, module.id).map(({ id, texte }) => ({ id, texte }));
+const competences = site.plan.competences;
+---
+<Base titre={`${tp.id} · ${tp.titre}`} actif="parcours">
+  <article class="lecture">
+    <p class="fil">
+      <a href="/parcours/">Parcours</a> › <a href={module.url}>{module.id}</a> › {chapitre.id} › {tp.id}
+    </p>
+    <h1>{tp.id} · {tp.titre}</h1>
+    <div class="meta">
+      <span class="badge badge--info">{chapitre.id} · {chapitre.titre}</span>
+      <span class="badge badge--neutre">Version {tp.version}</span>
+      {tp.securite === 'renforcee' && <span class="badge badge--erreur">Protocole renforcé</span>}
+      <span class={`badge ${tp.statut === 'valide' ? 'badge--succes' : 'badge--alerte'}`} title="Statut de relecture du contenu">
+        {libellesStatut[tp.statut]}
+      </span>
+    </div>
+    <p class="note">
+      Compétences évaluées : {tp.competences.map((c) => `${c} ${competences.find((x) => x.code === c)?.intitule ?? ''}`).join(' ; ')}
+    </p>
+
+    <div class="contenu">
+      <Fragment set:html={html} />
+    </div>
+
+    <section aria-labelledby="evaluation">
+      <h2 id="evaluation">Évaluation pratique (TP noté)</h2>
+      <EvaluationPratique
+        client:load
+        tp={{ id: tp.id, titre: tp.titre, version: tp.version, chapitre: chapitre.id, securite: tp.securite, livrables: tp.livrables }}
+        criteres={criteres}
+        fautes={fautes}
+        seuil={site.plan.seuils.pratique_reussite}
+      />
+    </section>
+  </article>
+</Base>

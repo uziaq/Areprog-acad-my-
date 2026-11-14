@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S01-L02-EX01
+  valeur: 24
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "Rc = U réglée / I limite = 12 / 0,5 = 24 Ω. Au-dessus de 24 Ω, l'alimentation reste en CV ; en dessous, elle passe en CC."
+  renvoi_section: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+- id: S01-L02-EX02
+  valeur: 4.7
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Rc = 12 / 0,1 = 120 Ω. La charge de 47 Ω est plus petite : l'alimentation est en CC, le courant vaut 0,1 A et U = 0,1 × 47 = 4,7 V. Répondre 12 V, c'est oublier la limitation."
+  renvoi_section: "S01-L02#exemple-3--prévoir-le-mode-dune-alimentation"
+- id: S01-L02-EX03
+  bonnes: [b]
+  explication: "La catégorie compte autant que la tension : selon la note Fluke, un appareil CAT III 600 V résiste mieux aux transitoires qu'un CAT II 1 000 V, car la source de transitoires de la catégorie III a une impédance bien plus faible."
+  renvoi_section: "S01-L02#les-catégories-de-mesure"

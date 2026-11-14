@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S07-L01-EX01
+  bonnes: [a]
+  explication: "Dans la fiche Vishay, la taille 1206 en pouces porte le code métrique RR3216M (3,2 × 1,6 mm). Les deux systèmes n'emploient pas les mêmes nombres : il faut toujours savoir dans lequel le code est écrit."
+  renvoi_section: "S07-L01#le-code-de-taille-dune-puce-passive"
+- id: S07-L01-EX02
+  valeur: 117.5
+  tolerance_relative: 0.02
+  unite: mW
+  explication: "P = R × I² = 47 × 0,05² = 0,1175 W, soit 117,5 mW."
+  renvoi_section: "S07-L01#taille-et-puissance"
+- id: S07-L01-EX03
+  bonnes: [a]
+  explication: "Dans cette série, la puissance à 70 °C vaut 0,063 W en 0402, 0,125 W en 0805 et 0,25 W en 1206. 0,1175 W passe sous 0,125 W, mais presque sans marge : on retient la 1206, qui laisse une marge confortable. Une autre série peut annoncer d'autres valeurs."
+  renvoi_section: "S07-L01#taille-et-puissance"

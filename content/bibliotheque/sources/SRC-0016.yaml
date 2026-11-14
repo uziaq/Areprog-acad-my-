@@ -1,0 +1,11 @@
+# Exemple de fiche technique de résistances CMS : tailles en pouces et en métrique, dimensions,
+# puissance à 70 °C et tension de service par taille (cours S07). Valeurs propres à cette série.
+id: SRC-0016
+titre: "D/CRCW e3 : Standard Thick Film Chip Resistors"
+editeur: Vishay Dale
+reference: "Document Number 20035"
+revision: "révision du 27-Oct-2020"
+date_consultation: 2026-11-14
+type: datasheet
+licence: lien_seulement
+lien: https://www.digikey.hk/htmldatasheets/production/379689/0/0/1/crcw20101r30jnef.html

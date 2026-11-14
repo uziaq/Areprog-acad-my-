@@ -1,0 +1,31 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S02-L01-EX01
+  valeur: 25.5
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "I = U / R = 12 / 470 = 0,0255 A, soit 25,5 mA. Ordre de grandeur : 12 / 500 ≈ 0,024 A."
+  renvoi_section: "S02-L01#la-loi-dohm"
+- id: S02-L01-EX02
+  valeur: 6.6
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Convertir d'abord : 20 mA = 0,02 A. U = R × I = 330 × 0,02 = 6,6 V. Erreur fréquente : 330 × 20 = 6 600, oubli du préfixe milli."
+  renvoi_section: "S02-L01#les-préfixes"
+- id: S02-L01-EX03
+  valeur: 2.5
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "2 mA = 0,002 A. R = U / I = 5 / 0,002 = 2 500 Ω, soit 2,5 kΩ."
+  renvoi_section: "S02-L01#la-loi-dohm"
+- id: S02-L01-EX04
+  valeur: 47
+  tolerance_relative: 0.01
+  unite: mA
+  explication: "1 A = 1 000 mA, donc 0,047 A × 1 000 = 47 mA."
+  renvoi_section: "S02-L01#les-préfixes"
+- id: S02-L01-EX05
+  valeur: 1.44
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = U² / R = 144 / 100 = 1,44 W. C'est près de six fois la puissance nominale d'une résistance de 0,25 W : elle chaufferait jusqu'à se détériorer. Il faut une résistance de puissance nominale nettement supérieure à 1,44 W."
+  renvoi_section: "S02-L01#la-puissance"

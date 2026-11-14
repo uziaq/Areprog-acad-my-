@@ -1,0 +1,25 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S03-L02-EX01
+  valeur: 1.634
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Us = 5 × 3,3 / (6,8 + 3,3) = 5 × 3,3 / 10,1 = 1,63 V."
+  renvoi_section: "S03-L02#le-diviseur-de-tension-à-vide"
+- id: S03-L02-EX02
+  valeur: 3
+  tolerance_relative: 0.02
+  unite: kΩ
+  explication: "R1 = R2 × (Ue − Us) / Us = 1 × (12 − 3) / 3 = 3 kΩ. Contrôle : 12 × 1 / (3 + 1) = 3 V."
+  renvoi_section: "S03-L02#dimensionner-un-diviseur"
+- id: S03-L02-EX03
+  valeur: 3.333
+  tolerance_relative: 0.02
+  unite: V
+  explication: "R2 // RL = 5 kΩ. Us = 10 × 5 / (10 + 5) = 3,33 V, au lieu de 5 V à vide : la charge n'est pas négligeable devant R2."
+  renvoi_section: "S03-L02#le-diviseur-chargé"
+- id: S03-L02-EX04
+  valeur: 20
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "I1 = I × R2 / (R1 + R2) = 30 × 2 / 3 = 20 mA. La plus petite résistance reçoit le plus grand courant ; contrôle : I2 = 10 mA et 20 + 10 = 30 mA."
+  renvoi_section: "S03-L02#le-diviseur-de-courant"

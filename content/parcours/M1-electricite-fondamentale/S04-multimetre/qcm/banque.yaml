@@ -1,0 +1,245 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S04-Q001
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#ce-quil-y-a-dans-un-multimètre"
+  enonce: "Au fond, quelle grandeur un multimètre numérique mesure-t-il toujours ?"
+  propositions:
+    - {id: a, texte: "Une tension"}
+    - {id: b, texte: "Un courant"}
+    - {id: c, texte: "Une résistance"}
+    - {id: d, texte: "Une puissance"}
+- id: S04-Q002
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#ce-quil-y-a-dans-un-multimètre"
+  enonce: "Comment un multimètre mesure-t-il un courant ?"
+  propositions:
+    - {id: a, texte: "Il le fait passer dans un shunt interne et mesure la tension à ses bornes"}
+    - {id: b, texte: "Il mesure le champ magnétique autour des cordons"}
+    - {id: c, texte: "Il compte les électrons qui traversent le fusible"}
+    - {id: d, texte: "Il mesure la résistance du circuit"}
+- id: S04-Q003
+  type: choix_unique
+  securite: true
+  competences: [D3.1, D1.2]
+  section: "S04-L01#choisir-la-fonction-et-les-bornes"
+  enonce: "Les cordons sont restés dans les bornes COM et A. Vous voulez mesurer la tension de la batterie. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je déplace le cordon rouge dans la borne VΩ et je règle la fonction V avant de toucher la batterie"}
+    - {id: b, texte: "Je règle seulement le sélecteur sur V"}
+    - {id: c, texte: "Je mesure directement : la borne A supporte la tension"}
+    - {id: d, texte: "Je mesure rapidement pour limiter l'échauffement"}
+- id: S04-Q004
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#choisir-la-fonction-et-les-bornes"
+  enonce: "Comment se branche un voltmètre ?"
+  propositions:
+    - {id: a, texte: "En parallèle sur le point mesuré"}
+    - {id: b, texte: "En série, circuit ouvert"}
+    - {id: c, texte: "Entre la borne A et la masse"}
+    - {id: d, texte: "Circuit hors tension uniquement"}
+- id: S04-Q005
+  type: choix_unique
+  securite: true
+  competences: [D3.1, D1.2]
+  section: "S04-L01#résistance-continuité-et-jonction"
+  enonce: "Avant de mesurer une résistance sur une carte, que faut-il faire ?"
+  propositions:
+    - {id: a, texte: "Couper l'alimentation et vérifier que les condensateurs sont déchargés"}
+    - {id: b, texte: "Laisser la carte alimentée pour voir le composant fonctionner"}
+    - {id: c, texte: "Choisir la borne mA"}
+    - {id: d, texte: "Rien de particulier"}
+- id: S04-Q006
+  type: calcul
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#résolution-digits-et-points"
+  enonce: "Un multimètre de 2 000 points est sur le calibre 200 mV. Quelle est sa résolution ?"
+  unite_attendue: mV
+- id: S04-Q007
+  type: calcul
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#résolution-digits-et-points"
+  enonce: "Un multimètre de 4 000 points est sur le calibre 40 V. Quelle est sa résolution ?"
+  unite_attendue: mV
+- id: S04-Q008
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#exemple-1--choisir-un-calibre"
+  enonce: "Un multimètre propose les calibres 2 V, 20 V et 200 V. Vous mesurez environ 5 V. Quel calibre choisir ?"
+  propositions:
+    - {id: a, texte: "20 V"}
+    - {id: b, texte: "2 V"}
+    - {id: c, texte: "200 V"}
+    - {id: d, texte: "Peu importe"}
+- id: S04-Q009
+  type: calcul
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#résistance-continuité-et-jonction"
+  enonce: "L'ohmmètre affiche 2,7 Ω sur une résistance et 0,4 Ω pointes en contact. Quelle est la résistance réelle ?"
+  unite_attendue: Ω
+- id: S04-Q010
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#pourquoi-une-mesure-en-circuit-peut-mentir"
+  enonce: "En circuit, une résistance de 4,7 kΩ est lue 3,1 kΩ. Que peut-on conclure ?"
+  propositions:
+    - {id: a, texte: "Rien de sûr : d'autres composants peuvent la contourner ; il faut la mesurer hors circuit"}
+    - {id: b, texte: "Elle est défectueuse"}
+    - {id: c, texte: "L'ohmmètre est faux"}
+    - {id: d, texte: "Elle a chauffé et sa valeur a augmenté"}
+- id: S04-Q011
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L01#résistance-continuité-et-jonction"
+  enonce: "En test de jonction, une diode au silicium affiche environ 0,6 V dans un sens et un dépassement dans l'autre. Que conclure ?"
+  propositions:
+    - {id: a, texte: "Le comportement est celui d'une jonction saine"}
+    - {id: b, texte: "La diode est en court-circuit"}
+    - {id: c, texte: "La diode est coupée"}
+    - {id: d, texte: "Le multimètre est mal calibré"}
+- id: S04-Q012
+  type: calcul
+  securite: false
+  competences: [D3.7]
+  section: "S04-L02#méthode-de-calcul"
+  enonce: "Lecture 5,00 V, calibre 20 V, résolution 0,01 V, précision ±(1 % + 3). Quelle est l'incertitude ?"
+  unite_attendue: V
+- id: S04-Q013
+  type: calcul
+  securite: false
+  competences: [D3.7]
+  section: "S04-L02#méthode-de-calcul"
+  enonce: "Lecture 220,0 Ω, résolution 0,1 Ω, précision ±(0,5 % + 2). Quelle est l'incertitude ?"
+  unite_attendue: Ω
+- id: S04-Q014
+  type: choix_unique
+  securite: false
+  competences: [D3.7]
+  section: "S04-L02#une-mesure-nest-jamais-exacte"
+  enonce: "Dans « ±(x % de la lecture + n points) », que représentent les n points ?"
+  propositions:
+    - {id: a, texte: "n fois la résolution du calibre utilisé"}
+    - {id: b, texte: "n % de la pleine échelle"}
+    - {id: c, texte: "Le nombre de chiffres de l'afficheur"}
+    - {id: d, texte: "n fois la lecture"}
+- id: S04-Q015
+  type: choix_unique
+  securite: false
+  competences: [D3.7, D3.1]
+  section: "S04-L02#choisir-le-calibre"
+  enonce: "Pourquoi le plus petit calibre qui contient la valeur réduit-il l'incertitude ?"
+  propositions:
+    - {id: a, texte: "Sa résolution est plus fine, donc la partie fixe (n points) est plus petite"}
+    - {id: b, texte: "La partie en % y est nulle"}
+    - {id: c, texte: "Le multimètre chauffe moins"}
+    - {id: d, texte: "Il ne la réduit pas"}
+- id: S04-Q016
+  type: choix_unique
+  securite: false
+  competences: [D3.7, D3.1]
+  section: "S04-L02#exemple-5--le-calibre-change-tout"
+  enonce: "On lit 0,150 V. Précision ±(0,5 % + 2). Calibre 2 V (résolution 0,001 V) ou 20 V (résolution 0,01 V) : lequel donne la plus petite incertitude ?"
+  propositions:
+    - {id: a, texte: "2 V : environ 0,003 V contre 0,021 V"}
+    - {id: b, texte: "20 V : la pleine échelle est plus grande"}
+    - {id: c, texte: "Les deux donnent la même incertitude"}
+    - {id: d, texte: "On ne peut pas savoir sans la notice"}
+- id: S04-Q017
+  type: choix_unique
+  securite: false
+  competences: [D3.7]
+  section: "S04-L02#conformité--tolérance-et-incertitude-ensemble"
+  enonce: "Une résistance de 100 Ω ±5 % est lue 104,0 Ω avec une incertitude de 0,9 Ω. Quelle est la conclusion ?"
+  propositions:
+    - {id: a, texte: "Conforme : l'intervalle 103,1 à 104,9 Ω est entièrement dans 95 à 105 Ω"}
+    - {id: b, texte: "Non conforme : la lecture dépasse 100 Ω"}
+    - {id: c, texte: "Non concluant"}
+    - {id: d, texte: "Impossible à dire sans l'incertitude du fabricant"}
+- id: S04-Q018
+  type: choix_unique
+  securite: false
+  competences: [D3.7]
+  section: "S04-L02#exemple-6--un-résultat-non-concluant"
+  enonce: "L'intervalle de mesure est à cheval sur une borne de la tolérance. Que faut-il écrire au journal ?"
+  propositions:
+    - {id: a, texte: "Non concluant, avec la mesure et son incertitude ; prévoir un instrument plus précis ou une autre méthode"}
+    - {id: b, texte: "Conforme, puisqu'une partie est dedans"}
+    - {id: c, texte: "Non conforme, puisqu'une partie est dehors"}
+    - {id: d, texte: "Rien, la mesure est ratée"}
+- id: S04-Q019
+  type: choix_unique
+  securite: false
+  competences: [D3.7]
+  section: "S04-L02#alternatif--valeur-efficace-vraie"
+  enonce: "Sur un signal PWM, un multimètre à réponse moyenne :"
+  propositions:
+    - {id: a, texte: "peut afficher une valeur fausse, souvent bien plus basse que la vraie valeur efficace"}
+    - {id: b, texte: "affiche toujours la vraie valeur efficace"}
+    - {id: c, texte: "affiche la valeur crête"}
+    - {id: d, texte: "refuse de mesurer"}
+- id: S04-Q020
+  type: calcul
+  securite: false
+  competences: [D3.1]
+  section: "S04-L03#le-voltmètre-est-une-charge"
+  enonce: "Un point a Eth = 6 V et Rth = 1 MΩ. On y branche un voltmètre de 10 MΩ. Quelle tension lit-il ?"
+  unite_attendue: V
+- id: S04-Q021
+  type: choix_unique
+  securite: false
+  competences: [D3.1]
+  section: "S04-L03#exemple-7--effet-de-charge-sur-un-diviseur-à-haute-impédance"
+  enonce: "Dans quel cas l'effet de charge d'un voltmètre de 10 MΩ est-il le plus important ?"
+  propositions:
+    - {id: a, texte: "Sur la sortie d'un diviseur de deux résistances de 1 MΩ"}
+    - {id: b, texte: "Aux bornes d'une batterie"}
+    - {id: c, texte: "Sur la sortie d'un diviseur de deux résistances de 1 kΩ"}
+    - {id: d, texte: "Il est le même partout"}
+- id: S04-Q022
+  type: calcul
+  securite: false
+  competences: [D3.1]
+  section: "S04-L03#déduire-rin-dune-mesure"
+  enonce: "Un point a Eth = 5 V et Rth = 1 MΩ. Le multimètre lit 4,5 V. Quelle est sa résistance d'entrée ?"
+  unite_attendue: MΩ
+- id: S04-Q023
+  type: calcul
+  securite: false
+  competences: [D3.1, D1.2]
+  section: "S04-L03#exemple-9--lerreur-due-au-shunt"
+  enonce: "Un circuit de 12 V alimente 47 Ω. Le calibre A du multimètre a une résistance de 0,1 Ω. Quel courant mesure-t-on ?"
+  unite_attendue: mA
+- id: S04-Q024
+  type: choix_unique
+  securite: true
+  competences: [D3.1, D1.2]
+  section: "S04-L03#ne-pas-détruire-le-fusible"
+  enonce: "Vous ignorez l'ordre de grandeur du courant à mesurer. Comment commencez-vous ?"
+  propositions:
+    - {id: a, texte: "Je l'estime par la loi d'Ohm ; s'il reste un doute, borne et calibre A les plus élevés"}
+    - {id: b, texte: "Je commence par la borne mA, plus précise"}
+    - {id: c, texte: "Je mesure d'abord en parallèle pour voir"}
+    - {id: d, texte: "Je retire le fusible pour ne pas le griller"}
+- id: S04-Q025
+  type: choix_unique
+  securite: true
+  competences: [D3.1, D1.2]
+  section: "S04-L03#ne-pas-détruire-le-fusible"
+  enonce: "Le fusible de la borne A a grillé. Par quoi le remplacer ?"
+  propositions:
+    - {id: a, texte: "Uniquement par le modèle prescrit par le fabricant du multimètre"}
+    - {id: b, texte: "Par un fusible de même calibre en ampères, quel qu'il soit"}
+    - {id: c, texte: "Par un fusible de calibre plus élevé pour qu'il tienne"}
+    - {id: d, texte: "Par un fil de cuivre en attendant"}

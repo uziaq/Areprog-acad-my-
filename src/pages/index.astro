@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import TableauDeBord from '../islands/TableauDeBord.tsx';
+import { chargerSite } from '../lib/contenu.ts';
+const { plan } = chargerSite();
+---
+<Base titre="AREPROG Academy" actif="accueil">
+  <h1>Tableau de bord</h1>
+  <TableauDeBord client:load plan={plan} />
+</Base>

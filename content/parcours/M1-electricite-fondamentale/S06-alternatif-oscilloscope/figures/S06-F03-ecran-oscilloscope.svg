@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260" width="380" height="260" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : écran d'oscilloscope générique (10 × 8 divisions), sans valeur ni marque. -->
+  <rect x="30" y="20" width="320" height="192" />
+  <g stroke-width="0.6" stroke-dasharray="2 3">
+    <path d="M62 20 V212 M94 20 V212 M126 20 V212 M158 20 V212 M190 20 V212 M222 20 V212 M254 20 V212 M286 20 V212 M318 20 V212" />
+    <path d="M30 44 H350 M30 68 H350 M30 92 H350 M30 116 H350 M30 140 H350 M30 164 H350 M30 188 H350" />
+  </g>
+  <path d="M30 116 C 46 56, 78 56, 94 116 S 142 176, 158 116 S 206 56, 222 116 S 270 176, 286 116 S 334 56, 350 116" />
+  <path d="M18 100 L28 104 L18 108 Z" fill="currentColor" />
+  <text x="2" y="96" fill="currentColor" stroke="none" font-size="10">déclenchement</text>
+  <text x="34" y="236" fill="currentColor" stroke="none">V/div : calibre vertical</text>
+  <text x="210" y="236" fill="currentColor" stroke="none">s/div : base de temps</text>
+</svg>

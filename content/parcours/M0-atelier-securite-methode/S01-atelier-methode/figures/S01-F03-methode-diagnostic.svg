@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" width="360" height="300" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="13">
+  <!-- Figure réalisée par AREPROG : méthode de diagnostic en 5 étapes. -->
+  <rect x="40" y="10" width="280" height="38" rx="6" />
+  <text x="52" y="34" fill="currentColor" stroke="none">1. Recueillir et constater le symptôme</text>
+  <path d="M180 48 V62" /><path d="M174 56 L180 64 L186 56" />
+  <rect x="40" y="66" width="280" height="38" rx="6" />
+  <text x="52" y="90" fill="currentColor" stroke="none">2. Formuler des hypothèses</text>
+  <path d="M180 104 V118" /><path d="M174 112 L180 120 L186 112" />
+  <rect x="40" y="122" width="280" height="38" rx="6" />
+  <text x="52" y="146" fill="currentColor" stroke="none">3. Mesurer pour départager</text>
+  <path d="M180 160 V174" /><path d="M174 168 L180 176 L186 168" />
+  <rect x="40" y="178" width="280" height="38" rx="6" />
+  <text x="52" y="202" fill="currentColor" stroke="none">4. Conclure sur une preuve</text>
+  <path d="M180 216 V230" /><path d="M174 224 L180 232 L186 224" />
+  <rect x="40" y="234" width="280" height="38" rx="6" />
+  <text x="52" y="258" fill="currentColor" stroke="none">5. Intervenir, valider, documenter</text>
+  <!-- retour si hypothèse infirmée -->
+  <path d="M320 197 H344 V85 H326" stroke-dasharray="5 4" />
+  <path d="M332 79 L324 85 L332 91" />
+  <text x="250" y="292" fill="currentColor" stroke="none" font-size="11">Pointillé : hypothèse infirmée</text>
+</svg>

@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S07-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S07-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "D'après la fiche Vishay D/CRCW e3 étudiée en leçon, quelle taille en pouces correspond au code métrique RR3216M ?"
+  propositions:
+    - {id: a, texte: "1206"}
+    - {id: b, texte: "0805"}
+    - {id: c, texte: "3216, le code est le même dans les deux systèmes"}
+    - {id: d, texte: "2512"}
+  competences: [D4.1]
+  objectif: O1
+- id: S07-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une résistance CMS de 47 Ω est parcourue par 50 mA. Quelle puissance dissipe-t-elle ?"
+  unite_attendue: mW
+  competences: [D4.1, D4.6]
+  objectif: O3
+- id: S07-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Avec la puissance de l'exercice précédent et la série D/CRCW e3 de la leçon, utilisée à 70 °C au plus, quelle est la plus petite taille qui convient ?"
+  propositions:
+    - {id: a, texte: "1206"}
+    - {id: b, texte: "0402"}
+    - {id: c, texte: "0805"}
+    - {id: d, texte: "Aucune : il faut une résistance traversante"}
+  competences: [D4.1, D4.6]
+  objectif: O3

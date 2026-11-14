@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { chargerSite, type Source } from '../../lib/contenu.ts';
+
+export function getStaticPaths() {
+  return [...chargerSite().sources.values()].map((s) => ({ params: { source: s.id.toLowerCase() }, props: { s } }));
+}
+const { s } = Astro.props as { s: Source };
+const types: Record<string, string> = { datasheet: 'Datasheet', norme: 'Norme', ouvrage: 'Ouvrage', notice: 'Notice', site: 'Site', cours: 'Cours' };
+const licences: Record<string, string> = {
+  lien_seulement: 'Référence et lien seulement (aucune copie dans l\'application)',
+  extrait_autorise: 'Extraits autorisés par la licence',
+  libre: 'Libre',
+};
+---
+<Base titre={`${s.id} · ${s.titre}`}>
+  <p class="fil">Bibliothèque › {s.id}</p>
+  <h1>{s.titre}</h1>
+  <dl class="carte" data-testid="fiche-source">
+    <dt>Identifiant</dt><dd>{s.id}</dd>
+    <dt>Type</dt><dd>{types[s.type]}</dd>
+    <dt>Éditeur</dt><dd>{s.editeur}</dd>
+    <dt>Référence</dt><dd>{s.reference}</dd>
+    <dt>Révision / édition</dt><dd>{s.revision}</dd>
+    <dt>Date de consultation</dt><dd>{new Date(s.date_consultation).toLocaleDateString('fr-FR')}</dd>
+    <dt>Licence</dt><dd>{licences[s.licence]}</dd>
+    {s.lien && <><dt>Lien</dt><dd><a href={s.lien} rel="noopener noreferrer">{s.lien}</a></dd></>}
+  </dl>
+</Base>

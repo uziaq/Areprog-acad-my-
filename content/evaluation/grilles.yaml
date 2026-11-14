@@ -1,0 +1,87 @@
+# Grilles d'évaluation pratique, extraites de docs/pedagogie/04-evaluation.md (v0.3).
+# Chaque TP noté utilise la grille générique ; un TP « securite: renforcee » ajoute la grille renforcée.
+# Règle : un critère sans preuve vaut 0. Seuil de réussite : parametres.yaml (pratique.seuil_reussite).
+
+# Fautes de sécurité éliminatoires : une seule rend l'évaluation pratique nulle.
+# « modules » vide = tous les modules.
+fautes_eliminatoires:
+  - id: FE-01
+    texte: Manipulation de carte hors poste ESD ou sans bracelet
+    modules: []
+  - id: FE-02
+    texte: Alimentation non limitée en courant, ou limite non écrite avant la mise sous tension
+    modules: []
+  - id: FE-03
+    texte: Inversion de polarité non protégée
+    modules: []
+  - id: FE-04
+    texte: Instrument utilisé hors de sa catégorie de mesure
+    modules: []
+  - id: FE-05
+    texte: Mesure de courant sur un calibre ou des bornes inadaptés
+    modules: [M1, M2]
+  - id: FE-06
+    texte: Condensateur non déchargé avant manipulation
+    modules: [M1, M2]
+  - id: FE-07
+    texte: Masse de sonde d'oscilloscope reliée à un nœud non référencé à la masse
+    modules: [M2, M3, M4, M5, M6, M7, M8, M9, M10]
+  - id: FE-08
+    texte: Calculateur réel mis sous tension sans procédure progressive
+    modules: [M4, M5, M6, M7, M8, M9, M10]
+  - id: FE-09
+    texte: Tension interne élevée non identifiée, ou décharge non mesurée
+    modules: [M4, M5, M6, M7, M8, M9, M10]
+  - id: FE-10
+    texte: Écriture mémoire sans double sauvegarde vérifiée par empreinte
+    modules: [M5]
+  - id: FE-11
+    texte: Air chaud sans protection des composants voisins sensibles
+    modules: [M7]
+  - id: FE-12
+    texte: Travail sans aspiration des fumées
+    modules: [M7]
+  - id: FE-13
+    texte: Remplacement de composant sans mesure qui le justifie
+    modules: [M8]
+  - id: FE-14
+    texte: Donnée inventée présentée comme un fait
+    modules: [M8]
+  - id: FE-15
+    texte: Manquement aux règles de sécurité véhicule
+    modules: [M9]
+
+grilles:
+  - id: generique
+    titre: Grille d'évaluation pratique hebdomadaire
+    criteres:
+      - id: preparation
+        texte: "Préparation : schéma, valeurs théoriques calculées, tolérance justifiée et limite de courant écrites avant la mesure"
+        poids: 20
+        eliminatoire_si: Absence de valeur théorique calculée avant la mesure
+      - id: execution
+        texte: "Exécution des mesures : calibre, raccordement, référence de masse"
+        poids: 30
+      - id: exactitude
+        texte: "Exactitude : mesure dans la tolérance justifiée, ou écart expliqué correctement"
+        poids: 25
+        eliminatoire_si: Écart non expliqué présenté comme correct
+      - id: documentation
+        texte: "Documentation : journal complet, photos, étiquettes de fiabilité"
+        poids: 15
+      - id: analyse
+        texte: "Analyse : conclusion, erreurs identifiées, amélioration proposée"
+        poids: 10
+  - id: renforcee
+    titre: Grille « protocole renforcé » (M9)
+    # Tous les critères sont éliminatoires et exigent une preuve.
+    criteres:
+      - {id: sans-pyrotechnie, texte: "Aucun élément pyrotechnique présent à l'atelier de formation (preuve : photo du poste, déclaration au dossier)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: decharge-mesuree, texte: "Décharge de la réserve d'énergie mesurée avant manipulation (preuve : capture ou photo de la mesure)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: double-sauvegarde, texte: "Double sauvegarde mémoire avec empreintes identiques (preuve : empreintes au dossier)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: memoire-evenements, texte: "Mémoire d'événements notée sans modification (preuve : lecture avant / après)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: charges-sourcees, texte: "Charges de substitution d'origine sourcée, valeur et source (preuve : fiche source)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: alimentation-limitee, texte: "Alimentation limitée, limite écrite avant mise sous tension (preuve : photo du réglage, ligne du protocole)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}
+      - {id: simulateurs-vehicule, texte: "Sur véhicule : tous les allumeurs remplacés par des simulateurs avant mise sous tension d'un calculateur d'airbag réparé (preuve : photos, liste des connecteurs) ; sans objet hors véhicule", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve, sans_objet_possible: true}
+      - {id: essais-vehicule, texte: "Sur véhicule : essais de freinage statiques avant tout déplacement (ABS / ESP), calibrations constructeur faites (direction) (preuve : rapport de l'outil de diagnostic) ; sans objet hors véhicule", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve, sans_objet_possible: true}
+      - {id: criteres-arret, texte: "Critères d'arrêt écrits avant l'essai (preuve : ligne du protocole)", poids: 0, eliminatoire_si: Critère non respecté ou sans preuve}

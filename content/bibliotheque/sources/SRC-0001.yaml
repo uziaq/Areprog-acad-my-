@@ -1,0 +1,11 @@
+# Ouvrage de référence principal (docs/pedagogie/05-ressources-documentaires.md).
+# Section citée dans les cours : chapitre 1 « Foundations », §1.2 (tension, courant, résistance).
+id: SRC-0001
+titre: The Art of Electronics (3e édition)
+editeur: Cambridge University Press
+reference: "P. Horowitz, W. Hill, ISBN 978-0-521-80926-9"
+revision: "3e édition, 2015"
+date_consultation: 2026-11-13
+type: ouvrage
+licence: lien_seulement
+lien: https://artofelectronics.net/

@@ -1,0 +1,11 @@
+- id: S02-Q001
+  bonnes: [b]
+  explication: Le préfixe milli vaut un millième.
+  pourquoi_faux: {a: "Confusion avec le préfixe déci."}
+  source: "S02-L01#théorie"
+- id: S02-Q002
+  valeur: 22.7
+  tolerance_relative: 0.02
+  unite: mA
+  explication: Réponse fictive.
+  source: "S02-L01#théorie"

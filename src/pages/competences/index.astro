@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Competences from '../../islands/Competences.tsx';
+import { chargerSite } from '../../lib/contenu.ts';
+const { plan } = chargerSite();
+---
+<Base titre="Compétences" actif="competences">
+  <h1>Progression par compétence</h1>
+  <p class="note">
+    Chaque compétence passe par cinq étapes. Le niveau visé n'est atteint qu'après l'évaluation pratique et le jalon qui la vérifie
+    (règle du référentiel) : l'application ne l'affiche jamais avant.
+  </p>
+  <Competences client:load plan={plan} />
+</Base>

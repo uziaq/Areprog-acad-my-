@@ -1,0 +1,306 @@
+# Programme du cursus, extrait de docs/pedagogie/02-programme-41-semaines.md.
+# Source de vérité du plan : chaque semaine rédigée (parcours/…/chapitre.md) doit y figurer.
+# Les semaines non rédigées apparaissent « à venir » dans l'application.
+version: "0.3"
+domaines:
+  - {id: D1, titre: "Sécurité, méthode et organisation de l'atelier"}
+  - {id: D2, titre: "Électricité fondamentale"}
+  - {id: D3, titre: "Instruments de mesure"}
+  - {id: D4, titre: "Composants"}
+  - {id: D5, titre: "Schémas et circuits imprimés"}
+  - {id: D6, titre: "Alimentations"}
+  - {id: D7, titre: "Électronique numérique, microcontrôleurs et mémoires"}
+  - {id: D8, titre: "Réseaux de communication embarqués"}
+  - {id: D9, titre: "Microsoudure et réparation de carte"}
+  - {id: D10, titre: "Diagnostic et réparation de calculateurs"}
+modules:
+  - id: M0
+    titre: "Atelier, sécurité, méthode"
+    semaines: [S01]
+  - id: M1
+    titre: "Électricité fondamentale"
+    semaines: [S02, S03, S04, S05, S06]
+  - id: M2
+    titre: "Composants et oscilloscope"
+    semaines: [S07, S08, S09, S10, S11]
+  - id: M3
+    titre: "Schémas et circuits imprimés"
+    semaines: [S12, S13, S14]
+  - id: M4
+    titre: "Alimentations et réseau de bord"
+    semaines: [S15, S16, S17, S18]
+  - id: M5
+    titre: "Numérique, microcontrôleurs, mémoires"
+    semaines: [S19, S20, S21, S22]
+  - id: M6
+    titre: "Réseaux embarqués"
+    semaines: [S23, S24, S25]
+  - id: M7
+    titre: "Microsoudure intensive et réparation de carte"
+    semaines: [S26, S27, S28]
+  - id: M8
+    titre: "Diagnostic de calculateurs"
+    semaines: [S29, S30, S31, S32, S33, S34]
+  - id: M9
+    titre: "Calculateurs de sécurité et validation sur véhicule"
+    semaines: [S35, S36, S37, S38, S39]
+  - id: M10
+    titre: "Évaluation finale"
+    semaines: [S40, S41]
+semaines:
+  - id: S01
+    titre: "Préparer l'atelier et la méthode de travail"
+    module: M0
+    prerequis: []
+    tp: [TP-01, TP-02]
+    fil_rouge: []
+  - id: S02
+    titre: "Grandeurs, loi d'Ohm, puissance"
+    module: M1
+    prerequis: [S01]
+    tp: [TP-03]
+    fil_rouge: []
+  - id: S03
+    titre: "Kirchhoff, diviseurs, Thévenin"
+    module: M1
+    prerequis: [S02]
+    tp: [TP-04, TP-05]
+    fil_rouge: []
+  - id: S04
+    titre: "Le multimètre en profondeur"
+    module: M1
+    prerequis: [S03]
+    tp: [TP-06]
+    fil_rouge: [FR-01]
+  - id: S05
+    titre: "Condensateurs, inductances, régimes transitoires"
+    module: M1
+    prerequis: [S04]
+    tp: [TP-07]
+    fil_rouge: [FR-02]
+  - id: S06
+    titre: "Alternatif, signaux, premiers pas à l'oscilloscope"
+    module: M1
+    prerequis: [S05]
+    tp: [TP-08, TP-09]
+    fil_rouge: [FR-03]
+  - id: S07
+    titre: "Identifier et tester les composants passifs CMS"
+    module: M2
+    prerequis: [S06]
+    tp: [TP-10]
+    fil_rouge: [FR-04]
+  - id: S08
+    titre: "Diodes"
+    module: M2
+    prerequis: [S07]
+    tp: [TP-11, TP-12]
+    fil_rouge: [FR-05]
+  - id: S09
+    titre: "Transistors en commutation"
+    module: M2
+    prerequis: [S08]
+    tp: [TP-13, TP-14]
+    fil_rouge: [FR-06]
+  - id: S10
+    titre: "Amplificateur opérationnel, comparateur, référence de tension"
+    module: M2
+    prerequis: [S09]
+    tp: [TP-15, TP-16]
+    fil_rouge: [FR-07]
+  - id: S11
+    titre: "Oscilloscope approfondi"
+    module: M2
+    prerequis: [S10, S06]
+    tp: [TP-17, TP-18]
+    fil_rouge: [FR-08]
+  - id: S12
+    titre: "Lire un schéma"
+    module: M3
+    prerequis: [S11]
+    tp: [TP-19]
+    fil_rouge: [FR-09]
+  - id: S13
+    titre: "Circuit imprimé et relevé de schéma"
+    module: M3
+    prerequis: [S12]
+    tp: [TP-20]
+    fil_rouge: [FR-10]
+  - id: S14
+    titre: "Jalon 1 : consolidation et évaluation"
+    module: M3
+    prerequis: [S13]
+    tp: []
+    fil_rouge: []
+    evaluation: jalon
+  - id: S15
+    titre: "Régulateurs linéaires et LDO"
+    module: M4
+    prerequis: [S14]
+    tp: [TP-21]
+    fil_rouge: [FR-11]
+  - id: S16
+    titre: "Convertisseurs à découpage"
+    module: M4
+    prerequis: [S15]
+    tp: [TP-22]
+    fil_rouge: [FR-12]
+  - id: S17
+    titre: "Alimentation d'un calculateur automobile"
+    module: M4
+    prerequis: [S16]
+    tp: [TP-23]
+    fil_rouge: [FR-13]
+  - id: S18
+    titre: "Diagnostic d'alimentation sur carte"
+    module: M4
+    prerequis: [S17]
+    tp: [TP-24, TP-25]
+    fil_rouge: [FR-14]
+  - id: S19
+    titre: "Logique numérique"
+    module: M5
+    prerequis: [S18]
+    tp: [TP-26, TP-27]
+    fil_rouge: [FR-15]
+  - id: S20
+    titre: "Microcontrôleur : conditions de fonctionnement"
+    module: M5
+    prerequis: [S19]
+    tp: [TP-28, TP-29]
+    fil_rouge: [FR-16]
+  - id: S21
+    titre: "Mémoires EEPROM et Flash série"
+    module: M5
+    prerequis: [S20]
+    tp: [TP-30, TP-31]
+    fil_rouge: [FR-17]
+  - id: S22
+    titre: "Accès de programmation et de débogage"
+    module: M5
+    prerequis: [S21]
+    tp: [TP-32]
+    fil_rouge: [FR-18]
+  - id: S23
+    titre: "CAN : couche physique"
+    module: M6
+    prerequis: [S22]
+    tp: [TP-33, TP-34]
+    fil_rouge: [FR-19]
+  - id: S24
+    titre: "LIN, K-Line et méthode de diagnostic de bus"
+    module: M6
+    prerequis: [S23]
+    tp: [TP-35]
+    fil_rouge: [FR-20]
+  - id: S25
+    titre: "Jalon 2"
+    module: M6
+    prerequis: [S24]
+    tp: [TP-36]
+    fil_rouge: []
+    evaluation: jalon
+  - id: S26
+    titre: "Soudure CMS de précision"
+    module: M7
+    prerequis: [S25]
+    tp: [TP-37]
+    fil_rouge: []
+  - id: S27
+    titre: "Air chaud et circuits intégrés à broches"
+    module: M7
+    prerequis: [S26]
+    tp: [TP-38, TP-39]
+    fil_rouge: []
+  - id: S28
+    titre: "Réparation de carte : vernis, pistes, vias, corrosion"
+    module: M7
+    prerequis: [S27]
+    tp: [TP-40, TP-41]
+    fil_rouge: []
+  - id: S29
+    titre: "Entrées capteurs et étages de puissance"
+    module: M8
+    prerequis: [S28]
+    tp: [TP-42, TP-43]
+    fil_rouge: []
+  - id: S30
+    titre: "Méthode de diagnostic et ECU moteur"
+    module: M8
+    prerequis: [S29]
+    tp: [TP-44, TP-45]
+    fil_rouge: []
+  - id: S31
+    titre: "Calculateurs de boîte de vitesses (TCU)"
+    module: M8
+    prerequis: [S30]
+    tp: [TP-46]
+    fil_rouge: []
+  - id: S32
+    titre: "Calculateurs de carrosserie : BCM, BSI, FRM, CAS"
+    module: M8
+    prerequis: [S31]
+    tp: [TP-47, TP-48]
+    fil_rouge: []
+  - id: S33
+    titre: "Pannes intermittentes, validation et dossier"
+    module: M8
+    prerequis: [S32]
+    tp: [TP-49, TP-50]
+    fil_rouge: []
+  - id: S34
+    titre: "Jalon 3"
+    module: M8
+    prerequis: [S33]
+    tp: [TP-51]
+    fil_rouge: []
+    evaluation: jalon
+  - id: S35
+    titre: "Sécurité fonctionnelle et airbag sur banc"
+    module: M9
+    prerequis: [S34]
+    tp: [TP-52]
+    fil_rouge: []
+    protocole: renforce
+  - id: S36
+    titre: "Airbag : diagnostic et réparation"
+    module: M9
+    prerequis: [S35]
+    tp: [TP-53]
+    fil_rouge: []
+    protocole: renforce
+  - id: S37
+    titre: "Calculateurs ABS / ESP"
+    module: M9
+    prerequis: [S36]
+    tp: [TP-54, TP-55]
+    fil_rouge: []
+    protocole: renforce
+  - id: S38
+    titre: "Direction assistée électrique"
+    module: M9
+    prerequis: [S37]
+    tp: [TP-56, TP-57]
+    fil_rouge: []
+    protocole: renforce
+  - id: S39
+    titre: "Validation sur véhicule"
+    module: M9
+    prerequis: [S38]
+    tp: [TP-58, TP-59, TP-60]
+    fil_rouge: []
+    protocole: renforce
+  - id: S40
+    titre: "Évaluation finale : épreuve chronométrée"
+    module: M10
+    prerequis: [S39]
+    tp: []
+    fil_rouge: []
+    evaluation: finale
+  - id: S41
+    titre: "Évaluation finale : validation, dossier et auto-évaluation"
+    module: M10
+    prerequis: [S40]
+    tp: []
+    fil_rouge: []
+    evaluation: finale

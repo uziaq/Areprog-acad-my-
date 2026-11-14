@@ -1,0 +1,11 @@
+# Marquage des résistances : code couleur et codes des résistances CMS (3 ou 4 caractères,
+# lettre R, codes EIA-96) (cours S07). Sections citées par leur titre anglais.
+id: SRC-0015
+titre: "TN004 : Methods for Marking Values on Resistors"
+editeur: TT Electronics (BI Technologies, IRC, Welwyn)
+reference: "Technical Note TN004"
+revision: "édition 09.24"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Application-Note/TN004-Methods-for-Marking-Values-on-Resistors.pdf

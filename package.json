@@ -1,0 +1,32 @@
+{
+  "name": "areprog-academy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Application de formation privée AREPROG Academy (électronique automobile)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "npm run valider && astro build",
+    "preview": "astro preview --host",
+    "valider": "node scripts/valider-contenu.ts",
+    "check": "astro check",
+    "test": "vitest run",
+    "test:e2e": "playwright test --trace off"
+  },
+  "dependencies": {
+    "@astrojs/preact": "6.1.1",
+    "astro": "7.4.4",
+    "preact": "11.1.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.20.5",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5",
+    "yaml": "2.9.1"
+  }
+}

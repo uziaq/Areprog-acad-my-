@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S05-L03-EX01
+  valeur: 5
+  tolerance_relative: 0.01
+  unite: ms
+  explication: "τ = L / R = 0,2 / 40 = 0,005 s, soit 5 ms. Le courant final vaut 12 / 40 = 0,3 A."
+  renvoi_section: "S05-L03#la-constante-de-temps-lr"
+- id: S05-L03-EX02
+  bonnes: [a]
+  explication: "À l'ouverture, la tension induite s'inverse, la diode conduit et le courant circule dans la boucle bobine-diode jusqu'à s'éteindre : la surtension est limitée, au prix d'une décroissance plus lente. La diode ne court-circuite l'alimentation que si elle est montée à l'envers."
+  renvoi_section: "S05-L03#la-diode-de-roue-libre"
