@@ -1,0 +1,99 @@
+# Questions sans les bonnes réponses (voir reponses.yaml). Prototype : 10 questions sur 40 attendues.
+- id: S02-Q001
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L01#les-préfixes"
+  enonce: "À combien d'ohms correspond une résistance de 4,7 kΩ ?"
+  propositions:
+    - {id: a, texte: "470 Ω"}
+    - {id: b, texte: "4 700 Ω"}
+    - {id: c, texte: "47 000 Ω"}
+    - {id: d, texte: "0,0047 Ω"}
+- id: S02-Q002
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L01#les-préfixes"
+  enonce: "Combien vaut 1 mA en ampères ?"
+  propositions:
+    - {id: a, texte: "0,1 A"}
+    - {id: b, texte: "0,01 A"}
+    - {id: c, texte: "0,001 A"}
+    - {id: d, texte: "0,000 001 A"}
+- id: S02-Q003
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L01#la-loi-dohm"
+  enonce: "Une résistance de 1,5 kΩ est alimentée sous 9 V. Quel courant la traverse ?"
+  unite_attendue: mA
+- id: S02-Q004
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L01#la-loi-dohm"
+  enonce: "Un courant de 0,5 A traverse une résistance de 24 Ω. Quelle est la tension à ses bornes ?"
+  unite_attendue: V
+- id: S02-Q005
+  type: choix_unique
+  securite: false
+  competences: [D2.2]
+  section: "S02-L01#la-loi-dohm"
+  enonce: "À tension constante, on double la valeur de la résistance. Que devient le courant ?"
+  propositions:
+    - {id: a, texte: "Il double"}
+    - {id: b, texte: "Il ne change pas"}
+    - {id: c, texte: "Il est divisé par deux"}
+    - {id: d, texte: "Il est multiplié par quatre"}
+- id: S02-Q006
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L01#la-puissance"
+  enonce: "Une résistance de 56 Ω est traversée par 0,1 A. Quelle puissance dissipe-t-elle ?"
+  unite_attendue: W
+- id: S02-Q007
+  type: choix_unique
+  securite: true
+  competences: [D2.2]
+  section: "S02-L01#la-puissance"
+  enonce: "Le calcul montre qu'une résistance de puissance nominale 0,25 W devra dissiper 0,5 W. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je la garde : seule la valeur en ohms compte"}
+    - {id: b, texte: "Je choisis une résistance de même valeur et de puissance nominale nettement supérieure à 0,5 W"}
+    - {id: c, texte: "Je la garde et je surveille si elle fume"}
+    - {id: d, texte: "Je double la tension pour compenser"}
+- id: S02-Q008
+  type: choix_multiple
+  securite: false
+  competences: [D2.2]
+  section: "S02-L01#la-puissance"
+  enonce: "Quelles expressions donnent la puissance dissipée par une résistance ? (plusieurs réponses)"
+  propositions:
+    - {id: a, texte: "P = U × I"}
+    - {id: b, texte: "P = R × I²"}
+    - {id: c, texte: "P = U² / R"}
+    - {id: d, texte: "P = U / I"}
+- id: S02-Q009
+  type: choix_unique
+  securite: true
+  competences: [D2.2]
+  section: "S02-L01#la-puissance"
+  enonce: "Pendant un essai, une résistance devient très chaude et une odeur de brûlé apparaît. Quelle est la bonne réaction ?"
+  propositions:
+    - {id: a, texte: "Couper l'alimentation, laisser refroidir, puis recalculer la puissance dissipée"}
+    - {id: b, texte: "Toucher la résistance pour estimer sa température"}
+    - {id: c, texte: "Augmenter la tension pour terminer la mesure plus vite"}
+    - {id: d, texte: "Continuer : une résistance supporte toujours la chaleur"}
+- id: S02-Q010
+  type: ordonnancement
+  securite: false
+  competences: [D2.2]
+  section: "S02-L01#exemple-2--vérifier-la-puissance-dune-résistance"
+  enonce: "Remettez dans l'ordre la démarche pour vérifier qu'une résistance convient."
+  propositions:
+    - {id: a, texte: "Calculer la puissance dissipée P = U² / R"}
+    - {id: b, texte: "Relever la tension appliquée et la valeur de la résistance"}
+    - {id: c, texte: "Comparer P à la puissance nominale de la résistance"}
+    - {id: d, texte: "Conclure : la résistance convient ou doit être remplacée"}

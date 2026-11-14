@@ -1,0 +1,22 @@
+# Programme de test : un module, une semaine rédigée (S02) et une semaine d'épreuve non rédigée (S14).
+version: "0.1"
+domaines:
+  - {id: D2, titre: Domaine de test}
+modules:
+  - id: M1
+    titre: Module de test
+    semaines: [S02, S14]
+semaines:
+  - id: S02
+    titre: Chapitre de test
+    module: M1
+    prerequis: []
+    tp: [TP-03]
+    fil_rouge: []
+  - id: S14
+    titre: Jalon de test
+    module: M1
+    prerequis: [S02]
+    tp: []
+    fil_rouge: []
+    evaluation: jalon

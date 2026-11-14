@@ -1,0 +1,37 @@
+# Énoncés seulement : les solutions sont dans corrections/S02-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S02-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: Une résistance de 470 Ω est alimentée sous 12 V. Quel courant la traverse ?
+  unite_attendue: mA
+  competences: [D2.2]
+  objectif: O2
+- id: S02-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: Un courant de 20 mA traverse une résistance de 330 Ω. Quelle est la tension à ses bornes ?
+  unite_attendue: V
+  competences: [D2.2]
+  objectif: O2
+- id: S02-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: Sous 5 V, un composant résistif consomme 2 mA. Quelle est sa résistance ?
+  unite_attendue: kΩ
+  competences: [D2.2]
+  objectif: O2
+- id: S02-L01-EX04
+  version: "0.1"
+  type: calcul
+  enonce: Un multimètre affiche 0,047 A. Exprimez ce courant en milliampères.
+  unite_attendue: mA
+  competences: [D2.1]
+  objectif: O1
+- id: S02-L01-EX05
+  version: "0.2"
+  type: calcul
+  enonce: Une résistance de 100 Ω est branchée directement sous 12 V. Quelle puissance dissipe-t-elle ? (La correction la compare ensuite à une résistance de puissance nominale 0,25 W.)
+  unite_attendue: W
+  competences: [D2.2]
+  objectif: O3

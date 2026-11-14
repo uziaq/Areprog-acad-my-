@@ -1,0 +1,18 @@
+---
+import Base from '../../../layouts/Base.astro';
+import VueModule from '../../../islands/VueModule.tsx';
+import { chargerSite } from '../../../lib/contenu.ts';
+import type { PlanModule } from '../../../lib/types.ts';
+
+export function getStaticPaths() {
+  const { plan } = chargerSite();
+  return plan.modules.map((m) => ({ params: { module: m.id.toLowerCase() }, props: { module: m } }));
+}
+const { module } = Astro.props as { module: PlanModule };
+const { plan } = chargerSite();
+---
+<Base titre={`${module.id} · ${module.titre}`} actif="parcours">
+  <p class="fil"><a href="/parcours/">Parcours</a> › {module.id}</p>
+  <h1>{module.id} · {module.titre}</h1>
+  <VueModule client:load plan={plan} module={module} />
+</Base>

@@ -1,0 +1,69 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S02-Q001
+  bonnes: [b]
+  explication: "k = 1 000, donc 4,7 kΩ = 4,7 × 1 000 = 4 700 Ω."
+  pourquoi_faux:
+    a: "Facteur 100 au lieu de 1 000."
+    c: "Facteur 10 000 : la virgule a été décalée d'un rang de trop."
+    d: "Division au lieu d'une multiplication."
+  source: "S02-L01#les-préfixes"
+- id: S02-Q002
+  bonnes: [c]
+  explication: "m = 0,001, donc 1 mA = 0,001 A."
+  pourquoi_faux:
+    a: "0,1 A correspond à 100 mA."
+    b: "0,01 A correspond à 10 mA."
+    d: "0,000 001 A correspond à 1 µA (micro)."
+  source: "S02-L01#les-préfixes"
+- id: S02-Q003
+  valeur: 6
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "1,5 kΩ = 1 500 Ω. I = 9 / 1 500 = 0,006 A = 6 mA."
+  source: "S02-L01#la-loi-dohm"
+- id: S02-Q004
+  valeur: 12
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = R × I = 24 × 0,5 = 12 V."
+  source: "S02-L01#la-loi-dohm"
+- id: S02-Q005
+  bonnes: [c]
+  explication: "I = U / R : à U constant, si R double, I est divisé par deux."
+  pourquoi_faux:
+    a: "Ce serait le cas si la tension doublait, pas la résistance."
+    b: "Le courant dépend de R : il change."
+    d: "Aucune relation au carré ici entre R et I à tension constante."
+  source: "S02-L01#la-loi-dohm"
+- id: S02-Q006
+  valeur: 0.56
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = R × I² = 56 × 0,01 = 0,56 W."
+  source: "S02-L01#la-puissance"
+- id: S02-Q007
+  bonnes: [b]
+  explication: "La puissance dissipée dépasse la puissance nominale : la résistance chaufferait au-delà de ce que prévoit son fabricant. On garde la valeur en ohms et on prend une puissance nominale supérieure, avec de la marge."
+  pourquoi_faux:
+    a: "La valeur en ohms ne dit rien de la chaleur que le composant supporte."
+    c: "Attendre la fumée, c'est accepter la détérioration du composant et de la carte."
+    d: "Doubler la tension multiplie la puissance par quatre (P = U² / R)."
+  source: "S02-L01#la-puissance"
+- id: S02-Q008
+  bonnes: [a, b, c]
+  explication: "P = U × I, et avec U = R × I on obtient P = R × I² et P = U² / R."
+  pourquoi_faux:
+    d: "U / I donne une résistance (loi d'Ohm), pas une puissance."
+  source: "S02-L01#la-puissance"
+- id: S02-Q009
+  bonnes: [a]
+  explication: "On supprime d'abord la cause (couper l'alimentation), on évite la brûlure, puis on cherche pourquoi : la puissance dissipée dépasse probablement la puissance nominale."
+  pourquoi_faux:
+    b: "Risque de brûlure : un composant surchargé peut être très chaud."
+    c: "Augmenter la tension augmente la puissance dissipée."
+    d: "Chaque résistance a une puissance nominale à ne pas dépasser."
+  source: "S02-L01#la-puissance"
+- id: S02-Q010
+  ordre: [b, a, c, d]
+  explication: "On relève les données, on calcule, on compare à la puissance nominale, puis on conclut."
+  source: "S02-L01#exemple-2--vérifier-la-puissance-dune-résistance"

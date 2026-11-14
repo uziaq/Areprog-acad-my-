@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Contrôle de conformité du contenu
+        run: npm run valider
+      - name: Vérification des types
+        run: npm run check
+      - name: Tests unitaires, contenu et architecture
+        run: npm test
+      - name: Construction
+        run: npx astro build
+      - name: Navigateur pour les tests de bout en bout
+        run: npx playwright install --with-deps chromium
+      - name: Tests de bout en bout (tablette et bureau)
+        run: npm run test:e2e

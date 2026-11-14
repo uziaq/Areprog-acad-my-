@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import Historique from '../../islands/Historique.tsx';
+import { chargerSite } from '../../lib/contenu.ts';
+const site = chargerSite();
+const versions: Record<string, string> = Object.fromEntries([
+  ...site.versionsExercices,
+  ...[...site.chapitres.values()].map(({ chapitre }) => [chapitre.id, chapitre.version] as [string, string]),
+  ...[...site.tps.values()].map(({ tp }) => [tp.id, tp.version] as [string, string]),
+]);
+---
+<Base titre="Historique" actif="historique">
+  <h1>Historique des résultats</h1>
+  <Historique client:load versions={versions} />
+</Base>

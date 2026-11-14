@@ -1,0 +1,338 @@
+# Référentiel de compétences, extrait de docs/pedagogie/01-referentiel-competences.md (v0.3, 41 semaines).
+# « jalon » = semaine de l'épreuve qui vérifie la compétence (colonne « Vérifiée par » du référentiel).
+- code: D1.1
+  intitule: "Appliquer les règles de protection ESD (poste, bracelet, stockage, manipulation)"
+  domaine: D1
+  niveau_vise: N3
+  enseignee_en: [S01]
+  jalon: S34
+- code: D1.2
+  intitule: "Choisir un instrument adapté à la catégorie de mesure (CAT selon IEC 61010) et à la grandeur"
+  domaine: D1
+  niveau_vise: N3
+  enseignee_en: [S01, S04]
+  jalon: S34
+- code: D1.3
+  intitule: "Travailler en sécurité avec une alimentation de laboratoire (limitation de courant, polarité)"
+  domaine: D1
+  niveau_vise: N3
+  enseignee_en: [S01]
+  jalon: S34
+- code: D1.4
+  intitule: "Appliquer les règles de sécurité soudure : fumées, brûlures, alliages, produits chimiques"
+  domaine: D1
+  niveau_vise: N3
+  enseignee_en: [S01, S04]
+  jalon: S34
+- code: D1.5
+  intitule: "Tenir un journal d'atelier et un dossier de réparation traçable"
+  domaine: D1
+  niveau_vise: N3
+  enseignee_en: [S01]
+  jalon: S34
+- code: D1.6
+  intitule: "Appliquer une méthode de diagnostic structurée (symptôme → hypothèses → mesures → conclusion)"
+  domaine: D1
+  niveau_vise: N3
+  enseignee_en: [S01, S18, S30]
+  jalon: S34
+- code: D2.1
+  intitule: "Manipuler les grandeurs, unités, préfixes et ordres de grandeur"
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S02]
+  jalon: S14
+- code: D2.2
+  intitule: "Appliquer la loi d'Ohm et calculer une puissance dissipée"
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S02]
+  jalon: S14
+- code: D2.3
+  intitule: "Appliquer les lois de Kirchhoff, les diviseurs de tension et de courant"
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S03]
+  jalon: S14
+- code: D2.4
+  intitule: "Utiliser le théorème de Thévenin pour modéliser une source réelle"
+  domaine: D2
+  niveau_vise: N2
+  enseignee_en: [S03]
+  jalon: S14
+- code: D2.5
+  intitule: "Expliquer le comportement d'un condensateur et d'une inductance (charge, constante de temps)"
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S05]
+  jalon: S14
+- code: D2.6
+  intitule: "Caractériser un signal alternatif (période, fréquence, valeur crête, efficace, rapport cyclique)"
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S06]
+  jalon: S14
+- code: D2.7
+  intitule: "Expliquer l'impédance et le filtrage RC du premier ordre"
+  domaine: D2
+  niveau_vise: N2
+  enseignee_en: [S06]
+  jalon: S14
+- code: D3.1
+  intitule: "Mesurer tension, courant, résistance, continuité et jonction au multimètre, en connaissant ses limites (précision, effet de charge)"
+  domaine: D3
+  niveau_vise: N3
+  enseignee_en: [S04]
+  jalon: S14
+- code: D3.2
+  intitule: "Régler et utiliser une alimentation de laboratoire comme instrument de diagnostic"
+  domaine: D3
+  niveau_vise: N3
+  enseignee_en: [S01, S04, S18]
+  jalon: S14
+- code: D3.3
+  intitule: "Utiliser un oscilloscope : base de temps, calibre, couplage, déclenchement, mesures automatiques"
+  domaine: D3
+  niveau_vise: N3
+  enseignee_en: [S06, S11]
+  jalon: S14
+- code: D3.4
+  intitule: "Choisir, compenser et raccorder une sonde d'oscilloscope ; connaître le danger de la masse de sonde"
+  domaine: D3
+  niveau_vise: N3
+  enseignee_en: [S11]
+  jalon: S14
+- code: D3.5
+  intitule: "Utiliser un microscope (stéréo ou numérique) pour inspecter et documenter une carte"
+  domaine: D3
+  niveau_vise: N3
+  enseignee_en: [S07, S26]
+  jalon: S14
+- code: D3.6
+  intitule: "Utiliser un analyseur logique et une interface CAN pour observer un bus"
+  domaine: D3
+  niveau_vise: N2
+  enseignee_en: [S19, S23]
+  jalon: S25
+- code: D3.7
+  intitule: "Estimer l'incertitude d'une mesure à partir de la documentation de l'instrument"
+  domaine: D3
+  niveau_vise: N2
+  enseignee_en: [S04]
+  jalon: S14
+- code: D4.1
+  intitule: "Identifier les composants passifs traversants et CMS, leurs boîtiers et marquages"
+  domaine: D4
+  niveau_vise: N3
+  enseignee_en: [S07]
+  jalon: S14
+- code: D4.2
+  intitule: "Tester un composant passif hors circuit et en circuit, en connaissant les pièges"
+  domaine: D4
+  niveau_vise: N3
+  enseignee_en: [S07]
+  jalon: S14
+- code: D4.3
+  intitule: "Expliquer et tester les diodes (redressement, Zener, TVS, Schottky, LED)"
+  domaine: D4
+  niveau_vise: N3
+  enseignee_en: [S08]
+  jalon: S14
+- code: D4.4
+  intitule: "Expliquer et tester les transistors bipolaires et MOSFET en commutation"
+  domaine: D4
+  niveau_vise: N3
+  enseignee_en: [S09]
+  jalon: S14
+- code: D4.5
+  intitule: "Expliquer le rôle d'un AOP, d'un comparateur et d'une référence de tension"
+  domaine: D4
+  niveau_vise: N2
+  enseignee_en: [S10]
+  jalon: S14
+- code: D4.6
+  intitule: "Trouver, lire et exploiter une datasheet (valeurs max absolues, conditions de test, brochage)"
+  domaine: D4
+  niveau_vise: N3
+  enseignee_en: [S07]
+  jalon: S14
+- code: D4.7
+  intitule: "Identifier un composant de remplacement équivalent et justifier l'équivalence"
+  domaine: D4
+  niveau_vise: N2
+  enseignee_en: [S28, S30, S31, S32]
+  jalon: S34
+- code: D5.1
+  intitule: "Lire un schéma électronique : symboles, références, réseaux, alimentations, masses"
+  domaine: D5
+  niveau_vise: N3
+  enseignee_en: [S12]
+  jalon: S14
+- code: D5.2
+  intitule: "Décomposer un schéma en blocs fonctionnels"
+  domaine: D5
+  niveau_vise: N3
+  enseignee_en: [S12, S14]
+  jalon: S14
+- code: D5.3
+  intitule: "Suivre les pistes d'un circuit imprimé multicouche (vias, plans, couches)"
+  domaine: D5
+  niveau_vise: N3
+  enseignee_en: [S13]
+  jalon: S14
+- code: D5.4
+  intitule: "Relever un schéma partiel sur une carte sans documentation, en le marquant [À VÉRIFIER]"
+  domaine: D5
+  niveau_vise: N2
+  enseignee_en: [S13, S30]
+  jalon: S14
+- code: D6.1
+  intitule: "Expliquer et diagnostiquer un régulateur linéaire / LDO"
+  domaine: D6
+  niveau_vise: N3
+  enseignee_en: [S15]
+  jalon: S25
+- code: D6.2
+  intitule: "Expliquer et diagnostiquer un convertisseur à découpage (buck, boost)"
+  domaine: D6
+  niveau_vise: N2
+  enseignee_en: [S16]
+  jalon: S25
+- code: D6.3
+  intitule: "Expliquer l'alimentation d'un calculateur : bornes 30/15/31, protections d'entrée, contraintes du réseau de bord"
+  domaine: D6
+  niveau_vise: N3
+  enseignee_en: [S17]
+  jalon: S25
+- code: D6.4
+  intitule: "Localiser un court-circuit ou une surconsommation sur une carte (limitation de courant, thermique, chute de tension)"
+  domaine: D6
+  niveau_vise: N3
+  enseignee_en: [S18]
+  jalon: S25
+- code: D7.1
+  intitule: "Expliquer les niveaux logiques, portes, pull-up / pull-down, sorties push-pull et collecteur ouvert"
+  domaine: D7
+  niveau_vise: N3
+  enseignee_en: [S19]
+  jalon: S25
+- code: D7.2
+  intitule: "Vérifier les conditions de fonctionnement d'un microcontrôleur : alimentations, horloge, reset, watchdog"
+  domaine: D7
+  niveau_vise: N3
+  enseignee_en: [S20]
+  jalon: S25
+- code: D7.3
+  intitule: "Expliquer les mémoires EEPROM et Flash, leurs bus (I²C, SPI, Microwire) et leurs risques de corruption"
+  domaine: D7
+  niveau_vise: N3
+  enseignee_en: [S21]
+  jalon: S25
+- code: D7.4
+  intitule: "Lire et écrire une mémoire série hors circuit et en circuit, avec sauvegarde et vérification"
+  domaine: D7
+  niveau_vise: N3
+  enseignee_en: [S21, S27]
+  jalon: S25
+- code: D7.5
+  intitule: "Expliquer les principes des accès de débogage / programmation (JTAG, BDM, modes boot) et leurs risques matériels"
+  domaine: D7
+  niveau_vise: N2
+  enseignee_en: [S22]
+  jalon: S25
+- code: D8.1
+  intitule: "Expliquer la couche physique CAN et mesurer un bus (résistance, signaux différentiels)"
+  domaine: D8
+  niveau_vise: N3
+  enseignee_en: [S23]
+  jalon: S25
+- code: D8.2
+  intitule: "Expliquer la couche physique LIN et K-Line et observer une trame"
+  domaine: D8
+  niveau_vise: N2
+  enseignee_en: [S24]
+  jalon: S25
+- code: D8.3
+  intitule: "Diagnostiquer un défaut physique de bus (court-circuit, coupure, transceiver défaillant)"
+  domaine: D8
+  niveau_vise: N3
+  enseignee_en: [S25]
+  jalon: S25
+- code: D9.1
+  intitule: "Souder et dessouder des composants traversants et CMS passifs au fer"
+  domaine: D9
+  niveau_vise: N3
+  enseignee_en: [S04, S05, S06, S07, S08, S09, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S26]
+  jalon: S24
+- code: D9.2
+  intitule: "Déposer et reposer un circuit intégré à broches (SOIC, TSSOP, QFP) à l'air chaud"
+  domaine: D9
+  niveau_vise: N2
+  enseignee_en: [S27, S28]
+  jalon: S34
+- code: D9.3
+  intitule: "Retirer et restaurer un vernis de tropicalisation localement"
+  domaine: D9
+  niveau_vise: N2
+  enseignee_en: [S17, S27, S28]
+  jalon: S34
+- code: D9.4
+  intitule: "Réparer une piste, une pastille ou un via"
+  domaine: D9
+  niveau_vise: N2
+  enseignee_en: [S28]
+  jalon: S34
+- code: D9.5
+  intitule: "Contrôler une soudure selon des critères écrits (inspiration IPC-A-610)"
+  domaine: D9
+  niveau_vise: N3
+  enseignee_en: [S24, S26, S27, S28]
+  jalon: S34
+- code: D10.1
+  intitule: "Mettre un calculateur sous tension sur banc de façon sûre et observer son état"
+  domaine: D10
+  niveau_vise: N3
+  enseignee_en: [S18, S29, S30]
+  jalon: S34
+- code: D10.2
+  intitule: "Analyser une interface d'entrée capteur et un étage de sortie (low-side, high-side, pont en H, commande d'injecteur) et leurs protections"
+  domaine: D10
+  niveau_vise: N2
+  enseignee_en: [S09, S29]
+  jalon: S34
+- code: D10.3
+  intitule: "Conduire un diagnostic carte complet sur ECU / TCU / BCM / BSI / FRM / CAS de récupération"
+  domaine: D10
+  niveau_vise: N3
+  enseignee_en: [S30, S31, S32]
+  jalon: S34
+- code: D10.4
+  intitule: "Valider une réparation (essais fonctionnels, mesures avant / après, durée d'essai)"
+  domaine: D10
+  niveau_vise: N3
+  enseignee_en: [S33, S39]
+  jalon: S34
+- code: D10.5
+  intitule: "Rédiger un dossier de réparation traçable et réutilisable"
+  domaine: D10
+  niveau_vise: N3
+  enseignee_en: [S01, S33, S39]
+  jalon: S34
+- code: D10.6
+  intitule: "Identifier les calculateurs liés à la sécurité et appliquer le protocole renforcé (énergie stockée, absence de pyrotechnie, validation)"
+  domaine: D10
+  niveau_vise: N3
+  enseignee_en: [S17, S18, S35]
+  jalon: S40
+- code: D10.7
+  intitule: "Diagnostiquer et réparer un calculateur de sécurité (airbag, ABS / ESP, direction) de récupération et documenter une validation renforcée"
+  domaine: D10
+  niveau_vise: N2
+  enseignee_en: [S35, S36, S37, S38]
+  jalon: S40
+- code: D10.8
+  intitule: "Valider sur véhicule d'atelier un calculateur réparé avec l'outil de diagnostic (codages, apprentissages, essais constructeur)"
+  domaine: D10
+  niveau_vise: N3
+  enseignee_en: [S39]
+  jalon: S40

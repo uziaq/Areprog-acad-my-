@@ -1,0 +1,12 @@
+- code: D2.1
+  intitule: Compétence de test 1
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S02]
+  jalon: S14
+- code: D2.2
+  intitule: Compétence de test 2
+  domaine: D2
+  niveau_vise: N3
+  enseignee_en: [S02]
+  jalon: S14

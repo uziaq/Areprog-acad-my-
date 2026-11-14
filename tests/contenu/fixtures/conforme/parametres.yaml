@@ -1,0 +1,13 @@
+# Seuils d'évaluation (décision D-04, modifiable sans toucher au code).
+qcm:
+  seuil_reussite: 0.8        # 80 %
+  seuil_securite: 1          # 100 % sur les questions « sécurité »
+  questions_par_tirage: 20
+  taille_min_banque: 40
+pratique:
+  seuil_reussite: 0.7
+evaluation_finale:
+  seuil_reussite: 0.75
+heures_par_semaine: 8
+sources:
+  delai_reverification_mois: 12

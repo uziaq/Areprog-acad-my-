@@ -1,0 +1,35 @@
+- id: S02-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: Exercice fictif 1.
+  unite_attendue: mA
+  competences: [D2.2]
+  objectif: O1
+- id: S02-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: Exercice fictif 2.
+  unite_attendue: mA
+  competences: [D2.2]
+  objectif: O1
+- id: S02-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: Exercice fictif 3.
+  unite_attendue: mA
+  competences: [D2.2]
+  objectif: O1
+- id: S02-L01-EX04
+  version: "0.1"
+  type: calcul
+  enonce: Exercice fictif 4.
+  unite_attendue: mA
+  competences: [D2.2]
+  objectif: O1
+- id: S02-L01-EX05
+  version: "0.1"
+  type: calcul
+  enonce: Exercice fictif 5.
+  unite_attendue: mA
+  competences: [D2.2]
+  objectif: O3
