@@ -1,0 +1,26 @@
+# Énoncés seulement : les solutions sont dans corrections/S04-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S04-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Lecture 5,00 V sur le calibre 20 V (résolution 0,01 V), précision ±(1 % + 3). Quelle est l'incertitude ?"
+  unite_attendue: V
+  competences: [D3.7]
+  objectif: O1
+- id: S04-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Lecture 470 Ω sur le calibre 2 kΩ (résolution 1 Ω), précision ±(0,8 % + 2). Quelle est l'incertitude ?"
+  unite_attendue: Ω
+  competences: [D3.7]
+  objectif: O1
+- id: S04-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une résistance de 100 Ω ±5 % est lue 104,0 Ω, avec une incertitude de mesure de ±1,24 Ω. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Conforme"}
+    - {id: b, texte: "Non conforme"}
+    - {id: c, texte: "Non concluant"}
+  competences: [D3.7]
+  objectif: O3

@@ -1,0 +1,185 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S04-Q001
+  bonnes: [a]
+  explication: "Le convertisseur analogique-numérique mesure une tension ; résistance et courant y sont ramenés (courant connu, shunt)."
+  pourquoi_faux:
+    b: "Le courant est converti en tension par le shunt."
+    c: "La résistance se déduit d'une tension sous un courant connu."
+    d: "Un multimètre courant ne mesure pas directement la puissance."
+  source: "S04-L01#ce-quil-y-a-dans-un-multimètre"
+- id: S04-Q002
+  bonnes: [a]
+  explication: "Le courant traverse une résistance de faible valeur, le shunt ; la chute de tension à ses bornes donne le courant."
+  pourquoi_faux:
+    b: "C'est le principe d'une pince de courant, pas des bornes mA ou A."
+    c: "Aucun appareil d'atelier ne compte les électrons."
+    d: "La résistance du circuit ne donne pas le courant sans la tension."
+  source: "S04-L01#ce-quil-y-a-dans-un-multimètre"
+- id: S04-Q003
+  bonnes: [a]
+  explication: "Sur une borne de courant, l'appareil présente une très faible résistance : posé sur une source, il la met en court-circuit. Cordon dans VΩ et fonction V d'abord."
+  pourquoi_faux:
+    b: "Le sélecteur ne change pas le chemin par le shunt de la borne A."
+    c: "La borne A est un quasi court-circuit."
+    d: "Le court-circuit est immédiat, la durée n'y change rien."
+  source: "S04-L01#choisir-la-fonction-et-les-bornes"
+- id: S04-Q004
+  bonnes: [a]
+  explication: "La tension se mesure entre deux points : bornes COM et VΩ en parallèle sur le point mesuré."
+  pourquoi_faux:
+    b: "C'est le branchement de l'ampèremètre."
+    c: "La borne A sert au courant."
+    d: "C'est la règle de l'ohmmètre."
+  source: "S04-L01#choisir-la-fonction-et-les-bornes"
+- id: S04-Q005
+  bonnes: [a]
+  explication: "Une résistance se mesure circuit hors tension ; un condensateur chargé fausse la mesure et peut abîmer l'appareil."
+  pourquoi_faux:
+    b: "Une tension présente fausse la mesure de l'ohmmètre."
+    c: "La borne mA ne sert pas aux résistances."
+    d: "La mise hors tension est obligatoire."
+  source: "S04-L01#résistance-continuité-et-jonction"
+- id: S04-Q006
+  valeur: 0.1
+  tolerance_relative: 0.02
+  unite: mV
+  explication: "Résolution = pleine échelle / nombre de points = 200 / 2 000 = 0,1 mV."
+  source: "S04-L01#résolution-digits-et-points"
+- id: S04-Q007
+  valeur: 10
+  tolerance_relative: 0.02
+  unite: mV
+  explication: "40 / 4 000 = 0,01 V, soit 10 mV."
+  source: "S04-L01#résolution-digits-et-points"
+- id: S04-Q008
+  bonnes: [a]
+  explication: "Le plus petit calibre qui contient la valeur : 2 V est trop petit, 200 V donne moins de chiffres utiles."
+  pourquoi_faux:
+    b: "5 V dépasse le calibre : dépassement affiché."
+    c: "Il contient la valeur mais avec une résolution dix fois moins fine."
+    d: "Le calibre fixe la résolution et l'incertitude."
+  source: "S04-L01#exemple-1--choisir-un-calibre"
+- id: S04-Q009
+  valeur: 2.3
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "On soustrait la résistance des cordons : 2,7 − 0,4 = 2,3 Ω."
+  source: "S04-L01#résistance-continuité-et-jonction"
+- id: S04-Q010
+  bonnes: [a]
+  explication: "En circuit, l'ohmmètre voit la résistance en parallèle avec ce qui la contourne : la lecture est plus faible ou égale. Une patte dessoudée lève le doute."
+  pourquoi_faux:
+    b: "Une valeur basse en circuit n'est pas une preuve de défaut."
+    c: "L'appareil lit correctement l'association en parallèle."
+    d: "La lecture est plus faible, pas plus forte."
+  source: "S04-L01#pourquoi-une-mesure-en-circuit-peut-mentir"
+- id: S04-Q011
+  bonnes: [a]
+  explication: "Une jonction au silicium saine affiche moins de 0,7 V en direct et se comporte en circuit ouvert en inverse."
+  pourquoi_faux:
+    b: "Un court-circuit afficherait près de 0 V dans les deux sens."
+    c: "Une diode coupée afficherait un dépassement dans les deux sens."
+    d: "Ce relevé est cohérent avec une jonction."
+  source: "S04-L01#résistance-continuité-et-jonction"
+- id: S04-Q012
+  valeur: 0.08
+  tolerance_relative: 0.02
+  unite: V
+  explication: "1 % × 5,00 = 0,05 V ; 3 × 0,01 = 0,03 V ; total 0,08 V."
+  source: "S04-L02#méthode-de-calcul"
+- id: S04-Q013
+  valeur: 1.3
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "0,5 % × 220,0 = 1,1 Ω ; 2 × 0,1 = 0,2 Ω ; total 1,3 Ω."
+  source: "S04-L02#méthode-de-calcul"
+- id: S04-Q014
+  bonnes: [a]
+  explication: "Un point est une unité du dernier chiffre affiché : la partie fixe vaut n × résolution."
+  pourquoi_faux:
+    b: "Ce n'est pas un pourcentage."
+    c: "Le nombre de digits décrit l'afficheur, pas l'incertitude."
+    d: "La partie proportionnelle est celle en %."
+  source: "S04-L02#une-mesure-nest-jamais-exacte"
+- id: S04-Q015
+  bonnes: [a]
+  explication: "La partie fixe vaut n × résolution ; un petit calibre a une résolution plus fine."
+  pourquoi_faux:
+    b: "La partie proportionnelle reste la même."
+    c: "L'échauffement n'est pas en cause."
+    d: "L'exemple 5 montre une incertitude divisée par cinq."
+  source: "S04-L02#choisir-le-calibre"
+- id: S04-Q016
+  bonnes: [a]
+  explication: "Calibre 2 V : 0,000 75 + 0,002 ≈ 0,003 V. Calibre 20 V : 0,000 75 + 0,02 ≈ 0,021 V."
+  pourquoi_faux:
+    b: "Une grande pleine échelle donne une résolution grossière."
+    c: "La partie fixe change avec la résolution."
+    d: "La précision est donnée dans l'énoncé."
+  source: "S04-L02#exemple-5--le-calibre-change-tout"
+- id: S04-Q017
+  bonnes: [a]
+  explication: "Tolérance : 95 à 105 Ω. Mesure : 103,1 à 104,9 Ω, entièrement dedans."
+  pourquoi_faux:
+    b: "On compare à l'intervalle de tolérance, pas à la valeur nominale."
+    c: "L'intervalle de mesure ne chevauche aucune borne."
+    d: "L'incertitude de la mesure est donnée."
+  source: "S04-L02#conformité--tolérance-et-incertitude-ensemble"
+- id: S04-Q018
+  bonnes: [a]
+  explication: "À cheval, on ne peut pas trancher : « non concluant » est la conclusion juste."
+  pourquoi_faux:
+    b: "La valeur vraie peut être dehors."
+    c: "La valeur vraie peut être dedans."
+    d: "Le résultat non concluant est une information utile."
+  source: "S04-L02#exemple-6--un-résultat-non-concluant"
+- id: S04-Q019
+  bonnes: [a]
+  explication: "Il n'est exact que pour une sinusoïde pure ; il faut un appareil TRMS pour un signal non sinusoïdal."
+  pourquoi_faux:
+    b: "C'est le rôle d'un multimètre TRMS."
+    c: "Il n'affiche pas la crête."
+    d: "Il affiche une valeur, mais fausse."
+  source: "S04-L02#alternatif--valeur-efficace-vraie"
+- id: S04-Q020
+  valeur: 5.4545
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U lue = 6 × 10 / (1 + 10) = 5,45 V au lieu de 6 V."
+  source: "S04-L03#le-voltmètre-est-une-charge"
+- id: S04-Q021
+  bonnes: [a]
+  explication: "L'erreur dépend du rapport Rth / Rin : elle est forte quand Rth n'est plus négligeable devant Rin."
+  pourquoi_faux:
+    b: "Une batterie a une résistance interne très faible."
+    c: "Rth = 500 Ω : l'effet est négligeable."
+    d: "Il dépend de Rth."
+  source: "S04-L03#exemple-7--effet-de-charge-sur-un-diviseur-à-haute-impédance"
+- id: S04-Q022
+  valeur: 9
+  tolerance_relative: 0.02
+  unite: MΩ
+  explication: "Rin = Rth × U lue / (Eth − U lue) = 1 × 4,5 / 0,5 = 9 MΩ."
+  source: "S04-L03#déduire-rin-dune-mesure"
+- id: S04-Q023
+  valeur: 254.78
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "I = 12 / (47 + 0,1) = 12 / 47,1 = 0,255 A, soit 255 mA (sans multimètre : 255,3 mA)."
+  source: "S04-L03#exemple-9--lerreur-due-au-shunt"
+- id: S04-Q024
+  bonnes: [a]
+  explication: "On calcule le courant attendu avant de brancher ; en cas de doute, borne et calibre A les plus élevés."
+  pourquoi_faux:
+    b: "La borne mA risque de griller son fusible."
+    c: "En parallèle, un ampèremètre fait court-circuit."
+    d: "Le fusible protège l'appareil et l'opérateur : on ne le retire jamais."
+  source: "S04-L03#ne-pas-détruire-le-fusible"
+- id: S04-Q025
+  bonnes: [a]
+  explication: "Un fusible à haute énergie mal choisi peut ne pas couper un défaut : seul le modèle prescrit par le fabricant convient."
+  pourquoi_faux:
+    b: "Le calibre en ampères ne suffit pas : pouvoir de coupure et tension comptent."
+    c: "Un calibre plus élevé laisse passer un défaut."
+    d: "Supprime toute protection : interdit."
+  source: "S04-L03#ne-pas-détruire-le-fusible"

@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S04-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S04-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un multimètre affiche 2,1 Ω aux bornes d'une résistance, et 0,4 Ω quand on met ses pointes en contact. Quelle est la résistance réelle ?"
+  unite_attendue: Ω
+  competences: [D3.1]
+  objectif: O3
+- id: S04-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un multimètre de 4 000 points est sur son calibre 40 V. Quelle est sa résolution ?"
+  unite_attendue: V
+  competences: [D3.1]
+  objectif: O2
+- id: S04-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Sur une carte, une résistance de 4,7 kΩ est contournée par une autre résistance de 4,7 kΩ reliée à ses deux bornes. Que lit l'ohmmètre en circuit ?"
+  unite_attendue: kΩ
+  competences: [D3.1]
+  objectif: O3

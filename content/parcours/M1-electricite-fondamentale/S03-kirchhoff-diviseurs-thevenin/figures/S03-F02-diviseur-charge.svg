@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 230" width="340" height="230" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="13">
+  <!-- Figure réalisée par AREPROG : diviseur de tension chargé, sans valeur. -->
+  <text x="10" y="24" fill="currentColor" stroke="none" font-weight="600">Ue</text>
+  <circle cx="60" cy="20" r="4" fill="currentColor" stroke="none" />
+  <path d="M60 24 V40 H120 V50" />
+  <rect x="110" y="50" width="20" height="44" />
+  <text x="138" y="78" fill="currentColor" stroke="none">R1</text>
+  <path d="M120 94 V120" />
+  <circle cx="120" cy="120" r="5" fill="currentColor" stroke="none" />
+  <path d="M120 120 V136" />
+  <rect x="110" y="136" width="20" height="44" />
+  <text x="138" y="164" fill="currentColor" stroke="none">R2</text>
+  <path d="M120 180 V204 H260" />
+  <!-- sortie et charge -->
+  <path d="M125 120 H260 V136" />
+  <text x="180" y="112" fill="currentColor" stroke="none" font-weight="600">Us</text>
+  <rect x="250" y="136" width="20" height="44" stroke-dasharray="4 3" />
+  <text x="278" y="164" fill="currentColor" stroke="none">RL</text>
+  <path d="M260 180 V204" />
+  <line x1="105" y1="214" x2="135" y2="214" />
+  <line x1="111" y1="220" x2="129" y2="220" />
+  <path d="M120 204 V214" />
+  <text x="200" y="226" fill="currentColor" stroke="none" font-size="12">Charge (pointillé)</text>
+</svg>

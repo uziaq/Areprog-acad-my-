@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S06-L03-EX01
+  bonnes: [a]
+  explication: "Période : 1 / 2 000 = 0,5 ms. Quatre périodes : 2 ms, à répartir sur 10 divisions, soit 0,2 ms/div (l'écran montre 2 ms). À 2 ms/div on verrait 40 périodes, à 20 µs/div moins d'une demi-période."
+  renvoi_section: "S06-L03#le-système-horizontal"
+- id: S06-L03-EX02
+  valeur: 5
+  tolerance_relative: 0.01
+  unite: kHz
+  explication: "T = 4 × 50 µs = 200 µs ; f = 1 / 0,000 2 = 5 000 Hz, soit 5 kHz."
+  renvoi_section: "S06-L03#exemple-8--lire-une-période-et-une-fréquence"

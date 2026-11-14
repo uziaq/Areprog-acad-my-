@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S03-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S03-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une pile affiche 9,3 V à vide et 8,9 V sous une résistance de 47 Ω. Quelle est sa résistance interne ?"
+  unite_attendue: Ω
+  competences: [D2.4]
+  objectif: O1
+- id: S03-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un diviseur R1 = R2 = 22 kΩ est alimenté sous 12 V. Quelle est la résistance de Thévenin vue de sa sortie ?"
+  unite_attendue: kΩ
+  competences: [D2.4]
+  objectif: O2
+- id: S03-L03-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Le même diviseur (Eth = 6 V, Rth = 11 kΩ) alimente une charge de 100 kΩ. Quelle tension reçoit la charge ?"
+  unite_attendue: V
+  competences: [D2.4, D2.3]
+  objectif: O2

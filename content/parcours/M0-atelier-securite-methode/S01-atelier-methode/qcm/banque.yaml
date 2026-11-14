@@ -1,0 +1,256 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S01-Q001
+  type: choix_unique
+  securite: false
+  competences: [D1.1]
+  section: "S01-L01#comment-naît-une-charge-électrostatique"
+  enonce: "Comment naît une charge électrostatique par frottement ?"
+  propositions:
+    - {id: a, texte: "Deux matériaux en contact échangent des électrons, puis gardent cette charge en se séparant"}
+    - {id: b, texte: "Un courant venu du secteur s'accumule dans les matériaux isolants"}
+    - {id: c, texte: "La chaleur du frottement crée des électrons supplémentaires"}
+    - {id: d, texte: "Elle ne naît que par temps humide"}
+- id: S01-Q002
+  type: choix_unique
+  securite: false
+  competences: [D1.1]
+  section: "S01-L01#comment-une-décharge-endommage-un-composant"
+  enonce: "Qu'appelle-t-on une défaillance latente après une décharge électrostatique ?"
+  propositions:
+    - {id: a, texte: "Un composant détruit qui ne fonctionne plus du tout au premier essai"}
+    - {id: b, texte: "Un composant affaibli qui fonctionne encore, puis tombe en panne après une période de fonctionnement normal"}
+    - {id: c, texte: "Une décharge qui n'a laissé aucune trace et aucune conséquence"}
+    - {id: d, texte: "Une panne due à l'humidité de l'atelier"}
+- id: S01-Q003
+  type: choix_unique
+  securite: false
+  competences: [D1.1]
+  section: "S01-L01#conducteur-dissipatif-isolant"
+  enonce: "Un matériau présente une résistance de 5 × 10⁸ Ω. Dans quelle classe se range-t-il ?"
+  propositions:
+    - {id: a, texte: "Conducteur"}
+    - {id: b, texte: "Dissipatif"}
+    - {id: c, texte: "Isolant"}
+- id: S01-Q004
+  type: choix_unique
+  securite: false
+  competences: [D1.1]
+  section: "S01-L01#conducteur-dissipatif-isolant"
+  enonce: "Un matériau présente une résistance de 1 × 10² Ω. Dans quelle classe se range-t-il ?"
+  propositions:
+    - {id: a, texte: "Conducteur"}
+    - {id: b, texte: "Dissipatif"}
+    - {id: c, texte: "Isolant"}
+- id: S01-Q005
+  type: choix_unique
+  securite: true
+  competences: [D1.1]
+  section: "S01-L01#conducteur-dissipatif-isolant"
+  enonce: "Un gobelet en plastique est posé sur le tapis, à côté d'une carte. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je le relie au point de terre commun pour le décharger"}
+    - {id: b, texte: "Je l'écarte de la zone protégée"}
+    - {id: c, texte: "Je le laisse : le tapis est relié à la terre"}
+    - {id: d, texte: "Je le frotte avec un chiffon pour enlever sa charge"}
+- id: S01-Q006
+  type: choix_unique
+  securite: true
+  competences: [D1.1]
+  section: "S01-L01#organisation-de-la-zone-protégée"
+  enonce: "À quel moment mettez-vous le bracelet antistatique ?"
+  propositions:
+    - {id: a, texte: "Avant d'ouvrir le sachet de la carte"}
+    - {id: b, texte: "Juste avant de souder"}
+    - {id: c, texte: "Seulement par temps sec"}
+    - {id: d, texte: "Après avoir sorti la carte, pour la poser sur le tapis"}
+- id: S01-Q007
+  type: choix_unique
+  securite: true
+  competences: [D1.2]
+  section: "S01-L02#les-catégories-de-mesure"
+  enonce: "D'après la note Fluke étudiée, un tableau de distribution d'un bâtiment relève de quelle catégorie de mesure ?"
+  propositions:
+    - {id: a, texte: "CAT I"}
+    - {id: b, texte: "CAT II"}
+    - {id: c, texte: "CAT III"}
+    - {id: d, texte: "Aucune : les catégories ne concernent que les prises"}
+- id: S01-Q008
+  type: choix_unique
+  securite: true
+  competences: [D1.2]
+  section: "S01-L02#le-piège-des-bornes-de-courant"
+  enonce: "Les cordons sont restés dans la borne de courant, le sélecteur est sur volts, et vous posez les pointes aux bornes d'une batterie. Que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "Le multimètre affiche la tension : seul le sélecteur compte"}
+    - {id: b, texte: "Le multimètre affiche zéro, sans conséquence"}
+    - {id: c, texte: "Le multimètre se comporte comme un court-circuit aux bornes de la batterie"}
+    - {id: d, texte: "Le multimètre mesure automatiquement le courant de la batterie"}
+- id: S01-Q009
+  type: choix_unique
+  securite: true
+  competences: [D1.2]
+  section: "S01-L02#les-catégories-de-mesure"
+  enonce: "Quelle catégorie et quelle tension doivent avoir les cordons de mesure d'un multimètre CAT III 600 V ?"
+  propositions:
+    - {id: a, texte: "N'importe lesquelles : seule la catégorie du multimètre compte"}
+    - {id: b, texte: "Au moins CAT III 600 V"}
+    - {id: c, texte: "CAT I suffit, car les cordons ne contiennent pas d'électronique"}
+    - {id: d, texte: "Une catégorie plus basse, pour compenser la longueur des cordons"}
+- id: S01-Q010
+  type: calcul
+  securite: false
+  competences: [D1.3, D3.2]
+  section: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+  enonce: "Une alimentation est réglée sur 15 V avec une limite de 0,3 A. Quelle est la résistance de basculement ?"
+  unite_attendue: Ω
+- id: S01-Q011
+  type: calcul
+  securite: false
+  competences: [D1.3, D3.2]
+  section: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+  enonce: "Une alimentation réglée sur 9 V et 0,05 A alimente une résistance de 100 Ω. Quelle tension mesure-t-on aux bornes de la résistance ?"
+  unite_attendue: V
+- id: S01-Q012
+  type: calcul
+  securite: false
+  competences: [D1.3, D3.2]
+  section: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+  enonce: "Une alimentation réglée sur 5 V et 1 A alimente une résistance de 100 Ω. Quel courant affiche-t-elle ?"
+  unite_attendue: mA
+- id: S01-Q013
+  type: choix_unique
+  securite: true
+  competences: [D1.3]
+  section: "S01-L02#exemple-4--choisir-une-limite-de-courant"
+  enonce: "À la mise sous tension d'une carte d'essai, l'alimentation passe immédiatement en courant constant. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "J'augmente la limite jusqu'à ce que l'alimentation repasse en tension constante"}
+    - {id: b, texte: "Je coupe la sortie et je cherche pourquoi la carte consomme plus que prévu"}
+    - {id: c, texte: "Je retire la limitation pour voir le vrai courant"}
+    - {id: d, texte: "J'attends que la carte chauffe pour repérer le composant fautif au toucher"}
+- id: S01-Q014
+  type: choix_unique
+  securite: true
+  competences: [D1.3]
+  section: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+  enonce: "Quand réglez-vous la limite de courant d'une alimentation de TP ?"
+  propositions:
+    - {id: a, texte: "Avant de brancher la carte, et je l'écris au journal"}
+    - {id: b, texte: "Après la mise sous tension, si quelque chose chauffe"}
+    - {id: c, texte: "Jamais : la limite fausse les mesures"}
+    - {id: d, texte: "Seulement pour les calculateurs réels, à partir de S18"}
+- id: S01-Q015
+  type: choix_multiple
+  securite: true
+  competences: [D1.4]
+  section: "S01-L02#fumées-alliages-produits-et-chaleur"
+  enonce: "Quelles règles du cursus s'appliquent à une séance de soudure ? (plusieurs réponses)"
+  propositions:
+    - {id: a, texte: "Aspirer les fumées à la source, au plus près de la panne"}
+    - {id: b, texte: "Se laver les mains après la séance"}
+    - {id: c, texte: "Lire la fiche de données de sécurité de chaque produit avant son premier usage"}
+    - {id: d, texte: "Boire et manger au poste si l'on porte des gants"}
+- id: S01-Q016
+  type: choix_unique
+  securite: true
+  competences: [D1.4]
+  section: "S01-L02#fumées-alliages-produits-et-chaleur"
+  enonce: "Vous travaillez à l'air chaud près d'un condensateur électrolytique. Quelle est la règle ?"
+  propositions:
+    - {id: a, texte: "Aucune précaution : un condensateur supporte l'air chaud"}
+    - {id: b, texte: "Ne pas approcher l'air chaud du condensateur sans le protéger"}
+    - {id: c, texte: "Chauffer le condensateur en premier pour le sécher"}
+    - {id: d, texte: "Toucher le condensateur pour vérifier qu'il ne chauffe pas trop"}
+- id: S01-Q017
+  type: choix_unique
+  securite: false
+  competences: [D1.5]
+  section: "S01-L03#la-page-de-journal-datelier"
+  enonce: "Que doit contenir la page de journal avant la première mise sous tension d'un TP ?"
+  propositions:
+    - {id: a, texte: "Rien : on écrit tout à la fin de la séance"}
+    - {id: b, texte: "Les réglages, dont la tension et la limite de courant de l'alimentation, et les valeurs théoriques calculées"}
+    - {id: c, texte: "Seulement la date"}
+    - {id: d, texte: "Les mesures, recopiées depuis un TP précédent"}
+- id: S01-Q018
+  type: calcul
+  securite: false
+  competences: [D1.5]
+  section: "S01-L03#exemple-5--documenter-un-écart"
+  enonce: "La valeur théorique est 5 V ; le multimètre affiche 5,15 V. Quel est l'écart absolu (mesure moins théorique) ?"
+  unite_attendue: V
+- id: S01-Q019
+  type: choix_unique
+  securite: false
+  competences: [D1.5, D10.5]
+  section: "S01-L03#étiqueter-ce-que-lon-écrit"
+  enonce: "Vous avez relevé une tension sur une seule carte de récupération et vous voulez la noter dans la base de connaissances. Quelle étiquette portez-vous ?"
+  propositions:
+    - {id: a, texte: "[SOURCÉ]"}
+    - {id: b, texte: "[EXEMPLE]"}
+    - {id: c, texte: "[À VÉRIFIER]"}
+    - {id: d, texte: "Aucune : c'est une mesure"}
+- id: S01-Q020
+  type: choix_unique
+  securite: false
+  competences: [D1.5, D10.5]
+  section: "S01-L03#étiqueter-ce-que-lon-écrit"
+  enonce: "Dans un dossier de réparation, vous écrivez une cause possible que vous n'avez pas encore mesurée. Quelle étiquette ?"
+  propositions:
+    - {id: a, texte: "[HYPOTHÈSE]"}
+    - {id: b, texte: "[SOURCÉ]"}
+    - {id: c, texte: "[EXEMPLE]"}
+    - {id: d, texte: "Aucune : c'est mon expérience"}
+- id: S01-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S01-L03#le-dossier-de-réparation"
+  enonce: "Comment désigne-t-on un véhicule d'atelier dans un dossier de réparation ?"
+  propositions:
+    - {id: a, texte: "Par son numéro d'identification (VIN)"}
+    - {id: b, texte: "Par sa plaque d'immatriculation"}
+    - {id: c, texte: "Par son code interne, par exemple VEH-01"}
+    - {id: d, texte: "Par le nom de son propriétaire"}
+- id: S01-Q022
+  type: ordonnancement
+  securite: false
+  competences: [D1.6]
+  section: "S01-L03#la-méthode-de-diagnostic-en-cinq-étapes"
+  enonce: "Un calculateur arrive avec un symptôme. Remettez la démarche dans l'ordre."
+  propositions:
+    - {id: a, texte: "Remplacer le composant mis en cause, refaire les mesures, compléter le dossier"}
+    - {id: b, texte: "Lister les causes possibles, chacune étiquetée [HYPOTHÈSE]"}
+    - {id: c, texte: "Constater soi-même le symptôme décrit"}
+    - {id: d, texte: "Retenir la cause confirmée par une mesure"}
+    - {id: e, texte: "Faire la mesure qui départage le plus d'hypothèses"}
+- id: S01-Q023
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S01-L03#la-méthode-de-diagnostic-en-cinq-étapes"
+  enonce: "La mesure infirme votre hypothèse la plus probable. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je remplace quand même le composant, par précaution"}
+    - {id: b, texte: "Je reviens à l'étape des hypothèses et je choisis la mesure suivante"}
+    - {id: c, texte: "Je conclus que la carte est irréparable"}
+    - {id: d, texte: "Je refais la même mesure jusqu'à obtenir le résultat attendu"}
+- id: S01-Q024
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S01-L03#le-test-de-positionnement-en-mathématiques"
+  enonce: "Test de positionnement : combien vaut log₁₀(1 000) ?"
+  propositions:
+    - {id: a, texte: "3"}
+    - {id: b, texte: "10"}
+    - {id: c, texte: "100"}
+    - {id: d, texte: "0,001"}
+- id: S01-Q025
+  type: calcul
+  securite: false
+  competences: [D2.1]
+  section: "S01-L03#le-test-de-positionnement-en-mathématiques"
+  enonce: "Test de positionnement : exprimez 2,2 × 10³ Ω en ohms, sans puissance de 10."
+  unite_attendue: Ω

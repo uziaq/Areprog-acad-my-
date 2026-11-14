@@ -1,0 +1,29 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S01-L03-EX01
+  ordre: [c, e, a, d, b]
+  explication: "Symptôme, hypothèses, mesures, conclusion, puis intervention. Intervenir avant d'avoir une preuve, c'est remplacer des composants au hasard."
+  renvoi_section: "S01-L03#la-méthode-de-diagnostic-en-cinq-étapes"
+- id: S01-L03-EX02
+  valeur: -0.3
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Écart = mesure − théorique = 11,7 − 12 = −0,3 V. Le signe compte : il dit si la mesure est au-dessus ou au-dessous de la valeur attendue. Écart relatif : −0,3 / 12 = −2,5 %."
+  renvoi_section: "S01-L03#la-page-de-journal-datelier"
+- id: S01-L03-EX03
+  valeur: 0.75
+  tolerance_relative: 0.02
+  unite: A
+  explication: "Un relais : 0,45 / 3 = 0,15 A. Cinq relais : 0,15 × 5 = 0,75 A."
+  renvoi_section: "S01-L03#exemple-6--une-règle-de-trois-datelier"
+- id: S01-L03-EX04
+  valeur: 20
+  tolerance_relative: 0.01
+  unite: Ω
+  explication: "3 × R + 40 = 100, donc 3 × R = 100 − 40 = 60, donc R = 60 / 3 = 20 Ω. Vérification : 3 × 20 + 40 = 100."
+  renvoi_section: "S01-L03#le-test-de-positionnement-en-mathématiques"
+- id: S01-L03-EX05
+  valeur: 4.7
+  tolerance_relative: 0.01
+  unite: mA
+  explication: "10⁻³ correspond au préfixe milli : 4,7 × 10⁻³ A = 4,7 mA."
+  renvoi_section: "S01-L03#le-test-de-positionnement-en-mathématiques"

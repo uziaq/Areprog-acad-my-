@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S05-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S05-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une bobine de 200 mH, de résistance 40 Ω, est alimentée sous 12 V. Quelle est la constante de temps du circuit ?"
+  unite_attendue: ms
+  competences: [D2.5]
+  objectif: O1
+- id: S05-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un relais est commandé par un transistor, avec une diode de roue libre en parallèle sur sa bobine. Que se passe-t-il quand le transistor s'ouvre ?"
+  propositions:
+    - {id: a, texte: "Le courant de la bobine continue dans la diode et s'éteint progressivement ; la surtension est limitée"}
+    - {id: b, texte: "Le courant s'arrête instantanément et la diode reste bloquée"}
+    - {id: c, texte: "La diode court-circuite l'alimentation"}
+    - {id: d, texte: "La bobine produit une surtension de plusieurs centaines de volts que la diode laisse passer"}
+  competences: [D2.5]
+  objectif: O2

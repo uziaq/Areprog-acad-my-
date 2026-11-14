@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" width="400" height="230" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure de la charge d'un condensateur, U(t) = E(1 − e^(−t/τ)), échelle en τ. -->
+  <path d="M50 190 H380 M50 190 V20" />
+  <path d="M50 40 H380" stroke-dasharray="4 4" stroke-width="1" />
+  <text x="22" y="44" fill="currentColor" stroke="none">E</text>
+  <path d="M50 190 C 90 110, 130 70, 170 58 S 300 42, 380 41" />
+  <path d="M50 95 H110 V190" stroke-dasharray="3 3" stroke-width="1" />
+  <text x="6" y="99" fill="currentColor" stroke="none">63 %</text>
+  <text x="104" y="206" fill="currentColor" stroke="none">τ</text>
+  <text x="160" y="206" fill="currentColor" stroke="none">2τ</text>
+  <text x="220" y="206" fill="currentColor" stroke="none">3τ</text>
+  <text x="280" y="206" fill="currentColor" stroke="none">4τ</text>
+  <text x="340" y="206" fill="currentColor" stroke="none">5τ</text>
+  <text x="300" y="224" fill="currentColor" stroke="none">temps</text>
+  <text x="56" y="16" fill="currentColor" stroke="none">tension du condensateur</text>
+</svg>

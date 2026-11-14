@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S04-L02-EX01
+  valeur: 0.08
+  tolerance_relative: 0.02
+  unite: V
+  explication: "1 % × 5,00 = 0,05 V ; 3 × 0,01 = 0,03 V ; incertitude 0,08 V, soit de 4,92 à 5,08 V."
+  renvoi_section: "S04-L02#méthode-de-calcul"
+- id: S04-L02-EX02
+  valeur: 5.76
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "0,8 % × 470 = 3,76 Ω ; 2 × 1 = 2 Ω ; incertitude 5,76 Ω, soit de 464,24 à 475,76 Ω."
+  renvoi_section: "S04-L02#méthode-de-calcul"
+- id: S04-L02-EX03
+  bonnes: [c]
+  explication: "Tolérance : de 95 à 105 Ω. Intervalle de mesure : de 102,76 à 105,24 Ω, à cheval sur la borne 105 Ω : le résultat est non concluant. Il faut un instrument plus précis ou une autre méthode."
+  renvoi_section: "S04-L02#conformité--tolérance-et-incertitude-ensemble"

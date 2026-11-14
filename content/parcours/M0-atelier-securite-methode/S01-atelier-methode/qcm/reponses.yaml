@@ -1,0 +1,183 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S01-Q001
+  bonnes: [a]
+  explication: "Au contact puis à la séparation, des électrons passent d'un matériau à l'autre : l'un devient positif, l'autre négatif (effet triboélectrique)."
+  pourquoi_faux:
+    b: "Le secteur n'intervient pas : la charge naît du seul contact entre matériaux."
+    c: "Le frottement ne crée pas d'électrons : il en transfère."
+    d: "C'est l'inverse : l'air sec favorise l'accumulation de charge."
+  source: "SRC-0002 §Static Electricity: Creating Charge"
+- id: S01-Q002
+  bonnes: [b]
+  explication: "La défaillance latente laisse un composant affaibli qui fonctionne encore puis tombe en panne plus tard, avec une durée de vie réduite. C'est pourquoi une carte qui « marche » après une manipulation sans protection n'est pas une preuve."
+  pourquoi_faux:
+    a: "C'est la défaillance franche (catastrophic failure), visible au premier essai."
+    c: "Une décharge sans conséquence n'est pas une défaillance."
+    d: "L'humidité influe sur la charge, mais la défaillance latente est un dommage causé par la décharge."
+  source: "SRC-0002 §ESD Damage: How Devices Fail"
+- id: S01-Q003
+  bonnes: [b]
+  explication: "5 × 10⁸ Ω est compris entre 1 × 10⁴ Ω et 1 × 10¹¹ Ω : le matériau est dissipatif."
+  pourquoi_faux:
+    a: "Un conducteur est en dessous de 1 × 10⁴ Ω."
+    c: "Un isolant est à 1 × 10¹¹ Ω ou plus."
+  source: "S01-L01#conducteur-dissipatif-isolant"
+- id: S01-Q004
+  bonnes: [a]
+  explication: "1 × 10² Ω est inférieur à 1 × 10⁴ Ω : le matériau est conducteur."
+  pourquoi_faux:
+    b: "Dissipatif commence à 1 × 10⁴ Ω."
+    c: "Isolant commence à 1 × 10¹¹ Ω."
+  source: "S01-L01#conducteur-dissipatif-isolant"
+- id: S01-Q005
+  bonnes: [b]
+  explication: "Un gobelet en plastique est isolant : relié à la terre, il garde quand même sa charge. On l'écarte de la zone protégée."
+  pourquoi_faux:
+    a: "Un isolant ne s'écoule pas vers la terre : la liaison ne sert à rien."
+    c: "Le tapis évacue la charge des conducteurs posés dessus, pas celle d'un isolant."
+    d: "Frotter un isolant crée de la charge au lieu de l'enlever."
+  source: "S01-L01#conducteur-dissipatif-isolant"
+- id: S01-Q006
+  bonnes: [a]
+  explication: "Le bracelet se met et se relie avant d'ouvrir le sachet, et s'enlève après l'avoir refermé : la carte nue n'est jamais touchée par une personne non reliée à la terre."
+  pourquoi_faux:
+    b: "La carte a déjà été manipulée sans protection avant la soudure."
+    c: "Le poste s'utilise à chaque séance ; l'air sec augmente seulement le risque."
+    d: "Sortir la carte du sachet, c'est déjà la manipuler."
+  source: "S01-L01#organisation-de-la-zone-protégée"
+- id: S01-Q007
+  bonnes: [c]
+  explication: "La note Fluke range la distribution et les installations fixes, dont les tableaux, en CAT III."
+  pourquoi_faux:
+    a: "CAT I concerne l'électronique protégée."
+    b: "CAT II concerne les appareils branchés sur une prise et les prises."
+    d: "Les catégories couvrent toute l'installation, de l'électronique protégée (CAT I) à l'origine de l'installation (CAT IV)."
+  source: "SRC-0004 §Overvoltage installation categories"
+- id: S01-Q008
+  bonnes: [c]
+  explication: "L'entrée courant a une résistance très faible : aux bornes d'une source, l'appareil devient un court-circuit, quel que soit le sélecteur. D'où le réflexe : regarder les bornes avant chaque mesure de tension."
+  pourquoi_faux:
+    a: "Les bornes déterminent le circuit interne utilisé, pas seulement le sélecteur."
+    b: "Un court-circuit sur une batterie peut faire griller le fusible, l'appareil et brûler l'opérateur."
+    d: "On ne mesure un courant qu'en série, circuit ouvert ; aux bornes d'une source, c'est un court-circuit."
+  source: "SRC-0004 §Protection against two major electrical hazards"
+- id: S01-Q009
+  bonnes: [b]
+  explication: "Les cordons font partie de la chaîne de protection : ils doivent avoir au moins la catégorie et la tension du multimètre."
+  pourquoi_faux:
+    a: "Un cordon sous-dimensionné devient le point faible de la protection."
+    c: "Les cordons ont leur propre catégorie, qui doit suivre celle de l'appareil."
+    d: "Une catégorie plus basse protège moins, quelle que soit la longueur."
+  source: "SRC-0004 §The bottom line"
+- id: S01-Q010
+  valeur: 50
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "Rc = U réglée / I limite = 15 / 0,3 = 50 Ω."
+  source: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+- id: S01-Q011
+  valeur: 5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Rc = 9 / 0,05 = 180 Ω. La charge de 100 Ω est plus petite : mode CC, I = 0,05 A, U = 0,05 × 100 = 5 V. Répondre 9 V, c'est oublier la limitation."
+  source: "S01-L02#exemple-3--prévoir-le-mode-dune-alimentation"
+- id: S01-Q012
+  valeur: 50
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "Rc = 5 / 1 = 5 Ω. La charge de 100 Ω est plus grande : mode CV, U = 5 V, I = 5 / 100 = 0,05 A = 50 mA. La limite de 1 A n'est pas atteinte."
+  source: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+- id: S01-Q013
+  bonnes: [b]
+  explication: "Le passage en CC signale que la carte demande plus que prévu : c'est une information de diagnostic. On coupe et on cherche la cause."
+  pourquoi_faux:
+    a: "Augmenter la limite envoie plus d'énergie dans un éventuel défaut."
+    c: "Sans limitation, un court-circuit reçoit tout ce que la source peut fournir."
+    d: "Chercher au toucher expose aux brûlures et laisse le défaut s'aggraver."
+  source: "S01-L02#exemple-4--choisir-une-limite-de-courant"
+- id: S01-Q014
+  bonnes: [a]
+  explication: "La limite se règle avant de brancher et s'écrit au journal : une alimentation non limitée ou une limite non écrite est une faute éliminatoire."
+  pourquoi_faux:
+    b: "Après la mise sous tension, le défaut a déjà reçu un courant non limité."
+    c: "La limite ne fausse pas une mesure tant que la charge reste en CV."
+    d: "La règle vaut pour tous les TP alimentés, dès S1."
+  source: "S01-L02#lalimentation-de-laboratoire--tension-constante-et-courant-constant"
+- id: S01-Q015
+  bonnes: [a, b, c]
+  explication: "Aspiration à la source, lavage des mains après la séance et lecture des fiches de données de sécurité sont les règles du cursus."
+  pourquoi_faux:
+    d: "Ni nourriture ni boisson au poste, gants ou non : les alliages au plomb et les résidus de flux se transfèrent par les mains et les objets."
+  source: "S01-L02#fumées-alliages-produits-et-chaleur"
+- id: S01-Q016
+  bonnes: [b]
+  explication: "L'air chaud ne s'approche pas des condensateurs électrolytiques ni des connecteurs sans protection."
+  pourquoi_faux:
+    a: "La règle du cursus impose une protection."
+    c: "Chauffer volontairement le condensateur l'expose au dommage que la règle veut éviter."
+    d: "Toucher un composant chauffé expose à une brûlure."
+  source: "S01-L02#fumées-alliages-produits-et-chaleur"
+- id: S01-Q017
+  bonnes: [b]
+  explication: "Les réglages (dont la limite de courant) et les valeurs théoriques s'écrivent avant la mesure : sans valeur théorique préalable, l'évaluation pratique est éliminée sur le critère préparation."
+  pourquoi_faux:
+    a: "Écrire après coup ne prouve plus que la limite était réglée avant la mise sous tension."
+    c: "La date seule ne permet aucune vérification."
+    d: "Recopier des mesures est une falsification."
+  source: "S01-L03#la-page-de-journal-datelier"
+- id: S01-Q018
+  valeur: 0.15
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Écart = 5,15 − 5 = +0,15 V, soit +3 % de la valeur théorique. Le signe positif indique une mesure au-dessus de la valeur attendue."
+  source: "S01-L03#exemple-5--documenter-un-écart"
+- id: S01-Q019
+  bonnes: [c]
+  explication: "Un relevé sur une seule carte reste [À VÉRIFIER] tant qu'il n'est pas confirmé par une source ou sur plusieurs exemplaires."
+  pourquoi_faux:
+    a: "[SOURCÉ] exige une fiche source identifiée."
+    b: "[EXEMPLE] désigne une valeur choisie pour un calcul, pas un relevé."
+    d: "Toute valeur porte une étiquette, y compris une mesure personnelle."
+  source: "S01-L03#étiqueter-ce-que-lon-écrit"
+- id: S01-Q020
+  bonnes: [a]
+  explication: "Une cause possible non mesurée est une [HYPOTHÈSE], à confirmer ou infirmer par une mesure."
+  pourquoi_faux:
+    b: "Aucune source ne confirme cette cause."
+    c: "Ce n'est pas une valeur d'entraînement."
+    d: "L'expérience suggère des hypothèses ; elle ne remplace pas la mesure."
+  source: "S01-L03#étiqueter-ce-que-lon-écrit"
+- id: S01-Q021
+  bonnes: [c]
+  explication: "Aucune donnée client ni identifiant de véhicule n'entre dans un dossier : on utilise un code interne."
+  pourquoi_faux:
+    a: "Le VIN identifie un véhicule réel : il ne doit pas figurer dans les dossiers du cursus."
+    b: "La plaque identifie un véhicule et son propriétaire."
+    d: "Aucune donnée personnelle dans les dossiers."
+  source: "S01-L03#le-dossier-de-réparation"
+- id: S01-Q022
+  ordre: [c, b, e, d, a]
+  explication: "Constater, formuler des hypothèses, mesurer, conclure sur une preuve, puis intervenir, valider et documenter."
+  source: "S01-L03#la-méthode-de-diagnostic-en-cinq-étapes"
+- id: S01-Q023
+  bonnes: [b]
+  explication: "Une hypothèse infirmée renvoie à l'étape 2 : on passe à l'hypothèse suivante et à la mesure qui la départage."
+  pourquoi_faux:
+    a: "Remplacer sans mesure qui le justifie est une faute éliminatoire à partir de M8."
+    c: "Une hypothèse infirmée élimine une cause, pas toutes."
+    d: "Répéter une mesure jusqu'au résultat voulu, c'est ignorer la preuve."
+  source: "S01-L03#la-méthode-de-diagnostic-en-cinq-étapes"
+- id: S01-Q024
+  bonnes: [a]
+  explication: "10³ = 1 000, donc log₁₀(1 000) = 3."
+  pourquoi_faux:
+    b: "10 est la base du logarithme, pas le résultat."
+    c: "100 = 10², son logarithme vaut 2."
+    d: "0,001 = 10⁻³ : confusion avec l'inverse."
+  source: "S01-L03#le-test-de-positionnement-en-mathématiques"
+- id: S01-Q025
+  valeur: 2200
+  tolerance_relative: 0.01
+  unite: Ω
+  explication: "10³ = 1 000, donc 2,2 × 10³ Ω = 2,2 × 1 000 = 2 200 Ω (soit 2,2 kΩ)."
+  source: "S01-L03#le-test-de-positionnement-en-mathématiques"

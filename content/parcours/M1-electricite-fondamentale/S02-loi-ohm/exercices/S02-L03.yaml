@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S02-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S02-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une résistance porte les bagues marron, noir, rouge, or. Avec la table de la leçon, quelle est sa valeur ?"
+  propositions:
+    - {id: a, texte: "102 Ω ±5 %"}
+    - {id: b, texte: "1 kΩ ±5 %"}
+    - {id: c, texte: "10 kΩ ±10 %"}
+    - {id: d, texte: "100 Ω ±5 %"}
+  competences: [D2.1]
+  objectif: O1
+- id: S02-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une résistance est marquée 2,2 kΩ ±10 %. Quelle est la plus grande valeur réelle admise ?"
+  unite_attendue: kΩ
+  competences: [D2.1]
+  objectif: O2

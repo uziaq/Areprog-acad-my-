@@ -1,0 +1,229 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S03-Q001
+  type: choix_unique
+  securite: false
+  competences: [D2.3]
+  section: "S03-L01#le-vocabulaire-dun-circuit"
+  enonce: "Qu'est-ce qu'un nœud dans un circuit ?"
+  propositions:
+    - {id: a, texte: "Un point où se rejoignent au moins trois conducteurs"}
+    - {id: b, texte: "N'importe quelle extrémité de fil"}
+    - {id: c, texte: "Un composant qui relie deux fils"}
+    - {id: d, texte: "Le point où l'on branche toujours le voltmètre"}
+- id: S03-Q002
+  type: choix_unique
+  securite: false
+  competences: [D2.3]
+  section: "S03-L01#le-vocabulaire-dun-circuit"
+  enonce: "Quelle tension attribue-t-on par convention au nœud de masse ?"
+  propositions:
+    - {id: a, texte: "0 V"}
+    - {id: b, texte: "La tension de la source"}
+    - {id: c, texte: "La moitié de la tension de la source"}
+    - {id: d, texte: "Aucune : la masse n'a pas de tension"}
+- id: S03-Q003
+  type: choix_unique
+  securite: false
+  competences: [D2.3]
+  section: "S03-L01#le-vocabulaire-dun-circuit"
+  enonce: "Dans la figure S03-F01, combien de mailles simples (sans en englober une autre) compte-t-on ?"
+  propositions:
+    - {id: a, texte: "1"}
+    - {id: b, texte: "2"}
+    - {id: c, texte: "3"}
+    - {id: d, texte: "4"}
+- id: S03-Q004
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L01#la-loi-des-nœuds"
+  enonce: "Trois courants entrent dans un nœud : 5 mA, 12 mA et 3 mA. Un seul courant en sort. Combien vaut-il ?"
+  unite_attendue: mA
+- id: S03-Q005
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L01#la-loi-des-mailles"
+  enonce: "Une maille comporte une source de 24 V et trois résistances en série. Les chutes dans les deux premières valent 6 V et 10 V. Quelle est la chute dans la troisième ?"
+  unite_attendue: V
+- id: S03-Q006
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L01#exemple-1--résoudre-un-circuit-à-deux-mailles"
+  enonce: "Dans la figure S03-F01, U = 10 V, R1 = 2 kΩ, R2 = 6 kΩ et R3 = 3 kΩ. Quelle est la tension au nœud A par rapport à la masse ?"
+  unite_attendue: V
+- id: S03-Q007
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-de-tension-à-vide"
+  enonce: "Un diviseur à vide R1 = 3,3 kΩ, R2 = 1 kΩ est alimenté sous 12 V. Quelle est la tension de sortie ?"
+  unite_attendue: V
+- id: S03-Q008
+  type: choix_unique
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-de-tension-à-vide"
+  enonce: "Un diviseur de tension à deux résistances peut-il fournir en sortie une tension plus élevée que son entrée ?"
+  propositions:
+    - {id: a, texte: "Non : le rapport R2 / (R1 + R2) est toujours inférieur à 1"}
+    - {id: b, texte: "Oui, si R2 est plus grande que R1"}
+    - {id: c, texte: "Oui, si l'on branche une charge"}
+    - {id: d, texte: "Oui, si les résistances sont identiques"}
+- id: S03-Q009
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#dimensionner-un-diviseur"
+  enonce: "On veut 2,5 V à partir de 10 V avec R2 = 10 kΩ. Quelle valeur faut-il pour R1 ?"
+  unite_attendue: kΩ
+- id: S03-Q010
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-chargé"
+  enonce: "Un diviseur R1 = R2 = 20 kΩ est alimenté sous 12 V. On branche une charge de 20 kΩ sur sa sortie. Quelle tension lit-on ?"
+  unite_attendue: V
+- id: S03-Q011
+  type: choix_unique
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-chargé"
+  enonce: "On branche une charge sur la sortie d'un diviseur. Que fait la tension de sortie ?"
+  propositions:
+    - {id: a, texte: "Elle baisse, car la charge se met en parallèle sur R2"}
+    - {id: b, texte: "Elle monte, car le courant augmente"}
+    - {id: c, texte: "Elle ne change jamais"}
+    - {id: d, texte: "Elle s'annule"}
+- id: S03-Q012
+  type: choix_unique
+  securite: false
+  competences: [D2.3, D2.4]
+  section: "S03-L02#le-diviseur-chargé"
+  enonce: "Le diviseur d'entrée d'un calculateur a une résistance de Thévenin de 10 kΩ. Quelle charge peut-on considérer comme négligeable, selon la règle pratique de la leçon ?"
+  propositions:
+    - {id: a, texte: "1 MΩ ou plus"}
+    - {id: b, texte: "10 kΩ"}
+    - {id: c, texte: "1 kΩ"}
+    - {id: d, texte: "Toute charge, puisqu'un diviseur ne débite pas"}
+- id: S03-Q013
+  type: calcul
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-de-courant"
+  enonce: "Un courant de 60 mA se partage entre R1 = 100 Ω et R2 = 200 Ω en parallèle. Quel courant traverse R2 ?"
+  unite_attendue: mA
+- id: S03-Q014
+  type: choix_unique
+  securite: false
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-de-courant"
+  enonce: "Dans un diviseur de courant, quelle branche reçoit le plus grand courant ?"
+  propositions:
+    - {id: a, texte: "Celle de plus faible résistance"}
+    - {id: b, texte: "Celle de plus forte résistance"}
+    - {id: c, texte: "Les deux reçoivent toujours le même courant"}
+    - {id: d, texte: "Celle qui est la plus proche de la source"}
+- id: S03-Q015
+  type: calcul
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#mesurer-une-résistance-interne"
+  enonce: "Une source affiche 6 V à vide et 5,4 V quand elle débite 0,3 A. Quelle est sa résistance interne ?"
+  unite_attendue: Ω
+- id: S03-Q016
+  type: calcul
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#source-idéale-source-réelle"
+  enonce: "Une source a une tension à vide de 12 V et une résistance interne de 0,5 Ω. Quelle tension délivre-t-elle sous 2 A ?"
+  unite_attendue: V
+- id: S03-Q017
+  type: choix_unique
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#pourquoi-cest-utile-à-latelier"
+  enonce: "Une batterie affiche une tension normale au repos mais le démarreur tourne mal. Quelle mesure peut révéler une résistance interne trop élevée ?"
+  propositions:
+    - {id: a, texte: "La tension aux bornes de la batterie pendant le démarrage"}
+    - {id: b, texte: "Une seconde mesure de la tension au repos"}
+    - {id: c, texte: "La résistance de la batterie à l'ohmmètre"}
+    - {id: d, texte: "La tension à vide, mesurée plus longtemps"}
+- id: S03-Q018
+  type: calcul
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#le-théorème-de-thévenin"
+  enonce: "Un diviseur R1 = 30 kΩ, R2 = 10 kΩ est alimenté sous 20 V. Quelle est sa tension de Thévenin Eth ?"
+  unite_attendue: V
+- id: S03-Q019
+  type: calcul
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#le-théorème-de-thévenin"
+  enonce: "Pour ce même diviseur (R1 = 30 kΩ, R2 = 10 kΩ), quelle est la résistance de Thévenin Rth ?"
+  unite_attendue: kΩ
+- id: S03-Q020
+  type: calcul
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#exemple-8--thévenin-dun-diviseur"
+  enonce: "Une sortie a pour modèle Eth = 5 V et Rth = 7,5 kΩ. Quelle tension reçoit une charge de 7,5 kΩ ?"
+  unite_attendue: V
+- id: S03-Q021
+  type: choix_unique
+  securite: false
+  competences: [D2.4]
+  section: "S03-L03#le-théorème-de-thévenin"
+  enonce: "Pour calculer Rth, que fait-on de la source de tension ?"
+  propositions:
+    - {id: a, texte: "On la remplace par un court-circuit"}
+    - {id: b, texte: "On la remplace par un circuit ouvert"}
+    - {id: c, texte: "On double sa valeur"}
+    - {id: d, texte: "On la garde telle quelle"}
+- id: S03-Q022
+  type: choix_unique
+  securite: true
+  competences: [D2.4]
+  section: "S03-L03#source-idéale-source-réelle"
+  enonce: "Pour le TP-05, quelle source utilisez-vous ?"
+  propositions:
+    - {id: a, texte: "Une pile, avec des charges dimensionnées en puissance"}
+    - {id: b, texte: "La batterie d'un véhicule de l'atelier, plus représentative"}
+    - {id: c, texte: "Une batterie lithium de téléphone"}
+    - {id: d, texte: "N'importe laquelle, en court-circuit pour mesurer le courant maximal"}
+- id: S03-Q023
+  type: choix_unique
+  securite: true
+  competences: [D2.4]
+  section: "S03-L03#mesurer-une-résistance-interne"
+  enonce: "Pourquoi les essais sous charge du TP-05 doivent-ils être brefs ?"
+  propositions:
+    - {id: a, texte: "La résistance de charge et la pile chauffent, et la pile se décharge pendant l'essai"}
+    - {id: b, texte: "Le multimètre s'use quand il mesure longtemps"}
+    - {id: c, texte: "La résistance interne disparaît au bout de quelques secondes"}
+    - {id: d, texte: "Ils n'ont pas besoin d'être brefs"}
+- id: S03-Q024
+  type: choix_unique
+  securite: true
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-chargé"
+  enonce: "Pendant le TP-04, vous changez de charge. Que faites-vous d'abord ?"
+  propositions:
+    - {id: a, texte: "Je coupe la sortie de l'alimentation"}
+    - {id: b, texte: "Rien : les tensions sont faibles"}
+    - {id: c, texte: "J'augmente la limite de courant"}
+    - {id: d, texte: "Je débranche le voltmètre en laissant l'alimentation allumée"}
+- id: S03-Q025
+  type: choix_unique
+  securite: true
+  competences: [D2.3]
+  section: "S03-L02#le-diviseur-chargé"
+  enonce: "Le courant maximal calculé pour le TP-04 est inférieur à 1 mA. Quelle limite de courant écrivez-vous au journal ?"
+  propositions:
+    - {id: a, texte: "Une limite un peu au-dessus du courant calculé, par exemple 5 mA"}
+    - {id: b, texte: "La limite maximale de l'alimentation, pour ne pas être gêné"}
+    - {id: c, texte: "Aucune : le courant est faible"}
+    - {id: d, texte: "0,1 mA, pour être sûr"}

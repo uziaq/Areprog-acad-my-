@@ -1,4 +1,4 @@
-# Questions sans les bonnes réponses (voir reponses.yaml). Prototype : 10 questions sur 40 attendues.
+# Questions sans les bonnes réponses (voir reponses.yaml). Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte).
 - id: S02-Q001
   type: choix_unique
   securite: false
@@ -97,3 +97,148 @@
     - {id: b, texte: "Relever la tension appliquée et la valeur de la résistance"}
     - {id: c, texte: "Comparer P à la puissance nominale de la résistance"}
     - {id: d, texte: "Conclure : la résistance convient ou doit être remplacée"}
+- id: S02-Q011
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L02#résistances-en-série"
+  enonce: "Une résistance de 1 kΩ et une de 2,2 kΩ sont en série. Quelle est la résistance équivalente ?"
+  unite_attendue: kΩ
+- id: S02-Q012
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L02#résistances-en-parallèle"
+  enonce: "Une résistance de 2 kΩ et une de 3 kΩ sont en parallèle. Quelle est la résistance équivalente ?"
+  unite_attendue: kΩ
+- id: S02-Q013
+  type: choix_unique
+  securite: false
+  competences: [D2.2]
+  section: "S02-L02#résistances-en-parallèle"
+  enonce: "Une résistance de 1 kΩ est placée en parallèle avec une résistance de 1 MΩ. Que vaut, à peu près, la résistance équivalente ?"
+  propositions:
+    - {id: a, texte: "Un peu moins de 1 kΩ"}
+    - {id: b, texte: "Un peu plus de 1 MΩ"}
+    - {id: c, texte: "Environ 500 kΩ, la moyenne des deux"}
+    - {id: d, texte: "Exactement 1,001 MΩ"}
+- id: S02-Q014
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#compléter-les-préfixes--nano-et-pico"
+  enonce: "Un condensateur est marqué 100 nF. À quelle valeur correspond-il ?"
+  propositions:
+    - {id: a, texte: "0,1 µF"}
+    - {id: b, texte: "100 µF"}
+    - {id: c, texte: "0,1 pF"}
+    - {id: d, texte: "1 µF"}
+- id: S02-Q015
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L02#exemple-4--deux-résistances-en-série"
+  enonce: "Une résistance de 470 Ω et une de 330 Ω sont en série sous 8 V. Quelle tension mesure-t-on aux bornes de la résistance de 470 Ω ?"
+  unite_attendue: V
+- id: S02-Q016
+  type: calcul
+  securite: false
+  competences: [D2.2]
+  section: "S02-L02#résistances-en-parallèle"
+  enonce: "Une résistance de 100 Ω et une de 300 Ω sont en parallèle sous 12 V. Quel courant total fournit la source ?"
+  unite_attendue: mA
+- id: S02-Q017
+  type: choix_unique
+  securite: true
+  competences: [D2.2]
+  section: "S02-L02#qui-chauffe-le-plus-"
+  enonce: "Une résistance de 100 Ω et une de 1 kΩ sont en parallèle sous la même tension. Laquelle faut-il vérifier en priorité contre sa puissance nominale ?"
+  propositions:
+    - {id: a, texte: "Celle de 100 Ω : à tension égale, c'est elle qui dissipe le plus"}
+    - {id: b, texte: "Celle de 1 kΩ : la plus grande résistance chauffe toujours le plus"}
+    - {id: c, texte: "Aucune : en parallèle, la puissance se partage à égalité"}
+    - {id: d, texte: "Aucune : seule la résistance équivalente compte"}
+- id: S02-Q018
+  type: choix_unique
+  securite: true
+  competences: [D2.2]
+  section: "S02-L01#les-quatre-grandeurs"
+  enonce: "Pendant le TP-03, vous voulez mesurer le courant qui traverse la résistance. Comment branchez-vous le multimètre ?"
+  propositions:
+    - {id: a, texte: "En série : alimentation coupée, j'ouvre le circuit et j'insère l'ampèremètre, cordon dans la borne de courant"}
+    - {id: b, texte: "En parallèle aux bornes de la résistance, cordon dans la borne de courant"}
+    - {id: c, texte: "En parallèle aux bornes de l'alimentation, sélecteur sur ampères"}
+    - {id: d, texte: "N'importe comment : le multimètre détecte seul la grandeur à mesurer"}
+- id: S02-Q019
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#le-code-couleur"
+  enonce: "Une résistance porte les bagues marron, noir, orange, or. Quelle est sa valeur ?"
+  propositions:
+    - {id: a, texte: "1 kΩ ±5 %"}
+    - {id: b, texte: "10 kΩ ±5 %"}
+    - {id: c, texte: "103 Ω ±5 %"}
+    - {id: d, texte: "10 kΩ ±10 %"}
+- id: S02-Q020
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#le-code-couleur"
+  enonce: "Une résistance porte les bagues rouge, violet, rouge, argent. Quelle est sa valeur ?"
+  propositions:
+    - {id: a, texte: "272 Ω ±10 %"}
+    - {id: b, texte: "2,7 kΩ ±5 %"}
+    - {id: c, texte: "2,7 kΩ ±10 %"}
+    - {id: d, texte: "27 kΩ ±10 %"}
+- id: S02-Q021
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#le-code-couleur"
+  enonce: "D'après la source étudiée, quelle est la tolérance d'une résistance qui ne porte que trois bagues ?"
+  propositions:
+    - {id: a, texte: "±1 %"}
+    - {id: b, texte: "±5 %"}
+    - {id: c, texte: "±10 %"}
+    - {id: d, texte: "±20 %"}
+- id: S02-Q022
+  type: calcul
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#valeur-nominale-et-tolérance"
+  enonce: "Une résistance est marquée 1,5 kΩ ±5 %. Quelle est la plus petite valeur réelle admise ?"
+  unite_attendue: kΩ
+- id: S02-Q023
+  type: choix_unique
+  securite: false
+  competences: [D2.1, D2.2]
+  section: "S02-L03#exemple-9--une-mesure-est-elle-conforme-"
+  enonce: "Une résistance marquée 10 kΩ ±5 % mesure 10,8 kΩ hors circuit. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Elle est conforme : 10,8 kΩ est proche de 10 kΩ"}
+    - {id: b, texte: "Elle sort de l'intervalle admis (9,5 à 10,5 kΩ) : je le confirme en tenant compte de l'incertitude du multimètre avant de conclure"}
+    - {id: c, texte: "On ne peut rien conclure d'une mesure de résistance"}
+    - {id: d, texte: "La tolérance ne s'applique qu'aux valeurs inférieures à la nominale"}
+- id: S02-Q024
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#les-séries-de-valeurs-normalisées"
+  enonce: "Pourquoi les valeurs d'une série normalisée E suivent-elles une progression géométrique ?"
+  propositions:
+    - {id: a, texte: "Pour que l'écart relatif entre deux valeurs voisines soit le même dans toute la décade"}
+    - {id: b, texte: "Pour que les valeurs soient toutes des nombres entiers"}
+    - {id: c, texte: "Pour que l'écart en ohms entre deux valeurs voisines soit constant"}
+    - {id: d, texte: "Parce que les couleurs disponibles sont limitées"}
+- id: S02-Q025
+  type: choix_unique
+  securite: false
+  competences: [D2.1]
+  section: "S02-L03#les-séries-de-valeurs-normalisées"
+  enonce: "Quelle norme définit les séries de valeurs normalisées des résistances et des condensateurs ?"
+  propositions:
+    - {id: a, texte: "IEC 60063"}
+    - {id: b, texte: "IEC 61010"}
+    - {id: c, texte: "IEC 61340-5-1"}
+    - {id: d, texte: "ISO 11898"}

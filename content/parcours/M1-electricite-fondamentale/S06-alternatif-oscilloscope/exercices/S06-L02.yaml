@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S06-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S06-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Quelle est la réactance d'un condensateur de 1 µF à 50 Hz ?"
+  unite_attendue: kΩ
+  competences: [D2.7]
+  objectif: O1
+- id: S06-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Quelle est la fréquence de coupure d'un filtre RC passe-bas formé de R = 10 kΩ et C = 10 nF ?"
+  unite_attendue: kHz
+  competences: [D2.7]
+  objectif: O2
+- id: S06-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "À une fréquence donnée, la sortie d'un filtre vaut le dixième de son entrée. Combien cela fait-il en décibels ?"
+  propositions:
+    - {id: a, texte: "−20 dB"}
+    - {id: b, texte: "−3 dB"}
+    - {id: c, texte: "−10 dB"}
+    - {id: d, texte: "+20 dB"}
+  competences: [D2.7]
+  objectif: O3

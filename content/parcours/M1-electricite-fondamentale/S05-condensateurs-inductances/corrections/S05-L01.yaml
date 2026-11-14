@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S05-L01-EX01
+  valeur: 147
+  tolerance_relative: 0.01
+  unite: µF
+  explication: "En parallèle, les capacités s'additionnent : 47 + 100 = 147 µF."
+  renvoi_section: "S05-L01#associer-des-condensateurs"
+- id: S05-L01-EX02
+  valeur: 50
+  tolerance_relative: 0.01
+  unite: nF
+  explication: "En série : C = 100 × 100 / (100 + 100) = 50 nF. Deux condensateurs identiques en série donnent la moitié de la capacité de l'un d'eux."
+  renvoi_section: "S05-L01#associer-des-condensateurs"
+- id: S05-L01-EX03
+  bonnes: [b]
+  explication: "On décharge à travers une résistance (le fabricant cité recommande 100 Ω à 1 kΩ), on vérifie au voltmètre, et on mesure à nouveau avant de manipuler, car une tension de recouvrement peut réapparaître. Un court-circuit franc produit une pointe de courant ; attendre sans mesurer ne prouve rien ; une décharge accidentelle peut abîmer la carte ou l'outil."
+  renvoi_section: "S05-L01#décharger-en-sécurité"

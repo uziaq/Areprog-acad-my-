@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S05-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S05-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Deux condensateurs de 47 µF et 100 µF sont branchés en parallèle. Quelle est la capacité équivalente ?"
+  unite_attendue: µF
+  competences: [D2.5]
+  objectif: O1
+- id: S05-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Deux condensateurs de 100 nF sont branchés en série. Quelle est la capacité équivalente ?"
+  unite_attendue: nF
+  competences: [D2.5]
+  objectif: O1
+- id: S05-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous venez de couper l'alimentation d'une carte qui porte un électrolytique chargé à 24 V. Quelle est la bonne suite d'actions avant de le dessouder ?"
+  propositions:
+    - {id: a, texte: "Le court-circuiter avec un tournevis, puis le dessouder"}
+    - {id: b, texte: "Le décharger à travers une résistance, mesurer la tension, puis mesurer à nouveau juste avant de le manipuler"}
+    - {id: c, texte: "Attendre une minute : il se décharge tout seul"}
+    - {id: d, texte: "Le dessouder sans attendre : 24 V ne présente aucun risque pour la carte"}
+  competences: [D2.5, D1.3]
+  objectif: O3
