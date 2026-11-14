@@ -1,0 +1,13 @@
+# Éditeur de circuit imprimé KiCad : couches de cuivre et couches techniques, types de vias
+# (traversant, microvia, borgne ou enterré), vue retournée de la carte, surbrillance d'un réseau,
+# lien entre schéma et circuit imprimé (cours S13). Documentation sous licence GPL v3 ou CC BY 3.0 ;
+# sections citées par leur titre anglais.
+id: SRC-0034
+titre: "KiCad 8.0, PCB Editor"
+editeur: KiCad (projet libre, documentation de ses contributeurs)
+reference: "Manuel de l'éditeur de circuit imprimé, version 8.0, en anglais"
+revision: "8.0 (copyright 2010-2024)"
+date_consultation: 2026-11-14
+type: notice
+licence: libre
+lien: https://docs.kicad.org/8.0/en/pcbnew/pcbnew.html

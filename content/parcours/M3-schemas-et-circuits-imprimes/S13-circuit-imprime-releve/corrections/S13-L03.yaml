@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S13-L03-EX01
+  ordre: [b, a, d, c]
+  explication: "Photos et superposition d'abord, puis identification des composants, suivi et confirmation des liaisons en dessinant, et enfin marquage de tout ce qui reste non confirmé."
+  renvoi_section: "S13-L03#la-méthode-de-relevé"
+- id: S13-L03-EX02
+  bonnes: [a]
+  explication: "Un relevé ne présente jamais une supposition comme un fait. La liaison probable est dessinée, mais marquée [À VÉRIFIER] jusqu'à sa confirmation."
+  renvoi_section: "S13-L03#exemple-7--relever-une-entrée-de-capteur"

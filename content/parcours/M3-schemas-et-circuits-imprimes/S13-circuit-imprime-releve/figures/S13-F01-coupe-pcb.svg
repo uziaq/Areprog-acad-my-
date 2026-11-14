@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 295" width="560" height="295" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : coupe de principe d'un circuit imprimé à quatre couches, épaisseurs non à l'échelle, sans valeur. -->
+  <path d="M40 60 V226 M380 60 V226" stroke-width="1"/>
+  <rect x="40" y="52" width="70" height="8" fill="currentColor" stroke="none"/>
+  <rect x="124" y="52" width="96" height="8" fill="currentColor" stroke="none"/>
+  <rect x="234" y="52" width="146" height="8" fill="currentColor" stroke="none"/>
+  <rect x="40" y="110" width="70" height="8" fill="currentColor" stroke="none"/>
+  <rect x="124" y="110" width="96" height="8" fill="currentColor" stroke="none"/>
+  <rect x="234" y="110" width="76" height="8" fill="currentColor" stroke="none"/>
+  <rect x="324" y="110" width="56" height="8" fill="currentColor" stroke="none"/>
+  <rect x="40" y="168" width="70" height="8" fill="currentColor" stroke="none"/>
+  <rect x="124" y="168" width="186" height="8" fill="currentColor" stroke="none"/>
+  <rect x="324" y="168" width="56" height="8" fill="currentColor" stroke="none"/>
+  <rect x="40" y="226" width="70" height="8" fill="currentColor" stroke="none"/>
+  <rect x="124" y="226" width="256" height="8" fill="currentColor" stroke="none"/>
+  <rect x="40" y="45" width="64" height="6" stroke-width="1"/>
+  <rect x="130" y="45" width="84" height="6" stroke-width="1"/>
+  <rect x="240" y="45" width="140" height="6" stroke-width="1"/>
+  <rect x="40" y="235" width="64" height="6" stroke-width="1"/>
+  <rect x="130" y="235" width="250" height="6" stroke-width="1"/>
+  <rect x="150" y="37" width="36" height="6" fill="currentColor" stroke="none"/>
+  <rect x="300" y="37" width="36" height="6" fill="currentColor" stroke="none"/>
+  <path d="M110 45 V241 M124 45 V241" stroke-width="3"/>
+  <path d="M220 45 V118 M234 45 V118" stroke-width="3"/>
+  <path d="M310 110 V176 M324 110 V176" stroke-width="3"/>
+  <path d="M382 40 L398 26" stroke-width="1"/>
+  <text x="402" y="30" fill="currentColor" stroke="none" font-size="12" text-anchor="start">sérigraphie</text>
+  <path d="M382 48 L398 44" stroke-width="1"/>
+  <text x="402" y="48" fill="currentColor" stroke="none" font-size="12" text-anchor="start">vernis épargne</text>
+  <path d="M382 56 L398 62" stroke-width="1"/>
+  <text x="402" y="66" fill="currentColor" stroke="none" font-size="12" text-anchor="start">cuivre face avant</text>
+  <path d="M382 85 L398 84" stroke-width="1"/>
+  <text x="402" y="88" fill="currentColor" stroke="none" font-size="12" text-anchor="start">substrat</text>
+  <path d="M382 114 L398 110" stroke-width="1"/>
+  <text x="402" y="114" fill="currentColor" stroke="none" font-size="12" text-anchor="start">cuivre interne 1</text>
+  <path d="M382 172 L398 168" stroke-width="1"/>
+  <text x="402" y="172" fill="currentColor" stroke="none" font-size="12" text-anchor="start">cuivre interne 2</text>
+  <path d="M382 230 L398 208" stroke-width="1"/>
+  <text x="402" y="212" fill="currentColor" stroke="none" font-size="12" text-anchor="start">cuivre face arrière</text>
+  <path d="M382 244 L398 246" stroke-width="1"/>
+  <text x="402" y="250" fill="currentColor" stroke="none" font-size="12" text-anchor="start">vernis épargne</text>
+  <text x="117" y="280" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">via traversant</text>
+  <text x="227" y="280" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">via borgne</text>
+  <text x="317" y="280" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">via enterré</text>
+</svg>

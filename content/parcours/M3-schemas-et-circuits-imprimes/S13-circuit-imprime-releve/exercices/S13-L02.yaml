@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S13-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S13-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous voulez superposer la photo de la face arrière, prise de dessous, à celle de la face avant. Que faites-vous d'abord ?"
+  propositions:
+    - {id: a, texte: "Je retourne horizontalement l'image de la face arrière, puis j'aligne les trous de fixation et les vias traversants"}
+    - {id: b, texte: "Je superpose les images telles quelles"}
+    - {id: c, texte: "Je fais pivoter l'image d'un quart de tour"}
+    - {id: d, texte: "J'aligne les images sur la sérigraphie seule"}
+  competences: [D5.3]
+  objectif: O1
+- id: S13-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Le buzzer de continuité sonne entre une broche de connecteur et une broche de circuit intégré. En ohmmètre, vous lisez 22 Ω après soustraction des cordons. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Un composant, probablement une résistance, se trouve entre les deux : ce n'est pas une piste seule"}
+    - {id: b, texte: "C'est une piste directe"}
+    - {id: c, texte: "La piste est coupée"}
+    - {id: d, texte: "Le multimètre est en panne"}
+  competences: [D5.3]
+  objectif: O2
+- id: S13-L02-EX03
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les gestes avant de suivre une piste sur une carte de récupération."
+  propositions:
+    - {id: a, texte: "Photographier les deux faces en haute résolution"}
+    - {id: b, texte: "Vérifier que la carte est hors tension et ses condensateurs déchargés"}
+    - {id: c, texte: "Confirmer chaque liaison au multimètre"}
+    - {id: d, texte: "Mettre le bracelet ESD et le relier"}
+  competences: [D5.3]
+  objectif: O2

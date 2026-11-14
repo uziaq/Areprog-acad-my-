@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S13-L03.yaml
+- id: S13-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les étapes du relevé d'un bloc."
+  propositions:
+    - {id: a, texte: "Identifier chaque composant du bloc et lire sa valeur"}
+    - {id: b, texte: "Photographier les deux faces et les superposer"}
+    - {id: c, texte: "Marquer [À VÉRIFIER] tout ce qui n'est pas confirmé"}
+    - {id: d, texte: "Suivre chaque liaison à l'œil puis la confirmer au multimètre, en dessinant au fur et à mesure"}
+  competences: [D5.4]
+  objectif: O1
+- id: S13-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Dans votre relevé, une résistance de tirage semble reliée à l'alimentation, mais sa piste passe par une couche interne et vous n'avez pas pu confirmer la liaison. Comment la dessinez-vous ?"
+  propositions:
+    - {id: a, texte: "Je la dessine reliée, avec la marque [À VÉRIFIER] sur cette liaison"}
+    - {id: b, texte: "Je la dessine reliée sans rien noter : c'est le montage habituel"}
+    - {id: c, texte: "Je ne la dessine pas"}
+    - {id: d, texte: "Je la relie à la masse"}
+  competences: [D5.4]
+  objectif: O2

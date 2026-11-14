@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S13-Q001
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#un-empilement-de-couches"
+  enonce: "Quel matériau forme en général le substrat d'un circuit imprimé rigide ?"
+  propositions:
+    - {id: a, texte: "De la fibre de verre, désignée FR4"}
+    - {id: b, texte: "Du cuivre massif"}
+    - {id: c, texte: "De l'aluminium"}
+    - {id: d, texte: "Du vernis épargne"}
+- id: S13-Q002
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#un-empilement-de-couches"
+  enonce: "Que désigne une carte « 2 couches » ?"
+  propositions:
+    - {id: a, texte: "Une carte à deux couches de cuivre"}
+    - {id: b, texte: "Une carte à deux substrats"}
+    - {id: c, texte: "Une carte avec sérigraphie sur les deux faces"}
+    - {id: d, texte: "Une carte à deux composants"}
+- id: S13-Q003
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#un-empilement-de-couches"
+  enonce: "Quelle couche porte les repères R12, C5 ou le contour des composants ?"
+  propositions:
+    - {id: a, texte: "La sérigraphie"}
+    - {id: b, texte: "Le vernis épargne"}
+    - {id: c, texte: "Le cuivre interne"}
+    - {id: d, texte: "Le substrat"}
+- id: S13-Q004
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#le-vocabulaire-de-la-carte"
+  enonce: "Qu'est-ce qu'un plan (ou zone) de cuivre ?"
+  propositions:
+    - {id: a, texte: "Une surface continue de cuivre, souvent reliée à la masse"}
+    - {id: b, texte: "Une piste très fine"}
+    - {id: c, texte: "Un trou métallisé"}
+    - {id: d, texte: "Une pastille de test"}
+- id: S13-Q005
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#le-vocabulaire-de-la-carte"
+  enonce: "À quoi sert une thermique reliant une pastille à un plan ?"
+  propositions:
+    - {id: a, texte: "À limiter la fuite de chaleur pour que la pastille chauffe assez à la soudure"}
+    - {id: b, texte: "À mesurer la température"}
+    - {id: c, texte: "À isoler la pastille du plan"}
+    - {id: d, texte: "À refroidir le composant"}
+- id: S13-Q006
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#les-types-de-vias"
+  enonce: "Quel via relie deux couches internes sans être visible sur les faces ?"
+  propositions:
+    - {id: a, texte: "Le via enterré"}
+    - {id: b, texte: "Le via traversant"}
+    - {id: c, texte: "Le microvia sur une face"}
+    - {id: d, texte: "Le trou de fixation"}
+- id: S13-Q007
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#les-types-de-vias"
+  enonce: "Selon la documentation KiCad, que relie un microvia ?"
+  propositions:
+    - {id: a, texte: "Une couche externe à la couche voisine"}
+    - {id: b, texte: "Les deux faces"}
+    - {id: c, texte: "Deux couches internes quelconques"}
+    - {id: d, texte: "Un composant au boîtier"}
+- id: S13-Q008
+  type: calcul
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#la-résistance-dune-piste"
+  enonce: "Une piste de cuivre mesure 200 mm de long, 0,2 mm de large, 35 µm d'épaisseur. Avec ρ = 1,678 × 10⁻⁸ Ω·m, quelle est sa résistance ?"
+  unite_attendue: Ω
+- id: S13-Q009
+  type: calcul
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#la-résistance-dune-piste"
+  enonce: "Une piste de cuivre mesure 30 mm de long, 1 mm de large, 70 µm d'épaisseur. Avec ρ = 1,678 × 10⁻⁸ Ω·m, quelle est sa résistance, en mΩ ?"
+  unite_attendue: mΩ
+- id: S13-Q010
+  type: calcul
+  securite: false
+  competences: [D5.3]
+  section: "S13-L01#exemple-1--résistance-dune-piste"
+  enonce: "Une piste de 0,1 Ω est parcourue par 3 A. Quelle tension chute le long de la piste ?"
+  unite_attendue: V
+- id: S13-Q011
+  type: choix_unique
+  securite: true
+  competences: [D5.3]
+  section: "S13-L02#préparer-la-carte"
+  enonce: "Dans quel état doit être la carte avant de suivre une piste au multimètre ?"
+  propositions:
+    - {id: a, texte: "Hors tension, condensateurs déchargés, sur le poste ESD"}
+    - {id: b, texte: "Sous tension, pour voir les signaux"}
+    - {id: c, texte: "Sous tension, avec une limite de courant"}
+    - {id: d, texte: "Peu importe en continuité"}
+- id: S13-Q012
+  type: choix_unique
+  securite: true
+  competences: [D5.3]
+  section: "S13-L02#préparer-la-carte"
+  enonce: "Avant de manipuler une carte de récupération, que mesurez-vous sur ses condensateurs électrolytiques ?"
+  propositions:
+    - {id: a, texte: "Leur tension, et je les décharge à travers une résistance si elle n'est pas négligeable"}
+    - {id: b, texte: "Leur capacité, carte sous tension"}
+    - {id: c, texte: "Rien, une carte débranchée est toujours déchargée"}
+    - {id: d, texte: "Leur résistance en court-circuitant leurs bornes avec un tournevis"}
+- id: S13-Q013
+  type: choix_unique
+  securite: true
+  competences: [D5.3]
+  section: "S13-L02#préparer-la-carte"
+  enonce: "Pourquoi manipuler la carte de récupération sur le poste ESD, alors qu'elle est hors service ?"
+  propositions:
+    - {id: a, texte: "Ses composants restent sensibles aux décharges, et le geste doit devenir un réflexe"}
+    - {id: b, texte: "Pour éviter un choc électrique"}
+    - {id: c, texte: "Ce n'est pas nécessaire sur une carte hors service"}
+    - {id: d, texte: "Pour la nettoyer"}
+- id: S13-Q014
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L02#superposer-le-recto-et-le-verso"
+  enonce: "Sur quels repères aligner les photos recto et verso ?"
+  propositions:
+    - {id: a, texte: "Trous de fixation, vias traversants et broches traversantes"}
+    - {id: b, texte: "La sérigraphie seule"}
+    - {id: c, texte: "La couleur du vernis"}
+    - {id: d, texte: "Les composants CMS"}
+- id: S13-Q015
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L02#superposer-le-recto-et-le-verso"
+  enonce: "Pourquoi retourner l'image de la face arrière avant la superposition ?"
+  propositions:
+    - {id: a, texte: "Vue de dessous, la face arrière est en miroir par rapport à la face avant"}
+    - {id: b, texte: "Pour corriger les couleurs"}
+    - {id: c, texte: "Pour agrandir l'image"}
+    - {id: d, texte: "Ce n'est pas nécessaire"}
+- id: S13-Q016
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L02#confirmer-au-multimètre"
+  enonce: "Le buzzer sonne entre deux points. Que faut-il savoir avant de conclure à une piste ?"
+  propositions:
+    - {id: a, texte: "Le seuil du buzzer dépend du modèle ; une petite résistance peut le faire sonner"}
+    - {id: b, texte: "Le buzzer ne sonne que pour une piste"}
+    - {id: c, texte: "Le buzzer mesure la tension"}
+    - {id: d, texte: "Le buzzer indique la longueur de la piste"}
+- id: S13-Q017
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L02#confirmer-au-multimètre"
+  enonce: "Pour mesurer une liaison de faible résistance, que faites-vous avec les cordons ?"
+  propositions:
+    - {id: a, texte: "Je mets les pointes en contact, je lis leur résistance et je la soustrais"}
+    - {id: b, texte: "Rien, ils n'ont pas de résistance"}
+    - {id: c, texte: "Je les remplace par des fils de cuivre nus"}
+    - {id: d, texte: "Je les mouille"}
+- id: S13-Q018
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L02#exemple-6--la-piste-coupée"
+  enonce: "Entre deux pastilles reliées par une piste visible, l'ohmmètre affiche un circuit ouvert. Que faire d'abord ?"
+  propositions:
+    - {id: a, texte: "Contrôler les cordons et le calibre, puis chercher une coupure au microscope"}
+    - {id: b, texte: "Conclure que le schéma est faux"}
+    - {id: c, texte: "Gratter le vernis sur toute la piste"}
+    - {id: d, texte: "Mettre la carte sous tension"}
+- id: S13-Q019
+  type: choix_unique
+  securite: false
+  competences: [D5.4]
+  section: "S13-L03#pourquoi-relever-un-schéma"
+  enonce: "Que vaut un schéma relevé sur une carte sans documentation ?"
+  propositions:
+    - {id: a, texte: "Un document partiel, dont chaque élément non confirmé porte [À VÉRIFIER]"}
+    - {id: b, texte: "Un schéma constructeur"}
+    - {id: c, texte: "Une donnée certaine sur toute la carte"}
+    - {id: d, texte: "Un document sans valeur"}
+- id: S13-Q020
+  type: choix_unique
+  securite: false
+  competences: [D5.4]
+  section: "S13-L03#la-méthode-de-relevé"
+  enonce: "Par quoi commence un relevé de schéma ?"
+  propositions:
+    - {id: a, texte: "Par des photos des deux faces en haute résolution, carte hors tension"}
+    - {id: b, texte: "Par le dessin dans KiCad"}
+    - {id: c, texte: "Par la dépose des composants"}
+    - {id: d, texte: "Par la mise sous tension de la carte"}
+- id: S13-Q021
+  type: choix_unique
+  securite: false
+  competences: [D5.4]
+  section: "S13-L03#la-méthode-de-relevé"
+  enonce: "Un condensateur CMS du bloc ne porte aucun marquage. Comment notez-vous sa valeur ?"
+  propositions:
+    - {id: a, texte: "[À VÉRIFIER], avec la méthode prévue pour la confirmer"}
+    - {id: b, texte: "100 nF, la valeur la plus courante"}
+    - {id: c, texte: "Je ne dessine pas le condensateur"}
+    - {id: d, texte: "La valeur du condensateur voisin"}
+- id: S13-Q022
+  type: choix_unique
+  securite: false
+  competences: [D5.4]
+  section: "S13-L03#le-journal-de-relevé"
+  enonce: "À quoi sert le journal de relevé ?"
+  propositions:
+    - {id: a, texte: "À rendre chaque liaison vérifiable : départ, arrivée, moyen de confirmation, valeur lue"}
+    - {id: b, texte: "À noter l'heure de début du TP"}
+    - {id: c, texte: "À remplacer le schéma"}
+    - {id: d, texte: "À lister les outils"}
+- id: S13-Q023
+  type: choix_unique
+  securite: false
+  competences: [D5.4]
+  section: "S13-L03#dessiner-dans-un-logiciel-de-schéma"
+  enonce: "Dans un schéma relevé dessiné sous KiCad, où placer la marque [À VÉRIFIER] ?"
+  propositions:
+    - {id: a, texte: "En texte, à côté de l'élément non confirmé"}
+    - {id: b, texte: "Dans le nom du fichier seulement"}
+    - {id: c, texte: "Nulle part, le schéma doit rester propre"}
+    - {id: d, texte: "Sur la sérigraphie de la carte"}
+- id: S13-Q024
+  type: choix_unique
+  securite: false
+  competences: [D5.4]
+  section: "S13-L03#exemple-8--un-composant-non-identifié"
+  enonce: "Un petit boîtier à trois broches porte un marquage court que vous ne savez pas décoder. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je le dessine comme un composant inconnu, avec ses liaisons confirmées, et je note marquage et boîtier [À VÉRIFIER]"}
+    - {id: b, texte: "Je le dessine comme un transistor NPN"}
+    - {id: c, texte: "Je l'ignore"}
+    - {id: d, texte: "Je le dessoude pour le mesurer"}
+- id: S13-Q025
+  type: choix_unique
+  securite: false
+  competences: [D5.3]
+  section: "S13-L02#les-points-de-test"
+  enonce: "Pourquoi une pastille de test est-elle un bon point de départ pour un relevé ?"
+  propositions:
+    - {id: a, texte: "Elle est accessible à la pointe et souvent repérée en sérigraphie"}
+    - {id: b, texte: "Elle est toujours reliée à la masse"}
+    - {id: c, texte: "Elle donne la valeur des composants"}
+    - {id: d, texte: "Elle est toujours sous le microcontrôleur"}
