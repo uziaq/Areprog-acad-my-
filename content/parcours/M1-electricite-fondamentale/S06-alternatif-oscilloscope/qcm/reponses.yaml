@@ -1,0 +1,183 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S06-Q001
+  valeur: 50
+  tolerance_relative: 0.02
+  unite: Hz
+  explication: "f = 1 / T = 1 / 0,02 = 50 Hz."
+  source: "S06-L01#période-et-fréquence"
+- id: S06-Q002
+  valeur: 40
+  tolerance_relative: 0.02
+  unite: µs
+  explication: "T = 1 / f = 1 / 25 000 = 0,000 04 s, soit 40 µs."
+  source: "S06-L01#période-et-fréquence"
+- id: S06-Q003
+  bonnes: [a]
+  explication: "La valeur efficace (RMS) est l'équivalent continu en échauffement."
+  pourquoi_faux:
+    b: "C'est la valeur crête d'une sinusoïde centrée."
+    c: "C'est la valeur crête."
+    d: "C'est la valeur moyenne."
+  source: "S06-L01#les-valeurs-dune-sinusoïde"
+- id: S06-Q004
+  valeur: 7.07
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Pour une sinusoïde : 0,707 × 10 = 7,07 V."
+  source: "S06-L01#les-valeurs-dune-sinusoïde"
+- id: S06-Q005
+  bonnes: [a]
+  explication: "Les alternances positive et négative se compensent : la moyenne est nulle."
+  pourquoi_faux:
+    b: "C'est la valeur efficace."
+    c: "C'est le sommet."
+    d: "Aucune définition ne donne cela."
+  source: "S06-L01#les-valeurs-dune-sinusoïde"
+- id: S06-Q006
+  bonnes: [a]
+  explication: "La mise à la terre par le cordon est nécessaire à la sécurité : sans elle, un défaut peut mettre le boîtier, boutons compris, sous tension."
+  pourquoi_faux:
+    b: "La note précise que même des boutons d'apparence isolante peuvent donner une décharge."
+    c: "Elle sert aussi à la sécurité, pas seulement à la mesure."
+    d: "Geste dangereux et interdit."
+  source: "S06-L03#sondes-et-sécurité"
+- id: S06-Q007
+  valeur: 7.2
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Ueff = Umax × √D = 12 × √0,36 = 12 × 0,6 = 7,2 V."
+  source: "S06-L01#le-signal-carré-et-le-signal-rectangulaire"
+- id: S06-Q008
+  bonnes: [a]
+  explication: "Un multimètre à réponse moyenne n'est exact que pour une sinusoïde pure ; sur un PWM, il peut afficher beaucoup moins que la vraie valeur efficace."
+  pourquoi_faux:
+    b: "Seul un TRMS mesure la vraie valeur efficace d'un signal quelconque."
+    c: "Il n'affiche pas la crête."
+    d: "Il affiche une tension, pas une fréquence."
+  source: "S06-L01#ce-que-lit-le-multimètre"
+- id: S06-Q009
+  valeur: 15.92
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "XC = 1 / (2π × 1 000 × 0,000 01) = 15,9 Ω."
+  source: "S06-L02#la-réactance-du-condensateur"
+- id: S06-Q010
+  bonnes: [a]
+  explication: "XC = 1 / (2πfC) : elle est inversement proportionnelle à la fréquence."
+  pourquoi_faux:
+    b: "C'est l'inverse."
+    c: "Elle dépend de la fréquence."
+    d: "Elle diminue, sans s'annuler."
+  source: "S06-L02#la-réactance-du-condensateur"
+- id: S06-Q011
+  bonnes: [a]
+  explication: "À fréquence nulle, la réactance est infinie : le condensateur bloque le continu."
+  pourquoi_faux:
+    b: "C'est son comportement à haute fréquence, ou au premier instant d'une charge."
+    c: "Aucune raison."
+    d: "Il ne produit pas d'énergie."
+  source: "S06-L02#la-réactance-du-condensateur"
+- id: S06-Q012
+  valeur: 1.539
+  tolerance_relative: 0.02
+  unite: kHz
+  explication: "fc = 1 / (2π × 4 700 × 0,000 000 022) = 1 539 Hz, soit 1,54 kHz."
+  source: "S06-L02#le-filtre-rc-passe-bas"
+- id: S06-Q013
+  bonnes: [a]
+  explication: "La résistance est en série ; le condensateur dérive vers la masse les hautes fréquences, au point de sortie."
+  pourquoi_faux:
+    b: "Ce serait un passe-haut."
+    c: "Ce n'est pas le montage décrit."
+    d: "Il ne filtrerait plus la sortie."
+  source: "S06-L02#le-filtre-rc-passe-bas"
+- id: S06-Q014
+  bonnes: [a]
+  explication: "À la coupure, la sortie vaut 70,7 % de l'entrée, soit −3 dB."
+  pourquoi_faux:
+    b: "Ce n'est pas la définition retenue."
+    c: "C'est vrai loin en dessous de fc."
+    d: "La sortie ne s'annule jamais complètement."
+  source: "S06-L02#le-filtre-rc-passe-bas"
+- id: S06-Q015
+  valeur: 48.23
+  tolerance_relative: 0.02
+  unite: nF
+  explication: "C = 1 / (2π × 3 300 × 1 000) = 48,2 nF ; on choisira une valeur normalisée proche."
+  source: "S06-L02#exemple-6--choisir-un-condensateur"
+- id: S06-Q016
+  bonnes: [a]
+  explication: "20 × log10(0,707) ≈ −3 dB."
+  pourquoi_faux:
+    b: "−20 dB correspond à un rapport de 0,1."
+    c: "0 dB correspond à un rapport de 1."
+    d: "Un rapport inférieur à 1 donne un nombre négatif."
+  source: "S06-L02#les-décibels"
+- id: S06-Q017
+  valeur: 100
+  tolerance_relative: 0.02
+  unite: Hz
+  explication: "T = 5 × 2 = 10 ms ; f = 1 / 0,01 = 100 Hz."
+  source: "S06-L03#exemple-8--lire-une-période-et-une-fréquence"
+- id: S06-Q018
+  valeur: 3.5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "3,5 × 1 = 3,5 V."
+  source: "S06-L03#exemple-9--lire-un-rapport-cyclique"
+- id: S06-Q019
+  bonnes: [a]
+  explication: "Le couplage AC bloque la composante continue : on ne lit plus le niveau bas à 0 V."
+  pourquoi_faux:
+    b: "Le déclenchement fonctionne dans les deux cas."
+    c: "C'est le couplage AC qui retire le continu."
+    d: "La différence est justement la composante continue."
+  source: "S06-L03#le-système-vertical"
+- id: S06-Q020
+  bonnes: [a]
+  explication: "Sans point de déclenchement valide, chaque balayage commence à un instant différent : l'image défile."
+  pourquoi_faux:
+    b: "Le signal serait petit, mais stable."
+    c: "Le facteur de sonde change l'amplitude affichée, pas la stabilité."
+    d: "Le couplage DC n'empêche pas le déclenchement."
+  source: "S06-L03#le-déclenchement"
+- id: S06-Q021
+  bonnes: [a]
+  explication: "En auto, l'oscilloscope balaie même sans déclenchement ; en normal, il n'affiche que sur déclenchement."
+  pourquoi_faux:
+    b: "C'est la fonction de réglage automatique, différente du mode auto."
+    c: "C'est le mode normal."
+    d: "C'est le mode monocoup (S11)."
+  source: "S06-L03#le-déclenchement"
+- id: S06-Q022
+  bonnes: [a]
+  explication: "Deux à cinq périodes : assez pour juger la répétition, assez peu pour lire chaque période avec précision."
+  pourquoi_faux:
+    b: "On ne voit pas une période complète."
+    c: "Chaque période devient trop petite pour être lue."
+    d: "La lecture perd en précision."
+  source: "S06-L03#le-système-horizontal"
+- id: S06-Q023
+  bonnes: [a]
+  explication: "La note Tektronix indique que la mise à la terre est nécessaire à la sécurité : le courant de défaut emprunte le conducteur de terre."
+  pourquoi_faux:
+    b: "La terre n'agit pas sur la bande passante."
+    c: "La source dit le contraire, sauf modèle à boîtier isolé indiqué par sa notice."
+    d: "Une sonde ne se recharge pas."
+  source: "S06-L03#sondes-et-sécurité"
+- id: S06-Q024
+  bonnes: [a]
+  explication: "Cette semaine, la masse de sonde se relie uniquement à la masse du générateur ou du montage ; les autres cas sont étudiés en S11."
+  pourquoi_faux:
+    b: "Une masse de sonde reliée à un nœud quelconque peut créer un court-circuit (étudié en S11)."
+    c: "Aucune mesure sur le secteur."
+    d: "Sans masse, la mesure est fausse."
+  source: "S06-L03#sondes-et-sécurité"
+- id: S06-Q025
+  bonnes: [a]
+  explication: "Une sonde ×10 divise le signal par dix : l'oscilloscope doit connaître ce facteur pour afficher la bonne tension."
+  pourquoi_faux:
+    b: "Sans rapport avec un facteur dix exact."
+    c: "Elle agit sur le temps, pas sur l'amplitude."
+    d: "Il agit sur la stabilité, pas sur l'amplitude."
+  source: "S06-L03#sondes-et-sécurité"
