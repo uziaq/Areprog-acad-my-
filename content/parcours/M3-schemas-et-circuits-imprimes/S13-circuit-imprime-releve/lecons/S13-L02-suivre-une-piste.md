@@ -39,7 +39,7 @@ historique:
 
 On ne suit une piste que sur une carte **hors tension**, condensateurs déchargés : une résistance et
 une continuité se mesurent circuit hors tension [SOURCÉ : SRC-0008 §Resistance, continuity and diodes]
-(S04-L01 ; décharge, S05 et FE-06). La carte se manipule sur le poste ESD (S01, FE-01).
+(S04-L01 ; décharge, S05 et TP-10). La carte se manipule sur le poste ESD (S01, FE-01).
 
 Avant toute mesure, on photographie les deux faces, en haute résolution, à plat et sous le même
 angle [EXEMPLE : méthode de la formation]. Ces photos servent de carte pour tout le relevé.

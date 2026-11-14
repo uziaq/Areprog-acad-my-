@@ -75,7 +75,7 @@
   source: "S13-L01#exemple-1--résistance-dune-piste"
 - id: S13-Q011
   bonnes: [a]
-  explication: "Une résistance et une continuité se mesurent circuit hors tension ; un condensateur chargé fausse la mesure et peut abîmer l'instrument (FE-06)."
+  explication: "Une résistance et une continuité se mesurent circuit hors tension ; un condensateur chargé fausse la mesure et peut abîmer l'instrument (S05, TP-10)."
   pourquoi_faux:
     b: "L'ohmmètre ne se pose jamais sur un circuit alimenté."
     c: "Même limitée, la tension fausse la mesure."
@@ -83,7 +83,7 @@
   source: "S13-L02#préparer-la-carte"
 - id: S13-Q012
   bonnes: [a]
-  explication: "Un condensateur peut garder sa charge après débranchement ; ne pas le vérifier est la faute éliminatoire FE-06."
+  explication: "Un condensateur peut garder sa charge après débranchement ; on le vérifie avant toute manipulation (S05, TP-10)."
   pourquoi_faux:
     b: "La carte n'est jamais alimentée."
     c: "Un condensateur peut rester chargé."

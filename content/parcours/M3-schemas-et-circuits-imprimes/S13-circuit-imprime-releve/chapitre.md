@@ -42,7 +42,7 @@ relevé n'a pas de tolérance : chaque élément est confirmé ou marqué `[À V
 - **Croire qu'un via mène toujours à l'autre face.** Détection : regarder l'autre face au même endroit ; rien n'apparaît pour un via borgne.
 - **Prendre un buzzer qui sonne pour une piste.** Détection : passer en ohmmètre ; une piste fait une fraction d'ohm.
 - **Oublier la résistance des cordons.** Détection : mettre les pointes en contact et lire la valeur avant les faibles mesures.
-- **Mesurer sur une carte non déchargée.** Détection : mesurer les condensateurs électrolytiques avant toute manipulation (FE-06).
+- **Mesurer sur une carte non déchargée.** Détection : mesurer les condensateurs électrolytiques avant toute manipulation (S05, TP-10).
 - **Gratter le vernis épargne pour poser une pointe.** Détection : on se pose sur les pastilles, les broches ou les points de test.
 - **Dessiner une liaison supposée comme un fait.** Détection : chaque liaison du schéma a une ligne de journal, sinon `[À VÉRIFIER]`.
 - **Arracher une pastille au dessoudage.** Détection : ne soulever le composant que lorsque toutes ses broches sont fondues ; inspecter les pastilles au microscope.
@@ -72,7 +72,7 @@ intactes sur trois déposes.
 ## Sécurité spécifique
 
 - Carte de récupération jamais alimentée pendant le TP-20.
-- Mesure et décharge des condensateurs électrolytiques avant manipulation, dans la plage recommandée par le fabricant cité [SOURCÉ : SRC-0013 §2-7 Restriking Voltage] (FE-06).
+- Mesure et décharge des condensateurs électrolytiques avant manipulation, dans la plage recommandée par le fabricant cité [SOURCÉ : SRC-0013 §2-7 Restriking Voltage] (règle de S05 et du TP-10).
 - Cartes et boîtiers SOIC manipulés sur le poste ESD, bracelet relié (FE-01).
 - Étiquette portant un identifiant de véhicule masquée sur les photos.
 - FR-10 : aspiration à la source, fers sur leur support, mains lavées après la séance (S01).
