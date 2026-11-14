@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S15-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S15-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un LDO 3,3 V a une tension de déchet de 0,3 V au courant de l'application. Il est précédé d'une diode de protection qui chute 0,6 V. Quelle tension minimale faut-il avant la diode pour que la sortie reste à 3,3 V ?"
+  unite_attendue: V
+  competences: [D6.1]
+  objectif: O1
+- id: S15-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Le condensateur de sortie d'un LDO est remplacé par un modèle de même capacité mais à résistance série beaucoup plus faible, hors de la plage de la fiche. Quel risque ?"
+  propositions:
+    - {id: a, texte: "Le régulateur peut devenir instable et osciller"}
+    - {id: b, texte: "Aucun : une résistance série plus faible est toujours meilleure"}
+    - {id: c, texte: "La tension de sortie double"}
+    - {id: d, texte: "Le courant de repos s'annule"}
+  competences: [D6.1]
+  objectif: O2
+- id: S15-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un régulateur réglable a une référence VFB = 1,233 V. R1 = 55 kΩ relie OUT à FB, R2 = 18 kΩ relie FB à la masse. Quelle est la tension de sortie ?"
+  unite_attendue: V
+  competences: [D6.1]
+  objectif: O3

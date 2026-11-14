@@ -1,0 +1,12 @@
+# Définitions des régulateurs LDO : tension de déchet, courant de repos et de veille, rendement,
+# régulation de ligne et de charge, stabilité et résistance série du condensateur de sortie,
+# dissipation et température de jonction (cours S15). Sections citées par leur titre anglais.
+id: SRC-0036
+titre: "Understanding the Terms and Definitions of LDO Voltage Regulators"
+editeur: Texas Instruments
+reference: "SLVA079"
+revision: "octobre 1999"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slva079

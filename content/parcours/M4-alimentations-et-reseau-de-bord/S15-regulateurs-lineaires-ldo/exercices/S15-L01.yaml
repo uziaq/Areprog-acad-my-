@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S15-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S15-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un régulateur linéaire 5 V est alimenté en 14 V et débite 0,15 A. Quelle puissance dissipe-t-il ?"
+  unite_attendue: W
+  competences: [D6.1]
+  objectif: O1
+- id: S15-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un régulateur linéaire 3,3 V débite le même courant, alimenté une fois en 5 V, une fois en 12 V. Que pouvez-vous dire ?"
+  propositions:
+    - {id: a, texte: "En 12 V, il dissipe beaucoup plus et son rendement est plus faible"}
+    - {id: b, texte: "Il dissipe la même puissance dans les deux cas"}
+    - {id: c, texte: "En 12 V, son rendement est meilleur"}
+    - {id: d, texte: "En 5 V, il dissipe plus"}
+  competences: [D6.1]
+  objectif: O1
+- id: S15-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "La fiche d'un régulateur donne TJmax = 150 °C et θJA = 60 °C/W. L'air autour atteint 60 °C. Quelle puissance maximale peut-il dissiper ?"
+  unite_attendue: W
+  competences: [D6.1]
+  objectif: O2

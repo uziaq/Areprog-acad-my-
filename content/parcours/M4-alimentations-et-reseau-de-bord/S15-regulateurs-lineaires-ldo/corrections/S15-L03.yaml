@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S15-L03-EX01
+  bonnes: [a]
+  explication: "En court-circuit, la limitation de courant laisse presque toute la tension d'entrée aux bornes du régulateur, qui chauffe ; l'arrêt thermique le coupe, il refroidit et redémarre. On isole la charge pour confirmer."
+  renvoi_section: "S15-L03#limitation-de-courant-et-arrêt-thermique"
+- id: S15-L03-EX02
+  ordre: [b, d, c, a, e]
+  explication: "On fixe d'abord la référence (masse du régulateur), puis on remonte la chaîne : entrée, enable, sortie, et enfin les signaux de reset et de power-good."
+  renvoi_section: "S15-L03#méthode-de-diagnostic"

@@ -1,0 +1,12 @@
+# Thermique des régulateurs linéaires : modèle du potentiomètre, puissance dissipée, courant de
+# repos négligeable, limitation de courant, arrêt thermique, équations thermiques (cours S15).
+# Sections citées par leur numéro et leur titre anglais.
+id: SRC-0037
+titre: "Linear Regulator Design Guide For LDOs"
+editeur: Texas Instruments
+reference: "SLVA118A"
+revision: "avril 2003, révisée juin 2008"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slva118

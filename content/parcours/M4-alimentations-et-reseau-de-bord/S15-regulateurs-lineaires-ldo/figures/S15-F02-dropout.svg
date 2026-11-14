@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure de la caractéristique d'un LDO, sans valeur. -->
+  <path d="M60 250 H490 M60 250 V30" />
+  <text x="490" y="272" fill="currentColor" stroke="none" text-anchor="end">tension d'entrée VI</text>
+  <text x="66" y="26" fill="currentColor" stroke="none">tension de sortie VO</text>
+  <path d="M60 250 L280 30" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="288" y="36" fill="currentColor" stroke="none" font-size="11">VO = VI</text>
+  <path d="M60 250 H102 L234 118 Q240 110 250 110 H480" stroke-width="2.5" />
+  <path d="M60 110 H250" stroke-width="1" stroke-dasharray="2 4" />
+  <text x="54" y="114" fill="currentColor" stroke="none" text-anchor="end" font-size="11">VO nom.</text>
+  <path d="M220 90 V132" stroke-width="1" />
+  <path d="M216 96 L220 90 L224 96 M216 126 L220 132 L224 126" stroke-width="1" />
+  <text x="150" y="96" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">tension de déchet</text>
+  <path d="M102 255 V245 M242 255 V245" stroke-width="1" />
+  <text x="80" y="240" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">arrêt</text>
+  <text x="210" y="205" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">déchet</text>
+  <text x="370" y="200" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">régulation</text>
+</svg>
