@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S35-L01-EX01
+  bonnes: [c]
+  explication: "L'ISO 26262 va de ASIL A à ASIL D, le niveau D étant le plus exigeant. SIL 4 appartient à l'IEC 61508, norme industrielle."
+  renvoi_section: "S35-L01#la-démarche--danger-objectif-niveau"
+- id: S35-L01-EX02
+  bonnes: [a]
+  explication: "La perte d'horloge interne est une défaillance aléatoire, détectée par une surveillance de l'horloge. Une défaillance systématique vient de la conception ou de la fabrication."
+  renvoi_section: "S35-L01#défaillances-aléatoires-et-systématiques"
+- id: S35-L01-EX03
+  valeur: 40
+  tolerance_relative: 0.02
+  unite: "Hz"
+  explication: "f = 1 / T = 1 / 0,025 s = 40 Hz."
+  renvoi_section: "S35-L01#exemple-3--la-période-dun-chien-de-garde"

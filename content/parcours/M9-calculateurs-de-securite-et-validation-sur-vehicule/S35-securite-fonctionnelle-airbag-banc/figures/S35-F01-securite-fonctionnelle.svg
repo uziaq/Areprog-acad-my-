@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 715 215" width="715" height="215" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : notions de sécurité fonctionnelle, d'après SRC-0098 et SRC-0099. -->
+  <defs>
+    <marker id="s35f01-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="20" y="15" width="150" height="52" rx="6" />
+  <text x="95.0" y="38.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">1. Danger</text>
+  <text x="95.0" y="53.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">situation qui peut blesser</text>
+  <path d="M170 41 H194" marker-end="url(#s35f01-a)" stroke-width="1.5" />
+  <rect x="195" y="15" width="150" height="52" rx="6" />
+  <text x="270.0" y="38.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">2. Objectif</text>
+  <text x="270.0" y="53.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">de sécurité à tenir</text>
+  <path d="M345 41 H369" marker-end="url(#s35f01-a)" stroke-width="1.5" />
+  <rect x="370" y="15" width="150" height="52" rx="6" />
+  <text x="445.0" y="31.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">3. Niveau ASIL</text>
+  <text x="445.0" y="46.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">de A à D (D le plus</text>
+  <text x="445.0" y="61.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">exigeant)</text>
+  <path d="M520 41 H544" marker-end="url(#s35f01-a)" stroke-width="1.5" />
+  <rect x="545" y="15" width="150" height="52" rx="6" />
+  <text x="620.0" y="38.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">4. Mesures</text>
+  <text x="620.0" y="53.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">surveillance, redondance</text>
+  <rect x="20" y="110" width="200" height="58" rx="6" />
+  <text x="120.0" y="129.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Défaillances aléatoires</text>
+  <text x="120.0" y="144.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">horloge, régulateur, mémoire :</text>
+  <text x="120.0" y="159.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">détectées par surveillance</text>
+  <rect x="250" y="110" width="200" height="58" rx="6" />
+  <text x="350.0" y="129.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Défaillances systématiques</text>
+  <text x="350.0" y="144.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">erreur de conception ou de</text>
+  <text x="350.0" y="159.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">fabrication : réduites par méthode</text>
+  <rect x="480" y="110" width="215" height="58" rx="6" />
+  <text x="587.5" y="129.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">État sûr</text>
+  <text x="587.5" y="144.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">défaut détecté : la fonction</text>
+  <text x="587.5" y="159.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">se met en position sans danger</text>
+  <path d="M620 67 V109" marker-end="url(#s35f01-a)" stroke-width="1.5" />
+  <path d="M120 109 V88 H560 V68" marker-end="url(#s35f01-a)" stroke-width="1.5" stroke-dasharray="4 3" />
+  <path d="M350 109 V88" marker-end="url(#s35f01-a)" stroke-width="1.5" />
+  <text x="357" y="200" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Notions pour l'atelier, d'après les livres blancs cités ; la norme ISO 26262 elle-même n'est pas appliquée ici.</text>
+</svg>

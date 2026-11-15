@@ -1,0 +1,14 @@
+# Circuit de base de système pour calculateur d'airbag : convertisseur élévateur jusqu'à 33 V,
+# contrôle de la réserve d'énergie (charge, diagnostic de la capacité), logique de sécurité
+# (safing) indépendante du microcontrôleur avec sorties ARM / DISARM, interfaces de capteurs
+# satellites PSI5, chien de garde et reset, mode « scrap ». Utilisé en S35 pour l'architecture
+# générique. Sections citées par leur titre anglais.
+id: SRC-0097
+titre: "MC33789, Airbag System Basis Chip (SBC) with Power Supply and PSI5 Sensor Interface"
+editeur: NXP Semiconductors (Freescale Semiconductor)
+reference: "MC33789"
+revision: "Rev. 4.0, septembre 2014 (Advance Information)"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/data-sheet/MC33789.pdf

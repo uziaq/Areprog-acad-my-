@@ -1,0 +1,193 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S35-Q001
+  bonnes: [a]
+  explication: "SRC-0098, Functional safety standards."
+  pourquoi_faux:
+    b: "Non."
+    c: "Les soudures comptent, mais ce n'est pas la définition."
+    d: "Non."
+  source: "S35-L01#ce-que-veut-dire-sécurité-fonctionnelle"
+- id: S35-Q002
+  bonnes: [a]
+  explication: "ISO 26262, publiée en 2011 (SRC-0099)."
+  pourquoi_faux:
+    b: "Séries de valeurs normalisées."
+    c: "K-Line."
+    d: "Sécurité des instruments de mesure."
+  source: "S35-L01#ce-que-veut-dire-sécurité-fonctionnelle"
+- id: S35-Q003
+  bonnes: [a]
+  explication: "La norme est payante et n'a pas été consultée."
+  pourquoi_faux:
+    b: "Non."
+    c: "Interdit (licence)."
+    d: "Non."
+  source: "S35-L01#ce-que-veut-dire-sécurité-fonctionnelle"
+- id: S35-Q004
+  bonnes: [a]
+  explication: "SRC-0098, Functional safety process."
+  pourquoi_faux:
+    b: "Vient après."
+    c: "Vient après."
+    d: "Vient à la fin."
+  source: "S35-L01#la-démarche--danger-objectif-niveau"
+- id: S35-Q005
+  bonnes: [a]
+  explication: "SRC-0098 : SIL 1, facteur 10 à 100 ; SIL 4, 10 000 à 100 000."
+  pourquoi_faux:
+    b: "10 000 à 100 000."
+    c: "ASIL appartient à l'ISO 26262."
+    d: "Non."
+  source: "S35-L01#la-démarche--danger-objectif-niveau"
+- id: S35-Q006
+  bonnes: [a]
+  explication: "SRC-0099 : défaillance systématique = insuffisance de conception ou de fabrication."
+  pourquoi_faux:
+    b: "L'aléatoire vient d'un défaut du composant."
+    c: "Non."
+    d: "Non."
+  source: "S35-L01#défaillances-aléatoires-et-systématiques"
+- id: S35-Q007
+  bonnes: [a]
+  explication: "SRC-0099, Introduction."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L01#défaillances-aléatoires-et-systématiques"
+- id: S35-Q008
+  bonnes: [a]
+  explication: "Chien de garde, dont la version à questions-réponses (SRC-0099)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L01#les-moyens-de-surveillance"
+- id: S35-Q009
+  bonnes: [a]
+  explication: "Logique de sécurité indépendante (SRC-0097) et entrée FEN (SRC-0096)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "C'est le cas dans les circuits cités."
+  source: "S35-L01#redondance-et-état-sûr-de-lairbag"
+- id: S35-Q010
+  bonnes: [a]
+  explication: "Protocole renforcé : aucune surveillance shuntée, désactivée ou forcée."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L01#redondance-et-état-sûr-de-lairbag"
+- id: S35-Q011
+  valeur: 100
+  tolerance_relative: 0.02
+  unite: Hz
+  explication: "f = 1 / 0,010 s = 100 Hz."
+  source: "S35-L01#exemple-3--la-période-dun-chien-de-garde"
+- id: S35-Q012
+  bonnes: [a]
+  explication: "SRC-0097, BOOST CONVERTER."
+  pourquoi_faux:
+    b: "Alimentation de la logique."
+    c: "Tension batterie."
+    d: "Non."
+  source: "S35-L02#lalimentation-et-lélévateur"
+- id: S35-Q013
+  bonnes: [a]
+  explication: "SRC-0097, ENERGY RESERVE CONTROL."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L02#la-réserve-dénergie"
+- id: S35-Q014
+  bonnes: [a]
+  explication: "Décharge mesurée, jamais supposée (FE-09)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L02#la-réserve-dénergie"
+- id: S35-Q015
+  valeur: 0.5445
+  tolerance_relative: 0.02
+  unite: J
+  explication: "E = ½ × 0,001 × 33² = 0,5 × 0,001 × 1 089 ≈ 0,54 J."
+  source: "S35-L02#exemple-1--lénergie-dune-réserve"
+- id: S35-Q016
+  valeur: 4.4
+  tolerance_relative: 0.02
+  unite: s
+  explication: "τ = R × C = 2 000 × 0,0022 = 4,4 s."
+  source: "S35-L02#exemple-2--une-constante-de-temps-de-décharge"
+- id: S35-Q017
+  bonnes: [a]
+  explication: "SRC-0096, Features : quatre paires d'interrupteurs haut et bas côté."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L02#les-étages-de-commande-des-allumeurs"
+- id: S35-Q018
+  bonnes: [a]
+  explication: "SRC-0096, FET DRIVER CURRENT LIMIT."
+  pourquoi_faux:
+    b: "Avec 4,32 kΩ."
+    c: "Avec 45,3 kΩ."
+    d: "Non."
+  source: "S35-L02#exemple-3--lire-la-limite-de-courant"
+- id: S35-Q019
+  bonnes: [a]
+  explication: "SRC-0096 : court-circuit, tous les bits à 0 ; ouvert, tous à 1."
+  pourquoi_faux:
+    b: "Tous à 1."
+    c: "Non."
+    d: "Non."
+  source: "S35-L02#les-diagnostics-des-allumeurs"
+- id: S35-Q020
+  bonnes: [a]
+  explication: "Ils dépendent du constructeur ; le cours n'enseigne pas l'effacement des données de collision."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L02#capteurs-logique-de-sécurité-et-mémoire-dévénements"
+- id: S35-Q021
+  bonnes: [a]
+  explication: "Protocole renforcé, point 1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L03#le-principe--rien-qui-puisse-se-déclencher"
+- id: S35-Q022
+  bonnes: [a]
+  explication: "SRC-0013, Restriking Voltage."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L03#avant-lintervention"
+- id: S35-Q023
+  bonnes: [a]
+  explication: "Aucune valeur typique choisie au hasard ; jamais d'allumeur réel."
+  pourquoi_faux:
+    b: "Valeur non sourcée."
+    c: "Interdit."
+    d: "Non."
+  source: "S35-L03#sur-le-banc"
+- id: S35-Q024
+  valeur: 2.2
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "2,5 − 0,3 = 2,2 Ω."
+  source: "S35-L03#exemple-3--vérifier-un-simulateur"
+- id: S35-Q025
+  bonnes: [a]
+  explication: "Décision D-14."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S35-L03#après-la-mise-sous-tension"

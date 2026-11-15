@@ -1,0 +1,13 @@
+# Livre blanc sur la sécurité fonctionnelle des composants analogiques automobiles : défaillances
+# aléatoires et systématiques, surveillance (horloge, régulateurs, autotest, sommes de contrôle),
+# chien de garde à questions-réponses, taux FIT. Utilisé en S35 pour la redondance et la
+# surveillance. Sections citées par leur titre anglais.
+id: SRC-0099
+titre: "Analog components advance functional safety development for automotive applications"
+editeur: Texas Instruments
+reference: "SLYY111"
+revision: "janvier 2017"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/SLYY111

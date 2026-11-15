@@ -1,0 +1,261 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S35-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#ce-que-veut-dire-sécurité-fonctionnelle"
+  enonce: "Selon le livre blanc cité, de quoi dépend la sécurité fonctionnelle d'un système ?"
+  propositions:
+    - {id: a, texte: "De sa réponse prévisible à ses entrées ou à une défaillance"}
+    - {id: b, texte: "De la couleur du boîtier"}
+    - {id: c, texte: "Uniquement de la qualité des soudures"}
+    - {id: d, texte: "Du prix des composants"}
+- id: S35-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#ce-que-veut-dire-sécurité-fonctionnelle"
+  enonce: "Quelle est la norme de sécurité fonctionnelle de référence pour l'automobile ?"
+  propositions:
+    - {id: a, texte: "ISO 26262"}
+    - {id: b, texte: "IEC 60063"}
+    - {id: c, texte: "ISO 9141"}
+    - {id: d, texte: "IEC 61010"}
+- id: S35-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#ce-que-veut-dire-sécurité-fonctionnelle"
+  enonce: "Que dit le cours de son rapport à la norme ISO 26262 ?"
+  propositions:
+    - {id: a, texte: "Il donne des notions pour l'atelier sans prétendre appliquer la norme"}
+    - {id: b, texte: "Il certifie les réparations selon la norme"}
+    - {id: c, texte: "Il recopie la norme"}
+    - {id: d, texte: "Il remplace la norme"}
+- id: S35-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#la-démarche--danger-objectif-niveau"
+  enonce: "Par quoi commence la démarche de sécurité fonctionnelle ?"
+  propositions:
+    - {id: a, texte: "Par les dangers et les objectifs de sécurité"}
+    - {id: b, texte: "Par le choix du microcontrôleur"}
+    - {id: c, texte: "Par le routage de la carte"}
+    - {id: d, texte: "Par les essais sur véhicule"}
+- id: S35-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#la-démarche--danger-objectif-niveau"
+  enonce: "Un facteur de réduction du risque de 10 à 100 correspond, dans l'IEC 61508, à :"
+  propositions:
+    - {id: a, texte: "SIL 1"}
+    - {id: b, texte: "SIL 4"}
+    - {id: c, texte: "ASIL D"}
+    - {id: d, texte: "Aucun niveau"}
+- id: S35-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#défaillances-aléatoires-et-systématiques"
+  enonce: "Une erreur de conception présente sur toute une série de cartes est une défaillance :"
+  propositions:
+    - {id: a, texte: "Systématique"}
+    - {id: b, texte: "Aléatoire"}
+    - {id: c, texte: "Électrostatique"}
+    - {id: d, texte: "Intermittente par nature"}
+- id: S35-Q007
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#défaillances-aléatoires-et-systématiques"
+  enonce: "Que mesure un taux exprimé en FIT ?"
+  propositions:
+    - {id: a, texte: "Le nombre de défaillances attendues en un milliard d'heures de fonctionnement"}
+    - {id: b, texte: "La fréquence d'horloge"}
+    - {id: c, texte: "La durée de vie en années"}
+    - {id: d, texte: "Le nombre de cycles thermiques"}
+- id: S35-Q008
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#les-moyens-de-surveillance"
+  enonce: "Lequel de ces dispositifs surveille le bon déroulement du programme d'un microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "Un chien de garde"}
+    - {id: b, texte: "Un condensateur de découplage"}
+    - {id: c, texte: "Une résistance de tirage"}
+    - {id: d, texte: "Un fusible"}
+- id: S35-Q009
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S35-L01#redondance-et-état-sûr-de-lairbag"
+  enonce: "Pourquoi le tir d'un allumeur exige-t-il à la fois l'ordre du microcontrôleur et l'autorisation de la logique de sécurité ?"
+  propositions:
+    - {id: a, texte: "C'est une redondance : une seule défaillance ne suffit pas à provoquer un tir"}
+    - {id: b, texte: "Pour aller plus vite"}
+    - {id: c, texte: "Pour économiser de l'énergie"}
+    - {id: d, texte: "Ce n'est pas le cas"}
+- id: S35-Q010
+  type: choix_unique
+  securite: true
+  competences: [D10.6, D10.7]
+  section: "S35-L01#redondance-et-état-sûr-de-lairbag"
+  enonce: "Un calculateur d'airbag ne démarre pas. Peut-on forcer son entrée d'autorisation de tir pour l'essayer ?"
+  propositions:
+    - {id: a, texte: "Non, jamais : aucune surveillance n'est shuntée ou forcée"}
+    - {id: b, texte: "Oui, si l'on va vite"}
+    - {id: c, texte: "Oui, avec une résistance"}
+    - {id: d, texte: "Oui, si le formateur est absent"}
+- id: S35-Q011
+  type: calcul
+  securite: false
+  competences: [D10.6]
+  section: "S35-L01#exemple-3--la-période-dun-chien-de-garde"
+  enonce: "Un chien de garde est rafraîchi toutes les 10 ms. Quelle est la fréquence de rafraîchissement, en hertz ?"
+  unite_attendue: Hz
+- id: S35-Q012
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L02#lalimentation-et-lélévateur"
+  enonce: "Jusqu'à quelle tension l'élévateur du circuit de base de système cité monte-t-il ?"
+  propositions:
+    - {id: a, texte: "33 V"}
+    - {id: b, texte: "5 V"}
+    - {id: c, texte: "12 V"}
+    - {id: d, texte: "230 V"}
+- id: S35-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L02#la-réserve-dénergie"
+  enonce: "À quoi sert la réserve d'énergie d'un calculateur d'airbag ?"
+  propositions:
+    - {id: a, texte: "À continuer à décider et à tirer si la batterie est perdue pendant un choc"}
+    - {id: b, texte: "À démarrer le moteur"}
+    - {id: c, texte: "À mémoriser le kilométrage"}
+    - {id: d, texte: "À alimenter l'autoradio"}
+- id: S35-Q014
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S35-L02#la-réserve-dénergie"
+  enonce: "Un calculateur d'airbag est débranché. Sa réserve d'énergie est-elle forcément déchargée ?"
+  propositions:
+    - {id: a, texte: "Non : elle peut garder de l'énergie, la décharge se mesure"}
+    - {id: b, texte: "Oui, dès le débranchement"}
+    - {id: c, texte: "Oui, après une minute"}
+    - {id: d, texte: "Oui, si le voyant est éteint"}
+- id: S35-Q015
+  type: calcul
+  securite: false
+  competences: [D10.6]
+  section: "S35-L02#exemple-1--lénergie-dune-réserve"
+  enonce: "Une réserve de 1 mF est chargée à 33 V. Quelle énergie contient-elle, en joules ?"
+  unite_attendue: J
+- id: S35-Q016
+  type: calcul
+  securite: false
+  competences: [D10.6]
+  section: "S35-L02#exemple-2--une-constante-de-temps-de-décharge"
+  enonce: "Une réserve de 2,2 mF se décharge dans 2 kΩ. Quelle est la constante de temps, en secondes ?"
+  unite_attendue: s
+- id: S35-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S35-L02#les-étages-de-commande-des-allumeurs"
+  enonce: "Comment chaque allumeur est-il commandé dans le circuit cité ?"
+  propositions:
+    - {id: a, texte: "Par un interrupteur côté haut et un interrupteur côté bas"}
+    - {id: b, texte: "Par un relais unique"}
+    - {id: c, texte: "Directement par la batterie"}
+    - {id: d, texte: "Par le bus CAN"}
+- id: S35-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S35-L02#exemple-3--lire-la-limite-de-courant"
+  enonce: "D'après le tableau de la fiche, quelle est la limite de courant avec une résistance externe de 10 kΩ ?"
+  propositions:
+    - {id: a, texte: "1,37 A"}
+    - {id: b, texte: "0,92 A"}
+    - {id: c, texte: "2,0 A"}
+    - {id: d, texte: "10 A"}
+- id: S35-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S35-L02#les-diagnostics-des-allumeurs"
+  enonce: "Le diagnostic de résistance d'une boucle renvoie tous ses bits à 0. Qu'indique-t-il ?"
+  propositions:
+    - {id: a, texte: "Un allumeur en court-circuit"}
+    - {id: b, texte: "Un allumeur ouvert"}
+    - {id: c, texte: "Une boucle conforme"}
+    - {id: d, texte: "Une réserve chargée"}
+- id: S35-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S35-L02#capteurs-logique-de-sécurité-et-mémoire-dévénements"
+  enonce: "Le contenu de la mémoire d'événements et un éventuel verrouillage après choc sont :"
+  propositions:
+    - {id: a, texte: "À vérifier par constructeur"}
+    - {id: b, texte: "Identiques pour tous les véhicules"}
+    - {id: c, texte: "Décrits dans la fiche du circuit d'allumeurs"}
+    - {id: d, texte: "Effaçables d'après ce cours"}
+- id: S35-Q021
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S35-L03#le-principe--rien-qui-puisse-se-déclencher"
+  enonce: "Quels éléments pyrotechniques peuvent entrer dans l'atelier de formation ?"
+  propositions:
+    - {id: a, texte: "Aucun : le calculateur arrive seul"}
+    - {id: b, texte: "Un module d'airbag désactivé"}
+    - {id: c, texte: "Un prétensionneur seulement"}
+    - {id: d, texte: "Ceux qui ont déjà servi"}
+- id: S35-Q022
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S35-L03#avant-lintervention"
+  enonce: "Pourquoi mesure-t-on la décharge de la réserve une seconde fois après une attente ?"
+  propositions:
+    - {id: a, texte: "La tension d'un condensateur peut remonter après la décharge"}
+    - {id: b, texte: "Pour tester le multimètre"}
+    - {id: c, texte: "Par habitude"}
+    - {id: d, texte: "Pour recharger la réserve"}
+- id: S35-Q023
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S35-L03#sur-le-banc"
+  enonce: "Aucune valeur documentée de simulateur d'allumeur n'est disponible. Que fait-on ?"
+  propositions:
+    - {id: a, texte: "On laisse les sorties ouvertes et on note le défaut d'allumeur ouvert attendu"}
+    - {id: b, texte: "On branche une résistance typique de 2 Ω"}
+    - {id: c, texte: "On branche un vrai allumeur"}
+    - {id: d, texte: "On court-circuite les sorties"}
+- id: S35-Q024
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S35-L03#exemple-3--vérifier-un-simulateur"
+  enonce: "Un simulateur mesuré avec ses cordons donne 2,5 Ω ; cordons court-circuités : 0,3 Ω. Quelle est sa résistance, en ohms ?"
+  unite_attendue: Ω
+- id: S35-Q025
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S35-L03#après-la-mise-sous-tension"
+  enonce: "Un calculateur d'airbag a été réparé et validé sur banc pendant le cursus. Peut-il être remis sur un véhicule client ?"
+  propositions:
+    - {id: a, texte: "Non : aucun calculateur de sécurité n'est remis en circulation pendant le cursus (D-14)"}
+    - {id: b, texte: "Oui, s'il n'a plus de défaut"}
+    - {id: c, texte: "Oui, après un essai sur route"}
+    - {id: d, texte: "Oui, si le client accepte"}

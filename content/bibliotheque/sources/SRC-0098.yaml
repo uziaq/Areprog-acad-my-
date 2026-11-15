@@ -1,0 +1,13 @@
+# Livre blanc d'introduction à la sécurité fonctionnelle : normes IEC 61508 et ISO 26262,
+# niveaux ASIL A à D (D le plus exigeant), démarche (dangers, fonctions de sécurité, analyse des
+# modes de défaillance). Utilisé en S35 pour les notions, sans prétendre appliquer la norme
+# (payante, non consultée). Sections citées par leur titre anglais.
+id: SRC-0098
+titre: "Streamlining Functional Safety Certification in Automotive and Industrial"
+editeur: Texas Instruments
+reference: "SSIY007"
+revision: "septembre 2020"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/SSIY007

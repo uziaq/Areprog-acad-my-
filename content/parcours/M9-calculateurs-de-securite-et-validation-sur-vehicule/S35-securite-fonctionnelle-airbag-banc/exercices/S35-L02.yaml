@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S35-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S35-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une réserve d'énergie de 2,2 mF est chargée à 33 V. Quelle énergie contient-elle, en joules ?"
+  unite_attendue: "J"
+  competences: [D10.6]
+  objectif: O1
+- id: S35-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur le circuit de commande d'allumeurs étudié, l'entrée d'autorisation FEN est au niveau bas. Que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "Le tir est impossible, mais les diagnostics restent disponibles"}
+    - {id: b, texte: "L'allumeur est tiré immédiatement"}
+    - {id: c, texte: "Le circuit s'éteint complètement"}
+    - {id: d, texte: "La réserve d'énergie se décharge"}
+  competences: [D10.7]
+  objectif: O2
+- id: S35-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Le diagnostic de résistance d'une boucle d'allumeur renvoie tous ses bits à 1. Qu'indique-t-il ?"
+  propositions:
+    - {id: a, texte: "Un allumeur ouvert (boucle coupée)"}
+    - {id: b, texte: "Un allumeur en court-circuit"}
+    - {id: c, texte: "Une boucle conforme"}
+    - {id: d, texte: "Une réserve d'énergie déchargée"}
+  competences: [D10.7]
+  objectif: O2

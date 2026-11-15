@@ -1,0 +1,14 @@
+# Circuit de commande d'allumeurs (squib driver) à quatre voies pour module d'airbag : interrupteurs
+# haut et bas côté par voie, limitation de courant réglée par une résistance externe, diagnostics
+# des allumeurs (résistance, court-circuit à la batterie ou à la masse, courts entre boucles),
+# entrées d'autorisation de tir (FEN), interface SPI. Utilisé en S35 pour l'architecture et les
+# diagnostics, jamais pour une procédure de tir. Sections citées par leur titre anglais.
+id: SRC-0096
+titre: "MC33797, Four Channel Squib Driver IC"
+editeur: NXP Semiconductors (Freescale Semiconductor)
+reference: "MC33797"
+revision: "Rev 6.0, février 2014"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/data-sheet/MC33797.pdf

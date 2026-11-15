@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S35-L03-EX01
+  bonnes: [a]
+  explication: "La décharge se mesure, jamais ne se suppose ; un condensateur peut voir sa tension remonter, d'où la seconde mesure. Le court-circuit franc est dangereux pour la carte et l'opérateur."
+  renvoi_section: "S35-L03#avant-lintervention"
+- id: S35-L03-EX02
+  valeur: 2.1
+  tolerance_relative: 0.02
+  unite: "Ω"
+  explication: "On retranche la résistance des cordons : 2,4 − 0,3 = 2,1 Ω, à comparer à la valeur documentée."
+  renvoi_section: "S35-L03#exemple-3--vérifier-un-simulateur"
