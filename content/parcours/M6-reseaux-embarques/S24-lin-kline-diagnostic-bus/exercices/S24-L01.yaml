@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S24-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S24-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur un bus LIN, quel nœud porte la résistance de tirage externe en série avec une diode vers la batterie ?"
+  propositions:
+    - {id: a, texte: "Le nœud maître"}
+    - {id: b, texte: "Chaque esclave"}
+    - {id: c, texte: "Le dernier nœud du fil, comme une terminaison CAN"}
+    - {id: d, texte: "Aucun : le bus LIN n'a pas de résistance de tirage"}
+  competences: [D8.2]
+  objectif: O1
+- id: S24-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un bus LIN est alimenté sous 13,5 V. Sous quelle tension un récepteur lit-il un état dominant, d'après le seuil de 40 % de la note TI ?"
+  unite_attendue: V
+  competences: [D8.2]
+  objectif: O2
+- id: S24-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Sur une capture LIN, la pause de synchronisation de 13 bits dure 1,3 ms. Quelle est la durée d'un bit ?"
+  unite_attendue: µs
+  competences: [D8.2]
+  objectif: O3

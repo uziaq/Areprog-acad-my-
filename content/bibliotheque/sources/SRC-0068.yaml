@@ -1,0 +1,14 @@
+# Bus LIN : architecture maître (commander) et esclaves (responders), un fil, résistance de
+# tirage vers la batterie, états dominant et récessif, seuils en pourcentage de la tension
+# batterie, débit, trame (en-tête et réponse), filtrage, nombre de nœuds et longueur, modes de
+# veille et réveil (cours S24). La note écrit « ISO17897 » : la norme LIN est l'ISO 17987.
+# Sections citées par leur numéro et leur titre anglais.
+id: SRC-0068
+titre: "LIN Protocol and Physical Layer Requirements"
+editeur: Texas Instruments
+reference: "SLLA383A"
+revision: "A, août 2022"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/slla383a/slla383a.pdf

@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S24-Q001
+  bonnes: [a]
+  explication: "Un maître et jusqu'à 16 esclaves, d'après la note TI."
+  pourquoi_faux:
+    b: "Non."
+    c: "C'est l'accès multiple du CAN."
+    d: "Non."
+  source: "S24-L01#un-bus-maître-et-esclaves-sur-un-fil"
+- id: S24-Q002
+  bonnes: [a]
+  explication: "Le maître commande toute la communication."
+  pourquoi_faux:
+    b: "Non."
+    c: "L'arbitrage est propre au CAN."
+    d: "Non."
+  source: "S24-L01#un-bus-maître-et-esclaves-sur-un-fil"
+- id: S24-Q003
+  bonnes: [a]
+  explication: "D'après la note TI."
+  pourquoi_faux:
+    b: "Il n'a qu'un fil."
+    c: "Non."
+    d: "Non."
+  source: "S24-L01#un-bus-maître-et-esclaves-sur-un-fil"
+- id: S24-Q004
+  bonnes: [a]
+  explication: "La résistance de tirage amène le fil vers la batterie quand personne n'émet."
+  pourquoi_faux:
+    b: "C'est l'état dominant, quand un transceiver conduit."
+    c: "C'est le CAN."
+    d: "Non."
+  source: "S24-L01#couche-physique--un-fil-tiré-vers-la-batterie"
+- id: S24-Q005
+  bonnes: [a]
+  explication: "Les esclaves ont typiquement 30 kΩ intégrés."
+  pourquoi_faux:
+    b: "C'est la terminaison CAN."
+    c: "C'est l'esclave."
+    d: "Non."
+  source: "S24-L01#couche-physique--un-fil-tiré-vers-la-batterie"
+- id: S24-Q006
+  bonnes: [a]
+  explication: "D'après la fiche TLIN1021A-Q1."
+  pourquoi_faux:
+    b: "C'est TXD haut."
+    c: "Non."
+    d: "C'est le récessif."
+  source: "S24-L01#couche-physique--un-fil-tiré-vers-la-batterie"
+- id: S24-Q007
+  valeur: 7.2
+  tolerance_relative: 0.02
+  unite: V
+  explication: "0,6 × 12 = 7,2 V."
+  source: "S24-L01#exemple-2--seuils-à-12-v"
+- id: S24-Q008
+  valeur: 2.8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "0,2 × 14 = 2,8 V."
+  source: "S24-L01#seuils-et-débit"
+- id: S24-Q009
+  bonnes: [a]
+  explication: "D'après la note TI."
+  pourquoi_faux:
+    b: "C'est l'ordre du CAN."
+    c: "Non."
+    d: "C'est l'I²C."
+  source: "S24-L01#seuils-et-débit"
+- id: S24-Q010
+  bonnes: [a]
+  explication: "Puis viennent le champ de synchronisation et l'identifiant protégé."
+  pourquoi_faux:
+    b: "C'est le CAN."
+    c: "Elle est à la fin."
+    d: "Non."
+  source: "S24-L01#la-trame-lin"
+- id: S24-Q011
+  bonnes: [a]
+  explication: "Une suite alternée qui cale l'horloge des esclaves."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S24-L01#la-trame-lin"
+- id: S24-Q012
+  valeur: 100
+  tolerance_relative: 0.02
+  unite: µs
+  explication: "1 / 10 000 = 100 µs."
+  source: "S24-L01#exemple-1--durée-dun-bit"
+- id: S24-Q013
+  bonnes: [a]
+  explication: "D'après la fiche TLIN1021A-Q1, temporisation de dominant permanent."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non : au repos il est haut."
+    d: "Non."
+  source: "S24-L01#exemple-3--un-fil-toujours-bas"
+- id: S24-Q014
+  bonnes: [a]
+  explication: "D'après la fiche NXP MC33660."
+  pourquoi_faux:
+    b: "C'est le CAN."
+    c: "Non."
+    d: "Non."
+  source: "S24-L02#la-ligne-k"
+- id: S24-Q015
+  bonnes: [a]
+  explication: "Liaison bidirectionnelle half-duplex."
+  pourquoi_faux:
+    b: "Non."
+    c: "Un seul fil."
+    d: "Non."
+  source: "S24-L02#la-ligne-k"
+- id: S24-Q016
+  bonnes: [a]
+  explication: "Une masse de sonde reliée à la terre ailleurs qu'à la masse crée un court-circuit (FE-07)."
+  pourquoi_faux:
+    b: "Court-circuit du fil vers la masse."
+    c: "Court-circuit de la batterie."
+    d: "La mesure serait fausse."
+  source: "S24-L02#mesurer-un-bus-à-un-fil"
+- id: S24-Q017
+  bonnes: [a]
+  explication: "LIN et ligne K n'ont qu'un fil référencé à la masse."
+  pourquoi_faux:
+    b: "Un fil."
+    c: "Un fil."
+    d: "Non."
+  source: "S24-L02#comparer-can-lin-et-k-line"
+- id: S24-Q018
+  bonnes: [a]
+  explication: "D'après la note TI."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S24-L02#mesurer-un-bus-à-un-fil"
+- id: S24-Q019
+  bonnes: [a]
+  explication: "À confirmer par division du bus."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S24-L03#ce-que-montrent-les-mesures"
+- id: S24-Q020
+  bonnes: [a]
+  explication: "Chaque moitié ne voit plus qu'une terminaison."
+  pourquoi_faux:
+    b: "Ce serait presque 0 Ω."
+    c: "Non."
+    d: "Non."
+  source: "S24-L03#exemple-7--une-coupure"
+- id: S24-Q021
+  bonnes: [a]
+  explication: "Principe « alimentation d'abord » de S18."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S24-L03#lordre-des-mesures"
+- id: S24-Q022
+  bonnes: [a]
+  explication: "Règles Sécurité véhicule du catalogue des TP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S24-L03#lordre-des-mesures"
+- id: S24-Q023
+  bonnes: [a]
+  explication: "La division du bus localise le défaut."
+  pourquoi_faux:
+    b: "Sans preuve."
+    c: "Dangereux et inutile."
+    d: "Une mesure de résistance se fait hors tension."
+  source: "S24-L03#exemple-6--localiser-un-court-circuit-à-la-masse"
+- id: S24-Q024
+  bonnes: [a]
+  explication: "Le transceiver ne fait que recopier TXD sur le bus."
+  pourquoi_faux:
+    b: "Il recopie TXD."
+    c: "On est sur le banc."
+    d: "Non."
+  source: "S24-L03#exemple-8--un-nœud-qui-bloque"
+- id: S24-Q025
+  bonnes: [a]
+  explication: "Protocole commun calculateurs réels et chapitre S24."
+  pourquoi_faux:
+    b: "Interdit."
+    c: "Interdit."
+    d: "FE-08."
+  source: "S24-L03#ce-que-montrent-les-mesures"

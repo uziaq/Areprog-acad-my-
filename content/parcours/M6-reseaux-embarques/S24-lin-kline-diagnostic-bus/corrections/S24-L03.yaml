@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S24-L03-EX01
+  bonnes: [a]
+  explication: "Avec deux terminaisons, on attendrait environ 60 Ω ; une résistance presque nulle signale un court-circuit entre les lignes."
+  renvoi_section: "S24-L03#ce-que-montrent-les-mesures"
+- id: S24-L03-EX02
+  bonnes: [a]
+  explication: "La division du bus localise le défaut du côté du nœud débranché ; on confirme ensuite par des mesures sur ce nœud."
+  renvoi_section: "S24-L03#exemple-8--un-nœud-qui-bloque"
+- id: S24-L03-EX03
+  ordre: [b, e, d, a, c]
+  explication: "Symptôme et schéma, alimentation et masse, hors tension, sous tension, puis division du bus avant de conclure."
+  renvoi_section: "S24-L03#lordre-des-mesures"
