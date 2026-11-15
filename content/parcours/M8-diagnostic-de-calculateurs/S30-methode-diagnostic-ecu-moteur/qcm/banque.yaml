@@ -1,0 +1,269 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S30-Q001
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S30-L01#dix-étapes-dans-lordre"
+  enonce: "Quelle étape vient juste après l'inspection visuelle dans la méthode de l'académie ?"
+  propositions:
+    - {id: a, texte: "Les alimentations"}
+    - {id: b, texte: "La communication"}
+    - {id: c, texte: "La mémoire"}
+    - {id: d, texte: "Les sorties"}
+- id: S30-Q002
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S30-L01#dix-étapes-dans-lordre"
+  enonce: "Pourquoi les alimentations se contrôlent-elles avant les sorties ?"
+  propositions:
+    - {id: a, texte: "Une sortie mesurée sur un calculateur dont l'alimentation est fausse ne prouve rien"}
+    - {id: b, texte: "Les sorties sont moins importantes"}
+    - {id: c, texte: "Pour gagner du temps uniquement"}
+    - {id: d, texte: "L'ordre n'a pas d'importance"}
+- id: S30-Q003
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S30-L01#dix-étapes-dans-lordre"
+  enonce: "Que contient le dossier à la réception d'un calculateur ?"
+  propositions:
+    - {id: a, texte: "Référence lue sur l'étiquette, état, photos des deux faces, sans donnée client ni identifiant de véhicule"}
+    - {id: b, texte: "Le numéro d'identification du véhicule du client"}
+    - {id: c, texte: "Le nom et l'adresse du client"}
+    - {id: d, texte: "Rien, la réception n'est pas documentée"}
+- id: S30-Q004
+  type: choix_unique
+  securite: true
+  competences: [D1.6]
+  section: "S30-L01#dix-étapes-dans-lordre"
+  enonce: "Avant de manipuler la carte d'un ECU moteur qui a été alimenté, que faut-il faire ?"
+  propositions:
+    - {id: a, texte: "Mesurer la décharge des étages à tension élevée, puis la mesurer de nouveau juste avant le contact"}
+    - {id: b, texte: "Attendre une minute"}
+    - {id: c, texte: "Court-circuiter les condensateurs au tournevis"}
+    - {id: d, texte: "Rien si l'alimentation est coupée"}
+- id: S30-Q005
+  type: choix_unique
+  securite: false
+  competences: [D1.6, D10.3]
+  section: "S30-L01#larbre-dhypothèses"
+  enonce: "Qu'est-ce qu'une bonne hypothèse ?"
+  propositions:
+    - {id: a, texte: "Une phrase vérifiable, par exemple « le régulateur 5 V ne régule plus »"}
+    - {id: b, texte: "« L'alimentation »"}
+    - {id: c, texte: "« Le calculateur est mort »"}
+    - {id: d, texte: "Une intuition non écrite"}
+- id: S30-Q006
+  type: choix_unique
+  securite: false
+  competences: [D1.6, D10.3]
+  section: "S30-L01#larbre-dhypothèses"
+  enonce: "Comment choisit-on la mesure suivante ?"
+  propositions:
+    - {id: a, texte: "Elle donne des résultats différents selon l'hypothèse vraie, la moins risquée et la plus discriminante d'abord"}
+    - {id: b, texte: "La plus facile, même si elle ne départage rien"}
+    - {id: c, texte: "Au hasard"}
+    - {id: d, texte: "La plus risquée d'abord"}
+- id: S30-Q007
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S30-L01#larbre-dhypothèses"
+  enonce: "Quelle faute éliminatoire correspond au remplacement d'un composant sans mesure qui le justifie ?"
+  propositions:
+    - {id: a, texte: "FE-13"}
+    - {id: b, texte: "FE-01"}
+    - {id: c, texte: "FE-07"}
+    - {id: d, texte: "Aucune"}
+- id: S30-Q008
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S30-L01#contre-exemple--la-réparation-par-essais"
+  enonce: "Dans le cas VID-12, quel défaut de méthode est relevé ?"
+  propositions:
+    - {id: a, texte: "Panne déclarée résolue sans essai fonctionnel ni recherche de la cause"}
+    - {id: b, texte: "Trop de mesures"}
+    - {id: c, texte: "Usage d'une carte de référence"}
+    - {id: d, texte: "Sauvegarde double de la mémoire"}
+- id: S30-Q009
+  type: choix_unique
+  securite: false
+  competences: [D1.6, D10.3]
+  section: "S30-L01#exemple-3--une-conclusion-prudente"
+  enonce: "Une sortie réparée commute sur charge simulée. Qu'est-ce qui n'est pas prouvé ?"
+  propositions:
+    - {id: a, texte: "La cause qui a détruit le transistor, côté charge ou faisceau"}
+    - {id: b, texte: "La commutation sur charge simulée"}
+    - {id: c, texte: "Le remplacement du transistor"}
+    - {id: d, texte: "Tout est prouvé"}
+- id: S30-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#pourquoi-comparer"
+  enonce: "Pourquoi un exemplaire de référence est-il indispensable sans schéma ?"
+  propositions:
+    - {id: a, texte: "Il donne la valeur attendue de chaque broche, mesurée de la même façon"}
+    - {id: b, texte: "Il sert de pièces détachées"}
+    - {id: c, texte: "Il permet de copier la mémoire"}
+    - {id: d, texte: "Il n'est pas utile"}
+- id: S30-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#pourquoi-comparer"
+  enonce: "À quelle condition deux cartes sont-elles comparables ?"
+  propositions:
+    - {id: a, texte: "Même référence matérielle, vérifiée par comparaison visuelle"}
+    - {id: b, texte: "Même marque de véhicule"}
+    - {id: c, texte: "Même couleur de boîtier"}
+    - {id: d, texte: "Même kilométrage"}
+- id: S30-Q012
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S30-L02#relever-broche-par-broche"
+  enonce: "Dans quel état se font les relevés de résistance et de chute de diode broche par broche ?"
+  propositions:
+    - {id: a, texte: "Hors tension, décharge des étages à tension élevée mesurée"}
+    - {id: b, texte: "Sous tension, contact mis"}
+    - {id: c, texte: "Borne 30 seule"}
+    - {id: d, texte: "Peu importe"}
+- id: S30-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#relever-broche-par-broche"
+  enonce: "Qu'affiche le test de jonction sur une jonction en sens inverse ?"
+  propositions:
+    - {id: a, texte: "Un circuit ouvert"}
+    - {id: b, texte: "0 V"}
+    - {id: c, texte: "Quelques dixièmes de volt"}
+    - {id: d, texte: "La tension de la batterie"}
+- id: S30-Q014
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#relever-broche-par-broche"
+  enonce: "Pourquoi une mesure en circuit n'est-elle interprétable que par comparaison ?"
+  propositions:
+    - {id: a, texte: "Elle mesure tout le réseau entre les pointes, pas un composant seul"}
+    - {id: b, texte: "Le multimètre est faux en circuit"}
+    - {id: c, texte: "Elle est toujours nulle"}
+    - {id: d, texte: "Elle l'est sans comparaison"}
+- id: S30-Q015
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#relever-broche-par-broche"
+  enonce: "La lecture d'une broche dérive pendant quelques secondes. Que faire ?"
+  propositions:
+    - {id: a, texte: "Attendre la stabilisation, avec la même méthode sur les deux cartes"}
+    - {id: b, texte: "Noter la première valeur affichée"}
+    - {id: c, texte: "Changer de calibre sur une seule carte"}
+    - {id: d, texte: "Abandonner la broche"}
+- id: S30-Q016
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#interpréter-les-écarts"
+  enonce: "Référence : 4 700 Ω ; carte en panne : 4 750 Ω. Écart absolu (panne moins référence) ?"
+  unite_attendue: Ω
+- id: S30-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#interpréter-les-écarts"
+  enonce: "Circuit ouvert sur la carte en panne, conduction sur la référence. Quelle piste ?"
+  propositions:
+    - {id: a, texte: "Piste, résistance série ou soudure coupée : contrôler la continuité de la broche au composant"}
+    - {id: b, texte: "Court-circuit à la masse"}
+    - {id: c, texte: "Défaut de programme"}
+    - {id: d, texte: "Aucune"}
+- id: S30-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#les-signatures-courant-tension"
+  enonce: "Que montre l'axe vertical d'une signature courant-tension ?"
+  propositions:
+    - {id: a, texte: "Le courant"}
+    - {id: b, texte: "La tension"}
+    - {id: c, texte: "Le temps"}
+    - {id: d, texte: "La fréquence"}
+- id: S30-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#les-signatures-courant-tension"
+  enonce: "Quelle forme a la signature d'un condensateur ?"
+  propositions:
+    - {id: a, texte: "Une ellipse"}
+    - {id: b, texte: "Un trait horizontal"}
+    - {id: c, texte: "Un trait vertical"}
+    - {id: d, texte: "Un trait oblique"}
+- id: S30-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L02#les-signatures-courant-tension"
+  enonce: "Quelle est une limite de l'analyse de signature ?"
+  propositions:
+    - {id: a, texte: "Ce n'est pas un essai fonctionnel : elle ne détecte pas un problème de programme"}
+    - {id: b, texte: "Elle exige la carte sous tension"}
+    - {id: c, texte: "Elle exige le schéma"}
+    - {id: d, texte: "Elle n'a aucune limite"}
+- id: S30-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S30-L03#les-blocs-dun-ecu-moteur-diesel"
+  enonce: "Quel bloc d'un ECU moteur règle le courant de chaque voie d'injecteur ?"
+  propositions:
+    - {id: a, texte: "Le circuit de commande d'injecteurs"}
+    - {id: b, texte: "L'émetteur-récepteur CAN"}
+    - {id: c, texte: "La mémoire série"}
+    - {id: d, texte: "L'interface du capteur de régime"}
+- id: S30-Q022
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S30-L03#le-bloc-dinjection-à-tension-élevée"
+  enonce: "Comment mesure-t-on sous tension le nœud du convertisseur élévateur d'injection ?"
+  propositions:
+    - {id: a, texte: "À la sonde différentielle, jamais avec une sonde dont la masse est reliée à la terre"}
+    - {id: b, texte: "Avec une sonde ×10 dont la masse est sur ce nœud"}
+    - {id: c, texte: "Au doigt"}
+    - {id: d, texte: "Avec l'ohmmètre"}
+- id: S30-Q023
+  type: choix_unique
+  securite: false
+  competences: [D10.1, D10.3]
+  section: "S30-L03#loutil-de-diagnostic-sur-banc"
+  enonce: "L'outil affiche plusieurs défauts. Quelle est la première action ?"
+  propositions:
+    - {id: a, texte: "Les recopier tels quels avec leur état, avant tout effacement"}
+    - {id: b, texte: "Les effacer"}
+    - {id: c, texte: "Reprogrammer le calculateur"}
+    - {id: d, texte: "Lancer un essai d'actionneur"}
+- id: S30-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.1, D10.3]
+  section: "S30-L03#loutil-de-diagnostic-sur-banc"
+  enonce: "Sur banc, un défaut de circuit ouvert d'injecteur apparaît sans charge raccordée. Que faire ?"
+  propositions:
+    - {id: a, texte: "Le comparer à la liste de la référence sur le même banc"}
+    - {id: b, texte: "Remplacer l'étage de sortie"}
+    - {id: c, texte: "Conclure que la carte est en panne"}
+    - {id: d, texte: "L'ignorer sans le noter"}
+- id: S30-Q025
+  type: calcul
+  securite: false
+  competences: [D10.1, D10.3]
+  section: "S30-L03#exemple-1--une-valeur-réelle-de-pression"
+  enonce: "Capteur ratiométrique : 2,0 V de signal pour 5,0 V d'alimentation. L'alimentation baisse à 4,5 V, la pression ne change pas. Quel signal doit-on mesurer ?"
+  unite_attendue: V

@@ -1,0 +1,37 @@
+# Énoncés seulement : les solutions sont dans corrections/S30-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S30-L01-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre ces étapes de la méthode de diagnostic de l'académie, pour un calculateur de récupération."
+  propositions:
+    - {id: a, texte: "Alimentations"}
+    - {id: b, texte: "Réception, identification et photos des deux faces"}
+    - {id: c, texte: "Communication"}
+    - {id: d, texte: "Inspection visuelle au microscope"}
+    - {id: e, texte: "Conditions de vie du microcontrôleur"}
+    - {id: f, texte: "Conclusion et validation"}
+  competences: [D1.6]
+  objectif: O1
+- id: S30-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une sortie d'injecteur simulé reste immobile. Hypothèses : transistor de sortie coupé, ou commande absente sur sa grille. Quelle mesure les départage ?"
+  propositions:
+    - {id: a, texte: "La grille du transistor pendant la commande, à la sonde adaptée"}
+    - {id: b, texte: "Remplacer le transistor et voir si la sortie revient"}
+    - {id: c, texte: "La tension de la batterie du banc"}
+    - {id: d, texte: "La température du boîtier du calculateur"}
+  competences: [D1.6, D10.3]
+  objectif: O2
+- id: S30-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Après remplacement justifié d'un transistor de sortie, la sortie commute sur une charge simulée au banc. Que peut affirmer le dossier ?"
+  propositions:
+    - {id: a, texte: "La sortie commute sur charge simulée ; la cause qui a détruit le transistor n'est pas prouvée et le contrôle de la charge et du faisceau est demandé"}
+    - {id: b, texte: "Le calculateur est réparé et fonctionnera sur le véhicule"}
+    - {id: c, texte: "La panne venait d'un défaut de fabrication du transistor"}
+    - {id: d, texte: "Rien, car aucun essai n'est possible sur banc"}
+  competences: [D1.6, D10.3]
+  objectif: O2

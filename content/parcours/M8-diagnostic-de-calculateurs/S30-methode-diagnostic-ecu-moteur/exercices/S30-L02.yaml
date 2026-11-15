@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S30-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S30-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Broche d'un capteur, par rapport à la masse, au test de jonction : 0,6 V sur la référence, 0,0 V sur la carte en panne, dans les deux sens. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Suivre la piste jusqu'aux premiers composants, isoler le suspect et le mesurer seul avant de le remplacer"}
+    - {id: b, texte: "Remplacer le microcontrôleur"}
+    - {id: c, texte: "Conclure que la carte est saine, l'écart étant faible"}
+    - {id: d, texte: "Mettre la carte sous tension pour voir si le court-circuit chauffe, sans limite de courant"}
+  competences: [D10.3]
+  objectif: O1
+- id: S30-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Même broche, même calibre, après stabilisation : 2 200 Ω sur la référence, 2 300 Ω sur la carte en panne. Quel est l'écart absolu (panne moins référence) ?"
+  unite_attendue: "Ω"
+  competences: [D10.3]
+  objectif: O1
+- id: S30-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Entre une broche et la masse, la signature courant-tension de la référence montre une jonction élargie en boucle ; celle de la carte en panne, une jonction seule. Quelle hypothèse vérifier ?"
+  propositions:
+    - {id: a, texte: "Un condensateur en parallèle déconnecté ou coupé, à confirmer au microscope puis par sa mesure isolée"}
+    - {id: b, texte: "Une jonction en court-circuit"}
+    - {id: c, texte: "Un défaut de programme du microcontrôleur"}
+    - {id: d, texte: "Aucune : les signatures ne se comparent pas"}
+  competences: [D10.3]
+  objectif: O2
