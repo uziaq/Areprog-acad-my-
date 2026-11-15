@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S29-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S29-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un capteur inductif peut donner 60 V crête. D'après la fiche de l'interface (Rext minimale = tension crête / 3 mA), quelle résistance série minimale faut-il ?"
+  unite_attendue: "Ω"
+  competences: [D10.2]
+  objectif: O1
+- id: S29-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "La sortie d'un capteur Hall à drain ouvert reste à 0 V, aimant présent ou non, et sa résistance de tirage est coupée. Que manque-t-il pour obtenir un niveau haut ?"
+  propositions:
+    - {id: a, texte: "La résistance de tirage vers Vref, obligatoire avec une sortie à drain ouvert"}
+    - {id: b, texte: "Rien : un capteur Hall fournit lui-même le niveau haut"}
+    - {id: c, texte: "Un condensateur en série"}
+    - {id: d, texte: "Une diode de roue libre"}
+  competences: [D10.2]
+  objectif: O2
+- id: S29-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Une sonde lambda donne 0,1 V. L'interface a un gain de 4,5. Quelle tension lit-on en sortie de l'interface ?"
+  unite_attendue: "V"
+  competences: [D10.2]
+  objectif: O3

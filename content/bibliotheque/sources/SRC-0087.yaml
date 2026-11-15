@@ -1,0 +1,13 @@
+# Contrôleur programmable de commande d'injecteurs et d'électrovannes : prédrivers high-side et
+# low-side de MOSFET externes, convertisseur élévateur pour l'injection directe (tension élevée),
+# mesures de courant, surveillance VDS et diagnostics. Sections citées par leur numéro et leur
+# titre anglais (cours S29).
+id: SRC-0087
+titre: "MC33816, SD6 programmable solenoid controller for precision solenoid control applications"
+editeur: NXP Semiconductors
+reference: "MC33816"
+revision: "Rev. 10.0, février 2023"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/data-sheet/MC33816.pdf

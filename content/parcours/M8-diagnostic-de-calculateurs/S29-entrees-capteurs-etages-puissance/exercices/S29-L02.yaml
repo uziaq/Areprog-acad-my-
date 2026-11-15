@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S29-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S29-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une sortie high-side est coupée et la charge est bien raccordée. Quelle tension attendez-vous sur la sortie ?"
+  propositions:
+    - {id: a, texte: "Environ 0 V : la charge, reliée à la masse, tire la sortie vers le bas"}
+    - {id: b, texte: "La tension batterie"}
+    - {id: c, texte: "La moitié de la tension batterie"}
+    - {id: d, texte: "Une tension négative permanente"}
+  competences: [D10.2]
+  objectif: O1
+- id: S29-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un commutateur high-side a un rapport de mesure de courant K = 500. On lit 2 V sur une résistance de mesure de 2 kΩ. Quel est le courant de charge ?"
+  unite_attendue: "A"
+  competences: [D10.2]
+  objectif: O2
+- id: S29-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Dans la table de commande en mode PWM du pont en H étudié, que se passe-t-il avec IN1 = 1 et IN2 = 1 ?"
+  propositions:
+    - {id: a, texte: "Les deux sorties sont hautes : freinage par les transistors du haut"}
+    - {id: b, texte: "Court-circuit entre + batterie et masse"}
+    - {id: c, texte: "Marche avant à pleine vitesse"}
+    - {id: d, texte: "Pont en haute impédance"}
+  competences: [D10.2]
+  objectif: O3

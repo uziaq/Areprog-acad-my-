@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S29-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S29-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "D'où vient la tension élevée qui ouvre les injecteurs d'un moteur à injection directe ?"
+  propositions:
+    - {id: a, texte: "D'un convertisseur élévateur à inductance qui charge un condensateur"}
+    - {id: b, texte: "D'un transformateur par injecteur"}
+    - {id: c, texte: "Directement de la batterie"}
+    - {id: d, texte: "De l'alternateur, sans conversion"}
+  competences: [D10.2]
+  objectif: O1
+- id: S29-L03-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre la mesure du courant de commande d'une charge inductive simulée sur carte d'entraînement."
+  propositions:
+    - {id: a, texte: "Refermer la pince autour du conducteur, flèche dans le sens du courant"}
+    - {id: b, texte: "Vérifier que le courant total et la crête restent dans les limites de la pince"}
+    - {id: c, texte: "Régler le zéro de la pince, conducteur hors de la pince"}
+    - {id: d, texte: "Lancer la commande et relever le courant à l'oscilloscope"}
+  competences: [D10.1, D10.2]
+  objectif: O2

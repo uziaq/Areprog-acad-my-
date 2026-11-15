@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S29-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-inductif"
+  enonce: "Quel repère de temps l'interface d'un capteur inductif détecte-t-elle ?"
+  propositions:
+    - {id: a, texte: "Le passage par zéro du signal"}
+    - {id: b, texte: "La crête positive"}
+    - {id: c, texte: "La valeur moyenne"}
+    - {id: d, texte: "La fréquence seule"}
+- id: S29-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-inductif"
+  enonce: "Pourquoi l'interface d'un capteur inductif utilise-t-elle un seuil adaptatif ?"
+  propositions:
+    - {id: a, texte: "Le signal est faible à basse vitesse et le bruit peut être fort à haute vitesse"}
+    - {id: b, texte: "Pour économiser du courant"}
+    - {id: c, texte: "Pour mesurer la température"}
+    - {id: d, texte: "Le signal est toujours de même amplitude"}
+- id: S29-Q003
+  type: calcul
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-inductif"
+  enonce: "Tension crête du capteur 45 V. Résistance série minimale d'après la formule de la fiche (tension crête / 3 mA) ?"
+  unite_attendue: Ω
+- id: S29-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-inductif"
+  enonce: "Où mesure-t-on le signal d'un capteur inductif ?"
+  propositions:
+    - {id: a, texte: "Avant la résistance série, au capteur"}
+    - {id: b, texte: "Sur la broche d'entrée du circuit, où il est écrêté"}
+    - {id: c, texte: "Sur l'alimentation du circuit"}
+    - {id: d, texte: "N'importe où"}
+- id: S29-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-à-effet-hall"
+  enonce: "Quel est le rôle de l'hystérésis d'un capteur Hall ?"
+  propositions:
+    - {id: a, texte: "Éviter qu'un champ bruité fasse basculer la sortie"}
+    - {id: b, texte: "Augmenter le courant de sortie"}
+    - {id: c, texte: "Mesurer la température"}
+    - {id: d, texte: "Remplacer la résistance de tirage"}
+- id: S29-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-à-effet-hall"
+  enonce: "Que règle le choix de la résistance de tirage d'une sortie Hall ?"
+  propositions:
+    - {id: a, texte: "Le compromis entre vitesse du front montant et courant à l'état bas"}
+    - {id: b, texte: "Le seuil magnétique"}
+    - {id: c, texte: "La tension d'alimentation du capteur"}
+    - {id: d, texte: "Rien"}
+- id: S29-Q007
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#le-capteur-ratiométrique"
+  enonce: "Pourquoi relève-t-on l'alimentation d'un capteur ratiométrique en même temps que son signal ?"
+  propositions:
+    - {id: a, texte: "Son signal est proportionnel à son alimentation : on raisonne sur le rapport"}
+    - {id: b, texte: "Pour vérifier la batterie"}
+    - {id: c, texte: "Ce n'est pas utile"}
+    - {id: d, texte: "Pour régler la pince"}
+- id: S29-Q008
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#la-sonde-lambda"
+  enonce: "Pourquoi l'interface d'une sonde lambda a-t-elle une entrée différentielle ?"
+  propositions:
+    - {id: a, texte: "La sonde est à la masse du bloc moteur, le calculateur à celle de la caisse"}
+    - {id: b, texte: "Pour doubler le signal"}
+    - {id: c, texte: "Pour chauffer la sonde"}
+    - {id: d, texte: "Pour réduire le prix"}
+- id: S29-Q009
+  type: calcul
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#la-sonde-lambda"
+  enonce: "Sonde à 0,6 V, gain de l'interface 4,5. Tension de sortie ?"
+  unite_attendue: V
+- id: S29-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#la-sonde-lambda"
+  enonce: "La sortie de l'interface lambda reste à sa valeur par défaut. Quelles causes envisagez-vous ?"
+  propositions:
+    - {id: a, texte: "Sonde froide (chauffage en défaut) ou fil de sonde coupé"}
+    - {id: b, texte: "Mélange toujours riche"}
+    - {id: c, texte: "Batterie trop chargée"}
+    - {id: d, texte: "Capteur Hall défectueux"}
+- id: S29-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#low-side-et-high-side"
+  enonce: "Dans une sortie low-side, où est le transistor ?"
+  propositions:
+    - {id: a, texte: "Entre la charge et la masse"}
+    - {id: b, texte: "Entre le + batterie et la charge"}
+    - {id: c, texte: "En parallèle sur la charge"}
+    - {id: d, texte: "Dans le capteur"}
+- id: S29-Q012
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#low-side-et-high-side"
+  enonce: "Que voit-on au drain d'un low-side à la coupure d'une charge inductive ?"
+  propositions:
+    - {id: a, texte: "Une impulsion au-dessus de la tension batterie, écrêtée par le composant"}
+    - {id: b, texte: "Rien"}
+    - {id: c, texte: "Une tension négative permanente"}
+    - {id: d, texte: "La tension batterie divisée par deux"}
+- id: S29-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#protections-et-diagnostics-dun-commutateur-intégré"
+  enonce: "Comment un high-side protégé détecte-t-il une charge ouverte, sortie coupée ?"
+  propositions:
+    - {id: a, texte: "La sortie reste proche de l'alimentation au lieu de tomber à 0 V"}
+    - {id: b, texte: "Le courant devient très grand"}
+    - {id: c, texte: "La sortie devient négative"}
+    - {id: d, texte: "Il ne peut pas la détecter"}
+- id: S29-Q014
+  type: calcul
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#exemple-4--lire-le-courant-dun-high-side"
+  enonce: "K = 500, tension de mesure 0,6 V sur 1 kΩ. Courant de charge ?"
+  unite_attendue: A
+- id: S29-Q015
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#protections-et-diagnostics-dun-commutateur-intégré"
+  enonce: "Que fait un high-side protégé en court-circuit à la masse persistant ?"
+  propositions:
+    - {id: a, texte: "Il limite le courant, puis s'arrête en surchauffe"}
+    - {id: b, texte: "Il fond"}
+    - {id: c, texte: "Il double sa tension"}
+    - {id: d, texte: "Rien de particulier"}
+- id: S29-Q016
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#protections-et-diagnostics-dun-commutateur-intégré"
+  enonce: "Pourquoi une carte corrodée peut-elle fausser un diagnostic de charge ouverte ?"
+  propositions:
+    - {id: a, texte: "L'humidité ou la corrosion crée un courant de fuite en sortie"}
+    - {id: b, texte: "La corrosion augmente la tension batterie"}
+    - {id: c, texte: "Elle ne le peut pas"}
+    - {id: d, texte: "Elle refroidit le composant"}
+- id: S29-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#le-pont-en-h"
+  enonce: "Pourquoi un temps mort dans un pont en H ?"
+  propositions:
+    - {id: a, texte: "Pour que les deux transistors d'un même demi-pont ne conduisent jamais ensemble"}
+    - {id: b, texte: "Pour ralentir le moteur"}
+    - {id: c, texte: "Pour mesurer le courant"}
+    - {id: d, texte: "Pour économiser de l'énergie"}
+- id: S29-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L02#le-pont-en-h"
+  enonce: "Mode PWM du pont étudié : IN1 = 0, IN2 = 0. État des sorties ?"
+  propositions:
+    - {id: a, texte: "Haute impédance, roue libre"}
+    - {id: b, texte: "Freinage"}
+    - {id: c, texte: "Marche avant"}
+    - {id: d, texte: "Court-circuit"}
+- id: S29-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L03#commander-un-injecteur"
+  enonce: "Qui commande les injecteurs dans un calculateur moderne ?"
+  propositions:
+    - {id: a, texte: "Des transistors pilotés par un circuit de commande qui mesure le courant"}
+    - {id: b, texte: "Un transformateur par injecteur"}
+    - {id: c, texte: "Un relais par injecteur"}
+    - {id: d, texte: "La batterie directement"}
+- id: S29-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L03#le-survoltage"
+  enonce: "D'où vient la tension élevée d'une injection directe ?"
+  propositions:
+    - {id: a, texte: "D'un convertisseur élévateur qui charge un condensateur"}
+    - {id: b, texte: "De l'alternateur directement"}
+    - {id: c, texte: "D'une pile interne"}
+    - {id: d, texte: "Du capteur lambda"}
+- id: S29-Q021
+  type: choix_unique
+  securite: true
+  competences: [D10.1]
+  section: "S29-L03#le-survoltage"
+  enonce: "Le calculateur est coupé depuis dix minutes. Pouvez-vous toucher l'étage survolté ?"
+  propositions:
+    - {id: a, texte: "Non : on mesure la décharge, puis on la mesure de nouveau juste avant"}
+    - {id: b, texte: "Oui, dix minutes suffisent"}
+    - {id: c, texte: "Oui, si la batterie est débranchée"}
+    - {id: d, texte: "Oui, avec des gants"}
+- id: S29-Q022
+  type: choix_unique
+  securite: true
+  competences: [D10.1]
+  section: "S29-L03#mesurer-un-nœud-à-tension-élevée"
+  enonce: "Comment mesure-t-on la grille d'un transistor high-side à l'oscilloscope ?"
+  propositions:
+    - {id: a, texte: "À la sonde différentielle ou en soustraction de deux voies, jamais masse de sonde sur le nœud"}
+    - {id: b, texte: "Masse de la sonde sur la source du transistor"}
+    - {id: c, texte: "Au multimètre en ohmmètre"}
+    - {id: d, texte: "Sans sonde"}
+- id: S29-Q023
+  type: choix_unique
+  securite: true
+  competences: [D10.1]
+  section: "S29-L03#mesurer-un-courant-de-commande-à-la-pince"
+  enonce: "Quelle limite d'une pince de courant faut-il respecter ?"
+  propositions:
+    - {id: a, texte: "Courant total (continu plus crête) et crête impulsionnelle sous les valeurs de la notice"}
+    - {id: b, texte: "Aucune"}
+    - {id: c, texte: "Seulement la tension"}
+    - {id: d, texte: "Seulement le continu"}
+- id: S29-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.1]
+  section: "S29-L03#mesurer-un-courant-de-commande-à-la-pince"
+  enonce: "Pourquoi une pince AC ne convient-elle pas au courant d'un injecteur ?"
+  propositions:
+    - {id: a, texte: "Elle ne voit pas le continu"}
+    - {id: b, texte: "Elle est trop précise"}
+    - {id: c, texte: "Elle ne mesure que les tensions"}
+    - {id: d, texte: "Elle convient parfaitement"}
+- id: S29-Q025
+  type: choix_unique
+  securite: false
+  competences: [D10.2]
+  section: "S29-L01#filtrer-et-protéger"
+  enonce: "Quel effet un filtre d'entrée a-t-il sur le signal d'un capteur ?"
+  propositions:
+    - {id: a, texte: "Il le retarde et l'arrondit : on compare signal du capteur et signal arrivant au circuit"}
+    - {id: b, texte: "Aucun"}
+    - {id: c, texte: "Il l'amplifie"}
+    - {id: d, texte: "Il le rend carré"}

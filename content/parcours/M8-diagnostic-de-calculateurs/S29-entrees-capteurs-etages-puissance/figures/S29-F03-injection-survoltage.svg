@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : principe d'une commande d'injecteur avec survoltage, allure du courant sans valeur. -->
+  <defs>
+    <marker id="s29f03-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <!-- convertisseur -->
+  <rect x="20" y="60" width="90" height="50" rx="4" />
+  <path d="M65 40 V60" />
+  <path d="M110 85 H160" />
+  <path d="M150 85 V110 M140 110 H160 M140 118 H160 M150 118 V140" />
+  <path d="M138 140 H162 M143 146 H157" stroke-width="1.5" />
+  <path d="M160 85 H220" />
+  <!-- high-side -->
+  <rect x="220" y="70" width="40" height="30" rx="3" />
+  <path d="M260 85 H290 V110" />
+  <!-- injecteur -->
+  <path d="M290 110 c10 6 10 12 0 18 c10 6 10 12 0 18 c10 6 10 12 0 18" />
+  <path d="M290 164 V175" />
+  <!-- low-side -->
+  <rect x="270" y="175" width="40" height="26" rx="3" />
+  <path d="M290 201 V210" />
+  <rect x="284" y="210" width="12" height="16" />
+  <path d="M290 226 V232 M276 232 H304" stroke-width="1.5" />
+  <!-- courbe -->
+  <path d="M370 210 H580" stroke-width="1" marker-end="url(#s29f03-a)" />
+  <path d="M370 210 V60" stroke-width="1" marker-end="url(#s29f03-a)" />
+  <path d="M380 210 L395 90 L410 90 L420 150 L430 140 L440 155 L450 140 L460 155 L470 140 L480 155 L490 140 L500 155 L505 210" stroke-width="2.5" />
+  <g fill="currentColor" stroke="none" font-size="11" text-anchor="middle">
+    <text x="65" y="80">convertisseur</text>
+    <text x="65" y="96">élévateur</text>
+    <text x="65" y="34">+ batterie</text>
+    <text x="150" y="70" font-size="10">tension élevée</text>
+    <text x="240" y="90">HS</text>
+    <text x="345" y="140">injecteur</text>
+    <text x="290" y="192">LS</text>
+    <text x="302" y="222" font-size="10" text-anchor="start">mesure de courant</text>
+    <text x="405" y="80" font-size="10">appel</text>
+    <text x="465" y="130" font-size="10">maintien</text>
+    <text x="585" y="225">t</text>
+    <text x="362" y="56">i</text>
+    <text x="475" y="245" font-size="10">allure sans valeur</text>
+  </g>
+</svg>

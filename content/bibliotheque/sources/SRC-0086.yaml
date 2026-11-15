@@ -1,0 +1,13 @@
+# Pont en H intégré pour moteur à courant continu, qualifié automobile : tables de commande (marche
+# avant, marche arrière, freinage, haute impédance), temps mort, mesure de courant intégrée,
+# protections et diagnostics (surintensité, charge ouverte, surchauffe). Sections citées par leur
+# numéro et leur titre anglais (cours S29).
+id: SRC-0086
+titre: "DRV8873-Q1 Automotive H-Bridge Motor Driver"
+editeur: Texas Instruments
+reference: "SLVSDY7B"
+revision: "B, janvier 2021"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/drv8873-q1.pdf

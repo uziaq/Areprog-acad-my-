@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S29-L03-EX01
+  bonnes: [a]
+  explication: "En injection directe, un convertisseur élévateur fournit une tension élevée stockée dans un condensateur (jusqu'à 72 V pour le circuit NXP cité). Les transformateurs sont une erreur relevée dans une vidéo (E-09)."
+  renvoi_section: "S29-L03#le-survoltage"
+- id: S29-L03-EX02
+  ordre: [b, c, a, d]
+  explication: "On vérifie d'abord que la pince convient (continu plus crête, crête impulsionnelle), puis on règle le zéro hors conducteur, on referme la pince dans le bon sens et on relève."
+  renvoi_section: "S29-L03#mesurer-un-courant-de-commande-à-la-pince"
