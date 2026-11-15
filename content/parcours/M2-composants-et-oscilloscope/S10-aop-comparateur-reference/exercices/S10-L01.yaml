@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S10-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S10-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un amplificateur non inverseur a R2 = 33 kΩ entre la sortie et l'entrée −, et R1 = 10 kΩ entre l'entrée − et la masse. L'entrée vaut 0,4 V. Quelle est la tension de sortie, en supposant l'AOP loin de la saturation ?"
+  unite_attendue: V
+  competences: [D4.5]
+  objectif: O2
+- id: S10-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un amplificateur inverseur a R1 = 10 kΩ et R2 = 22 kΩ, alimenté en +12 V et −12 V. L'entrée vaut 1 V. Quelle est la tension de sortie ?"
+  unite_attendue: V
+  competences: [D4.5]
+  objectif: O2
+- id: S10-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un non inverseur de gain 4, alimenté en 5 V seul, reçoit 1,5 V. Vous mesurez environ 4,9 V en sortie. Qu'en concluez-vous ?"
+  propositions:
+    - {id: a, texte: "La sortie sature : 6 V est impossible sous une alimentation de 5 V"}
+    - {id: b, texte: "L'AOP est défectueux, il devrait sortir 6 V"}
+    - {id: c, texte: "Le gain réel est de 4,9 / 1,5 et la fiche est fausse"}
+    - {id: d, texte: "L'entrée est hors de l'alimentation"}
+  competences: [D4.5, D4.6]
+  objectif: O3

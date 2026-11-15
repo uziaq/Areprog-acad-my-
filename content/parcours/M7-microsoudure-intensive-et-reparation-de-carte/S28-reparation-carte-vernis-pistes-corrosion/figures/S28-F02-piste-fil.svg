@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : réparation d'une piste coupée par un fil soudé à recouvrement, vue de dessus, dessin de principe d'après la procédure 4.2.4 de SRC-0077. -->
+  <defs>
+    <marker id="s28f02-c" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <!-- pastilles -->
+  <rect x="30" y="90" width="40" height="40" rx="3" fill="currentColor" fill-opacity="0.25" />
+  <rect x="530" y="90" width="40" height="40" rx="3" fill="currentColor" fill-opacity="0.25" />
+  <!-- tronçons de piste -->
+  <rect x="70" y="104" width="170" height="12" fill="currentColor" fill-opacity="0.25" stroke-width="1" />
+  <rect x="360" y="104" width="170" height="12" fill="currentColor" fill-opacity="0.25" stroke-width="1" />
+  <!-- zone coupée -->
+  <path d="M250 98 L262 122 M338 98 L350 122" stroke-width="1" stroke-dasharray="3 3" />
+  <!-- fil de réparation -->
+  <path d="M180 110 C 240 70, 360 70, 420 110" stroke-width="3" />
+  <!-- soudures de recouvrement -->
+  <rect x="180" y="100" width="60" height="20" rx="8" stroke-width="2.5" />
+  <rect x="360" y="100" width="60" height="20" rx="8" stroke-width="2.5" />
+  <!-- cote recouvrement -->
+  <path d="M180 150 H240" stroke-width="1" marker-start="url(#s28f02-c)" marker-end="url(#s28f02-c)" />
+  <path d="M180 124 V156 M240 124 V156" stroke-width="0.8" />
+  <!-- cote distance à la pastille -->
+  <path d="M420 178 H530" stroke-width="1" marker-start="url(#s28f02-c)" marker-end="url(#s28f02-c)" />
+  <path d="M420 124 V184 M530 132 V184" stroke-width="0.8" />
+  <g fill="currentColor" stroke="none" font-size="11">
+    <text x="50" y="80" text-anchor="middle">pastille</text>
+    <text x="550" y="80" text-anchor="middle">pastille</text>
+    <text x="300" y="62" text-anchor="middle">fil de réparation, collé sur la carte</text>
+    <text x="300" y="140" text-anchor="middle">partie abîmée retirée</text>
+    <text x="210" y="172" text-anchor="middle">recouvrement</text>
+    <text x="210" y="186" text-anchor="middle">≥ 2 × largeur de piste</text>
+    <text x="475" y="200" text-anchor="middle">soudure loin de la pastille</text>
+    <text x="300" y="212" text-anchor="middle" font-size="10">vernis épargne gratté sous chaque recouvrement</text>
+  </g>
+</svg>

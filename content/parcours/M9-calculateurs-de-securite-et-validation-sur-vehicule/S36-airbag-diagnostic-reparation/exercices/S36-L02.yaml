@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S36-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S36-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un courant de diagnostic de 34 mA traverse un simulateur de 2 Ω. Quelle tension apparaît à ses bornes, en millivolts ?"
+  unite_attendue: "mV"
+  competences: [D10.7]
+  objectif: O3
+- id: S36-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "L'outil lit un défaut « allumeur ouvert » sur une boucle alors qu'un simulateur y est branché. Quelle est la première vérification ?"
+  propositions:
+    - {id: a, texte: "Hors tension, la continuité du simulateur et de son raccordement jusqu'aux broches du calculateur"}
+    - {id: b, texte: "Remplacer le circuit de commande d'allumeurs"}
+    - {id: c, texte: "Effacer le défaut"}
+    - {id: d, texte: "Brancher un vrai allumeur"}
+  competences: [D10.7]
+  objectif: O1
+- id: S36-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Comment mesure-t-on une sortie d'allumeur suspecte ?"
+  propositions:
+    - {id: a, texte: "Hors tension, réserve déchargée, en comparant à la même sortie de l'exemplaire de référence"}
+    - {id: b, texte: "Sous tension, en injectant un courant dans la sortie"}
+    - {id: c, texte: "En provoquant la commande de l'étage"}
+    - {id: d, texte: "Sans comparaison : la valeur parle d'elle-même"}
+  competences: [D10.7]
+  objectif: O2

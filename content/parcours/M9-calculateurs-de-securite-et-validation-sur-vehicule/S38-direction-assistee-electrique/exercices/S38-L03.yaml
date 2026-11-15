@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S38-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S38-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "La documentation indique que le capteur de couple transmet ses deux voies en trame SENT. Avec quel instrument relever le signal ?"
+  propositions:
+    - {id: a, texte: "L'oscilloscope, base de temps réglée pour voir les impulsions de la trame"}
+    - {id: b, texte: "Le multimètre en tension continue"}
+    - {id: c, texte: "L'ohmmètre, contact mis"}
+    - {id: d, texte: "La pince de courant de fort calibre"}
+  competences: [D10.6, D10.7]
+  objectif: O1
+- id: S38-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Après le remplacement d'un calculateur de direction, que faut-il faire avant tout roulage ?"
+  propositions:
+    - {id: a, texte: "Les calibrations du constructeur (angle de braquage, butées) après des premiers essais véhicule immobilisé"}
+    - {id: b, texte: "Rien : l'assistance fonctionne donc tout va bien"}
+    - {id: c, texte: "Un essai sur route ouverte pour vérifier"}
+    - {id: d, texte: "Effacer les défauts et désactiver le voyant"}
+  competences: [D10.7]
+  objectif: O3

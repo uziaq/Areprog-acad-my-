@@ -1,0 +1,13 @@
+# Interface de ligne K selon l'ISO 9141 : liaison série bidirectionnelle à l'alternat pour le
+# diagnostic, conversion des niveaux logiques en niveaux batterie, résistance de tirage externe
+# et diode, protections, absence de ligne L (cours S24). Fiche d'un composant public, utilisée
+# comme exemple ; sections citées par leur numéro et leur titre anglais.
+id: SRC-0070
+titre: "MC33660, ISO K line serial link interface"
+editeur: NXP Semiconductors
+reference: "MC33660"
+revision: "Rev 6.0, juillet 2016"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/data-sheet/MC33660.pdf

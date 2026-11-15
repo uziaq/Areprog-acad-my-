@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S19-L02-EX01
+  valeur: 1.1
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Marge basse = VIL − VOL = 1,5 − 0,4 = 1,1 V."
+  renvoi_section: "S19-L02#niveaux-logiques-et-marge-de-bruit"
+- id: S19-L02-EX02
+  bonnes: [a]
+  explication: "Une sortie à drain ouvert ne sait que tirer vers la masse ; sans résistance de tirage, rien ne donne le niveau haut et la ligne flotte."
+  renvoi_section: "S19-L02#les-types-de-sortie"
+- id: S19-L02-EX03
+  bonnes: [a]
+  explication: "Condition VOH de l'émetteur > VIH du récepteur : 2,4 V < 0,7 × 5 = 3,5 V. Le niveau haut n'est pas garanti ; on utilise un translateur de niveau ou un récepteur à entrées compatibles TTL."
+  renvoi_section: "S19-L02#compatibilité-33-v--5-v"

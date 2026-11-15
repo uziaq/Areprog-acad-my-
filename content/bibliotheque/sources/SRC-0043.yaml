@@ -1,0 +1,13 @@
+# Conception de référence d'un étage d'entrée automobile : impulsions d'ISO 7637-2 (1, 2a, 3a/3b,
+# 5b délestage écrêté), classes de fonctionnement d'ISO 16750-2, protection contre l'inversion par
+# MOSFET, choix des diodes TVS, condensateurs d'entrée en série, supervision de tension (cours S17).
+# Sections citées par leur numéro et leur titre anglais.
+id: SRC-0043
+titre: "Automotive Wide Vin power frontend with cold crank operation, transient protection, and EMI filter (TIDA-00699)"
+editeur: Texas Instruments
+reference: "TIDUB49"
+revision: "décembre 2015"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/tidub49

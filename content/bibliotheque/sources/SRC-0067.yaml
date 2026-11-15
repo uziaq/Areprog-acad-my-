@@ -1,0 +1,13 @@
+# Transceiver CAN automobile compatible CAN FD : conformité ISO 11898-2:2016 annoncée par le
+# fabricant, débits CAN FD, broches TXD, RXD, STB et VIO, mode veille, comportement non alimenté
+# (cours S23). Fiche d'un composant public, utilisée comme exemple ; sections citées par leur
+# numéro et leur titre anglais.
+id: SRC-0067
+titre: "TCAN1042-Q1 Automotive Fault Protected CAN Transceiver with CAN FD"
+editeur: Texas Instruments
+reference: "SLLSES9D"
+revision: "D, octobre 2021"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tcan1042-q1.pdf

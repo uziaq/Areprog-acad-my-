@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S16-L03-EX01
+  bonnes: [a]
+  explication: "Le fil de masse capte les pointes à haute fréquence comme une antenne. On utilise un ressort de masse ou la mesure différentielle. Poser la pince de masse sur le nœud de commutation le mettrait en court-circuit avec la terre (FE-07)."
+  renvoi_section: "S16-L03#mesurer-londulation-sans-se-tromper"
+- id: S16-L03-EX02
+  valeur: 1.2
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PTOTAL = 24 × 0,3 = 7,2 W ; PCHARGE = 5 × 1,2 = 6 W ; pertes = 1,2 W. Rendement : 6 / 7,2 ≈ 0,83."
+  renvoi_section: "S16-L03#mesurer-le-rendement"

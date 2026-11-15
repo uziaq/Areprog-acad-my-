@@ -1,0 +1,15 @@
+# Circuit de commande de pont triphasé pour moteur sans balais (direction assistée électrique,
+# freinage, pompes) : six commandes de MOSFET canal N, trois amplificateurs de courant de shunt,
+# survolteur de grille, surveillance VDS et limite de courant, protections de tension et de
+# température, chien de garde questions-réponses. La figure 18 (§8.3) montre un système de
+# direction assistée électrique type. Utilisé en S38. Sections citées par leur numéro et leur
+# titre anglais.
+id: SRC-0102
+titre: "DRV3205-Q1 Three-Phase Automotive Gate Driver With Three Integrated Current Shunt Amplifiers and Enhanced Protection, Diagnostics, and Monitoring"
+editeur: Texas Instruments
+reference: "SLVSCV1E"
+revision: "E, février 2017"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/drv3205-q1.pdf

@@ -1,0 +1,189 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S11-Q001
+  bonnes: [a]
+  explication: "C'est le point à −3 dB ; au-delà, l'amplitude est faussée et les fronts s'arrondissent."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "C'est la fréquence d'échantillonnage."
+    d: "L'amplitude ne tombe pas à zéro à la bande passante."
+  source: "S11-L01#la-bande-passante"
+- id: S11-Q002
+  valeur: 350
+  tolerance_relative: 0.02
+  unite: kHz
+  explication: "Plus haute fréquence : 7 × 10 = 70 kHz ; bande passante : 5 × 70 = 350 kHz."
+  source: "S11-L01#exemple-1--bande-passante-pour-une-pwm"
+- id: S11-Q003
+  valeur: 35
+  tolerance_relative: 0.02
+  unite: MHz
+  explication: "Temps de montée de l'oscilloscope : 50 / 5 = 10 ns ; bande passante : 0,35 / 10 ns = 35 MHz."
+  source: "S11-L01#exemple-2--bande-passante-à-partir-dun-temps-de-montée"
+- id: S11-Q004
+  bonnes: [a]
+  explication: "Plus on veut voir des fronts raides, plus il faut d'harmoniques, donc de bande passante."
+  pourquoi_faux:
+    b: "Une seule sinusoïde n'a pas de coins."
+    c: "Un carré à 50 % n'a pas d'harmoniques paires."
+    d: "Sans rapport."
+  source: "S11-L01#la-bande-passante"
+- id: S11-Q005
+  valeur: 20
+  tolerance_relative: 0.02
+  unite: MHz
+  explication: "Interpolation linéaire : au moins 10 fois la plus haute fréquence, soit 10 × 2 = 20 MHz."
+  source: "S11-L01#exemple-3--fréquence-déchantillonnage-minimale"
+- id: S11-Q006
+  bonnes: [a]
+  explication: "Un signal réel ne change pas de fréquence avec la base de temps ; on passe à une base de temps plus rapide."
+  pourquoi_faux:
+    b: "La compensation déforme les coins, pas la fréquence."
+    c: "Une masse longue ajoute des oscillations."
+    d: "Le facteur de sonde fausse l'amplitude."
+  source: "S11-L01#le-repliement-aliasing"
+- id: S11-Q007
+  bonnes: [a]
+  explication: "La mémoire est limitée : sur une longue durée, l'oscilloscope échantillonne moins vite. On vérifie la valeur affichée."
+  pourquoi_faux:
+    b: "Elle baisse sur les bases de temps lentes."
+    c: "Sans rapport."
+    d: "Elle en dépend."
+  source: "S11-L01#léchantillonnage"
+- id: S11-Q008
+  bonnes: [a]
+  explication: "Sous-compensée, la sonde arrondit les fronts et réduit l'amplitude apparente."
+  pourquoi_faux:
+    b: "Surcompensée, elle montre des pointes au début des paliers."
+    c: "Compensée, les coins sont carrés."
+    d: "Le facteur ne change pas la forme."
+  source: "S11-L02#la-sonde-10-et-sa-compensation"
+- id: S11-Q009
+  bonnes: [a]
+  explication: "Une sonde mal réglée fausse les mesures ; la compensation dépend de la voie utilisée."
+  pourquoi_faux:
+    b: "Elle dépend de la voie, on la refait à chaque installation."
+    c: "Aucun message ne la signale."
+    d: "Elle doit être équilibrée avec la voie."
+  source: "S11-L02#la-sonde-10-et-sa-compensation"
+- id: S11-Q010
+  valeur: 5
+  tolerance_relative: 0.02
+  unite: V
+  explication: "La tension réelle est dix fois plus grande : 0,5 × 10 = 5 V."
+  source: "S11-L02#exemple-4--un-facteur-de-sonde-oublié"
+- id: S11-Q011
+  bonnes: [a]
+  explication: "La relier ailleurs met ce point en court-circuit avec la terre à travers la sonde : faute éliminatoire FE-07."
+  pourquoi_faux:
+    b: "Un autre point serait court-circuité à la terre."
+    c: "Court-circuit à travers la sonde."
+    d: "Court-circuit de la sortie à la terre."
+  source: "S11-L02#la-masse-de-la-sonde-est-reliée-à-la-terre"
+- id: S11-Q012
+  bonnes: [a]
+  explication: "On ne neutralise jamais la terre d'un appareil de mesure ; une mesure flottante se fait en soustraction ou avec une sonde différentielle."
+  pourquoi_faux:
+    b: "Le danger existe dès la mise sous tension."
+    c: "Les méthodes sont la soustraction ou la sonde différentielle."
+    d: "Sans rapport."
+  source: "S11-L02#la-masse-de-la-sonde-est-reliée-à-la-terre"
+- id: S11-Q013
+  bonnes: [a]
+  explication: "Au retrait, on enlève la pointe d'abord, puis la masse."
+  pourquoi_faux:
+    b: "C'est presque l'ordre du retrait, à l'envers pour l'oscilloscope."
+    c: "L'ordre compte."
+    d: "La masse se branche avant la pointe."
+  source: "S11-L02#la-masse-de-la-sonde-est-reliée-à-la-terre"
+- id: S11-Q014
+  bonnes: [a]
+  explication: "Plus le fil est long, plus le risque d'oscillations augmente ; il capte aussi les signaux voisins."
+  pourquoi_faux:
+    b: "Elle n'augmente pas la bande passante."
+    c: "La compensation se règle par la vis."
+    d: "Sans rapport."
+  source: "S11-L02#la-longue-masse"
+- id: S11-Q015
+  bonnes: [a]
+  explication: "Si les oscillations disparaissent, elles venaient de la mesure, pas du circuit."
+  pourquoi_faux:
+    b: "Elles peuvent venir de la mesure."
+    c: "Cela ne supprime pas leur cause."
+    d: "Sans rapport."
+  source: "S11-L02#exemple-6--des-oscillations-qui-viennent-de-la-sonde"
+- id: S11-Q016
+  bonnes: [a]
+  explication: "On affiche voie 1 − voie 2 ; une sonde différentielle convient aussi."
+  pourquoi_faux:
+    b: "La masse relierait ce point à la terre : FE-07."
+    c: "Une sonde sans masse donne une mesure fausse."
+    d: "Interdit."
+  source: "S11-L02#mesurer-entre-deux-points-dont-aucun-nest-à-la-masse"
+- id: S11-Q017
+  valeur: 3
+  tolerance_relative: 0.02
+  unite: A
+  explication: "I = 0,3 / 0,1 = 3 A."
+  source: "S11-L02#exemple-5--la-tension-aux-bornes-dune-résistance-de-mesure-de-courant"
+- id: S11-Q018
+  bonnes: [a]
+  explication: "En mode unique, l'oscilloscope s'arrête après une acquisition complète et garde la capture."
+  pourquoi_faux:
+    b: "L'auto relance des acquisitions et efface l'événement."
+    c: "Sans rapport."
+    d: "Sans déclenchement, l'événement passe sans être figé."
+  source: "S11-L03#modes-de-déclenchement"
+- id: S11-Q019
+  bonnes: [a]
+  explication: "C'est le mode normal qui garde la dernière acquisition."
+  pourquoi_faux:
+    b: "C'est le mode normal."
+    c: "C'est le mode unique, après une acquisition."
+    d: "Sans rapport."
+  source: "S11-L03#modes-de-déclenchement"
+- id: S11-Q020
+  bonnes: [a]
+  explication: "Le timeout déclenche sans attendre la fin de l'impulsion."
+  pourquoi_faux:
+    b: "Il réagit à un front."
+    c: "Il attend une impulsion hors limites."
+    d: "C'est un mode, pas un type."
+  source: "S11-L03#types-de-déclenchement"
+- id: S11-Q021
+  bonnes: [a]
+  explication: "Il faut une pince AC/DC, avec un capteur à effet Hall."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "C'est vrai, mais ce n'est pas la raison."
+    d: "Elle mesure un courant."
+  source: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+- id: S11-Q022
+  valeur: 1.5
+  tolerance_relative: 0.02
+  unite: A
+  explication: "I = 0,15 / 0,1 = 1,5 A."
+  source: "S11-L03#exemple-8--lire-un-courant-à-la-pince"
+- id: S11-Q023
+  bonnes: [a]
+  explication: "Le courant maximal d'entrée porte sur le total ; en alternatif, il baisse quand la fréquence monte."
+  pourquoi_faux:
+    b: "La crête s'ajoute au continu."
+    c: "Le continu s'ajoute à la crête."
+    d: "Toute pince a un courant maximal."
+  source: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+- id: S11-Q024
+  bonnes: [a]
+  explication: "La pince n'entoure qu'un seul conducteur."
+  pourquoi_faux:
+    b: "Les courants sont de sens opposés."
+    c: "Ils s'annulent."
+    d: "Elle mesure un courant."
+  source: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+- id: S11-Q025
+  bonnes: [a]
+  explication: "Un carré à 50 % contient sa fondamentale et ses harmoniques impaires."
+  pourquoi_faux:
+    b: "Les harmoniques paires sont absentes d'un carré parfait."
+    c: "Un carré n'est pas une sinusoïde."
+    d: "Ce sont des harmoniques paires."
+  source: "S11-L03#exemple-9--le-spectre-dune-pwm"

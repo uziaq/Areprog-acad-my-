@@ -1,0 +1,199 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S19-Q001
+  bonnes: [a]
+  explication: "8 + 2 + 1 = 11."
+  pourquoi_faux:
+    b: "C'est l'écriture binaire, lue à tort en décimal."
+    c: "13 s'écrit 1101."
+    d: "7 s'écrit 0111."
+  source: "S19-L01#binaire-hexadécimal-décimal"
+- id: S19-Q002
+  bonnes: [a]
+  explication: "Seize valeurs, de 0 à F, soit quatre bits."
+  pourquoi_faux:
+    b: "Huit bits font un octet, soit deux chiffres hexadécimaux."
+    c: "Deux bits ne donnent que quatre valeurs."
+    d: "Seize est le nombre de valeurs, pas de bits."
+  source: "S19-L01#binaire-hexadécimal-décimal"
+- id: S19-Q003
+  bonnes: [a]
+  explication: "3 × 16 + 12 = 60."
+  pourquoi_faux:
+    b: "3 et 12 accolés, sans les puissances de 16."
+    c: "C n'est pas 6."
+    d: "Le chiffre C (12) a été oublié."
+  source: "S19-L01#exemple-1--de-lhexadécimal-au-décimal"
+- id: S19-Q004
+  bonnes: [a]
+  explication: "200 = 1100 1000 en binaire, soit C et 8."
+  pourquoi_faux:
+    b: "Écriture décimale recopiée."
+    c: "Les deux chiffres sont inversés."
+    d: "1100 0000 vaut 192."
+  source: "S19-L01#exemple-2--du-décimal-au-binaire"
+- id: S19-Q005
+  bonnes: [a]
+  explication: "Le ET ne donne 1 que si toutes ses entrées sont à 1."
+  pourquoi_faux:
+    b: "Ce serait un OU."
+    c: "Les deux entrées ont un niveau défini."
+    d: "Une porte n'a pas d'horloge."
+  source: "S19-L01#les-portes-logiques"
+- id: S19-Q006
+  bonnes: [a]
+  explication: "C'est la définition du OU exclusif."
+  pourquoi_faux:
+    b: "Le OU donne aussi 1 pour 1 et 1."
+    c: "Le NON-ET donne aussi 1 pour 0 et 0."
+    d: "Le NON-OU ne donne 1 que pour 0 et 0."
+  source: "S19-L01#les-portes-logiques"
+- id: S19-Q007
+  bonnes: [a]
+  explication: "Le ET vaut 1 seulement pour 1 et 1, l'inversion donne alors 0."
+  pourquoi_faux:
+    b: "Elle donne 1."
+    c: "Elle donne 1."
+    d: "La combinaison 1, 1 donne 0."
+  source: "S19-L01#exemple-3--une-table-de-vérité"
+- id: S19-Q008
+  bonnes: [a]
+  explication: "La bascule D mémorise D au front actif."
+  pourquoi_faux:
+    b: "C'est le fonctionnement d'une autre bascule montée en diviseur."
+    c: "Elle n'agit qu'au front."
+    d: "C'est une remise à 0."
+  source: "S19-L01#bascules-et-registres"
+- id: S19-Q009
+  bonnes: [a]
+  explication: "À chaque front, les bits avancent d'une place."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "C'est un circuit numérique."
+  source: "S19-L01#bascules-et-registres"
+- id: S19-Q010
+  bonnes: [a]
+  explication: "I pour entrée, H pour haut : ce que l'entrée exige pour lire un 1."
+  pourquoi_faux:
+    b: "C'est VOH."
+    c: "C'est VIL."
+    d: "Sans rapport direct."
+  source: "S19-L02#niveaux-logiques-et-marge-de-bruit"
+- id: S19-Q011
+  valeur: 0.9
+  tolerance_relative: 0.02
+  unite: V
+  explication: "VOH − VIH = 4,4 − 3,5 = 0,9 V."
+  source: "S19-L02#exemple-4--marge-de-bruit"
+- id: S19-Q012
+  valeur: 0.4
+  tolerance_relative: 0.02
+  unite: V
+  explication: "VIL − VOL = 0,8 − 0,4 = 0,4 V."
+  source: "S19-L02#exemple-4--marge-de-bruit"
+- id: S19-Q013
+  bonnes: [a]
+  explication: "L'hystérésis sépare le seuil de montée de celui de descente."
+  pourquoi_faux:
+    b: "Elle aggrave le problème."
+    c: "C'est un type de sortie."
+    d: "Sans rapport."
+  source: "S19-L02#niveaux-logiques-et-marge-de-bruit"
+- id: S19-Q014
+  bonnes: [a]
+  explication: "La sortie à drain ouvert ne sait que tirer la ligne vers la masse."
+  pourquoi_faux:
+    b: "C'est le cas d'une sortie push-pull."
+    c: "Il ralentirait la ligne."
+    d: "Elle tirerait vers le bas."
+  source: "S19-L02#les-types-de-sortie"
+- id: S19-Q015
+  bonnes: [a]
+  explication: "L'état haute impédance déconnecte la sortie."
+  pourquoi_faux:
+    b: "Deux sorties actives en conflit se court-circuiteraient."
+    c: "C'est un autre type de sortie."
+    d: "Elles sont alimentées."
+  source: "S19-L02#les-types-de-sortie"
+- id: S19-Q016
+  bonnes: [a]
+  explication: "La note TI le déconseille explicitement."
+  pourquoi_faux:
+    b: "Déconseillé par la source."
+    c: "Encore plus de courant dans la sortie."
+    d: "Sans effet sur le problème."
+  source: "S19-L02#les-types-de-sortie"
+- id: S19-Q017
+  bonnes: [a]
+  explication: "La condition VOH > VIH n'est pas remplie."
+  pourquoi_faux:
+    b: "C'est VIH du récepteur qui compte."
+    c: "La masse commune est nécessaire, pas suffisante."
+    d: "La longueur ne change pas les niveaux."
+  source: "S19-L02#compatibilité-33-v--5-v"
+- id: S19-Q018
+  valeur: 2.31
+  tolerance_relative: 0.02
+  unite: V
+  explication: "0,7 × 3,3 = 2,31 V."
+  source: "S19-L02#compatibilité-33-v--5-v"
+- id: S19-Q019
+  bonnes: [a]
+  explication: "Troisième condition d'interface : tension admise par l'entrée."
+  pourquoi_faux:
+    b: "La tension peut détruire l'entrée."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S19-L02#compatibilité-33-v--5-v"
+- id: S19-Q020
+  bonnes: [a]
+  explication: "Pour la forme analogique, on revient à l'oscilloscope."
+  pourquoi_faux:
+    b: "C'est le rôle de l'oscilloscope."
+    c: "Il mesure des tensions comparées à un seuil."
+    d: "Sans rapport."
+  source: "S19-L03#lanalyseur-logique"
+- id: S19-Q021
+  valeur: 0.5
+  tolerance_relative: 0.02
+  unite: s
+  explication: "Période 0,25 µs ; 2 000 000 × 0,25 µs = 0,5 s."
+  source: "S19-L03#exemple-7--durée-enregistrée"
+- id: S19-Q022
+  valeur: 100000
+  tolerance_relative: 0.02
+  unite: Hz
+  explication: "1 / 10 µs = 100 kHz, le mode standard."
+  source: "S19-L03#le-bus-i²c"
+- id: S19-Q023
+  bonnes: [a]
+  explication: "Sept premiers bits 101 0000 = 0x50 ; huitième bit 1 = lecture."
+  pourquoi_faux:
+    b: "L'octet entier n'est pas l'adresse."
+    c: "Le bit R/W vaut 1."
+    d: "L'adresse est sur sept bits."
+  source: "S19-L03#exemple-8--lire-un-premier-octet"
+- id: S19-Q024
+  bonnes: [a]
+  explication: "Comme une sonde d'oscilloscope : masse d'abord, tension admise vérifiée (FE-07)."
+  pourquoi_faux:
+    b: "Les voies sans référence peuvent lire n'importe quoi ou être exposées."
+    c: "Sans masse, la mesure est fausse."
+    d: "Risque de détruire les entrées."
+  source: "S19-L03#lanalyseur-logique"
+- id: S19-Q025
+  bonnes: [a]
+  explication: "FE-01, FE-02 et FE-03 s'appliquent."
+  pourquoi_faux:
+    b: "Risque de détruire le circuit."
+    c: "Faute FE-02."
+    d: "Le câblage se modifie hors tension."
+  source: "S19-L02#niveaux-logiques-et-marge-de-bruit"
+- id: S19-Q026
+  bonnes: [a]
+  explication: "Les fumées de flux s'aspirent à la source."
+  pourquoi_faux:
+    b: "Inefficace."
+    c: "Cela ne règle pas les fumées et nuit à la soudure."
+    d: "Trop tard et insuffisant."
+  source: "S19-L03#exemple-9--un-circuit-qui-ne-répond-pas"

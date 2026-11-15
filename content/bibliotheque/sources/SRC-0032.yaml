@@ -1,0 +1,12 @@
+# Schéma public d'une carte de développement ouverte, support du découpage en blocs (cours S12,
+# TP-19). Matériel sous licence CC BY-SA 4.0 ; le schéma tient sur la page 1 du PDF. Les noms de
+# marque restent la propriété de leur détenteur ; la carte n'est pas un calculateur automobile.
+id: SRC-0032
+titre: "Arduino UNO Rev3, schéma"
+editeur: Arduino SA
+reference: "A000066, schéma PDF"
+revision: "UNO Rev3 (version du PDF consultée le 2026-11-14)"
+date_consultation: 2026-11-14
+type: datasheet
+licence: libre
+lien: https://docs.arduino.cc/resources/schematics/A000066-schematics.pdf

@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S11-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S11-L01-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un front monte en 50 ns. Avec la règle du cinquième et k = 0,35, quelle bande passante d'oscilloscope faut-il au minimum ?"
+  unite_attendue: MHz
+  competences: [D3.3]
+  objectif: O1
+- id: S11-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Vous observez une sinusoïde de 200 kHz avec une interpolation linéaire. Quelle fréquence d'échantillonnage faut-il au minimum ?"
+  unite_attendue: MHz
+  competences: [D3.3]
+  objectif: O2
+- id: S11-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quand vous passez d'une base de temps rapide à une base de temps lente, la fréquence affichée d'un signal passe de 50 kHz à 300 Hz. Quelle est l'explication la plus probable ?"
+  propositions:
+    - {id: a, texte: "Un repliement : sur la base lente, l'échantillonnage est trop lent pour le signal"}
+    - {id: b, texte: "Le signal a vraiment changé de fréquence"}
+    - {id: c, texte: "La sonde est mal compensée"}
+    - {id: d, texte: "La bande passante est trop élevée"}
+  competences: [D3.3]
+  objectif: O2

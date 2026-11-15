@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 240" width="620" height="240" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure de principe du courant d'une électrovanne régulée, sans échelle. -->
+  <defs>
+    <marker id="s31f02-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <path d="M50 200 V20" marker-end="url(#s31f02-a)" stroke-width="1.5" />
+  <path d="M50 200 H600" marker-end="url(#s31f02-a)" stroke-width="1.5" />
+  <text x="58" y="26" text-anchor="start" fill="currentColor" stroke="none" font-size="11">courant</text>
+  <text x="596" y="218" text-anchor="end" fill="currentColor" stroke="none" font-size="11">temps</text>
+  <path d="M60 200 C80 140 105 85 130 60 L139 66 L148 54 L157 66 L166 54 L175 66 L184 54 L193 66 L202 54 L211 66 L220 54 L229 66 L238 54 L247 66 L256 54 L330 150 L339 156 L348 144 L357 156 L366 144 L375 156 L384 144 L393 156 L402 144 L411 156 L420 144 L429 156 L438 144 L447 156 L456 144 L465 156 L474 144 L483 156 L492 144 L501 156 L510 144 L514 200" stroke-width="2" stroke-linejoin="round" />
+  <path d="M50 60 H120 M50 150 H320" stroke-width="0.75" stroke-dasharray="4 4" />
+  <text x="46" y="64" text-anchor="end" fill="currentColor" stroke="none" font-size="10.5">crête</text>
+  <text x="46" y="154" text-anchor="end" fill="currentColor" stroke="none" font-size="10.5">maintien</text>
+  <path d="M130 30 H256" stroke-width="1" /><path d="M130 25 V35 M256 25 V35" stroke-width="1" />
+  <text x="193" y="22" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">temps de crête</text>
+  <text x="112" y="112" text-anchor="start" fill="currentColor" stroke="none" font-size="10.5">montée</text>
+  <text x="300" y="92" text-anchor="start" fill="currentColor" stroke="none" font-size="10.5">recirculation</text>
+  <text x="420" y="128" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">découpage autour du maintien</text>
+  <text x="560" y="180" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">coupure</text>
+  <text x="560" y="193" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">rapide</text>
+</svg>

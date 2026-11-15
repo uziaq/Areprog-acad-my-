@@ -1,0 +1,13 @@
+# Structure d'un circuit imprimé : substrat FR4, couches de cuivre, épaisseur du cuivre, vernis
+# épargne (masque), sérigraphie ; vocabulaire (pastille, piste, plan, via, trou métallisé,
+# thermique, pogo pin) (cours S13). Tutoriel sous licence CC BY-SA 4.0 ; sections citées par leur
+# titre anglais.
+id: SRC-0033
+titre: "PCB Basics"
+editeur: SparkFun Electronics
+reference: "Tutoriel learn.sparkfun.com, version « all » (toutes les pages)"
+revision: "version en ligne consultée le 2026-11-14"
+date_consultation: 2026-11-14
+type: site
+licence: libre
+lien: https://learn.sparkfun.com/tutorials/pcb-basics/all

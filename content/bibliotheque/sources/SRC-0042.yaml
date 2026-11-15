@@ -1,0 +1,15 @@
+# Réseau de bord 12 V : types de transitoires (démarrage, délestage de charge, tension inversée,
+# démarrage avec batterie 24 V, ondulation superposée), renvoi aux sections d'ISO 16750-2 et
+# ISO 7637-2, chaîne d'entrée d'un calculateur (protection contre l'inversion, protection
+# transitoire, filtre CEM, convertisseur), comparaison des protections contre l'inversion (cours
+# S17). Valeurs de conception de l'article, pas valeurs de la norme. Sections citées par leur titre
+# anglais.
+id: SRC-0042
+titre: "Designing the front-end DC/DC conversion stage to withstand automotive transients"
+editeur: Texas Instruments
+reference: "SLYT707, Analog Applications Journal"
+revision: "1er trimestre 2017"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slyt707

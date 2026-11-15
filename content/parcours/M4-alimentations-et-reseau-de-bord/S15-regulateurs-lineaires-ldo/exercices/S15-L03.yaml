@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S15-L03.yaml
+- id: S15-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un régulateur est brûlant ; sa sortie s'effondre puis revient toutes les quelques secondes. Quelle est l'hypothèse la plus probable ?"
+  propositions:
+    - {id: a, texte: "Une charge en court-circuit ou en surcharge : limitation de courant puis arrêt thermique cyclique"}
+    - {id: b, texte: "Un enable inactif"}
+    - {id: c, texte: "Une tension d'entrée trop faible"}
+    - {id: d, texte: "Un régulateur parfaitement sain"}
+  competences: [D6.1]
+  objectif: O1
+- id: S15-L03-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les mesures du diagnostic d'un régulateur."
+  propositions:
+    - {id: a, texte: "Sortie, à vide puis en charge"}
+    - {id: b, texte: "Masse du régulateur"}
+    - {id: c, texte: "Enable"}
+    - {id: d, texte: "Entrée"}
+    - {id: e, texte: "Reset et power-good"}
+  competences: [D6.1]
+  objectif: O2

@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S09-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S09-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur un schéma, un MOSFET relie le + batterie à une broche du calculateur ; la lampe branchée sur cette broche retourne à la masse. De quel étage s'agit-il ?"
+  propositions:
+    - {id: a, texte: "Un étage high-side"}
+    - {id: b, texte: "Un étage low-side"}
+    - {id: c, texte: "Un pont en H"}
+    - {id: d, texte: "Une protection contre l'inversion de polarité"}
+  competences: [D10.2, D4.4]
+  objectif: O1
+- id: S09-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un high-side à MOSFET canal N alimente une charge sous 24 V. La fiche garantit sa RDS(on) à VGS = 10 V. Quelle tension de grille faut-il, par rapport à la masse, quand la sortie est à plein ?"
+  unite_attendue: V
+  competences: [D10.2, D4.4]
+  objectif: O1

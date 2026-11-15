@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S35-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S35-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un calculateur d'airbag de récupération arrive à l'atelier, débranché depuis une semaine. Que fait-on avant de toucher la carte ?"
+  propositions:
+    - {id: a, texte: "On mesure la décharge de la réserve d'énergie, on attend, puis on la mesure de nouveau"}
+    - {id: b, texte: "Rien : une semaine suffit pour qu'elle soit déchargée"}
+    - {id: c, texte: "On court-circuite la réserve avec un tournevis"}
+    - {id: d, texte: "On le met sous tension pour vérifier qu'il fonctionne"}
+  competences: [D10.6]
+  objectif: O1
+- id: S35-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un simulateur d'allumeur mesuré avec ses cordons donne 2,4 Ω ; cordons court-circuités, le multimètre affiche 0,3 Ω. Quelle est la résistance du simulateur, en ohms ?"
+  unite_attendue: "Ω"
+  competences: [D10.7]
+  objectif: O2

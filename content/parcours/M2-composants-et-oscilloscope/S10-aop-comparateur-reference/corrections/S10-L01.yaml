@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S10-L01-EX01
+  valeur: 1.72
+  tolerance_relative: 0.02
+  unite: V
+  explication: "AV = R2 / R1 + 1 = 33 / 10 + 1 = 4,3 ; sortie = 0,4 × 4,3 = 1,72 V, de même polarité que l'entrée."
+  renvoi_section: "S10-L01#la-contre-réaction--la-sortie-vient-équilibrer-les-entrées"
+- id: S10-L01-EX02
+  valeur: -2.2
+  tolerance_relative: 0.02
+  unite: V
+  explication: "AV = −R2 / R1 = −22 / 10 = −2,2 ; sortie = 1 × (−2,2) = −2,2 V, possible puisque l'AOP est alimenté en ±12 V."
+  renvoi_section: "S10-L01#la-contre-réaction--la-sortie-vient-équilibrer-les-entrées"
+- id: S10-L01-EX03
+  bonnes: [a]
+  explication: "La sortie théorique serait 1,5 × 4 = 6 V, au-delà de l'alimentation : elle plafonne près de 5 V, selon VOH. L'entrée de 1,5 V est bien dans l'alimentation."
+  renvoi_section: "S10-L01#laop-réel"

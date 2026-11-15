@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S17-L01-EX01
+  bonnes: [a]
+  explication: "La borne 30 vient directement du plus de la batterie : elle reste alimentée contact coupé. La borne 15 n'est alimentée que contact mis."
+  renvoi_section: "S17-L01#les-bornes-selon-din-72552"
+- id: S17-L01-EX02
+  valeur: 6.5
+  tolerance_relative: 0.02
+  unite: A
+  explication: "La résistance de source supporte 100 − 35 = 65 V ; le courant crête vaut 65 / 10 = 6,5 A."
+  renvoi_section: "S17-L01#exemple-2--courant-forcé-dans-une-diode-de-protection"
+- id: S17-L01-EX03
+  bonnes: [a]
+  explication: "Classe C : une ou plusieurs fonctions s'arrêtent pendant l'essai et reviennent seules après. En classe D, il faut une action de l'utilisateur ; en classe A, rien ne s'arrête."
+  renvoi_section: "S17-L01#les-classes-de-fonctionnement"

@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S38-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S38-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "L'amplificateur d'un shunt de 0,5 mΩ a un gain de 12 ; sa sortie est 0,3 V au-dessus de la tension de référence. Quel est le courant de la phase, en ampères ?"
+  unite_attendue: "A"
+  competences: [D10.7]
+  objectif: O1
+- id: S38-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une charge réduite de 15 Ω est alimentée sous 13,5 V. Quelle puissance dissipe-t-elle, en watts ?"
+  unite_attendue: "W"
+  competences: [D10.6, D10.7]
+  objectif: O3
+- id: S38-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "La surveillance VDS est réglée à 0,8 V ; le transistor a une résistance à l'état passant de 4 mΩ. À partir de quel courant le court-circuit est-il signalé, en ampères ?"
+  unite_attendue: "A"
+  competences: [D10.7]
+  objectif: O1

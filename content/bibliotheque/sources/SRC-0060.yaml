@@ -1,0 +1,12 @@
+# EEPROM série Microwire de 1 Kbit : organisation x8 ou x16 choisie par la broche ORG, jeu
+# d'instructions (READ, WRITE, ERASE, EWEN, EWDS), protection à la mise sous tension, lecture
+# séquentielle (cours S21). Sections citées par leur titre anglais.
+id: SRC-0060
+titre: "CAT93C46B – EEPROM Serial 1-Kb Microwire"
+editeur: onsemi
+reference: "CAT93C46B/D"
+revision: "Rev. 5, avril 2023"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.onsemi.com/download/data-sheet/pdf/cat93c46b-d.pdf

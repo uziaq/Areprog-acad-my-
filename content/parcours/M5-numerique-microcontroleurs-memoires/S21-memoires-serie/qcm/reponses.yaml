@@ -1,0 +1,199 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S21-Q001
+  bonnes: [a]
+  explication: "Le bus I²C n'a que deux lignes, tirées vers l'alimentation."
+  pourquoi_faux:
+    b: "C'est le Microwire."
+    c: "C'est le bus CAN."
+    d: "C'est le SPI."
+  source: "S21-L01#eeprom-i²c"
+- id: S21-Q002
+  bonnes: [a]
+  explication: "Suivent A2, A1, A0 puis R/W."
+  pourquoi_faux:
+    b: "Non."
+    c: "La page est dans l'adresse interne."
+    d: "Non."
+  source: "S21-L01#eeprom-i²c"
+- id: S21-Q003
+  bonnes: [a]
+  explication: "1010 000 puis R/W = 1 : 1010 0001 = 0xA1."
+  pourquoi_faux:
+    b: "C'est l'écriture."
+    c: "C'est l'adresse sur sept bits."
+    d: "Mauvais décalage."
+  source: "S21-L01#exemple-1--adresse-i²c"
+- id: S21-Q004
+  bonnes: [a]
+  explication: "Trois bits d'adresse donnent huit combinaisons."
+  pourquoi_faux:
+    b: "Les broches d'adresse servent justement à en mettre plusieurs."
+    c: "Trois bits donnent huit valeurs."
+    d: "Chaque circuit doit avoir une adresse unique."
+  source: "S21-L01#eeprom-i²c"
+- id: S21-Q005
+  bonnes: [a]
+  explication: "32 768 / 64 = 512 pages."
+  pourquoi_faux:
+    b: "Ce serait 16 384 octets."
+    c: "C'est la taille d'une page."
+    d: "Ce serait des pages de 8 octets."
+  source: "S21-L01#exemple-2--capacité-et-pages"
+- id: S21-Q006
+  bonnes: [a]
+  explication: "ORG à VCC : x16 ; ORG à la masse : x8."
+  pourquoi_faux:
+    b: "C'est le rôle de EWDS."
+    c: "Pas d'adresse I²C en Microwire."
+    d: "Non."
+  source: "S21-L01#eeprom-microwire"
+- id: S21-Q007
+  bonnes: [a]
+  explication: "On règle le programmateur comme la broche ORG de la carte."
+  pourquoi_faux:
+    b: "L'ordre des octets change."
+    c: "Une lecture n'efface rien."
+    d: "L'organisation suit la broche ORG."
+  source: "S21-L01#eeprom-microwire"
+- id: S21-Q008
+  bonnes: [a]
+  explication: "D'après la fiche du fabricant."
+  pourquoi_faux:
+    b: "Non pour cette Flash."
+    c: "Non."
+    d: "L'effacement le remplace."
+  source: "S21-L01#flash-spi"
+- id: S21-Q009
+  bonnes: [a]
+  explication: "On programme par pages, on efface au minimum par secteur."
+  pourquoi_faux:
+    b: "Trop petit."
+    c: "C'est l'unité de programmation."
+    d: "Il existe des effacements plus petits."
+  source: "S21-L01#flash-spi"
+- id: S21-Q010
+  bonnes: [a]
+  explication: "La fiche donne bus, capacité, organisation, tension et brochage."
+  pourquoi_faux:
+    b: "Non."
+    c: "Interdit par la règle de fiabilité."
+    d: "Source non fiable."
+  source: "S21-L01#identifier-une-mémoire"
+- id: S21-Q011
+  bonnes: [a]
+  explication: "Une mauvaise référence ou tension fausse la lecture."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Les réglages sont indispensables."
+  source: "S21-L02#lire-hors-circuit"
+- id: S21-Q012
+  valeur: 2.3
+  tolerance_relative: 0.02
+  unite: V
+  explication: "VCC + 0,5 V = 1,8 + 0,5 = 2,3 V."
+  source: "S21-L02#exemple-6--programmateur-et-tension"
+- id: S21-Q013
+  bonnes: [a]
+  explication: "Deux maîtres actifs sur le bus faussent la lecture."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S21-L02#lire-en-circuit"
+- id: S21-Q014
+  bonnes: [a]
+  explication: "D'où l'intérêt de la lecture hors circuit dans ce cas."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S21-L02#lire-en-circuit"
+- id: S21-Q015
+  bonnes: [a]
+  explication: "D'après la norme FIPS 180-4."
+  pourquoi_faux:
+    b: "Ce n'est pas une copie."
+    c: "Non."
+    d: "Non."
+  source: "S21-L02#lempreinte-et-la-double-sauvegarde"
+- id: S21-Q016
+  bonnes: [a]
+  explication: "Aucune intervention sans deux sauvegardes identiques."
+  pourquoi_faux:
+    b: "Elle n'est pas fiable."
+    c: "Sans sens pour un fichier."
+    d: "Risque de corrompre la mémoire."
+  source: "S21-L02#lempreinte-et-la-double-sauvegarde"
+- id: S21-Q017
+  bonnes: [a]
+  explication: "Une copie aurait toujours la même empreinte."
+  pourquoi_faux:
+    b: "Non."
+    c: "Ce n'est pas la raison."
+    d: "C'est le principe de la double sauvegarde."
+  source: "S21-L02#lempreinte-et-la-double-sauvegarde"
+- id: S21-Q018
+  bonnes: [a]
+  explication: "Une mémoire non alimentée peut aussi renvoyer FFh."
+  pourquoi_faux:
+    b: "Pas forcément."
+    c: "Pas forcément."
+    d: "Pas forcément."
+  source: "S21-L02#lempreinte-et-la-double-sauvegarde"
+- id: S21-Q019
+  bonnes: [a]
+  explication: "En l'air ou à la masse, elle n'a pas d'effet."
+  pourquoi_faux:
+    b: "Elle a une résistance interne vers la masse."
+    c: "Pas de protection."
+    d: "Faux."
+  source: "S21-L03#les-protections-décriture"
+- id: S21-Q020
+  bonnes: [a]
+  explication: "La validation retombe à la fin de chaque opération."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Elle refuse l'écriture sans validation."
+  source: "S21-L03#les-protections-décriture"
+- id: S21-Q021
+  bonnes: [a]
+  explication: "Repliement dans la page, d'après la fiche."
+  pourquoi_faux:
+    b: "Non pour cette EEPROM."
+    c: "Non."
+    d: "Non."
+  source: "S21-L03#lécriture-par-page"
+- id: S21-Q022
+  bonnes: [a]
+  explication: "Le cycle d'écriture interrompu laisse un état incohérent."
+  pourquoi_faux:
+    b: "Sans risque."
+    c: "Sans risque."
+    d: "Sans risque."
+  source: "S21-L03#corruption-et-risques"
+- id: S21-Q023
+  bonnes: [a]
+  explication: "Une surtension ou une inversion peut détruire la mémoire."
+  pourquoi_faux:
+    b: "Faux."
+    c: "Insuffisant."
+    d: "Dangereux pour le composant."
+  source: "S21-L02#lire-hors-circuit"
+- id: S21-Q024
+  bonnes: [a]
+  explication: "Règle du protocole commun et du TP-30."
+  pourquoi_faux:
+    b: "Il faut deux sauvegardes identiques."
+    c: "Interdit."
+    d: "Interdit."
+  source: "S21-L03#corruption-et-risques"
+- id: S21-Q025
+  bonnes: [a]
+  explication: "Les fumées de flux s'aspirent à la source."
+  pourquoi_faux:
+    b: "Inefficace."
+    c: "Ne règle pas les fumées."
+    d: "Trop tard."
+  source: "S21-L02#exemple-5--deux-empreintes-différentes"

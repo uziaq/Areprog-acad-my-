@@ -1,0 +1,277 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S27-Q001
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#chauffer-sans-contact"
+  enonce: "À quelle condition la norme NASA admet-elle une station à air chaud ?"
+  propositions:
+    - {id: a, texte: "Reliée à la terre et utilisée selon une procédure écrite"}
+    - {id: b, texte: "Réglée au maximum"}
+    - {id: c, texte: "Sans flux"}
+    - {id: d, texte: "Seulement sur des passifs"}
+- id: S27-Q002
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#chauffer-sans-contact"
+  enonce: "Quelle température de reprise un fabricant de circuits intégrés demande-t-il ?"
+  propositions:
+    - {id: a, texte: "Aussi basse que possible, avec un profil proche de la refusion d'origine"}
+    - {id: b, texte: "La plus haute possible pour aller vite"}
+    - {id: c, texte: "Toujours 400 °C"}
+    - {id: d, texte: "Celle du fer de l'atelier"}
+- id: S27-Q003
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#chauffer-sans-contact"
+  enonce: "Où lit-on la température maximale admise par le boîtier d'un circuit ?"
+  propositions:
+    - {id: a, texte: "Sur l'étiquette du conditionnement ou dans sa fiche"}
+    - {id: b, texte: "Sur la sérigraphie de la carte"}
+    - {id: c, texte: "Dans la notice de la station"}
+    - {id: d, texte: "On l'estime à l'œil"}
+- id: S27-Q004
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#exemple-1--lire-la-température-limite"
+  enonce: "La fiche donne 260 °C au boîtier. Pouvez-vous régler la buse à 260 °C et considérer que c'est bon ?"
+  propositions:
+    - {id: a, texte: "Non : la consigne de buse diffère de la température du boîtier, il faut mesurer"}
+    - {id: b, texte: "Oui, c'est la même chose"}
+    - {id: c, texte: "Oui, en ajoutant 100 °C"}
+    - {id: d, texte: "Non, il faut toujours 450 °C"}
+- id: S27-Q005
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#préchauffer-par-le-dessous"
+  enonce: "Quel est l'intérêt du préchauffage par le dessous ?"
+  propositions:
+    - {id: a, texte: "Réduire l'écart de température à combler par la buse et limiter le gauchissement"}
+    - {id: b, texte: "Sécher le flux avant de l'appliquer"}
+    - {id: c, texte: "Remplacer l'aspiration des fumées"}
+    - {id: d, texte: "Aucun"}
+- id: S27-Q006
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#préchauffer-par-le-dessous"
+  enonce: "Les températures du profil TI de dépose d'un QFN sont…"
+  propositions:
+    - {id: a, texte: "des consignes de machine, à adapter à la carte et à l'équipement"}
+    - {id: b, texte: "les températures exactes de la carte"}
+    - {id: c, texte: "valables pour toute station manuelle"}
+    - {id: d, texte: "des températures de stockage"}
+- id: S27-Q007
+  type: choix_unique
+  securite: true
+  competences: [D9.2]
+  section: "S27-L01#protéger-les-voisins"
+  enonce: "Que faites-vous avant de chauffer près d'un connecteur plastique ?"
+  propositions:
+    - {id: a, texte: "Le couvrir d'un ruban polyimide ou d'un écran et ne jamais diriger la buse vers lui"}
+    - {id: b, texte: "Rien, il supporte la chaleur"}
+    - {id: c, texte: "Le chauffer d'abord pour le ramollir"}
+    - {id: d, texte: "Augmenter le débit d'air"}
+- id: S27-Q008
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L01#protéger-les-voisins"
+  enonce: "Pourquoi régler un débit d'air faible ?"
+  propositions:
+    - {id: a, texte: "Pour ne pas déplacer les petits composants voisins"}
+    - {id: b, texte: "Pour refroidir la carte"}
+    - {id: c, texte: "Pour aller plus vite"}
+    - {id: d, texte: "Pour économiser la buse"}
+- id: S27-Q009
+  type: choix_unique
+  securite: true
+  competences: [D9.2]
+  section: "S27-L01#fumées-et-brûlures"
+  enonce: "Pendant une reprise à l'air chaud, l'aspiration des fumées…"
+  propositions:
+    - {id: a, texte: "reste en marche pendant toute la reprise"}
+    - {id: b, texte: "s'allume seulement à la fin"}
+    - {id: c, texte: "est inutile sans plomb"}
+    - {id: d, texte: "se remplace par une fenêtre ouverte"}
+- id: S27-Q010
+  type: choix_unique
+  securite: true
+  competences: [D9.2]
+  section: "S27-L01#fumées-et-brûlures"
+  enonce: "Comment refroidir la carte après une reprise ?"
+  propositions:
+    - {id: a, texte: "À l'air ambiant, poignée posée sur son support"}
+    - {id: b, texte: "À l'air comprimé"}
+    - {id: c, texte: "Au solvant froid"}
+    - {id: d, texte: "Dans l'eau"}
+- id: S27-Q011
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#leffet-popcorn"
+  enonce: "Qu'est-ce que l'effet « popcorn » ?"
+  propositions:
+    - {id: a, texte: "Délaminage ou fissure du boîtier par l'humidité qui se vaporise pendant la chauffe"}
+    - {id: b, texte: "Un pont de soudure"}
+    - {id: c, texte: "Une pierre tombale"}
+    - {id: d, texte: "Un claquage ESD"}
+- id: S27-Q012
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#leffet-popcorn"
+  enonce: "Un boîtier sans fissure visible après une reprise est-il forcément sain ?"
+  propositions:
+    - {id: a, texte: "Non : un délaminage interne peut ne laisser aucune trace"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Oui, s'il est noir"}
+    - {id: d, texte: "Oui, après nettoyage"}
+- id: S27-Q013
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#les-niveaux-msl"
+  enonce: "Que fixe le niveau MSL d'un composant ?"
+  propositions:
+    - {id: a, texte: "Sa durée hors sachet avant soudure"}
+    - {id: b, texte: "Sa tension maximale"}
+    - {id: c, texte: "Sa taille de boîtier"}
+    - {id: d, texte: "Son prix"}
+- id: S27-Q014
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#les-niveaux-msl"
+  enonce: "Quelle est la durée hors sachet d'un composant MSL 3 d'après la note TI ?"
+  propositions:
+    - {id: a, texte: "168 heures"}
+    - {id: b, texte: "Illimitée"}
+    - {id: c, texte: "1 an"}
+    - {id: d, texte: "24 heures"}
+- id: S27-Q015
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#les-niveaux-msl"
+  enonce: "Que signifie MSL 6 ?"
+  propositions:
+    - {id: a, texte: "Étuvage obligatoire avant usage"}
+    - {id: b, texte: "Durée illimitée"}
+    - {id: c, texte: "72 heures"}
+    - {id: d, texte: "Composant sans plomb"}
+- id: S27-Q016
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#exemple-4--composant-msl-3"
+  enonce: "Un sachet MSL 3 a été ouvert il y a dix jours. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Étuvage avant soudure : 10 jours dépassent les 7 jours admis"}
+    - {id: b, texte: "Soudure directe"}
+    - {id: c, texte: "On jette le composant"}
+    - {id: d, texte: "On le chauffe plus fort"}
+- id: S27-Q017
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L02#étuver-avant-de-chauffer"
+  enonce: "Sur un calculateur de récupération, la durée hors sachet est inconnue. Que cite la note TI ?"
+  propositions:
+    - {id: a, texte: "Un étuvage, en vérifiant ce que supportent les autres composants de la carte"}
+    - {id: b, texte: "Aucune précaution"}
+    - {id: c, texte: "Une chauffe plus rapide"}
+    - {id: d, texte: "Un nettoyage au solvant"}
+- id: S27-Q018
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S27-L03#avant-de-déposer"
+  enonce: "Le composant à déposer est une EEPROM. Que faites-vous avant toute chauffe ?"
+  propositions:
+    - {id: a, texte: "La lire deux fois et comparer les empreintes"}
+    - {id: b, texte: "La déposer puis la lire"}
+    - {id: c, texte: "L'effacer"}
+    - {id: d, texte: "Rien"}
+- id: S27-Q019
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S27-L03#avant-de-déposer"
+  enonce: "Comment traite-t-on le vernis avant une dépose cette semaine ?"
+  propositions:
+    - {id: a, texte: "Retrait local avec le produit adapté, ventilation et protections individuelles"}
+    - {id: b, texte: "Retrait de tout le vernis de la carte"}
+    - {id: c, texte: "On chauffe à travers"}
+    - {id: d, texte: "Au cutter sur toute la carte"}
+- id: S27-Q020
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L03#déposer-à-lair-chaud"
+  enonce: "Quand soulève-t-on le composant ?"
+  propositions:
+    - {id: a, texte: "Quand toutes les soudures sont fondues"}
+    - {id: b, texte: "Dès que la première broche fond"}
+    - {id: c, texte: "Après 5 secondes"}
+    - {id: d, texte: "En forçant avec la pince"}
+- id: S27-Q021
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L03#déposer-à-lair-chaud"
+  enonce: "Peut-on réutiliser un QFN déposé ?"
+  propositions:
+    - {id: a, texte: "Non, selon TI"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Oui, après étuvage"}
+    - {id: d, texte: "Oui, s'il est encore brillant"}
+- id: S27-Q022
+  type: choix_unique
+  securite: false
+  competences: [D9.2]
+  section: "S27-L03#nettoyer-les-pastilles"
+  enonce: "Comment nettoie-t-on les pastilles après dépose ?"
+  propositions:
+    - {id: a, texte: "Tresse imprégnée de flux et fer, en douceur, puis alcool et inspection"}
+    - {id: b, texte: "En frottant fort la tresse"}
+    - {id: c, texte: "Au papier de verre"}
+    - {id: d, texte: "À l'air chaud seul"}
+- id: S27-Q023
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L03#reposer-un-soic-un-tssop-ou-un-qfp"
+  enonce: "Quelle étape vient après l'alignement d'un QFP ?"
+  propositions:
+    - {id: a, texte: "Souder deux coins opposés et contrôler l'alignement"}
+    - {id: b, texte: "Souder un côté entier"}
+    - {id: c, texte: "Nettoyer"}
+    - {id: d, texte: "Mesurer la continuité"}
+- id: S27-Q024
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L03#reposer-un-soic-un-tssop-ou-un-qfp"
+  enonce: "Quel débord latéral d'une broche la norme NASA admet-elle ?"
+  propositions:
+    - {id: a, texte: "25 % de la largeur de broche au plus"}
+    - {id: b, texte: "50 %"}
+    - {id: c, texte: "Aucune limite"}
+    - {id: d, texte: "100 %"}
+- id: S27-Q025
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S27-L03#qfn-alliage-de-dépose-et-bga"
+  enonce: "Pourquoi le contrôle visuel d'un QFN est-il insuffisant ?"
+  propositions:
+    - {id: a, texte: "Ses connexions et sa pastille thermique sont sous le boîtier"}
+    - {id: b, texte: "Il est trop grand"}
+    - {id: c, texte: "Il n'a pas de repère"}
+    - {id: d, texte: "Il est transparent"}

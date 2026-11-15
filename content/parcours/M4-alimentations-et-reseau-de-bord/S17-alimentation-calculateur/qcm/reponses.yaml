@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S17-Q001
+  bonnes: [a]
+  explication: "La borne 30 est le plus permanent."
+  pourquoi_faux:
+    b: "C'est la borne 15."
+    c: "C'est la borne 31."
+    d: "C'est la borne 50."
+  source: "S17-L01#les-bornes-selon-din-72552"
+- id: S17-Q002
+  bonnes: [a]
+  explication: "La borne 15 n'est alimentée que contact mis."
+  pourquoi_faux:
+    b: "C'est la borne 30."
+    c: "C'est la borne 31."
+    d: "Ce sont les bornes 85 et 86."
+  source: "S17-L01#les-bornes-selon-din-72552"
+- id: S17-Q003
+  bonnes: [a]
+  explication: "La borne 31 est la masse."
+  pourquoi_faux:
+    b: "C'est la borne 30."
+    c: "C'est la borne 50."
+    d: "C'est la borne 87."
+  source: "S17-L01#les-bornes-selon-din-72552"
+- id: S17-Q004
+  bonnes: [a]
+  explication: "Le délestage est décrit par ISO 16750-2 ; chaque calculateur ne voit que le délestage écrêté."
+  pourquoi_faux:
+    b: "C'est le profil de démarrage."
+    c: "C'est la tension inversée."
+    d: "C'est l'ondulation superposée."
+  source: "S17-L01#un-réseau-de-bord-qui-bouge"
+- id: S17-Q005
+  bonnes: [a]
+  explication: "Règle du cours : on cite la norme, jamais une valeur inventée."
+  pourquoi_faux:
+    b: "Source non fiable ; deux vidéos se contredisent même sur ce point."
+    c: "Interdit par la règle de fiabilité."
+    d: "L'étiquette ne les donne pas."
+  source: "S17-L01#un-réseau-de-bord-qui-bouge"
+- id: S17-Q006
+  bonnes: [a]
+  explication: "Le délestage brut est trop énergétique pour être absorbé par chaque calculateur."
+  pourquoi_faux:
+    b: "Il reste un essai normalisé."
+    c: "Justement, la batterie est déconnectée."
+    d: "Faux."
+  source: "S17-L01#un-réseau-de-bord-qui-bouge"
+- id: S17-Q007
+  bonnes: [a]
+  explication: "C'est une impulsion négative."
+  pourquoi_faux:
+    b: "C'est l'impulsion 5b, passée dans ISO 16750."
+    c: "C'est un profil d'ISO 16750-2."
+    d: "Ce sont d'autres normes."
+  source: "S17-L01#les-impulsions-diso-7637-2"
+- id: S17-Q008
+  valeur: 10.5
+  tolerance_relative: 0.02
+  unite: A
+  explication: "(75 − 33) / 4 = 10,5 A."
+  source: "S17-L01#exemple-2--courant-forcé-dans-une-diode-de-protection"
+- id: S17-Q009
+  valeur: 240
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 30 × 8 = 240 W, à comparer à la puissance crête admise par sa fiche."
+  source: "S17-L01#exemple-2--courant-forcé-dans-une-diode-de-protection"
+- id: S17-Q010
+  bonnes: [a]
+  explication: "La classe A est la plus exigeante."
+  pourquoi_faux:
+    b: "Classe C."
+    c: "Classe D."
+    d: "Classe E."
+  source: "S17-L01#les-classes-de-fonctionnement"
+- id: S17-Q011
+  bonnes: [a]
+  explication: "La supervision relâche le reset quand la tension est revenue, après un délai."
+  pourquoi_faux:
+    b: "Il filtre les perturbations."
+    c: "Elle écrête les transitoires."
+    d: "Elle bloque les tensions négatives."
+  source: "S17-L02#larchitecture-générique"
+- id: S17-Q012
+  bonnes: [a]
+  explication: "D'où les MOSFET pilotés pour les courants élevés."
+  pourquoi_faux:
+    b: "Elle les bloque."
+    c: "C'est le MOSFET à canal N qui en demande un."
+    d: "Faux."
+  source: "S17-L02#la-protection-contre-linversion-de-polarité"
+- id: S17-Q013
+  valeur: 0.18
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = R × I² = 0,02 × 9 = 0,18 W."
+  source: "S17-L02#la-protection-contre-linversion-de-polarité"
+- id: S17-Q014
+  bonnes: [a]
+  explication: "Elle ne doit pas conduire sur une surtension prolongée normale, mais protéger l'aval."
+  pourquoi_faux:
+    b: "Elle conduirait pendant la charge normale."
+    c: "Elle ne protégerait plus l'aval."
+    d: "Elle court-circuiterait l'entrée."
+  source: "S17-L02#la-protection-contre-les-transitoires"
+- id: S17-Q015
+  bonnes: [a]
+  explication: "On les tourne aussi à 90° l'un de l'autre."
+  pourquoi_faux:
+    b: "Deux condensateurs identiques en série divisent la capacité par deux."
+    c: "Sans rapport."
+    d: "C'est volontaire."
+  source: "S17-L02#le-filtre-et-les-condensateurs-dentrée"
+- id: S17-Q016
+  bonnes: [a]
+  explication: "D'où les architectures pré-boost ou buck-boost."
+  pourquoi_faux:
+    b: "La carte s'arrêterait."
+    c: "Sans rapport."
+    d: "Le creux est un essai normalisé."
+  source: "S17-L02#le-convertisseur-dentrée"
+- id: S17-Q017
+  bonnes: [a]
+  explication: "Aucune fonction n'est attribuée d'après l'apparence seule."
+  pourquoi_faux:
+    b: "Insuffisant."
+    c: "Insuffisant."
+    d: "C'est une hypothèse à confirmer."
+  source: "S17-L02#reconnaître-la-chaîne-sur-une-carte"
+- id: S17-Q018
+  bonnes: [a]
+  explication: "System basis chip."
+  pourquoi_faux:
+    b: "Le SBC alimente le microcontrôleur."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S17-L03#le-sbc-un-circuit-dalimentation-intégré"
+- id: S17-Q019
+  bonnes: [a]
+  explication: "Beaucoup de SBC descendent sous 100 µA en veille."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Faux : la 30 reste alimentée."
+    d: "Sans rapport."
+  source: "S17-L03#dormir-et-se-réveiller"
+- id: S17-Q020
+  bonnes: [a]
+  explication: "Réveil local, par le bus, cyclique ou sélectif."
+  pourquoi_faux:
+    b: "C'est la masse."
+    c: "Faux."
+    d: "Faux."
+  source: "S17-L03#dormir-et-se-réveiller"
+- id: S17-Q021
+  bonnes: [a]
+  explication: "Règle de l'académie (catalogue des TP)."
+  pourquoi_faux:
+    b: "Les autres suivent le protocole commun dès S18."
+    c: "Sans rapport."
+    d: "Faux."
+  source: "S17-L03#les-calculateurs-liés-à-la-sécurité"
+- id: S17-Q022
+  bonnes: [a]
+  explication: "Protocole renforcé, point 1 : aucun élément pyrotechnique dans l'atelier."
+  pourquoi_faux:
+    b: "Interdit."
+    c: "Interdit : il n'entre pas dans l'atelier."
+    d: "Interdit et dangereux."
+  source: "S17-L03#les-calculateurs-liés-à-la-sécurité"
+- id: S17-Q023
+  bonnes: [a]
+  explication: "Les dissolvants de vernis sont agressifs ; la FDS donne les précautions du produit."
+  pourquoi_faux:
+    b: "Faux."
+    c: "Il protège la carte, pas l'opérateur."
+    d: "Dangereux."
+  source: "S17-L03#le-vernis-de-tropicalisation"
+- id: S17-Q024
+  bonnes: [a]
+  explication: "Le silicone est semi-brillant, caoutchouteux et se gratte facilement."
+  pourquoi_faux:
+    b: "Mat et dur."
+    c: "Brillant et dur."
+    d: "Brillant, se dissout bien dans les solvants courants."
+  source: "S17-L03#le-vernis-de-tropicalisation"
+- id: S17-Q025
+  bonnes: [a]
+  explication: "30 et 87 sont les bornes du contact."
+  pourquoi_faux:
+    b: "Ce sont celles du contact."
+    c: "Plus après contact et masse."
+    d: "Démarreur et plus permanent."
+  source: "S17-L01#les-bornes-selon-din-72552"

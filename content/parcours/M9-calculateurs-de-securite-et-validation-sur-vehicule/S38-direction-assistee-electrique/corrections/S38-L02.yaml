@@ -1,0 +1,19 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S38-L02-EX01
+  valeur: 50
+  tolerance_relative: 0.02
+  unite: "A"
+  explication: "Tension du shunt : 0,3 / 12 = 0,025 V. Courant : 0,025 / 0,0005 = 50 A."
+  renvoi_section: "S38-L02#exemple-1--lire-un-courant-de-phase"
+- id: S38-L02-EX02
+  valeur: 12.15
+  tolerance_relative: 0.02
+  unite: "W"
+  explication: "P = U² / R = 13,5² / 15 = 182,25 / 15 = 12,15 W. On choisit une puissance assignée nettement supérieure."
+  renvoi_section: "S38-L02#exemple-2--une-charge-réduite"
+- id: S38-L02-EX03
+  valeur: 200
+  tolerance_relative: 0.02
+  unite: "A"
+  explication: "I = VDS / RDSon = 0,8 / 0,004 = 200 A."
+  renvoi_section: "S38-L02#exemple-3--le-courant-de-détection-vds"

@@ -1,0 +1,261 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S18-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.1]
+  section: "S18-L01#le-banc-dalimentation"
+  enonce: "Sur le banc PB-1, quel est le rôle du fusible ?"
+  propositions:
+    - {id: a, texte: "Protéger le câblage du banc en cas de défaut franc ; il ne remplace pas la limitation de courant"}
+    - {id: b, texte: "Remplacer la limitation de courant"}
+    - {id: c, texte: "Mesurer le courant"}
+    - {id: d, texte: "Réveiller le calculateur"}
+- id: S18-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.1]
+  section: "S18-L01#le-banc-dalimentation"
+  enonce: "Un fusible se choisit selon :"
+  propositions:
+    - {id: a, texte: "Son calibre en ampères, sa tension assignée et son type (rapide ou temporisé)"}
+    - {id: b, texte: "Sa couleur seulement"}
+    - {id: c, texte: "Sa longueur"}
+    - {id: d, texte: "Le courant de court-circuit de la batterie"}
+- id: S18-Q003
+  type: calcul
+  securite: false
+  competences: [D10.1]
+  section: "S18-L01#exemple-1--calibre-dun-fusible-de-banc"
+  enonce: "Un calculateur consomme 2 A contact mis ; on veut une marge de 50 %. Quel courant minimal le calibre du fusible doit-il dépasser ?"
+  unite_attendue: A
+- id: S18-Q004
+  type: choix_unique
+  securite: true
+  competences: [D10.1, D10.6, D9.1]
+  section: "S18-L01#le-protocole-commun-calculateurs-réels"
+  enonce: "Après coupure, comment s'assure-t-on qu'un étage à tension interne élevée est déchargé ?"
+  propositions:
+    - {id: a, texte: "On mesure sa tension, on décharge à travers une résistance si besoin, puis on mesure de nouveau"}
+    - {id: b, texte: "On attend cinq minutes"}
+    - {id: c, texte: "On court-circuite ses condensateurs avec un tournevis"}
+    - {id: d, texte: "On touche le condensateur pour voir"}
+- id: S18-Q005
+  type: choix_unique
+  securite: true
+  competences: [D10.1, D9.1]
+  section: "S18-L01#le-protocole-commun-calculateurs-réels"
+  enonce: "Avec quoi mesure-t-on un nœud d'un étage à tension élevée ?"
+  propositions:
+    - {id: a, texte: "Une sonde différentielle ou un oscilloscope à voies isolées"}
+    - {id: b, texte: "Une sonde ×10 dont la masse est posée sur le nœud"}
+    - {id: c, texte: "Le doigt"}
+    - {id: d, texte: "Une pince crocodile reliée à la terre"}
+- id: S18-Q006
+  type: choix_unique
+  securite: true
+  competences: [D10.1, D9.1]
+  section: "S18-L01#la-mise-sous-tension-progressive"
+  enonce: "Au premier contact, l'alimentation passe en limitation. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je coupe aussitôt et je cherche un court-circuit sous courant limité"}
+    - {id: b, texte: "Je monte la limite pour voir si ça démarre"}
+    - {id: c, texte: "Je retire la limitation"}
+    - {id: d, texte: "J'attends que ça passe"}
+- id: S18-Q007
+  type: choix_unique
+  securite: false
+  competences: [D10.1]
+  section: "S18-L01#la-mise-sous-tension-progressive"
+  enonce: "D'où vient la valeur « normale » du courant de veille d'un calculateur ?"
+  propositions:
+    - {id: a, texte: "D'un exemplaire de référence de même référence matérielle, mesuré dans les mêmes conditions"}
+    - {id: b, texte: "D'une vidéo"}
+    - {id: c, texte: "D'une valeur typique retenue de mémoire"}
+    - {id: d, texte: "De l'étiquette du calculateur"}
+- id: S18-Q008
+  type: calcul
+  securite: false
+  competences: [D3.2]
+  section: "S18-L01#la-mise-sous-tension-progressive"
+  enonce: "Un calculateur consomme 30 mA en veille sous 12 V. Quelle énergie prélève-t-il en une heure ?"
+  unite_attendue: J
+- id: S18-Q009
+  type: choix_unique
+  securite: false
+  competences: [D3.2]
+  section: "S18-L01#lire-lalimentation-de-laboratoire"
+  enonce: "Que signifie une alimentation dont le courant reste à la limite et dont la tension baisse ?"
+  propositions:
+    - {id: a, texte: "Elle est en limitation de courant : la carte demande plus que la limite"}
+    - {id: b, texte: "Elle régule normalement en tension"}
+    - {id: c, texte: "Elle est éteinte"}
+    - {id: d, texte: "La carte ne consomme rien"}
+- id: S18-Q010
+  type: choix_unique
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#repérer-le-rail-en-court-circuit"
+  enonce: "Avant d'injecter du courant, comment identifie-t-on le rail en court-circuit ?"
+  propositions:
+    - {id: a, texte: "En mesurant hors tension la résistance de chaque rail vers la masse et en la comparant à la référence"}
+    - {id: b, texte: "En injectant sur tous les rails à la fois"}
+    - {id: c, texte: "Au hasard"}
+    - {id: d, texte: "En mettant la carte sous pleine tension"}
+- id: S18-Q011
+  type: choix_unique
+  securite: false
+  competences: [D6.4, D3.2, D9.1]
+  section: "S18-L02#injecter-un-courant-limité"
+  enonce: "À quelle tension règle-t-on l'alimentation pour injecter du courant dans un rail de 3,3 V en court-circuit ?"
+  propositions:
+    - {id: a, texte: "3,3 V au plus"}
+    - {id: b, texte: "12 V"}
+    - {id: c, texte: "La tension maximale de l'alimentation"}
+    - {id: d, texte: "5 V pour aller plus vite"}
+- id: S18-Q012
+  type: choix_unique
+  securite: false
+  competences: [D6.4, D3.2]
+  section: "S18-L02#injecter-un-courant-limité"
+  enonce: "Jusqu'où peut-on monter le courant d'injection ?"
+  propositions:
+    - {id: a, texte: "Jamais au-delà du courant que supporte le composant le plus faible du rail"}
+    - {id: b, texte: "Jusqu'à ce que quelque chose fume"}
+    - {id: c, texte: "Jusqu'au maximum de l'alimentation"}
+    - {id: d, texte: "Sans limite si la tension est basse"}
+- id: S18-Q013
+  type: calcul
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#exemple-5--puissance-dissipée-au-défaut"
+  enonce: "L'alimentation injecte 1,5 A et affiche 0,3 V. Quelle puissance est dissipée ?"
+  unite_attendue: W
+- id: S18-Q014
+  type: choix_unique
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#la-méthode-thermique"
+  enonce: "À la caméra thermique, un condensateur de découplage est nettement plus chaud que le reste. Que pensez-vous ?"
+  propositions:
+    - {id: a, texte: "Il est probablement en défaut ; on confirme en le retirant puis en remesurant le rail"}
+    - {id: b, texte: "C'est normal pour un condensateur"}
+    - {id: c, texte: "La caméra est déréglée"}
+    - {id: d, texte: "Le défaut est forcément ailleurs"}
+- id: S18-Q015
+  type: choix_unique
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#la-méthode-thermique"
+  enonce: "Aucun point chaud n'apparaît malgré l'injection. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je passe à la chute de tension : le court-circuit est peut-être franc"}
+    - {id: b, texte: "Je monte le courant au-delà de la limite écrite"}
+    - {id: c, texte: "Je conclus qu'il n'y a pas de court-circuit"}
+    - {id: d, texte: "Je remplace tous les condensateurs"}
+- id: S18-Q016
+  type: choix_unique
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#la-chute-de-tension-le-long-du-rail"
+  enonce: "En suivant le rail, la tension cesse de baisser à partir d'un point. Que signifie ce plateau ?"
+  propositions:
+    - {id: a, texte: "Le courant ne circule plus au-delà : le défaut est avant le plateau"}
+    - {id: b, texte: "Le défaut est au bout du rail"}
+    - {id: c, texte: "Le multimètre est saturé"}
+    - {id: d, texte: "Le rail est coupé"}
+- id: S18-Q017
+  type: calcul
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#la-chute-de-tension-le-long-du-rail"
+  enonce: "On injecte 0,5 A ; entre deux points, on lit 0,4 mV. Quelle est la résistance du tronçon ?"
+  unite_attendue: mΩ
+- id: S18-Q018
+  type: choix_unique
+  securite: false
+  competences: [D6.4]
+  section: "S18-L02#le-milliohmmètre-à-quatre-fils"
+  enonce: "Pourquoi utiliser une mesure à quatre fils pour une très faible résistance ?"
+  propositions:
+    - {id: a, texte: "Les fils de mesure de tension ne portent presque pas de courant : la résistance des cordons n'entre plus dans la mesure"}
+    - {id: b, texte: "Pour mesurer quatre résistances à la fois"}
+    - {id: c, texte: "Pour injecter plus de courant"}
+    - {id: d, texte: "Parce que c'est plus rapide"}
+- id: S18-Q019
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S18-L03#alimentation-dabord"
+  enonce: "Dans l'ordre de l'académie, que contrôle-t-on juste après la résistance des rails hors tension ?"
+  propositions:
+    - {id: a, texte: "La mise sous tension progressive, avec le courant de chaque état"}
+    - {id: b, texte: "Les fonctions"}
+    - {id: c, texte: "La mémoire"}
+    - {id: d, texte: "Le reset"}
+- id: S18-Q020
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S18-L03#lexemplaire-de-référence"
+  enonce: "Comment retrouver la valeur d'une résistance brûlée et illisible ?"
+  propositions:
+    - {id: a, texte: "Relever la même position sur un exemplaire de référence de même référence matérielle"}
+    - {id: b, texte: "La mesurer en circuit"}
+    - {id: c, texte: "Prendre la valeur des voisines"}
+    - {id: d, texte: "Choisir une valeur courante"}
+- id: S18-Q021
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S18-L03#pièges-fréquents"
+  enonce: "Un composant CMS marqué « 0 » sur un rail est :"
+  propositions:
+    - {id: a, texte: "Une résistance de 0 Ω, un pont : elle peut fondre, mais n'a pas de calibre garanti comme un fusible"}
+    - {id: b, texte: "Un fusible calibré"}
+    - {id: c, texte: "Un condensateur"}
+    - {id: d, texte: "Une diode"}
+- id: S18-Q022
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S18-L03#le-dossier-de-diagnostic"
+  enonce: "Que doit contenir chaque mesure du dossier de diagnostic ?"
+  propositions:
+    - {id: a, texte: "Point de mesure, instrument, réglage, valeur lue, valeur de référence et son origine"}
+    - {id: b, texte: "La valeur lue seulement"}
+    - {id: c, texte: "Une photo seulement"}
+    - {id: d, texte: "Rien si la carte est réparée"}
+- id: S18-Q023
+  type: choix_unique
+  securite: false
+  competences: [D1.6]
+  section: "S18-L03#le-dossier-de-diagnostic"
+  enonce: "Que fait-on après une réparation d'alimentation ?"
+  propositions:
+    - {id: a, texte: "On refait les mesures de l'ordre des contrôles et on les compare à la référence"}
+    - {id: b, texte: "On rend la carte sans mesure"}
+    - {id: c, texte: "On efface les défauts sans les noter"}
+    - {id: d, texte: "On met la carte en statut validé soi-même"}
+- id: S18-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.1]
+  section: "S18-L01#la-mise-sous-tension-progressive"
+  enonce: "Dans la mise sous tension progressive, dans quel ordre ferme-t-on les interrupteurs du banc ?"
+  propositions:
+    - {id: a, texte: "Borne 30 seule, puis borne 15"}
+    - {id: b, texte: "Borne 15 puis borne 30"}
+    - {id: c, texte: "Les deux en même temps"}
+    - {id: d, texte: "Peu importe"}
+- id: S18-Q025
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S18-L01#le-protocole-commun-calculateurs-réels"
+  enonce: "Quels calculateurs ne servent pas au TP-25 ?"
+  propositions:
+    - {id: a, texte: "Ceux d'airbag, d'ABS / ESP et de direction"}
+    - {id: b, texte: "Les ECU moteur"}
+    - {id: c, texte: "Les BSI"}
+    - {id: d, texte: "Aucun"}

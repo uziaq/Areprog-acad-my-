@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 255" width="545" height="255" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : commande d'électrovanne, roue libre et écrêtage, d'après SRC-0101. -->
+  <defs>
+    <marker id="s37f03-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="15" y="30" width="150" height="58" rx="6" />
+  <text x="90.0" y="49.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Alimentation</text>
+  <text x="90.0" y="64.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">des électrovannes</text>
+  <text x="90.0" y="79.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">(transistor côté haut)</text>
+  <path d="M165 59 H199" marker-end="url(#s37f03-a)" stroke-width="1.5" />
+  <rect x="200" y="30" width="140" height="58" rx="6" stroke-dasharray="6 4" />
+  <text x="270.0" y="49.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Bobine</text>
+  <text x="270.0" y="64.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">d'électrovanne</text>
+  <text x="270.0" y="79.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">ou charge réduite</text>
+  <path d="M340 59 H374" marker-end="url(#s37f03-a)" stroke-width="1.5" />
+  <rect x="375" y="30" width="150" height="58" rx="6" />
+  <text x="450.0" y="49.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Commande</text>
+  <text x="450.0" y="64.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">côté bas (PWM)</text>
+  <text x="450.0" y="79.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">avec écrêtage</text>
+  <rect x="15" y="140" width="240" height="62" rx="6" />
+  <text x="135.0" y="161.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Roue libre (diode)</text>
+  <text x="135.0" y="176.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">courant qui décroît lentement :</text>
+  <text x="135.0" y="191.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">bon pour la régulation PWM</text>
+  <rect x="285" y="140" width="240" height="62" rx="6" />
+  <text x="405.0" y="161.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Écrêtage (Zener ou interne)</text>
+  <text x="405.0" y="176.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">tension plus forte : courant qui</text>
+  <text x="405.0" y="191.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">s'annule vite, coupure rapide</text>
+  <path d="M270 89 V115 H135 V139" marker-end="url(#s37f03-a)" stroke-width="1.5" stroke-dasharray="4 3" />
+  <path d="M270 115 H405 V139" marker-end="url(#s37f03-a)" stroke-width="1.5" stroke-dasharray="4 3" />
+  <text x="270" y="240" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Décroissance : Δt ≈ L × Δi / V (note citée) ; plus V est grand, plus la coupure est rapide.</text>
+</svg>

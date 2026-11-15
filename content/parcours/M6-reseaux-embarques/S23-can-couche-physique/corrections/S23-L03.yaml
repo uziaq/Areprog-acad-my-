@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S23-L03-EX01
+  bonnes: [a]
+  explication: "TXD reçoit les données à émettre et RXD rend les données reçues ; CANH et CANL vont au bus."
+  renvoi_section: "S23-L03#le-transceiver"
+- id: S23-L03-EX02
+  bonnes: [a]
+  explication: "Une masse de sonde reliée à la terre posée sur CAN-L mettrait cette ligne en court-circuit vers la masse (FE-07) ; les masses vont sur la masse du calculateur."
+  renvoi_section: "S23-L03#mesurer-à-loscilloscope"
+- id: S23-L03-EX03
+  valeur: 4
+  tolerance_relative: 0.02
+  unite: µs
+  explication: "Durée d'un bit = 1 / 250 000 = 4 µs ; elle sert à régler la base de temps."
+  renvoi_section: "S23-L03#exemple-7--base-de-temps"

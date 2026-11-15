@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 300" width="620" height="300" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG d'après le guide TI SSYA002 : chaîne JTAG à deux circuits, schéma de principe sans brochage réel. -->
+  <defs><marker id="s22f01-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <rect x="20" y="90" width="100" height="120" rx="4" />
+  <text x="70" y="150" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">sonde</text>
+  <text x="70" y="168" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">JTAG</text>
+  <rect x="220" y="70" width="150" height="160" rx="4" />
+  <text x="295" y="92" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">circuit 1</text>
+  <rect x="440" y="70" width="150" height="160" rx="4" />
+  <text x="515" y="92" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">circuit 2</text>
+  <rect x="245" y="105" width="100" height="30" stroke-width="1.5" /><text x="295" y="125" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">TAP</text>
+  <rect x="465" y="105" width="100" height="30" stroke-width="1.5" /><text x="515" y="125" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">TAP</text>
+  <g stroke-width="1.5">
+    <rect x="235" y="160" width="20" height="20" /><rect x="265" y="160" width="20" height="20" /><rect x="295" y="160" width="20" height="20" /><rect x="325" y="160" width="20" height="20" />
+    <rect x="455" y="160" width="20" height="20" /><rect x="485" y="160" width="20" height="20" /><rect x="515" y="160" width="20" height="20" /><rect x="545" y="160" width="20" height="20" />
+  </g>
+  <text x="295" y="200" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">cellules de scan</text>
+  <text x="515" y="200" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">cellules de scan</text>
+  <path d="M120 30 H520 V70 M300 30 V70" />
+  <text x="130" y="24" fill="currentColor" stroke="none" font-size="11">TCK, TMS</text>
+  <path d="M120 170 H233" marker-end="url(#s22f01-fl)" /><text x="160" y="164" fill="currentColor" stroke="none" font-size="11">TDI</text>
+  <path d="M347 170 H453" marker-end="url(#s22f01-fl)" /><text x="400" y="164" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">TDO → TDI</text>
+  <path d="M567 170 H605 V265 H70 V212" marker-end="url(#s22f01-fl)" /><text x="340" y="282" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">TDO vers la sonde</text>
+  <path d="M120 50 H360 V68" stroke-dasharray="4 3" stroke-width="1" />
+  <text x="130" y="62" fill="currentColor" stroke="none" font-size="10">masse, référence de tension</text>
+</svg>

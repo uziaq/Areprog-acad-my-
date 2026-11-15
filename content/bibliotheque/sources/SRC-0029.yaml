@@ -1,0 +1,12 @@
+# Sondes d'oscilloscope : compensation, longueur de masse, mesures différentielles et flottantes,
+# sondes de courant, consignes de sécurité de branchement (cours S11). Sections citées par leur
+# titre anglais.
+id: SRC-0029
+titre: "ABCs of Probes"
+editeur: Tektronix
+reference: "Primer 60W-6053-8"
+revision: "01/04 (copyright 2004)"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://xdevs.com/doc/Tektronix/abc_Probes.pdf

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : bus CAN haute vitesse, terminaisons et états, d'après la description de la note TI SLOA101 ; allure sans valeur constructeur. -->
+  <text x="20" y="64" fill="currentColor" stroke="none" font-weight="600">CAN-H</text>
+  <text x="20" y="104" fill="currentColor" stroke="none" font-weight="600">CAN-L</text>
+  <path d="M90 60 H510 M90 100 H510" />
+  <path d="M90 60 V70 M90 90 V100 M510 60 V70 M510 90 V100" />
+  <rect x="82" y="70" width="16" height="20" stroke-width="1.5" /><rect x="502" y="70" width="16" height="20" stroke-width="1.5" />
+  <text x="70" y="84" fill="currentColor" stroke="none" text-anchor="end" font-size="11">RL</text><text x="530" y="84" fill="currentColor" stroke="none" font-size="11">RL</text>
+  <g stroke-width="1.5">
+    <path d="M200 60 V140 M215 100 V140" /><rect x="170" y="140" width="80" height="44" rx="3" />
+    <path d="M300 60 V140 M315 100 V140" /><rect x="270" y="140" width="80" height="44" rx="3" />
+    <path d="M400 60 V140 M415 100 V140" /><rect x="370" y="140" width="80" height="44" rx="3" />
+  </g>
+  <circle cx="200" cy="60" r="3" fill="currentColor" stroke="none" /><circle cx="215" cy="100" r="3" fill="currentColor" stroke="none" />
+  <circle cx="300" cy="60" r="3" fill="currentColor" stroke="none" /><circle cx="315" cy="100" r="3" fill="currentColor" stroke="none" />
+  <circle cx="400" cy="60" r="3" fill="currentColor" stroke="none" /><circle cx="415" cy="100" r="3" fill="currentColor" stroke="none" />
+  <text x="210" y="166" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">nœud 1</text>
+  <text x="310" y="166" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">nœud 2</text>
+  <text x="410" y="166" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">nœud 3</text>
+  <text x="300" y="36" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">paire torsadée, une terminaison RL à chaque extrémité, dérivations courtes</text>
+  <text x="310" y="202" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">chaque nœud : microcontrôleur, contrôleur CAN, transceiver</text>
+  <path d="M90 350 H560" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="80" y="354" fill="currentColor" stroke="none" text-anchor="end" font-size="10">masse</text>
+  <path d="M90 290 H200 V250 H360 V290 H560" />
+  <path d="M90 290 H200 V330 H360 V290 H560" stroke-dasharray="6 3" />
+  <text x="560" y="284" fill="currentColor" stroke="none" text-anchor="end" font-size="10">niveau commun</text>
+  <text x="280" y="244" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">CAN-H monte</text>
+  <text x="280" y="344" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">CAN-L descend (pointillé)</text>
+  <text x="145" y="236" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">récessif (1)</text>
+  <text x="280" y="226" fill="currentColor" stroke="none" text-anchor="middle" font-size="11" font-weight="600">dominant (0)</text>
+  <text x="460" y="236" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">récessif (1)</text>
+  <text x="145" y="312" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">différence ≈ 0</text>
+  <text x="460" y="312" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">différence ≈ 0</text>
+</svg>

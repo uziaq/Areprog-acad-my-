@@ -1,0 +1,13 @@
+# Transceiver LIN automobile : broches RXD, EN, WAKE, TXD, GND, LIN, VSUP, INH, résistance de
+# tirage intégrée, résistance externe et diode pour un nœud maître, temporisation de dominant
+# permanent, comportement sans alimentation ou sans masse (cours S24). Fiche d'un composant
+# public, utilisée comme exemple ; sections citées par leur numéro et leur titre anglais.
+id: SRC-0069
+titre: "TLIN1021A-Q1 Fault-Protected LIN Transceiver with Inhibit and Wake"
+editeur: Texas Instruments
+reference: "SLLSF62B"
+revision: "B, avril 2022"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tlin1021a-q1.pdf

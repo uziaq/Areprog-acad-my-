@@ -1,0 +1,11 @@
+# Calcul de l'étage de puissance d'un boost : rapport cyclique avec le rendement, courant maximal
+# du transistor (cours S16). Sections citées par leur numéro et leur titre anglais.
+id: SRC-0041
+titre: "Basic Calculation of a Boost Converter's Power Stage"
+editeur: Texas Instruments
+reference: "SLVA372D"
+revision: "novembre 2009, révisée novembre 2022"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slva372

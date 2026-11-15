@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S11-L03-EX01
+  valeur: 4.5
+  tolerance_relative: 0.02
+  unite: A
+  explication: "I = 45 mV / 10 mV/A = 4,5 A. On vérifie ensuite que ce courant, continu compris, reste sous le maximum de la pince."
+  renvoi_section: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+- id: S11-L03-EX02
+  bonnes: [a]
+  explication: "Un événement unique se capture en mode unique : l'oscilloscope s'arrête après l'acquisition. En auto, il serait remplacé par les acquisitions suivantes ; un niveau au-dessus du maximum ne déclencherait jamais."
+  renvoi_section: "S11-L03#modes-de-déclenchement"

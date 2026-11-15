@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S24-Q001
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#un-bus-maître-et-esclaves-sur-un-fil"
+  enonce: "Combien de nœuds maîtres compte un réseau LIN ?"
+  propositions:
+    - {id: a, texte: "Un seul"}
+    - {id: b, texte: "Deux"}
+    - {id: c, texte: "Autant que de calculateurs"}
+    - {id: d, texte: "Aucun"}
+- id: S24-Q002
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#un-bus-maître-et-esclaves-sur-un-fil"
+  enonce: "Un esclave LIN peut-il prendre la parole de lui-même ?"
+  propositions:
+    - {id: a, texte: "Non : il répond seulement à l'en-tête du maître qui le concerne"}
+    - {id: b, texte: "Oui, à tout moment"}
+    - {id: c, texte: "Oui, par arbitrage"}
+    - {id: d, texte: "Seulement en cas d'erreur"}
+- id: S24-Q003
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#un-bus-maître-et-esclaves-sur-un-fil"
+  enonce: "Pourquoi le LIN n'est-il pas employé pour des fonctions de sécurité ?"
+  propositions:
+    - {id: a, texte: "Si le maître tombe en panne, tout le réseau s'arrête, et le débit est faible"}
+    - {id: b, texte: "Parce qu'il a deux fils"}
+    - {id: c, texte: "Parce qu'il est trop rapide"}
+    - {id: d, texte: "Parce qu'il n'a pas de transceiver"}
+- id: S24-Q004
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#couche-physique--un-fil-tiré-vers-la-batterie"
+  enonce: "Au repos, à quel niveau est le fil LIN ?"
+  propositions:
+    - {id: a, texte: "Proche de la tension batterie : état récessif"}
+    - {id: b, texte: "À 0 V : état dominant"}
+    - {id: c, texte: "À 2,5 V"}
+    - {id: d, texte: "Flottant"}
+- id: S24-Q005
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#couche-physique--un-fil-tiré-vers-la-batterie"
+  enonce: "Quelle résistance de tirage typique la note TI donne-t-elle pour le nœud maître ?"
+  propositions:
+    - {id: a, texte: "1 kΩ, avec une diode en série"}
+    - {id: b, texte: "120 Ω"}
+    - {id: c, texte: "30 kΩ"}
+    - {id: d, texte: "10 Ω"}
+- id: S24-Q006
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#couche-physique--un-fil-tiré-vers-la-batterie"
+  enonce: "Sur un transceiver LIN, TXD est bas. Dans quel état est le bus ?"
+  propositions:
+    - {id: a, texte: "Dominant, proche de la masse"}
+    - {id: b, texte: "Récessif"}
+    - {id: c, texte: "Haute impédance"}
+    - {id: d, texte: "À la tension batterie"}
+- id: S24-Q007
+  type: calcul
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#exemple-2--seuils-à-12-v"
+  enonce: "Un bus LIN est alimenté sous 12 V. Au-dessus de quelle tension un récepteur lit-il un récessif (60 %) ?"
+  unite_attendue: V
+- id: S24-Q008
+  type: calcul
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#seuils-et-débit"
+  enonce: "Un émetteur LIN alimenté sous 14 V doit descendre sous 20 % de cette tension pour un dominant. Quelle tension maximale ?"
+  unite_attendue: V
+- id: S24-Q009
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#seuils-et-débit"
+  enonce: "Quelle plage de débit la note TI donne-t-elle pour le LIN ?"
+  propositions:
+    - {id: a, texte: "1 à 20 kbit/s"}
+    - {id: b, texte: "125 à 1 000 kbit/s"}
+    - {id: c, texte: "1 à 10 Mbit/s"}
+    - {id: d, texte: "100 à 400 kbit/s"}
+- id: S24-Q010
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#la-trame-lin"
+  enonce: "Par quoi commence une trame LIN ?"
+  propositions:
+    - {id: a, texte: "Une pause de synchronisation d'au moins 13 bits dominants"}
+    - {id: b, texte: "Un bit SOF unique"}
+    - {id: c, texte: "La somme de contrôle"}
+    - {id: d, texte: "Les données"}
+- id: S24-Q011
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#la-trame-lin"
+  enonce: "Quelle est la valeur du champ de synchronisation LIN ?"
+  propositions:
+    - {id: a, texte: "0x55"}
+    - {id: b, texte: "0xFF"}
+    - {id: c, texte: "0x00"}
+    - {id: d, texte: "0x7E"}
+- id: S24-Q012
+  type: calcul
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#exemple-1--durée-dun-bit"
+  enonce: "Un bus LIN fonctionne à 10 kbit/s. Quelle est la durée d'un bit ?"
+  unite_attendue: µs
+- id: S24-Q013
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L01#exemple-3--un-fil-toujours-bas"
+  enonce: "Le fil LIN reste à 0 V en permanence. Pourquoi soupçonner d'abord le câblage plutôt qu'un transceiver ?"
+  propositions:
+    - {id: a, texte: "Les transceivers récents coupent un dominant trop long"}
+    - {id: b, texte: "Les transceivers ne tombent jamais en panne"}
+    - {id: c, texte: "Le fil LIN est toujours à 0 V"}
+    - {id: d, texte: "Par habitude"}
+- id: S24-Q014
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L02#la-ligne-k"
+  enonce: "À quoi sert principalement la ligne K ?"
+  propositions:
+    - {id: a, texte: "Au diagnostic, entre un calculateur et un outil extérieur"}
+    - {id: b, texte: "Aux échanges rapides entre calculateurs"}
+    - {id: c, texte: "À l'alimentation des capteurs"}
+    - {id: d, texte: "À l'allumage"}
+- id: S24-Q015
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L02#la-ligne-k"
+  enonce: "Que signifie « à l'alternat » pour la ligne K ?"
+  propositions:
+    - {id: a, texte: "Les données passent dans un sens puis dans l'autre, jamais les deux à la fois"}
+    - {id: b, texte: "Le fil change de couleur"}
+    - {id: c, texte: "Deux fils alternés"}
+    - {id: d, texte: "Le débit change à chaque octet"}
+- id: S24-Q016
+  type: choix_unique
+  securite: true
+  competences: [D8.2]
+  section: "S24-L02#mesurer-un-bus-à-un-fil"
+  enonce: "Où placez-vous la masse de la sonde pour mesurer un fil LIN sur un calculateur alimenté ?"
+  propositions:
+    - {id: a, texte: "Sur la masse du calculateur"}
+    - {id: b, texte: "Sur le fil LIN"}
+    - {id: c, texte: "Sur le plus batterie"}
+    - {id: d, texte: "Nulle part"}
+- id: S24-Q017
+  type: choix_unique
+  securite: false
+  competences: [D8.1, D8.2]
+  section: "S24-L02#comparer-can-lin-et-k-line"
+  enonce: "Quel bus utilise une paire différentielle ?"
+  propositions:
+    - {id: a, texte: "Le CAN haute vitesse"}
+    - {id: b, texte: "Le LIN"}
+    - {id: c, texte: "La ligne K"}
+    - {id: d, texte: "Aucun des trois"}
+- id: S24-Q018
+  type: choix_unique
+  securite: false
+  competences: [D8.2]
+  section: "S24-L02#mesurer-un-bus-à-un-fil"
+  enonce: "Pourquoi mesurer la tension batterie en même temps que le fil LIN ?"
+  propositions:
+    - {id: a, texte: "Parce que les seuils LIN sont des fractions de la tension batterie"}
+    - {id: b, texte: "Pour vérifier la terminaison"}
+    - {id: c, texte: "Pour lire l'identifiant"}
+    - {id: d, texte: "Ce n'est pas utile"}
+- id: S24-Q019
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S24-L03#ce-que-montrent-les-mesures"
+  enonce: "Hors tension, la résistance de CAN-H vers le plus batterie est presque nulle. Orientation ?"
+  propositions:
+    - {id: a, texte: "CAN-H en court-circuit au plus"}
+    - {id: b, texte: "Terminaison absente"}
+    - {id: c, texte: "Bus normal"}
+    - {id: d, texte: "Coupure de CAN-L"}
+- id: S24-Q020
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S24-L03#exemple-7--une-coupure"
+  enonce: "On mesure 60 Ω entre CAN-H et CAN-L d'un côté du véhicule et 120 Ω de l'autre. Hypothèse ?"
+  propositions:
+    - {id: a, texte: "Coupure du bus entre les deux points de mesure"}
+    - {id: b, texte: "Court-circuit entre les lignes"}
+    - {id: c, texte: "Bus normal"}
+    - {id: d, texte: "Transceiver en court-circuit"}
+- id: S24-Q021
+  type: choix_unique
+  securite: false
+  competences: [D8.1, D8.2]
+  section: "S24-L03#lordre-des-mesures"
+  enonce: "Que vérifiez-vous juste après le symptôme et le schéma ?"
+  propositions:
+    - {id: a, texte: "L'alimentation et la masse des nœuds concernés"}
+    - {id: b, texte: "Le remplacement du calculateur"}
+    - {id: c, texte: "Le logiciel"}
+    - {id: d, texte: "La couleur des fils"}
+- id: S24-Q022
+  type: choix_unique
+  securite: true
+  competences: [D8.1, D8.2]
+  section: "S24-L03#lordre-des-mesures"
+  enonce: "Avant de débrancher un connecteur de calculateur pour diviser le bus sur un véhicule, que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Débrancher la batterie selon l'ordre prévu par le constructeur"}
+    - {id: b, texte: "Rien, on débranche sous tension"}
+    - {id: c, texte: "Démarrer le moteur"}
+    - {id: d, texte: "Mettre le contact"}
+- id: S24-Q023
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S24-L03#exemple-6--localiser-un-court-circuit-à-la-masse"
+  enonce: "CAN-L lit 0,4 Ω vers la masse. Comment localisez-vous le court-circuit ?"
+  propositions:
+    - {id: a, texte: "En débranchant les nœuds un par un et en remesurant CAN-L vers la masse"}
+    - {id: b, texte: "En remplaçant tous les transceivers"}
+    - {id: c, texte: "En injectant 12 V sur CAN-L"}
+    - {id: d, texte: "En mesurant sous tension"}
+- id: S24-Q024
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S24-L03#exemple-8--un-nœud-qui-bloque"
+  enonce: "Sur le banc, TXD du calculateur suspect reste bas en permanence. Que mettez-vous en cause ?"
+  propositions:
+    - {id: a, texte: "Le microcontrôleur ou son programme, plutôt que le transceiver"}
+    - {id: b, texte: "Le transceiver seul"}
+    - {id: c, texte: "Le câblage du véhicule"}
+    - {id: d, texte: "La terminaison"}
+- id: S24-Q025
+  type: choix_unique
+  securite: true
+  competences: [D8.1]
+  section: "S24-L03#ce-que-montrent-les-mesures"
+  enonce: "Pendant le PB-3, quelle règle s'applique à l'outil de diagnostic sur le calculateur de récupération ?"
+  propositions:
+    - {id: a, texte: "Lecture seule : aucune fonction d'écriture, après une mise sous tension progressive"}
+    - {id: b, texte: "Écrire un nouveau logiciel pour tester"}
+    - {id: c, texte: "Lancer tous les essais d'actionneurs"}
+    - {id: d, texte: "Brancher l'outil avant d'alimenter le calculateur sans limite"}

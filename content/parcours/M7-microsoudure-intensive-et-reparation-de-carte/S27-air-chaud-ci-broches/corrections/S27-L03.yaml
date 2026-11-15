@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S27-L03-EX01
+  ordre: [d, b, a, e, c]
+  explication: "Photo et orientation, lecture de la mémoire avant toute chauffe, vernis retiré localement, voisins protégés et carte préchauffée, puis dépose."
+  renvoi_section: "S27-L03#avant-de-déposer"
+- id: S27-L03-EX02
+  bonnes: [a]
+  explication: "Deux broches opposées fixent le composant ; on corrige l'alignement avant de souder le reste."
+  renvoi_section: "S27-L03#reposer-un-soic-un-tssop-ou-un-qfp"
+- id: S27-L03-EX03
+  bonnes: [a]
+  explication: "Les billes du BGA sont sous le boîtier : sans radiographie, le contrôle est impossible ; présentation seulement."
+  renvoi_section: "S27-L03#qfn-alliage-de-dépose-et-bga"

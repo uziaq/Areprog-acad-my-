@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S15-L01-EX01
+  valeur: 1.35
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PD = (VI − VO) × IO = (14 − 5) × 0,15 = 1,35 W, presque entièrement en chaleur."
+  renvoi_section: "S15-L01#la-puissance-dissipée"
+- id: S15-L01-EX02
+  bonnes: [a]
+  explication: "PD = (VI − VO) × IO : en 5 V, (5 − 3,3) × I ; en 12 V, (12 − 3,3) × I, cinq fois plus. Le rendement, voisin de VO / VI, passe d'environ 66 % à environ 28 %."
+  renvoi_section: "S15-L01#le-rendement"
+- id: S15-L01-EX03
+  valeur: 1.5
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PD(max) = (TJmax − TA) / θJA = (150 − 60) / 60 = 1,5 W. La puissance réellement dissipée doit rester en dessous."
+  renvoi_section: "S15-L01#température-de-jonction-et-résistance-thermique"

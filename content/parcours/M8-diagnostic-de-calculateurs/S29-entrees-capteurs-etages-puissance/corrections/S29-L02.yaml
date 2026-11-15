@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S29-L02-EX01
+  bonnes: [a]
+  explication: "Sortie coupée, la charge raccordée à la masse tire la sortie à 0 V ; une tension proche de la batterie signalerait une charge ouverte ou un court-circuit au + batterie (fiche TPS1H100-Q1)."
+  renvoi_section: "S29-L02#low-side-et-high-side"
+- id: S29-L02-EX02
+  valeur: 0.5
+  tolerance_relative: 0.02
+  unite: "A"
+  explication: "Courant de mesure : 2 V / 2 kΩ = 1 mA ; courant de charge : 1 mA × 500 = 0,5 A, à la précision de K près."
+  renvoi_section: "S29-L02#exemple-4--lire-le-courant-dun-high-side"
+- id: S29-L02-EX03
+  bonnes: [a]
+  explication: "IN1 = IN2 = 1 met OUT1 et OUT2 à l'état haut : le courant recircule par les transistors du haut, c'est le freinage. Le temps mort empêche que les deux transistors d'un même demi-pont conduisent ensemble."
+  renvoi_section: "S29-L02#le-pont-en-h"

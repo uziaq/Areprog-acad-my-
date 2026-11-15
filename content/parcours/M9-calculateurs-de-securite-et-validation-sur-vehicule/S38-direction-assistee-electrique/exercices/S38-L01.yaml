@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S38-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S38-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "D'après le document cité, quels blocs trouve-t-on dans un calculateur de direction assistée électrique ?"
+  propositions:
+    - {id: a, texte: "Microcontrôleur, capteurs, gestion d'alimentation, commande de moteur et transistors de puissance"}
+    - {id: b, texte: "Seulement un relais et un fusible"}
+    - {id: c, texte: "Un générateur d'impulsions d'allumage"}
+    - {id: d, texte: "Une réserve d'énergie pour allumeurs"}
+  competences: [D10.7]
+  objectif: O1
+- id: S38-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Que garantit la logique d'entrée de la commande de pont citée ?"
+  propositions:
+    - {id: a, texte: "Les transistors côté haut et côté bas d'une même phase ne sont jamais allumés en même temps"}
+    - {id: b, texte: "Les trois phases sont toujours allumées ensemble"}
+    - {id: c, texte: "Le moteur tourne même sans microcontrôleur"}
+    - {id: d, texte: "Les défauts sont effacés au démarrage"}
+  competences: [D10.6, D10.7]
+  objectif: O2
+- id: S38-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un véhicule d'atelier passe en mode dégradé de direction, voyant allumé. Quelle est la bonne attitude ?"
+  propositions:
+    - {id: a, texte: "Lire les défauts sans effacer, contrôler alimentation et capteur de couple, consulter la documentation du constructeur"}
+    - {id: b, texte: "Effacer le défaut et rouler pour voir s'il revient"}
+    - {id: c, texte: "Remplacer le pont de MOSFET sans mesure"}
+    - {id: d, texte: "Shunter la surveillance qui a réagi"}
+  competences: [D10.6]
+  objectif: O3

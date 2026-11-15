@@ -1,0 +1,13 @@
+# Note d'application sur les capteurs à effet Hall linéaires double puce reliés à un même fil de
+# sortie (protocole SENT séquentiel ou adressable). L'introduction et la conclusion présentent la
+# redondance des capteurs de couple de direction assistée électrique. Utilisé en S38 pour le
+# principe du capteur de couple redondant. Sections citées par leur titre anglais.
+id: SRC-0103
+titre: "Achieving Fast SENT Message Response with A1346 Linear Hall-Effect Sensor ICs on Shared Bus"
+editeur: Allegro MicroSystems
+reference: "296131-AN"
+revision: "Rev. 2, 11 juillet 2019"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.allegromicro.com/-/media/files/application-notes/an296131-fast-sent-message-response-a1346-shared-bus.pdf

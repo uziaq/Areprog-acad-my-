@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S11-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S11-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur le signal carré de compensation, les coins sont arrondis et le palier est atteint lentement. Dans quel état est la sonde ?"
+  propositions:
+    - {id: a, texte: "Sous-compensée : il faut tourner la vis jusqu'à obtenir des coins carrés"}
+    - {id: b, texte: "Surcompensée"}
+    - {id: c, texte: "Correctement compensée"}
+    - {id: d, texte: "Réglée sur ×1"}
+  competences: [D3.4]
+  objectif: O1
+- id: S11-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous voulez voir la tension aux bornes d'une résistance dont aucun côté n'est à la masse, avec un oscilloscope relié à la terre. Où posez-vous la pince de masse de la sonde ?"
+  propositions:
+    - {id: a, texte: "Sur la masse du montage, et j'utilise deux voies en soustraction"}
+    - {id: b, texte: "Sur un côté de la résistance, pointe sur l'autre"}
+    - {id: c, texte: "Je débranche la terre de l'oscilloscope"}
+    - {id: d, texte: "Je la laisse en l'air"}
+  competences: [D3.4]
+  objectif: O2
+- id: S11-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "En mesure par deux voies en soustraction, la voie 1 lit 12,0 V et la voie 2 lit 11,8 V sur une résistance de 0,05 Ω. Quel courant la traverse ?"
+  unite_attendue: A
+  competences: [D3.3, D3.4]
+  objectif: O3

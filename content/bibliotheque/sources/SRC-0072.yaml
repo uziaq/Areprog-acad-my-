@@ -1,0 +1,14 @@
+# Norme NASA des connexions soudées (montage traversant et généralités) : outils, contrôle
+# quotidien des outils, alliages et flux, solvants (alcool isopropylique), nettoyage des résidus,
+# refroidissement à l'air ambiant, interdiction du nettoyage par ultrasons des cartes équipées,
+# critères d'inspection. Document ancien, référence publique de critères écrits. Sections citées
+# par leur numéro et leur titre anglais (cours S26).
+id: SRC-0072
+titre: "NASA-STD-8739.3 w/Change 2, Soldered Electrical Connections"
+editeur: NASA
+reference: "NASA-STD-8739.3"
+revision: "décembre 1997, modification 2 de janvier 2001"
+date_consultation: 2026-11-15
+type: norme
+licence: lien_seulement
+lien: https://physics.csuchico.edu/ayars/327/content/NASA-STD-8739.3.pdf

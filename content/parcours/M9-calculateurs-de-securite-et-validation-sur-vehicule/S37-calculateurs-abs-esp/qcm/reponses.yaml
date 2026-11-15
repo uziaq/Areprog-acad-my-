@@ -1,0 +1,191 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S37-Q001
+  bonnes: [a]
+  explication: "SRC-0100, Overview."
+  pourquoi_faux:
+    b: "Ce sont les commandes côté haut."
+    c: "Quatre seulement en PWM."
+    d: "Non."
+  source: "S37-L01#un-circuit-de-puissance-et-dinterface-dédié"
+- id: S37-Q002
+  bonnes: [a]
+  explication: "SRC-0100, High-Side Drivers."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "C'est l'airbag."
+  source: "S37-L01#un-circuit-de-puissance-et-dinterface-dédié"
+- id: S37-Q003
+  bonnes: [a]
+  explication: "SRC-0100, Features."
+  pourquoi_faux:
+    b: "Tension batterie."
+    c: "Non."
+    d: "Non."
+  source: "S37-L01#un-circuit-de-puissance-et-dinterface-dédié"
+- id: S37-Q004
+  bonnes: [a]
+  explication: "Le chien de garde et les tensions inhibent les commandes (SRC-0100)."
+  pourquoi_faux:
+    b: "Peu probable."
+    c: "Non."
+    d: "Non."
+  source: "S37-L01#les-surveillances-et-leur-effet"
+- id: S37-Q005
+  bonnes: [a]
+  explication: "Protocole renforcé."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L01#les-surveillances-et-leur-effet"
+- id: S37-Q006
+  bonnes: [a]
+  explication: "Le calculateur arrive seul ou séparé selon le constructeur."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L01#dépose-et-précautions"
+- id: S37-Q007
+  valeur: 1.875
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 0,3 × 2,5² = 1,875 W."
+  source: "S37-L01#exemple-1--la-dissipation-dune-commande-délectrovanne"
+- id: S37-Q008
+  bonnes: [a]
+  explication: "Capteur inductif (SRC-0081)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L02#capteur-passif--une-bobine-devant-une-cible"
+- id: S37-Q009
+  bonnes: [a]
+  explication: "SRC-0100, Wheel-Speed Sensing."
+  pourquoi_faux:
+    b: "C'est le passif."
+    c: "Non."
+    d: "Non."
+  source: "S37-L02#capteur-actif--un-courant-qui-change-de-niveau"
+- id: S37-Q010
+  bonnes: [a]
+  explication: "SRC-0100, Wheel-Speed Sensing."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Boucle de courant industrielle."
+  source: "S37-L02#capteur-actif--un-courant-qui-change-de-niveau"
+- id: S37-Q011
+  bonnes: [a]
+  explication: "SRC-0100, Wheel-Speed Sensing."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L02#capteur-actif--un-courant-qui-change-de-niveau"
+- id: S37-Q012
+  valeur: 0.84
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = 120 × 0,007 = 0,84 V."
+  source: "S37-L02#exemple-1--la-tension-sur-la-résistance-de-mesure"
+- id: S37-Q013
+  valeur: 96
+  tolerance_relative: 0.02
+  unite: Hz
+  explication: "f = 2 × 48 = 96 Hz."
+  source: "S37-L02#exemple-2--la-fréquence-roue-tournée-à-la-main"
+- id: S37-Q014
+  bonnes: [a]
+  explication: "Sécurité véhicule du catalogue des TP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L02#mesurer-sur-véhicule-datelier-levé"
+- id: S37-Q015
+  bonnes: [a]
+  explication: "D-15 : véhicules électrifiés exclus ; jamais de véhicule client."
+  pourquoi_faux:
+    b: "Non."
+    c: "Exclu (D-15)."
+    d: "Non."
+  source: "S37-L02#mesurer-sur-véhicule-datelier-levé"
+- id: S37-Q016
+  bonnes: [a]
+  explication: "Défaut mécanique côté roue, à inspecter selon le constructeur."
+  pourquoi_faux:
+    b: "À prouver avant."
+    c: "Non."
+    d: "Non."
+  source: "S37-L02#lire-un-signal-absent-ou-irrégulier"
+- id: S37-Q017
+  bonnes: [a]
+  explication: "SRC-0101, Basics of Driving Solenoid Loads."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L03#une-électrovanne-est-une-charge-inductive"
+- id: S37-Q018
+  bonnes: [a]
+  explication: "SRC-0101, Passive Voltage Clamping."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Si."
+  source: "S37-L03#une-électrovanne-est-une-charge-inductive"
+- id: S37-Q019
+  valeur: 0.2
+  tolerance_relative: 0.02
+  unite: ms
+  explication: "Δt ≈ 0,008 × 1 / 40 = 0,0002 s = 0,2 ms."
+  source: "S37-L03#exemple-1--roue-libre-ou-écrêtage"
+- id: S37-Q020
+  bonnes: [a]
+  explication: "SRC-0101, Current Control."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L03#régulation-du-courant-crête-puis-maintien"
+- id: S37-Q021
+  bonnes: [a]
+  explication: "Protocole renforcé, point 7."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L03#le-banc-à-charges-réduites"
+- id: S37-Q022
+  bonnes: [a]
+  explication: "Limite basse, défaut localisé tout de suite."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L03#le-banc-à-charges-réduites"
+- id: S37-Q023
+  valeur: 0.5
+  tolerance_relative: 0.02
+  unite: A
+  explication: "I = 12 / 24 = 0,5 A."
+  source: "S37-L03#exemple-2--une-charge-réduite"
+- id: S37-Q024
+  bonnes: [a]
+  explication: "Diagnostic comparatif."
+  pourquoi_faux:
+    b: "Non sourcé."
+    c: "Non."
+    d: "Non."
+  source: "S37-L03#ce-que-lon-mesure"
+- id: S37-Q025
+  bonnes: [a]
+  explication: "À vérifier par constructeur."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S37-L03#après-une-intervention"

@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S35-L02-EX01
+  valeur: 1.2
+  tolerance_relative: 0.02
+  unite: "J"
+  explication: "E = ½ × C × U² = 0,5 × 0,0022 × 33² = 0,5 × 0,0022 × 1 089 ≈ 1,2 J."
+  renvoi_section: "S35-L02#exemple-1--lénergie-dune-réserve"
+- id: S35-L02-EX02
+  bonnes: [a]
+  explication: "Tant que FEN est bas, les interrupteurs ne peuvent pas être fermés ; les diagnostics restent disponibles par la liaison série."
+  renvoi_section: "S35-L02#les-étages-de-commande-des-allumeurs"
+- id: S35-L02-EX03
+  bonnes: [a]
+  explication: "D'après la fiche, un allumeur ouvert met tous les bits à 1, un allumeur en court-circuit les met tous à 0."
+  renvoi_section: "S35-L02#les-diagnostics-des-allumeurs"

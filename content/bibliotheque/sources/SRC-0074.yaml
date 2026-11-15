@@ -1,0 +1,12 @@
+# Fiche technique d'un alliage sans plomb SAC305 : composition (étain, 3 % d'argent, 0,5 % de
+# cuivre), températures de solidus et de liquidus, consignes de ventilation. Fiche d'un produit
+# du commerce utilisée comme exemple ; sections citées par leur titre anglais (cours S26).
+id: SRC-0074
+titre: "SAC305 Lead-Free Solder Alloy, Technical Data Sheet"
+editeur: AIM Solder
+reference: "SAC305 TDS"
+revision: "NF2"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://assets.testequity.com/te1/Documents/AIM_SAC305_TDS.pdf

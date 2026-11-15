@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S24-L02-EX01
+  bonnes: [a]
+  explication: "D'après la fiche NXP, l'interface de ligne K suit l'ISO 9141 : un fil, bidirectionnel à l'alternat, niveaux batterie."
+  renvoi_section: "S24-L02#la-ligne-k"
+- id: S24-L02-EX02
+  bonnes: [a]
+  explication: "Un fil à niveaux batterie exclut le CAN ; 100 µs par bit (10 kbit/s) entre dans la plage du LIN. Le schéma officiel confirme."
+  renvoi_section: "S24-L02#comparer-can-lin-et-k-line"

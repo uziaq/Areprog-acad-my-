@@ -1,0 +1,13 @@
+# Calcul de l'étage de puissance d'un buck : rapport cyclique avec le rendement, ondulation de
+# courant de l'inductance, courant maximal du transistor, convertisseurs synchrones, ondulation
+# de sortie et contribution de l'ESR (cours S16). Sections citées par leur numéro et leur titre
+# anglais.
+id: SRC-0040
+titre: "Basic Calculation of a Buck Converter's Power Stage"
+editeur: Texas Instruments
+reference: "SLVA477C"
+revision: "décembre 2011, révisée septembre 2026"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slva477

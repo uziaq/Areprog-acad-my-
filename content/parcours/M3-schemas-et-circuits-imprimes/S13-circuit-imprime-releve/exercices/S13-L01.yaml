@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S13-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S13-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quelle couche d'un circuit imprimé isole les pistes et évite les ponts de soudure, en laissant les pastilles à nu ?"
+  propositions:
+    - {id: a, texte: "Le vernis épargne (soldermask)"}
+    - {id: b, texte: "La sérigraphie"}
+    - {id: c, texte: "Le substrat FR4"}
+    - {id: d, texte: "Le plan de masse"}
+  competences: [D5.3]
+  objectif: O1
+- id: S13-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une piste rejoint un via sur la face avant ; rien n'apparaît au même endroit sur la face arrière. De quel via s'agit-il probablement ?"
+  propositions:
+    - {id: a, texte: "Un via borgne : la piste continue sur une couche interne"}
+    - {id: b, texte: "Un via traversant"}
+    - {id: c, texte: "Un trou de fixation"}
+    - {id: d, texte: "Un point de test"}
+  competences: [D5.3]
+  objectif: O2
+- id: S13-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Une piste de cuivre mesure 50 mm de long et 0,5 mm de large, pour une épaisseur de 35 µm. Avec ρ = 1,678 × 10⁻⁸ Ω·m, quelle est sa résistance, en mΩ ?"
+  unite_attendue: mΩ
+  competences: [D5.3]
+  objectif: O3

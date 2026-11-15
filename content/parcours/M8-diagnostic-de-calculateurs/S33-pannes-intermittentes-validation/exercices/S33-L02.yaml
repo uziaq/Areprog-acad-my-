@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S33-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S33-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quand écrit-on le protocole de validation ?"
+  propositions:
+    - {id: a, texte: "Avant l'essai, pour ne pas ajuster les critères au résultat"}
+    - {id: b, texte: "Après l'essai, d'après ce qui a marché"}
+    - {id: c, texte: "Jamais : l'essai suffit"}
+    - {id: d, texte: "Seulement si le client le demande"}
+  competences: [D10.4]
+  objectif: O1
+- id: S33-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un protocole prévoit quatre cycles de 15 min chacun. Quelle est la durée totale d'essai, en secondes ?"
+  unite_attendue: "s"
+  competences: [D10.4]
+  objectif: O1
+- id: S33-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une sortie réparée commute sur charge simulée au banc. Que peut-on écrire comme validé ?"
+  propositions:
+    - {id: a, texte: "La commutation sur charge simulée ; le fonctionnement sur le véhicule reste une limite"}
+    - {id: b, texte: "Le calculateur fonctionnera sur le véhicule"}
+    - {id: c, texte: "La cause de la panne est trouvée"}
+    - {id: d, texte: "Rien ne peut être validé sur banc"}
+  competences: [D10.4]
+  objectif: O2

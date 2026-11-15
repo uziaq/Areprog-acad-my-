@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S39-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S39-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un calculateur réparé a la même référence matérielle que celui du véhicule d'atelier. Suffit-il de le monter ?"
+  propositions:
+    - {id: a, texte: "Non : vérifier aussi la référence logicielle, la variante et un éventuel codage dans la documentation du constructeur"}
+    - {id: b, texte: "Oui : la référence matérielle suffit toujours"}
+    - {id: c, texte: "Oui, à condition d'effacer les défauts après"}
+    - {id: d, texte: "Non : il faut toujours modifier les données d'antidémarrage"}
+  competences: [D10.7]
+  objectif: O1
+- id: S39-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quand écrit-on les critères d'arrêt d'une validation sur véhicule ?"
+  propositions:
+    - {id: a, texte: "Avant l'essai, dans le protocole"}
+    - {id: b, texte: "Pendant l'essai, selon ce qui arrive"}
+    - {id: c, texte: "Après l'essai, dans le dossier"}
+    - {id: d, texte: "Seulement si le formateur le demande"}
+  competences: [D10.6, D10.7]
+  objectif: O2
+- id: S39-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un apprentissage du constructeur se fait moteur en marche dans l'atelier. Quelle précaution est indispensable ?"
+  propositions:
+    - {id: a, texte: "Capter les gaz d'échappement au plus près de leur émission et ne pas laisser tourner le moteur inutilement"}
+    - {id: b, texte: "Fermer les portes pour garder la chaleur"}
+    - {id: c, texte: "Porter un masque à poussières"}
+    - {id: d, texte: "Aucune, l'apprentissage est court"}
+  competences: [D10.6]
+  objectif: O3

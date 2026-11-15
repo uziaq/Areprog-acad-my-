@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" width="360" height="200" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : LED et sa résistance série, sans valeur. -->
+  <circle cx="40" cy="110" r="18" />
+  <text x="34" y="106" fill="currentColor" stroke="none">+</text>
+  <text x="10" y="150" fill="currentColor" stroke="none" font-weight="600">E</text>
+  <path d="M40 92 V40 H110" /><rect x="110" y="30" width="50" height="20" /><text x="128" y="24" fill="currentColor" stroke="none" font-weight="600">R</text>
+  <path d="M160 40 H260 V80" />
+  <path d="M244 80 L260 108 L276 80 Z M244 108 H276 M260 108 V170 H40 V128" />
+  <path d="M282 88 l14 -8 M282 100 l14 -8" stroke-width="1.5" />
+  <text x="290" y="118" fill="currentColor" stroke="none">LED</text>
+  <text x="110" y="70" fill="currentColor" stroke="none" font-size="11">E − U LED</text>
+</svg>

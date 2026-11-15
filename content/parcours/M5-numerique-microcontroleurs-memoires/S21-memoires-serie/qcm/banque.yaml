@@ -1,0 +1,273 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S21-Q001
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#eeprom-i²c"
+  enonce: "Quelles lignes utilise une EEPROM I²C pour communiquer ?"
+  propositions:
+    - {id: a, texte: "SDA et SCL"}
+    - {id: b, texte: "CS, SK, DI, DO"}
+    - {id: c, texte: "CAN-H et CAN-L"}
+    - {id: d, texte: "/CS, CLK, DI, DO"}
+- id: S21-Q002
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#eeprom-i²c"
+  enonce: "Sur l'EEPROM I²C étudiée, que représentent les quatre premiers bits de l'adresse ?"
+  propositions:
+    - {id: a, texte: "Le code fixe 1010 des EEPROM de cette famille"}
+    - {id: b, texte: "La capacité"}
+    - {id: c, texte: "Le numéro de page"}
+    - {id: d, texte: "La tension d'alimentation"}
+- id: S21-Q003
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#exemple-1--adresse-i²c"
+  enonce: "A2, A1 et A0 sont à la masse. Quel est le premier octet envoyé pour une lecture ?"
+  propositions:
+    - {id: a, texte: "0xA1"}
+    - {id: b, texte: "0xA0"}
+    - {id: c, texte: "0x50"}
+    - {id: d, texte: "0x51"}
+- id: S21-Q004
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#eeprom-i²c"
+  enonce: "Combien d'EEPROM de ce type peut-on mettre sur un même bus I²C ?"
+  propositions:
+    - {id: a, texte: "Huit, grâce aux trois broches d'adresse"}
+    - {id: b, texte: "Une seule"}
+    - {id: c, texte: "Deux"}
+    - {id: d, texte: "Autant qu'on veut, sans réglage"}
+- id: S21-Q005
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#exemple-2--capacité-et-pages"
+  enonce: "Combien de pages de 64 octets compte une EEPROM de 32 768 octets ?"
+  propositions:
+    - {id: a, texte: "512"}
+    - {id: b, texte: "256"}
+    - {id: c, texte: "64"}
+    - {id: d, texte: "4096"}
+- id: S21-Q006
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#eeprom-microwire"
+  enonce: "À quoi sert la broche ORG d'une EEPROM Microwire ?"
+  propositions:
+    - {id: a, texte: "À choisir l'organisation en mots de 16 bits ou en octets"}
+    - {id: b, texte: "À protéger la mémoire en écriture"}
+    - {id: c, texte: "À choisir l'adresse I²C"}
+    - {id: d, texte: "À régler la tension"}
+- id: S21-Q007
+  type: choix_unique
+  securite: false
+  competences: [D7.3, D7.4]
+  section: "S21-L01#eeprom-microwire"
+  enonce: "Une Microwire est câblée en x16 sur la carte, mais lue en x8 au programmateur. Conséquence probable ?"
+  propositions:
+    - {id: a, texte: "Une sauvegarde dont les octets ne sont pas dans le bon ordre"}
+    - {id: b, texte: "Aucune"}
+    - {id: c, texte: "La mémoire est effacée"}
+    - {id: d, texte: "La mémoire passe en x8 définitivement"}
+- id: S21-Q008
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#flash-spi"
+  enonce: "Sur la Flash SPI étudiée, que vaut un secteur après effacement ?"
+  propositions:
+    - {id: a, texte: "Tous les octets à FFh"}
+    - {id: b, texte: "Tous les octets à 00h"}
+    - {id: c, texte: "Des valeurs aléatoires"}
+    - {id: d, texte: "Le contenu précédent"}
+- id: S21-Q009
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#flash-spi"
+  enonce: "Quelle est la plus petite zone effaçable de la Flash SPI étudiée ?"
+  propositions:
+    - {id: a, texte: "Un secteur de 4 Ko"}
+    - {id: b, texte: "Un octet"}
+    - {id: c, texte: "Une page de 256 octets"}
+    - {id: d, texte: "Toute la puce seulement"}
+- id: S21-Q010
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L01#identifier-une-mémoire"
+  enonce: "Comment identifie-t-on une mémoire série sur une carte ?"
+  propositions:
+    - {id: a, texte: "Par son marquage lu au microscope et sa fiche technique, puis le câblage de ses broches"}
+    - {id: b, texte: "Par sa couleur"}
+    - {id: c, texte: "Par une valeur typique retenue de mémoire"}
+    - {id: d, texte: "D'après une vidéo"}
+- id: S21-Q011
+  type: choix_unique
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#lire-hors-circuit"
+  enonce: "Avant une lecture hors circuit, que réglez-vous dans le logiciel du programmateur ?"
+  propositions:
+    - {id: a, texte: "La référence exacte, la tension et, pour une Microwire, l'organisation"}
+    - {id: b, texte: "Seulement la couleur de l'interface"}
+    - {id: c, texte: "L'adresse IP"}
+    - {id: d, texte: "Rien"}
+- id: S21-Q012
+  type: calcul
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#exemple-6--programmateur-et-tension"
+  enonce: "Une mémoire est alimentée en 1,8 V. Quelle tension maximale peut recevoir une broche d'après la règle de la fiche ?"
+  unite_attendue: V
+- id: S21-Q013
+  type: choix_unique
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#lire-en-circuit"
+  enonce: "En lecture en circuit, pourquoi tenir le microcontrôleur en reset ?"
+  propositions:
+    - {id: a, texte: "Pour éviter qu'il parle sur le même bus en même temps que le programmateur"}
+    - {id: b, texte: "Pour accélérer la lecture"}
+    - {id: c, texte: "Pour effacer la mémoire"}
+    - {id: d, texte: "Pour réduire la tension"}
+- id: S21-Q014
+  type: choix_unique
+  securite: false
+  competences: [D7.3, D7.4]
+  section: "S21-L02#lire-en-circuit"
+  enonce: "En circuit, la tension de VCC chute dès que le programmateur alimente la mémoire. Cause probable ?"
+  propositions:
+    - {id: a, texte: "Le programmateur alimente aussi le reste de la carte relié au même rail"}
+    - {id: b, texte: "La mémoire est pleine"}
+    - {id: c, texte: "L'empreinte est fausse"}
+    - {id: d, texte: "Le bus est en mode rapide"}
+- id: S21-Q015
+  type: choix_unique
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#lempreinte-et-la-double-sauvegarde"
+  enonce: "Qu'est-ce qu'une empreinte (hash) d'un fichier ?"
+  propositions:
+    - {id: a, texte: "Une courte valeur calculée qui change, avec une très forte probabilité, si le fichier change"}
+    - {id: b, texte: "Une copie compressée du fichier"}
+    - {id: c, texte: "La date du fichier"}
+    - {id: d, texte: "Le nom du programmateur"}
+- id: S21-Q016
+  type: choix_unique
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#lempreinte-et-la-double-sauvegarde"
+  enonce: "Deux lectures donnent deux empreintes différentes. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je n'écris rien, je cherche la cause et je recommence"}
+    - {id: b, texte: "Je garde la première"}
+    - {id: c, texte: "Je fais la moyenne"}
+    - {id: d, texte: "J'écris la seconde dans la mémoire"}
+- id: S21-Q017
+  type: choix_unique
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#lempreinte-et-la-double-sauvegarde"
+  enonce: "Pourquoi relancer une lecture complète plutôt que copier le premier fichier ?"
+  propositions:
+    - {id: a, texte: "Pour que la comparaison des empreintes vérifie vraiment la lecture"}
+    - {id: b, texte: "Pour gagner de la place"}
+    - {id: c, texte: "Parce que le logiciel l'impose"}
+    - {id: d, texte: "Ce n'est pas nécessaire"}
+- id: S21-Q018
+  type: choix_unique
+  securite: false
+  competences: [D7.4]
+  section: "S21-L02#lempreinte-et-la-double-sauvegarde"
+  enonce: "Le fichier lu est entièrement à FFh. Conclusion ?"
+  propositions:
+    - {id: a, texte: "Mémoire vierge ou lecture ratée : à départager par une autre méthode ou une référence"}
+    - {id: b, texte: "Mémoire forcément vierge"}
+    - {id: c, texte: "Mémoire forcément détruite"}
+    - {id: d, texte: "Lecture forcément correcte"}
+- id: S21-Q019
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L03#les-protections-décriture"
+  enonce: "Sur l'EEPROM I²C étudiée, quand la broche WP protège-t-elle la mémoire ?"
+  propositions:
+    - {id: a, texte: "Quand elle est tenue haute"}
+    - {id: b, texte: "Quand elle est en l'air"}
+    - {id: c, texte: "Quand elle est à la masse"}
+    - {id: d, texte: "Jamais"}
+- id: S21-Q020
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L03#les-protections-décriture"
+  enonce: "Que doit recevoir une Flash SPI avant chaque programmation ou effacement ?"
+  propositions:
+    - {id: a, texte: "Une instruction de validation d'écriture"}
+    - {id: b, texte: "Un reset matériel"}
+    - {id: c, texte: "Une tension de 12 V"}
+    - {id: d, texte: "Rien"}
+- id: S21-Q021
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L03#lécriture-par-page"
+  enonce: "On envoie plus d'octets qu'une page n'en contient. Que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "Le compteur revient au début de la page et écrase les premiers octets"}
+    - {id: b, texte: "Les octets passent à la page suivante"}
+    - {id: c, texte: "La mémoire refuse tout"}
+    - {id: d, texte: "La mémoire s'efface"}
+- id: S21-Q022
+  type: choix_unique
+  securite: false
+  competences: [D7.3]
+  section: "S21-L03#corruption-et-risques"
+  enonce: "Quelle situation risque le plus de corrompre une mémoire ?"
+  propositions:
+    - {id: a, texte: "Une coupure d'alimentation pendant une écriture"}
+    - {id: b, texte: "Une lecture à la bonne tension"}
+    - {id: c, texte: "Le calcul d'une empreinte"}
+    - {id: d, texte: "Une photo du marquage"}
+- id: S21-Q023
+  type: choix_unique
+  securite: true
+  competences: [D7.4, D9.1]
+  section: "S21-L02#lire-hors-circuit"
+  enonce: "Avant de brancher le programmateur sur une mémoire, quelle vérification protège le composant ?"
+  propositions:
+    - {id: a, texte: "Tension du programmateur dans la plage de la fiche et pince orientée broche 1 sur broche 1"}
+    - {id: b, texte: "Aucune, le programmateur s'adapte toujours"}
+    - {id: c, texte: "Vérifier la couleur des fils"}
+    - {id: d, texte: "Brancher sous tension pour voir"}
+- id: S21-Q024
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S21-L03#corruption-et-risques"
+  enonce: "À l'académie, quand a-t-on le droit d'écrire dans une mémoire ?"
+  propositions:
+    - {id: a, texte: "Après deux sauvegardes identiques archivées, sur la carte d'entraînement du TP-30"}
+    - {id: b, texte: "Dès que la lecture fonctionne"}
+    - {id: c, texte: "Sur tout calculateur, sans sauvegarde"}
+    - {id: d, texte: "Quand l'empreinte diffère"}
+- id: S21-Q025
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S21-L02#exemple-5--deux-empreintes-différentes"
+  enonce: "Pendant la dépose et la repose du TP-31, quelle précaution protège la santé ?"
+  propositions:
+    - {id: a, texte: "L'aspiration des fumées en marche pendant toute la soudure"}
+    - {id: b, texte: "Souffler sur la fumée"}
+    - {id: c, texte: "Souder sans flux"}
+    - {id: d, texte: "Aérer après la séance"}

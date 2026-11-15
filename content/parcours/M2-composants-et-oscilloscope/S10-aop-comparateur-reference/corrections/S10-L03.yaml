@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S10-L03-EX01
+  valeur: 1.25
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = code / 2ⁿ × U_réf = 1 024 / 4 096 × 5 = 1,25 V. Une erreur sur la référence fausserait ce résultat dans la même proportion."
+  renvoi_section: "S10-L03#ce-que-fait-un-convertisseur-analogique-numérique"
+- id: S10-L03-EX02
+  valeur: 4
+  tolerance_relative: 0.02
+  unite: mV
+  explication: "Variation relative : 20 × 10⁻⁶ × 80 = 0,0016 ; sur 2,5 V : 0,0016 × 2,5 = 0,004 V = 4 mV."
+  renvoi_section: "S10-L03#le-rôle-de-la-référence-de-tension"
+- id: S10-L03-EX03
+  bonnes: [a]
+  explication: "2,35 / 4,7 = 0,5. La référence suivant l'alimentation, le calculateur lit le même rapport que 2,5 V sous 5 V : la mesure est juste, c'est l'alimentation capteur basse qu'il faut expliquer."
+  renvoi_section: "S10-L03#la-mesure-ratiométrique"

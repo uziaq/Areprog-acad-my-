@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S30-L01-EX01
+  ordre: [b, d, a, e, c, f]
+  explication: "On va des mesures sans risque aux mesures sous tension, et du général au particulier : une communication mesurée sur un calculateur dont l'alimentation ou le microcontrôleur ne sont pas conformes ne prouve rien."
+  renvoi_section: "S30-L01#dix-étapes-dans-lordre"
+- id: S30-L01-EX02
+  bonnes: [a]
+  explication: "La grille commandée avec une sortie immobile désigne le transistor ; une grille immobile renvoie vers le circuit de commande. Remplacer pour voir est une faute éliminatoire (FE-13)."
+  renvoi_section: "S30-L01#exemple-2--une-mesure-qui-départage"
+- id: S30-L01-EX03
+  bonnes: [a]
+  explication: "Le dossier sépare ce qui est prouvé (commutation sur charge simulée) de ce qui ne l'est pas (cause de la destruction), et le déclare comme limite (cas VID-12, E-28)."
+  renvoi_section: "S30-L01#exemple-3--une-conclusion-prudente"

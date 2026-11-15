@@ -1,0 +1,14 @@
+# Commutateur high-side intelligent à quatre voies pour modules de carrosserie : diagnostic par
+# sortie numérique ou recopie de courant, limitation de courant réglable (courant d'appel),
+# détection de charge ouverte voie passante (courant très faible) et voie bloquée (sortie proche
+# de l'alimentation, résistance de tirage de 20 kΩ recommandée), courant de veille inférieur à
+# 500 nA. Sections citées par leur numéro et leur titre anglais (cours S32).
+id: SRC-0092
+titre: "TPS4H160-Q1 40V, 160mΩ Automotive Quad-Channel Smart High-Side Switch"
+editeur: Texas Instruments
+reference: "SLVSCV8E"
+revision: "E, juin 2025"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tps4h160-q1.pdf

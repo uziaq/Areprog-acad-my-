@@ -1,0 +1,14 @@
+# Bombe de froid pour localiser les composants et soudures en défaut intermittent : principe
+# (givre sur une carte alimentée, zone qui dégivre plus vite), deux usages (carte qui s'arrête en
+# chauffant, soudure qui casse sous le choc thermique), réfrigérants ininflammables, charge
+# électrostatique du jet et version antistatique. Page d'un fabricant (cours S33), sections
+# citées par leur titre anglais, le premier paragraphe cité « §Introduction ».
+id: SRC-0094
+titre: "Using Freeze Spray to Diagnose Faulty Electronics"
+editeur: Techspray (ITW Contamination Control Electronics)
+reference: "Article technique en ligne"
+revision: "consultée en novembre 2026"
+date_consultation: 2026-11-15
+type: site
+licence: lien_seulement
+lien: https://techspray.com/using-freeze-spray-to-diagnose-faulty-electronics

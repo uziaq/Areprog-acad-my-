@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S33-L02-EX01
+  bonnes: [a]
+  explication: "Écrit avant, le protocole fixe les mesures, contraintes, durée et critères ; écrit après, il justifie n'importe quel résultat."
+  renvoi_section: "S33-L02#écrire-le-protocole-avant-lessai"
+- id: S33-L02-EX02
+  valeur: 3600
+  tolerance_relative: 0.02
+  unite: "s"
+  explication: "4 × 15 min = 60 min = 3 600 s."
+  renvoi_section: "S33-L02#exemple-2--une-durée-dessai-en-secondes"
+- id: S33-L02-EX03
+  bonnes: [a]
+  explication: "Ce qui n'a pas été essayé n'est pas validé : le banc valide la commutation sur charge simulée, le véhicule reste une limite écrite."
+  renvoi_section: "S33-L02#les-limites-dun-banc-datelier"

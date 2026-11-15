@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S36-L02-EX01
+  valeur: 68
+  tolerance_relative: 0.02
+  unite: "mV"
+  explication: "U = R × I = 2 × 0,034 = 0,068 V = 68 mV."
+  renvoi_section: "S36-L02#exemple-1--la-tension-aux-bornes-dun-simulateur"
+- id: S36-L02-EX02
+  bonnes: [a]
+  explication: "Un défaut « ouvert » vient d'abord du raccordement : simulateur, cordon, contact. On remonte ensuite vers la carte, hors tension, par comparaison."
+  renvoi_section: "S36-L02#les-défauts-et-leurs-causes-possibles"
+- id: S36-L02-EX03
+  bonnes: [a]
+  explication: "Aucune source n'est appliquée sur une sortie sous tension et l'on ne provoque jamais la commande d'un étage ; la mesure hors tension se compare à la référence."
+  renvoi_section: "S36-L02#mesurer-hors-tension-par-comparaison"

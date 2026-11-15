@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S12-L03-EX01
+  ordre: [b, d, a, c]
+  explication: "On part des alimentations et des masses, puis du composant principal et de sa fiche ; on suit ses réseaux vers les connecteurs et les charges ; enfin on encadre et on nomme chaque bloc."
+  renvoi_section: "S12-L03#méthode-de-découpage"
+- id: S12-L03-EX02
+  bonnes: [a]
+  explication: "Le schéma électrique officiel du constructeur est la seule source légitime de brochage. On lit d'abord sa légende : vue côté faisceau ou côté composant, abréviations des couleurs."
+  renvoi_section: "S12-L03#le-schéma-électrique-officiel-du-constructeur"

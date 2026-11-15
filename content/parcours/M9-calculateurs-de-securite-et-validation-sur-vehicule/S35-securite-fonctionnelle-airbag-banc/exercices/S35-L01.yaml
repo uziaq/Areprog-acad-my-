@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S35-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S35-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Dans l'ISO 26262, quel niveau ASIL est le plus exigeant ?"
+  propositions:
+    - {id: a, texte: "ASIL A"}
+    - {id: b, texte: "ASIL B"}
+    - {id: c, texte: "ASIL D"}
+    - {id: d, texte: "SIL 4"}
+  competences: [D10.6]
+  objectif: O1
+- id: S35-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "L'horloge interne d'un circuit s'arrête à cause d'un défaut du composant. De quel type de défaillance s'agit-il, et comment la détecte-t-on ?"
+  propositions:
+    - {id: a, texte: "Aléatoire ; par une surveillance de l'horloge"}
+    - {id: b, texte: "Systématique ; par une meilleure méthode de conception"}
+    - {id: c, texte: "Aucune : une horloge ne tombe jamais en panne"}
+    - {id: d, texte: "Logicielle ; en effaçant la mémoire"}
+  competences: [D10.6]
+  objectif: O2
+- id: S35-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un microcontrôleur rafraîchit son chien de garde toutes les 25 ms. Quelle est la fréquence de rafraîchissement, en hertz ?"
+  unite_attendue: "Hz"
+  competences: [D10.6]
+  objectif: O2

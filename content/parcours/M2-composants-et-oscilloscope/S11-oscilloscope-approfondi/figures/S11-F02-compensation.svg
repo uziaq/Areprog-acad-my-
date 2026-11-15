@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="440" height="210" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure du signal de compensation selon le réglage de la sonde, sans valeur. -->
+  <path d="M20 150 H40 V120 Q42 70 80 70 H100 V100 Q102 150 140 150" />
+  <text x="20" y="195" fill="currentColor" stroke="none">sous-compensée</text>
+  <path d="M160 150 H180 V70 H240 V150 H280" />
+  <text x="160" y="195" fill="currentColor" stroke="none">compensée</text>
+  <path d="M300 150 H320 V48 Q324 70 340 70 H380 V172 Q384 150 400 150 H420" />
+  <text x="300" y="195" fill="currentColor" stroke="none">surcompensée</text>
+</svg>

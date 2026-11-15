@@ -1,0 +1,273 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S39-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L01#pourquoi-valider-sur-véhicule"
+  enonce: "Que vérifie une validation sur véhicule que le banc ne vérifie pas ?"
+  propositions:
+    - {id: a, texte: "La communication avec les autres calculateurs, les capteurs et actionneurs réels, les apprentissages"}
+    - {id: b, texte: "La valeur des résistances CMS"}
+    - {id: c, texte: "La qualité des soudures au microscope"}
+    - {id: d, texte: "Rien de plus"}
+- id: S39-Q002
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L01#pourquoi-valider-sur-véhicule"
+  enonce: "Sur quel véhicule se fait la validation pendant le cursus ?"
+  propositions:
+    - {id: a, texte: "Un véhicule de l'atelier, désigné par son code interne"}
+    - {id: b, texte: "Le véhicule d'un client"}
+    - {id: c, texte: "N'importe quel véhicule disponible dans la rue"}
+    - {id: d, texte: "Un véhicule hybride de préférence"}
+- id: S39-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L01#vérifier-la-compatibilité"
+  enonce: "Que vérifier avant de monter un calculateur réparé ?"
+  propositions:
+    - {id: a, texte: "Références matérielle et logicielle, variante et codage, dans la documentation du constructeur"}
+    - {id: b, texte: "Seulement la couleur du boîtier"}
+    - {id: c, texte: "Seulement le connecteur"}
+    - {id: d, texte: "Rien, on essaie"}
+- id: S39-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L01#exemple-1--une-fiche-de-compatibilité"
+  enonce: "Le constructeur exige un appairage d'antidémarrage pour le calculateur. Que fait-on au TP ?"
+  propositions:
+    - {id: a, texte: "On s'arrête : la modification des données d'antidémarrage est hors du périmètre du cursus"}
+    - {id: b, texte: "On modifie la mémoire à la main"}
+    - {id: c, texte: "On contourne l'antidémarrage"}
+    - {id: d, texte: "On copie les données d'un autre véhicule"}
+- id: S39-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S39-L01#écrire-le-protocole-avant-lessai"
+  enonce: "Quelle est la référence de comparaison sur véhicule ?"
+  propositions:
+    - {id: a, texte: "Le calculateur d'origine du véhicule, relevé dans les mêmes conditions"}
+    - {id: b, texte: "Une valeur d'Internet"}
+    - {id: c, texte: "Le souvenir du formateur"}
+    - {id: d, texte: "Aucune"}
+- id: S39-Q006
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L01#les-règles-de-sécurité-véhicule"
+  enonce: "Comment se font les connexions et déconnexions du calculateur sur le véhicule ?"
+  propositions:
+    - {id: a, texte: "Batterie débranchée, dans l'ordre du constructeur"}
+    - {id: b, texte: "Contact mis, pour voir tout de suite le résultat"}
+    - {id: c, texte: "Moteur en marche"}
+    - {id: d, texte: "Dans n'importe quel ordre"}
+- id: S39-Q007
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L01#les-règles-de-sécurité-véhicule"
+  enonce: "Où se font les essais dynamiques prévus par le constructeur ?"
+  propositions:
+    - {id: a, texte: "Uniquement sur voie privée, selon la procédure du constructeur"}
+    - {id: b, texte: "Sur la route devant l'atelier"}
+    - {id: c, texte: "Sur le parking client"}
+    - {id: d, texte: "N'importe où avec le voyant éteint"}
+- id: S39-Q008
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L01#les-règles-de-sécurité-véhicule"
+  enonce: "Pourquoi capter les gaz d'échappement moteur en marche dans l'atelier ?"
+  propositions:
+    - {id: a, texte: "Risque d'intoxication au monoxyde de carbone"}
+    - {id: b, texte: "Pour le bruit"}
+    - {id: c, texte: "Pour la consommation"}
+    - {id: d, texte: "Pour refroidir le moteur"}
+- id: S39-Q009
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L01#la-tension-de-batterie-pendant-les-opérations"
+  enonce: "Que note-t-on pendant chaque relevé avec l'outil ?"
+  propositions:
+    - {id: a, texte: "La tension de batterie au début et à la fin"}
+    - {id: b, texte: "L'heure de pause"}
+    - {id: c, texte: "La couleur du véhicule"}
+    - {id: d, texte: "Rien"}
+- id: S39-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S39-L02#les-défauts-avant-et-après"
+  enonce: "Avant d'échanger le calculateur, que fait-on des défauts ?"
+  propositions:
+    - {id: a, texte: "On lit et enregistre ceux de tous les calculateurs"}
+    - {id: b, texte: "On les efface tous"}
+    - {id: c, texte: "On ne lit que ceux du calculateur échangé"}
+    - {id: d, texte: "On les ignore"}
+- id: S39-Q011
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L02#les-défauts-avant-et-après"
+  enonce: "Que fait-on des données de collision d'un calculateur d'airbag ?"
+  propositions:
+    - {id: a, texte: "On ne les efface ni ne les modifie jamais"}
+    - {id: b, texte: "On les efface après la réparation"}
+    - {id: c, texte: "On les copie sur un autre calculateur"}
+    - {id: d, texte: "On les modifie pour éteindre le voyant"}
+- id: S39-Q012
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L02#les-défauts-avant-et-après"
+  enonce: "Un défaut ordinaire revient après effacement. Qu'est-ce que cela indique ?"
+  propositions:
+    - {id: a, texte: "Une information sur l'état réel, à diagnostiquer"}
+    - {id: b, texte: "Un défaut sans importance"}
+    - {id: c, texte: "Qu'il faut effacer de nouveau"}
+    - {id: d, texte: "Que l'outil est en panne"}
+- id: S39-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L02#exemple-1--trier-les-défauts"
+  enonce: "Après un échange, le calculateur moteur garde une perte de communication avec la boîte. Hypothèse la plus probable ?"
+  propositions:
+    - {id: a, texte: "Défaut mémorisé pendant le débranchement"}
+    - {id: b, texte: "Moteur en panne"}
+    - {id: c, texte: "Capteur de couple en panne"}
+    - {id: d, texte: "Batterie neuve nécessaire"}
+- id: S39-Q014
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L02#les-valeurs-réelles"
+  enonce: "Une seule valeur réelle diffère nettement de la référence. Où chercher d'abord ?"
+  propositions:
+    - {id: a, texte: "Sur l'entrée correspondante, capteur et câblage étant les mêmes"}
+    - {id: b, texte: "Remplacer le microcontrôleur"}
+    - {id: c, texte: "Effacer les défauts"}
+    - {id: d, texte: "Ignorer l'écart"}
+- id: S39-Q015
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L02#la-communication"
+  enonce: "Le calculateur réparé ne répond pas à l'outil. Par quoi commencer ?"
+  propositions:
+    - {id: a, texte: "Alimentation, masse, bus et connecteur, hors du calculateur, batterie débranchée"}
+    - {id: b, texte: "Refaire la réparation"}
+    - {id: c, texte: "Changer d'outil"}
+    - {id: d, texte: "Forcer le réveil en reliant le bus à la batterie"}
+- id: S39-Q016
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L02#apprentissages-codages-et-tests-dactionneurs"
+  enonce: "Avant de lancer un test d'actionneur depuis l'outil, que vérifie-t-on ?"
+  propositions:
+    - {id: a, texte: "Que l'actionneur peut bouger sans danger (mains, outils, personnes)"}
+    - {id: b, texte: "Rien, l'outil s'en charge"}
+    - {id: c, texte: "Que le moteur tourne vite"}
+    - {id: d, texte: "Que les portes sont ouvertes"}
+- id: S39-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L02#apprentissages-codages-et-tests-dactionneurs"
+  enonce: "D'où viennent les apprentissages à faire après un échange ?"
+  propositions:
+    - {id: a, texte: "De la procédure du constructeur"}
+    - {id: b, texte: "De l'habitude de l'atelier"}
+    - {id: c, texte: "Du cours, identiques pour tous les véhicules"}
+    - {id: d, texte: "D'un forum"}
+- id: S39-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L02#ce-que-latelier-ne-peut-pas-faire"
+  enonce: "Écrire « validé » pour un essai non fait, c'est :"
+  propositions:
+    - {id: a, texte: "Une faute de dossier"}
+    - {id: b, texte: "Acceptable si le reste est bon"}
+    - {id: c, texte: "Obligatoire"}
+    - {id: d, texte: "Sans importance"}
+- id: S39-Q019
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L03#un-calculateur-de-sécurité-sur-véhicule"
+  enonce: "Un calculateur de sécurité réparé et validé sur véhicule d'atelier peut-il être rendu à un client pendant le cursus ?"
+  propositions:
+    - {id: a, texte: "Non : aucune remise en circulation pendant le cursus (D-14)"}
+    - {id: b, texte: "Oui, s'il n'a aucun défaut"}
+    - {id: c, texte: "Oui, après un essai sur route"}
+    - {id: d, texte: "Oui, si le client accepte"}
+- id: S39-Q020
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L03#airbag--simulateurs-uniquement"
+  enonce: "Pourquoi débrancher la batterie ne suffit-il pas à rendre un calculateur d'airbag inoffensif ?"
+  propositions:
+    - {id: a, texte: "Sa réserve d'énergie garde de quoi tirer après la perte de la batterie"}
+    - {id: b, texte: "Il a une seconde batterie interne"}
+    - {id: c, texte: "Les allumeurs se rechargent seuls"}
+    - {id: d, texte: "Il suffit en fait toujours"}
+- id: S39-Q021
+  type: calcul
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S39-L03#exemple-2--lénergie-dune-réserve"
+  enonce: "Une réserve de 4,7 mF est chargée à 30 V. Quelle énergie garde-t-elle, en joules ?"
+  unite_attendue: J
+- id: S39-Q022
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L03#airbag--simulateurs-uniquement"
+  enonce: "Comment s'assure-t-on que le calculateur d'airbag déposé est déchargé ?"
+  propositions:
+    - {id: a, texte: "On mesure la décharge, deux fois"}
+    - {id: b, texte: "On attend un temps au hasard"}
+    - {id: c, texte: "On le secoue"}
+    - {id: d, texte: "On court-circuite la réserve avec un tournevis"}
+- id: S39-Q023
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L03#freinage--essais-statiques-avant-tout-déplacement"
+  enonce: "Après montage d'un calculateur ABS / ESP, que faut-il avant tout déplacement ?"
+  propositions:
+    - {id: a, texte: "Purge et contrôle de pédale selon le constructeur, puis essais de freinage statiques"}
+    - {id: b, texte: "Un essai sur route immédiat"}
+    - {id: c, texte: "Rien si le voyant est éteint"}
+    - {id: d, texte: "Effacer les défauts"}
+- id: S39-Q024
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S39-L03#direction--immobilisé-calibrations-avant-roulage"
+  enonce: "Après montage d'un calculateur de direction, quand faire les calibrations du constructeur ?"
+  propositions:
+    - {id: a, texte: "Après les premiers essais immobilisé, avant tout roulage"}
+    - {id: b, texte: "Après un essai sur route"}
+    - {id: c, texte: "Jamais"}
+    - {id: d, texte: "Une semaine plus tard"}
+- id: S39-Q025
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S39-L03#le-dossier-de-validation-renforcée"
+  enonce: "Quelles sont les trois parties du dossier de validation renforcée ?"
+  propositions:
+    - {id: a, texte: "Validé sur banc, validé sur véhicule, non validable en atelier"}
+    - {id: b, texte: "Devis, facture, garantie"}
+    - {id: c, texte: "Avant, pendant, après"}
+    - {id: d, texte: "Bon, moyen, mauvais"}

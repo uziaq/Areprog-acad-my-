@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S09-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S09-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un MOSFET de RDS(on) égale à 15 mΩ conduit 8 A. Quelle puissance dissipe-t-il en conduction ?"
+  unite_attendue: W
+  competences: [D4.4]
+  objectif: O2
+- id: S09-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "La fiche d'un MOSFET indique une VGS(th) de 2 V au maximum. Une commande de grille de 2,5 V suffit-elle pour l'utiliser en interrupteur fermé ?"
+  propositions:
+    - {id: a, texte: "Pas forcément : il faut la VGS à laquelle la fiche garantit la RDS(on)"}
+    - {id: b, texte: "Oui, dès que VGS dépasse VGS(th), RDS(on) est minimale"}
+    - {id: c, texte: "Oui, VGS(th) est la tension de pleine conduction"}
+    - {id: d, texte: "Non, il faut toujours dépasser la VGS maximale"}
+  competences: [D4.4, D4.6]
+  objectif: O1
+- id: S09-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Hors circuit, grille déchargée, un MOSFET canal N affiche 0,5 V avec la pointe rouge sur la source et la noire sur le drain, et un dépassement dans l'autre sens. Que représente la lecture de 0,5 V ?"
+  propositions:
+    - {id: a, texte: "La diode interne source-drain, qui conduit dans ce sens"}
+    - {id: b, texte: "Un court-circuit drain-source"}
+    - {id: c, texte: "La tension de seuil VGS(th)"}
+    - {id: d, texte: "Un défaut d'isolement de la grille"}
+  competences: [D4.4, D4.2]
+  objectif: O3

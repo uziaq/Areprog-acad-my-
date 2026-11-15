@@ -1,0 +1,193 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S18-Q001
+  bonnes: [a]
+  explication: "La limite de courant protège la carte ; le fusible protège le câblage."
+  pourquoi_faux:
+    b: "La limite reste obligatoire (FE-02)."
+    c: "C'est l'ampèremètre."
+    d: "C'est la borne 15."
+  source: "S18-L01#le-banc-dalimentation"
+- id: S18-Q002
+  bonnes: [a]
+  explication: "Un fusible est calibré en courant et en tension."
+  pourquoi_faux:
+    b: "La couleur code le calibre, elle ne suffit pas."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S18-L01#le-banc-dalimentation"
+- id: S18-Q003
+  valeur: 3.0
+  tolerance_relative: 0.02
+  unite: A
+  explication: "2 × 1,5 = 3 A ; on choisit un calibre normalisé au-dessus, que le câblage supporte."
+  source: "S18-L01#exemple-1--calibre-dun-fusible-de-banc"
+- id: S18-Q004
+  bonnes: [a]
+  explication: "Un temps d'attente ne remplace jamais la mesure (FE-09)."
+  pourquoi_faux:
+    b: "Le protocole l'interdit."
+    c: "Décharge franche déconseillée par le fabricant."
+    d: "Dangereux."
+  source: "S18-L01#le-protocole-commun-calculateurs-réels"
+- id: S18-Q005
+  bonnes: [a]
+  explication: "La masse d'une sonde ordinaire est à la terre : FE-07."
+  pourquoi_faux:
+    b: "Court-circuit par la terre (FE-07)."
+    c: "Dangereux."
+    d: "Court-circuit."
+  source: "S18-L01#le-protocole-commun-calculateurs-réels"
+- id: S18-Q006
+  bonnes: [a]
+  explication: "Monter la limite peut détruire des composants sains."
+  pourquoi_faux:
+    b: "Interdit par la méthode."
+    c: "Faute FE-02."
+    d: "La carte chauffe sur le défaut."
+  source: "S18-L01#la-mise-sous-tension-progressive"
+- id: S18-Q007
+  bonnes: [a]
+  explication: "Faute de valeur publiée, on mesure une référence."
+  pourquoi_faux:
+    b: "Source non fiable."
+    c: "Interdit par la règle de fiabilité."
+    d: "L'étiquette ne la donne pas."
+  source: "S18-L01#la-mise-sous-tension-progressive"
+- id: S18-Q008
+  valeur: 1296
+  tolerance_relative: 0.02
+  unite: J
+  explication: "P = 12 × 0,03 = 0,36 W ; E = 0,36 × 3600 = 1296 J."
+  source: "S18-L01#la-mise-sous-tension-progressive"
+- id: S18-Q009
+  bonnes: [a]
+  explication: "En régulation de tension, la tension reste à la consigne."
+  pourquoi_faux:
+    b: "La tension resterait à la consigne."
+    c: "Elle n'afficherait rien."
+    d: "Le courant serait nul."
+  source: "S18-L01#lire-lalimentation-de-laboratoire"
+- id: S18-Q010
+  bonnes: [a]
+  explication: "Un rail mal identifié fait chercher au mauvais endroit."
+  pourquoi_faux:
+    b: "Dangereux et confus."
+    c: "Non."
+    d: "Risque de dégâts."
+  source: "S18-L02#repérer-le-rail-en-court-circuit"
+- id: S18-Q011
+  bonnes: [a]
+  explication: "Jamais plus que la tension nominale du rail ; en court-circuit, la tension affichée sera bien plus basse."
+  pourquoi_faux:
+    b: "Détruirait les composants du rail."
+    c: "Idem."
+    d: "Dépasse la tension du rail."
+  source: "S18-L02#injecter-un-courant-limité"
+- id: S18-Q012
+  bonnes: [a]
+  explication: "Limite lue sur le schéma et les fiches, écrite avant l'injection."
+  pourquoi_faux:
+    b: "Destructif."
+    c: "Peut détruire une piste."
+    d: "Le courant chauffe quand même."
+  source: "S18-L02#injecter-un-courant-limité"
+- id: S18-Q013
+  valeur: 0.45
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 0,3 × 1,5 = 0,45 W."
+  source: "S18-L02#exemple-5--puissance-dissipée-au-défaut"
+- id: S18-Q014
+  bonnes: [a]
+  explication: "Un condensateur chaud est un suspect sérieux."
+  pourquoi_faux:
+    b: "Un condensateur sain ne chauffe presque pas."
+    c: "Peu probable."
+    d: "Pas forcément."
+  source: "S18-L02#la-méthode-thermique"
+- id: S18-Q015
+  bonnes: [a]
+  explication: "Un court-circuit franc dissipe peu de puissance."
+  pourquoi_faux:
+    b: "Interdit."
+    c: "La mesure hors tension l'a montré."
+    d: "Sans preuve."
+  source: "S18-L02#la-méthode-thermique"
+- id: S18-Q016
+  bonnes: [a]
+  explication: "Le courant ne passe qu'entre l'injection et le défaut."
+  pourquoi_faux:
+    b: "Pas forcément."
+    c: "Peu probable."
+    d: "Sans rapport."
+  source: "S18-L02#la-chute-de-tension-le-long-du-rail"
+- id: S18-Q017
+  valeur: 0.8
+  tolerance_relative: 0.02
+  unite: mΩ
+  explication: "R = 0,4 mV / 0,5 A = 0,8 mΩ."
+  source: "S18-L02#la-chute-de-tension-le-long-du-rail"
+- id: S18-Q018
+  bonnes: [a]
+  explication: "Méthode de Kelvin."
+  pourquoi_faux:
+    b: "Non."
+    c: "Sans rapport."
+    d: "Non."
+  source: "S18-L02#le-milliohmmètre-à-quatre-fils"
+- id: S18-Q019
+  bonnes: [a]
+  explication: "Mesures sans risque d'abord, puis mise sous tension progressive."
+  pourquoi_faux:
+    b: "En dernier."
+    c: "Hors de l'ordre d'alimentation."
+    d: "Plus tard."
+  source: "S18-L03#alimentation-dabord"
+- id: S18-Q020
+  bonnes: [a]
+  explication: "Une mesure en circuit inclut les composants en parallèle."
+  pourquoi_faux:
+    b: "Faussé par le circuit."
+    c: "Aucune raison d'être identique."
+    d: "Valeur inventée."
+  source: "S18-L03#lexemplaire-de-référence"
+- id: S18-Q021
+  bonnes: [a]
+  explication: "On ne la remplace pas par un fusible « au jugé » ni par un fil sans réflexion."
+  pourquoi_faux:
+    b: "Pas de calibre garanti."
+    c: "Non."
+    d: "Non."
+  source: "S18-L03#pièges-fréquents"
+- id: S18-Q022
+  bonnes: [a]
+  explication: "Une mesure sans contexte n'est pas réutilisable."
+  pourquoi_faux:
+    b: "Insuffisant."
+    c: "Insuffisant."
+    d: "Le dossier sert aussi de preuve."
+  source: "S18-L03#le-dossier-de-diagnostic"
+- id: S18-Q023
+  bonnes: [a]
+  explication: "Étape 5 de la méthode : intervenir, valider, documenter."
+  pourquoi_faux:
+    b: "Pas de validation."
+    c: "Les défauts se recopient avant tout."
+    d: "Sans rapport."
+  source: "S18-L03#le-dossier-de-diagnostic"
+- id: S18-Q024
+  bonnes: [a]
+  explication: "On relève le courant de veille avant le réveil."
+  pourquoi_faux:
+    b: "Ordre inverse du véhicule."
+    c: "On perd l'état de veille."
+    d: "L'ordre compte."
+  source: "S18-L01#la-mise-sous-tension-progressive"
+- id: S18-Q025
+  bonnes: [a]
+  explication: "Réservés au module M9, protocole renforcé."
+  pourquoi_faux:
+    b: "Utilisables avec le protocole commun."
+    c: "Idem."
+    d: "Faux."
+  source: "S18-L01#le-protocole-commun-calculateurs-réels"

@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S28-L02-EX01
+  bonnes: [a]
+  explication: "Le fil ou le feuillard recouvre chaque extrémité sur au moins deux fois la largeur de la piste : 2 × 0,4 = 0,8 mm."
+  renvoi_section: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+- id: S28-L02-EX02
+  bonnes: [a]
+  explication: "L'œillet ne s'utilise que si le trou n'a pas de connexion interne : percer peut couper les couches internes. La réparation d'un trou relié à une couche interne est hors pratique du cursus."
+  renvoi_section: "S28-L02#trou-métallisé-et-via"
+- id: S28-L02-EX03
+  bonnes: [a]
+  explication: "Contrôle visuel du recouvrement et de l'alignement, puis mesures carte non alimentée : continuité de la piste et absence de court-circuit avec ses voisines."
+  renvoi_section: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"

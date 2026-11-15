@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S36-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S36-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "La réserve d'énergie d'origine est marquée 50 V. Quel remplaçant choisit-on ?"
+  propositions:
+    - {id: a, texte: "La même référence, ou une tension nominale au moins égale, même capacité et grade de température au moins égal"}
+    - {id: b, texte: "Un 25 V, plus petit"}
+    - {id: c, texte: "N'importe quel condensateur de même capacité"}
+    - {id: d, texte: "On supprime la réserve"}
+  competences: [D10.7]
+  objectif: O2
+- id: S36-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un protocole de vérification prévoit quatre cycles de 5 min. Quelle est la durée totale, en secondes ?"
+  unite_attendue: "s"
+  competences: [D10.7]
+  objectif: O3

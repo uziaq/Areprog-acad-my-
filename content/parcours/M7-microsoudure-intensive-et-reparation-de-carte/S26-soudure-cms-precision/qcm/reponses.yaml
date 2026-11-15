@@ -1,0 +1,201 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S26-Q001
+  bonnes: [a]
+  explication: "Définition de NASA-STD-8739.2."
+  pourquoi_faux:
+    b: "Les métaux de base ne fondent pas."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#mouiller-cest-chauffer-les-deux-surfaces"
+- id: S26-Q002
+  bonnes: [a]
+  explication: "Le plan de masse absorbe la chaleur ; on apporte plus de chaleur sans surchauffer."
+  pourquoi_faux:
+    b: "Risque de surchauffe."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#mouiller-cest-chauffer-les-deux-surfaces"
+- id: S26-Q003
+  bonnes: [a]
+  explication: "NASA-STD-8739.2 §6.7."
+  pourquoi_faux:
+    b: "Il est exigé."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#le-fer-et-sa-panne"
+- id: S26-Q004
+  bonnes: [a]
+  explication: "Contrôles listés par la norme NASA."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#le-fer-et-sa-panne"
+- id: S26-Q005
+  bonnes: [a]
+  explication: "NASA-STD-8739.3 §7.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#le-fer-et-sa-panne"
+- id: S26-Q006
+  bonnes: [a]
+  explication: "D'après la fiche AIM."
+  pourquoi_faux:
+    b: "C'est le Sn63Pb37."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#alliages-avec-et-sans-plomb"
+- id: S26-Q007
+  bonnes: [a]
+  explication: "Solidus 217 °C, liquidus 220 °C."
+  pourquoi_faux:
+    b: "Ordre de grandeur de l'étain-plomb."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#alliages-avec-et-sans-plomb"
+- id: S26-Q008
+  bonnes: [a]
+  explication: "On applique la fiche du composant réellement posé."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#régler-sans-inventer"
+- id: S26-Q009
+  bonnes: [a]
+  explication: "Corrections : panne propre, flux, contact sur pastille et terminaison."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L01#exemple-3--une-soudure-en-boule"
+- id: S26-Q010
+  bonnes: [a]
+  explication: "NASA-STD-8739.2 §6.13."
+  pourquoi_faux:
+    b: "Il faudrait le nettoyer."
+    c: "Non."
+    d: "Non."
+  source: "S26-L02#le-flux"
+- id: S26-Q011
+  bonnes: [a]
+  explication: "NASA-STD-8739.3 §10.4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L02#nettoyer"
+- id: S26-Q012
+  bonnes: [a]
+  explication: "NASA-STD-8739.3 §10.4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L02#nettoyer"
+- id: S26-Q013
+  bonnes: [a]
+  explication: "Un refroidissement brusque peut fissurer un condensateur céramique."
+  pourquoi_faux:
+    b: "Interdit par la norme NASA."
+    c: "Choc thermique."
+    d: "Choc thermique."
+  source: "S26-L02#nettoyer"
+- id: S26-Q014
+  bonnes: [a]
+  explication: "Les solvants sont dangereux et volatils (NASA-STD-8739.3 §6.13)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Dangereux."
+    d: "Dangereux."
+  source: "S26-L02#nettoyer"
+- id: S26-Q015
+  bonnes: [a]
+  explication: "D'après la note Johanson."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L02#le-piège-du-condensateur-céramique"
+- id: S26-Q016
+  bonnes: [a]
+  explication: "D'après la note Johanson."
+  pourquoi_faux:
+    b: "Elle doit la chauffer."
+    c: "Elle doit la chauffer."
+    d: "Non."
+  source: "S26-L02#le-piège-du-condensateur-céramique"
+- id: S26-Q017
+  bonnes: [a]
+  explication: "Effet « pierre tombale », note Johanson."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L02#exemple-4--un-0402-qui-bascule"
+- id: S26-Q018
+  bonnes: [a]
+  explication: "Sinon on risque d'arracher une pastille."
+  pourquoi_faux:
+    b: "Risque d'arrachement."
+    c: "Non."
+    d: "Non."
+  source: "S26-L02#déposer-un-passif-chip"
+- id: S26-Q019
+  bonnes: [a]
+  explication: "NASA-STD-8739.2 §6.9."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L03#grossissement-et-éclairage"
+- id: S26-Q020
+  bonnes: [a]
+  explication: "0,5 × 0,6 = 0,3 mm."
+  pourquoi_faux:
+    b: "C'est toute l'épaisseur."
+    c: "C'est 25 %."
+    d: "Le critère est 50 %."
+  source: "S26-L03#exemple-7--ménisque-trop-bas"
+- id: S26-Q021
+  bonnes: [a]
+  explication: "0,25 × 0,8 = 0,2 mm."
+  pourquoi_faux:
+    b: "C'est 50 %."
+    c: "C'est toute la largeur."
+    d: "Non : limite de 25 %."
+  source: "S26-L03#critères-pour-un-composant-chip"
+- id: S26-Q022
+  bonnes: [a]
+  explication: "NASA-STD-8739.2 §12.9."
+  pourquoi_faux:
+    b: "Critère d'acceptation."
+    c: "Critère d'acceptation."
+    d: "Critère d'acceptation."
+  source: "S26-L03#critères-pour-un-composant-chip"
+- id: S26-Q023
+  bonnes: [a]
+  explication: "15 / 20 = 0,75."
+  pourquoi_faux:
+    b: "Non."
+    c: "C'est le taux de rejet."
+    d: "Non."
+  source: "S26-L03#la-grille-de-contrôle-et-le-taux-de-conformité"
+- id: S26-Q024
+  bonnes: [a]
+  explication: "La fiche de l'alliage exige une ventilation adaptée."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S26-L03#des-critères-écrits-pas-une-impression"
+- id: S26-Q025
+  bonnes: [a]
+  explication: "Règle du chapitre."
+  pourquoi_faux:
+    b: "Non."
+    c: "Risque de brûlure et d'incendie."
+    d: "Non."
+  source: "S26-L03#des-critères-écrits-pas-une-impression"

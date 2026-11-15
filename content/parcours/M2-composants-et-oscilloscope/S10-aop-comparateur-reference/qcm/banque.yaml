@@ -1,0 +1,253 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S10-Q001
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#un-amplificateur-de-différence-à-très-grand-gain"
+  enonce: "Qu'amplifie un amplificateur opérationnel ?"
+  propositions:
+    - {id: a, texte: "La différence de tension entre ses deux entrées"}
+    - {id: b, texte: "La tension de son entrée + seule"}
+    - {id: c, texte: "Le courant de ses entrées"}
+    - {id: d, texte: "Sa tension d'alimentation"}
+- id: S10-Q002
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#un-amplificateur-de-différence-à-très-grand-gain"
+  enonce: "Dans le modèle idéal d'un AOP, quel courant consomment ses entrées ?"
+  propositions:
+    - {id: a, texte: "Aucun"}
+    - {id: b, texte: "Le courant de sortie divisé par le gain"}
+    - {id: c, texte: "Quelques milliampères"}
+    - {id: d, texte: "Le courant de la charge"}
+- id: S10-Q003
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#le-comparateur--laop-sans-contre-réaction"
+  enonce: "Un AOP sans contre-réaction a son entrée + plus positive que son entrée −. Où est sa sortie ?"
+  propositions:
+    - {id: a, texte: "Saturée vers l'alimentation positive"}
+    - {id: b, texte: "À zéro"}
+    - {id: c, texte: "Égale à l'entrée +"}
+    - {id: d, texte: "Saturée vers l'alimentation négative"}
+- id: S10-Q004
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#la-contre-réaction--la-sortie-vient-équilibrer-les-entrées"
+  enonce: "Sur un schéma, la sortie d'un AOP est reliée directement à son entrée −, le signal arrive sur l'entrée +. Quel est ce montage ?"
+  propositions:
+    - {id: a, texte: "Un suiveur, de gain 1"}
+    - {id: b, texte: "Un inverseur"}
+    - {id: c, texte: "Un comparateur"}
+    - {id: d, texte: "Un non inverseur de gain 2"}
+- id: S10-Q005
+  type: calcul
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#exemple-1--gain-dun-non-inverseur"
+  enonce: "Un non inverseur a R2 = 47 kΩ entre sortie et entrée −, R1 = 10 kΩ entre entrée − et masse. L'entrée vaut 0,5 V. Quelle est la sortie ?"
+  unite_attendue: V
+- id: S10-Q006
+  type: calcul
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#exemple-2--gain-dun-inverseur"
+  enonce: "Un inverseur a R1 = 10 kΩ et R2 = 33 kΩ, alimenté en ±12 V. L'entrée vaut 0,5 V. Quelle est la sortie ?"
+  unite_attendue: V
+- id: S10-Q007
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#la-contre-réaction--la-sortie-vient-équilibrer-les-entrées"
+  enonce: "Pourquoi appelle-t-on l'entrée − d'un inverseur une masse virtuelle ?"
+  propositions:
+    - {id: a, texte: "La contre-réaction la maintient au potentiel de l'entrée +, reliée à la masse, sans qu'elle y soit branchée"}
+    - {id: b, texte: "Elle est reliée directement à la masse"}
+    - {id: c, texte: "Elle ne sert à rien"}
+    - {id: d, texte: "Elle est toujours à la tension d'alimentation"}
+- id: S10-Q008
+  type: choix_unique
+  securite: false
+  competences: [D4.5, D4.6]
+  section: "S10-L01#laop-réel"
+  enonce: "Que garantit un AOP à sortie rail-to-rail ?"
+  propositions:
+    - {id: a, texte: "Une sortie qui s'approche beaucoup des tensions d'alimentation, selon la charge"}
+    - {id: b, texte: "Une sortie qui dépasse l'alimentation"}
+    - {id: c, texte: "Une tension de décalage nulle"}
+    - {id: d, texte: "Un gain infini"}
+- id: S10-Q009
+  type: choix_unique
+  securite: false
+  competences: [D4.5, D4.6]
+  section: "S10-L01#laop-réel"
+  enonce: "Qu'est-ce que la tension de décalage (offset) d'un AOP ?"
+  propositions:
+    - {id: a, texte: "La petite tension à appliquer entre les entrées pour ramener la sortie à zéro"}
+    - {id: b, texte: "La tension maximale de sortie"}
+    - {id: c, texte: "La tension d'alimentation minimale"}
+    - {id: d, texte: "La chute de tension d'une diode d'entrée"}
+- id: S10-Q010
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L01#exemple-3--une-sortie-qui-sature"
+  enonce: "La sortie d'un AOP de calculateur reste collée près de son alimentation. Quelle démarche suivez-vous ?"
+  propositions:
+    - {id: a, texte: "Mesurer les deux entrées : entrée hors plage, contre-réaction coupée ou AOP défectueux"}
+    - {id: b, texte: "Remplacer l'AOP immédiatement"}
+    - {id: c, texte: "Conclure que le gain est trop faible"}
+    - {id: d, texte: "Débrancher la charge et s'arrêter là"}
+- id: S10-Q011
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L02#le-problème-du-bruit"
+  enonce: "Pourquoi un comparateur sans hystérésis peut-il basculer plusieurs fois près de son seuil ?"
+  propositions:
+    - {id: a, texte: "Le bruit fait passer le signal plusieurs fois au-dessus et en dessous du seuil"}
+    - {id: b, texte: "Son gain est trop faible"}
+    - {id: c, texte: "Son alimentation est trop haute"}
+    - {id: d, texte: "Le seuil change tout seul"}
+- id: S10-Q012
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L02#lhystérésis--deux-seuils-au-lieu-dun"
+  enonce: "Comment obtient-on l'hystérésis d'un comparateur ?"
+  propositions:
+    - {id: a, texte: "Par une réaction positive : une résistance entre la sortie et l'entrée +"}
+    - {id: b, texte: "Par une contre-réaction sur l'entrée −"}
+    - {id: c, texte: "En ajoutant un condensateur sur l'alimentation"}
+    - {id: d, texte: "En baissant le gain"}
+- id: S10-Q013
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L02#lhystérésis--deux-seuils-au-lieu-dun"
+  enonce: "Sortie au niveau haut, avec quelle résistance la résistance d'hystérésis Rh se retrouve-t-elle en parallèle ?"
+  propositions:
+    - {id: a, texte: "Avec Rx, la résistance du pont reliée à l'alimentation"}
+    - {id: b, texte: "Avec Ry, la résistance reliée à la masse"}
+    - {id: c, texte: "Avec aucune"}
+    - {id: d, texte: "Avec la charge"}
+- id: S10-Q014
+  type: calcul
+  securite: false
+  competences: [D4.5]
+  section: "S10-L02#calculer-les-seuils"
+  enonce: "Comparateur sous 5 V, Rx = Ry = 10 kΩ, Rh = 100 kΩ, sortie de 0 à 5 V. Quel est le seuil bas VL ?"
+  unite_attendue: V
+- id: S10-Q015
+  type: calcul
+  securite: false
+  competences: [D4.5]
+  section: "S10-L02#exemple-5--calculer-les-seuils-dhystérésis"
+  enonce: "Un comparateur a un seuil haut de 3,1 V et un seuil bas de 2,7 V. Quelle est la largeur d'hystérésis ?"
+  unite_attendue: V
+- id: S10-Q016
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L02#exemple-6--une-hystérésis-trop-étroite"
+  enonce: "Le bruit d'un signal vaut 0,5 V crête à crête, l'hystérésis du comparateur 0,2 V. Que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "Des basculements multiples restent possibles : il faut élargir l'hystérésis ou filtrer"}
+    - {id: b, texte: "Rien, l'hystérésis suffit toujours"}
+    - {id: c, texte: "Le comparateur ne bascule plus jamais"}
+    - {id: d, texte: "La sortie devient analogique"}
+- id: S10-Q017
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L03#ce-que-fait-un-convertisseur-analogique-numérique"
+  enonce: "À quoi un convertisseur analogique-numérique compare-t-il la tension qu'il mesure ?"
+  propositions:
+    - {id: a, texte: "À sa tension de référence"}
+    - {id: b, texte: "À la masse seulement"}
+    - {id: c, texte: "À la tension batterie"}
+    - {id: d, texte: "À rien : il mesure directement"}
+- id: S10-Q018
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L03#le-rôle-de-la-référence-de-tension"
+  enonce: "La référence d'un convertisseur est 1 % trop haute. Quel est l'effet sur les tensions mesurées (mesure non ratiométrique) ?"
+  propositions:
+    - {id: a, texte: "Elles paraissent environ 1 % trop basses : c'est une erreur de gain"}
+    - {id: b, texte: "Elles paraissent 1 % trop hautes"}
+    - {id: c, texte: "Aucun effet"}
+    - {id: d, texte: "Seules les tensions nulles sont faussées"}
+- id: S10-Q019
+  type: calcul
+  securite: false
+  competences: [D4.5]
+  section: "S10-L03#exemple-7--lire-le-code-dun-convertisseur"
+  enonce: "Un convertisseur de 10 bits (1 024 pas) a une référence de 5 V et lit le code 256. Quelle tension a-t-il à son entrée ?"
+  unite_attendue: V
+- id: S10-Q020
+  type: calcul
+  securite: false
+  competences: [D4.5]
+  section: "S10-L03#exemple-9--erreur-due-à-la-dérive-dune-référence"
+  enonce: "Une référence de 5 V dérive de 100 ppm/°C. De combien varie-t-elle pour un écart de 50 °C ?"
+  unite_attendue: mV
+- id: S10-Q021
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L03#la-mesure-ratiométrique"
+  enonce: "Pourquoi un capteur ratiométrique alimenté par la même source que la référence du convertisseur est-il insensible aux variations de cette source ?"
+  propositions:
+    - {id: a, texte: "Le signal et la référence varient ensemble : leur rapport reste constant"}
+    - {id: b, texte: "Le capteur régule sa propre alimentation"}
+    - {id: c, texte: "Le convertisseur corrige par logiciel"}
+    - {id: d, texte: "Il ne l'est pas"}
+- id: S10-Q022
+  type: choix_unique
+  securite: false
+  competences: [D4.5]
+  section: "S10-L03#exemple-8--un-capteur-ratiométrique-sous-une-alimentation-basse"
+  enonce: "Sur un capteur ratiométrique, vous lisez 2,4 V de signal sous 4,8 V d'alimentation. Que faites-vous avant de conclure à une dérive du capteur ?"
+  propositions:
+    - {id: a, texte: "Je calcule le rapport, 0,5, et je cherche pourquoi l'alimentation capteur est basse"}
+    - {id: b, texte: "Je remplace le capteur"}
+    - {id: c, texte: "Je conclus à une dérive de 0,1 V"}
+    - {id: d, texte: "Je mesure le signal sans l'alimentation"}
+- id: S10-Q023
+  type: choix_unique
+  securite: true
+  competences: [D4.5, D1.3]
+  section: "S10-L01#laop-réel"
+  enonce: "Avant de brancher la tension d'entrée sur un AOP alimenté au TP-15, que vérifiez-vous ?"
+  propositions:
+    - {id: a, texte: "Qu'elle reste entre les alimentations de l'AOP : je règle le potentiomètre avant de brancher"}
+    - {id: b, texte: "Rien, l'entrée d'un AOP supporte tout"}
+    - {id: c, texte: "Qu'elle dépasse l'alimentation pour voir la saturation"}
+    - {id: d, texte: "Qu'elle est négative"}
+- id: S10-Q024
+  type: choix_unique
+  securite: true
+  competences: [D4.5, D1.3]
+  section: "S10-L03#ce-que-cela-change-pour-le-dépanneur"
+  enonce: "Au TP-15, vous devez poser des pointes de touche arrière sur un capteur du véhicule d'atelier. Dans quel état est le véhicule pendant la pose ?"
+  propositions:
+    - {id: a, texte: "Immobilisé, batterie débranchée ; on ne met le contact qu'après la pose"}
+    - {id: b, texte: "Contact mis, pour voir tout de suite la tension"}
+    - {id: c, texte: "Moteur tournant, pour avoir un signal vivant"}
+    - {id: d, texte: "Peu importe, ce n'est qu'une mesure"}
+- id: S10-Q025
+  type: choix_unique
+  securite: true
+  competences: [D4.5, D1.3]
+  section: "S10-L01#exemple-2--gain-dun-inverseur"
+  enonce: "L'AOP du TP-15 est alimenté en +12 V et −12 V par deux sorties de l'alimentation de labo. Que réglez-vous et notez-vous avant la mise sous tension ?"
+  propositions:
+    - {id: a, texte: "Une limite de courant par sortie, écrite au journal, et les polarités vérifiées"}
+    - {id: b, texte: "Une seule limite, sur la sortie positive"}
+    - {id: c, texte: "Aucune limite, l'AOP consomme peu"}
+    - {id: d, texte: "La tension au maximum"}

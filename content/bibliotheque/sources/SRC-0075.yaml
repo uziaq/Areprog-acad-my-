@@ -1,0 +1,14 @@
+# Recommandations de manipulation et de procédé d'un fabricant de circuits intégrés : niveaux de
+# sensibilité à l'humidité (MSL) et durée hors sachet, effet « popcorn », stockage, étuvage,
+# réparation et reprise (température aussi basse que possible, profil proche de celui de la
+# refusion, température maximale du boîtier), nettoyage. Sections citées par leur numéro et leur
+# titre anglais (cours S27).
+id: SRC-0075
+titre: "AN-2029 Handling and Process Recommendations"
+editeur: Texas Instruments
+reference: "SNOA550H"
+revision: "H, juin 2020"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/snoa550h/snoa550h.pdf

@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S29-Q001
+  bonnes: [a]
+  explication: "Fiche LM1815 : détection du passage par zéro."
+  pourquoi_faux:
+    b: "Elle sert au seuil d'armement."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#le-capteur-inductif"
+- id: S29-Q002
+  bonnes: [a]
+  explication: "Le seuil suit la crête du signal (fiche LM1815)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "L'amplitude varie avec la vitesse."
+  source: "S29-L01#le-capteur-inductif"
+- id: S29-Q003
+  valeur: 15000
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "45 V / 3 mA = 15 kΩ."
+  source: "S29-L01#le-capteur-inductif"
+- id: S29-Q004
+  bonnes: [a]
+  explication: "La tension sur la broche du circuit est écrêtée."
+  pourquoi_faux:
+    b: "Elle n'est pas celle du capteur."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#le-capteur-inductif"
+- id: S29-Q005
+  bonnes: [a]
+  explication: "Fiche DRV5013-Q1 : écart entre BOP et BRP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#le-capteur-à-effet-hall"
+- id: S29-Q006
+  bonnes: [a]
+  explication: "Fiche DRV5013-Q1 §7.3.4."
+  pourquoi_faux:
+    b: "Fixé par le capteur."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#le-capteur-à-effet-hall"
+- id: S29-Q007
+  bonnes: [a]
+  explication: "Note TI SDAA128 / S10-L03."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#le-capteur-ratiométrique"
+- id: S29-Q008
+  bonnes: [a]
+  explication: "Fiche LM9044 : rejet de l'écart de masse."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#la-sonde-lambda"
+- id: S29-Q009
+  valeur: 2.7
+  tolerance_relative: 0.02
+  unite: V
+  explication: "0,6 × 4,5 = 2,7 V."
+  source: "S29-L01#la-sonde-lambda"
+- id: S29-Q010
+  bonnes: [a]
+  explication: "Fiche LM9044 : sortie par défaut dans les deux cas."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Sans rapport."
+  source: "S29-L01#la-sonde-lambda"
+- id: S29-Q011
+  bonnes: [a]
+  explication: "La charge reste reliée au + batterie."
+  pourquoi_faux:
+    b: "C'est le high-side."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#low-side-et-high-side"
+- id: S29-Q012
+  bonnes: [a]
+  explication: "Écrêtage drain-source intégré (fiche NCV8402)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#low-side-et-high-side"
+- id: S29-Q013
+  bonnes: [a]
+  explication: "Fiche TPS1H100-Q1 §7.3.4.2, avec une résistance de tirage."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#protections-et-diagnostics-dun-commutateur-intégré"
+- id: S29-Q014
+  valeur: 0.3
+  tolerance_relative: 0.02
+  unite: A
+  explication: "0,6 V / 1 kΩ = 0,6 mA ; × 500 = 0,3 A."
+  source: "S29-L02#exemple-4--lire-le-courant-dun-high-side"
+- id: S29-Q015
+  bonnes: [a]
+  explication: "Fiche TPS1H100-Q1 §7.3.4.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#protections-et-diagnostics-dun-commutateur-intégré"
+- id: S29-Q016
+  bonnes: [a]
+  explication: "La fiche TPS1H100-Q1 cite ce courant de fuite."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#protections-et-diagnostics-dun-commutateur-intégré"
+- id: S29-Q017
+  bonnes: [a]
+  explication: "Fiche DRV8873-Q1 §7.3.1.6."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#le-pont-en-h"
+- id: S29-Q018
+  bonnes: [a]
+  explication: "Table de commande de la fiche DRV8873-Q1."
+  pourquoi_faux:
+    b: "C'est IN1 = IN2 = 1."
+    c: "Non."
+    d: "Non."
+  source: "S29-L02#le-pont-en-h"
+- id: S29-Q019
+  bonnes: [a]
+  explication: "Fiche MC33816 ; erreur E-09 des vidéos."
+  pourquoi_faux:
+    b: "Erreur relevée (E-09)."
+    c: "Non."
+    d: "Non."
+  source: "S29-L03#commander-un-injecteur"
+- id: S29-Q020
+  bonnes: [a]
+  explication: "Fiche MC33816 §6.2.5 et §6.2.6."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L03#le-survoltage"
+- id: S29-Q021
+  bonnes: [a]
+  explication: "Un temps d'attente ne remplace pas la mesure ; tension de recouvrement possible ; FE-09."
+  pourquoi_faux:
+    b: "Jamais supposé."
+    c: "Le condensateur reste chargé."
+    d: "Non."
+  source: "S29-L03#le-survoltage"
+- id: S29-Q022
+  bonnes: [a]
+  explication: "Mesure flottante ; FE-07."
+  pourquoi_faux:
+    b: "Court-circuit par la terre de l'oscilloscope."
+    c: "Non."
+    d: "Non."
+  source: "S29-L03#mesurer-un-nœud-à-tension-élevée"
+- id: S29-Q023
+  bonnes: [a]
+  explication: "Note Tektronix ABCs of Probes."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L03#mesurer-un-courant-de-commande-à-la-pince"
+- id: S29-Q024
+  bonnes: [a]
+  explication: "Note Tektronix."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L03#mesurer-un-courant-de-commande-à-la-pince"
+- id: S29-Q025
+  bonnes: [a]
+  explication: "Effet à constater au TP-42."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S29-L01#filtrer-et-protéger"

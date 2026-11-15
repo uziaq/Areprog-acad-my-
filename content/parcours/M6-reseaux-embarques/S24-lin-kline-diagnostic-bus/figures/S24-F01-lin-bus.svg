@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : bus LIN maître et esclaves et allure d'une trame, d'après la note TI SLLA383A ; allure sans valeur constructeur. -->
+  <text x="60" y="24" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">+ batterie</text>
+  <path d="M60 30 V44" /><path d="M50 44 H70 L60 58 Z" stroke-width="1.5" /><path d="M50 58 H70" stroke-width="1.5" />
+  <rect x="52" y="64" width="16" height="26" stroke-width="1.5" /><path d="M60 58 V64 M60 90 V110" />
+  <text x="76" y="56" fill="currentColor" stroke="none" font-size="10">diode</text><text x="76" y="82" fill="currentColor" stroke="none" font-size="10">résistance du maître</text>
+  <path d="M60 110 H570" /><text x="575" y="114" fill="currentColor" stroke="none" font-size="11" font-weight="600" text-anchor="end" dy="-8">LIN</text>
+  <circle cx="60" cy="110" r="3" fill="currentColor" stroke="none" />
+  <g stroke-width="1.5">
+    <path d="M60 110 V140" /><rect x="20" y="140" width="80" height="40" rx="3" />
+    <path d="M250 110 V140" /><rect x="210" y="140" width="80" height="40" rx="3" />
+    <path d="M370 110 V140" /><rect x="330" y="140" width="80" height="40" rx="3" />
+    <path d="M490 110 V140" /><rect x="450" y="140" width="80" height="40" rx="3" />
+  </g>
+  <circle cx="250" cy="110" r="3" fill="currentColor" stroke="none" /><circle cx="370" cy="110" r="3" fill="currentColor" stroke="none" /><circle cx="490" cy="110" r="3" fill="currentColor" stroke="none" />
+  <text x="60" y="165" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">maître</text>
+  <text x="250" y="165" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">esclave 1</text>
+  <text x="370" y="165" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">esclave 2</text>
+  <text x="490" y="165" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">esclave 3</text>
+  <text x="370" y="198" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">chaque esclave : résistance de tirage intégrée au transceiver</text>
+  <path d="M40 330 H580" stroke-width="1" stroke-dasharray="4 4" /><text x="34" y="334" fill="currentColor" stroke="none" text-anchor="end" font-size="10">0</text>
+  <path d="M40 250 H580" stroke-width="1" stroke-dasharray="2 4" /><text x="34" y="254" fill="currentColor" stroke="none" text-anchor="end" font-size="10">VBAT</text>
+  <path d="M40 250 H70 V330 H200 V250 H206 V330 H214 V250 H222 V330 H230 V250 H238 V330 H246 V250 H254 V330 H262 V250 H270 V330 H278 V250 H290 V330 H302 V250 H314 V330 H326 V250 H338 V330 H344 V250 H360 V330 H372 V250 H400 V330 H412 V250 H436 V330 H448 V250 H480 V330 H492 V250 H580" stroke-width="1.5" />
+  <path d="M70 236 H200" stroke-width="1" /><text x="135" y="230" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">pause ≥ 13 bits</text>
+  <path d="M206 236 H284" stroke-width="1" /><text x="245" y="230" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">sync 0x55</text>
+  <path d="M290 236 H354" stroke-width="1" /><text x="322" y="230" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">PID</text>
+  <path d="M360 236 H580" stroke-width="1" stroke-dasharray="4 3" /><text x="470" y="230" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">réponse : données + somme de contrôle</text>
+  <text x="200" y="352" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">en-tête, envoyé par le maître</text>
+</svg>

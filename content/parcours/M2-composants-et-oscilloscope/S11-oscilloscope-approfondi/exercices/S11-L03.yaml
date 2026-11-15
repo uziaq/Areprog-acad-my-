@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S11-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S11-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une pince de courant est réglée sur 10 mV/A. L'oscilloscope lit 45 mV. Quel courant traverse le conducteur ?"
+  unite_attendue: A
+  competences: [D3.3, D3.4]
+  objectif: O2
+- id: S11-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous voulez capturer l'appel de courant d'une charge au moment unique de sa mise sous tension. Quel mode de déclenchement choisissez-vous ?"
+  propositions:
+    - {id: a, texte: "Unique (single), déclenchement sur le front montant du courant"}
+    - {id: b, texte: "Auto, en regardant l'écran défiler"}
+    - {id: c, texte: "Aucun déclenchement"}
+    - {id: d, texte: "Normal, avec un niveau au-dessus du courant maximal attendu"}
+  competences: [D3.3]
+  objectif: O1

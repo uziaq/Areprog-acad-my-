@@ -1,0 +1,277 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S26-Q001
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#mouiller-cest-chauffer-les-deux-surfaces"
+  enonce: "Comment la norme NASA définit-elle le mouillage ?"
+  propositions:
+    - {id: a, texte: "L'écoulement et l'adhérence de l'alliage fondu sur une surface, avec des bords lisses et un angle faible"}
+    - {id: b, texte: "La fusion des deux métaux de base"}
+    - {id: c, texte: "Le nettoyage au solvant"}
+    - {id: d, texte: "Le refroidissement de la soudure"}
+- id: S26-Q002
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#mouiller-cest-chauffer-les-deux-surfaces"
+  enonce: "Une pastille est reliée à un plan de masse. Que faites-vous en premier ?"
+  propositions:
+    - {id: a, texte: "Une panne plus large ou un préchauffage, plutôt qu'une température plus haute"}
+    - {id: b, texte: "Monter la station au maximum"}
+    - {id: c, texte: "Souder sans flux"}
+    - {id: d, texte: "Appuyer plus fort"}
+- id: S26-Q003
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#le-fer-et-sa-panne"
+  enonce: "Quel outil la norme NASA interdit-elle ?"
+  propositions:
+    - {id: a, texte: "Le pistolet à souder"}
+    - {id: b, texte: "Le fer à température régulée"}
+    - {id: c, texte: "La pince brucelles"}
+    - {id: d, texte: "Le microscope"}
+- id: S26-Q004
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#le-fer-et-sa-panne"
+  enonce: "Que vérifiez-vous sur la panne avant de souder ?"
+  propositions:
+    - {id: a, texte: "Insertion, serrage, propreté, étamage, taille adaptée"}
+    - {id: b, texte: "Sa couleur seulement"}
+    - {id: c, texte: "Rien, elle est neuve"}
+    - {id: d, texte: "Sa longueur de câble"}
+- id: S26-Q005
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#le-fer-et-sa-panne"
+  enonce: "À quelle fréquence la norme NASA demande-t-elle de vérifier les outils de soudage ?"
+  propositions:
+    - {id: a, texte: "Chaque jour"}
+    - {id: b, texte: "Une fois par an"}
+    - {id: c, texte: "Jamais"}
+    - {id: d, texte: "À chaque panne"}
+- id: S26-Q006
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#alliages-avec-et-sans-plomb"
+  enonce: "Quelle est la composition du SAC305 ?"
+  propositions:
+    - {id: a, texte: "Étain, 3 % d'argent, 0,5 % de cuivre"}
+    - {id: b, texte: "63 % d'étain, 37 % de plomb"}
+    - {id: c, texte: "Cuivre pur"}
+    - {id: d, texte: "Argent pur"}
+- id: S26-Q007
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#alliages-avec-et-sans-plomb"
+  enonce: "Quel est le liquidus du SAC305 d'après sa fiche ?"
+  propositions:
+    - {id: a, texte: "220 °C"}
+    - {id: b, texte: "183 °C"}
+    - {id: c, texte: "300 °C"}
+    - {id: d, texte: "150 °C"}
+- id: S26-Q008
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#régler-sans-inventer"
+  enonce: "Les valeurs de soudage au fer d'un fabricant de condensateurs s'appliquent-elles à tous les condensateurs ?"
+  propositions:
+    - {id: a, texte: "Non : chaque fabricant donne les siennes dans sa fiche"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Seulement en 0402"}
+    - {id: d, texte: "Seulement en sans plomb"}
+- id: S26-Q009
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L01#exemple-3--une-soudure-en-boule"
+  enonce: "La soudure reste en boule sur la pastille. Quelle cause est probable ?"
+  propositions:
+    - {id: a, texte: "Terminaison pas assez chaude, panne oxydée ou flux épuisé"}
+    - {id: b, texte: "Trop de flux"}
+    - {id: c, texte: "Composant trop froid à cause du microscope"}
+    - {id: d, texte: "Mauvais éclairage"}
+- id: S26-Q010
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#le-flux"
+  enonce: "Là où un nettoyage complet n'est pas possible, quel flux la norme NASA retient-elle ?"
+  propositions:
+    - {id: a, texte: "Le flux à base de colophane le moins actif"}
+    - {id: b, texte: "Le flux le plus actif"}
+    - {id: c, texte: "Aucun flux"}
+    - {id: d, texte: "Un acide fort"}
+- id: S26-Q011
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#nettoyer"
+  enonce: "Dans quel délai la norme NASA demande-t-elle de retirer les résidus de flux ?"
+  propositions:
+    - {id: a, texte: "Dans la demi-heure"}
+    - {id: b, texte: "Le lendemain"}
+    - {id: c, texte: "Jamais"}
+    - {id: d, texte: "Après une semaine"}
+- id: S26-Q012
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#nettoyer"
+  enonce: "Peut-on nettoyer une carte équipée de composants dans un bac à ultrasons, d'après la norme NASA ?"
+  propositions:
+    - {id: a, texte: "Non"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Oui, si elle est vernie"}
+    - {id: d, texte: "Seulement en 0402"}
+- id: S26-Q013
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#nettoyer"
+  enonce: "Comment refroidir une soudure ?"
+  propositions:
+    - {id: a, texte: "À l'air ambiant, jamais à l'air comprimé"}
+    - {id: b, texte: "À l'air comprimé"}
+    - {id: c, texte: "Dans l'eau froide"}
+    - {id: d, texte: "Avec un solvant froid aussitôt"}
+- id: S26-Q014
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S26-L02#nettoyer"
+  enonce: "Vous utilisez de l'alcool isopropylique près du poste de soudage. Quelle précaution ?"
+  propositions:
+    - {id: a, texte: "Ventilation, fiche de données de sécurité, solvant tenu loin du fer"}
+    - {id: b, texte: "Aucune"}
+    - {id: c, texte: "Le chauffer pour qu'il nettoie mieux"}
+    - {id: d, texte: "Le verser sur la panne chaude"}
+- id: S26-Q015
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#le-piège-du-condensateur-céramique"
+  enonce: "Pourquoi les microfissures de condensateur céramique sont-elles dangereuses ?"
+  propositions:
+    - {id: a, texte: "Elles sont difficiles à voir et à détecter au test électrique, et peuvent lâcher plus tard"}
+    - {id: b, texte: "Elles changent la couleur"}
+    - {id: c, texte: "Elles n'ont aucun effet"}
+    - {id: d, texte: "Elles augmentent la capacité"}
+- id: S26-Q016
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#le-piège-du-condensateur-céramique"
+  enonce: "Que la panne ne doit-elle jamais toucher sur un condensateur céramique ?"
+  propositions:
+    - {id: a, texte: "Le corps céramique"}
+    - {id: b, texte: "La pastille"}
+    - {id: c, texte: "La terminaison"}
+    - {id: d, texte: "Le fil de soudure"}
+- id: S26-Q017
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#exemple-4--un-0402-qui-bascule"
+  enonce: "Un 0402 se dresse sur une extrémité. Quelle cause ?"
+  propositions:
+    - {id: a, texte: "Soudure fondue d'un seul côté ou quantités inégales"}
+    - {id: b, texte: "Trop de grossissement"}
+    - {id: c, texte: "Pastilles trop propres"}
+    - {id: d, texte: "Composant défectueux d'usine"}
+- id: S26-Q018
+  type: choix_unique
+  securite: false
+  competences: [D9.1]
+  section: "S26-L02#déposer-un-passif-chip"
+  enonce: "Quand soulevez-vous un passif pendant une dépose ?"
+  propositions:
+    - {id: a, texte: "Quand les deux soudures sont fondues"}
+    - {id: b, texte: "Dès qu'une soudure fond"}
+    - {id: c, texte: "À froid, à la pince"}
+    - {id: d, texte: "Peu importe"}
+- id: S26-Q019
+  type: choix_unique
+  securite: false
+  competences: [D3.5]
+  section: "S26-L03#grossissement-et-éclairage"
+  enonce: "Quel éclairage la norme NASA demande-t-elle pour l'inspection ?"
+  propositions:
+    - {id: a, texte: "Un éclairage sans ombre"}
+    - {id: b, texte: "Une lampe rasante unique"}
+    - {id: c, texte: "La lumière du jour seule"}
+    - {id: d, texte: "Aucun"}
+- id: S26-Q020
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S26-L03#exemple-7--ménisque-trop-bas"
+  enonce: "Un composant chip a 0,6 mm d'épaisseur. Quelle hauteur minimale de ménisque la norme NASA demande-t-elle ?"
+  propositions:
+    - {id: a, texte: "0,3 mm (50 % de l'épaisseur)"}
+    - {id: b, texte: "0,6 mm"}
+    - {id: c, texte: "0,15 mm"}
+    - {id: d, texte: "Aucune hauteur minimale"}
+- id: S26-Q021
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S26-L03#critères-pour-un-composant-chip"
+  enonce: "Un composant chip a 0,8 mm de large. Au-delà de quel débord latéral la soudure est-elle rejetée ?"
+  propositions:
+    - {id: a, texte: "0,2 mm (25 % de la largeur)"}
+    - {id: b, texte: "0,4 mm"}
+    - {id: c, texte: "0,8 mm"}
+    - {id: d, texte: "Tout débord est accepté"}
+- id: S26-Q022
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S26-L03#critères-pour-un-composant-chip"
+  enonce: "Laquelle de ces observations entraîne un rejet ?"
+  propositions:
+    - {id: a, texte: "Un angle de mouillage négatif"}
+    - {id: b, texte: "Un ménisque concave"}
+    - {id: c, texte: "Un mouillage visible sur la pastille"}
+    - {id: d, texte: "Une surface lisse"}
+- id: S26-Q023
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S26-L03#la-grille-de-contrôle-et-le-taux-de-conformité"
+  enonce: "Sur 20 passifs, 15 sont acceptés. Quel est le taux de conformité ?"
+  propositions:
+    - {id: a, texte: "75 %"}
+    - {id: b, texte: "15 %"}
+    - {id: c, texte: "25 %"}
+    - {id: d, texte: "85 %"}
+- id: S26-Q024
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S26-L03#des-critères-écrits-pas-une-impression"
+  enonce: "Pendant le TP-37, quelle règle de sécurité s'applique pendant toute la soudure ?"
+  propositions:
+    - {id: a, texte: "Aspiration des fumées en marche (faute éliminatoire FE-12 sinon)"}
+    - {id: b, texte: "Fenêtres fermées"}
+    - {id: c, texte: "Aspiration seulement au début"}
+    - {id: d, texte: "Aucune"}
+- id: S26-Q025
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S26-L03#des-critères-écrits-pas-une-impression"
+  enonce: "Où se pose le fer entre deux soudures ?"
+  propositions:
+    - {id: a, texte: "Toujours sur son support"}
+    - {id: b, texte: "Sur la carte"}
+    - {id: c, texte: "Sur le plan de travail"}
+    - {id: d, texte: "Dans la main"}

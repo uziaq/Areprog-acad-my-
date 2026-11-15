@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S20-L02-EX01
+  valeur: 18
+  tolerance_relative: 0.02
+  unite: pF
+  explication: "Ce + Ci = 2 × CL − Cs = 24 − 3 = 21 pF ; Ce = 21 − 3 = 18 pF. On compare toujours à la valeur montée sur la carte de référence."
+  renvoi_section: "S20-L02#loscillateur-pierce"
+- id: S20-L02-EX02
+  bonnes: [a]
+  explication: "Une sonde ordinaire ajoute 8 à 15 pF et peut arrêter un oscillateur à haute impédance ; une sonde active à faible capacité, ou un signal dérivé, perturbe beaucoup moins."
+  renvoi_section: "S20-L02#mesurer-sans-arrêter-loscillateur"
+- id: S20-L02-EX03
+  bonnes: [a]
+  explication: "Les résidus de flux et les ponts créent un chemin parasite qui réduit le gain de l'oscillateur : microscope, nettoyage, ohmmètre."
+  renvoi_section: "S20-L02#pourquoi-un-oscillateur-ne-démarre-pas"

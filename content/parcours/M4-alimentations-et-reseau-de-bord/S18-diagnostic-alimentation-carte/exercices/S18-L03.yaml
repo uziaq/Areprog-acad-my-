@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S18-L03.yaml
+- id: S18-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre de l'académie ces contrôles d'un calculateur qui ne communique plus."
+  propositions:
+    - {id: a, texte: "Mesurer les rails internes"}
+    - {id: b, texte: "Mesurer la résistance des rails vers la masse, hors tension"}
+    - {id: c, texte: "Mettre sous tension progressivement et relever le courant"}
+    - {id: d, texte: "Vérifier le reset et le réveil"}
+  competences: [D1.6]
+  objectif: O1
+- id: S18-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une résistance brûlée est illisible. Comment retrouvez-vous sa valeur pour le dossier ?"
+  propositions:
+    - {id: a, texte: "En relevant la même position sur un exemplaire de référence de même référence matérielle"}
+    - {id: b, texte: "En la mesurant en circuit"}
+    - {id: c, texte: "En prenant la valeur des résistances voisines"}
+    - {id: d, texte: "En choisissant une valeur courante"}
+  competences: [D1.6]
+  objectif: O2

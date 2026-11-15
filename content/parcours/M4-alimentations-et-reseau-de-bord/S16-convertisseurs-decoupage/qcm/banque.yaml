@@ -1,0 +1,245 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S16-Q001
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#pourquoi-découper"
+  enonce: "Pourquoi un convertisseur à découpage perd-il beaucoup moins d'énergie qu'un régulateur linéaire ?"
+  propositions:
+    - {id: a, texte: "Son transistor commute en tout ou rien et le résultat est lissé par une inductance et un condensateur"}
+    - {id: b, texte: "Il dissipe l'écart entre entrée et sortie dans un dissipateur plus grand"}
+    - {id: c, texte: "Il n'a pas de transistor"}
+    - {id: d, texte: "Il fonctionne sans boucle de régulation"}
+- id: S16-Q002
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#la-loi-de-linductance"
+  enonce: "Quelle grandeur d'une inductance ne peut pas changer instantanément ?"
+  propositions:
+    - {id: a, texte: "Son courant"}
+    - {id: b, texte: "Sa tension"}
+    - {id: c, texte: "Sa résistance"}
+    - {id: d, texte: "Sa capacité"}
+- id: S16-Q003
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#la-modulation-de-largeur-dimpulsion"
+  enonce: "Des impulsions de 12 V crête, de rapport cyclique 0,4, sont filtrées par un circuit L-C. Quelle tension moyenne obtient-on ?"
+  unite_attendue: V
+- id: S16-Q004
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#le-buck-phase-par-phase"
+  enonce: "Dans un buck à diode, que se passe-t-il quand le transistor s'ouvre ?"
+  propositions:
+    - {id: a, texte: "Le courant de l'inductance continue par la diode"}
+    - {id: b, texte: "Le courant de l'inductance s'arrête net"}
+    - {id: c, texte: "La sortie passe à la tension d'entrée"}
+    - {id: d, texte: "Le condensateur se décharge dans l'entrée"}
+- id: S16-Q005
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#le-buck-phase-par-phase"
+  enonce: "À quoi est égal le courant moyen de l'inductance d'un buck en régime établi ?"
+  propositions:
+    - {id: a, texte: "Au courant de charge"}
+    - {id: b, texte: "Au courant d'entrée"}
+    - {id: c, texte: "À l'ondulation de courant"}
+    - {id: d, texte: "À zéro"}
+- id: S16-Q006
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#le-buck-phase-par-phase"
+  enonce: "Qu'est-ce qu'un buck synchrone ?"
+  propositions:
+    - {id: a, texte: "Un buck dont la diode est remplacée par un second transistor"}
+    - {id: b, texte: "Un buck synchronisé sur le secteur"}
+    - {id: c, texte: "Un buck sans inductance"}
+    - {id: d, texte: "Deux bucks en série"}
+- id: S16-Q007
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#le-rapport-cyclique"
+  enonce: "Un buck passe de 12 V à 3,3 V avec un rendement de 0,88. Quel temps de conduction sur une période de 2 µs ? (D = VOUT / (VIN × η))"
+  unite_attendue: s
+- id: S16-Q008
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L01#le-boost"
+  enonce: "Quelle tension donne un boost par rapport à son entrée ?"
+  propositions:
+    - {id: a, texte: "Une tension plus haute, de même polarité"}
+    - {id: b, texte: "Une tension plus basse, de même polarité"}
+    - {id: c, texte: "Une tension négative"}
+    - {id: d, texte: "Toujours la même tension"}
+- id: S16-Q009
+  type: choix_unique
+  securite: false
+  competences: [D6.2, D9.1]
+  section: "S16-L01#le-boost"
+  enonce: "Un boost ne commute pas. Que peut-on dire de sa sortie ?"
+  propositions:
+    - {id: a, texte: "Elle reste reliée à l'entrée par l'inductance et la diode ; il faut la mesurer avant de manipuler"}
+    - {id: b, texte: "Elle est forcément à 0 V"}
+    - {id: c, texte: "Elle est forcément à la tension maximale"}
+    - {id: d, texte: "Elle est isolée de l'entrée"}
+- id: S16-Q010
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#londulation-de-courant-de-linductance"
+  enonce: "Un buck passe de 12 V à 5 V, D = 0,45, fS = 400 kHz, L = 33 µH. Quelle ondulation de courant ΔIL ?"
+  unite_attendue: A
+- id: S16-Q011
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#londulation-de-courant-de-linductance"
+  enonce: "Un buck débite 2 A avec une ondulation de courant de 0,6 A. Quel courant crête dans l'inductance ?"
+  unite_attendue: A
+- id: S16-Q012
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#londulation-de-courant-de-linductance"
+  enonce: "Que se passe-t-il pour l'ondulation de courant si l'on double l'inductance, tout le reste égal ?"
+  propositions:
+    - {id: a, texte: "Elle est divisée par deux"}
+    - {id: b, texte: "Elle double"}
+    - {id: c, texte: "Elle ne change pas"}
+    - {id: d, texte: "Elle s'annule"}
+- id: S16-Q013
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#londulation-de-tension-de-sortie"
+  enonce: "L'ondulation de courant vaut 0,4 A ; l'ESR du condensateur de sortie vaut 0,2 Ω. Quelle ondulation due à l'ESR ?"
+  unite_attendue: V
+- id: S16-Q014
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#londulation-de-tension-de-sortie"
+  enonce: "Quels condensateurs de sortie recommande la note TI pour limiter l'ondulation ?"
+  propositions:
+    - {id: a, texte: "Des condensateurs à faible ESR, céramiques X5R ou mieux"}
+    - {id: b, texte: "Des condensateurs à forte ESR"}
+    - {id: c, texte: "N'importe quel électrolytique"}
+    - {id: d, texte: "Aucun condensateur"}
+- id: S16-Q015
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#les-parasites-des-condensateurs"
+  enonce: "Comment évolue l'ESR d'un condensateur électrolytique par temps froid ?"
+  propositions:
+    - {id: a, texte: "Elle augmente très vite sous 10 °C environ"}
+    - {id: b, texte: "Elle diminue"}
+    - {id: c, texte: "Elle ne change pas"}
+    - {id: d, texte: "Elle s'annule"}
+- id: S16-Q016
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#les-parasites-des-condensateurs"
+  enonce: "Pourquoi un condensateur à ESR élevée chauffe-t-il dans un convertisseur ?"
+  propositions:
+    - {id: a, texte: "Le courant d'ondulation qui le traverse dissipe de la puissance dans son ESR"}
+    - {id: b, texte: "Parce que sa capacité est trop grande"}
+    - {id: c, texte: "À cause de la tension continue à ses bornes"}
+    - {id: d, texte: "Il ne chauffe jamais"}
+- id: S16-Q017
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L02#symptômes-dun-composant-défaillant"
+  enonce: "Une ondulation de sortie qui augmente surtout à froid oriente d'abord vers :"
+  propositions:
+    - {id: a, texte: "Un condensateur de sortie usé, à confirmer en mesurant son ESR"}
+    - {id: b, texte: "Une inductance coupée"}
+    - {id: c, texte: "Un enable inactif"}
+    - {id: d, texte: "Une masse absente"}
+- id: S16-Q018
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L03#le-nœud-de-commutation"
+  enonce: "Le créneau du nœud de commutation a une période de 2,5 µs. Quelle est la fréquence de découpage ?"
+  unite_attendue: Hz
+- id: S16-Q019
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L03#le-nœud-de-commutation"
+  enonce: "Au nœud de commutation d'un buck alimenté en 12 V, le niveau haut dure 1 µs sur une période de 2,5 µs. Quelle sortie attendrait-on sans pertes ?"
+  unite_attendue: V
+- id: S16-Q020
+  type: choix_unique
+  securite: false
+  competences: [D6.2, D3.4]
+  section: "S16-L03#mesurer-londulation-sans-se-tromper"
+  enonce: "Pourquoi mesurer l'ondulation avec un ressort de masse plutôt qu'avec le fil de masse d'origine ?"
+  propositions:
+    - {id: a, texte: "Le fil de masse sert d'antenne et capte les pointes de commutation"}
+    - {id: b, texte: "Le ressort augmente la bande passante de l'oscilloscope"}
+    - {id: c, texte: "Le fil d'origine est dangereux"}
+    - {id: d, texte: "Pour changer le facteur de la sonde"}
+- id: S16-Q021
+  type: calcul
+  securite: false
+  competences: [D6.2]
+  section: "S16-L03#mesurer-le-rendement"
+  enonce: "Entrée : 12 V et 0,8 A moyens ; sortie : 5 V et 1,6 A. Quelles pertes dans le convertisseur ?"
+  unite_attendue: W
+- id: S16-Q022
+  type: choix_unique
+  securite: false
+  competences: [D6.2]
+  section: "S16-L03#mesurer-le-rendement"
+  enonce: "Quel courant d'entrée utilise-t-on pour calculer le rendement d'un convertisseur ?"
+  propositions:
+    - {id: a, texte: "Le courant moyen"}
+    - {id: b, texte: "Le courant crête"}
+    - {id: c, texte: "Le courant crête à crête"}
+    - {id: d, texte: "Le courant de court-circuit"}
+- id: S16-Q023
+  type: choix_unique
+  securite: true
+  competences: [D6.2, D9.1, D3.4]
+  section: "S16-L03#mesurer-londulation-sans-se-tromper"
+  enonce: "Où relie-t-on la pince de masse de la sonde pour observer le nœud de commutation ?"
+  propositions:
+    - {id: a, texte: "Uniquement sur la masse du module"}
+    - {id: b, texte: "Sur le nœud de commutation"}
+    - {id: c, texte: "Sur l'entrée 12 V"}
+    - {id: d, texte: "Sur la sortie 5 V"}
+- id: S16-Q024
+  type: choix_unique
+  securite: true
+  competences: [D6.2, D9.1]
+  section: "S16-L02#symptômes-dun-composant-défaillant"
+  enonce: "Avant de mesurer l'ESR d'un condensateur électrolytique déposé, que fait-on ?"
+  propositions:
+    - {id: a, texte: "On le décharge à travers une résistance, puis on mesure sa tension deux fois, la seconde juste avant la mesure"}
+    - {id: b, texte: "On le court-circuite avec un tournevis"}
+    - {id: c, texte: "Rien : il est hors circuit"}
+    - {id: d, texte: "On le chauffe pour réduire son ESR"}
+- id: S16-Q025
+  type: choix_unique
+  securite: true
+  competences: [D6.2, D9.1]
+  section: "S16-L03#mesurer-le-rendement"
+  enonce: "Avant de mettre sous tension le module buck du TP-22, que doit-on faire avec l'alimentation ?"
+  propositions:
+    - {id: a, texte: "Régler la limite de courant et l'écrire au journal, justifiée par le courant d'entrée estimé"}
+    - {id: b, texte: "Régler la limite au maximum pour ne pas gêner le démarrage"}
+    - {id: c, texte: "Laisser la limite telle qu'elle est"}
+    - {id: d, texte: "Inverser la polarité pour tester la protection"}

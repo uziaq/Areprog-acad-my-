@@ -1,0 +1,199 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S33-Q001
+  bonnes: [a]
+  explication: "Note TI SPRABY2 §4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#pourquoi-une-panne-est-intermittente"
+- id: S33-Q002
+  bonnes: [a]
+  explication: "Note TI SPRABY2 §4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#pourquoi-une-panne-est-intermittente"
+- id: S33-Q003
+  bonnes: [a]
+  explication: "Note TI SPRABY2 §4."
+  pourquoi_faux:
+    b: "C'est la fatigue intrinsèque."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#pourquoi-une-panne-est-intermittente"
+- id: S33-Q004
+  bonnes: [a]
+  explication: "En normal, l'oscilloscope n'affiche une trace que s'il y a déclenchement."
+  pourquoi_faux:
+    b: "Balaie même sans événement."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#surveiller-en-continu"
+- id: S33-Q005
+  bonnes: [a]
+  explication: "Surveillance en continu."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#surveiller-en-continu"
+- id: S33-Q006
+  bonnes: [a]
+  explication: "Techspray, How To Use Freeze Spray."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#provoquer-une-zone-à-la-fois"
+- id: S33-Q007
+  bonnes: [a]
+  explication: "Techspray, Diagnosing Static Sensitive Electronics."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L01#provoquer-une-zone-à-la-fois"
+- id: S33-Q008
+  bonnes: [a]
+  explication: "La température admise se lit dans les fiches."
+  pourquoi_faux:
+    b: "Non."
+    c: "Dangereux."
+    d: "Dangereux pour la carte."
+  source: "S33-L01#provoquer-une-zone-à-la-fois"
+- id: S33-Q009
+  bonnes: [a]
+  explication: "Désigner n'est pas prouver."
+  pourquoi_faux:
+    b: "Non."
+    c: "FE-13."
+    d: "Il sert à désigner."
+  source: "S33-L01#prouver-la-localisation"
+- id: S33-Q010
+  bonnes: [a]
+  explication: "Méthode de l'académie."
+  pourquoi_faux:
+    b: "Abîme la carte."
+    c: "Non."
+    d: "Risque de court-circuit."
+  source: "S33-L01#exemple-2--une-panne-mécanique"
+- id: S33-Q011
+  bonnes: [a]
+  explication: "Remarque E-28."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L02#pourquoi-valider"
+- id: S33-Q012
+  bonnes: [a]
+  explication: "Mêmes conditions."
+  pourquoi_faux:
+    b: "Non comparable."
+    c: "Insuffisant."
+    d: "Non."
+  source: "S33-L02#écrire-le-protocole-avant-lessai"
+- id: S33-Q013
+  bonnes: [a]
+  explication: "On coupe aussitôt."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L02#écrire-le-protocole-avant-lessai"
+- id: S33-Q014
+  bonnes: [a]
+  explication: "Note TI SPRABY2 §3."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L02#durée-dessai-et-cyclage"
+- id: S33-Q015
+  bonnes: [a]
+  explication: "Règle de l'académie."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L02#durée-dessai-et-cyclage"
+- id: S33-Q016
+  valeur: 3600
+  tolerance_relative: 0.02
+  unite: s
+  explication: "5 × 12 min = 60 min = 3 600 s."
+  source: "S33-L02#exemple-2--une-durée-dessai-en-secondes"
+- id: S33-Q017
+  bonnes: [a]
+  explication: "Limites à écrire."
+  pourquoi_faux:
+    b: "Il la reproduit."
+    c: "Possible sur banc."
+    d: "Possible."
+  source: "S33-L02#les-limites-dun-banc-datelier"
+- id: S33-Q018
+  bonnes: [a]
+  explication: "Ce qui n'a pas été essayé n'est pas validé."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "FE-14."
+  source: "S33-L02#les-limites-dun-banc-datelier"
+- id: S33-Q019
+  bonnes: [a]
+  explication: "Figure S33-F03."
+  pourquoi_faux:
+    b: "Déjà présentes."
+    c: "Non."
+    d: "Non."
+  source: "S33-L03#le-dossier-enrichi"
+- id: S33-Q020
+  bonnes: [a]
+  explication: "Code interne uniquement."
+  pourquoi_faux:
+    b: "Elles y entrent."
+    c: "Elles y entrent."
+    d: "Elles y entrent."
+  source: "S33-L03#le-dossier-enrichi"
+- id: S33-Q021
+  bonnes: [a]
+  explication: "Empreintes identiques, contenus identiques (S21)."
+  pourquoi_faux:
+    b: "Insuffisant."
+    c: "Insuffisant."
+    d: "Non."
+  source: "S33-L03#la-traçabilité"
+- id: S33-Q022
+  bonnes: [a]
+  explication: "Chaque valeur garde son étiquette."
+  pourquoi_faux:
+    b: "ESD."
+    c: "Non."
+    d: "Masse de sonde."
+  source: "S33-L03#étiqueter-jusquau-bout"
+- id: S33-Q023
+  bonnes: [a]
+  explication: "Court, clair, honnête sur les limites."
+  pourquoi_faux:
+    b: "Non validé."
+    c: "Inutile."
+    d: "Non."
+  source: "S33-L03#la-communication-au-client"
+- id: S33-Q024
+  bonnes: [a]
+  explication: "Une conclusion repose sur une mesure."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L03#exemple-2--une-phrase-à-corriger"
+- id: S33-Q025
+  bonnes: [a]
+  explication: "La cause peut être côté véhicule."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S33-L03#exemple-1--une-limite-bien-écrite"

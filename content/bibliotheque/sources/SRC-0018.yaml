@@ -1,0 +1,11 @@
+# Diodes TVS : définitions (VRM, VBR, VCL, IPP, PPP), choix, différence avec une Zener,
+# normes automobiles citées (cours S08). Sections citées par leur numéro et leur titre anglais.
+id: SRC-0018
+titre: "TN1517 : FAQ TVS"
+editeur: STMicroelectronics
+reference: "Technical note TN1517"
+revision: "Rev 2, 19-Sep-2024"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.st.com/resource/en/technical_note/tn1517-faq-tvs-stmicroelectronics.pdf

@@ -1,0 +1,11 @@
+# Désignation des bornes selon DIN 72552 (15, 30, 31, 31b, 50, 85, 86, 87…), tableau d'un
+# distributeur de pièces ; la norme elle-même est payante (cours S17). Cité par le numéro de borne.
+id: SRC-0044
+titre: "Relay terminal designations according to DIN 72552"
+editeur: Kramp
+reference: "VLC2537_EN"
+revision: "mars 2025"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://documents.kramp.com/VLC2537_EN.pdf

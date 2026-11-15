@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S08-L02-EX01
+  valeur: 440
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "R = (15 − 6,2) / 0,020 = 440 Ω. On choisira une valeur normalisée proche (470 Ω en E12 donne environ 18,7 mA) et l'on vérifiera la puissance dans la Zener."
+  renvoi_section: "S08-L02#la-zener--utiliser-le-claquage"
+- id: S08-L02-EX02
+  bonnes: [a]
+  explication: "Sans surtension, la tension aux bornes de la TVS doit rester sous VRM : VRM doit être supérieure ou égale à la tension de service maximale (13 V). Une VRM plus basse ferait conduire la TVS en fonctionnement normal. C'est VCL qui doit rester sous la tension que supporte le circuit protégé."
+  renvoi_section: "S08-L02#la-tvs--écrêter-les-surtensions"
+- id: S08-L02-EX03
+  valeur: 1.05
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = U × I = 0,35 × 3 = 1,05 W. Le seuil réel à 3 A se lit sur la courbe de la fiche technique."
+  renvoi_section: "S08-L02#protéger-contre-linversion-de-polarité"

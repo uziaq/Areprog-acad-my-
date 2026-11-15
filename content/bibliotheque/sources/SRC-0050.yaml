@@ -1,0 +1,12 @@
+# Localisation d'un court-circuit entre un plan d'alimentation et la masse par injection de courant
+# et lecture des tensions sur le plan (ligne équipotentielle, deux injections croisées) (cours S18).
+# Note d'un fabricant d'instruments ; sections citées par leur titre anglais.
+id: SRC-0050
+titre: "Application Note 201 : Power to Ground shorts"
+editeur: Polar Instruments
+reference: "AP201"
+revision: "2002"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.polarinstruments.com/support/pcb_troubleshooting/AP201.pdf

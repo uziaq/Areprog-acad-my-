@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S24-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S24-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Qu'est-ce que la ligne K ?"
+  propositions:
+    - {id: a, texte: "Une liaison série de diagnostic sur un fil, à l'alternat, référencée à la batterie"}
+    - {id: b, texte: "Une paire différentielle à haut débit"}
+    - {id: c, texte: "La ligne d'alimentation des capteurs"}
+    - {id: d, texte: "Un bus maître et esclaves de confort"}
+  competences: [D8.2]
+  objectif: O1
+- id: S24-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une capture montre un fil unique entre la masse et la tension batterie, au rythme d'environ 100 µs par bit. Quel bus est le plus probable ?"
+  propositions:
+    - {id: a, texte: "LIN, à confirmer sur le schéma officiel"}
+    - {id: b, texte: "CAN haute vitesse"}
+    - {id: c, texte: "I²C"}
+    - {id: d, texte: "JTAG"}
+  competences: [D8.1, D8.2]
+  objectif: O2

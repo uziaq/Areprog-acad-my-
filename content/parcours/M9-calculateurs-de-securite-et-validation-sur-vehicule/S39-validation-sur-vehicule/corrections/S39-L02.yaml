@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S39-L02-EX01
+  bonnes: [a]
+  explication: "On enregistre d'abord tout, on n'efface que les défauts ordinaires, puis on regarde ce qui revient ; les données de collision ne sont jamais effacées ni modifiées."
+  renvoi_section: "S39-L02#les-défauts-avant-et-après"
+- id: S39-L02-EX02
+  bonnes: [a]
+  explication: "La référence est le calculateur d'origine du véhicule, relevé dans les mêmes conditions."
+  renvoi_section: "S39-L02#les-valeurs-réelles"
+- id: S39-L02-EX03
+  bonnes: [a]
+  explication: "Un essai non fait va dans « non validable en atelier » avec sa raison ; écrire « validé » pour un essai non fait est une faute de dossier. Les essais dynamiques ne se font que sur voie privée."
+  renvoi_section: "S39-L02#ce-que-latelier-ne-peut-pas-faire"

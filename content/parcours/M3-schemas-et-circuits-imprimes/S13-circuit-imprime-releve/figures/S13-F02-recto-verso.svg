@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 262" width="580" height="262" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : suivi de piste d'une face à l'autre, dessin de principe sans carte réelle. -->
+  <text x="140" y="22" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">face avant</text>
+  <rect x="20" y="34" width="240" height="180" rx="4" />
+  <rect x="60" y="80" width="50" height="70" stroke-width="1.5" />
+  <path d="M50 90 H60 M50 105 H60 M50 120 H60 M50 135 H60 M110 90 H120 M110 105 H120 M110 120 H120 M110 135 H120" stroke-width="3" />
+  <circle cx="66" cy="86" r="2.5" fill="currentColor" stroke="none" />
+  <text x="44" y="113" fill="currentColor" stroke="none" text-anchor="end" font-size="10">3</text>
+  <path d="M50 120 H38 V178 H190" stroke-width="2.5" />
+  <circle cx="196" cy="178" r="6" />
+  <circle cx="196" cy="178" r="2" fill="currentColor" stroke="none" />
+  <text x="196" y="200" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">via</text>
+  <circle cx="34" cy="50" r="6" stroke-width="1.5" />
+  <circle cx="246" cy="50" r="6" stroke-width="1.5" />
+  <text x="440" y="22" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">face arrière (miroir)</text>
+  <rect x="320" y="34" width="240" height="180" rx="4" />
+  <circle cx="334" cy="50" r="6" stroke-width="1.5" />
+  <circle cx="546" cy="50" r="6" stroke-width="1.5" />
+  <circle cx="496" cy="178" r="6" />
+  <circle cx="496" cy="178" r="2" fill="currentColor" stroke="none" />
+  <text x="496" y="200" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">via</text>
+  <path d="M502 178 H530 V100" stroke-width="2.5" />
+  <rect x="522" y="84" width="16" height="16" fill="currentColor" stroke="none" />
+  <text x="530" y="76" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">P</text>
+  <path d="M202 178 Q346 262 490 178" stroke-width="1.5" stroke-dasharray="5 4" />
+  <path d="M332 244 a12 12 0 0 1 24 0 Z" stroke-width="1.5" />
+  <path d="M340 235 v-5 M348 235 v-5" stroke-width="1.5" />
+  <text x="362" y="248" fill="currentColor" stroke="none" text-anchor="start" font-size="11">continuité</text>
+  <text x="290" y="44" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">repères</text>
+  <path d="M268 52 H312" stroke-width="1" stroke-dasharray="3 3" />
+</svg>

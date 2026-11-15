@@ -1,0 +1,197 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S30-Q001
+  bonnes: [a]
+  explication: "Réception, symptôme, inspection, puis alimentations."
+  pourquoi_faux:
+    b: "Étape 8."
+    c: "Étape 9."
+    d: "Étape 7."
+  source: "S30-L01#dix-étapes-dans-lordre"
+- id: S30-Q002
+  bonnes: [a]
+  explication: "Du général au particulier."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "L'ordre est le cœur de la méthode."
+  source: "S30-L01#dix-étapes-dans-lordre"
+- id: S30-Q003
+  bonnes: [a]
+  explication: "Aucune donnée client ni identifiant de véhicule au dossier."
+  pourquoi_faux:
+    b: "Interdit au dossier."
+    c: "Interdit au dossier."
+    d: "Non."
+  source: "S30-L01#dix-étapes-dans-lordre"
+- id: S30-Q004
+  bonnes: [a]
+  explication: "Un temps d'attente ne remplace pas la mesure (FE-09) ; la tension peut remonter."
+  pourquoi_faux:
+    b: "Insuffisant."
+    c: "Dangereux pour la carte et l'opérateur."
+    d: "Les condensateurs gardent leur charge."
+  source: "S30-L01#dix-étapes-dans-lordre"
+- id: S30-Q005
+  bonnes: [a]
+  explication: "Une hypothèse se vérifie par une mesure."
+  pourquoi_faux:
+    b: "Trop vague."
+    c: "Invérifiable."
+    d: "Non."
+  source: "S30-L01#larbre-dhypothèses"
+- id: S30-Q006
+  bonnes: [a]
+  explication: "Une mesure qui départage."
+  pourquoi_faux:
+    b: "Elle ne fait pas avancer."
+    c: "Non."
+    d: "Non."
+  source: "S30-L01#larbre-dhypothèses"
+- id: S30-Q007
+  bonnes: [a]
+  explication: "FE-13 pour le module M8."
+  pourquoi_faux:
+    b: "Bracelet ESD."
+    c: "Masse de sonde."
+    d: "Non."
+  source: "S30-L01#larbre-dhypothèses"
+- id: S30-Q008
+  bonnes: [a]
+  explication: "Remarque E-28 du catalogue."
+  pourquoi_faux:
+    b: "Non."
+    c: "C'est justement ce qui manquait."
+    d: "Non."
+  source: "S30-L01#contre-exemple--la-réparation-par-essais"
+- id: S30-Q009
+  bonnes: [a]
+  explication: "Le dossier déclare cette limite."
+  pourquoi_faux:
+    b: "Elle est prouvée."
+    c: "Il est fait."
+    d: "Non."
+  source: "S30-L01#exemple-3--une-conclusion-prudente"
+- id: S30-Q010
+  bonnes: [a]
+  explication: "Comparer à une carte saine identifie les lignes en défaut (note Huntron)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S30-L02#pourquoi-comparer"
+- id: S30-Q011
+  bonnes: [a]
+  explication: "Une autre référence matérielle peut changer la carte."
+  pourquoi_faux:
+    b: "Insuffisant."
+    c: "Non."
+    d: "Non."
+  source: "S30-L02#pourquoi-comparer"
+- id: S30-Q012
+  bonnes: [a]
+  explication: "Un ohmmètre ne se pose pas sur un circuit alimenté."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S30-L02#relever-broche-par-broche"
+- id: S30-Q013
+  bonnes: [a]
+  explication: "Note Fluke, test de jonction."
+  pourquoi_faux:
+    b: "Ce serait un court-circuit."
+    c: "C'est le sens direct."
+    d: "Non."
+  source: "S30-L02#relever-broche-par-broche"
+- id: S30-Q014
+  bonnes: [a]
+  explication: "Protections, résistances et condensateurs participent à la lecture."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S30-L02#relever-broche-par-broche"
+- id: S30-Q015
+  bonnes: [a]
+  explication: "Un condensateur en parallèle se charge."
+  pourquoi_faux:
+    b: "Non comparable."
+    c: "Fausse la comparaison."
+    d: "Non."
+  source: "S30-L02#relever-broche-par-broche"
+- id: S30-Q016
+  valeur: 50
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "4 750 − 4 700 = 50 Ω, environ 1 % : rien de concluant seul."
+  source: "S30-L02#interpréter-les-écarts"
+- id: S30-Q017
+  bonnes: [a]
+  explication: "Un circuit ouvert oriente vers une coupure."
+  pourquoi_faux:
+    b: "C'est l'inverse."
+    c: "Non."
+    d: "Non."
+  source: "S30-L02#interpréter-les-écarts"
+- id: S30-Q018
+  bonnes: [a]
+  explication: "Courant en vertical, tension en horizontal (note Huntron)."
+  pourquoi_faux:
+    b: "Horizontal."
+    c: "Non."
+    d: "Non."
+  source: "S30-L02#les-signatures-courant-tension"
+- id: S30-Q019
+  bonnes: [a]
+  explication: "Figure S30-F02."
+  pourquoi_faux:
+    b: "Circuit ouvert."
+    c: "Court-circuit."
+    d: "Résistance."
+  source: "S30-L02#les-signatures-courant-tension"
+- id: S30-Q020
+  bonnes: [a]
+  explication: "Limites citées par la note Huntron."
+  pourquoi_faux:
+    b: "Elle se fait hors tension."
+    c: "Elle s'en passe."
+    d: "Non."
+  source: "S30-L02#les-signatures-courant-tension"
+- id: S30-Q021
+  bonnes: [a]
+  explication: "Fiche MC33816."
+  pourquoi_faux:
+    b: "Communication."
+    c: "Mémoire."
+    d: "Entrée."
+  source: "S30-L03#les-blocs-dun-ecu-moteur-diesel"
+- id: S30-Q022
+  bonnes: [a]
+  explication: "FE-07 ; sonde différentielle pour les nœuds flottants."
+  pourquoi_faux:
+    b: "Court-circuit par la terre possible."
+    c: "Dangereux."
+    d: "Non sous tension."
+  source: "S30-L03#le-bloc-dinjection-à-tension-élevée"
+- id: S30-Q023
+  bonnes: [a]
+  explication: "Un défaut effacé sans être noté est une preuve perdue."
+  pourquoi_faux:
+    b: "Preuve perdue."
+    c: "Lecture seule."
+    d: "Pas sans charge ni accord."
+  source: "S30-L03#loutil-de-diagnostic-sur-banc"
+- id: S30-Q024
+  bonnes: [a]
+  explication: "Défaut attendu sans charge ; seul un écart avec la référence oriente."
+  pourquoi_faux:
+    b: "FE-13."
+    c: "Non prouvé."
+    d: "Il se note."
+  source: "S30-L03#loutil-de-diagnostic-sur-banc"
+- id: S30-Q025
+  valeur: 1.8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Rapport 2,0 / 5,0 = 0,4 ; 0,4 × 4,5 V = 1,8 V."
+  source: "S30-L03#exemple-1--une-valeur-réelle-de-pression"

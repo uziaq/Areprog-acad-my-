@@ -1,0 +1,15 @@
+# Analyse de signature analogique (courbe courant-tension) hors tension : principe (sinusoïde
+# limitée en courant entre deux points, courant en vertical, tension en horizontal), comparaison
+# avec une carte saine, avantages (carte non alimentée, sans schéma) et limites (pas un essai
+# fonctionnel, interprétation à apprendre), exemple de condensateur déconnecté. Note d'un fabricant
+# d'instruments ; sections citées par leur titre anglais, le premier paragraphe sans titre
+# cité « §Introduction » (cours S30).
+id: SRC-0088
+titre: "Analog Signature Analysis as a Troubleshooting Method"
+editeur: Huntron, Inc. (publié par Circuitnet)
+reference: "Note technique, Curtis Smith"
+revision: "2009"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.circuitnet.com/news/uploads/1/Signature-Analysis.pdf

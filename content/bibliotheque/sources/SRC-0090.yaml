@@ -1,0 +1,12 @@
+# Double capteur à effet Hall à verrouillage : deux signaux en quadrature dont la fréquence donne
+# la vitesse et le déphasage le sens de rotation ; variante à sorties vitesse et sens.
+# Sections citées par leur numéro et leur titre anglais (cours S31).
+id: SRC-0090
+titre: "TMAG511x-Q1 2D, Dual-Channel, High-Sensitivity, Hall-Effect Latch"
+editeur: Texas Instruments
+reference: "SLYS029C"
+revision: "C, décembre 2024"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tmag5110-q1.pdf

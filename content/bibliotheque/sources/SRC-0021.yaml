@@ -1,0 +1,11 @@
+# MOSFET en interrupteur de charge : canal N ou P, commande de grille, pertes I² × RDS(on),
+# influence de VGS sur RDS(on) (cours S09). Sections citées par leur titre anglais.
+id: SRC-0021
+titre: "AND9093 : Using MOSFETs in Load Switch Applications"
+editeur: onsemi (ON Semiconductor)
+reference: "Application note AND9093/D"
+revision: "Rev. 1, février 2014"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.onsemi.com/pub/Collateral/AND9093-D.PDF

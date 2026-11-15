@@ -1,0 +1,11 @@
+# Masses multiples : broches AGND et DGND, masse en étoile, plan de masse (cours S12, repris en
+# S13 pour les plans de cuivre). Sections citées par leur titre anglais.
+id: SRC-0031
+titre: "Grounding in mixed-signal systems demystified, Part 1"
+editeur: Texas Instruments
+reference: "SLYT499, Analog Applications Journal"
+revision: "1Q 2013"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slyt499

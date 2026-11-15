@@ -1,0 +1,201 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S28-Q001
+  bonnes: [a]
+  explication: "Procédure 2.3.1 du guide de réparation."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#identifier-avant-de-retirer"
+- id: S28-Q002
+  bonnes: [a]
+  explication: "Un essai raté ne doit rien abîmer d'utile."
+  pourquoi_faux:
+    b: "Risque pour la zone de travail."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#identifier-avant-de-retirer"
+- id: S28-Q003
+  bonnes: [a]
+  explication: "Tableau d'identification de la procédure 2.3.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#identifier-avant-de-retirer"
+- id: S28-Q004
+  bonnes: [a]
+  explication: "Plus il est dur, plus il se prête à l'abrasion."
+  pourquoi_faux:
+    b: "Plutôt pour un vernis mou."
+    c: "Rarement possible."
+    d: "Non."
+  source: "S28-L01#identifier-avant-de-retirer"
+- id: S28-Q005
+  bonnes: [a]
+  explication: "Procédure 2.3.2."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#retirer-localement"
+- id: S28-Q006
+  bonnes: [a]
+  explication: "Procédure 2.3.2 : retrait local, fiche de données de sécurité lue."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#retirer-localement"
+- id: S28-Q007
+  bonnes: [a]
+  explication: "Procédure 2.3.5 ; faute éliminatoire FE-01."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#retirer-localement"
+- id: S28-Q008
+  bonnes: [a]
+  explication: "Procédure 2.3.1 ; on ne dépasse pas la température de stockage des composants."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#retirer-localement"
+- id: S28-Q009
+  bonnes: [a]
+  explication: "Procédure 2.4.2."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L01#restaurer-le-vernis"
+- id: S28-Q010
+  bonnes: [a]
+  explication: "Procédures 4.2.1 et 4.2.4."
+  pourquoi_faux:
+    b: "Section réduite."
+    c: "Seulement pour un court trajet sans croisement."
+    d: "Non."
+  source: "S28-L02#une-réparation-ne-doit-rien-réduire"
+- id: S28-Q011
+  bonnes: [a]
+  explication: "Procédure 4.2.4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Valeur inventée."
+  source: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+- id: S28-Q012
+  bonnes: [a]
+  explication: "Deux fois la largeur : 2 × 0,3 = 0,6 mm."
+  pourquoi_faux:
+    b: "Une fois seulement."
+    c: "Non."
+    d: "Non."
+  source: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+- id: S28-Q013
+  bonnes: [a]
+  explication: "Procédure 4.2.4 : 3 mm si la place le permet."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+- id: S28-Q014
+  bonnes: [a]
+  explication: "Procédure 4.2.4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+- id: S28-Q015
+  bonnes: [a]
+  explication: "Procédure 4.4.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L02#recoller-ou-remplacer-une-pastille"
+- id: S28-Q016
+  bonnes: [a]
+  explication: "Les valeurs de la procédure ne valent que pour son produit."
+  pourquoi_faux:
+    b: "Non."
+    c: "Durée inventée."
+    d: "Non."
+  source: "S28-L02#recoller-ou-remplacer-une-pastille"
+- id: S28-Q017
+  bonnes: [a]
+  explication: "Procédure 5.1 : percer peut couper les couches internes."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L02#trou-métallisé-et-via"
+- id: S28-Q018
+  bonnes: [a]
+  explication: "Méthode d'atelier de l'académie."
+  pourquoi_faux:
+    b: "Risque de rupture."
+    c: "Non."
+    d: "Non."
+  source: "S28-L02#broche-de-connecteur"
+- id: S28-Q019
+  bonnes: [a]
+  explication: "Procédure 2.2.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L03#reconnaître-une-zone-corrodée"
+- id: S28-Q020
+  bonnes: [a]
+  explication: "Procédure 2.5."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L03#traiter-dans-lordre"
+- id: S28-Q021
+  bonnes: [a]
+  explication: "Procédure 2.2.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L03#traiter-dans-lordre"
+- id: S28-Q022
+  bonnes: [a]
+  explication: "Protocole commun calculateurs réels ; FE-09."
+  pourquoi_faux:
+    b: "Un temps d'attente ne suffit pas."
+    c: "Non."
+    d: "Non."
+  source: "S28-L03#traiter-dans-lordre"
+- id: S28-Q023
+  bonnes: [a]
+  explication: "AEC-Q100 §1.3.2 : pas de certification AEC."
+  pourquoi_faux:
+    b: "Aucune certification AEC."
+    c: "L'approbation revient à l'utilisateur."
+    d: "Non."
+  source: "S28-L03#choisir-un-composant-équivalent"
+- id: S28-Q024
+  bonnes: [a]
+  explication: "AEC-Q100 §1.3.4."
+  pourquoi_faux:
+    b: "Grade 0."
+    c: "Grade 3."
+    d: "Non."
+  source: "S28-L03#choisir-un-composant-équivalent"
+- id: S28-Q025
+  bonnes: [a]
+  explication: "Grille d'équivalence de l'académie."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S28-L03#choisir-un-composant-équivalent"

@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S21-L03-EX01
+  bonnes: [a]
+  explication: "D'après la fiche, WP haute interdit l'écriture ; en l'air ou à la masse, la broche n'a pas d'effet."
+  renvoi_section: "S21-L03#les-protections-décriture"
+- id: S21-L03-EX02
+  bonnes: [a]
+  explication: "Une coupure en plein cycle d'écriture ou d'effacement peut laisser la mémoire dans un état incohérent ; d'où les deux sauvegardes préalables."
+  renvoi_section: "S21-L03#corruption-et-risques"

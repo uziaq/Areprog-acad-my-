@@ -1,0 +1,36 @@
+# Énoncés seulement : les solutions sont dans corrections/S28-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S28-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous ne connaissez pas le vernis d'une carte. Que faites-vous avant de choisir la méthode de retrait ?"
+  propositions:
+    - {id: a, texte: "Des essais simples (dureté, solubilité, réaction à la chaleur, épaisseur) dans une zone non critique"}
+    - {id: b, texte: "Un essai de solvant agressif sur la zone à réparer"}
+    - {id: c, texte: "Immerger la carte dans un solvant"}
+    - {id: d, texte: "Gratter toute la carte"}
+  competences: [D9.3]
+  objectif: O1
+- id: S28-L01-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre le retrait local d'un vernis au solvant."
+  propositions:
+    - {id: a, texte: "Frotter doucement au pinceau ou au bâtonnet de bois"}
+    - {id: b, texte: "Délimiter la zone au ruban haute température"}
+    - {id: c, texte: "Vérifier à l'œil ou sous lampe UV"}
+    - {id: d, texte: "Appliquer un peu de produit à l'écouvillon, plusieurs fois"}
+    - {id: e, texte: "Neutraliser ou nettoyer la zone, sécher"}
+  competences: [D9.3]
+  objectif: O2
+- id: S28-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quelle est la condition principale d'un vernis restauré qui adhère et protège ?"
+  propositions:
+    - {id: a, texte: "Une surface nettoyée à fond avant l'application"}
+    - {id: b, texte: "Une couche très épaisse"}
+    - {id: c, texte: "Un séchage au pistolet à air chaud au maximum"}
+    - {id: d, texte: "Vernir aussi les contacts du connecteur"}
+  competences: [D9.3, D9.5]
+  objectif: O3

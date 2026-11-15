@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S26-L01-EX01
+  bonnes: [a]
+  explication: "L'alliage ne mouille que des surfaces assez chaudes : la panne touche la pastille et la terminaison ensemble, le fil est apporté au point de contact."
+  renvoi_section: "S26-L01#mouiller-cest-chauffer-les-deux-surfaces"
+- id: S26-L01-EX02
+  bonnes: [a]
+  explication: "D'après la fiche AIM : solidus 217 °C, liquidus 220 °C. La plage 179 à 188 °C correspond aux soudures étain-plomb citées par Johanson."
+  renvoi_section: "S26-L01#alliages-avec-et-sans-plomb"
+- id: S26-L01-EX03
+  bonnes: [a]
+  explication: "Les réglages se lisent dans la documentation des fabricants ; les valeurs d'un fabricant ne valent que pour ses composants."
+  renvoi_section: "S26-L01#régler-sans-inventer"

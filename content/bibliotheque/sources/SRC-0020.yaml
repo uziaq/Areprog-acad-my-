@@ -1,0 +1,12 @@
+# Lecture d'une fiche de MOSFET : BVDSS, VGS max, VGS(th), RDS(on), dissipation, diode interne
+# (cours S09). Sections citées par leur numéro et leur titre anglais. Les valeurs de l'exemple
+# de la note (FDMS86101A) ne sont pas reprises comme données d'atelier.
+id: SRC-0020
+titre: "AN-4163 : Shielded Gate POWERTRENCH MOSFET Datasheet Explanation"
+editeur: onsemi
+reference: "Application note AN-4163/D"
+revision: "Rev. 2, septembre 2024"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.onsemi.com/pub/Collateral/AN-4163.pdf

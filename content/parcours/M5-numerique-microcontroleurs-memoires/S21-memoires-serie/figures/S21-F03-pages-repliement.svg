@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG d'après la description de la fiche onsemi CAT24C256 : repliement d'une écriture dans une page, allure sans valeur. -->
+  <defs>
+    <marker id="s21f03-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker>
+    <pattern id="s21f03-h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0 V6" stroke="currentColor" stroke-width="1.5" /></pattern>
+  </defs>
+  <text x="300" y="30" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">une page</text>
+  <rect x="60" y="90" width="40" height="40" fill="url(#s21f03-h)" />
+  <rect x="100" y="90" width="40" height="40" fill="url(#s21f03-h)" />
+  <path d="M60 90 H540 V130 H60 Z M100 90 V130 M140 90 V130 M180 90 V130 M220 90 V130 M260 90 V130 M300 90 V130 M340 90 V130 M380 90 V130 M420 90 V130 M460 90 V130 M500 90 V130" />
+  <text x="60" y="82" fill="currentColor" stroke="none" font-size="10">début de page</text>
+  <text x="540" y="82" fill="currentColor" stroke="none" text-anchor="end" font-size="10">fin de page</text>
+  <text x="320" y="78" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">adresse de départ</text>
+  <path d="M320 82 V88" stroke-width="1.5" />
+  <path d="M320 110 H530" stroke-width="1.5" marker-end="url(#s21f03-fl)" />
+  <path d="M540 130 Q540 190 300 190 Q80 190 80 136" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#s21f03-fl)" />
+  <text x="300" y="210" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">au-delà de la fin : retour au début de la même page, octets écrasés (hachurés)</text>
+</svg>

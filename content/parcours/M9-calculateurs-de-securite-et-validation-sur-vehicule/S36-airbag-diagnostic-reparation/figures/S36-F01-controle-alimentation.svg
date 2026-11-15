@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 645 215" width="645" height="215" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : points de contrôle de l'alimentation d'un calculateur d'airbag, d'après SRC-0097. -->
+  <defs>
+    <marker id="s36f01-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="15" y="20" width="125" height="58" rx="6" />
+  <text x="77.5" y="39.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">1. Entrée</text>
+  <text x="77.5" y="54.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">protection, fusible,</text>
+  <text x="77.5" y="69.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">tension batterie</text>
+  <path d="M140 49 H164" marker-end="url(#s36f01-a)" stroke-width="1.5" />
+  <rect x="165" y="20" width="135" height="58" rx="6" />
+  <text x="232.5" y="39.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">2. Élévateur</text>
+  <text x="232.5" y="54.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">sortie VBST</text>
+  <text x="232.5" y="69.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">(inductance, diode)</text>
+  <path d="M300 49 H324" marker-end="url(#s36f01-a)" stroke-width="1.5" />
+  <rect x="325" y="20" width="140" height="58" rx="6" />
+  <text x="395.0" y="39.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">3. Réserve</text>
+  <text x="395.0" y="54.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">tension VER, capacité</text>
+  <text x="395.0" y="69.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">et résistance série</text>
+  <path d="M465 49 H489" marker-end="url(#s36f01-a)" stroke-width="1.5" />
+  <rect x="490" y="20" width="140" height="58" rx="6" />
+  <text x="560.0" y="39.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">4. Abaisseur</text>
+  <text x="560.0" y="54.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">puis régulateur 5 V</text>
+  <text x="560.0" y="69.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">de la logique</text>
+  <path d="M560 78 V109" marker-end="url(#s36f01-a)" stroke-width="1.5" />
+  <rect x="490" y="110" width="140" height="58" rx="6" />
+  <text x="560.0" y="129.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">5. Microcontrôleur</text>
+  <text x="560.0" y="144.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">conditions de vie</text>
+  <text x="560.0" y="159.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">(S20)</text>
+  <rect x="15" y="110" width="450" height="58" rx="6" stroke-dasharray="6 4" />
+  <text x="240.0" y="129.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Ordre : hors tension (court-circuit, résistance, capacité après décharge),</text>
+  <text x="240.0" y="144.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">puis sous tension limitée, un point après l'autre, comparé</text>
+  <text x="240.0" y="159.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">à l'exemplaire de référence</text>
+  <text x="322" y="200" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Points de contrôle génériques d'après la fiche citée, à relier aux circuits relevés sur la carte.</text>
+</svg>

@@ -1,0 +1,12 @@
+# AOP : gain en boucle ouverte, comparateur, contre-réaction, suiveur, montages inverseur et non
+# inverseur, réaction positive, limites pratiques (cours S10). Manuel libre ; sections citées par
+# leur titre anglais, chapitre 8 (Operational amplifiers).
+id: SRC-0023
+titre: "Lessons In Electric Circuits, Volume III : Semiconductors, chapitre 8"
+editeur: Tony R. Kuphaldt (ibiblio.org)
+reference: "Chapitre 8, Operational Amplifiers, version HTML"
+revision: "copyright 2000-2023"
+date_consultation: 2026-11-14
+type: cours
+licence: libre
+lien: https://ibiblio.org/kuphaldt/electricCircuits/Semi/SEMI_8.html

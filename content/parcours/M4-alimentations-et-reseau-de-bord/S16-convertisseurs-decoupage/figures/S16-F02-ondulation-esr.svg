@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" width="560" height="260" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure de l'ondulation de sortie avec un condensateur sain puis usé, sans valeur. -->
+  <text x="20" y="24" fill="currentColor" stroke="none" font-weight="600">condensateur sain</text>
+  <path d="M60 70 H540" stroke-width="1" stroke-dasharray="3 4" />
+  <text x="54" y="74" fill="currentColor" stroke="none" text-anchor="end" font-size="11">VOUT</text>
+  <path d="M60 70 Q82 62 105 70 T150 70 T195 70 T240 70 T285 70 T330 70 T375 70 T420 70 T465 70 T510 70 T540 70" stroke-width="2.5" />
+  <text x="20" y="134" fill="currentColor" stroke="none" font-weight="600">ESR élevée</text>
+  <path d="M60 190 H540" stroke-width="1" stroke-dasharray="3 4" />
+  <text x="54" y="194" fill="currentColor" stroke="none" text-anchor="end" font-size="11">VOUT</text>
+  <path d="M60 220 L85 160 L105 220 L130 160 L150 220 L175 160 L195 220 L220 160 L240 220 L265 160 L285 220 L310 160 L330 220 L355 160 L375 220 L400 160 L420 220 L445 160 L465 220 L490 160 L510 220 L535 160" stroke-width="2.5" />
+  <text x="300" y="250" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">même échelle verticale pour les deux courbes</text>
+</svg>

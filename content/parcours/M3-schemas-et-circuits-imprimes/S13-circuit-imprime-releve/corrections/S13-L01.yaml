@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S13-L01-EX01
+  bonnes: [a]
+  explication: "Le vernis épargne recouvre le cuivre et laisse les pastilles à nu. La sérigraphie est l'impression des repères par-dessus."
+  renvoi_section: "S13-L01#un-empilement-de-couches"
+- id: S13-L01-EX02
+  bonnes: [a]
+  explication: "Un via traversant se voit des deux côtés. S'il n'apparaît pas sur l'autre face, la piste continue sur une couche interne : on la suit par continuité."
+  renvoi_section: "S13-L01#les-types-de-vias"
+- id: S13-L01-EX03
+  valeur: 47.94
+  tolerance_relative: 0.02
+  unite: mΩ
+  explication: "Section : 0,5 × 10⁻³ × 35 × 10⁻⁶ = 1,75 × 10⁻⁸ m². R = 1,678 × 10⁻⁸ × 0,05 / 1,75 × 10⁻⁸ ≈ 0,048 Ω, soit environ 48 mΩ : au multimètre, on ne la distingue pas d'un court-circuit."
+  renvoi_section: "S13-L01#la-résistance-dune-piste"

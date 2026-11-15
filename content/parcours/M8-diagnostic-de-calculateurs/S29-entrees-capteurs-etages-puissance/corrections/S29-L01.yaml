@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S29-L01-EX01
+  valeur: 20000
+  tolerance_relative: 0.02
+  unite: "Ω"
+  explication: "Rext = 60 V / 3 mA = 20 kΩ, d'après la formule de la fiche LM1815 ; on prend la valeur normalisée immédiatement supérieure."
+  renvoi_section: "S29-L01#le-capteur-inductif"
+- id: S29-L01-EX02
+  bonnes: [a]
+  explication: "Une sortie à drain ouvert ne sait que tirer la ligne vers la masse : la résistance de tirage extérieure donne le niveau haut (fiche DRV5013-Q1)."
+  renvoi_section: "S29-L01#le-capteur-à-effet-hall"
+- id: S29-L01-EX03
+  valeur: 0.45
+  tolerance_relative: 0.02
+  unite: "V"
+  explication: "0,1 V × 4,5 = 0,45 V ; d'après l'application type, 0,1 V à la sonde correspond à un mélange pauvre."
+  renvoi_section: "S29-L01#la-sonde-lambda"

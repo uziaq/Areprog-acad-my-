@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : principe de la localisation d'un court-circuit par chute de tension, sans valeur. -->
+  <defs><marker id="s18f02-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <rect x="60" y="60" width="500" height="18" stroke-width="2" />
+  <text x="310" y="50" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">rail (piste ou plan)</text>
+  <path d="M20 69 H58" marker-end="url(#s18f02-fl)" />
+  <text x="20" y="96" fill="currentColor" stroke="none" font-size="10">injection</text>
+  <text x="20" y="108" fill="currentColor" stroke="none" font-size="10">courant limité</text>
+  <path d="M390 78 V112" />
+  <path d="M382 98 L398 114 M398 98 L382 114" stroke-width="2.5" />
+  <text x="404" y="110" fill="currentColor" stroke="none" font-size="11">défaut vers la masse</text>
+  <path d="M378 128 H402 M383 134 H397 M388 140 H392 M390 114 V128" />
+  <path d="M60 270 H560" stroke-width="1" />
+  <path d="M60 270 V160" stroke-width="1" />
+  <text x="54" y="166" fill="currentColor" stroke="none" text-anchor="end" font-size="10">tension</text>
+  <text x="54" y="274" fill="currentColor" stroke="none" text-anchor="end" font-size="10">0</text>
+  <path d="M70 180 L390 262 H550" stroke-width="2.5" />
+  <path d="M390 160 V270" stroke-width="1" stroke-dasharray="3 4" />
+  <text x="270" y="188" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">la tension baisse : le courant passe</text>
+  <text x="470" y="250" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">plat : plus de courant</text>
+</svg>

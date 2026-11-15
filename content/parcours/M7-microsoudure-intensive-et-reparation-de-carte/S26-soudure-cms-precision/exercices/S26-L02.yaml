@@ -1,0 +1,25 @@
+# Énoncés seulement : les solutions sont dans corrections/S26-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S26-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Comment nettoyez-vous les résidus de flux d'une carte équipée de composants ?"
+  propositions:
+    - {id: a, texte: "À l'alcool isopropylique, au pinceau, dans la demi-heure, sans ultrasons"}
+    - {id: b, texte: "Dans un bac à ultrasons, carte entière"}
+    - {id: c, texte: "À l'air comprimé"}
+    - {id: d, texte: "En plongeant la carte vernie dans le solvant"}
+  competences: [D9.1]
+  objectif: O1
+- id: S26-L02-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre la méthode de pose d'un passif chip au fer proposée par l'académie."
+  propositions:
+    - {id: a, texte: "Souder la deuxième extrémité"}
+    - {id: b, texte: "Étamer légèrement une seule pastille"}
+    - {id: c, texte: "Contrôler au microscope"}
+    - {id: d, texte: "Tenir le composant à la pince et refondre la pastille étamée"}
+    - {id: e, texte: "Nettoyer les pastilles et mettre du flux"}
+  competences: [D9.1]
+  objectif: O2

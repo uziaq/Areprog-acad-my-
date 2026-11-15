@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S15-L02-EX01
+  valeur: 4.2
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Il faut au moins 3,3 + 0,3 = 3,6 V à l'entrée du LDO, plus 0,6 V de diode : 4,2 V avant la diode."
+  renvoi_section: "S15-L02#la-tension-de-déchet"
+- id: S15-L02-EX02
+  bonnes: [a]
+  explication: "La fiche donne une plage stable de résistance série du condensateur de sortie ; en dehors, le LDO peut osciller. On remplace un condensateur par un modèle compatible avec cette plage."
+  renvoi_section: "S15-L02#la-stabilité-et-le-condensateur-de-sortie"
+- id: S15-L02-EX03
+  valeur: 5.0
+  tolerance_relative: 0.02
+  unite: V
+  explication: "VOUT = VFB × (R1 + R2) / R2 = 1,233 × 73 / 18 ≈ 5,0 V."
+  renvoi_section: "S15-L02#la-sortie-réglable"

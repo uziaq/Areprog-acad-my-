@@ -1,0 +1,12 @@
+# Mode de débogage BDM d'une famille de microcontrôleurs : broche unique BKGD, entrée en mode
+# débogage par le reset, accès aux mémoires, sonde de débogage (cours S22). Sections citées par
+# leur numéro et leur titre anglais.
+id: SRC-0064
+titre: "AN3335 – Introduction to HCS08 Background Debug Mode"
+editeur: Freescale Semiconductor (NXP)
+reference: "AN3335"
+revision: "Rev. 1, novembre 2006"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/application-note/AN3335.pdf

@@ -1,0 +1,12 @@
+# MOSFET low-side autoprotégé : limitation de courant, arrêt thermique avec redémarrage
+# automatique, écrêtage drain-grille pour la coupure des charges inductives, qualification
+# AEC-Q101. Sections citées par leur titre anglais (cours S29).
+id: SRC-0085
+titre: "NCV8402, NCV8402A Self-Protected Low Side Driver with Temperature and Current Limit"
+editeur: onsemi
+reference: "NCV8402/D"
+revision: "Rev. 28, décembre 2023"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.onsemi.com/download/data-sheet/pdf/ncv8402-d.pdf

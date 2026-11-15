@@ -1,0 +1,189 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S15-Q001
+  bonnes: [a]
+  explication: "Le circuit de contrôle compare la sortie à une référence et ouvre plus ou moins l'élément de passage."
+  pourquoi_faux:
+    b: "C'est le principe du convertisseur à découpage (S16)."
+    c: "Idem."
+    d: "Il règle en continu, sans couper."
+  source: "S15-L01#le-principe"
+- id: S15-Q002
+  valeur: 0.68
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PD = (5 − 3,3) × 0,4 = 0,68 W."
+  source: "S15-L01#la-puissance-dissipée"
+- id: S15-Q003
+  valeur: 0.85
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PD = (13,5 − 5) × 0,1 = 0,85 W."
+  source: "S15-L01#la-puissance-dissipée"
+- id: S15-Q004
+  bonnes: [a]
+  explication: "VI × IQ reste très petit devant (VI − VO) × IO."
+  pourquoi_faux:
+    b: "Elle existe mais reste faible."
+    c: "Sans rapport."
+    d: "Elle chauffe aussi, mais peu."
+  source: "S15-L01#la-puissance-dissipée"
+- id: S15-Q005
+  bonnes: [a]
+  explication: "Plus l'écart entre entrée et sortie est grand, plus le rendement est faible."
+  pourquoi_faux:
+    b: "Ce rapport dépasse 1."
+    c: "Sans rapport."
+    d: "L'écart entrée-sortie est perdu en chaleur."
+  source: "S15-L01#le-rendement"
+- id: S15-Q006
+  valeur: 1.0
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PD(max) = (125 − 45) / 80 = 1 W."
+  source: "S15-L01#température-de-jonction-et-résistance-thermique"
+- id: S15-Q007
+  bonnes: [a]
+  explication: "La valeur de la fiche correspond à des conditions précises, qu'on lit avec elle."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Elle varie selon le montage."
+  source: "S15-L01#température-de-jonction-et-résistance-thermique"
+- id: S15-Q008
+  bonnes: [a]
+  explication: "Un LDO a une faible tension de déchet, ce qui maximise son rendement."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S15-L02#la-tension-de-déchet"
+- id: S15-Q009
+  valeur: 0.3
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Vdropout = IO × Ron = 0,6 × 0,5 = 0,3 V."
+  source: "S15-L02#exemple-5--tension-de-déchet-et-courant"
+- id: S15-Q010
+  valeur: 5.7
+  tolerance_relative: 0.02
+  unite: V
+  explication: "5 + 0,3 + 0,4 = 5,7 V."
+  source: "S15-L02#exemple-4--le-régulateur-au-démarrage"
+- id: S15-Q011
+  bonnes: [a]
+  explication: "La sortie doit rester correcte avec l'entrée minimale, diode de protection comprise."
+  pourquoi_faux:
+    b: "Faux."
+    c: "Sans rapport."
+    d: "Elle compte au démarrage."
+  source: "S15-L02#la-tension-de-déchet"
+- id: S15-Q012
+  bonnes: [a]
+  explication: "Il alimente la référence, le pont de mesure et l'amplificateur d'erreur."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "C'est la limitation de courant."
+    d: "Sans rapport."
+  source: "S15-L02#le-courant-de-repos"
+- id: S15-Q013
+  bonnes: [a]
+  explication: "Un faible courant de repos préserve la batterie."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S15-L02#le-courant-de-repos"
+- id: S15-Q014
+  bonnes: [a]
+  explication: "La régulation de ligne concerne les variations d'entrée."
+  pourquoi_faux:
+    b: "C'est la régulation de ligne."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S15-L02#régulation-de-ligne-et-de-charge"
+- id: S15-Q015
+  bonnes: [a]
+  explication: "En dehors de cette plage, le LDO peut osciller."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S15-L02#la-stabilité-et-le-condensateur-de-sortie"
+- id: S15-Q016
+  valeur: 4.0
+  tolerance_relative: 0.02
+  unite: V
+  explication: "VOUT = 1,25 × (22 + 10) / 10 = 4 V."
+  source: "S15-L02#la-sortie-réglable"
+- id: S15-Q017
+  bonnes: [a]
+  explication: "Elle protège le régulateur d'une sortie en court-circuit."
+  pourquoi_faux:
+    b: "Elle est au-dessus du nominal."
+    c: "Pas selon cette note."
+    d: "La plupart en ont une."
+  source: "S15-L03#limitation-de-courant-et-arrêt-thermique"
+- id: S15-Q018
+  bonnes: [a]
+  explication: "Une note donne 150 °C typique, une autre 175 °C pour un composant automobile de grade 1 : on lit la fiche."
+  pourquoi_faux:
+    b: "Aucune valeur universelle."
+    c: "Valeur typique d'une note, pas une règle."
+    d: "La plupart en ont un."
+  source: "S15-L03#limitation-de-courant-et-arrêt-thermique"
+- id: S15-Q019
+  bonnes: [a]
+  explication: "Le courant inverse n'est pas limité et peut détruire le régulateur."
+  pourquoi_faux:
+    b: "Faux pour un seul MOSFET."
+    c: "Trop lent et non prévu pour."
+    d: "Sans rapport."
+  source: "S15-L03#linversion-de-polarité"
+- id: S15-Q020
+  bonnes: [a]
+  explication: "Un régulateur sans enable actif ne sort rien : ce n'est pas une panne."
+  pourquoi_faux:
+    b: "Conclusion trop rapide."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S15-L03#enable-reset-et-power-good"
+- id: S15-Q021
+  bonnes: [a]
+  explication: "Un microcontrôleur bien alimenté mais maintenu en reset ne démarre pas : on mesure aussi ce signal."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "C'est l'arrêt thermique."
+    d: "C'est la limitation de courant."
+  source: "S15-L03#enable-reset-et-power-good"
+- id: S15-Q022
+  bonnes: [a]
+  explication: "La limite de courant protège la carte si le défaut persiste ; ne pas l'écrire est la faute FE-02."
+  pourquoi_faux:
+    b: "Aucune limite : un court-circuit restant détruirait la carte."
+    c: "Revient à ne pas limiter."
+    d: "Une inversion de polarité est la faute FE-03."
+  source: "S15-L03#exemple-8--sortie-basse-régulateur-brûlant"
+- id: S15-Q023
+  bonnes: [a]
+  explication: "Un régulateur qui dissipe plus d'un watt peut brûler la peau."
+  pourquoi_faux:
+    b: "Risque de brûlure."
+    c: "Risque de brûlure."
+    d: "Le boîtier reste chaud après la coupure."
+  source: "S15-L03#méthode-de-diagnostic"
+- id: S15-Q024
+  bonnes: [a]
+  explication: "Un électrolytique monté à l'envers peut chauffer et éclater ; une inversion non protégée est la faute FE-03."
+  pourquoi_faux:
+    b: "Un électrolytique est polarisé."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S15-L03#méthode-de-diagnostic"
+- id: S15-Q025
+  bonnes: [a]
+  explication: "Une masse de régulateur coupée ou résistive fausse la sortie : on mesure par rapport à sa broche."
+  pourquoi_faux:
+    b: "Le boîtier n'est pas forcément à la même masse."
+    c: "Sans rapport."
+    d: "On obtiendrait l'écart entrée-sortie."
+  source: "S15-L03#méthode-de-diagnostic"

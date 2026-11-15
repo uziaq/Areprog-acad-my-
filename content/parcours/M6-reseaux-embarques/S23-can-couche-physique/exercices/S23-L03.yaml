@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S23-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S23-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur la fiche d'un transceiver CAN, quelles broches relient le circuit au microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "TXD et RXD"}
+    - {id: b, texte: "CANH et CANL"}
+    - {id: c, texte: "SDA et SCL"}
+    - {id: d, texte: "TCK et TMS"}
+  competences: [D8.1]
+  objectif: O1
+- id: S23-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous observez un bus CAN avec deux sondes ordinaires d'oscilloscope. Où placez-vous les masses des sondes ?"
+  propositions:
+    - {id: a, texte: "Sur la masse du calculateur ; la différence s'obtient par la fonction voie 1 moins voie 2"}
+    - {id: b, texte: "Masse de la sonde 1 sur CAN-L, pointe sur CAN-H"}
+    - {id: c, texte: "Sur la tension batterie"}
+    - {id: d, texte: "Les masses restent en l'air"}
+  competences: [D3.6, D8.1]
+  objectif: O2
+- id: S23-L03-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Un bus CAN fonctionne à 250 kbit/s. Quelle est la durée d'un bit ?"
+  unite_attendue: µs
+  competences: [D8.1]
+  objectif: O3

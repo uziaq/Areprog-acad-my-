@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S09-L03-EX01
+  bonnes: [a]
+  explication: "Le transistor est entre le plus et la charge, qui retourne à la masse : c'est un high-side."
+  renvoi_section: "S09-L03#la-place-du-transistor"
+- id: S09-L03-EX02
+  valeur: 34
+  tolerance_relative: 0.02
+  unite: V
+  explication: "La source est à 24 V quand la sortie est à plein ; pour VGS = 10 V, la grille doit être à 24 + 10 = 34 V, au-dessus de l'alimentation : il faut une source de tension supplémentaire."
+  renvoi_section: "S09-L03#la-commande-dun-high-side"

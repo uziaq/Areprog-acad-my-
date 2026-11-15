@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : niveaux logiques d'une sortie et d'une entrée et marges de bruit, sans valeur. -->
+  <defs><marker id="s19f02-fl" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <text x="140" y="24" fill="currentColor" stroke="none" text-anchor="middle" font-size="12" font-weight="600">sortie (émetteur)</text>
+  <text x="420" y="24" fill="currentColor" stroke="none" text-anchor="middle" font-size="12" font-weight="600">entrée (récepteur)</text>
+  <rect x="100" y="40" width="80" height="80" />
+  <text x="140" y="84" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">1 garanti</text>
+  <rect x="100" y="230" width="80" height="60" />
+  <text x="140" y="264" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">0 garanti</text>
+  <path d="M100 120 H180 M100 230 H180" />
+  <text x="92" y="124" fill="currentColor" stroke="none" text-anchor="end" font-size="11">VOH</text>
+  <text x="92" y="234" fill="currentColor" stroke="none" text-anchor="end" font-size="11">VOL</text>
+  <rect x="380" y="40" width="80" height="110" />
+  <text x="420" y="99" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">lu comme 1</text>
+  <rect x="380" y="150" width="80" height="50" stroke-dasharray="4 3" />
+  <text x="420" y="179" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">indéterminé</text>
+  <rect x="380" y="200" width="80" height="90" />
+  <text x="420" y="249" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">lu comme 0</text>
+  <text x="468" y="154" fill="currentColor" stroke="none" text-anchor="start" font-size="11">VIH</text>
+  <text x="468" y="204" fill="currentColor" stroke="none" text-anchor="start" font-size="11">VIL</text>
+  <path d="M180 120 H380 M180 150 H380" stroke-width="1" stroke-dasharray="3 4" />
+  <path d="M280 122 V148" stroke-width="1.5" marker-start="url(#s19f02-fl)" marker-end="url(#s19f02-fl)" />
+  <text x="290" y="139" fill="currentColor" stroke="none" text-anchor="start" font-size="10">marge haute</text>
+  <path d="M180 230 H380 M180 200 H380" stroke-width="1" stroke-dasharray="3 4" />
+  <path d="M280 202 V228" stroke-width="1.5" marker-start="url(#s19f02-fl)" marker-end="url(#s19f02-fl)" />
+  <text x="290" y="219" fill="currentColor" stroke="none" text-anchor="start" font-size="10">marge basse</text>
+</svg>

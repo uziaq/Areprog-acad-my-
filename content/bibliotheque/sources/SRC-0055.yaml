@@ -1,0 +1,13 @@
+# Analyseur logique : seuil de décision, acquisition asynchrone (timing) et synchrone (état),
+# résolution liée à la période d'échantillonnage, déclenchement, profondeur de mémoire (cours S19).
+# Copie hébergée par une université, l'éditeur ne la diffusant plus à cette adresse ; sections
+# citées par leur titre anglais.
+id: SRC-0055
+titre: "The XYZs of Logic Analyzers (primer)"
+editeur: Tektronix
+reference: "52W-14266-3"
+revision: "mise à jour du 12 mai 2006"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://gab.wallawalla.edu/~larry.aamodt/engr433/tek_XYZs_analyzers.pdf

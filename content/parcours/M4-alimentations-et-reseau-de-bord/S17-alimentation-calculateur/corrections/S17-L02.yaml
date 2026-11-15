@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S17-L02-EX01
+  ordre: [b, a, d, c]
+  explication: "La note TI enchaîne la protection contre l'inversion, la protection transitoire, le filtre CEM et le convertisseur ; les régulateurs internes alimentent ensuite le microcontrôleur."
+  renvoi_section: "S17-L02#larchitecture-générique"
+- id: S17-L02-EX02
+  valeur: 1.05
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = VF × I = 0,7 × 1,5 = 1,05 W, dissipés en permanence. Un MOSFET piloté réduirait fortement cette perte."
+  renvoi_section: "S17-L02#la-protection-contre-linversion-de-polarité"
+- id: S17-L02-EX03
+  bonnes: [a]
+  explication: "Un condensateur céramique peut casser en court-circuit si la carte se tord ; deux en série, tournés à 90°, évitent un court-circuit direct de la batterie. Deux condensateurs en série divisent la capacité, ils ne la doublent pas."
+  renvoi_section: "S17-L02#le-filtre-et-les-condensateurs-dentrée"

@@ -1,0 +1,13 @@
+# Amplificateur d'interface de sonde lambda (oxyde de zirconium) : entrée différentielle parce que
+# la sonde est à la masse du bloc moteur, gain 4,5, niveaux riche / pauvre de l'application type,
+# impédance de la sonde froide, sortie par défaut en cas de sonde froide ou de fil coupé. Sections
+# citées par leur titre anglais (cours S29).
+id: SRC-0083
+titre: "LM9044 Lambda Sensor Interface Amplifier"
+editeur: Texas Instruments
+reference: "SNOSBP4D"
+revision: "D, mars 2013"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/lm9044.pdf

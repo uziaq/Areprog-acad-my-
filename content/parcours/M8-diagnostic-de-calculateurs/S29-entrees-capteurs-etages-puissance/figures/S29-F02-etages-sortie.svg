@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : étages de sortie génériques low-side, high-side et pont en H, schéma de principe sans valeur. -->
+  <defs>
+    <marker id="s29f02-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+    <g id="s29f02-t">
+      <path d="M-10 -14 V14 M-4 -14 V14 M-4 -10 H8 V-20 M-4 10 H8 V20 M-22 0 H-10" />
+    </g>
+  </defs>
+  <!-- low-side -->
+  <path d="M80 40 V70" />
+  <rect x="68" y="70" width="24" height="40" />
+  <path d="M80 110 V130 M88 130 V150" />
+  <use href="#s29f02-t" x="80" y="160" />
+  <path d="M88 180 V205 M73 205 H103 M78 211 H98 M84 217 H92" stroke-width="1.5" />
+  <path d="M80 130 H88" />
+  <!-- high-side -->
+  <path d="M270 40 V50" />
+  <use href="#s29f02-t" x="262" y="70" />
+  <path d="M270 90 V110" />
+  <rect x="258" y="110" width="24" height="40" />
+  <path d="M270 150 V205 M255 205 H285 M260 211 H280 M266 217 H274" stroke-width="1.5" />
+  <!-- pont en H -->
+  <path d="M400 40 H540 M420 40 V50 M520 40 V50" />
+  <use href="#s29f02-t" x="412" y="70" />
+  <use href="#s29f02-t" x="512" y="70" />
+  <use href="#s29f02-t" x="412" y="160" />
+  <use href="#s29f02-t" x="512" y="160" />
+  <path d="M420 90 V140 M520 90 V140 M420 180 V205 M520 180 V205 M400 205 H540" />
+  <path d="M420 115 H450 M490 115 H520" />
+  <circle cx="470" cy="115" r="18" />
+  <path d="M440 100 H500" stroke-width="1" marker-end="url(#s29f02-a)" />
+  <path d="M500 132 H440" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#s29f02-a)" />
+  <g fill="currentColor" stroke="none" font-size="11" text-anchor="middle">
+    <text x="80" y="20" font-size="12">low-side</text>
+    <text x="80" y="36">+ batterie</text>
+    <text x="120" y="94">charge</text>
+    <text x="125" y="135">sortie</text>
+    <text x="80" y="236">transistor côté masse</text>
+    <text x="270" y="20" font-size="12">high-side</text>
+    <text x="270" y="36">+ batterie</text>
+    <text x="310" y="134">charge</text>
+    <text x="310" y="104">sortie</text>
+    <text x="270" y="236">transistor côté batterie</text>
+    <text x="470" y="20" font-size="12">pont en H</text>
+    <text x="470" y="119">M</text>
+    <text x="470" y="94" font-size="10">un sens</text>
+    <text x="470" y="146" font-size="10">l'autre sens</text>
+    <text x="400" y="119">OUT1</text>
+    <text x="545" y="119">OUT2</text>
+    <text x="470" y="236">quatre transistors, deux sens</text>
+  </g>
+</svg>

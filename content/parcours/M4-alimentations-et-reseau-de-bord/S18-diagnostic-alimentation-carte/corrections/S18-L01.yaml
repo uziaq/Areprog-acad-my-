@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S18-L01-EX01
+  bonnes: [a]
+  explication: "La borne 30 seule reproduit le véhicule à l'arrêt, contact coupé ; avec la borne 15, le calculateur est réveillé. On relève le courant dans chaque état et on le compare à la référence."
+  renvoi_section: "S18-L01#le-banc-dalimentation"
+- id: S18-L01-EX02
+  ordre: [b, a, c, d]
+  explication: "Protocole commun : repérer l'étage, mesurer, décharger à travers une résistance si besoin, puis mesurer de nouveau, car une tension de recouvrement peut réapparaître. Un temps d'attente ne remplace jamais la mesure."
+  renvoi_section: "S18-L01#le-protocole-commun-calculateurs-réels"
+- id: S18-L01-EX03
+  valeur: 0.144
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 12 × 0,012 = 0,144 W, en permanence. On compare le courant à celui d'un exemplaire de référence dans les mêmes conditions."
+  renvoi_section: "S18-L01#la-mise-sous-tension-progressive"

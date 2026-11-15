@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S39-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S39-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un calculateur d'airbag réparé pendant le cursus est monté sur un véhicule d'atelier. Que faut-il ?"
+  propositions:
+    - {id: a, texte: "Tous les modules pyrotechniques débranchés selon le constructeur et remplacés par des simulateurs ; batterie débranchée aux connexions ; personne dans l'habitacle au contact"}
+    - {id: b, texte: "Brancher les allumeurs réels pour un essai complet"}
+    - {id: c, texte: "Débrancher seulement l'airbag du conducteur"}
+    - {id: d, texte: "Mettre le contact pendant le branchement"}
+  competences: [D10.6]
+  objectif: O1
+- id: S39-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une réserve d'énergie de 2,2 mF est chargée à 33 V. Quelle énergie garde-t-elle, en joules ?"
+  unite_attendue: "J"
+  competences: [D10.6, D10.7]
+  objectif: O2

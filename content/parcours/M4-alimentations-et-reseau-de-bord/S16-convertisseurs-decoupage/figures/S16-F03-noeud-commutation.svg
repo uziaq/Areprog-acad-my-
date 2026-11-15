@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" height="230" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure du nœud de commutation d'un buck à diode, sans valeur. -->
+  <path d="M60 150 H540" stroke-width="1" stroke-dasharray="3 4" />
+  <text x="54" y="154" fill="currentColor" stroke="none" text-anchor="end" font-size="11">0 V</text>
+  <path d="M60 158 H80 V60 H170 V158 H260 V60 H350 V158 H440 V60 H530 V158 H540" stroke-width="2.5" />
+  <text x="54" y="64" fill="currentColor" stroke="none" text-anchor="end" font-size="11">VIN</text>
+  <text x="200" y="176" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">− VF (la diode conduit)</text>
+  <path d="M260 40 H350" stroke-width="1" />
+  <path d="M266 36 L260 40 L266 44 M344 36 L350 40 L344 44" stroke-width="1" />
+  <text x="305" y="32" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">tON</text>
+  <path d="M260 200 H440" stroke-width="1" />
+  <path d="M266 196 L260 200 L266 204 M434 196 L440 200 L434 204" stroke-width="1" />
+  <path d="M260 190 V210 M440 190 V210" stroke-width="1" />
+  <text x="350" y="222" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">T</text>
+  <text x="305" y="110" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">transistor fermé</text>
+</svg>

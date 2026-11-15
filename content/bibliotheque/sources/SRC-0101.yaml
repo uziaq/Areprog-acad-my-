@@ -1,0 +1,13 @@
+# Note d'application sur la commande des électrovannes : commande côté bas, côté haut, demi-pont
+# et pont en H, roue libre, écrêtage et coupure rapide, temps de décroissance du courant,
+# régulation de courant et commande crête puis maintien. Utilisée en S37 pour les étages
+# d'électrovannes. Sections citées par leur numéro et leur titre anglais.
+id: SRC-0101
+titre: "Using Motor Drivers to Drive Solenoids"
+editeur: Texas Instruments
+reference: "SLVAE59A"
+revision: "A, avril 2022"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/SLVAE59

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 240" width="590" height="240" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : les trois parties du dossier de validation renforcée. -->
+  <defs>
+    <marker id="s39f02-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="195" y="15" width="200" height="52" rx="6" />
+  <text x="295.0" y="38.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Dossier de validation</text>
+  <text x="295.0" y="53.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">renforcée</text>
+  <path d="M240 67 V90 H95 V109" marker-end="url(#s39f02-a)" stroke-width="1.5" />
+  <path d="M295 67 V109" marker-end="url(#s39f02-a)" stroke-width="1.5" />
+  <path d="M350 67 V90 H495 V109" marker-end="url(#s39f02-a)" stroke-width="1.5" />
+  <rect x="15" y="110" width="160" height="82" rx="6" />
+  <text x="95.0" y="141.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Validé sur banc</text>
+  <text x="95.0" y="156.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">mesures, captures,</text>
+  <text x="95.0" y="171.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">comparées à la référence</text>
+  <rect x="215" y="110" width="160" height="82" rx="6" />
+  <text x="295.0" y="141.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Validé sur véhicule</text>
+  <text x="295.0" y="156.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">défauts, valeurs réelles,</text>
+  <text x="295.0" y="171.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">apprentissages, essais</text>
+  <rect x="415" y="110" width="160" height="82" rx="6" stroke-dasharray="6 4" />
+  <text x="495.0" y="141.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Non validable</text>
+  <text x="495.0" y="156.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">en atelier : ce qui reste</text>
+  <text x="495.0" y="171.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">à faire, et pourquoi</text>
+  <text x="295" y="225" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Aucun calculateur de sécurité n'est remis en circulation pendant le cursus (D-14).</text>
+</svg>

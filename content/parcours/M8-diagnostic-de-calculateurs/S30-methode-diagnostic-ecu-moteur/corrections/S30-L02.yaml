@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S30-L02-EX01
+  bonnes: [a]
+  explication: "Un écart net dans les deux sens désigne un court-circuit sur la ligne ; il désigne la zone, pas le composant. Le composant isolé et mesuré justifie le remplacement (FE-13)."
+  renvoi_section: "S30-L02#exemple-1--une-broche-dentrée-en-court-circuit"
+- id: S30-L02-EX02
+  valeur: 100
+  tolerance_relative: 0.02
+  unite: "Ω"
+  explication: "2 300 Ω − 2 200 Ω = 100 Ω, soit environ 5 % : dans la précision du multimètre et la dispersion des composants, cet écart ne désigne rien à lui seul."
+  renvoi_section: "S30-L02#exemple-2--un-écart-qui-ne-prouve-rien"
+- id: S30-L02-EX03
+  bonnes: [a]
+  explication: "La boucle venait de la capacité en parallèle sur la jonction ; sa disparition oriente vers un condensateur déconnecté, comme dans l'exemple de la note Huntron. L'inspection et la mesure isolée donnent la preuve."
+  renvoi_section: "S30-L02#exemple-3--lire-une-signature"

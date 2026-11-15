@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S37-L01-EX01
+  bonnes: [a]
+  explication: "D'après la fiche, un défaut de chien de garde coupe les commandes côté haut et côté bas, l'interface des capteurs de roue et les voyants haute tension, et active le voyant basse tension et le reset."
+  renvoi_section: "S37-L01#les-surveillances-et-leur-effet"
+- id: S37-L01-EX02
+  valeur: 0.675
+  tolerance_relative: 0.02
+  unite: "W"
+  explication: "P = R × I² = 0,3 × 1,5² = 0,3 × 2,25 = 0,675 W."
+  renvoi_section: "S37-L01#exemple-1--la-dissipation-dune-commande-délectrovanne"
+- id: S37-L01-EX03
+  bonnes: [a]
+  explication: "Aucune intervention hydraulique dans le cursus ; la séparation suit la procédure du constructeur ; le liquide de frein se manipule selon sa fiche de données de sécurité."
+  renvoi_section: "S37-L01#dépose-et-précautions"

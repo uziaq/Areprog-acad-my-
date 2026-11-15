@@ -1,0 +1,14 @@
+# Circuit de puissance et d'interface capteurs pour calculateur de freinage (ABS, ESC) : huit
+# commandes d'électrovannes côté bas (dont quatre en PWM), deux commandes de transistors côté haut
+# (moteur de pompe, alimentation des électrovannes), interface de quatre capteurs de vitesse de
+# roue actifs ou « intelligents » à courant modulé, chien de garde, voyants, ligne K. Utilisé en
+# S37 pour l'architecture générique. Sections citées par leur numéro et leur titre anglais.
+id: SRC-0100
+titre: "TPIC7218-Q1 Power Controller and Sensor ASIC For Braking Applications"
+editeur: Texas Instruments
+reference: "SLDS182A"
+revision: "A, juillet 2015"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/slds182a/slds182a.pdf

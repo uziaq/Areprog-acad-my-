@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S18-L02-EX01
+  bonnes: [a]
+  explication: "Tension réglée à la tension nominale du rail, jamais plus ; limite basse puis augmentée par pas ; jamais au-delà du courant que supporte le composant le plus faible."
+  renvoi_section: "S18-L02#injecter-un-courant-limité"
+- id: S18-L02-EX02
+  valeur: 0.24
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 0,4 × 0,6 = 0,24 W. C'est peu : un point chaud peut rester discret, d'où la montée du courant par pas, dans la limite du composant le plus faible."
+  renvoi_section: "S18-L02#la-méthode-thermique"
+- id: S18-L02-EX03
+  valeur: 0.6
+  tolerance_relative: 0.02
+  unite: mΩ
+  explication: "R = 1,2 mV / 2 A = 0,6 mΩ. Une chute mesurable signifie que le courant passe encore : le défaut est plus loin du point d'injection."
+  renvoi_section: "S18-L02#la-chute-de-tension-le-long-du-rail"

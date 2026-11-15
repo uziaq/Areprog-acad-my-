@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S30-L03-EX01
+  bonnes: [a]
+  explication: "Le convertisseur élévateur de la commande d'injecteurs produit une tension élevée (jusqu'à 72 V dans le circuit cité) ; ses condensateurs se déchargent avec une mesure, refaite juste avant le contact (FE-09)."
+  renvoi_section: "S30-L03#le-bloc-dinjection-à-tension-élevée"
+- id: S30-L03-EX02
+  valeur: 1.44
+  tolerance_relative: 0.02
+  unite: "V"
+  explication: "0,30 × 4,8 V = 1,44 V ; le rapport reste le même, donc la valeur réelle lue à l'outil ne doit pas changer quand l'alimentation baisse."
+  renvoi_section: "S30-L03#exemple-1--une-valeur-réelle-de-pression"

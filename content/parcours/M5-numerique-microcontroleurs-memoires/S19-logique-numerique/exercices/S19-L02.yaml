@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S19-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S19-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une sortie garantit VOL = 0,4 V ; l'entrée qu'elle commande demande VIL = 1,5 V. Quelle est la marge de bruit au niveau bas ?"
+  unite_attendue: V
+  competences: [D7.1]
+  objectif: O1
+- id: S19-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une sortie à drain ouvert est reliée à une ligne sans résistance de tirage. Quand la sortie est inactive, quel niveau lisez-vous ?"
+  propositions:
+    - {id: a, texte: "Aucun niveau défini : la ligne flotte, faute de résistance de tirage"}
+    - {id: b, texte: "Un niveau haut franc"}
+    - {id: c, texte: "Toujours 0 V exactement"}
+    - {id: d, texte: "La moitié de la tension d'alimentation, garantie"}
+  competences: [D7.1]
+  objectif: O2
+- id: S19-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une sortie 3,3 V garantit VOH = 2,4 V. Elle commande une entrée CMOS alimentée en 5 V dont VIH = 0,7 × VCC. La liaison est-elle sûre ?"
+  propositions:
+    - {id: a, texte: "Non : VIH vaut 3,5 V, plus que les 2,4 V garantis ; il faut un translateur ou une entrée compatible TTL"}
+    - {id: b, texte: "Oui, car 2,4 V est un niveau haut"}
+    - {id: c, texte: "Oui, si l'on ajoute un condensateur"}
+    - {id: d, texte: "Non, car la sortie 3,3 V va être détruite"}
+  competences: [D7.1]
+  objectif: O3

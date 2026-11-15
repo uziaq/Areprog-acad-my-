@@ -1,0 +1,201 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S27-Q001
+  bonnes: [a]
+  explication: "NASA-STD-8739.2 §6.7 : sources de chaleur reliées à la terre, procédure écrite."
+  pourquoi_faux:
+    b: "Non : température aussi basse que possible."
+    c: "Non."
+    d: "Non."
+  source: "S27-L01#chauffer-sans-contact"
+- id: S27-Q002
+  bonnes: [a]
+  explication: "Note TI AN-2029 §8 : protéger les voisins et la carte."
+  pourquoi_faux:
+    b: "Risque pour les voisins et la carte."
+    c: "Valeur inventée."
+    d: "Non."
+  source: "S27-L01#chauffer-sans-contact"
+- id: S27-Q003
+  bonnes: [a]
+  explication: "Note TI AN-2029 §9 et §3."
+  pourquoi_faux:
+    b: "Non."
+    c: "La notice donne les réglages de la station, pas la limite du boîtier."
+    d: "Non."
+  source: "S27-L01#chauffer-sans-contact"
+- id: S27-Q004
+  bonnes: [a]
+  explication: "La consigne n'est pas la température du boîtier ; on vérifie sur carte d'essai."
+  pourquoi_faux:
+    b: "Non."
+    c: "Valeur inventée."
+    d: "Valeur inventée."
+  source: "S27-L01#exemple-1--lire-la-température-limite"
+- id: S27-Q005
+  bonnes: [a]
+  explication: "Note TI SLUA271C §6.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L01#préchauffer-par-le-dessous"
+- id: S27-Q006
+  bonnes: [a]
+  explication: "TI précise d'adapter le profil (SLUA271C §6.1)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non : notice de la station et mesure."
+    d: "Non."
+  source: "S27-L01#préchauffer-par-le-dessous"
+- id: S27-Q007
+  bonnes: [a]
+  explication: "Protection des voisins sensibles : FE-11."
+  pourquoi_faux:
+    b: "Il fond bien avant l'alliage."
+    c: "Non."
+    d: "Non : débit faible."
+  source: "S27-L01#protéger-les-voisins"
+- id: S27-Q008
+  bonnes: [a]
+  explication: "Un débit fort fait s'envoler les petits passifs."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L01#protéger-les-voisins"
+- id: S27-Q009
+  bonnes: [a]
+  explication: "Fiche de l'alliage : ventilation adaptée ; FE-12."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non : la fiche AIM exige une ventilation."
+    d: "Non."
+  source: "S27-L01#fumées-et-brûlures"
+- id: S27-Q010
+  bonnes: [a]
+  explication: "NASA-STD-8739.3 §10.1."
+  pourquoi_faux:
+    b: "Choc thermique."
+    c: "Choc thermique."
+    d: "Non."
+  source: "S27-L01#fumées-et-brûlures"
+- id: S27-Q011
+  bonnes: [a]
+  explication: "Note TI AN-2029 §3."
+  pourquoi_faux:
+    b: "Non."
+    c: "Défaut des passifs."
+    d: "Non."
+  source: "S27-L02#leffet-popcorn"
+- id: S27-Q012
+  bonnes: [a]
+  explication: "D'où la prévention par l'étuvage."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L02#leffet-popcorn"
+- id: S27-Q013
+  bonnes: [a]
+  explication: "Note TI AN-2029 §3."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L02#les-niveaux-msl"
+- id: S27-Q014
+  bonnes: [a]
+  explication: "Tableau de la note TI (J-STD-033)."
+  pourquoi_faux:
+    b: "C'est le MSL 1."
+    c: "C'est le MSL 2."
+    d: "C'est le MSL 5A."
+  source: "S27-L02#les-niveaux-msl"
+- id: S27-Q015
+  bonnes: [a]
+  explication: "Tableau de la note TI."
+  pourquoi_faux:
+    b: "MSL 1."
+    c: "MSL 4."
+    d: "Non."
+  source: "S27-L02#les-niveaux-msl"
+- id: S27-Q016
+  bonnes: [a]
+  explication: "168 h = 7 jours ; étuvage selon la fiche et la J-STD-033."
+  pourquoi_faux:
+    b: "Durée dépassée."
+    c: "Pas nécessaire."
+    d: "Aggrave le risque."
+  source: "S27-L02#exemple-4--composant-msl-3"
+- id: S27-Q017
+  bonnes: [a]
+  explication: "AN-2029 §10 : étuvage si la durée est dépassée ou inconnue."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L02#étuver-avant-de-chauffer"
+- id: S27-Q018
+  bonnes: [a]
+  explication: "Une mémoire abîmée à la dépose ne se relit plus ; deux empreintes identiques prouvent la lecture."
+  pourquoi_faux:
+    b: "Risque de perte."
+    c: "Jamais."
+    d: "Non."
+  source: "S27-L03#avant-de-déposer"
+- id: S27-Q019
+  bonnes: [a]
+  explication: "Retrait local (S17-L03) ; le retrait approfondi est en S28."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L03#avant-de-déposer"
+- id: S27-Q020
+  bonnes: [a]
+  explication: "Sinon une pastille vient avec la broche (SLUA271C §6.1)."
+  pourquoi_faux:
+    b: "Arrachement."
+    c: "Durée arbitraire."
+    d: "Non."
+  source: "S27-L03#déposer-à-lair-chaud"
+- id: S27-Q021
+  bonnes: [a]
+  explication: "SLUA271C §6.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L03#déposer-à-lair-chaud"
+- id: S27-Q022
+  bonnes: [a]
+  explication: "SLUA271C §6.2 ; les pastilles fines sont fragiles."
+  pourquoi_faux:
+    b: "Pastille soulevée."
+    c: "Non."
+    d: "Non."
+  source: "S27-L03#nettoyer-les-pastilles"
+- id: S27-Q023
+  bonnes: [a]
+  explication: "Les deux coins fixent le composant sans le décaler."
+  pourquoi_faux:
+    b: "Le composant pivote."
+    c: "Non."
+    d: "Trop tôt."
+  source: "S27-L03#reposer-un-soic-un-tssop-ou-un-qfp"
+- id: S27-Q024
+  bonnes: [a]
+  explication: "NASA-STD-8739.2 §12.9."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L03#reposer-un-soic-un-tssop-ou-un-qfp"
+- id: S27-Q025
+  bonnes: [a]
+  explication: "SLUA271C §1.1 : on complète par le contrôle électrique."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S27-L03#qfn-alliage-de-dépose-et-bga"

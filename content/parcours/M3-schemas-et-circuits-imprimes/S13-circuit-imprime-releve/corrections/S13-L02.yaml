@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S13-L02-EX01
+  bonnes: [a]
+  explication: "Vue de dessous, la face arrière est en miroir. On la retourne horizontalement, puis on aligne des repères communs aux deux faces : trous, vias traversants, broches traversantes."
+  renvoi_section: "S13-L02#superposer-le-recto-et-le-verso"
+- id: S13-L02-EX02
+  bonnes: [a]
+  explication: "Une piste fait une fraction d'ohm. Le seuil du buzzer dépend du modèle et peut laisser sonner à travers une petite résistance ; l'ohmmètre tranche."
+  renvoi_section: "S13-L02#confirmer-au-multimètre"
+- id: S13-L02-EX03
+  ordre: [d, b, a, c]
+  explication: "On se relie d'abord au poste ESD, on vérifie que la carte est hors tension et déchargée, on photographie, puis on mesure."
+  renvoi_section: "S13-L02#préparer-la-carte"

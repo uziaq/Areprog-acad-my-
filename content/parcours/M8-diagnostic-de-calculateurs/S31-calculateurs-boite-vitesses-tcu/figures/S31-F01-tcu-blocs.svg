@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : blocs génériques d'un TCU, schéma de principe sans brochage, pas un schéma constructeur. -->
+  <defs>
+    <marker id="s31f01-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="240" y="15" width="160" height="44" rx="6" />
+  <text x="320.0" y="34.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Alimentation</text>
+  <text x="320.0" y="50.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">régulateurs, reset</text>
+  <path d="M320 59 V74" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <rect x="240" y="75" width="160" height="230" rx="6" />
+  <text x="320.0" y="194" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Microcontrôleur</text>
+  <rect x="20" y="70" width="165" height="48" rx="6" />
+  <text x="102.5" y="91.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Vitesse</text>
+  <text x="102.5" y="107.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">Hall ou inductif, 2 voies</text>
+  <path d="M185 94 H239" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <rect x="20" y="132" width="165" height="48" rx="6" />
+  <text x="102.5" y="153.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Position sélecteur</text>
+  <text x="102.5" y="169.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">Hall</text>
+  <path d="M185 156 H239" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <rect x="20" y="194" width="165" height="48" rx="6" />
+  <text x="102.5" y="215.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Pression</text>
+  <text x="102.5" y="231.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">ratiométrique</text>
+  <path d="M185 218 H239" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <rect x="20" y="256" width="165" height="48" rx="6" />
+  <text x="102.5" y="277.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Température</text>
+  <text x="102.5" y="293.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">CTN en pont</text>
+  <path d="M185 280 H239" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <rect x="455" y="95" width="165" height="52" rx="6" />
+  <text x="537.5" y="118.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Électrovannes</text>
+  <text x="537.5" y="134.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">régulées en courant</text>
+  <rect x="455" y="165" width="165" height="52" rx="6" />
+  <text x="537.5" y="188.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Électrovannes</text>
+  <text x="537.5" y="204.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">tout ou rien</text>
+  <path d="M400 121 H454" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <path d="M400 191 H454" marker-end="url(#s31f01-a)" stroke-width="1.5" />
+  <rect x="455" y="250" width="165" height="44" rx="6" />
+  <text x="537.5" y="269.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">CAN</text>
+  <text x="537.5" y="285.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">émetteur-récepteur</text>
+  <path d="M400 272 H454" stroke-width="1.5" />
+  <text x="537" y="312" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">vers l'ECU moteur et le véhicule</text>
+</svg>

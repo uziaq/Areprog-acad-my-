@@ -1,0 +1,13 @@
+# JTAG (IEEE 1149.1) : port d'accès de test (TAP), signaux TCK, TMS, TDI, TDO, registres
+# d'instruction et de données, chaîne de cellules de scan aux broches, chaînage de plusieurs
+# circuits (cours S22). Guide d'introduction de Texas Instruments ; la norme elle-même est payante.
+# Sections citées par leur titre anglais.
+id: SRC-0063
+titre: "IEEE Std 1149.1 (JTAG) Testability Primer"
+editeur: Texas Instruments
+reference: "SSYA002D"
+revision: "1997"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/ssya002

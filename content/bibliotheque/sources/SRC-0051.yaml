@@ -1,0 +1,13 @@
+# Recherche d'un court-circuit sur un rail par injection de courant limité et caméra thermique :
+# préparation, limite de courant basse puis augmentée par pas, sans dépasser le courant du composant
+# le plus faible, lecture des points chauds, résultats possibles (cours S18). Article d'un bureau
+# d'études ; sections citées par leur titre anglais.
+id: SRC-0051
+titre: "Troubleshooting Electronic Board Power Rail Shorts with a Thermal Camera"
+editeur: ACDi
+reference: "Article de blog"
+revision: "20 janvier 2022, mis à jour le 13 juin 2025"
+date_consultation: 2026-11-15
+type: site
+licence: lien_seulement
+lien: https://www.acdi.com/troubleshooting-electronic-board-power-rail-shorts-with-a-thermal-camera/

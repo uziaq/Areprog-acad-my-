@@ -1,0 +1,13 @@
+# Amplificateur d'interface pour capteur inductif (à réluctance variable) : détection du passage
+# par zéro, seuil d'armement adaptatif qui suit l'amplitude, écrêtage interne de l'entrée et
+# résistance série de limitation de courant (Rext ≥ Vin crête / 3 mA). Sections citées par leur
+# titre anglais en capitales (cours S29).
+id: SRC-0081
+titre: "LM1815 Adaptive Variable Reluctance Sensor Amplifier"
+editeur: Texas Instruments
+reference: "SNOSBU8F"
+revision: "F, mars 2013"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/lm1815.pdf

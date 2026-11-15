@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S32-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S32-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Le commutateur high-side multivoies cité existe en deux versions. Que fournit la version B ?"
+  propositions:
+    - {id: a, texte: "Une recopie analogique du courant de charge"}
+    - {id: b, texte: "Une sortie de défaut à drain ouvert seulement"}
+    - {id: c, texte: "Une liaison CAN"}
+    - {id: d, texte: "Une mesure de température d'huile"}
+  competences: [D10.3]
+  objectif: O1
+- id: S32-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Voie bloquée, charge débranchée : que donne la sortie du commutateur cité ?"
+  propositions:
+    - {id: a, texte: "Une tension proche de l'alimentation, et le défaut de charge ouverte est signalé"}
+    - {id: b, texte: "0 V sans défaut"}
+    - {id: c, texte: "Un court-circuit à la masse"}
+    - {id: d, texte: "Une tension négative"}
+  competences: [D10.3]
+  objectif: O2
+- id: S32-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Une charge consomme 1 A. Rapport de recopie 500, résistance de recopie 1 kΩ. Quelle tension lit-on sur la résistance ?"
+  unite_attendue: "V"
+  competences: [D10.3]
+  objectif: O2

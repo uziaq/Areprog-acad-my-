@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S31-L02-EX01
+  valeur: 11.23
+  tolerance_relative: 0.02
+  unite: "Ω"
+  explication: "R = 8 × (1 + 0,004041 × 100) ≈ 11,2 Ω : à tension fixe, le courant baisserait d'autant."
+  renvoi_section: "S31-L02#exemple-1--la-bobine-chaude"
+- id: S31-L02-EX02
+  bonnes: [a]
+  explication: "La force dépend du courant ; la régulation compense la hausse de résistance de la bobine chaude et les variations de la tension batterie."
+  renvoi_section: "S31-L02#pourquoi-réguler-le-courant"
+- id: S31-L02-EX03
+  valeur: 0.48
+  tolerance_relative: 0.02
+  unite: "V"
+  explication: "0,8 A / 20 000 = 40 µA ; 40 µA × 12 kΩ = 0,48 V. On compare ensuite au courant lu à la pince."
+  renvoi_section: "S31-L02#exemple-3--lire-la-recopie-de-courant"

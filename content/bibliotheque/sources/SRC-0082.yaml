@@ -1,0 +1,12 @@
+# Capteur à effet Hall à sortie bistable (latch), qualifié automobile : seuils magnétiques BOP et
+# BRP avec hystérésis, sortie à drain ouvert qui exige une résistance de tirage, protections.
+# Sections citées par leur numéro et leur titre anglais (cours S29).
+id: SRC-0082
+titre: "DRV5013-Q1 Automotive Digital-Latch Hall Effect Sensor"
+editeur: Texas Instruments
+reference: "SLIS162I"
+revision: "I, février 2023"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/drv5013-q1.pdf

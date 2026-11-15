@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S31-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S31-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un capteur de vitesse à deux voies Hall en quadrature équipe une boîte. Qu'est-ce qui donne le sens de rotation ?"
+  propositions:
+    - {id: a, texte: "Le déphasage entre les deux signaux"}
+    - {id: b, texte: "La fréquence d'un seul signal"}
+    - {id: c, texte: "L'amplitude des signaux"}
+    - {id: d, texte: "La tension d'alimentation du capteur"}
+  competences: [D10.3]
+  objectif: O1
+- id: S31-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un arbre tourne à 25 tours par seconde devant une cible de 60 dents. Quelle fréquence doit donner le capteur de vitesse ?"
+  unite_attendue: "Hz"
+  competences: [D10.3]
+  objectif: O2
+- id: S31-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "La température d'huile monte. Comment varie la résistance d'une thermistance CTN ?"
+  propositions:
+    - {id: a, texte: "Elle baisse"}
+    - {id: b, texte: "Elle monte"}
+    - {id: c, texte: "Elle ne change pas"}
+    - {id: d, texte: "Elle devient infinie"}
+  competences: [D10.3]
+  objectif: O2

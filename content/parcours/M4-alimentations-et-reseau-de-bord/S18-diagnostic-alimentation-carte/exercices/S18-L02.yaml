@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S18-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S18-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous injectez du courant dans un rail de 5 V en court-circuit. Le plus petit composant du rail supporte 0,5 A d'après sa fiche. Quel réglage retenez-vous ?"
+  propositions:
+    - {id: a, texte: "5 V, limite de départ basse, augmentée par petits pas sans jamais dépasser 0,5 A"}
+    - {id: b, texte: "12 V et 3 A pour faire chauffer vite"}
+    - {id: c, texte: "5 V sans limite de courant"}
+    - {id: d, texte: "0,5 A d'emblée, à la tension maximale de l'alimentation"}
+  competences: [D6.4, D3.2]
+  objectif: O1
+- id: S18-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Pendant l'injection, l'alimentation affiche 0,6 A et 0,4 V. Quelle puissance est dissipée dans le rail et son défaut ?"
+  unite_attendue: W
+  competences: [D6.4]
+  objectif: O2
+- id: S18-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "On injecte 2 A dans un rail ; entre deux points de la piste, on lit 1,2 mV. Quelle est la résistance de ce tronçon ?"
+  unite_attendue: mΩ
+  competences: [D6.4]
+  objectif: O3

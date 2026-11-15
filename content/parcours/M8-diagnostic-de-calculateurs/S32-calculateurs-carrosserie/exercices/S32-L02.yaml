@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S32-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S32-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Budget de repos : SBC 80 µA, station de base de transpondeur 200 µA, fuites estimées 20 µA. Quelle consommation totale attend-on ?"
+  unite_attendue: "µA"
+  competences: [D10.3]
+  objectif: O1
+- id: S32-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pourquoi place-t-on un interrupteur en parallèle sur l'ampèremètre pour mesurer un courant de repos ?"
+  propositions:
+    - {id: a, texte: "Pour ne pas couper l'alimentation au changement de calibre, ce qui pourrait réveiller ou réinitialiser le calculateur"}
+    - {id: b, texte: "Pour augmenter le courant de repos"}
+    - {id: c, texte: "Pour protéger l'outil de diagnostic"}
+    - {id: d, texte: "Ce n'est pas utile"}
+  competences: [D10.3]
+  objectif: O1
+- id: S32-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur banc, un module ne s'endort pas une heure après la coupure de la borne 15. Quelle première action ?"
+  propositions:
+    - {id: a, texte: "Retirer l'outil de diagnostic, vérifier la terminaison du bus et les entrées de réveil, comme sur la référence"}
+    - {id: b, texte: "Remplacer le SBC"}
+    - {id: c, texte: "Augmenter la limite de courant"}
+    - {id: d, texte: "Conclure que la carte est en panne"}
+  competences: [D10.3]
+  objectif: O2

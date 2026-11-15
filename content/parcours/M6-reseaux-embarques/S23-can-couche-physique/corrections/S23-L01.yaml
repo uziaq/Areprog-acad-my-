@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S23-L01-EX01
+  bonnes: [a]
+  explication: "À l'état récessif, CAN-H et CAN-L sont polarisés vers le même niveau : la différence est proche de 0 V, que le bus dorme ou soit seulement sans trafic."
+  renvoi_section: "S23-L01#états-dominant-et-récessif"
+- id: S23-L01-EX02
+  valeur: 60
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "Les deux terminaisons sont en parallèle : 120 × 120 / (120 + 120) = 60 Ω."
+  renvoi_section: "S23-L01#exemple-1--résistance-attendue"
+- id: S23-L01-EX03
+  bonnes: [a]
+  explication: "120 Ω correspond à une seule terminaison vue par l'ohmmètre ; on localise ensuite en mesurant de part et d'autre du point suspect, selon le schéma."
+  renvoi_section: "S23-L01#exemple-2--une-terminaison-absente"

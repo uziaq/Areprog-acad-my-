@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S31-L01-EX01
+  bonnes: [a]
+  explication: "La fréquence donne la vitesse, le déphasage entre les deux voies donne le sens (fiche TMAG511x-Q1)."
+  renvoi_section: "S31-L01#vitesse-et-sens--deux-voies-en-quadrature"
+- id: S31-L01-EX02
+  valeur: 1500
+  tolerance_relative: 0.02
+  unite: "Hz"
+  explication: "25 tours par seconde × 60 dents = 1 500 impulsions par seconde, soit 1 500 Hz."
+  renvoi_section: "S31-L01#exemple-2--une-vitesse-à-partir-dune-fréquence"
+- id: S31-L01-EX03
+  bonnes: [a]
+  explication: "Coefficient de température négatif : la résistance baisse quand la température monte (2,252 kΩ à 25 °C, 819,7 Ω à 50 °C pour la CTN de la note TI)."
+  renvoi_section: "S31-L01#température--la-thermistance-ctn"

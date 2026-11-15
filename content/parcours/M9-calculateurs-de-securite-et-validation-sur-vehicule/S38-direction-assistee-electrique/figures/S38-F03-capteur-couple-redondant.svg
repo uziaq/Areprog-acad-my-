@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 335" width="590" height="335" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : capteur de couple redondant, principe d'après SRC-0103. -->
+  <defs>
+    <marker id="s38f03-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="15" y="30" width="150" height="62" rx="6" />
+  <text x="90.0" y="58.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Volant</text>
+  <text x="90.0" y="73.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">couple du conducteur</text>
+  <path d="M165 61 H199" marker-end="url(#s38f03-a)" stroke-width="1.5" />
+  <rect x="200" y="30" width="150" height="62" rx="6" />
+  <text x="275.0" y="51.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Barre de torsion</text>
+  <text x="275.0" y="66.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">se tord selon</text>
+  <text x="275.0" y="81.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">le couple</text>
+  <path d="M350 61 H384" marker-end="url(#s38f03-a)" stroke-width="1.5" />
+  <rect x="385" y="30" width="150" height="62" rx="6" />
+  <text x="460.0" y="58.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Colonne</text>
+  <text x="460.0" y="73.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">vers la crémaillère</text>
+  <path d="M275 92 V129" marker-end="url(#s38f03-a)" stroke-width="1.5" stroke-dasharray="4 3" />
+  <rect x="200" y="130" width="150" height="52" rx="6" />
+  <text x="275.0" y="153.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Capteur voie 1</text>
+  <text x="275.0" y="168.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">effet Hall</text>
+  <rect x="200" y="200" width="150" height="52" rx="6" />
+  <text x="275.0" y="223.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Capteur voie 2</text>
+  <text x="275.0" y="238.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">effet Hall</text>
+  <path d="M350 156 H419" marker-end="url(#s38f03-a)" stroke-width="1.5" />
+  <path d="M350 226 H400 V170 H419" marker-end="url(#s38f03-a)" stroke-width="1.5" />
+  <rect x="420" y="130" width="150" height="62" rx="6" />
+  <text x="495.0" y="151.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Calculateur</text>
+  <text x="495.0" y="166.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">compare les voies</text>
+  <text x="495.0" y="181.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">incohérence = défaut</text>
+  <path d="M495 192 V229" marker-end="url(#s38f03-a)" stroke-width="1.5" />
+  <rect x="420" y="230" width="150" height="52" rx="6" stroke-dasharray="6 4" />
+  <text x="495.0" y="246.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Assistance</text>
+  <text x="495.0" y="261.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">normale ou mode</text>
+  <text x="495.0" y="276.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">dégradé</text>
+  <text x="295" y="320" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Principe de la redondance d'après la note citée ; montage réel et seuils selon le constructeur.</text>
+</svg>

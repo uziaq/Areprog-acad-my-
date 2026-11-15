@@ -1,0 +1,13 @@
+# Spécification du bus I²C : lignes SDA et SCL à drain ouvert avec résistances de tirage, niveaux
+# logiques à 30 % et 70 % de VDD, conditions START et STOP, format des octets, acquittement,
+# adresse et bit R/W, dimensionnement des résistances de tirage (cours S19). Sections citées par
+# leur numéro et leur titre anglais.
+id: SRC-0054
+titre: "I2C-bus specification and user manual"
+editeur: NXP Semiconductors
+reference: "UM10204"
+revision: "révision 7.0, 1er octobre 2021"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/user-guide/UM10204.pdf

@@ -1,0 +1,261 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S38-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L01#ce-que-fait-un-calculateur-de-direction"
+  enonce: "Que commande un calculateur de direction assistée électrique ?"
+  propositions:
+    - {id: a, texte: "Un moteur électrique qui ajoute un couple d'assistance"}
+    - {id: b, texte: "Une pompe hydraulique de freinage"}
+    - {id: c, texte: "Des allumeurs pyrotechniques"}
+    - {id: d, texte: "Les injecteurs"}
+- id: S38-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L01#un-moteur-sans-balais-et-un-pont-triphasé"
+  enonce: "Combien de MOSFET pilote la commande de pont citée ?"
+  propositions:
+    - {id: a, texte: "Six"}
+    - {id: b, texte: "Deux"}
+    - {id: c, texte: "Quatre"}
+    - {id: d, texte: "Huit"}
+- id: S38-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L01#un-moteur-sans-balais-et-un-pont-triphasé"
+  enonce: "Quelle est la fréquence de PWM maximale de la commande de pont citée ?"
+  propositions:
+    - {id: a, texte: "20 kHz"}
+    - {id: b, texte: "50 Hz"}
+    - {id: c, texte: "2 MHz"}
+    - {id: d, texte: "200 Hz"}
+- id: S38-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L01#un-moteur-sans-balais-et-un-pont-triphasé"
+  enonce: "Jusqu'à quelle tension de batterie le survolteur de la commande citée garde-t-il la commande des étages ?"
+  propositions:
+    - {id: a, texte: "4,75 V"}
+    - {id: b, texte: "9 V"}
+    - {id: c, texte: "11 V"}
+    - {id: d, texte: "13,5 V"}
+- id: S38-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L01#les-surveillances-et-leur-effet"
+  enonce: "Pourquoi les deux transistors d'une même phase ne doivent-ils jamais conduire ensemble ?"
+  propositions:
+    - {id: a, texte: "Ils court-circuiteraient l'alimentation à travers la branche"}
+    - {id: b, texte: "Le moteur tournerait trop vite"}
+    - {id: c, texte: "Le capteur de couple serait faussé"}
+    - {id: d, texte: "Pour économiser la batterie"}
+- id: S38-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L01#les-surveillances-et-leur-effet"
+  enonce: "Que détecte la surveillance VDS ?"
+  propositions:
+    - {id: a, texte: "Une tension drain-source trop forte à l'état passant, signe de court-circuit"}
+    - {id: b, texte: "La température du moteur"}
+    - {id: c, texte: "Le couple du conducteur"}
+    - {id: d, texte: "La vitesse du véhicule"}
+- id: S38-Q007
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L01#les-surveillances-et-leur-effet"
+  enonce: "Le pont ne commande plus et un défaut de chien de garde est mémorisé. Que faire ?"
+  propositions:
+    - {id: a, texte: "Diagnostiquer les conditions de vie du microcontrôleur, sans jamais shunter la surveillance"}
+    - {id: b, texte: "Débrancher le chien de garde pour essayer le pont"}
+    - {id: c, texte: "Remplacer les six MOSFET"}
+    - {id: d, texte: "Effacer et recommencer jusqu'à ce que ça marche"}
+- id: S38-Q008
+  type: choix_unique
+  securite: false
+  competences: [D10.6]
+  section: "S38-L01#les-modes-dégradés"
+  enonce: "D'où viennent le niveau d'assistance gardé en mode dégradé et ses conditions ?"
+  propositions:
+    - {id: a, texte: "De la documentation du constructeur"}
+    - {id: b, texte: "De la fiche du circuit de commande"}
+    - {id: c, texte: "Ils sont identiques sur tous les véhicules"}
+    - {id: d, texte: "Du cours"}
+- id: S38-Q009
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S38-L02#exemple-1--lire-un-courant-de-phase"
+  enonce: "Gain 8, shunt 1 mΩ, sortie 0,2 V au-dessus de la référence. Quel est le courant de la phase, en ampères ?"
+  unite_attendue: A
+- id: S38-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L02#mesurer-le-courant-des-phases"
+  enonce: "Quels gains l'amplificateur de shunt de la commande citée propose-t-il ?"
+  propositions:
+    - {id: a, texte: "8, 12, 16 ou 32"}
+    - {id: b, texte: "1 seulement"}
+    - {id: c, texte: "100 ou 1000"}
+    - {id: d, texte: "0,5 ou 2"}
+- id: S38-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L02#la-surveillance-vds"
+  enonce: "Dans quelle plage le seuil de la surveillance VDS citée se règle-t-il ?"
+  propositions:
+    - {id: a, texte: "De 0,1 V à 2 V"}
+    - {id: b, texte: "De 5 V à 12 V"}
+    - {id: c, texte: "De 1 mV à 10 mV"}
+    - {id: d, texte: "Il n'est pas réglable"}
+- id: S38-Q012
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S38-L02#exemple-3--le-courant-de-détection-vds"
+  enonce: "Seuil VDS 1 V, résistance à l'état passant 5 mΩ. À quel courant le court-circuit est-il signalé, en ampères ?"
+  unite_attendue: A
+- id: S38-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L02#contrôler-hors-tension"
+  enonce: "Hors tension, une phase donne une mesure très différente des deux autres et de la référence. Qu'en conclure ?"
+  propositions:
+    - {id: a, texte: "Cette branche est suspecte ; on confirme par la mesure du transistor déposé"}
+    - {id: b, texte: "Le calculateur est bon"}
+    - {id: c, texte: "Le moteur est en panne"}
+    - {id: d, texte: "Il faut mettre sous tension sans limite pour voir"}
+- id: S38-Q014
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L02#contrôler-hors-tension"
+  enonce: "Avant de mesurer le pont hors tension, que faut-il avoir fait ?"
+  propositions:
+    - {id: a, texte: "Mesurer deux fois la décharge des condensateurs"}
+    - {id: b, texte: "Court-circuiter les condensateurs avec un tournevis"}
+    - {id: c, texte: "Rien, l'alimentation est coupée"}
+    - {id: d, texte: "Brancher le moteur"}
+- id: S38-Q015
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L02#le-banc-à-charges-réduites"
+  enonce: "Pourquoi ne branche-t-on jamais le moteur d'assistance sur l'alimentation de laboratoire ?"
+  propositions:
+    - {id: a, texte: "Elle n'est pas dimensionnée pour ses courants ; on utilise des charges réduites documentées"}
+    - {id: b, texte: "Le moteur ne fonctionne qu'en alternatif"}
+    - {id: c, texte: "Le moteur est toujours en panne"}
+    - {id: d, texte: "Pour aller plus vite"}
+- id: S38-Q016
+  type: calcul
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L02#exemple-2--une-charge-réduite"
+  enonce: "Une charge réduite de 10 Ω est alimentée sous 12 V. Quelle puissance dissipe-t-elle, en watts ?"
+  unite_attendue: W
+- id: S38-Q017
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L02#le-banc-à-charges-réduites"
+  enonce: "Une charge réduite vient de servir pendant un essai. Que faire ?"
+  propositions:
+    - {id: a, texte: "Ne pas la toucher : elle peut être brûlante ; elle repose sur un support qui ne brûle pas"}
+    - {id: b, texte: "La toucher pour vérifier qu'elle chauffe"}
+    - {id: c, texte: "La refroidir à l'eau"}
+    - {id: d, texte: "La poser sur la carte"}
+- id: S38-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S38-L02#mesurer-les-commandes-de-grille"
+  enonce: "Quelle tension grille-source la commande citée applique-t-elle à l'état haut ?"
+  propositions:
+    - {id: a, texte: "De 9 V à 13,4 V"}
+    - {id: b, texte: "De 1 V à 2 V"}
+    - {id: c, texte: "40 V"}
+    - {id: d, texte: "5 V exactement"}
+- id: S38-Q019
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L02#mesurer-les-commandes-de-grille"
+  enonce: "Comment mesurer la grille d'un transistor côté haut ?"
+  propositions:
+    - {id: a, texte: "En différentiel, ou chaque point par rapport à la masse puis soustraction ; jamais la masse de sonde sur une phase"}
+    - {id: b, texte: "Masse de la sonde sur la phase"}
+    - {id: c, texte: "Au multimètre en ohmmètre sous tension"}
+    - {id: d, texte: "En débranchant la terre de l'oscilloscope"}
+- id: S38-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L03#le-capteur-de-couple"
+  enonce: "Pourquoi utilise-t-on des capteurs de couple redondants en direction assistée électrique ?"
+  propositions:
+    - {id: a, texte: "Parce que c'est une application critique pour la sécurité"}
+    - {id: b, texte: "Pour doubler l'assistance"}
+    - {id: c, texte: "Pour réduire le nombre de fils à zéro"}
+    - {id: d, texte: "Pour mesurer la vitesse du véhicule"}
+- id: S38-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L03#une-sortie-analogique-ou-numérique"
+  enonce: "Combien de capteurs au plus partagent un même fil de sortie dans les variantes SENT de la note citée ?"
+  propositions:
+    - {id: a, texte: "Quatre"}
+    - {id: b, texte: "Un"}
+    - {id: c, texte: "Seize"}
+    - {id: d, texte: "Deux cent cinquante-six"}
+- id: S38-Q022
+  type: calcul
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S38-L03#exemple-2--la-durée-dune-demande-de-données"
+  enonce: "Durée d'un tick : 2 µs. Quelle est la durée de la demande de données la plus courte en mode long (9 ticks), en microsecondes ?"
+  unite_attendue: µs
+- id: S38-Q023
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L03#mesurer-sur-véhicule-immobilisé-moteur-arrêté-puis-en-marche"
+  enonce: "Avant de démarrer le moteur dans l'atelier pour le TP-57, que faut-il ?"
+  propositions:
+    - {id: a, texte: "L'aspiration posée sur l'échappement et une durée moteur en marche écrite"}
+    - {id: b, texte: "Fermer les portes de l'atelier"}
+    - {id: c, texte: "Un masque à poussières"}
+    - {id: d, texte: "Rien, quelques minutes ne posent pas de problème"}
+- id: S38-Q024
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S38-L03#mesurer-sur-véhicule-immobilisé-moteur-arrêté-puis-en-marche"
+  enonce: "Pendant la mesure moteur en marche, le véhicule doit être :"
+  propositions:
+    - {id: a, texte: "Immobilisé : frein de stationnement, cales, boîte en position de stationnement"}
+    - {id: b, texte: "En train de rouler doucement"}
+    - {id: c, texte: "Sur route ouverte"}
+    - {id: d, texte: "Point mort, sans frein"}
+- id: S38-Q025
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S38-L03#après-une-intervention"
+  enonce: "Quand fait-on les calibrations du constructeur après une intervention sur la direction ?"
+  propositions:
+    - {id: a, texte: "Après les premiers essais véhicule immobilisé, avant tout roulage"}
+    - {id: b, texte: "Après un essai sur route"}
+    - {id: c, texte: "Jamais"}
+    - {id: d, texte: "Seulement si un client le demande"}

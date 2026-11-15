@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S23-Q001
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#un-bus-différentiel"
+  enonce: "Pourquoi le bus CAN utilise-t-il une signalisation différentielle en paire torsadée ?"
+  propositions:
+    - {id: a, texte: "Pour réduire le bruit capté et émis"}
+    - {id: b, texte: "Pour économiser un fil"}
+    - {id: c, texte: "Pour transporter l'alimentation"}
+    - {id: d, texte: "Pour augmenter la tension"}
+- id: S23-Q002
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#un-bus-différentiel"
+  enonce: "Quel circuit relie le contrôleur CAN aux fils du bus ?"
+  propositions:
+    - {id: a, texte: "Le transceiver"}
+    - {id: b, texte: "Le régulateur"}
+    - {id: c, texte: "La mémoire EEPROM"}
+    - {id: d, texte: "Le quartz"}
+- id: S23-Q003
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#états-dominant-et-récessif"
+  enonce: "À quel niveau logique correspond l'état dominant ?"
+  propositions:
+    - {id: a, texte: "0"}
+    - {id: b, texte: "1"}
+    - {id: c, texte: "Haute impédance"}
+    - {id: d, texte: "Indéterminé"}
+- id: S23-Q004
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#états-dominant-et-récessif"
+  enonce: "À l'état dominant, que font CAN-H et CAN-L ?"
+  propositions:
+    - {id: a, texte: "CAN-H monte et CAN-L descend"}
+    - {id: b, texte: "Les deux montent"}
+    - {id: c, texte: "Les deux descendent à 0 V"}
+    - {id: d, texte: "Rien ne change"}
+- id: S23-Q005
+  type: calcul
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#exemple-3--différence-dominante"
+  enonce: "À l'état dominant, CAN-H vaut 3,6 V et CAN-L 1,4 V. Quelle est la différence ?"
+  unite_attendue: V
+- id: S23-Q006
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#états-dominant-et-récessif"
+  enonce: "Vous lisez 0 V de différence entre CAN-H et CAN-L. Que pouvez-vous conclure ?"
+  propositions:
+    - {id: a, texte: "Rien encore : un bus récessif sans trafic donne aussi 0 V ; on mesure chaque ligne par rapport à la masse"}
+    - {id: b, texte: "Le bus est coupé"}
+    - {id: c, texte: "Le transceiver est détruit"}
+    - {id: d, texte: "Le bus est en court-circuit"}
+- id: S23-Q007
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#topologie-et-terminaison"
+  enonce: "Où se placent les terminaisons d'un bus CAN haute vitesse ?"
+  propositions:
+    - {id: a, texte: "Une à chaque extrémité de la ligne"}
+    - {id: b, texte: "Une sur chaque nœud"}
+    - {id: c, texte: "Une seule au milieu"}
+    - {id: d, texte: "Aucune"}
+- id: S23-Q008
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#topologie-et-terminaison"
+  enonce: "Que se passe-t-il sans terminaison ?"
+  propositions:
+    - {id: a, texte: "Le signal se réfléchit et se déforme par marches"}
+    - {id: b, texte: "Le bus va plus vite"}
+    - {id: c, texte: "Rien"}
+    - {id: d, texte: "Le bus consomme moins"}
+- id: S23-Q009
+  type: calcul
+  securite: false
+  competences: [D8.1]
+  section: "S23-L01#exemple-1--résistance-attendue"
+  enonce: "Deux terminaisons mesurées 118 Ω et 122 Ω sont en parallèle. Quelle résistance attendez-vous entre CAN-H et CAN-L ?"
+  unite_attendue: Ω
+- id: S23-Q010
+  type: choix_unique
+  securite: true
+  competences: [D8.1]
+  section: "S23-L01#mesurer-la-résistance-du-bus"
+  enonce: "Dans quel état mesure-t-on la résistance du bus à l'ohmmètre ?"
+  propositions:
+    - {id: a, texte: "Hors tension, batterie débranchée ou banc coupé"}
+    - {id: b, texte: "Contact mis"}
+    - {id: c, texte: "Moteur tournant"}
+    - {id: d, texte: "Peu importe"}
+- id: S23-Q011
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L02#la-trame-standard"
+  enonce: "Combien de bits compte l'identifiant d'une trame CAN standard ?"
+  propositions:
+    - {id: a, texte: "11"}
+    - {id: b, texte: "29"}
+    - {id: c, texte: "8"}
+    - {id: d, texte: "64"}
+- id: S23-Q012
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L02#la-trame-standard"
+  enonce: "Combien d'octets de données porte au plus une trame CAN classique ?"
+  propositions:
+    - {id: a, texte: "8"}
+    - {id: b, texte: "4"}
+    - {id: c, texte: "64"}
+    - {id: d, texte: "1"}
+- id: S23-Q013
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L02#exemple-5--longueur-des-données"
+  enonce: "Le champ DLC vaut 0011. Combien d'octets de données porte la trame ?"
+  propositions:
+    - {id: a, texte: "3"}
+    - {id: b, texte: "11"}
+    - {id: c, texte: "0"}
+    - {id: d, texte: "8"}
+- id: S23-Q014
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L02#exemple-4--priorité"
+  enonce: "Deux nœuds émettent 0x120 et 0x080. Lequel gagne l'arbitrage ?"
+  propositions:
+    - {id: a, texte: "0x080"}
+    - {id: b, texte: "0x120"}
+    - {id: c, texte: "Aucun"}
+    - {id: d, texte: "Les deux, mélangés"}
+- id: S23-Q015
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L02#exemple-6--bit-dacquittement"
+  enonce: "Le bit ACK reste récessif sur une capture. Que signifie-t-il ?"
+  propositions:
+    - {id: a, texte: "Aucun nœud n'a acquitté la trame"}
+    - {id: b, texte: "La trame a été acquittée"}
+    - {id: c, texte: "Le bus est en veille"}
+    - {id: d, texte: "Le CRC est juste"}
+- id: S23-Q016
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L02#can-fd-notions"
+  enonce: "Qu'accélère le CAN FD ?"
+  propositions:
+    - {id: a, texte: "La phase de données"}
+    - {id: b, texte: "La mise sous tension"}
+    - {id: c, texte: "L'arbitrage seulement"}
+    - {id: d, texte: "Le quartz"}
+- id: S23-Q017
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#le-transceiver"
+  enonce: "Que présente un transceiver de ce type non alimenté, d'après sa fiche ?"
+  propositions:
+    - {id: a, texte: "Des broches de bus à haute impédance, qui ne chargent pas le bus"}
+    - {id: b, texte: "Un court-circuit du bus"}
+    - {id: c, texte: "Une terminaison de 60 Ω"}
+    - {id: d, texte: "Une tension de 5 V sur CANH"}
+- id: S23-Q018
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#le-transceiver"
+  enonce: "À quoi sert la broche VIO sur certains transceivers ?"
+  propositions:
+    - {id: a, texte: "À alimenter les entrées et sorties logiques au niveau du microcontrôleur"}
+    - {id: b, texte: "À alimenter le bus"}
+    - {id: c, texte: "À régler le débit"}
+    - {id: d, texte: "À la terminaison"}
+- id: S23-Q019
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#identifier-un-transceiver"
+  enonce: "Où cherchez-vous le brochage CAN du connecteur d'un calculateur ?"
+  propositions:
+    - {id: a, texte: "Dans le schéma électrique officiel"}
+    - {id: b, texte: "Dans une vidéo"}
+    - {id: c, texte: "Sur un forum"}
+    - {id: d, texte: "En essayant les broches"}
+- id: S23-Q020
+  type: choix_unique
+  securite: true
+  competences: [D3.6, D8.1]
+  section: "S23-L03#mesurer-à-loscilloscope"
+  enonce: "Avec deux sondes ordinaires, où placez-vous leurs masses pour observer le bus ?"
+  propositions:
+    - {id: a, texte: "Sur la masse du calculateur"}
+    - {id: b, texte: "Sur CAN-L"}
+    - {id: c, texte: "Sur CAN-H"}
+    - {id: d, texte: "Sur la batterie +"}
+- id: S23-Q021
+  type: calcul
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#exemple-7--base-de-temps"
+  enonce: "Un bus CAN fonctionne à 125 kbit/s. Quelle est la durée d'un bit ?"
+  unite_attendue: µs
+- id: S23-Q022
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#lire-les-mesures"
+  enonce: "Hors tension, l'ohmmètre lit presque 0 Ω entre CAN-H et CAN-L. Quelle orientation ?"
+  propositions:
+    - {id: a, texte: "Court-circuit entre CAN-H et CAN-L"}
+    - {id: b, texte: "Deux terminaisons présentes"}
+    - {id: c, texte: "Une terminaison manquante"}
+    - {id: d, texte: "Bus normal"}
+- id: S23-Q023
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#exemple-8--ligne-collée"
+  enonce: "Sous tension, CAN-L reste à 0 V. Quelle mesure faites-vous ensuite ?"
+  propositions:
+    - {id: a, texte: "Hors tension, la résistance de CAN-L vers la masse, comparée à celle de CAN-H"}
+    - {id: b, texte: "Remplacer le transceiver"}
+    - {id: c, texte: "Remplacer le calculateur"}
+    - {id: d, texte: "Rien"}
+- id: S23-Q024
+  type: choix_unique
+  securite: true
+  competences: [D3.6, D8.1]
+  section: "S23-L03#mesurer-à-loscilloscope"
+  enonce: "Avant de poser des pointes sur le bus d'un véhicule d'atelier, quelle règle s'applique ?"
+  propositions:
+    - {id: a, texte: "Batterie débranchée selon l'ordre du constructeur, véhicule immobilisé ; mesures contact mis, moteur arrêté"}
+    - {id: b, texte: "Moteur tournant pour avoir du trafic"}
+    - {id: c, texte: "Percer l'isolant pour un bon contact"}
+    - {id: d, texte: "Mesurer aussi sur le bus de l'airbag"}
+- id: S23-Q025
+  type: choix_unique
+  securite: false
+  competences: [D8.1]
+  section: "S23-L03#exemple-9--nœud-qui-perturbe"
+  enonce: "Le bus est correct calculateur débranché et perturbé calculateur branché. Que concluez-vous ?"
+  propositions:
+    - {id: a, texte: "Hypothèse sur ce calculateur (transceiver ou masse), à confirmer par des mesures"}
+    - {id: b, texte: "Le calculateur est sûrement mort"}
+    - {id: c, texte: "Le câblage est sûrement coupé"}
+    - {id: d, texte: "Rien à faire"}

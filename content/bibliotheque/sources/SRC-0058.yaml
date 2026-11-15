@@ -1,0 +1,13 @@
+# Watchdog externe automobile : principe du watchdog classique et du watchdog à fenêtre, défaut
+# trop tôt et trop tard, sortie WDO à drain ouvert active basse, désactivation pendant le
+# développement et la mise sous tension (cours S20). Fiche d'un composant public, utilisée comme
+# exemple de principe ; sections citées par leur numéro et leur titre anglais.
+id: SRC-0058
+titre: "TPS3430-Q1 Automotive Window Watchdog Timer with Programmable Reset Delay"
+editeur: Texas Instruments
+reference: "SBVS367A"
+revision: "A, septembre 2021"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tps3430-q1.pdf

@@ -1,0 +1,13 @@
+# Commutateur high-side protégé à un canal : mesure de courant par miroir (rapport K), limite de
+# courant réglable, écrêtage à la coupure d'une charge inductive, diagnostics (court-circuit à la
+# masse, charge ouverte, court-circuit au + batterie, surchauffe). Sections citées par leur numéro
+# et leur titre anglais (cours S29).
+id: SRC-0084
+titre: "TPS1H100-Q1 40-V, 100-mΩ Single-Channel Smart High-Side Power Switch"
+editeur: Texas Instruments
+reference: "SLVSCM2D"
+revision: "D, décembre 2019"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tps1h100-q1.pdf

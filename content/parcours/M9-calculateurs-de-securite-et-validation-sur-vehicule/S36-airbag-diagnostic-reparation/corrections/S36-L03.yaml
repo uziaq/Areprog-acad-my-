@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S36-L03-EX01
+  bonnes: [a]
+  explication: "La tension nominale ne doit jamais être dépassée ; l'élévateur cité peut atteindre 35 V et écrête plus haut. Même référence de préférence, sinon équivalence justifiée par écrit."
+  renvoi_section: "S36-L03#exemple-1--un-condensateur-de-réserve-de-remplacement"
+- id: S36-L03-EX02
+  valeur: 1200
+  tolerance_relative: 0.02
+  unite: "s"
+  explication: "4 × 5 min = 20 min = 1 200 s."
+  renvoi_section: "S36-L03#exemple-3--une-durée-dessai"

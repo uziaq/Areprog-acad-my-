@@ -1,0 +1,13 @@
+# LDO branchés directement sur la batterie d'un véhicule : topologie, sortie réglable, tension de
+# déchet au démarrage, courant de repos, reset de sous-tension, power-good et délai de reset,
+# chien de garde, enable, alerte anticipée, limitation de courant, arrêt thermique, inversion de
+# polarité (cours S15). Sections citées par leur titre anglais.
+id: SRC-0038
+titre: "Fundamentals of designing with LDOs in automotive battery direct connect applications"
+editeur: Texas Instruments
+reference: "SLYB232"
+revision: "Q1 2017"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slyb232

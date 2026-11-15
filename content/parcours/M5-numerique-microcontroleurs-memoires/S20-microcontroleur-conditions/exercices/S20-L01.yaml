@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S20-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S20-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Dans un processeur, que contient le compteur de programme ?"
+  propositions:
+    - {id: a, texte: "L'adresse de la prochaine instruction à lire en mémoire"}
+    - {id: b, texte: "Le nombre de resets depuis la mise sous tension"}
+    - {id: c, texte: "La fréquence du quartz"}
+    - {id: d, texte: "Le résultat du dernier calcul"}
+  competences: [D7.2]
+  objectif: O1
+- id: S20-L01-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre de contrôle proposé par l'académie les quatre conditions de vie d'un microcontrôleur."
+  propositions:
+    - {id: a, texte: "Reset relâché, sans boucle"}
+    - {id: b, texte: "Alimentations présentes et propres"}
+    - {id: c, texte: "Mode de démarrage correct"}
+    - {id: d, texte: "Horloge qui oscille à la bonne fréquence"}
+  competences: [D7.2]
+  objectif: O2
+- id: S20-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un microcontrôleur a trois paires de broches d'alimentation et de masse. Combien de condensateurs de découplage attend-on au minimum près de lui, et où ?"
+  propositions:
+    - {id: a, texte: "Un par paire, au plus près des broches, avec une boucle courte"}
+    - {id: b, texte: "Un seul, n'importe où sur la carte"}
+    - {id: c, texte: "Aucun, le régulateur suffit"}
+    - {id: d, texte: "Un seul, près du connecteur"}
+  competences: [D7.2]
+  objectif: O3

@@ -1,0 +1,253 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S11-Q001
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#la-bande-passante"
+  enonce: "Que représente la bande passante d'un oscilloscope ?"
+  propositions:
+    - {id: a, texte: "La fréquence à laquelle une sinusoïde est affichée avec 70,7 % de son amplitude réelle"}
+    - {id: b, texte: "La fréquence maximale du signal de compensation"}
+    - {id: c, texte: "Le nombre d'échantillons par seconde"}
+    - {id: d, texte: "La fréquence à laquelle l'amplitude affichée est nulle"}
+- id: S11-Q002
+  type: calcul
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#exemple-1--bande-passante-pour-une-pwm"
+  enonce: "On veut observer une PWM de 10 kHz jusqu'à sa 7e harmonique avec la règle des 5 fois. Quelle bande passante minimale faut-il ?"
+  unite_attendue: kHz
+- id: S11-Q003
+  type: calcul
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#exemple-2--bande-passante-à-partir-dun-temps-de-montée"
+  enonce: "Un front monte en 50 ns. Avec la règle du cinquième et k = 0,35, quelle bande passante minimale faut-il ?"
+  unite_attendue: MHz
+- id: S11-Q004
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#la-bande-passante"
+  enonce: "De quoi est composé un signal carré ?"
+  propositions:
+    - {id: a, texte: "De sa fondamentale et de ses harmoniques impaires"}
+    - {id: b, texte: "D'une seule sinusoïde"}
+    - {id: c, texte: "De ses harmoniques paires seulement"}
+    - {id: d, texte: "D'une tension continue seulement"}
+- id: S11-Q005
+  type: calcul
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#exemple-3--fréquence-déchantillonnage-minimale"
+  enonce: "On observe une sinusoïde de 2 MHz avec l'interpolation linéaire. Quelle fréquence d'échantillonnage minimale faut-il ?"
+  unite_attendue: MHz
+- id: S11-Q006
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#le-repliement-aliasing"
+  enonce: "En changeant la base de temps, la fréquence affichée d'un signal change. Que soupçonner ?"
+  propositions:
+    - {id: a, texte: "Un repliement : l'échantillonnage est trop lent"}
+    - {id: b, texte: "Une sonde surcompensée"}
+    - {id: c, texte: "Une masse longue"}
+    - {id: d, texte: "Un facteur de sonde oublié"}
+- id: S11-Q007
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L01#léchantillonnage"
+  enonce: "Que devient la fréquence d'échantillonnage sur une base de temps lente ?"
+  propositions:
+    - {id: a, texte: "Elle peut baisser"}
+    - {id: b, texte: "Elle reste toujours au maximum"}
+    - {id: c, texte: "Elle double"}
+    - {id: d, texte: "Elle n'a pas de rapport avec la base de temps"}
+- id: S11-Q008
+  type: choix_unique
+  securite: false
+  competences: [D3.4]
+  section: "S11-L02#la-sonde-10-et-sa-compensation"
+  enonce: "Le signal de compensation montre des coins arrondis. Comment est la sonde ?"
+  propositions:
+    - {id: a, texte: "Sous-compensée"}
+    - {id: b, texte: "Surcompensée"}
+    - {id: c, texte: "Bien compensée"}
+    - {id: d, texte: "Réglée sur ×1"}
+- id: S11-Q009
+  type: choix_unique
+  securite: false
+  competences: [D3.4]
+  section: "S11-L02#la-sonde-10-et-sa-compensation"
+  enonce: "Quand compenser une sonde ×10 ?"
+  propositions:
+    - {id: a, texte: "À chaque installation, sur la voie et avec les accessoires utilisés"}
+    - {id: b, texte: "Une fois à l'achat"}
+    - {id: c, texte: "Seulement si l'oscilloscope affiche un message"}
+    - {id: d, texte: "Jamais, elle est réglée en usine"}
+- id: S11-Q010
+  type: calcul
+  securite: false
+  competences: [D3.3, D3.4]
+  section: "S11-L02#exemple-4--un-facteur-de-sonde-oublié"
+  enonce: "Une sonde ×10 est branchée, l'oscilloscope est réglé sur ×1 et affiche 0,5 V crête. Quelle est la tension réelle ?"
+  unite_attendue: V
+- id: S11-Q011
+  type: choix_unique
+  securite: true
+  competences: [D3.4]
+  section: "S11-L02#la-masse-de-la-sonde-est-reliée-à-la-terre"
+  enonce: "Où relier la pince de masse d'une sonde d'oscilloscope relié à la terre ?"
+  propositions:
+    - {id: a, texte: "Uniquement à la masse du montage, au potentiel de la terre"}
+    - {id: b, texte: "Sur n'importe quel point du montage"}
+    - {id: c, texte: "Sur le côté positif de la résistance mesurée"}
+    - {id: d, texte: "Sur la sortie de l'alimentation"}
+- id: S11-Q012
+  type: choix_unique
+  securite: true
+  competences: [D3.4]
+  section: "S11-L02#la-masse-de-la-sonde-est-reliée-à-la-terre"
+  enonce: "Un collègue propose de couper la terre du cordon de l'oscilloscope pour faire une mesure. Que répondre ?"
+  propositions:
+    - {id: a, texte: "Jamais : sans terre, les connecteurs et les sondes peuvent être portés à des tensions dangereuses"}
+    - {id: b, texte: "C'est sans danger si l'on fait vite"}
+    - {id: c, texte: "C'est la méthode normale pour une mesure flottante"}
+    - {id: d, texte: "C'est nécessaire pour compenser la sonde"}
+- id: S11-Q013
+  type: choix_unique
+  securite: true
+  competences: [D3.4]
+  section: "S11-L02#la-masse-de-la-sonde-est-reliée-à-la-terre"
+  enonce: "Dans quel ordre brancher une sonde sur un montage ?"
+  propositions:
+    - {id: a, texte: "Sonde sur l'oscilloscope, puis masse, puis pointe"}
+    - {id: b, texte: "Pointe, puis masse, puis oscilloscope"}
+    - {id: c, texte: "Masse et pointe en même temps"}
+    - {id: d, texte: "Pointe, puis oscilloscope, puis masse"}
+- id: S11-Q014
+  type: choix_unique
+  securite: false
+  competences: [D3.4]
+  section: "S11-L02#la-longue-masse"
+  enonce: "Pourquoi une longue masse de sonde fait-elle apparaître des oscillations sur un front rapide ?"
+  propositions:
+    - {id: a, texte: "Son inductance forme avec la capacité de la sonde un circuit qui sonne"}
+    - {id: b, texte: "Elle augmente la bande passante"}
+    - {id: c, texte: "Elle décompense la sonde"}
+    - {id: d, texte: "Elle change le facteur de sonde"}
+- id: S11-Q015
+  type: choix_unique
+  securite: false
+  competences: [D3.4]
+  section: "S11-L02#exemple-6--des-oscillations-qui-viennent-de-la-sonde"
+  enonce: "Des oscillations apparaissent après chaque front, avec une masse longue. Que faire en premier ?"
+  propositions:
+    - {id: a, texte: "Remplacer la masse longue par la masse courte d'origine et comparer"}
+    - {id: b, texte: "Conclure à un défaut du circuit"}
+    - {id: c, texte: "Augmenter la base de temps"}
+    - {id: d, texte: "Passer la sonde en ×1"}
+- id: S11-Q016
+  type: choix_unique
+  securite: false
+  competences: [D3.3, D3.4]
+  section: "S11-L02#mesurer-entre-deux-points-dont-aucun-nest-à-la-masse"
+  enonce: "On veut voir la tension aux bornes d'une résistance placée côté plus d'une charge. Quelle méthode convient avec un oscilloscope dont les masses sont à la terre ?"
+  propositions:
+    - {id: a, texte: "Deux voies en soustraction, les deux masses sur la masse du montage"}
+    - {id: b, texte: "Une sonde, masse posée sur un côté de la résistance"}
+    - {id: c, texte: "Une sonde, masse débranchée"}
+    - {id: d, texte: "Couper la terre de l'oscilloscope"}
+- id: S11-Q017
+  type: calcul
+  securite: false
+  competences: [D3.3]
+  section: "S11-L02#exemple-5--la-tension-aux-bornes-dune-résistance-de-mesure-de-courant"
+  enonce: "En soustraction, on lit 0,3 V aux bornes d'une résistance de 0,1 Ω. Quel est le courant ?"
+  unite_attendue: A
+- id: S11-Q018
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#modes-de-déclenchement"
+  enonce: "Quel mode de déclenchement choisir pour capturer le rebond d'un contact qui ne se produit qu'une fois ?"
+  propositions:
+    - {id: a, texte: "Unique"}
+    - {id: b, texte: "Auto"}
+    - {id: c, texte: "Roulant"}
+    - {id: d, texte: "Aucun déclenchement"}
+- id: S11-Q019
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#modes-de-déclenchement"
+  enonce: "Que fait un oscilloscope en mode auto sans signal qui déclenche ?"
+  propositions:
+    - {id: a, texte: "Une minuterie lance quand même l'acquisition, l'écran n'est jamais vide"}
+    - {id: b, texte: "Il garde la dernière acquisition"}
+    - {id: c, texte: "Il s'arrête"}
+    - {id: d, texte: "Il affiche la FFT"}
+- id: S11-Q020
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#types-de-déclenchement"
+  enonce: "Quel déclenchement réagit quand un temps fixé s'écoule sans que le signal change ?"
+  propositions:
+    - {id: a, texte: "Timeout"}
+    - {id: b, texte: "Front montant"}
+    - {id: c, texte: "Largeur d'impulsion"}
+    - {id: d, texte: "Auto"}
+- id: S11-Q021
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+  enonce: "Pourquoi une pince AC ne convient-elle pas au courant établi d'une bobine de relais ?"
+  propositions:
+    - {id: a, texte: "Elle fonctionne comme un transformateur et ne voit pas le courant continu"}
+    - {id: b, texte: "Elle est trop sensible"}
+    - {id: c, texte: "Elle n'a pas besoin d'alimentation"}
+    - {id: d, texte: "Elle ne mesure que des tensions"}
+- id: S11-Q022
+  type: calcul
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#exemple-8--lire-un-courant-à-la-pince"
+  enonce: "Une pince est réglée sur 100 mV/A ; l'oscilloscope lit 0,15 V. Quel est le courant ?"
+  unite_attendue: A
+- id: S11-Q023
+  type: choix_unique
+  securite: true
+  competences: [D3.3, D3.4]
+  section: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+  enonce: "Que doit-on vérifier sur une pince de courant avant de mesurer un courant qui a du continu et une crête alternative ?"
+  propositions:
+    - {id: a, texte: "Que le total du continu et de la crête reste sous son courant maximal d'entrée"}
+    - {id: b, texte: "Seulement la valeur du continu"}
+    - {id: c, texte: "Seulement la crête alternative"}
+    - {id: d, texte: "Rien, une pince n'a pas de limite"}
+- id: S11-Q024
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#la-pince-de-courant-pour-oscilloscope"
+  enonce: "La pince entoure à la fois le fil aller et le fil retour d'une bobine. Qu'affiche-t-elle ?"
+  propositions:
+    - {id: a, texte: "Un courant proche de zéro, les deux courants s'annulent"}
+    - {id: b, texte: "Le double du courant"}
+    - {id: c, texte: "Le courant de la bobine"}
+    - {id: d, texte: "La tension de la bobine"}
+- id: S11-Q025
+  type: choix_unique
+  securite: false
+  competences: [D3.3]
+  section: "S11-L03#exemple-9--le-spectre-dune-pwm"
+  enonce: "Un signal carré de 2 kHz à 50 % passe dans la FFT. Quelles raies attendre ?"
+  propositions:
+    - {id: a, texte: "2, 6, 10, 14 kHz…"}
+    - {id: b, texte: "2, 4, 6, 8 kHz…"}
+    - {id: c, texte: "Une seule raie à 2 kHz"}
+    - {id: d, texte: "4, 8, 12 kHz…"}

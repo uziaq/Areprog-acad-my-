@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S23-Q001
+  bonnes: [a]
+  explication: "Courants égaux et opposés sur les deux fils, d'après la note TI."
+  pourquoi_faux:
+    b: "Il y a deux fils."
+    c: "Non."
+    d: "Non."
+  source: "S23-L01#un-bus-différentiel"
+- id: S23-Q002
+  bonnes: [a]
+  explication: "Le transceiver traduit les niveaux logiques en niveaux de bus."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L01#un-bus-différentiel"
+- id: S23-Q003
+  bonnes: [a]
+  explication: "Dominant = 0, récessif = 1 : la logique est inversée."
+  pourquoi_faux:
+    b: "C'est le récessif."
+    c: "Non."
+    d: "Non."
+  source: "S23-L01#états-dominant-et-récessif"
+- id: S23-Q004
+  bonnes: [a]
+  explication: "D'après la note TI, environ 3,5 V et 1,5 V."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L01#états-dominant-et-récessif"
+- id: S23-Q005
+  valeur: 2.2
+  tolerance_relative: 0.02
+  unite: V
+  explication: "3,6 − 1,4 = 2,2 V."
+  source: "S23-L01#exemple-3--différence-dominante"
+- id: S23-Q006
+  bonnes: [a]
+  explication: "Une différence nulle ne suffit pas à conclure."
+  pourquoi_faux:
+    b: "Pas forcément."
+    c: "Pas forcément."
+    d: "Pas forcément."
+  source: "S23-L01#états-dominant-et-récessif"
+- id: S23-Q007
+  bonnes: [a]
+  explication: "D'après la description de l'ISO 11898 par la note TI."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Elles évitent les réflexions."
+  source: "S23-L01#topologie-et-terminaison"
+- id: S23-Q008
+  bonnes: [a]
+  explication: "D'après la note TI SLLA270."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L01#topologie-et-terminaison"
+- id: S23-Q009
+  valeur: 59.97
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "118 × 122 / (118 + 122) ≈ 60 Ω."
+  source: "S23-L01#exemple-1--résistance-attendue"
+- id: S23-Q010
+  bonnes: [a]
+  explication: "Un ohmmètre ne mesure pas un circuit alimenté."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L01#mesurer-la-résistance-du-bus"
+- id: S23-Q011
+  bonnes: [a]
+  explication: "29 bits pour une trame étendue."
+  pourquoi_faux:
+    b: "C'est la trame étendue."
+    c: "Non."
+    d: "Non."
+  source: "S23-L02#la-trame-standard"
+- id: S23-Q012
+  bonnes: [a]
+  explication: "D'après la note TI."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L02#la-trame-standard"
+- id: S23-Q013
+  bonnes: [a]
+  explication: "0011 en binaire vaut 3."
+  pourquoi_faux:
+    b: "C'est la lecture décimale des chiffres."
+    c: "Non."
+    d: "Non."
+  source: "S23-L02#exemple-5--longueur-des-données"
+- id: S23-Q014
+  bonnes: [a]
+  explication: "L'identifiant le plus bas gagne."
+  pourquoi_faux:
+    b: "Non."
+    c: "L'arbitrage est non destructif."
+    d: "Non."
+  source: "S23-L02#exemple-4--priorité"
+- id: S23-Q015
+  bonnes: [a]
+  explication: "Un nœud qui reçoit sans erreur écrase ce bit par un dominant."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L02#exemple-6--bit-dacquittement"
+- id: S23-Q016
+  bonnes: [a]
+  explication: "FD : débit flexible pendant la phase de données."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L02#can-fd-notions"
+- id: S23-Q017
+  bonnes: [a]
+  explication: "D'après la fiche TCAN1042-Q1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L03#le-transceiver"
+- id: S23-Q018
+  bonnes: [a]
+  explication: "Pour un microcontrôleur 3,3 V ou 5 V."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L03#le-transceiver"
+- id: S23-Q019
+  bonnes: [a]
+  explication: "Le cours ne donne aucun brochage de calculateur."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S23-L03#identifier-un-transceiver"
+- id: S23-Q020
+  bonnes: [a]
+  explication: "Une masse de sonde reliée à la terre sur une ligne la met à la masse (FE-07)."
+  pourquoi_faux:
+    b: "Court-circuit de CAN-L."
+    c: "Court-circuit de CAN-H."
+    d: "Non."
+  source: "S23-L03#mesurer-à-loscilloscope"
+- id: S23-Q021
+  valeur: 8
+  tolerance_relative: 0.02
+  unite: µs
+  explication: "1 / 125 000 = 8 µs."
+  source: "S23-L03#exemple-7--base-de-temps"
+- id: S23-Q022
+  bonnes: [a]
+  explication: "À confirmer par une mesure qui départage."
+  pourquoi_faux:
+    b: "Ce serait environ 60 Ω."
+    c: "Ce serait environ 120 Ω."
+    d: "Non."
+  source: "S23-L03#lire-les-mesures"
+- id: S23-Q023
+  bonnes: [a]
+  explication: "On conclut sur une mesure qui départage."
+  pourquoi_faux:
+    b: "Sans preuve."
+    c: "Sans preuve."
+    d: "Non."
+  source: "S23-L03#exemple-8--ligne-collée"
+- id: S23-Q024
+  bonnes: [a]
+  explication: "Règles Sécurité véhicule du catalogue des TP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non : pointes de touche arrière."
+    d: "Aucune mesure sur l'airbag, l'ABS / ESP ou la direction."
+  source: "S23-L03#mesurer-à-loscilloscope"
+- id: S23-Q025
+  bonnes: [a]
+  explication: "On conclut seulement sur une mesure qui départage."
+  pourquoi_faux:
+    b: "Sans preuve."
+    c: "Non."
+    d: "Non."
+  source: "S23-L03#exemple-9--nœud-qui-perturbe"

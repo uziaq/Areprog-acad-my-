@@ -1,0 +1,25 @@
+# Énoncés seulement : les solutions sont dans corrections/S31-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S31-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre l'ouverture d'un TCU de récupération."
+  propositions:
+    - {id: a, texte: "Ouvrir sans faire levier sur la carte"}
+    - {id: b, texte: "Nettoyer l'extérieur"}
+    - {id: c, texte: "Identifier la protection de la carte (vernis, gel, encapsulant)"}
+    - {id: d, texte: "Photographier toutes les faces"}
+    - {id: e, texte: "Repérer le mode de fermeture"}
+  competences: [D10.3]
+  objectif: O1
+- id: S31-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "La fiche d'un circuit d'unité mécatronique donne −40 °C à +150 °C (grade 0). Le remplaçant proposé est de grade 1. Est-il équivalent ?"
+  propositions:
+    - {id: a, texte: "Non : sa plage s'arrête à +125 °C, plus étroite que celle de l'original"}
+    - {id: b, texte: "Oui : tous les composants automobiles se valent"}
+    - {id: c, texte: "Oui, si le boîtier est identique"}
+    - {id: d, texte: "On ne peut pas le savoir"}
+  competences: [D4.7]
+  objectif: O2

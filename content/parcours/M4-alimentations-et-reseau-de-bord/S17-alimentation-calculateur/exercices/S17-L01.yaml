@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S17-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S17-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Contact coupé, vous mesurez la tension d'une broche d'un calculateur par rapport à sa masse : elle est présente. De quelle borne s'agit-il le plus probablement ?"
+  propositions:
+    - {id: a, texte: "La borne 30, plus permanent"}
+    - {id: b, texte: "La borne 15, plus après contact"}
+    - {id: c, texte: "La borne 31, masse"}
+    - {id: d, texte: "La borne 50, commande du démarreur"}
+  competences: [D6.3]
+  objectif: O1
+- id: S17-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une impulsion de 100 V crête, de résistance de source 10 Ω, arrive sur une diode de protection qui écrête à 35 V. Quel courant crête traverse la diode, en négligeant le courant de la charge ?"
+  unite_attendue: A
+  competences: [D6.3]
+  objectif: O2
+- id: S17-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pendant un essai, une fonction d'un calculateur s'arrête puis revient seule à la fin de l'essai, sans action de l'utilisateur. Quelle classe de fonctionnement décrit ce comportement ?"
+  propositions:
+    - {id: a, texte: "Classe C"}
+    - {id: b, texte: "Classe A"}
+    - {id: c, texte: "Classe D"}
+    - {id: d, texte: "Classe E"}
+  competences: [D6.3]
+  objectif: O3

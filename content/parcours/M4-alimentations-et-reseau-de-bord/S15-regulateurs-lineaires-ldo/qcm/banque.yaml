@@ -1,0 +1,253 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S15-Q001
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L01#le-principe"
+  enonce: "Comment un régulateur linéaire maintient-il sa tension de sortie ?"
+  propositions:
+    - {id: a, texte: "En réglant en permanence son élément de passage, comme une résistance variable, d'après une contre-réaction"}
+    - {id: b, texte: "En découpant la tension à haute fréquence"}
+    - {id: c, texte: "En stockant l'énergie dans une inductance"}
+    - {id: d, texte: "En coupant la sortie quand elle est trop haute"}
+- id: S15-Q002
+  type: calcul
+  securite: false
+  competences: [D6.1]
+  section: "S15-L01#la-puissance-dissipée"
+  enonce: "Un régulateur 3,3 V est alimenté en 5 V et débite 0,4 A. Quelle puissance dissipe-t-il ?"
+  unite_attendue: W
+- id: S15-Q003
+  type: calcul
+  securite: false
+  competences: [D6.1]
+  section: "S15-L01#la-puissance-dissipée"
+  enonce: "Un régulateur 5 V est alimenté en 13,5 V et débite 0,1 A. Quelle puissance dissipe-t-il ?"
+  unite_attendue: W
+- id: S15-Q004
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L01#la-puissance-dissipée"
+  enonce: "Pourquoi néglige-t-on en général la puissance du courant de repos dans le calcul thermique ?"
+  propositions:
+    - {id: a, texte: "Elle est de plusieurs ordres de grandeur plus petite que la puissance dissipée"}
+    - {id: b, texte: "Elle est nulle"}
+    - {id: c, texte: "Elle est comptée dans la charge"}
+    - {id: d, texte: "Elle ne produit pas de chaleur"}
+- id: S15-Q005
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L01#le-rendement"
+  enonce: "À courant de repos négligeable, à quoi est à peu près égal le rendement d'un régulateur linéaire ?"
+  propositions:
+    - {id: a, texte: "VO / VI"}
+    - {id: b, texte: "VI / VO"}
+    - {id: c, texte: "IO / VI"}
+    - {id: d, texte: "1, toujours"}
+- id: S15-Q006
+  type: calcul
+  securite: false
+  competences: [D6.1]
+  section: "S15-L01#température-de-jonction-et-résistance-thermique"
+  enonce: "La fiche d'un régulateur donne TJmax = 125 °C et θJA = 80 °C/W. L'air ambiant est à 45 °C. Quelle puissance maximale peut-il dissiper ?"
+  unite_attendue: W
+- id: S15-Q007
+  type: choix_unique
+  securite: false
+  competences: [D6.1, D4.6]
+  section: "S15-L01#température-de-jonction-et-résistance-thermique"
+  enonce: "De quoi dépend la résistance thermique jonction-ambiante d'un régulateur ?"
+  propositions:
+    - {id: a, texte: "Du boîtier, de la surface de cuivre sous le composant et de la ventilation"}
+    - {id: b, texte: "De la tension de sortie seule"}
+    - {id: c, texte: "Du courant de repos"}
+    - {id: d, texte: "De rien : c'est une constante universelle"}
+- id: S15-Q008
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#la-tension-de-déchet"
+  enonce: "Qu'est-ce que la tension de déchet (dropout) d'un régulateur ?"
+  propositions:
+    - {id: a, texte: "L'écart entrée-sortie en dessous duquel il cesse de réguler"}
+    - {id: b, texte: "La tension de sortie à vide"}
+    - {id: c, texte: "La chute de tension dans la charge"}
+    - {id: d, texte: "La tension d'enable"}
+- id: S15-Q009
+  type: calcul
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#exemple-5--tension-de-déchet-et-courant"
+  enonce: "En zone de déchet, l'élément de passage d'un LDO a une résistance de 0,5 Ω. Quelle est la tension de déchet à 0,6 A ?"
+  unite_attendue: V
+- id: S15-Q010
+  type: calcul
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#exemple-4--le-régulateur-au-démarrage"
+  enonce: "Un LDO 5 V a 0,3 V de tension de déchet ; il est précédé d'une diode qui chute 0,4 V. Quelle tension batterie minimale garde la sortie à 5 V ?"
+  unite_attendue: V
+- id: S15-Q011
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#la-tension-de-déchet"
+  enonce: "Pourquoi la tension de déchet d'un LDO compte-t-elle sur un véhicule ?"
+  propositions:
+    - {id: a, texte: "Au démarrage du moteur, la tension batterie peut descendre vers 6 V"}
+    - {id: b, texte: "La batterie dépasse toujours 15 V"}
+    - {id: c, texte: "Elle fixe la fréquence de l'alternateur"}
+    - {id: d, texte: "Elle n'a aucune importance sur un véhicule"}
+- id: S15-Q012
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#le-courant-de-repos"
+  enonce: "Comment se définit le courant de repos d'un régulateur ?"
+  propositions:
+    - {id: a, texte: "Courant d'entrée moins courant de sortie"}
+    - {id: b, texte: "Courant de sortie à pleine charge"}
+    - {id: c, texte: "Courant de court-circuit"}
+    - {id: d, texte: "Courant dans le condensateur de sortie"}
+- id: S15-Q013
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#le-courant-de-repos"
+  enonce: "Pourquoi un faible courant de repos compte-t-il pour un régulateur toujours alimenté sur un véhicule ?"
+  propositions:
+    - {id: a, texte: "Il décharge la batterie quand le véhicule est à l'arrêt"}
+    - {id: b, texte: "Il augmente la tension de sortie"}
+    - {id: c, texte: "Il améliore la stabilité"}
+    - {id: d, texte: "Il réduit la tension de déchet"}
+- id: S15-Q014
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#régulation-de-ligne-et-de-charge"
+  enonce: "Que mesure la régulation de charge ?"
+  propositions:
+    - {id: a, texte: "La capacité à garder la sortie quand la charge varie"}
+    - {id: b, texte: "La capacité à garder la sortie quand l'entrée varie"}
+    - {id: c, texte: "Le courant maximal"}
+    - {id: d, texte: "La température maximale"}
+- id: S15-Q015
+  type: choix_unique
+  securite: false
+  competences: [D6.1, D4.6]
+  section: "S15-L02#la-stabilité-et-le-condensateur-de-sortie"
+  enonce: "Que donne la courbe de stabilité (« tunnel de la mort ») d'une fiche de LDO ?"
+  propositions:
+    - {id: a, texte: "La plage permise de résistance série du condensateur de sortie selon le courant"}
+    - {id: b, texte: "La température maximale"}
+    - {id: c, texte: "La tension de déchet selon l'entrée"}
+    - {id: d, texte: "Le brochage"}
+- id: S15-Q016
+  type: calcul
+  securite: false
+  competences: [D6.1]
+  section: "S15-L02#la-sortie-réglable"
+  enonce: "Un régulateur réglable a VFB = 1,25 V. R1 = 22 kΩ relie OUT à FB, R2 = 10 kΩ relie FB à la masse. Quelle est la tension de sortie ?"
+  unite_attendue: V
+- id: S15-Q017
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L03#limitation-de-courant-et-arrêt-thermique"
+  enonce: "Que vaut en général la limitation de courant interne d'un LDO, d'après la note TI SLVA118A ?"
+  propositions:
+    - {id: a, texte: "2 à 4 fois son courant continu nominal"}
+    - {id: b, texte: "Exactement son courant nominal"}
+    - {id: c, texte: "Dix fois son courant nominal"}
+    - {id: d, texte: "Il n'a pas de limitation"}
+- id: S15-Q018
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L03#limitation-de-courant-et-arrêt-thermique"
+  enonce: "Quel est le seuil d'arrêt thermique d'un régulateur ?"
+  propositions:
+    - {id: a, texte: "Celui de sa fiche : il dépend du composant"}
+    - {id: b, texte: "Toujours 100 °C"}
+    - {id: c, texte: "Toujours 150 °C"}
+    - {id: d, texte: "Il n'existe pas"}
+- id: S15-Q019
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L03#linversion-de-polarité"
+  enonce: "Un LDO à un seul MOSFET de passage est-il protégé contre l'inversion de polarité ?"
+  propositions:
+    - {id: a, texte: "Non : le courant inverse passe par la diode interne du transistor ; il faut une diode série"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Oui, grâce à l'arrêt thermique"}
+    - {id: d, texte: "Oui, grâce à l'enable"}
+- id: S15-Q020
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L03#enable-reset-et-power-good"
+  enonce: "Un régulateur a son entrée correcte mais aucune sortie, et il est froid. Que mesurez-vous avant de le condamner ?"
+  propositions:
+    - {id: a, texte: "Son enable, puis sa masse"}
+    - {id: b, texte: "Rien, il est en panne"}
+    - {id: c, texte: "La température de la charge"}
+    - {id: d, texte: "La fréquence de l'alternateur"}
+- id: S15-Q021
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L03#enable-reset-et-power-good"
+  enonce: "À quoi sert le délai de reset (ou power-good) d'un LDO qui alimente un microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "À laisser l'oscillateur du microcontrôleur se stabiliser avant de libérer le reset"}
+    - {id: b, texte: "À augmenter la tension de sortie"}
+    - {id: c, texte: "À couper la sortie en cas de surchauffe"}
+    - {id: d, texte: "À limiter le courant"}
+- id: S15-Q022
+  type: choix_unique
+  securite: true
+  competences: [D6.1]
+  section: "S15-L03#exemple-8--sortie-basse-régulateur-brûlant"
+  enonce: "Après avoir isolé la charge d'un régulateur suspect, comment remettez-vous la carte sous tension ?"
+  propositions:
+    - {id: a, texte: "Avec une alimentation de laboratoire limitée en courant, limite écrite avant la mise sous tension"}
+    - {id: b, texte: "Sur une batterie, sans limite"}
+    - {id: c, texte: "Sur une alimentation réglée au maximum de courant"}
+    - {id: d, texte: "Sans vérifier la polarité, c'est une carte de test"}
+- id: S15-Q023
+  type: choix_unique
+  securite: true
+  competences: [D6.1]
+  section: "S15-L03#méthode-de-diagnostic"
+  enonce: "Pendant le TP-21, comment relever la température du régulateur en charge ?"
+  propositions:
+    - {id: a, texte: "Avec le thermomètre à contact ou la sonde, sans toucher le boîtier avec les doigts"}
+    - {id: b, texte: "En posant le doigt sur la languette"}
+    - {id: c, texte: "En approchant la joue"}
+    - {id: d, texte: "En coupant l'alimentation et en touchant aussitôt"}
+- id: S15-Q024
+  type: choix_unique
+  securite: true
+  competences: [D6.1]
+  section: "S15-L03#méthode-de-diagnostic"
+  enonce: "Vous montez le condensateur électrolytique de sortie du régulateur sur la carte d'entraînement. Que vérifiez-vous avant la mise sous tension ?"
+  propositions:
+    - {id: a, texte: "Sa polarité : le plus vers la sortie du régulateur, le moins vers la masse"}
+    - {id: b, texte: "Rien, un condensateur n'a pas de sens"}
+    - {id: c, texte: "Seulement sa couleur"}
+    - {id: d, texte: "Sa température"}
+- id: S15-Q025
+  type: choix_unique
+  securite: false
+  competences: [D6.1]
+  section: "S15-L03#méthode-de-diagnostic"
+  enonce: "Par rapport à quel point mesurez-vous la sortie d'un régulateur ?"
+  propositions:
+    - {id: a, texte: "Sa propre broche de masse"}
+    - {id: b, texte: "N'importe quelle vis du boîtier"}
+    - {id: c, texte: "Le plus de la batterie"}
+    - {id: d, texte: "L'entrée du régulateur"}

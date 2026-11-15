@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S16-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S16-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous mesurez l'ondulation de sortie d'un buck avec le long fil de masse de la sonde et voyez de grandes pointes à chaque commutation. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je refais la mesure avec un ressort de masse au plus près du point mesuré, ou en différentiel avec deux sondes"}
+    - {id: b, texte: "Je conclus que le condensateur de sortie est mort"}
+    - {id: c, texte: "Je rallonge le fil de masse"}
+    - {id: d, texte: "Je pose la pince de masse sur le nœud de commutation"}
+  competences: [D6.2, D3.4]
+  objectif: O1
+- id: S16-L03-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un convertisseur consomme 0,3 A moyens sous 24 V et fournit 1,2 A sous 5 V. Quelles pertes dissipe-t-il ?"
+  unite_attendue: W
+  competences: [D6.2]
+  objectif: O2

@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S13-Q001
+  bonnes: [a]
+  explication: "Le substrat donne rigidité et épaisseur ; il existe aussi des circuits souples."
+  pourquoi_faux:
+    b: "Le cuivre forme les couches conductrices."
+    c: "Sans rapport ici."
+    d: "Le vernis recouvre le cuivre."
+  source: "S13-L01#un-empilement-de-couches"
+- id: S13-Q002
+  bonnes: [a]
+  explication: "Le nombre de couches compte les couches de cuivre ; on va d'une couche à seize ou plus."
+  pourquoi_faux:
+    b: "On compte le cuivre."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S13-L01#un-empilement-de-couches"
+- id: S13-Q003
+  bonnes: [a]
+  explication: "La sérigraphie est imprimée sur le vernis pour l'assemblage et le repérage."
+  pourquoi_faux:
+    b: "Le vernis isole les pistes."
+    c: "Invisible et sans texte."
+    d: "Sans rapport."
+  source: "S13-L01#un-empilement-de-couches"
+- id: S13-Q004
+  bonnes: [a]
+  explication: "Il est défini par ses bords plutôt que par un chemin."
+  pourquoi_faux:
+    b: "C'est une piste."
+    c: "C'est un via ou un trou métallisé."
+    d: "C'est un point de test."
+  source: "S13-L01#le-vocabulaire-de-la-carte"
+- id: S13-Q005
+  bonnes: [a]
+  explication: "Sans thermique, la pastille chauffe mal et la soudure est difficile : elle demande plus de chaleur au dessoudage."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Elle relie la pastille au plan."
+    d: "Ce n'est pas son rôle."
+  source: "S13-L01#le-vocabulaire-de-la-carte"
+- id: S13-Q006
+  bonnes: [a]
+  explication: "Un via enterré reste à l'intérieur : on ne peut suivre sa liaison que par continuité."
+  pourquoi_faux:
+    b: "Il se voit des deux côtés."
+    c: "Le microvia part d'une couche externe."
+    d: "Sans rapport."
+  source: "S13-L01#les-types-de-vias"
+- id: S13-Q007
+  bonnes: [a]
+  explication: "Le via borgne ou enterré peut, lui, être placé entre des couches quelconques."
+  pourquoi_faux:
+    b: "C'est le via traversant."
+    c: "C'est le via borgne ou enterré."
+    d: "Sans rapport."
+  source: "S13-L01#les-types-de-vias"
+- id: S13-Q008
+  valeur: 0.4794
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "Section : 0,2 × 10⁻³ × 35 × 10⁻⁶ = 7 × 10⁻⁹ m² ; R = 1,678 × 10⁻⁸ × 0,2 / 7 × 10⁻⁹ ≈ 0,48 Ω."
+  source: "S13-L01#la-résistance-dune-piste"
+- id: S13-Q009
+  valeur: 7.191
+  tolerance_relative: 0.02
+  unite: mΩ
+  explication: "Section : 1 × 10⁻³ × 70 × 10⁻⁶ = 7 × 10⁻⁸ m² ; R = 1,678 × 10⁻⁸ × 0,03 / 7 × 10⁻⁸ ≈ 7,2 mΩ."
+  source: "S13-L01#la-résistance-dune-piste"
+- id: S13-Q010
+  valeur: 0.3
+  tolerance_relative: 0.02
+  unite: V
+  explication: "U = R × I = 0,1 × 3 = 0,3 V : les pistes de puissance sont plus larges."
+  source: "S13-L01#exemple-1--résistance-dune-piste"
+- id: S13-Q011
+  bonnes: [a]
+  explication: "Une résistance et une continuité se mesurent circuit hors tension ; un condensateur chargé fausse la mesure et peut abîmer l'instrument (S05, TP-10)."
+  pourquoi_faux:
+    b: "L'ohmmètre ne se pose jamais sur un circuit alimenté."
+    c: "Même limitée, la tension fausse la mesure."
+    d: "La continuité est une mesure de résistance."
+  source: "S13-L02#préparer-la-carte"
+- id: S13-Q012
+  bonnes: [a]
+  explication: "Un condensateur peut garder sa charge après débranchement ; on le vérifie avant toute manipulation (S05, TP-10)."
+  pourquoi_faux:
+    b: "La carte n'est jamais alimentée."
+    c: "Un condensateur peut rester chargé."
+    d: "Le court-circuit franc est à proscrire ; on décharge à travers une résistance."
+  source: "S13-L02#préparer-la-carte"
+- id: S13-Q013
+  bonnes: [a]
+  explication: "Une carte de récupération sert aussi aux relevés et aux essais ; la manipuler sans bracelet est la faute FE-01."
+  pourquoi_faux:
+    b: "Le poste ESD protège les composants, pas l'opérateur contre un choc."
+    c: "La règle s'applique à toute carte."
+    d: "Sans rapport."
+  source: "S13-L02#préparer-la-carte"
+- id: S13-Q014
+  bonnes: [a]
+  explication: "Ces repères traversent la carte et se voient au même endroit des deux côtés, une fois l'image arrière retournée."
+  pourquoi_faux:
+    b: "Elle n'est présente que d'un côté à la fois."
+    c: "Sans rapport."
+    d: "Un CMS n'est que d'un côté."
+  source: "S13-L02#superposer-le-recto-et-le-verso"
+- id: S13-Q015
+  bonnes: [a]
+  explication: "Un logiciel de conception propose de même une vue retournée de la carte."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans retournement, les repères ne coïncident pas."
+  source: "S13-L02#superposer-le-recto-et-le-verso"
+- id: S13-Q016
+  bonnes: [a]
+  explication: "On tranche en ohmmètre : une piste fait une fraction d'ohm."
+  pourquoi_faux:
+    b: "Il peut sonner à travers un composant de faible résistance."
+    c: "C'est un test de résistance."
+    d: "Sans rapport."
+  source: "S13-L02#confirmer-au-multimètre"
+- id: S13-Q017
+  bonnes: [a]
+  explication: "Les cordons ajoutent leur propre résistance aux faibles valeurs."
+  pourquoi_faux:
+    b: "Ils ont une résistance propre."
+    c: "Sans rapport."
+    d: "Dangereux et sans intérêt."
+  source: "S13-L02#confirmer-au-multimètre"
+- id: S13-Q018
+  bonnes: [a]
+  explication: "On élimine d'abord une erreur de mesure, puis on cherche coupure, corrosion ou fissure."
+  pourquoi_faux:
+    b: "La mesure peut être en cause."
+    c: "Le vernis protège la piste."
+    d: "On ne mesure pas une résistance sous tension."
+  source: "S13-L02#exemple-6--la-piste-coupée"
+- id: S13-Q019
+  bonnes: [a]
+  explication: "Le relevé est partiel et honnête ; il n'est jamais présenté comme un schéma constructeur."
+  pourquoi_faux:
+    b: "Il n'en est pas un."
+    c: "Il reste partiel."
+    d: "Il est utile s'il est vérifiable."
+  source: "S13-L03#pourquoi-relever-un-schéma"
+- id: S13-Q020
+  bonnes: [a]
+  explication: "Les photos servent de carte pour tout le relevé et gardent l'état initial."
+  pourquoi_faux:
+    b: "On dessine au fur et à mesure des liaisons confirmées."
+    c: "Inutile et destructif."
+    d: "La carte reste hors tension."
+  source: "S13-L03#la-méthode-de-relevé"
+- id: S13-Q021
+  bonnes: [a]
+  explication: "On n'écrit jamais une valeur plausible à la place d'une valeur confirmée."
+  pourquoi_faux:
+    b: "Valeur supposée : interdit."
+    c: "Le composant existe, il doit figurer."
+    d: "Rien ne dit qu'ils sont égaux."
+  source: "S13-L03#la-méthode-de-relevé"
+- id: S13-Q022
+  bonnes: [a]
+  explication: "Un élément sans ligne de journal est [À VÉRIFIER]."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Il accompagne le schéma."
+    d: "Sans rapport."
+  source: "S13-L03#le-journal-de-relevé"
+- id: S13-Q023
+  bonnes: [a]
+  explication: "Le lecteur doit voir exactement quel élément n'est pas confirmé."
+  pourquoi_faux:
+    b: "Trop vague."
+    c: "Le schéma doit être honnête."
+    d: "On n'écrit pas sur la carte."
+  source: "S13-L03#dessiner-dans-un-logiciel-de-schéma"
+- id: S13-Q024
+  bonnes: [a]
+  explication: "Un marquage CMS court ne suffit pas à identifier un composant ; on cherche ensuite une table de marquages et sa fiche."
+  pourquoi_faux:
+    b: "Supposition non confirmée."
+    c: "Le relevé serait faux."
+    d: "Inutile à ce stade et risqué pour la carte."
+  source: "S13-L03#exemple-8--un-composant-non-identifié"
+- id: S13-Q025
+  bonnes: [a]
+  explication: "Les points de test sont prévus pour une pointe ou un contact à ressort."
+  pourquoi_faux:
+    b: "Elle peut être reliée à n'importe quel réseau."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S13-L02#les-points-de-test"

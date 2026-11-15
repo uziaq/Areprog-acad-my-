@@ -1,0 +1,11 @@
+# MOSFET protégés côté bas (« smart power ») : protections intégrées, types de défauts,
+# commutation de charges inductives (cours S09, détail en S29). Sections citées par leur titre anglais.
+id: SRC-0022
+titre: "AND8202 : Low Side SmartFETs"
+editeur: onsemi
+reference: "Application note AND8202/D"
+revision: "Rev. 4, avril 2022"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://onsemi.com/pub/Collateral/AND8202-D.PDF
