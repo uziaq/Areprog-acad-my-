@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S21-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S21-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une mémoire série a les broches CS, SK, DI, DO et ORG. De quelle famille s'agit-il ?"
+  propositions:
+    - {id: a, texte: "Une EEPROM Microwire"}
+    - {id: b, texte: "Une EEPROM I²C"}
+    - {id: c, texte: "Un microcontrôleur"}
+    - {id: d, texte: "Un régulateur de tension"}
+  competences: [D7.3]
+  objectif: O1
+- id: S21-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une EEPROM I²C a A2 à l'alimentation, A1 et A0 à la masse. Quelle est son adresse sur sept bits ?"
+  propositions:
+    - {id: a, texte: "0x54 (101 0100)"}
+    - {id: b, texte: "0x50 (101 0000)"}
+    - {id: c, texte: "0xA8"}
+    - {id: d, texte: "0x14"}
+  competences: [D7.3]
+  objectif: O3
+- id: S21-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une EEPROM de 128 Kbit est organisée en pages de 64 octets. Combien a-t-elle de pages ?"
+  propositions:
+    - {id: a, texte: "256 pages"}
+    - {id: b, texte: "128 pages"}
+    - {id: c, texte: "2048 pages"}
+    - {id: d, texte: "64 pages"}
+  competences: [D7.3]
+  objectif: O3

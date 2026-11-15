@@ -1,0 +1,32 @@
+# Énoncés seulement : les solutions sont dans corrections/S21-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S21-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une mémoire est alimentée en 3,3 V. D'après la règle de la fiche, quelle tension maximale peut recevoir une de ses broches ?"
+  unite_attendue: V
+  competences: [D7.4]
+  objectif: O1
+- id: S21-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "En lecture en circuit, la tension de la broche VCC de la mémoire s'effondre dès que le programmateur l'alimente. Explication la plus probable ?"
+  propositions:
+    - {id: a, texte: "Le programmateur alimente aussi le reste de la carte relié au même rail, et ne fournit pas assez de courant"}
+    - {id: b, texte: "La mémoire est vierge"}
+    - {id: c, texte: "L'empreinte est fausse"}
+    - {id: d, texte: "Le quartz du microcontrôleur est trop rapide"}
+  competences: [D7.3, D7.4]
+  objectif: O2
+- id: S21-L02-EX03
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre la procédure de sauvegarde avant une intervention."
+  propositions:
+    - {id: a, texte: "Calculer l'empreinte de chaque fichier"}
+    - {id: b, texte: "Lire la mémoire une première fois"}
+    - {id: c, texte: "Archiver les deux fichiers et noter l'empreinte au journal"}
+    - {id: d, texte: "Relancer une lecture complète"}
+    - {id: e, texte: "Comparer les deux empreintes"}
+  competences: [D7.4]
+  objectif: O3

@@ -1,0 +1,13 @@
+# EEPROM série I²C de 256 Kbit : organisation en pages, adressage (1010, A2 A1 A0, R/W),
+# acquittement, écriture par octet et par page, repliement dans la page, protection matérielle
+# par la broche WP, état à la livraison, endurance, tension maximale sur les broches (cours S21).
+# Sections citées par leur titre anglais.
+id: SRC-0059
+titre: "CAT24C256 – EEPROM Serial 256-Kb I2C"
+editeur: onsemi
+reference: "CAT24C256/D"
+revision: "Rev. 16, février 2022"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.onsemi.com/download/data-sheet/pdf/cat24c256-d.pdf

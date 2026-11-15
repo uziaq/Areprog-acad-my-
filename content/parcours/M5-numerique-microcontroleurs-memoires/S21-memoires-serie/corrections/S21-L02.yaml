@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S21-L02-EX01
+  valeur: 3.8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "La fiche limite une broche à VCC + 0,5 V : 3,3 + 0,5 = 3,8 V. Un programmateur en 5 V doit être réglé ou adapté."
+  renvoi_section: "S21-L02#lire-hors-circuit"
+- id: S21-L02-EX02
+  bonnes: [a]
+  explication: "En circuit, la broche VCC de la mémoire est reliée à un rail qui alimente d'autres composants ; le programmateur doit alors fournir leur courant."
+  renvoi_section: "S21-L02#lire-en-circuit"
+- id: S21-L02-EX03
+  ordre: [b, d, a, e, c]
+  explication: "Deux lectures complètes, deux empreintes, comparaison, puis archivage seulement si elles sont identiques."
+  renvoi_section: "S21-L02#lempreinte-et-la-double-sauvegarde"

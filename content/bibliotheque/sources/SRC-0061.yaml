@@ -1,0 +1,13 @@
+# Mémoire Flash SPI de 32 Mbit : organisation en pages de 256 octets, secteurs de 4 Ko et blocs,
+# effacement à FFh, validation d'écriture, protections logicielle et matérielle (broche /WP),
+# inhibition d'écriture sous un seuil d'alimentation, endurance (cours S21). Sections citées par
+# leur numéro et leur titre anglais.
+id: SRC-0061
+titre: "W25Q32JV – 3V 32M-bit Serial Flash Memory with Dual/Quad SPI"
+editeur: Winbond Electronics
+reference: "W25Q32JV"
+revision: "Revision G, mars 2018"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf

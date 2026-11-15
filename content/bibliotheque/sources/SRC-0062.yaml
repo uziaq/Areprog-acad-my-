@@ -1,0 +1,12 @@
+# Fonctions de hachage SHA (dont SHA-256) : propriété d'une empreinte, utilisée pour vérifier
+# que deux sauvegardes d'une mémoire sont identiques (cours S21). Sections citées par leur numéro
+# et leur titre anglais.
+id: SRC-0062
+titre: "FIPS PUB 180-4 – Secure Hash Standard (SHS)"
+editeur: NIST
+reference: "FIPS PUB 180-4"
+revision: "août 2015"
+date_consultation: 2026-11-15
+type: norme
+licence: libre
+lien: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf

@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S21-L01-EX01
+  bonnes: [a]
+  explication: "CS, SK, DI, DO et la broche ORG, qui choisit l'organisation x8 ou x16, caractérisent l'EEPROM Microwire."
+  renvoi_section: "S21-L01#eeprom-microwire"
+- id: S21-L01-EX02
+  bonnes: [a]
+  explication: "1010 puis A2 A1 A0 = 100 : 101 0100, soit 0x54. 0xA8 serait l'octet complet en écriture."
+  renvoi_section: "S21-L01#eeprom-i²c"
+- id: S21-L01-EX03
+  bonnes: [a]
+  explication: "128 × 1024 / 8 = 16 384 octets ; 16 384 / 64 = 256 pages."
+  renvoi_section: "S21-L01#exemple-2--capacité-et-pages"
