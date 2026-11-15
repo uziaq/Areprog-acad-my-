@@ -1,0 +1,199 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S22-Q001
+  bonnes: [a]
+  explication: "D'après le guide TI."
+  pourquoi_faux:
+    b: "C'est le CAN."
+    c: "Ce sont les impulsions du réseau de bord."
+    d: "C'est le hachage SHA."
+  source: "S22-L01#jtag"
+- id: S22-Q002
+  bonnes: [a]
+  explication: "TDI et TDO portent les données."
+  pourquoi_faux:
+    b: "Ce sont les données."
+    c: "C'est l'I²C."
+    d: "C'est le Microwire."
+  source: "S22-L01#jtag"
+- id: S22-Q003
+  bonnes: [a]
+  explication: "TDO change sur le front descendant."
+  pourquoi_faux:
+    b: "C'est TDO qui change sur ce front."
+    c: "Non."
+    d: "Non."
+  source: "S22-L01#jtag"
+- id: S22-Q004
+  bonnes: [a]
+  explication: "Le scan de bordure pilote et observe les broches."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S22-L01#jtag"
+- id: S22-Q005
+  bonnes: [a]
+  explication: "La chaîne traverse tous les circuits."
+  pourquoi_faux:
+    b: "TCK est commun."
+    c: "Non."
+    d: "Non."
+  source: "S22-L01#exemple-2--deux-circuits-chaînés"
+- id: S22-Q006
+  bonnes: [a]
+  explication: "D'après la note NXP."
+  pourquoi_faux:
+    b: "C'est JTAG."
+    c: "Non."
+    d: "Non."
+  source: "S22-L01#bdm-une-interface-à-une-seule-broche"
+- id: S22-Q007
+  bonnes: [a]
+  explication: "D'après la note Microchip."
+  pourquoi_faux:
+    b: "Non."
+    c: "Il doit être alimenté."
+    d: "Non."
+  source: "S22-L01#entrer-en-mode-de-programmation"
+- id: S22-Q008
+  bonnes: [a]
+  explication: "C'est la quatrième condition de vie de S20."
+  pourquoi_faux:
+    b: "Le mode de démarrage peut changer."
+    c: "Non."
+    d: "Non."
+  source: "S22-L01#entrer-en-mode-de-programmation"
+- id: S22-Q009
+  bonnes: [a]
+  explication: "Le cours ne fournit aucun brochage de calculateur."
+  pourquoi_faux:
+    b: "Source non fiable."
+    c: "Le cours n'en donne pas."
+    d: "Dangereux."
+  source: "S22-L01#le-lien-avec-les-outils-de-latelier"
+- id: S22-Q010
+  bonnes: [a]
+  explication: "Une seule source à la fois."
+  pourquoi_faux:
+    b: "Deux sources se renvoient du courant."
+    c: "Non."
+    d: "Non."
+  source: "S22-L02#une-seule-source-dalimentation"
+- id: S22-Q011
+  bonnes: [a]
+  explication: "D'après la note Microchip."
+  pourquoi_faux:
+    b: "Non."
+    c: "C'est TCK."
+    d: "Non."
+  source: "S22-L02#les-niveaux-et-la-référence-de-tension"
+- id: S22-Q012
+  bonnes: [a]
+  explication: "Elles limitent le courant en cas de conflit."
+  pourquoi_faux:
+    b: "Elles les ralentissent un peu."
+    c: "Non."
+    d: "Non."
+  source: "S22-L02#la-masse-et-les-lignes-partagées"
+- id: S22-Q013
+  valeur: 10
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "3,3 / 330 = 10 mA."
+  source: "S22-L02#exemple-4--résistance-de-protection"
+- id: S22-Q014
+  bonnes: [a]
+  explication: "La note Microchip recommande une charge résistive."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S22-L02#la-masse-et-les-lignes-partagées"
+- id: S22-Q015
+  bonnes: [a]
+  explication: "D'où la règle : rien ne bouge tant que l'outil n'a pas fini."
+  pourquoi_faux:
+    b: "Faux."
+    c: "Non."
+    d: "Non."
+  source: "S22-L02#la-coupure-pendant-une-écriture"
+- id: S22-Q016
+  bonnes: [a]
+  explication: "Pour pouvoir analyser un échec et reproduire l'opération."
+  pourquoi_faux:
+    b: "Insuffisant."
+    c: "Non."
+    d: "Aucune donnée client au journal."
+  source: "S22-L03#avant-de-programmer"
+- id: S22-Q017
+  bonnes: [a]
+  explication: "Du plus simple au plus profond."
+  pourquoi_faux:
+    b: "Plus tard dans l'arbre."
+    c: "Plus tard."
+    d: "Jamais sans preuve."
+  source: "S22-L03#analyser-un-échec-de-connexion"
+- id: S22-Q018
+  bonnes: [a]
+  explication: "D'après la note NXP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S22-L03#analyser-un-échec-de-connexion"
+- id: S22-Q019
+  bonnes: [a]
+  explication: "Un mauvais réglage d'horloge peut empêcher le fonctionnement."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Non."
+    d: "Non."
+  source: "S22-L03#analyser-un-échec-de-connexion"
+- id: S22-Q020
+  bonnes: [a]
+  explication: "Câble long, masse ou ligne chargée sont les hypothèses."
+  pourquoi_faux:
+    b: "Dangereux."
+    c: "Aggrave le problème."
+    d: "Risque d'écriture interrompue."
+  source: "S22-L03#exemple-8--connexion-instable"
+- id: S22-Q021
+  bonnes: [a]
+  explication: "Broche à drain pseudo-ouvert avec tirage interne."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Faux."
+  source: "S22-L01#bdm-une-interface-à-une-seule-broche"
+- id: S22-Q022
+  bonnes: [a]
+  explication: "Masse d'abord, comme une sonde d'oscilloscope (FE-07)."
+  pourquoi_faux:
+    b: "Risque pour les entrées."
+    c: "Risque de court-circuit."
+    d: "Mesure et communication fausses."
+  source: "S22-L02#la-masse-et-les-lignes-partagées"
+- id: S22-Q023
+  bonnes: [a]
+  explication: "Le TP exclut toute cause qui pourrait détruire la carte."
+  pourquoi_faux:
+    b: "Interdit (FE-03)."
+    c: "Interdit."
+    d: "Interdit."
+  source: "S22-L03#analyser-un-échec-de-connexion"
+- id: S22-Q024
+  bonnes: [a]
+  explication: "Les fumées de flux s'aspirent à la source."
+  pourquoi_faux:
+    b: "Inefficace."
+    c: "Ne règle pas les fumées."
+    d: "Trop tard."
+  source: "S22-L03#exemple-9--programmation-interrompue"
+- id: S22-Q025
+  bonnes: [a]
+  explication: "BKGD tenue basse au relâchement du reset fait entrer en mode débogage."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Jamais sans preuve."
+  source: "S22-L01#exemple-3--démarrage-qui-reste-en-mode-débogage"

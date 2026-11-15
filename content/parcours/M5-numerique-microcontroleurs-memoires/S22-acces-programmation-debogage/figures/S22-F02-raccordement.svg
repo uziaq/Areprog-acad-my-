@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : points à vérifier avant un raccordement de programmation, schéma de principe sans brochage réel. -->
+  <defs><marker id="s22f02-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <rect x="20" y="60" width="120" height="190" rx="4" /><text x="80" y="50" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">sonde</text>
+  <rect x="400" y="60" width="180" height="190" rx="4" /><text x="490" y="50" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">carte</text>
+  <path d="M140 230 H400" /><text x="270" y="224" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">1 masse commune (en premier)</text>
+  <path d="M400 190 H142" marker-end="url(#s22f02-fl)" /><text x="270" y="184" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">2 référence de tension de la carte</text>
+  <path d="M140 100 H300 M340 100 H400 M140 140 H300 M340 140 H400" />
+  <rect x="300" y="93" width="40" height="14" stroke-width="1.5" /><rect x="300" y="133" width="40" height="14" stroke-width="1.5" />
+  <text x="220" y="94" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">signaux</text>
+  <text x="320" y="124" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">R série</text>
+  <text x="490" y="104" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">3 lignes sans</text>
+  <text x="490" y="118" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">charge capacitive</text>
+  <rect x="440" y="265" width="100" height="26" rx="3" stroke-width="1.5" /><text x="490" y="312" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">alimentation du banc</text>
+  <path d="M440 260 L540 296 M540 260 L440 296" stroke-width="1.5" />
+  <text x="300" y="282" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">4 une seule source :</text>
+  <text x="300" y="296" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">si la sonde alimente, banc coupé</text>
+</svg>

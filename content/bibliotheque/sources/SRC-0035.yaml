@@ -1,4 +1,5 @@
 # Ajout S18 : section Fuses (calibre en ampères et en tension, fusibles rapides et temporisés).
+# Ajout S22 : section Temperature coefficient of resistance (coefficient positif des métaux purs).
 # Résistance d'un conducteur : R = ρ·l/A, résistivité du cuivre à 20 °C (cours S13, résistance
 # d'une piste). Manuel libre ; sections citées par leur titre anglais, chapitre 12 (Physics of
 # Conductors and Insulators).

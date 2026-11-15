@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S22-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S22-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "L'outil alimente la carte par sa ligne de tension cible. Que faites-vous de l'alimentation du banc ?"
+  propositions:
+    - {id: a, texte: "Je la laisse coupée : une seule source à la fois"}
+    - {id: b, texte: "Je l'allume aussi pour plus de sécurité"}
+    - {id: c, texte: "Je la règle sur 12 V"}
+    - {id: d, texte: "Je retire la limite de courant"}
+  competences: [D7.5, D9.1]
+  objectif: O1
+- id: S22-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une ligne partagée porte une résistance série de 470 Ω ; la carte est alimentée en 5 V. Quel courant maximal circule si la sonde et un autre circuit s'opposent ?"
+  unite_attendue: mA
+  competences: [D7.5]
+  objectif: O2
+- id: S22-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "La programmation JTAG échoue ; une ligne de l'interface porte un condensateur de filtre. Hypothèse la plus probable ?"
+  propositions:
+    - {id: a, texte: "La charge capacitive empêche la sonde de piloter correctement la ligne"}
+    - {id: b, texte: "Le microcontrôleur est vierge"}
+    - {id: c, texte: "La mémoire EEPROM est pleine"}
+    - {id: d, texte: "Le quartz est trop précis"}
+  competences: [D7.5]
+  objectif: O1

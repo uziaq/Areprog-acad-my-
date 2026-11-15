@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S22-L03-EX01
+  ordre: [b, d, a, c]
+  explication: "Identifier, sauvegarder deux fois, journaliser, puis écrire sans rien débrancher."
+  renvoi_section: "S22-L03#avant-de-programmer"
+- id: S22-L03-EX02
+  bonnes: [a]
+  explication: "On vérifie du plus simple au plus profond : alimentation et masse d'abord."
+  renvoi_section: "S22-L03#analyser-un-échec-de-connexion"

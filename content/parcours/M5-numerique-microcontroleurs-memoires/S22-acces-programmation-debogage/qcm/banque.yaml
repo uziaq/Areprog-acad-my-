@@ -1,0 +1,273 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S22-Q001
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#jtag"
+  enonce: "À quelle norme correspond JTAG ?"
+  propositions:
+    - {id: a, texte: "IEEE 1149.1"}
+    - {id: b, texte: "ISO 11898-2"}
+    - {id: c, texte: "ISO 7637-2"}
+    - {id: d, texte: "FIPS 180-4"}
+- id: S22-Q002
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#jtag"
+  enonce: "Quels signaux commandent le contrôleur TAP de JTAG ?"
+  propositions:
+    - {id: a, texte: "TCK et TMS"}
+    - {id: b, texte: "TDI et TDO"}
+    - {id: c, texte: "SDA et SCL"}
+    - {id: d, texte: "CS et SK"}
+- id: S22-Q003
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#jtag"
+  enonce: "Sur quel front de TCK TMS et TDI sont-ils lus ?"
+  propositions:
+    - {id: a, texte: "Le front montant"}
+    - {id: b, texte: "Le front descendant"}
+    - {id: c, texte: "Les deux"}
+    - {id: d, texte: "Aucun, ils sont asynchrones"}
+- id: S22-Q004
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#jtag"
+  enonce: "À quoi servait JTAG à l'origine ?"
+  propositions:
+    - {id: a, texte: "Au test des cartes, par une chaîne de cellules placées sur les broches"}
+    - {id: b, texte: "À la communication CAN"}
+    - {id: c, texte: "À la mesure de température"}
+    - {id: d, texte: "À l'alimentation des circuits"}
+- id: S22-Q005
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#exemple-2--deux-circuits-chaînés"
+  enonce: "Deux circuits sont chaînés en JTAG. Comment est relié TDO du premier ?"
+  propositions:
+    - {id: a, texte: "À TDI du second"}
+    - {id: b, texte: "À TCK du second"}
+    - {id: c, texte: "À la masse"}
+    - {id: d, texte: "À TDO du second"}
+- id: S22-Q006
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#bdm-une-interface-à-une-seule-broche"
+  enonce: "Combien de broches de données utilise l'interface BDM étudiée ?"
+  propositions:
+    - {id: a, texte: "Une seule, BKGD, plus le reset, l'alimentation et la masse"}
+    - {id: b, texte: "Quatre"}
+    - {id: c, texte: "Huit"}
+    - {id: d, texte: "Aucune"}
+- id: S22-Q007
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#entrer-en-mode-de-programmation"
+  enonce: "En programmation SPI de la famille étudiée par Microchip, dans quel état est le microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "Tenu en reset, broches en haute impédance"}
+    - {id: b, texte: "En fonctionnement normal"}
+    - {id: c, texte: "Hors tension"}
+    - {id: d, texte: "En veille profonde"}
+- id: S22-Q008
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#entrer-en-mode-de-programmation"
+  enonce: "Une résistance de configuration de démarrage est arrachée. Conséquence possible ?"
+  propositions:
+    - {id: a, texte: "Le microcontrôleur ne démarre plus en mode normal"}
+    - {id: b, texte: "Aucune"}
+    - {id: c, texte: "La Flash s'efface"}
+    - {id: d, texte: "Le quartz change de fréquence"}
+- id: S22-Q009
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#le-lien-avec-les-outils-de-latelier"
+  enonce: "Où prend-on le raccordement d'un outil sur un calculateur ?"
+  propositions:
+    - {id: a, texte: "Dans la documentation officielle de l'outil"}
+    - {id: b, texte: "Dans une vidéo"}
+    - {id: c, texte: "Dans ce cours"}
+    - {id: d, texte: "En testant"}
+- id: S22-Q010
+  type: choix_unique
+  securite: false
+  competences: [D7.5, D9.1]
+  section: "S22-L02#une-seule-source-dalimentation"
+  enonce: "L'outil alimente la carte. Que faites-vous de l'alimentation de la carte ?"
+  propositions:
+    - {id: a, texte: "Je la laisse coupée"}
+    - {id: b, texte: "Je l'allume aussi"}
+    - {id: c, texte: "Je la monte"}
+    - {id: d, texte: "Je retire son fusible et l'allume"}
+- id: S22-Q011
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L02#les-niveaux-et-la-référence-de-tension"
+  enonce: "À quoi sert la ligne de référence de tension sur un connecteur de débogage ?"
+  propositions:
+    - {id: a, texte: "À indiquer à la sonde le niveau logique de la carte, ou à alimenter le microcontrôleur pendant la programmation"}
+    - {id: b, texte: "À mesurer le courant"}
+    - {id: c, texte: "À fournir l'horloge"}
+    - {id: d, texte: "À relier la terre"}
+- id: S22-Q012
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L02#la-masse-et-les-lignes-partagées"
+  enonce: "Pourquoi des résistances série sur des lignes de programmation partagées ?"
+  propositions:
+    - {id: a, texte: "Pour protéger le programmateur si un autre circuit pilote la ligne"}
+    - {id: b, texte: "Pour accélérer les fronts"}
+    - {id: c, texte: "Pour alimenter la mémoire"}
+    - {id: d, texte: "Pour remplacer la masse"}
+- id: S22-Q013
+  type: calcul
+  securite: false
+  competences: [D7.5]
+  section: "S22-L02#exemple-4--résistance-de-protection"
+  enonce: "Une résistance série de 330 Ω est sous 3,3 V en cas de conflit. Quel courant circule ?"
+  unite_attendue: mA
+- id: S22-Q014
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L02#la-masse-et-les-lignes-partagées"
+  enonce: "Pourquoi un condensateur de filtre sur une ligne JTAG peut-il faire échouer la programmation ?"
+  propositions:
+    - {id: a, texte: "La charge capacitive empêche la sonde de piloter correctement la ligne"}
+    - {id: b, texte: "Il efface la mémoire"}
+    - {id: c, texte: "Il inverse les données"}
+    - {id: d, texte: "Il bloque le reset"}
+- id: S22-Q015
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L02#la-coupure-pendant-une-écriture"
+  enonce: "Que risque-t-on en débranchant le câble pendant une écriture ?"
+  propositions:
+    - {id: a, texte: "Une mémoire laissée dans un état incohérent"}
+    - {id: b, texte: "Rien"}
+    - {id: c, texte: "Une écriture plus rapide"}
+    - {id: d, texte: "Un reset bénéfique"}
+- id: S22-Q016
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L03#avant-de-programmer"
+  enonce: "Que note-t-on au journal avant une programmation ?"
+  propositions:
+    - {id: a, texte: "Outil, version du logiciel, réglages, tension, source d'alimentation"}
+    - {id: b, texte: "Seulement la date"}
+    - {id: c, texte: "Rien"}
+    - {id: d, texte: "Le nom du client"}
+- id: S22-Q017
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L03#analyser-un-échec-de-connexion"
+  enonce: "L'outil ne détecte pas la cible. Première vérification ?"
+  propositions:
+    - {id: a, texte: "Tension cible au connecteur et masse commune"}
+    - {id: b, texte: "Protections en lecture"}
+    - {id: c, texte: "Mise à jour du logiciel"}
+    - {id: d, texte: "Remplacement du microcontrôleur"}
+- id: S22-Q018
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L03#analyser-un-échec-de-connexion"
+  enonce: "En BDM, que doit connaître la sonde pour communiquer ?"
+  propositions:
+    - {id: a, texte: "La fréquence d'horloge de la cible"}
+    - {id: b, texte: "Le kilométrage"}
+    - {id: c, texte: "L'empreinte de la Flash"}
+    - {id: d, texte: "La température"}
+- id: S22-Q019
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L03#analyser-un-échec-de-connexion"
+  enonce: "Après une programmation, le microcontrôleur ne démarre plus et ne répond plus. Cause classique à vérifier ?"
+  propositions:
+    - {id: a, texte: "Un réglage de configuration de la source d'horloge qui ne correspond pas au matériel"}
+    - {id: b, texte: "Un fusible du banc trop gros"}
+    - {id: c, texte: "La couleur du câble"}
+    - {id: d, texte: "La date du fichier"}
+- id: S22-Q020
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L03#exemple-8--connexion-instable"
+  enonce: "La connexion réussit une fois sur trois. Action raisonnable ?"
+  propositions:
+    - {id: a, texte: "Vérifier la masse et les fronts, puis baisser la vitesse de l'interface si la documentation le permet"}
+    - {id: b, texte: "Augmenter la tension cible"}
+    - {id: c, texte: "Retirer la masse"}
+    - {id: d, texte: "Insister jusqu'à ce que ça passe"}
+- id: S22-Q021
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#bdm-une-interface-à-une-seule-broche"
+  enonce: "La broche BKGD de l'interface BDM étudiée a-t-elle besoin d'une résistance de tirage externe ?"
+  propositions:
+    - {id: a, texte: "Non : elle a un tirage interne, d'après la note NXP"}
+    - {id: b, texte: "Oui, toujours de 10 Ω"}
+    - {id: c, texte: "Oui, vers la masse"}
+    - {id: d, texte: "Elle n'existe pas"}
+- id: S22-Q022
+  type: choix_unique
+  securite: true
+  competences: [D7.5, D9.1]
+  section: "S22-L02#la-masse-et-les-lignes-partagées"
+  enonce: "Dans quel ordre raccordez-vous une sonde de débogage ?"
+  propositions:
+    - {id: a, texte: "Carte hors tension, masse d'abord, puis signaux ; tension cible vérifiée avant"}
+    - {id: b, texte: "Signaux d'abord, masse ensuite"}
+    - {id: c, texte: "Sous tension, au hasard"}
+    - {id: d, texte: "Sans masse"}
+- id: S22-Q023
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S22-L03#analyser-un-échec-de-connexion"
+  enonce: "Au TP-32, quel type d'échec volontaire le formateur peut-il préparer ?"
+  propositions:
+    - {id: a, texte: "Une cause sans risque matériel : ligne débranchée, réglage de l'outil, carte non alimentée"}
+    - {id: b, texte: "Une inversion d'alimentation"}
+    - {id: c, texte: "Une surtension sur la tension cible"}
+    - {id: d, texte: "Un court-circuit entre deux broches"}
+- id: S22-Q024
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S22-L03#exemple-9--programmation-interrompue"
+  enonce: "Pendant FR-18, quelle précaution protège la santé ?"
+  propositions:
+    - {id: a, texte: "L'aspiration des fumées en marche pendant toute la soudure"}
+    - {id: b, texte: "Souffler sur la fumée"}
+    - {id: c, texte: "Souder sans flux"}
+    - {id: d, texte: "Aérer après la séance"}
+- id: S22-Q025
+  type: choix_unique
+  securite: false
+  competences: [D7.5]
+  section: "S22-L01#exemple-3--démarrage-qui-reste-en-mode-débogage"
+  enonce: "Un microcontrôleur à interface BDM reste en mode débogage au démarrage. Quelle mesure faites-vous ?"
+  propositions:
+    - {id: a, texte: "Le niveau de BKGD au relâchement du reset, comparé à la référence"}
+    - {id: b, texte: "La fréquence du réseau électrique"}
+    - {id: c, texte: "La résistance du fusible"}
+    - {id: d, texte: "Aucune, on remplace le microcontrôleur"}

@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S22-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S22-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quels sont les quatre signaux du port d'accès de test JTAG ?"
+  propositions:
+    - {id: a, texte: "TCK, TMS, TDI, TDO"}
+    - {id: b, texte: "SDA, SCL, WP, VCC"}
+    - {id: c, texte: "CAN-H, CAN-L, masse, 12 V"}
+    - {id: d, texte: "CS, SK, DI, ORG"}
+  competences: [D7.5]
+  objectif: O1
+- id: S22-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Comment un microcontrôleur à interface BDM entre-t-il en mode débogage par la méthode matérielle ?"
+  propositions:
+    - {id: a, texte: "La sonde tient BKGD et le reset bas, relâche le reset, puis relâche BKGD"}
+    - {id: b, texte: "On coupe son horloge"}
+    - {id: c, texte: "On lui applique 12 V sur toutes les broches"}
+    - {id: d, texte: "On retire sa mémoire"}
+  competences: [D7.5]
+  objectif: O2
+- id: S22-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Où prenez-vous le raccordement et la tension à utiliser pour l'outil de lecture de l'atelier ?"
+  propositions:
+    - {id: a, texte: "Dans la documentation officielle de l'outil et la fiche du microcontrôleur"}
+    - {id: b, texte: "Dans une vidéo trouvée en ligne"}
+    - {id: c, texte: "Dans les souvenirs d'un collègue"}
+    - {id: d, texte: "En essayant plusieurs tensions"}
+  competences: [D7.5]
+  objectif: O3

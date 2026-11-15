@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S22-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S22-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les étapes avant une programmation."
+  propositions:
+    - {id: a, texte: "Noter outil, logiciel, réglages et source d'alimentation au journal"}
+    - {id: b, texte: "Identifier le microcontrôleur et l'interface"}
+    - {id: c, texte: "Lancer l'écriture et ne rien débrancher avant la fin"}
+    - {id: d, texte: "Sauvegarder deux fois, empreintes identiques"}
+  competences: [D7.5, D9.1]
+  objectif: O1
+- id: S22-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "L'outil annonce « cible non détectée ». Quelle vérification faites-vous en premier ?"
+  propositions:
+    - {id: a, texte: "La tension cible au connecteur et la masse commune"}
+    - {id: b, texte: "Les protections en lecture du microcontrôleur"}
+    - {id: c, texte: "La mise à jour du logiciel de l'outil"}
+    - {id: d, texte: "Le remplacement du microcontrôleur"}
+  competences: [D7.5]
+  objectif: O2

@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S22-L01-EX01
+  bonnes: [a]
+  explication: "Le TAP est commandé par TCK et TMS ; les données entrent par TDI et sortent par TDO."
+  renvoi_section: "S22-L01#jtag"
+- id: S22-L01-EX02
+  bonnes: [a]
+  explication: "D'après la note NXP, BKGD tenue basse au relâchement du reset fait démarrer le microcontrôleur en mode débogage."
+  renvoi_section: "S22-L01#entrer-en-mode-de-programmation"
+- id: S22-L01-EX03
+  bonnes: [a]
+  explication: "Le cours ne fournit aucun brochage de calculateur : seule la documentation officielle fait foi."
+  renvoi_section: "S22-L01#le-lien-avec-les-outils-de-latelier"

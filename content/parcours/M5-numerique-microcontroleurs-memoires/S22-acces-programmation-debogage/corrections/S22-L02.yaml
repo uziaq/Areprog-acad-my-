@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S22-L02-EX01
+  bonnes: [a]
+  explication: "Si le programmateur alimente la carte, l'alimentation de la carte doit rester coupée."
+  renvoi_section: "S22-L02#une-seule-source-dalimentation"
+- id: S22-L02-EX02
+  valeur: 10.6
+  tolerance_relative: 0.02
+  unite: mA
+  explication: "I = 5 / 470 ≈ 10,6 mA."
+  renvoi_section: "S22-L02#exemple-4--résistance-de-protection"
+- id: S22-L02-EX03
+  bonnes: [a]
+  explication: "La note Microchip recommande une charge résistive : le condensateur de filtre se retire pendant la programmation."
+  renvoi_section: "S22-L02#la-masse-et-les-lignes-partagées"
