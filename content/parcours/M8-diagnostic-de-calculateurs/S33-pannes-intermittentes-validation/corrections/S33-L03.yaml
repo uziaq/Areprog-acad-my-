@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S33-L03-EX01
+  ordre: [b, d, a, e, c, f]
+  explication: "Réception, hypothèses, mesures, intervention, validation, puis limites ; sources et traçabilité complètent le dossier."
+  renvoi_section: "S33-L03#le-dossier-enrichi"
+- id: S33-L03-EX02
+  bonnes: [a]
+  explication: "Le compte rendu ne promet pas ce qui n'a pas été validé et dit ce qui reste à contrôler ; « le 12 V est revenu » est le contre-exemple VID-12 (E-28)."
+  renvoi_section: "S33-L03#la-communication-au-client"

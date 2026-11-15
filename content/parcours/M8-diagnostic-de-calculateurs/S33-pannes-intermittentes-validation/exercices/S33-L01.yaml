@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S33-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S33-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "D'après la note TI, quelles contraintes fatiguent les joints de soudure entre un composant et la carte ?"
+  propositions:
+    - {id: a, texte: "Cyclage thermique, choc thermique, vibration, flexion"}
+    - {id: b, texte: "Uniquement la tension d'alimentation"}
+    - {id: c, texte: "Uniquement la lumière"}
+    - {id: d, texte: "Aucune : un joint de soudure ne s'use pas"}
+  competences: [D10.4]
+  objectif: O1
+- id: S33-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quelle bombe de froid utilise-t-on sur un calculateur ?"
+  propositions:
+    - {id: a, texte: "Une bombe prévue pour l'électronique, antistatique, poste ESD en place"}
+    - {id: b, texte: "N'importe quel aérosol réfrigérant, la paille en plastique ne pose pas de problème"}
+    - {id: c, texte: "Un dégrippant"}
+    - {id: d, texte: "De l'air comprimé d'atelier chargé d'huile"}
+  competences: [D10.4]
+  objectif: O1
+- id: S33-L01-EX03
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre la localisation d'une panne intermittente."
+  propositions:
+    - {id: a, texte: "Appliquer une contrainte contrôlée sur une seule zone"}
+    - {id: b, texte: "Choisir et surveiller en continu un signal qui montre la panne"}
+    - {id: c, texte: "Prouver par une inspection ou une mesure"}
+    - {id: d, texte: "Réduire la zone qui fait apparaître la panne"}
+  competences: [D10.4]
+  objectif: O2

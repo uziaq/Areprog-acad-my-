@@ -1,0 +1,273 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S33-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#pourquoi-une-panne-est-intermittente"
+  enonce: "Où la fatigue des joints de soudure commence-t-elle sur un boîtier, d'après la note TI ?"
+  propositions:
+    - {id: a, texte: "Aux angles, où les joints sont les plus contraints"}
+    - {id: b, texte: "Au centre du boîtier"}
+    - {id: c, texte: "Sur le marquage"}
+    - {id: d, texte: "Nulle part"}
+- id: S33-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#pourquoi-une-panne-est-intermittente"
+  enonce: "Qu'est-ce qui fait monter la résistance d'un joint qui se fatigue ?"
+  propositions:
+    - {id: a, texte: "Une fissure qui se propage dans le joint"}
+    - {id: b, texte: "La couleur du vernis"}
+    - {id: c, texte: "La tension d'alimentation"}
+    - {id: d, texte: "Rien"}
+- id: S33-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#pourquoi-une-panne-est-intermittente"
+  enonce: "D'où viennent en général les défaillances précoces des joints, selon la note TI ?"
+  propositions:
+    - {id: a, texte: "De défauts de fabrication, comme des joints mal mouillés"}
+    - {id: b, texte: "De l'usure normale en fin de vie"}
+    - {id: c, texte: "Du logiciel"}
+    - {id: d, texte: "Du bus CAN"}
+- id: S33-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#surveiller-en-continu"
+  enonce: "Quel mode de déclenchement convient pour capturer un événement rare ?"
+  propositions:
+    - {id: a, texte: "Normal"}
+    - {id: b, texte: "Auto"}
+    - {id: c, texte: "Aucun déclenchement"}
+    - {id: d, texte: "Défilement sans mémoire"}
+- id: S33-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#surveiller-en-continu"
+  enonce: "Pourquoi surveiller un signal pendant qu'on contraint la carte ?"
+  propositions:
+    - {id: a, texte: "Une panne d'une fraction de seconde se perd si l'on ne regarde pas au bon moment"}
+    - {id: b, texte: "Pour faire joli"}
+    - {id: c, texte: "Ce n'est pas utile"}
+    - {id: d, texte: "Pour chauffer la carte"}
+- id: S33-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#provoquer-une-zone-à-la-fois"
+  enonce: "Une carte s'arrête en chauffant. Que montre la bombe de froid sur le composant en cause ?"
+  propositions:
+    - {id: a, texte: "La carte repart quand on refroidit ce composant"}
+    - {id: b, texte: "La carte s'arrête aussitôt"}
+    - {id: c, texte: "Rien"}
+    - {id: d, texte: "Le composant fond"}
+- id: S33-Q007
+  type: choix_unique
+  securite: true
+  competences: [D10.4]
+  section: "S33-L01#provoquer-une-zone-à-la-fois"
+  enonce: "Pourquoi utiliser une bombe de froid antistatique sur un calculateur ?"
+  propositions:
+    - {id: a, texte: "Le jet, la paille et la buse se chargent en électricité statique"}
+    - {id: b, texte: "Elle refroidit plus"}
+    - {id: c, texte: "Elle est moins chère"}
+    - {id: d, texte: "Pour la couleur du givre"}
+- id: S33-Q008
+  type: choix_unique
+  securite: true
+  competences: [D10.4]
+  section: "S33-L01#provoquer-une-zone-à-la-fois"
+  enonce: "Comment applique-t-on la chaleur douce ?"
+  propositions:
+    - {id: a, texte: "Air chaud réglé bas, à distance, voisins protégés, sous la température admise par les composants"}
+    - {id: b, texte: "Au fer à souder posé sur le composant"}
+    - {id: c, texte: "Au chalumeau"}
+    - {id: d, texte: "Air chaud au maximum sur toute la carte"}
+- id: S33-Q009
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#prouver-la-localisation"
+  enonce: "Le givre sur une zone fait apparaître la panne. Est-ce une preuve ?"
+  propositions:
+    - {id: a, texte: "Non : il désigne la zone ; la preuve vient d'une image ou d'une mesure"}
+    - {id: b, texte: "Oui, c'est suffisant"}
+    - {id: c, texte: "Oui, on remplace tous les composants de la zone"}
+    - {id: d, texte: "Non, le givre ne sert à rien"}
+- id: S33-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L01#exemple-2--une-panne-mécanique"
+  enonce: "Comment applique-t-on une contrainte mécanique pour localiser une panne ?"
+  propositions:
+    - {id: a, texte: "Pression légère, zone par zone, avec un outil isolant"}
+    - {id: b, texte: "En tordant fortement la carte"}
+    - {id: c, texte: "Au marteau"}
+    - {id: d, texte: "Avec un tournevis métallique sous tension"}
+- id: S33-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#pourquoi-valider"
+  enonce: "Quel défaut le cas VID-12 illustre-t-il ?"
+  propositions:
+    - {id: a, texte: "Panne déclarée résolue sans essai fonctionnel ni recherche de la cause"}
+    - {id: b, texte: "Trop d'essais fonctionnels"}
+    - {id: c, texte: "Protocole trop détaillé"}
+    - {id: d, texte: "Dossier trop long"}
+- id: S33-Q012
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#écrire-le-protocole-avant-lessai"
+  enonce: "Que comparent les mesures avant / après ?"
+  propositions:
+    - {id: a, texte: "Les mêmes points, avec les mêmes instruments, comparés à la référence"}
+    - {id: b, texte: "Des points différents à chaque fois"}
+    - {id: c, texte: "Seulement le courant de veille"}
+    - {id: d, texte: "Rien"}
+- id: S33-Q013
+  type: choix_unique
+  securite: true
+  competences: [D10.4]
+  section: "S33-L02#écrire-le-protocole-avant-lessai"
+  enonce: "Quel est un critère d'arrêt immédiat d'un essai sur banc ?"
+  propositions:
+    - {id: a, texte: "Passage de l'alimentation en limitation de courant"}
+    - {id: b, texte: "Un défaut attendu sur banc"}
+    - {id: c, texte: "Une trame CAN normale"}
+    - {id: d, texte: "Le courant de veille normal"}
+- id: S33-Q014
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#durée-dessai-et-cyclage"
+  enonce: "Quels cycles de température la note TI cite-t-elle pour ses essais en enceinte ?"
+  propositions:
+    - {id: a, texte: "0 °C à 100 °C ou −40 °C à 125 °C"}
+    - {id: b, texte: "20 °C à 25 °C"}
+    - {id: c, texte: "−100 °C à 300 °C"}
+    - {id: d, texte: "Aucun"}
+- id: S33-Q015
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#durée-dessai-et-cyclage"
+  enonce: "La durée d'essai d'un atelier est-elle normalisée ?"
+  propositions:
+    - {id: a, texte: "Non : elle est choisie et justifiée par écrit dans le protocole"}
+    - {id: b, texte: "Oui, toujours 24 h"}
+    - {id: c, texte: "Oui, toujours 5 min"}
+    - {id: d, texte: "On ne note pas la durée"}
+- id: S33-Q016
+  type: calcul
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#exemple-2--une-durée-dessai-en-secondes"
+  enonce: "Cinq cycles de 12 min. Durée totale en secondes ?"
+  unite_attendue: s
+- id: S33-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#les-limites-dun-banc-datelier"
+  enonce: "Que ne reproduit pas un banc d'atelier ?"
+  propositions:
+    - {id: a, texte: "Le véhicule complet : charges réelles, autres calculateurs, température et vibrations réelles"}
+    - {id: b, texte: "L'alimentation"}
+    - {id: c, texte: "La lecture des défauts"}
+    - {id: d, texte: "Les mesures au multimètre"}
+- id: S33-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.4]
+  section: "S33-L02#les-limites-dun-banc-datelier"
+  enonce: "Que fait-on de ce qui n'a pas été essayé ?"
+  propositions:
+    - {id: a, texte: "On l'écrit comme limite, avec le contrôle recommandé"}
+    - {id: b, texte: "On le déclare validé"}
+    - {id: c, texte: "On n'en parle pas"}
+    - {id: d, texte: "On l'invente"}
+- id: S33-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#le-dossier-enrichi"
+  enonce: "Quelles rubriques S33 ajoute-t-elle au dossier de S01 ?"
+  propositions:
+    - {id: a, texte: "Limites et traçabilité"}
+    - {id: b, texte: "Symptôme et réception"}
+    - {id: c, texte: "Prix et délai"}
+    - {id: d, texte: "Aucune"}
+- id: S33-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#le-dossier-enrichi"
+  enonce: "Quelle donnée n'entre jamais dans le dossier ?"
+  propositions:
+    - {id: a, texte: "Un identifiant de véhicule ou une donnée client"}
+    - {id: b, texte: "Les photos de la carte"}
+    - {id: c, texte: "Les mesures"}
+    - {id: d, texte: "Les sources"}
+- id: S33-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#la-traçabilité"
+  enonce: "Comment identifie-t-on une sauvegarde mémoire au dossier ?"
+  propositions:
+    - {id: a, texte: "Par son empreinte SHA-256"}
+    - {id: b, texte: "Par la taille du fichier seule"}
+    - {id: c, texte: "Par la date seule"}
+    - {id: d, texte: "On ne l'identifie pas"}
+- id: S33-Q022
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#étiqueter-jusquau-bout"
+  enonce: "Une valeur « typique » non sourcée est présentée comme un fait. Quelle faute ?"
+  propositions:
+    - {id: a, texte: "FE-14, donnée inventée présentée comme un fait"}
+    - {id: b, texte: "FE-01"}
+    - {id: c, texte: "Aucune"}
+    - {id: d, texte: "FE-07"}
+- id: S33-Q023
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#la-communication-au-client"
+  enonce: "Que contient le compte rendu client ?"
+  propositions:
+    - {id: a, texte: "Constat, intervention, vérifications sur banc, ce qui reste à contrôler"}
+    - {id: b, texte: "Une garantie sans réserve"}
+    - {id: c, texte: "Les détails du logiciel"}
+    - {id: d, texte: "Rien de technique"}
+- id: S33-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#exemple-2--une-phrase-à-corriger"
+  enonce: "Pourquoi « le régulateur était mort » est-il à corriger ?"
+  propositions:
+    - {id: a, texte: "Ce n'est pas une mesure : on écrit la tension mesurée et les conditions"}
+    - {id: b, texte: "C'est trop court"}
+    - {id: c, texte: "C'est impoli"}
+    - {id: d, texte: "Il n'y a rien à corriger"}
+- id: S33-Q025
+  type: choix_unique
+  securite: false
+  competences: [D10.5]
+  section: "S33-L03#exemple-1--une-limite-bien-écrite"
+  enonce: "Quelle recommandation suit une sortie d'injecteur réparée dont la cause n'est pas trouvée ?"
+  propositions:
+    - {id: a, texte: "Contrôler l'injecteur et le faisceau avant remontage"}
+    - {id: b, texte: "Aucune"}
+    - {id: c, texte: "Remplacer le calculateur"}
+    - {id: d, texte: "Effacer les défauts"}

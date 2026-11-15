@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : méthode de localisation d'une panne intermittente. -->
+  <defs>
+    <marker id="s33f01-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="40" y="30" width="180" height="52" rx="6" />
+  <text x="130.0" y="53.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">1. Surveiller</text>
+  <text x="130.0" y="69.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">un signal, en continu</text>
+  <rect x="300" y="30" width="180" height="52" rx="6" />
+  <text x="390.0" y="53.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">2. Contraindre</text>
+  <text x="390.0" y="69.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">une seule zone</text>
+  <rect x="300" y="160" width="180" height="52" rx="6" />
+  <text x="390.0" y="183.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">3. Noter l'effet</text>
+  <text x="390.0" y="199.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">panne ou pas</text>
+  <rect x="40" y="160" width="180" height="52" rx="6" />
+  <text x="130.0" y="183.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">4. Réduire</text>
+  <text x="130.0" y="199.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">la zone</text>
+  <path d="M220 56 H299" marker-end="url(#s33f01-a)" stroke-width="1.5" />
+  <path d="M390 82 V159" marker-end="url(#s33f01-a)" stroke-width="1.5" />
+  <path d="M300 186 H221" marker-end="url(#s33f01-a)" stroke-width="1.5" />
+  <path d="M130 160 V83" marker-end="url(#s33f01-a)" stroke-width="1.5" />
+  <rect x="530" y="95" width="100" height="60" rx="6" />
+  <text x="580.0" y="122.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">5. Prouver</text>
+  <text x="580.0" y="138.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">mesure, image</text>
+  <path d="M480 186 H505 V125 H529" marker-end="url(#s33f01-a)" stroke-width="1.5" />
+  <text x="130" y="240" text-anchor="start" fill="currentColor" stroke="none" font-size="10.5">froid, chaleur douce, légère pression : une zone à la fois</text>
+</svg>

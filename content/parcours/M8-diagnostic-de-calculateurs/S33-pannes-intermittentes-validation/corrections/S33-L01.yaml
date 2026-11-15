@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S33-L01-EX01
+  bonnes: [a]
+  explication: "La note TI cite cyclage et choc thermiques, choc mécanique, vibration et flexion ; la fissure progresse jusqu'à faire monter la résistance du joint."
+  renvoi_section: "S33-L01#pourquoi-une-panne-est-intermittente"
+- id: S33-L01-EX02
+  bonnes: [a]
+  explication: "Le jet, la paille et la buse se chargent en électricité statique ; une version antistatique existe pour les cartes sensibles (Techspray)."
+  renvoi_section: "S33-L01#provoquer-une-zone-à-la-fois"
+- id: S33-L01-EX03
+  ordre: [b, a, d, c]
+  explication: "Surveiller d'abord, sinon la panne passe inaperçue ; contraindre une zone à la fois, la réduire, puis prouver."
+  renvoi_section: "S33-L01#prouver-la-localisation"

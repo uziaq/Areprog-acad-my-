@@ -1,0 +1,26 @@
+# Énoncés seulement : les solutions sont dans corrections/S33-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S33-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre ces rubriques du dossier de réparation."
+  propositions:
+    - {id: a, texte: "Mesures"}
+    - {id: b, texte: "Réception"}
+    - {id: c, texte: "Validation"}
+    - {id: d, texte: "Hypothèses"}
+    - {id: e, texte: "Intervention"}
+    - {id: f, texte: "Limites"}
+  competences: [D10.5]
+  objectif: O1
+- id: S33-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quelle phrase convient au compte rendu client d'une réparation validée sur banc seulement ?"
+  propositions:
+    - {id: a, texte: "Réparé et validé sur banc ; à confirmer sur le véhicule, avec contrôle du faisceau recommandé"}
+    - {id: b, texte: "Réparé, garanti sans panne"}
+    - {id: c, texte: "Le calculateur était mort, il est neuf maintenant"}
+    - {id: d, texte: "Panne résolue, le 12 V est revenu"}
+  competences: [D10.5]
+  objectif: O2

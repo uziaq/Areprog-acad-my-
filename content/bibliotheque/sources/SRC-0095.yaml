@@ -1,0 +1,14 @@
+# Fiabilité des soudures au niveau carte : fatigue thermomécanique des joints (cyclage thermique,
+# choc thermique, choc mécanique, vibration, flexion), suivi de la résistance pendant le cyclage,
+# fissure qui se propage jusqu'à une hausse de résistance, joints les plus contraints aux angles,
+# défaillances précoces dues aux défauts de fabrication. Sections citées par leur numéro et leur
+# titre anglais (cours S33).
+id: SRC-0095
+titre: "Board Level Reliability Primer for Embedded Processors"
+editeur: Texas Instruments
+reference: "SPRABY2"
+revision: "mars 2015"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/spraby2/spraby2.pdf
