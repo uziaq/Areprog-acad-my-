@@ -1,0 +1,13 @@
+# Logique numérique : numération (binaire, octal, hexadécimal, conversions), portes logiques,
+# sorties trois états, niveaux de tension TTL et CMOS, marge de bruit, seuil, bascules et registres
+# à décalage (cours S19). Manuel libre ; sections citées par leur titre anglais, chapitres 1
+# (Numeration Systems), 3 (Logic Gates), 10 (Multivibrators) et 12 (Shift Registers).
+id: SRC-0052
+titre: "Lessons In Electric Circuits, Volume IV : Digital"
+editeur: Tony R. Kuphaldt (ibiblio.org)
+reference: "Chapitres 1, 3, 10 et 12, version HTML"
+revision: "copyright 2000-2023"
+date_consultation: 2026-11-15
+type: cours
+licence: libre
+lien: https://ibiblio.org/kuphaldt/electricCircuits/Digital/DIGI_3.html

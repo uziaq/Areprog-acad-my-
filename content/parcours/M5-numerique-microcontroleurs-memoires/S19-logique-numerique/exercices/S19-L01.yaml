@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S19-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S19-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quelle est la valeur décimale de 0x5A ?"
+  propositions:
+    - {id: a, texte: "90"}
+    - {id: b, texte: "80"}
+    - {id: c, texte: "100"}
+    - {id: d, texte: "59"}
+  competences: [D7.1]
+  objectif: O1
+- id: S19-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une porte OU exclusif à deux entrées reçoit A = 1 et B = 1. Que vaut sa sortie ?"
+  propositions:
+    - {id: a, texte: "0"}
+    - {id: b, texte: "1"}
+    - {id: c, texte: "Indéterminée"}
+    - {id: d, texte: "La même que A"}
+  competences: [D7.1]
+  objectif: O2
+- id: S19-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une bascule D a D = 1 ; aucun front actif n'arrive sur son horloge. Que fait sa sortie Q ?"
+  propositions:
+    - {id: a, texte: "Elle garde sa valeur précédente jusqu'au prochain front actif"}
+    - {id: b, texte: "Elle passe à 1 immédiatement"}
+    - {id: c, texte: "Elle passe à 0"}
+    - {id: d, texte: "Elle oscille"}
+  competences: [D7.1]
+  objectif: O3

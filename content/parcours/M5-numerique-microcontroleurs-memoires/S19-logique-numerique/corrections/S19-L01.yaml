@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S19-L01-EX01
+  bonnes: [a]
+  explication: "0x5A = 5 × 16 + 10 = 90 (A vaut 10). En binaire : 0101 1010."
+  renvoi_section: "S19-L01#binaire-hexadécimal-décimal"
+- id: S19-L01-EX02
+  bonnes: [a]
+  explication: "Le OU exclusif donne 1 seulement si ses entrées sont différentes ; deux entrées à 1 donnent 0."
+  renvoi_section: "S19-L01#les-portes-logiques"
+- id: S19-L01-EX03
+  bonnes: [a]
+  explication: "La bascule D ne recopie D sur Q qu'au front actif de l'horloge ; entre deux fronts, elle mémorise."
+  renvoi_section: "S19-L01#bascules-et-registres"

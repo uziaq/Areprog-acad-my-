@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" width="660" height="230" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG d'après la description de la spécification NXP UM10204 : début d'une trame I2C, sans valeur. -->
+  <text x="40" y="59" fill="currentColor" stroke="none" text-anchor="end" font-size="11">SCL</text>
+  <text x="40" y="139" fill="currentColor" stroke="none" text-anchor="end" font-size="11">SDA</text>
+  <path d="M10 40 H80 V70 H105 V40 H130 V70 H155 V40 H180 V70 H205 V40 H230 V70 H255 V40 H280 V70 H305 V40 H330 V70 H355 V40 H380 V70 H405 V40 H430 V70 H455 V40 H480 V70 H505 V40 H530 H540 H640" stroke-width="2.5" />
+  <path d="M10 120 H60 V150 H85 V150 H135 V120 H185 V120 H235 V120 H285 V120 H335 V150 H385 V150 H435 V150 H485 V150 H535 V150 H545 V120 H640" stroke-width="2.5" />
+  <text x="60" y="190" fill="currentColor" stroke="none" text-anchor="middle" font-size="12" font-weight="600">S</text>
+  <text x="545" y="190" fill="currentColor" stroke="none" text-anchor="middle" font-size="12" font-weight="600">P</text>
+  <path d="M80 200 H430" stroke-width="1" />
+  <text x="255.0" y="215" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">adresse (7 bits, poids fort en premier)</text>
+  <text x="455.0" y="190" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">R/W</text>
+  <text x="505.0" y="190" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">ACK</text>
+</svg>

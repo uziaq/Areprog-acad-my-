@@ -1,0 +1,13 @@
+# Compatibilité entre familles logiques et tensions d'alimentation : conditions d'interface (VOH
+# et VIH, VOL et VIL, tolérance en tension), niveaux de commutation par technologie, translation
+# par sortie à drain ouvert et résistance de tirage (cours S19). Sections citées par leur numéro
+# et leur titre anglais.
+id: SRC-0053
+titre: "Selecting the Right Level-Translation Solution"
+editeur: Texas Instruments
+reference: "SCEA035A"
+revision: "juin 2004"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/scea035

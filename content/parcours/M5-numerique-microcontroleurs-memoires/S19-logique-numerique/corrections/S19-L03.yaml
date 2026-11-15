@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S19-L03-EX01
+  valeur: 0.5
+  tolerance_relative: 0.02
+  unite: s
+  explication: "Période d'échantillonnage : 1 / 4 MHz = 0,25 µs ; durée = 2 000 000 × 0,25 µs = 0,5 s."
+  renvoi_section: "S19-L03#lanalyseur-logique"
+- id: S19-L03-EX02
+  bonnes: [a]
+  explication: "Les sept premiers bits forment l'adresse : 101 0000 = 0x50. Le huitième bit, R/W, vaut 1 : c'est une lecture."
+  renvoi_section: "S19-L03#le-bus-i²c"

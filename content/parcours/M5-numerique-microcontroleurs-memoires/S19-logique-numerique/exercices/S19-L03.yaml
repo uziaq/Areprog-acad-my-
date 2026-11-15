@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S19-L03.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S19-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un analyseur logique enregistre 2 millions d'échantillons par voie à 4 MHz. Quelle durée enregistre-t-il ?"
+  unite_attendue: s
+  competences: [D3.6]
+  objectif: O1
+- id: S19-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Après un START, le premier octet lu sur SDA est 1010 0001, suivi d'un acquittement. Que signifie-t-il ?"
+  propositions:
+    - {id: a, texte: "Adresse 0x50 (101 0000), bit R/W à 1 : lecture"}
+    - {id: b, texte: "Adresse 0xA1, écriture"}
+    - {id: c, texte: "Adresse 0x50, écriture"}
+    - {id: d, texte: "Donnée 0xA1, sans adresse"}
+  competences: [D3.6, D7.1]
+  objectif: O2
