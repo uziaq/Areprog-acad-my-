@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S37-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S37-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un capteur actif consomme 14 mA au niveau haut ; la résistance de mesure vaut 120 Ω. Quelle tension apparaît sur la résistance, en volts ?"
+  unite_attendue: "V"
+  competences: [D10.7]
+  objectif: O2
+- id: S37-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une roue tournée à la main fait un demi-tour par seconde ; la cible a 48 dents. Quelle est la fréquence du signal, en hertz ?"
+  unite_attendue: "Hz"
+  competences: [D10.7]
+  objectif: O2
+- id: S37-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un capteur de roue actif ne donne aucun signal sur le véhicule d'atelier. Quelle est la bonne démarche ?"
+  propositions:
+    - {id: a, texte: "Batterie débranchée, continuité du câblage ; contact mis, alimentation au connecteur du capteur, comparée à l'autre côté"}
+    - {id: b, texte: "Remplacer le calculateur ABS"}
+    - {id: c, texte: "Effacer le défaut et rouler pour voir"}
+    - {id: d, texte: "Percer l'isolant pour mesurer plus vite"}
+  competences: [D10.7]
+  objectif: O3

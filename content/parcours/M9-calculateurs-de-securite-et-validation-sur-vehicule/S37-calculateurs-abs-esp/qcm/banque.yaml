@@ -1,0 +1,257 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S37-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L01#un-circuit-de-puissance-et-dinterface-dédié"
+  enonce: "Combien d'électrovannes le circuit cité commande-t-il directement ?"
+  propositions:
+    - {id: a, texte: "Huit"}
+    - {id: b, texte: "Deux"}
+    - {id: c, texte: "Quatre"}
+    - {id: d, texte: "Seize"}
+- id: S37-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L01#un-circuit-de-puissance-et-dinterface-dédié"
+  enonce: "À quoi servent les deux transistors côté haut pilotés par le circuit cité ?"
+  propositions:
+    - {id: a, texte: "À alimenter le moteur de pompe et l'ensemble des électrovannes"}
+    - {id: b, texte: "À alimenter les capteurs de roue"}
+    - {id: c, texte: "À commander les voyants"}
+    - {id: d, texte: "À charger une réserve d'énergie"}
+- id: S37-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L01#un-circuit-de-puissance-et-dinterface-dédié"
+  enonce: "Quelle est la tension d'écrêtage des commandes d'électrovannes du circuit cité ?"
+  propositions:
+    - {id: a, texte: "40 V"}
+    - {id: b, texte: "12 V"}
+    - {id: c, texte: "5 V"}
+    - {id: d, texte: "400 V"}
+- id: S37-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S37-L01#les-surveillances-et-leur-effet"
+  enonce: "Sur banc, aucune sortie ne répond et le voyant reste allumé. Quelle cause regarde-t-on en premier ?"
+  propositions:
+    - {id: a, texte: "Un défaut de chien de garde ou d'alimentation, avant les étages de puissance"}
+    - {id: b, texte: "Toutes les électrovannes à la fois"}
+    - {id: c, texte: "Le liquide de frein"}
+    - {id: d, texte: "Le bus CAN du véhicule"}
+- id: S37-Q005
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S37-L01#les-surveillances-et-leur-effet"
+  enonce: "Peut-on désactiver le chien de garde pour faire fonctionner les sorties sur banc ?"
+  propositions:
+    - {id: a, texte: "Non : aucune surveillance n'est forcée, le défaut se diagnostique"}
+    - {id: b, texte: "Oui, c'est plus simple"}
+    - {id: c, texte: "Oui, avec un strap"}
+    - {id: d, texte: "Oui, si le formateur n'est pas là"}
+- id: S37-Q006
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S37-L01#dépose-et-précautions"
+  enonce: "Quelle intervention hydraulique le cursus prévoit-il à l'atelier de formation ?"
+  propositions:
+    - {id: a, texte: "Aucune"}
+    - {id: b, texte: "La purge du bloc sur l'établi"}
+    - {id: c, texte: "L'ouverture du bloc"}
+    - {id: d, texte: "Le remplacement des électrovannes"}
+- id: S37-Q007
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S37-L01#exemple-1--la-dissipation-dune-commande-délectrovanne"
+  enonce: "Une commande de 0,3 Ω conduit 2,5 A. Quelle puissance dissipe-t-elle, en watts ?"
+  unite_attendue: W
+- id: S37-Q008
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#capteur-passif--une-bobine-devant-une-cible"
+  enonce: "Comment varie l'amplitude d'un capteur de roue passif ?"
+  propositions:
+    - {id: a, texte: "Elle augmente avec la vitesse de la roue"}
+    - {id: b, texte: "Elle est constante"}
+    - {id: c, texte: "Elle diminue avec la vitesse"}
+    - {id: d, texte: "Elle dépend du contact"}
+- id: S37-Q009
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#capteur-actif--un-courant-qui-change-de-niveau"
+  enonce: "Comment un capteur de roue actif transmet-il la vitesse ?"
+  propositions:
+    - {id: a, texte: "En faisant varier le courant qu'il consomme entre deux niveaux"}
+    - {id: b, texte: "Par une tension alternative croissante"}
+    - {id: c, texte: "Par le bus CAN"}
+    - {id: d, texte: "Par la lumière"}
+- id: S37-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#capteur-actif--un-courant-qui-change-de-niveau"
+  enonce: "Dans l'exemple de la fiche, quels sont les niveaux de courant d'un capteur actif ?"
+  propositions:
+    - {id: a, texte: "7 mA et 14 mA"}
+    - {id: b, texte: "7 A et 14 A"}
+    - {id: c, texte: "0 V et 5 V"}
+    - {id: d, texte: "4 mA et 20 mA"}
+- id: S37-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#capteur-actif--un-courant-qui-change-de-niveau"
+  enonce: "Que transmet en plus un capteur « intelligent » ?"
+  propositions:
+    - {id: a, texte: "Des données de diagnostic, par un niveau de courant intermédiaire"}
+    - {id: b, texte: "La température du pneu"}
+    - {id: c, texte: "La pression de freinage"}
+    - {id: d, texte: "Rien de plus"}
+- id: S37-Q012
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#exemple-1--la-tension-sur-la-résistance-de-mesure"
+  enonce: "Un capteur actif consomme 7 mA ; la résistance de mesure vaut 120 Ω. Quelle tension apparaît, en volts ?"
+  unite_attendue: V
+- id: S37-Q013
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#exemple-2--la-fréquence-roue-tournée-à-la-main"
+  enonce: "Une roue fait 2 tours par seconde ; la cible a 48 dents. Quelle est la fréquence du signal, en hertz ?"
+  unite_attendue: Hz
+- id: S37-Q014
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S37-L02#mesurer-sur-véhicule-datelier-levé"
+  enonce: "Dans quel état pose-t-on les pointes de mesure sur le véhicule d'atelier ?"
+  propositions:
+    - {id: a, texte: "Batterie débranchée, selon l'ordre du constructeur"}
+    - {id: b, texte: "Moteur tournant"}
+    - {id: c, texte: "Contact mis, en roulant"}
+    - {id: d, texte: "N'importe comment"}
+- id: S37-Q015
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S37-L02#mesurer-sur-véhicule-datelier-levé"
+  enonce: "Quel véhicule utilise-t-on pour le TP-55 ?"
+  propositions:
+    - {id: a, texte: "Un véhicule d'atelier thermique désigné par son code interne"}
+    - {id: b, texte: "Un véhicule hybride de client"}
+    - {id: c, texte: "Un véhicule électrique"}
+    - {id: d, texte: "N'importe quel véhicule du parking"}
+- id: S37-Q016
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L02#lire-un-signal-absent-ou-irrégulier"
+  enonce: "Un signal de capteur de roue a des périodes manquantes à chaque tour. Quelle cause est probable ?"
+  propositions:
+    - {id: a, texte: "Une cible abîmée ou sale"}
+    - {id: b, texte: "Un calculateur défaillant"}
+    - {id: c, texte: "Une batterie trop chargée"}
+    - {id: d, texte: "Un défaut de chien de garde"}
+- id: S37-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L03#une-électrovanne-est-une-charge-inductive"
+  enonce: "Que se passe-t-il si l'on coupe brutalement le courant d'une électrovanne sans recirculation ni écrêtage ?"
+  propositions:
+    - {id: a, texte: "Une forte surtension apparaît (V = L × di/dt)"}
+    - {id: b, texte: "Rien"}
+    - {id: c, texte: "Le courant augmente"}
+    - {id: d, texte: "La bobine se refroidit"}
+- id: S37-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L03#une-électrovanne-est-une-charge-inductive"
+  enonce: "Pourquoi un écrêtage coupe-t-il le courant plus vite qu'une roue libre ?"
+  propositions:
+    - {id: a, texte: "La tension aux bornes de la bobine est plus forte, donc Δt ≈ L × Δi / V est plus court"}
+    - {id: b, texte: "Il chauffe la bobine"}
+    - {id: c, texte: "Il augmente l'inductance"}
+    - {id: d, texte: "Il ne coupe pas plus vite"}
+- id: S37-Q019
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S37-L03#exemple-1--roue-libre-ou-écrêtage"
+  enonce: "Une électrovanne de 8 mH porte 1 A ; l'écrêtage vaut 40 V. Quel est le temps de décroissance, en millisecondes ?"
+  unite_attendue: ms
+- id: S37-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L03#régulation-du-courant-crête-puis-maintien"
+  enonce: "Pourquoi commande-t-on une électrovanne en crête puis maintien ?"
+  propositions:
+    - {id: a, texte: "Un courant fort déplace le noyau, un courant plus faible suffit pour le tenir"}
+    - {id: b, texte: "Pour faire du bruit"}
+    - {id: c, texte: "Pour charger la batterie"}
+    - {id: d, texte: "Ce n'est jamais fait"}
+- id: S37-Q021
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S37-L03#le-banc-à-charges-réduites"
+  enonce: "Pourquoi utilise-t-on des charges réduites sur le banc ?"
+  propositions:
+    - {id: a, texte: "L'alimentation de labo n'est pas dimensionnée pour un moteur de pompe à pleine charge"}
+    - {id: b, texte: "Pour aller plus vite"}
+    - {id: c, texte: "Parce que les vraies charges sont interdites par la loi"}
+    - {id: d, texte: "Pour économiser le fusible"}
+- id: S37-Q022
+  type: choix_unique
+  securite: true
+  competences: [D10.6]
+  section: "S37-L03#le-banc-à-charges-réduites"
+  enonce: "Combien de sorties essaie-t-on à la fois sur le banc ?"
+  propositions:
+    - {id: a, texte: "Une seule"}
+    - {id: b, texte: "Toutes"}
+    - {id: c, texte: "La moitié"}
+    - {id: d, texte: "Celles qui chauffent"}
+- id: S37-Q023
+  type: calcul
+  securite: false
+  competences: [D10.6]
+  section: "S37-L03#exemple-2--une-charge-réduite"
+  enonce: "Une charge réduite de 24 Ω est alimentée sous 12 V. Quel courant traverse-t-elle, en ampères ?"
+  unite_attendue: A
+- id: S37-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L03#ce-que-lon-mesure"
+  enonce: "Avec quoi compare-t-on les mesures des étages du calculateur étudié ?"
+  propositions:
+    - {id: a, texte: "Avec celles de l'exemplaire de référence monté sur le même banc"}
+    - {id: b, texte: "Avec des valeurs d'Internet"}
+    - {id: c, texte: "Avec rien"}
+    - {id: d, texte: "Avec un autre véhicule"}
+- id: S37-Q025
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S37-L03#après-une-intervention"
+  enonce: "D'où vient la liste des opérations après intervention (purge, apprentissages, calibrations) ?"
+  propositions:
+    - {id: a, texte: "De la documentation du constructeur"}
+    - {id: b, texte: "De l'habitude de l'atelier"}
+    - {id: c, texte: "Du cours, valable pour tous les véhicules"}
+    - {id: d, texte: "De l'outil, sans documentation"}

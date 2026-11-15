@@ -1,0 +1,20 @@
+# Énoncés seulement : les solutions sont dans corrections/S37-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S37-L03-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une électrovanne de 5 mH porte 2 A ; la commande écrête à 40 V. En négligeant la résistance de la bobine, quel est le temps de décroissance du courant, en millisecondes ?"
+  unite_attendue: "ms"
+  competences: [D10.7]
+  objectif: O1
+- id: S37-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Après le remplacement d'un calculateur ABS / ESP sur un véhicule, que faut-il avant tout déplacement ?"
+  propositions:
+    - {id: a, texte: "Les opérations du constructeur (purge, contrôle de pédale, apprentissages, calibrations), puis des essais de freinage statiques"}
+    - {id: b, texte: "Rien : le voyant éteint suffit"}
+    - {id: c, texte: "Un essai sur route ouverte"}
+    - {id: d, texte: "Effacer tous les défauts"}
+  competences: [D10.7]
+  objectif: O3

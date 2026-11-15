@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S37-L02-EX01
+  valeur: 1.68
+  tolerance_relative: 0.02
+  unite: "V"
+  explication: "U = R × I = 120 × 0,014 = 1,68 V."
+  renvoi_section: "S37-L02#exemple-1--la-tension-sur-la-résistance-de-mesure"
+- id: S37-L02-EX02
+  valeur: 24
+  tolerance_relative: 0.02
+  unite: "Hz"
+  explication: "f = 0,5 tour/s × 48 dents = 24 Hz."
+  renvoi_section: "S37-L02#exemple-2--la-fréquence-roue-tournée-à-la-main"
+- id: S37-L02-EX03
+  bonnes: [a]
+  explication: "Le défaut se cherche d'abord côté véhicule : câblage hors tension, puis alimentation du capteur. Le calculateur n'est mis en cause qu'avec une preuve ; on ne perce pas d'isolant et on ne roule pas."
+  renvoi_section: "S37-L02#exemple-3--un-signal-absent"

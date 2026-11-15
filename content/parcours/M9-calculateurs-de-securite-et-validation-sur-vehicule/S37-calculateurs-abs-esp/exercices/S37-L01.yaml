@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S37-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S37-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Dans le circuit cité, que provoque un défaut de chien de garde ?"
+  propositions:
+    - {id: a, texte: "Les commandes de puissance et l'interface des capteurs de roue sont coupées, le reset et le voyant basse tension sont activés"}
+    - {id: b, texte: "Toutes les électrovannes s'ouvrent en même temps"}
+    - {id: c, texte: "Rien : le chien de garde est facultatif"}
+    - {id: d, texte: "Le moteur de pompe tourne en continu"}
+  competences: [D10.7]
+  objectif: O3
+- id: S37-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une commande d'électrovanne a une résistance à l'état passant de 0,3 Ω et conduit 1,5 A. Quelle puissance dissipe-t-elle, en watts ?"
+  unite_attendue: "W"
+  competences: [D10.7]
+  objectif: O1
+- id: S37-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un calculateur ABS / ESP de récupération est encore monté sur son bloc hydraulique. Que fait-on à l'atelier de formation ?"
+  propositions:
+    - {id: a, texte: "On le sépare seulement si la procédure du constructeur le permet ; aucune intervention hydraulique, liquide de frein manipulé avec gants et lunettes"}
+    - {id: b, texte: "On ouvre le bloc pour voir les électrovannes"}
+    - {id: c, texte: "On le met sous tension avec la pompe branchée sur l'alimentation de labo"}
+    - {id: d, texte: "On vidange le bloc dans l'évier"}
+  competences: [D10.6]
+  objectif: O2

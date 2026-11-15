@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S37-L03-EX01
+  valeur: 0.25
+  tolerance_relative: 0.02
+  unite: "ms"
+  explication: "Δt ≈ L × Δi / V = 0,005 × 2 / 40 = 0,00025 s = 0,25 ms."
+  renvoi_section: "S37-L03#exemple-1--roue-libre-ou-écrêtage"
+- id: S37-L03-EX02
+  bonnes: [a]
+  explication: "Les opérations d'après-intervention viennent de la documentation du constructeur ; le catalogue des TP impose purge, contrôle de pédale et essais statiques avant tout déplacement."
+  renvoi_section: "S37-L03#après-une-intervention"
