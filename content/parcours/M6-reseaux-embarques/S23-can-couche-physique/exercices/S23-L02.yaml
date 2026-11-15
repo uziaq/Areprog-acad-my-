@@ -1,0 +1,26 @@
+# Énoncés seulement : les solutions sont dans corrections/S23-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S23-L02-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre les champs d'une trame CAN standard."
+  propositions:
+    - {id: a, texte: "Données"}
+    - {id: b, texte: "Début de trame (SOF)"}
+    - {id: c, texte: "Acquittement (ACK)"}
+    - {id: d, texte: "Identifiant sur 11 bits"}
+    - {id: e, texte: "Longueur des données (DLC)"}
+    - {id: f, texte: "CRC"}
+  competences: [D8.1]
+  objectif: O1
+- id: S23-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Trois nœuds commencent à émettre en même temps les identifiants 0x2A0, 0x1F4 et 0x300. Quel message passe ?"
+  propositions:
+    - {id: a, texte: "0x1F4, l'identifiant le plus bas, sans être détruit"}
+    - {id: b, texte: "0x300, l'identifiant le plus haut"}
+    - {id: c, texte: "Aucun : les trois messages sont détruits"}
+    - {id: d, texte: "Celui du nœud le plus proche de la terminaison"}
+  competences: [D8.1]
+  objectif: O2

@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S23-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S23-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur un bus CAN haute vitesse au repos, que vaut la différence entre CAN-H et CAN-L ?"
+  propositions:
+    - {id: a, texte: "Environ 0 V : à l'état récessif, les deux lignes sont au même niveau"}
+    - {id: b, texte: "Environ 2 V, en permanence"}
+    - {id: c, texte: "La tension de la batterie"}
+    - {id: d, texte: "Elle n'est pas mesurable"}
+  competences: [D8.1]
+  objectif: O1
+- id: S23-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un bus est terminé à chaque extrémité par une résistance de 120 Ω. Quelle résistance attendez-vous entre CAN-H et CAN-L, bus hors tension, en négligeant les transceivers ?"
+  unite_attendue: Ω
+  competences: [D8.1]
+  objectif: O2
+- id: S23-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Hors tension, l'ohmmètre lit environ 120 Ω entre CAN-H et CAN-L d'un bus prévu avec deux terminaisons de 120 Ω. Quelle hypothèse retenez-vous en premier ?"
+  propositions:
+    - {id: a, texte: "Une terminaison n'est pas vue : calculateur qui la porte débranché, ou coupure entre les deux terminaisons"}
+    - {id: b, texte: "Le bus est parfait"}
+    - {id: c, texte: "CAN-H est en court-circuit avec CAN-L"}
+    - {id: d, texte: "Le transceiver émet trop fort"}
+  competences: [D8.1]
+  objectif: O2

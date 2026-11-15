@@ -1,0 +1,13 @@
+# Exigences de couche physique du CAN haute vitesse : longueur et débit, câble, blindage, masse,
+# terminaison standard et terminaison partagée, réflexions sur une ligne non terminée, tenue des
+# résistances de terminaison en court-circuit (cours S23). Sections citées par leur numéro et
+# leur titre anglais.
+id: SRC-0066
+titre: "Controller Area Network Physical Layer Requirements"
+editeur: Texas Instruments
+reference: "SLLA270"
+revision: "janvier 2008"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/slla270

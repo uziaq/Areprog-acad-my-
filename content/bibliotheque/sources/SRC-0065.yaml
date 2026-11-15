@@ -1,0 +1,13 @@
+# Introduction au bus CAN : trame standard et étendue, arbitrage bit à bit, types de trames,
+# bus différentiel, états dominant et récessif, topologie et terminaison selon ISO 11898 telle
+# que décrite par la note, fonctions des transceivers (cours S23). La norme ISO 11898 elle-même
+# est payante. Sections citées par leur numéro et leur titre anglais.
+id: SRC-0065
+titre: "Introduction to the Controller Area Network (CAN)"
+editeur: Texas Instruments
+reference: "SLOA101B"
+revision: "B, mai 2016"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/sloa101

@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S23-L02-EX01
+  ordre: [b, d, e, a, f, c]
+  explication: "SOF, identifiant (puis RTR, IDE, bit réservé), DLC, données, CRC, ACK, puis fin de trame."
+  renvoi_section: "S23-L02#la-trame-standard"
+- id: S23-L02-EX02
+  bonnes: [a]
+  explication: "L'arbitrage est bit à bit et non destructif : le bit dominant (0) l'emporte, donc l'identifiant le plus bas gagne ; les autres nœuds se retirent et réessaieront."
+  renvoi_section: "S23-L02#larbitrage"
