@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S27-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S27-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quelle température vise-t-on pour une reprise à l'air chaud, d'après la note TI ?"
+  propositions:
+    - {id: a, texte: "Aussi basse que possible, avec un profil proche de la refusion d'origine, sans dépasser la température maximale du boîtier"}
+    - {id: b, texte: "La consigne maximale de la station, pour aller vite"}
+    - {id: c, texte: "Toujours 450 °C"}
+    - {id: d, texte: "Celle d'une vidéo de démonstration"}
+  competences: [D9.2]
+  objectif: O1
+- id: S27-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "À côté du QFP à déposer se trouvent un connecteur plastique et un condensateur électrolytique. Que faites-vous avant de chauffer ?"
+  propositions:
+    - {id: a, texte: "Les protéger par un ruban polyimide ou un écran et ne jamais diriger la buse vers eux"}
+    - {id: b, texte: "Rien, l'air chaud ne les touche pas"}
+    - {id: c, texte: "Les arroser de solvant"}
+    - {id: d, texte: "Augmenter le débit d'air pour les refroidir"}
+  competences: [D9.2]
+  objectif: O2
+- id: S27-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pourquoi préchauffer la carte par le dessous ?"
+  propositions:
+    - {id: a, texte: "Pour réduire l'écart de température à combler par la buse, limiter les dépassements et le gauchissement"}
+    - {id: b, texte: "Pour faire sécher le vernis"}
+    - {id: c, texte: "Pour économiser le flux"}
+    - {id: d, texte: "Ce n'est jamais utile"}
+  competences: [D9.2]
+  objectif: O2

@@ -1,0 +1,14 @@
+# Montage des boîtiers QFN et SON : pastille thermique, reprise à l'air chaud (étuvage, buse,
+# préchauffage par le dessous, flux, composant non réutilisé), nettoyage des pastilles à la tresse,
+# précision d'alignement, reprise manuelle (préchauffeur, panne la plus petite et la plus froide
+# possible, ne pas appuyer sur le côté du boîtier). Sections citées par leur numéro et leur titre
+# anglais (cours S27).
+id: SRC-0076
+titre: "QFN and SON PCB Attachment"
+editeur: Texas Instruments
+reference: "SLUA271C"
+revision: "C, décembre 2023"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/slua271c/slua271c.pdf

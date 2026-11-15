@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S27-L01-EX01
+  bonnes: [a]
+  explication: "D'après la note TI AN-2029, la température de réparation est aussi basse que possible pour épargner les voisins et la carte, et le boîtier ne dépasse pas sa température maximale."
+  renvoi_section: "S27-L01#chauffer-sans-contact"
+- id: S27-L01-EX02
+  bonnes: [a]
+  explication: "Air chaud sans protection des voisins sensibles : faute éliminatoire FE-11. Un connecteur plastique se déforme bien avant l'alliage."
+  renvoi_section: "S27-L01#protéger-les-voisins"
+- id: S27-L01-EX03
+  bonnes: [a]
+  explication: "D'après la note TI SLUA271C, le préchauffage par le dessous limite les dépassements de température et le gauchissement."
+  renvoi_section: "S27-L01#préchauffer-par-le-dessous"

@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S27-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S27-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Qu'est-ce que l'effet popcorn ?"
+  propositions:
+    - {id: a, texte: "L'humidité absorbée par le boîtier se vaporise à la chauffe et le décolle ou le fissure"}
+    - {id: b, texte: "Des billes de soudure qui sautent de la panne"}
+    - {id: c, texte: "Un composant qui se dresse sur une extrémité"}
+    - {id: d, texte: "Le claquement d'un condensateur inversé"}
+  competences: [D9.2]
+  objectif: O1
+- id: S27-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un composant MSL 4 est sorti de son sachet depuis 5 jours. Que décidez-vous avant de le souder ?"
+  propositions:
+    - {id: a, texte: "Étuver : la durée hors sachet d'un MSL 4 est de 72 heures, elle est dépassée"}
+    - {id: b, texte: "Souder directement : un an est permis"}
+    - {id: c, texte: "Le passer sous l'eau"}
+    - {id: d, texte: "Le chauffer plus fort pour chasser l'humidité pendant la soudure"}
+  competences: [D9.2]
+  objectif: O2

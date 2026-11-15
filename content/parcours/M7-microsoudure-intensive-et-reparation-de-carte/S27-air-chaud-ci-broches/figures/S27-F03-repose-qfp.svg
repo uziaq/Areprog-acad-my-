@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" width="600" height="220" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : méthode de repose d'un QFP, vue de dessus, dessin de principe. -->
+  <g id="s27f03-pads" stroke-width="1">
+    <path d="M40 40 V30 M52 40 V30 M64 40 V30 M76 40 V30 M88 40 V30 M100 40 V30 M40 130 V140 M52 130 V140 M64 130 V140 M76 130 V140 M88 130 V140 M100 130 V140 M30 52 H20 M30 64 H20 M30 76 H20 M30 88 H20 M30 100 H20 M30 112 H20 M110 52 H120 M110 64 H120 M110 76 H120 M110 88 H120 M110 100 H120 M110 112 H120" stroke-width="4" stroke-opacity="0.35" />
+  </g>
+  <use href="#s27f03-pads" x="140" /><use href="#s27f03-pads" x="280" /><use href="#s27f03-pads" x="420" />
+  <rect x="172" y="42" width="76" height="86" rx="2" /><circle cx="182" cy="52" r="3" fill="currentColor" stroke="none" />
+  <rect x="312" y="42" width="76" height="86" rx="2" /><circle cx="322" cy="52" r="3" fill="currentColor" stroke="none" />
+  <circle cx="320" cy="34" r="4" fill="currentColor" stroke="none" /><circle cx="380" cy="136" r="4" fill="currentColor" stroke="none" />
+  <rect x="452" y="42" width="76" height="86" rx="2" /><circle cx="462" cy="52" r="3" fill="currentColor" stroke="none" />
+  <path d="M452 34 H530 M452 136 H530 M444 50 V116 M536 50 V116" stroke-width="5" stroke-opacity="0.6" />
+  <circle cx="540" cy="140" r="16" stroke-width="1.5" /><path d="M551 151 L566 166" stroke-width="2" />
+  <text x="70" y="170" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">1 pastilles nettoyées,</text><text x="70" y="184" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">flux</text>
+  <text x="210" y="170" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">2 aligné, repère</text><text x="210" y="184" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">selon la sérigraphie</text>
+  <text x="350" y="170" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">3 deux coins</text><text x="350" y="184" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">opposés soudés</text>
+  <text x="490" y="170" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">4 quatre côtés,</text><text x="490" y="184" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">ponts retirés, contrôle</text>
+  <text x="300" y="212" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">contrôle : talon présent, broche visible, débords limités, aucun pont, continuité</text>
+</svg>

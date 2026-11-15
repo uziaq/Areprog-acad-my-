@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S27-L02-EX01
+  bonnes: [a]
+  explication: "D'après la note TI AN-2029 : pression interne de la vapeur, délaminage ou boîtier fissuré."
+  renvoi_section: "S27-L02#leffet-popcorn"
+- id: S27-L02-EX02
+  bonnes: [a]
+  explication: "MSL 4 : 72 heures hors sachet d'après le tableau J-STD-033 repris par TI ; 5 jours font 120 heures, il faut étuver."
+  renvoi_section: "S27-L02#les-niveaux-msl"

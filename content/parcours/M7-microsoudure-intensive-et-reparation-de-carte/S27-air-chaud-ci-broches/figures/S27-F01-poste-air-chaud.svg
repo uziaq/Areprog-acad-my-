@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : poste de reprise à l'air chaud, schéma de principe. -->
+  <defs><marker id="s27f01-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <rect x="60" y="180" width="420" height="10" />
+  <text x="70" y="208" fill="currentColor" stroke="none" font-size="10">carte</text>
+  <path d="M80 190 V230 M460 190 V230" stroke-width="1.5" /><text x="470" y="226" fill="currentColor" stroke="none" font-size="10">support</text>
+  <rect x="140" y="250" width="260" height="40" rx="4" /><text x="270" y="275" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">préchauffeur (dessous)</text>
+  <path d="M190 248 V200" stroke-width="1.5" marker-end="url(#s27f01-fl)" stroke-dasharray="4 3" /><path d="M270 248 V200" stroke-width="1.5" marker-end="url(#s27f01-fl)" stroke-dasharray="4 3" /><path d="M350 248 V200" stroke-width="1.5" marker-end="url(#s27f01-fl)" stroke-dasharray="4 3" />
+  <rect x="240" y="160" width="60" height="20" rx="2" /><text x="318" y="100" fill="currentColor" stroke="none" font-size="10">circuit à déposer</text><path d="M330 104 L304 168" stroke-width="1" />
+  <path d="M255 40 H285 L280 100 H260 Z" stroke-width="1.5" /><text x="300" y="60" fill="currentColor" stroke="none" font-size="11">buse</text>
+  <path d="M262 104 L256 156" stroke-width="1.5" marker-end="url(#s27f01-fl)" /><path d="M270 104 V156" stroke-width="1.5" marker-end="url(#s27f01-fl)" /><path d="M278 104 L284 156" stroke-width="1.5" marker-end="url(#s27f01-fl)" />
+  <rect x="140" y="164" width="28" height="16" rx="2" /><rect x="380" y="150" width="60" height="30" rx="2" />
+  <path d="M134 158 H174 V182 H134 Z M374 144 H446 V182 H374 Z" stroke-width="1" stroke-dasharray="3 2" />
+  <text x="154" y="120" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">condensateur</text><text x="154" y="134" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">protégé</text>
+  <text x="410" y="120" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">connecteur plastique</text><text x="410" y="134" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">protégé</text>
+  <path d="M560 40 V110 L500 140" stroke-width="3" /><circle cx="500" cy="140" r="8" stroke-width="1.5" />
+  <text x="560" y="30" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">aspiration</text>
+  <text x="300" y="312" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">pointillés fins : ruban polyimide ou écran sur les voisins sensibles</text>
+</svg>
