@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S36-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S36-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Le circuit de base de système cité est identifié sur la carte. L'abaisseur mesure 7,9 V sous tension limitée. Que conclut-on ?"
+  propositions:
+    - {id: a, texte: "La tension est hors de la plage de la fiche (8,73 V à 9,27 V) : on cherche pourquoi avant d'aller plus loin"}
+    - {id: b, texte: "La tension est normale"}
+    - {id: c, texte: "Le microcontrôleur est défaillant"}
+    - {id: d, texte: "On remplace l'élévateur sans autre mesure"}
+  competences: [D10.7]
+  objectif: O2
+- id: S36-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Une réserve usée ne fait plus que 3,3 mF. Chargée à 33 V, quelle énergie stocke-t-elle, en joules ?"
+  unite_attendue: "J"
+  competences: [D10.7]
+  objectif: O3
+- id: S36-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Par quoi commence le diagnostic d'alimentation d'un calculateur d'airbag de récupération ?"
+  propositions:
+    - {id: a, texte: "Décharge mesurée deux fois, puis mesures hors tension comparées à la référence"}
+    - {id: b, texte: "Mise sous tension à pleine puissance pour voir ce qui chauffe"}
+    - {id: c, texte: "Remplacement de la réserve d'énergie"}
+    - {id: d, texte: "Effacement des défauts"}
+  competences: [D10.7]
+  objectif: O1

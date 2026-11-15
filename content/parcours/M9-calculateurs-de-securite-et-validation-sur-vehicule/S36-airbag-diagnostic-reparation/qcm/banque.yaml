@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S36-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#lalimentation-dabord-comme-pour-tout-calculateur"
+  enonce: "Dans quel ordre diagnostique-t-on un calculateur d'airbag ?"
+  propositions:
+    - {id: a, texte: "Alimentation, puis conditions de vie du microcontrôleur, puis fonctions"}
+    - {id: b, texte: "Fonctions d'abord, alimentation à la fin"}
+    - {id: c, texte: "Mémoire d'abord"}
+    - {id: d, texte: "Au hasard"}
+- id: S36-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#hors-tension--ce-que-lon-mesure-en-premier"
+  enonce: "Que compare-t-on aux mesures hors tension du calculateur à réparer ?"
+  propositions:
+    - {id: a, texte: "Les mêmes mesures sur l'exemplaire de référence"}
+    - {id: b, texte: "Des valeurs typiques trouvées sur un forum"}
+    - {id: c, texte: "Rien"}
+    - {id: d, texte: "La tension batterie"}
+- id: S36-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#sous-tension-limitée--les-tensions-de-la-chaîne"
+  enonce: "Pour le circuit de base de système cité, quelle est la plage de sortie de l'élévateur ?"
+  propositions:
+    - {id: a, texte: "31,6 V à 35 V"}
+    - {id: b, texte: "4,85 V à 5,15 V"}
+    - {id: c, texte: "8,73 V à 9,27 V"}
+    - {id: d, texte: "12 V à 14 V"}
+- id: S36-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#sous-tension-limitée--les-tensions-de-la-chaîne"
+  enonce: "Les plages de tension du circuit cité valent-elles pour toute carte d'airbag ?"
+  propositions:
+    - {id: a, texte: "Non : seulement si ce circuit est identifié sur la carte ; sinon, fiche du circuit relevé"}
+    - {id: b, texte: "Oui, toutes les cartes sont identiques"}
+    - {id: c, texte: "Oui, pour les cartes VW"}
+    - {id: d, texte: "Non, elles ne valent rien"}
+- id: S36-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#la-réserve-dénergie-et-son-diagnostic"
+  enonce: "Comment le circuit cité diagnostique-t-il la réserve d'énergie ?"
+  propositions:
+    - {id: a, texte: "En la déchargeant brièvement pour mesurer sa capacité et sa résistance série"}
+    - {id: b, texte: "En la court-circuitant"}
+    - {id: c, texte: "Il ne la diagnostique pas"}
+    - {id: d, texte: "Par la température"}
+- id: S36-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#la-réserve-dénergie-et-son-diagnostic"
+  enonce: "Qu'est-ce qui use un condensateur électrolytique ?"
+  propositions:
+    - {id: a, texte: "L'évaporation de l'électrolyte, accélérée par la chaleur"}
+    - {id: b, texte: "Le nombre de lectures de la mémoire"}
+    - {id: c, texte: "La lumière"}
+    - {id: d, texte: "Rien, il est éternel"}
+- id: S36-Q007
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S36-L01#la-réserve-dénergie-et-son-diagnostic"
+  enonce: "Où mesure-t-on la capacité et la résistance série d'une réserve suspecte ?"
+  propositions:
+    - {id: a, texte: "Hors circuit, après décharge mesurée"}
+    - {id: b, texte: "Sous tension, en circuit"}
+    - {id: c, texte: "Au toucher"}
+    - {id: d, texte: "À l'outil de diagnostic seulement"}
+- id: S36-Q008
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S36-L01#exemple-3--lénergie-disponible"
+  enonce: "Une réserve de 2,7 mF est chargée à 33 V. Quelle énergie stocke-t-elle, en joules ?"
+  unite_attendue: J
+- id: S36-Q009
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L02#ce-que-le-calculateur-voit-dune-boucle"
+  enonce: "Que dit un défaut d'allumeur lu avec l'outil ?"
+  propositions:
+    - {id: a, texte: "Le type d'anomalie vue par le calculateur, pas son emplacement"}
+    - {id: b, texte: "Le composant à remplacer"}
+    - {id: c, texte: "La cause certaine"}
+    - {id: d, texte: "Rien d'utile"}
+- id: S36-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L02#les-défauts-et-leurs-causes-possibles"
+  enonce: "Défaut « allumeur en court-circuit » : quelle cause est possible sur la carte ?"
+  propositions:
+    - {id: a, texte: "Un condensateur de filtrage en court-circuit ou un pont de soudure"}
+    - {id: b, texte: "Un simulateur absent"}
+    - {id: c, texte: "Une piste coupée"}
+    - {id: d, texte: "Une réserve déchargée"}
+- id: S36-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L02#les-défauts-et-leurs-causes-possibles"
+  enonce: "Comment le circuit cité détecte-t-il un court à la batterie sur une boucle ?"
+  propositions:
+    - {id: a, texte: "Une source de courant polarise la boucle et une tension au-dessus d'un seuil est détectée"}
+    - {id: b, texte: "Il tire l'allumeur"}
+    - {id: c, texte: "Il mesure la température"}
+    - {id: d, texte: "Il ne le détecte pas"}
+- id: S36-Q012
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L02#les-défauts-et-leurs-causes-possibles"
+  enonce: "Que surveille le diagnostic de retour du circuit cité ?"
+  propositions:
+    - {id: a, texte: "La liaison entre la broche de retour et la carte"}
+    - {id: b, texte: "La tension batterie"}
+    - {id: c, texte: "La mémoire"}
+    - {id: d, texte: "Le bus CAN"}
+- id: S36-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.6, D10.7]
+  section: "S36-L02#les-seuils-de-résistance-du-circuit-cité"
+  enonce: "Quel est le courant de diagnostic typique du circuit cité dans l'allumeur ?"
+  propositions:
+    - {id: a, texte: "34 mA"}
+    - {id: b, texte: "2 A"}
+    - {id: c, texte: "34 µA"}
+    - {id: d, texte: "340 mA"}
+- id: S36-Q014
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L02#les-seuils-de-résistance-du-circuit-cité"
+  enonce: "Un simulateur sain donne un défaut d'allumeur. Quelle explication est possible ?"
+  propositions:
+    - {id: a, texte: "Sa valeur est hors de la fenêtre choisie par le logiciel du calculateur"}
+    - {id: b, texte: "Le simulateur a tiré"}
+    - {id: c, texte: "La réserve est trop chargée"}
+    - {id: d, texte: "Aucune"}
+- id: S36-Q015
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S36-L02#exemple-1--la-tension-aux-bornes-dun-simulateur"
+  enonce: "Un courant de 34 mA traverse un simulateur de 3 Ω. Quelle tension apparaît, en millivolts ?"
+  unite_attendue: mV
+- id: S36-Q016
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S36-L02#mesurer-hors-tension-par-comparaison"
+  enonce: "Dans quel état mesure-t-on une sortie d'allumeur ?"
+  propositions:
+    - {id: a, texte: "Hors tension, réserve déchargée, simulateurs débranchés"}
+    - {id: b, texte: "Sous tension, simulateurs branchés"}
+    - {id: c, texte: "Pendant une commande de l'étage"}
+    - {id: d, texte: "Sous tension, sans simulateur"}
+- id: S36-Q017
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S36-L02#mesurer-hors-tension-par-comparaison"
+  enonce: "Peut-on appliquer une source extérieure sur une sortie d'allumeur sous tension pour tester l'étage ?"
+  propositions:
+    - {id: a, texte: "Non, jamais"}
+    - {id: b, texte: "Oui, brièvement"}
+    - {id: c, texte: "Oui, avec une résistance série"}
+    - {id: d, texte: "Oui, si la réserve est déchargée"}
+- id: S36-Q018
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#avant-de-réparer"
+  enonce: "Que faut-il avant de remplacer un composant d'un calculateur d'airbag ?"
+  propositions:
+    - {id: a, texte: "Une cause prouvée par une mesure, la décharge mesurée et les sauvegardes faites"}
+    - {id: b, texte: "Une intuition"}
+    - {id: c, texte: "L'accord du client seulement"}
+    - {id: d, texte: "Rien"}
+- id: S36-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#choisir-le-composant"
+  enonce: "Pourquoi préfère-t-on la même référence sur un calculateur de sécurité ?"
+  propositions:
+    - {id: a, texte: "Les analyses de défaillance de la conception reposent sur les composants d'origine"}
+    - {id: b, texte: "Elle est toujours moins chère"}
+    - {id: c, texte: "Par habitude"}
+    - {id: d, texte: "Pour le marquage"}
+- id: S36-Q020
+  type: choix_unique
+  securite: true
+  competences: [D10.7]
+  section: "S36-L03#choisir-le-composant"
+  enonce: "Que risque-t-on en montant un électrolytique à l'envers ?"
+  propositions:
+    - {id: a, texte: "De l'endommager : la tension inverse est à éviter"}
+    - {id: b, texte: "Rien"}
+    - {id: c, texte: "Une meilleure capacité"}
+    - {id: d, texte: "Une recharge plus rapide"}
+- id: S36-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#réparer-et-contrôler"
+  enonce: "Après réparation, comment refait-on les mesures hors tension ?"
+  propositions:
+    - {id: a, texte: "Aux mêmes points, avec les mêmes instruments, comparées à la référence"}
+    - {id: b, texte: "Ailleurs, pour changer"}
+    - {id: c, texte: "On ne les refait pas"}
+    - {id: d, texte: "À l'oreille"}
+- id: S36-Q022
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#vérifier-sur-banc"
+  enonce: "Que doit montrer l'essai sur banc après réparation ?"
+  propositions:
+    - {id: a, texte: "Aucun défaut d'allumeur avec simulateurs, mesures cohérentes, mémoire d'événements identique"}
+    - {id: b, texte: "Le déploiement d'un airbag"}
+    - {id: c, texte: "Un défaut effacé"}
+    - {id: d, texte: "Rien de particulier"}
+- id: S36-Q023
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#vérifier-sur-banc"
+  enonce: "Un défaut reste affiché après réparation. Que fait-on ?"
+  propositions:
+    - {id: a, texte: "On note son libellé et on cherche sa cause, sans l'effacer pour voir"}
+    - {id: b, texte: "On l'efface"}
+    - {id: c, texte: "On remplace le calculateur"}
+    - {id: d, texte: "On l'ignore"}
+- id: S36-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#le-dossier-de-validation-renforcée"
+  enonce: "Lequel ne peut pas être validé en atelier ?"
+  propositions:
+    - {id: a, texte: "Le comportement du système lors d'un choc réel"}
+    - {id: b, texte: "Les tensions de l'élévateur"}
+    - {id: c, texte: "Les diagnostics d'allumeurs sur simulateurs"}
+    - {id: d, texte: "Les mesures avant et après"}
+- id: S36-Q025
+  type: calcul
+  securite: false
+  competences: [D10.7]
+  section: "S36-L03#exemple-3--une-durée-dessai"
+  enonce: "Un protocole prévoit cinq cycles de 6 min. Quelle est la durée totale, en secondes ?"
+  unite_attendue: s

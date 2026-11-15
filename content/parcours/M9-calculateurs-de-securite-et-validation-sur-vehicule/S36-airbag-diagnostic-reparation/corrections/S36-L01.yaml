@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S36-L01-EX01
+  bonnes: [a]
+  explication: "Pour le circuit cité, l'abaisseur doit donner 8,73 V à 9,27 V. Une tension trop basse se diagnostique (charge, élévateur, composant) avant de conclure sur la suite de la chaîne."
+  renvoi_section: "S36-L01#sous-tension-limitée--les-tensions-de-la-chaîne"
+- id: S36-L01-EX02
+  valeur: 1.797
+  tolerance_relative: 0.02
+  unite: "J"
+  explication: "E = ½ × 0,0033 × 33² = 0,5 × 0,0033 × 1 089 ≈ 1,8 J."
+  renvoi_section: "S36-L01#exemple-3--lénergie-disponible"
+- id: S36-L01-EX03
+  bonnes: [a]
+  explication: "La réserve peut garder de l'énergie : décharge mesurée deux fois, puis mesures hors tension comparées à la référence, avant toute mise sous tension limitée."
+  renvoi_section: "S36-L01#hors-tension--ce-que-lon-mesure-en-premier"
