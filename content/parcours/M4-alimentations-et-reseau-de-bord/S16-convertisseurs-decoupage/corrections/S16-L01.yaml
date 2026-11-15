@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S16-L01-EX01
+  bonnes: [a]
+  explication: "Le courant d'une inductance ne peut pas changer instantanément : l'entrée de l'inductance devient négative jusqu'à ce que la diode conduise, et le courant continue en diminuant."
+  renvoi_section: "S16-L01#le-buck-phase-par-phase"
+- id: S16-L01-EX02
+  valeur: 5.04
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Sans pertes, la sortie vaut l'entrée multipliée par le rapport cyclique : 14 × 0,36 = 5,04 V."
+  renvoi_section: "S16-L01#la-modulation-de-largeur-dimpulsion"
+- id: S16-L01-EX03
+  bonnes: [a]
+  explication: "Par l'inductance et la diode, la sortie d'un boost reste reliée à l'entrée. Arrêté, il laisse passer l'entrée moins la chute de la diode : sa sortie n'est pas à 0 V."
+  renvoi_section: "S16-L01#le-boost"

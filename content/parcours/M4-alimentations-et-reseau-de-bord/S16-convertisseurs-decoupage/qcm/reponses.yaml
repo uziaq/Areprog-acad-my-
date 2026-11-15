@@ -1,0 +1,185 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S16-Q001
+  bonnes: [a]
+  explication: "Un transistor tout à fait conducteur ou tout à fait bloqué dissipe peu ; l'inductance et le condensateur lissent."
+  pourquoi_faux:
+    b: "C'est le régulateur linéaire qui dissipe l'écart."
+    c: "Il commute un transistor."
+    d: "La boucle règle le rapport cyclique."
+  source: "S16-L01#pourquoi-découper"
+- id: S16-Q002
+  bonnes: [a]
+  explication: "v = L × di/dt : un saut de courant demanderait une tension infinie ; la tension, elle, peut sauter."
+  pourquoi_faux:
+    b: "La tension peut changer brutalement."
+    c: "Sans rapport."
+    d: "Une inductance n'a pas de capacité nominale."
+  source: "S16-L01#la-loi-de-linductance"
+- id: S16-Q003
+  valeur: 4.8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "Moyenne = 12 × 0,4 = 4,8 V."
+  source: "S16-L01#la-modulation-de-largeur-dimpulsion"
+- id: S16-Q004
+  bonnes: [a]
+  explication: "Le courant de l'inductance ne peut pas s'arrêter : son entrée devient négative et la diode conduit."
+  pourquoi_faux:
+    b: "Impossible pour une inductance."
+    c: "Sans rapport."
+    d: "La diode empêche ce retour."
+  source: "S16-L01#le-buck-phase-par-phase"
+- id: S16-Q005
+  bonnes: [a]
+  explication: "Le condensateur ne fait que lisser : en moyenne, le courant de l'inductance va à la charge."
+  pourquoi_faux:
+    b: "Le courant d'entrée moyen est plus petit pour un buck."
+    c: "L'ondulation est l'écart crête à crête."
+    d: "Faux en conduction continue."
+  source: "S16-L01#le-buck-phase-par-phase"
+- id: S16-Q006
+  bonnes: [a]
+  explication: "Le second transistor joue le rôle de la diode."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "L'inductance reste indispensable."
+    d: "Sans rapport."
+  source: "S16-L01#le-buck-phase-par-phase"
+- id: S16-Q007
+  valeur: 6.25e-07
+  tolerance_relative: 0.03
+  unite: s
+  explication: "D = 3,3 / (12 × 0,88) ≈ 0,3125 ; tON = 0,3125 × 2 µs ≈ 0,625 µs."
+  source: "S16-L01#le-rapport-cyclique"
+- id: S16-Q008
+  bonnes: [a]
+  explication: "Le boost élève la tension."
+  pourquoi_faux:
+    b: "C'est le buck."
+    c: "Ce n'est pas le rôle d'un boost."
+    d: "Faux."
+  source: "S16-L01#le-boost"
+- id: S16-Q009
+  bonnes: [a]
+  explication: "Le chemin inductance-diode relie la sortie à l'entrée même à l'arrêt."
+  pourquoi_faux:
+    b: "Elle suit l'entrée moins la chute de la diode."
+    c: "Sans commutation, pas d'élévation."
+    d: "Faux : il n'y a pas d'isolement."
+  source: "S16-L01#le-boost"
+- id: S16-Q010
+  valeur: 0.2386
+  tolerance_relative: 0.03
+  unite: A
+  explication: "ΔIL = (12 − 5) × 0,45 / (400 × 10³ × 33 × 10⁻⁶) = 3,15 / 13,2 ≈ 0,239 A."
+  source: "S16-L02#londulation-de-courant-de-linductance"
+- id: S16-Q011
+  valeur: 2.3
+  tolerance_relative: 0.02
+  unite: A
+  explication: "Icrête = IOUT + ΔIL / 2 = 2 + 0,3 = 2,3 A."
+  source: "S16-L02#londulation-de-courant-de-linductance"
+- id: S16-Q012
+  bonnes: [a]
+  explication: "ΔIL est inversement proportionnelle à L."
+  pourquoi_faux:
+    b: "Sens inverse."
+    c: "L figure au dénominateur."
+    d: "Elle diminue sans s'annuler."
+  source: "S16-L02#londulation-de-courant-de-linductance"
+- id: S16-Q013
+  valeur: 0.08
+  tolerance_relative: 0.02
+  unite: V
+  explication: "ΔVOUT(ESR) = 0,2 × 0,4 = 0,08 V, soit 80 mV."
+  source: "S16-L02#londulation-de-tension-de-sortie"
+- id: S16-Q014
+  bonnes: [a]
+  explication: "Avec un faible ESR, le terme ESR de l'ondulation diminue."
+  pourquoi_faux:
+    b: "Sens inverse."
+    c: "Le terme ESR peut dominer."
+    d: "Le condensateur de sortie est indispensable."
+  source: "S16-L02#londulation-de-tension-de-sortie"
+- id: S16-Q015
+  bonnes: [a]
+  explication: "D'où des alimentations qui décrochent à froid."
+  pourquoi_faux:
+    b: "Sens inverse."
+    c: "Elle dépend fortement de la température."
+    d: "Faux."
+  source: "S16-L02#les-parasites-des-condensateurs"
+- id: S16-Q016
+  bonnes: [a]
+  explication: "La puissance perdue vaut ESR × I² efficace d'ondulation."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "La tension continue ne crée pas de courant permanent."
+    d: "Faux."
+  source: "S16-L02#les-parasites-des-condensateurs"
+- id: S16-Q017
+  bonnes: [a]
+  explication: "C'est une hypothèse, confirmée par la mesure d'ESR."
+  pourquoi_faux:
+    b: "Elle supprimerait la sortie."
+    c: "Le convertisseur serait arrêté."
+    d: "Rien ne fonctionnerait."
+  source: "S16-L02#symptômes-dun-composant-défaillant"
+- id: S16-Q018
+  valeur: 400000
+  tolerance_relative: 0.02
+  unite: Hz
+  explication: "f = 1 / 2,5 µs = 400 kHz."
+  source: "S16-L03#le-nœud-de-commutation"
+- id: S16-Q019
+  valeur: 4.8
+  tolerance_relative: 0.02
+  unite: V
+  explication: "D = 1 / 2,5 = 0,4 ; sortie = 12 × 0,4 = 4,8 V."
+  source: "S16-L03#le-nœud-de-commutation"
+- id: S16-Q020
+  bonnes: [a]
+  explication: "Même un fil de 3 pouces capte les commutations rapides."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Ce n'est pas une question de sécurité."
+    d: "Le facteur ne change pas."
+  source: "S16-L03#mesurer-londulation-sans-se-tromper"
+- id: S16-Q021
+  valeur: 1.6
+  tolerance_relative: 0.02
+  unite: W
+  explication: "PTOTAL = 9,6 W ; PCHARGE = 8 W ; pertes = 1,6 W."
+  source: "S16-L03#mesurer-le-rendement"
+- id: S16-Q022
+  bonnes: [a]
+  explication: "PTOTAL = VIN × IIN(moyen)."
+  pourquoi_faux:
+    b: "Surestimerait la puissance."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S16-L03#mesurer-le-rendement"
+- id: S16-Q023
+  bonnes: [a]
+  explication: "Masse de sonde ailleurs que sur la masse : court-circuit à travers la sonde, faute éliminatoire FE-07."
+  pourquoi_faux:
+    b: "Faute FE-07."
+    c: "Faute FE-07 : court-circuit de l'entrée par la terre."
+    d: "Faute FE-07."
+  source: "S16-L03#mesurer-londulation-sans-se-tromper"
+- id: S16-Q024
+  bonnes: [a]
+  explication: "Une tension de recouvrement peut réapparaître après décharge ; décharge non mesurée : faute FE-09."
+  pourquoi_faux:
+    b: "Décharge franche déconseillée par le fabricant."
+    c: "Il peut rester chargé."
+    d: "Fausse la mesure."
+  source: "S16-L02#symptômes-dun-composant-défaillant"
+- id: S16-Q025
+  bonnes: [a]
+  explication: "Limite non écrite : faute FE-02 ; inversion : FE-03."
+  pourquoi_faux:
+    b: "Revient à ne pas limiter (FE-02)."
+    c: "Limite non justifiée (FE-02)."
+    d: "Faute FE-03."
+  source: "S16-L03#mesurer-le-rendement"

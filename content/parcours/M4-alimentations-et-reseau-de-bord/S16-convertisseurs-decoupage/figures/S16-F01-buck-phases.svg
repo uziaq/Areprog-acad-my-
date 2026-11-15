@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 350" width="640" height="350" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : principe du buck en deux phases et courant de l'inductance, sans valeur. -->
+  <text x="160" y="28" fill="currentColor" stroke="none" font-size="12" text-anchor="middle" font-weight="600">transistor fermé : IL monte</text>
+  <circle cx="20" cy="80" r="3.5"/>
+  <text x="20" y="70" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">VIN</text>
+  <path d="M24 80 H60"/>
+  <path d="M60 80 L92 80" stroke-width="3"/>
+  <circle cx="60" cy="80" r="2.5" fill="currentColor" stroke="none"/>
+  <circle cx="94" cy="80" r="2.5" fill="currentColor" stroke="none"/>
+  <path d="M94 80 H120 a6 6 0 0 1 12 0 a6 6 0 0 1 12 0 a6 6 0 0 1 12 0 a6 6 0 0 1 12 0 H260"/>
+  <circle cx="110" cy="80" r="3" fill="currentColor" stroke="none"/>
+  <text x="144" y="68" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">L</text>
+  <path d="M110 80 V110 M100 110 H120"/>
+  <path d="M110 110 L100 126 H120 Z"/>
+  <path d="M110 126 V160"/>
+  <path d="M200 80 V114 M188 114 H212 M188 122 H212 M200 122 V160"/>
+  <circle cx="200" cy="80" r="3" fill="currentColor" stroke="none"/>
+  <text x="220" y="124" fill="currentColor" stroke="none" font-size="11" text-anchor="start">C</text>
+  <path d="M260 80 V102 l-7 3 l14 6 l-14 6 l14 6 l-14 6 l14 6 l-7 3 V160"/>
+  <text x="276" y="124" fill="currentColor" stroke="none" font-size="11" text-anchor="start">charge</text>
+  <path d="M70 160 H260"/>
+  <path d="M56 160 H84 M61 166 H79 M66 172 H74 M70 160 V160"/>
+  <path d="M24 74 H256 V154" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="160" y="188" fill="currentColor" stroke="none" font-size="10" text-anchor="middle">chemin du courant en pointillés</text>
+  <text x="480" y="28" fill="currentColor" stroke="none" font-size="12" text-anchor="middle" font-weight="600">transistor ouvert : IL descend</text>
+  <circle cx="340" cy="80" r="3.5"/>
+  <text x="340" y="70" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">VIN</text>
+  <path d="M344 80 H380"/>
+  <path d="M380 80 L408 64"/>
+  <circle cx="380" cy="80" r="2.5" fill="currentColor" stroke="none"/>
+  <circle cx="414" cy="80" r="2.5" fill="currentColor" stroke="none"/>
+  <path d="M414 80 H440 a6 6 0 0 1 12 0 a6 6 0 0 1 12 0 a6 6 0 0 1 12 0 a6 6 0 0 1 12 0 H580"/>
+  <circle cx="430" cy="80" r="3" fill="currentColor" stroke="none"/>
+  <text x="464" y="68" fill="currentColor" stroke="none" font-size="11" text-anchor="middle">L</text>
+  <path d="M430 80 V110 M420 110 H440"/>
+  <path d="M430 110 L420 126 H440 Z"/>
+  <path d="M430 126 V160"/>
+  <path d="M520 80 V114 M508 114 H532 M508 122 H532 M520 122 V160"/>
+  <circle cx="520" cy="80" r="3" fill="currentColor" stroke="none"/>
+  <text x="540" y="124" fill="currentColor" stroke="none" font-size="11" text-anchor="start">C</text>
+  <path d="M580 80 V102 l-7 3 l14 6 l-14 6 l14 6 l-14 6 l14 6 l-7 3 V160"/>
+  <text x="596" y="124" fill="currentColor" stroke="none" font-size="11" text-anchor="start">charge</text>
+  <path d="M390 160 H580"/>
+  <path d="M376 160 H404 M381 166 H399 M386 172 H394 M390 160 V160"/>
+  <path d="M436 154 V74 H576 V154" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="480" y="188" fill="currentColor" stroke="none" font-size="10" text-anchor="middle">le courant passe par la diode</text>
+  <path d="M30 300 H610" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="612" y="266" fill="currentColor" stroke="none" font-size="10" text-anchor="end">pointillé : courant de charge (moyenne de IL)</text>
+  <path d="M40 318 L90 282 L130 318 L180 282 L220 318 L270 282 L310 318 L360 282 L400 318 L450 282 L490 318 L540 282 L580 318" stroke-width="2.5"/>
+  <text x="30" y="274" fill="currentColor" stroke="none" font-size="11" text-anchor="start" font-weight="600">IL</text>
+  <text x="65" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">fermé</text>
+  <text x="110" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">ouvert</text>
+  <text x="155" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">fermé</text>
+  <text x="200" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">ouvert</text>
+  <text x="245" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">fermé</text>
+  <text x="290" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">ouvert</text>
+  <text x="335" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">fermé</text>
+  <text x="380" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">ouvert</text>
+  <text x="425" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">fermé</text>
+  <text x="470" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">ouvert</text>
+  <text x="515" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">fermé</text>
+  <text x="560" y="340" fill="currentColor" stroke="none" font-size="11" text-anchor="9">ouvert</text>
+</svg>

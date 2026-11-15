@@ -1,0 +1,17 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S16-L02-EX01
+  valeur: 0.5553
+  tolerance_relative: 0.02
+  unite: A
+  explication: "ΔIL = (VIN − VOUT) × D / (fS × L) = (12 − 3,3) × 0,3 / (10⁶ × 4,7 × 10⁻⁶) = 2,61 / 4,7 ≈ 0,56 A."
+  renvoi_section: "S16-L02#londulation-de-courant-de-linductance"
+- id: S16-L02-EX02
+  valeur: 120
+  tolerance_relative: 0.02
+  unite: mV
+  explication: "ΔVOUT(ESR) = ESR × ΔIL = 0,3 × 0,4 = 0,12 V, soit 120 mV : souvent bien plus que le terme capacitif."
+  renvoi_section: "S16-L02#londulation-de-tension-de-sortie"
+- id: S16-L02-EX03
+  bonnes: [a]
+  explication: "L'ESR des électrolytiques augmente très vite sous 10 °C environ ; un condensateur usé laisse alors passer une forte ondulation. On mesure son ESR, hors tension et déchargé."
+  renvoi_section: "S16-L02#les-parasites-des-condensateurs"

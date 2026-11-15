@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S16-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S16-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Dans un buck à diode, le transistor vient de s'ouvrir. Que devient le courant de l'inductance ?"
+  propositions:
+    - {id: a, texte: "Il continue de circuler, par la diode, en diminuant"}
+    - {id: b, texte: "Il s'annule instantanément"}
+    - {id: c, texte: "Il s'inverse aussitôt"}
+    - {id: d, texte: "Il double"}
+  competences: [D6.2]
+  objectif: O1
+- id: S16-L01-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un buck supposé sans pertes est alimenté en 14 V ; son transistor conduit avec un rapport cyclique de 0,36. Quelle tension de sortie attendez-vous ?"
+  unite_attendue: V
+  competences: [D6.2]
+  objectif: O2
+- id: S16-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un boost alimenté en 12 V est arrêté (son transistor ne commute plus). Que lisez-vous sur sa sortie ?"
+  propositions:
+    - {id: a, texte: "Environ l'entrée moins la chute de la diode : la sortie reste reliée à l'entrée par l'inductance et la diode"}
+    - {id: b, texte: "0 V"}
+    - {id: c, texte: "Le double de l'entrée"}
+    - {id: d, texte: "Une tension négative"}
+  competences: [D6.2]
+  objectif: O3

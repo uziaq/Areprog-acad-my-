@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S16-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S16-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un buck passe de 12 V à 3,3 V avec un rapport cyclique de 0,3, une fréquence de découpage de 1 MHz et une inductance de 4,7 µH. Quelle est l'ondulation de courant de l'inductance ?"
+  unite_attendue: A
+  competences: [D6.2]
+  objectif: O1
+- id: S16-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "L'ondulation de courant de l'inductance vaut 0,4 A et le condensateur de sortie a une ESR de 0,3 Ω. Quelle ondulation de sortie l'ESR ajoute-t-elle, en mV ?"
+  unite_attendue: mV
+  competences: [D6.2]
+  objectif: O1
+- id: S16-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "L'ondulation de sortie d'un convertisseur est normale à chaud et devient très forte par temps froid. Quel composant soupçonnez-vous d'abord ?"
+  propositions:
+    - {id: a, texte: "Un condensateur électrolytique de sortie usé, dont l'ESR monte au froid"}
+    - {id: b, texte: "La résistance du pont de contre-réaction"}
+    - {id: c, texte: "Le connecteur d'entrée"}
+    - {id: d, texte: "Aucun : c'est normal"}
+  competences: [D6.2]
+  objectif: O2

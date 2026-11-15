@@ -1,0 +1,12 @@
+# Convertisseurs à découpage : loi de l'inductance, modulation de largeur d'impulsion, buck et
+# boost, conduction continue et discontinue, parasites des condensateurs (ESR, ESL), mesure de
+# l'ondulation et du rendement (cours S16). Sections citées par leur numéro et leur titre anglais.
+id: SRC-0039
+titre: "Switching regulator fundamentals"
+editeur: Texas Instruments
+reference: "SNVA559C"
+revision: "septembre 2012, révisée février 2019"
+date_consultation: 2026-11-14
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/snva559
