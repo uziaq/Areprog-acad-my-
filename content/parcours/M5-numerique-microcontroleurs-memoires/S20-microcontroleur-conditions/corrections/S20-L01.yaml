@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S20-L01-EX01
+  bonnes: [a]
+  explication: "Le compteur de programme tient l'adresse de la prochaine instruction ; l'unité de commande la lit, l'exécute, puis passe à la suivante."
+  renvoi_section: "S20-L01#architecture-générique"
+- id: S20-L01-EX02
+  ordre: [b, d, a, c]
+  explication: "Alimentations d'abord, puis horloge, puis reset, puis mode de démarrage : chaque condition dépend de la précédente."
+  renvoi_section: "S20-L01#les-quatre-conditions-de-vie"
+- id: S20-L01-EX03
+  bonnes: [a]
+  explication: "Les pointes de courant viennent du condensateur de découplage : il en faut un par paire de broches, au plus près, avec une boucle courte."
+  renvoi_section: "S20-L01#les-alimentations-et-le-découplage"

@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S20-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S20-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Un quartz demande CL = 12 pF ; la capacité interne de chaque broche vaut Ci = 3 pF et l'on estime la capacité parasite Cs = 3 pF. Quelle valeur de condensateur externe Ce faut-il sur chaque broche ?"
+  unite_attendue: pF
+  competences: [D7.2]
+  objectif: O1
+- id: S20-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Vous devez vérifier qu'un oscillateur à 20 MHz fonctionne sans le perturber. Quelle méthode choisissez-vous en premier ?"
+  propositions:
+    - {id: a, texte: "Une sonde active de faible capacité, ou un signal dérivé de l'horloge sur une autre broche"}
+    - {id: b, texte: "Une sonde ×1 avec un long fil de masse"}
+    - {id: c, texte: "Le multimètre en fréquencemètre directement sur la broche d'entrée de l'oscillateur"}
+    - {id: d, texte: "Toucher le quartz avec le doigt pour voir si la carte réagit"}
+  competences: [D7.2, D3.6]
+  objectif: O2
+- id: S20-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Après une soudure près du quartz, l'oscillateur ne démarre plus. Quelle cause vérifiez-vous en premier, carte hors tension ?"
+  propositions:
+    - {id: a, texte: "Des résidus de flux ou un pont de soudure entre les broches du quartz"}
+    - {id: b, texte: "La version du programme"}
+    - {id: c, texte: "La couleur du vernis"}
+    - {id: d, texte: "La température de la pièce"}
+  competences: [D7.2]
+  objectif: O3

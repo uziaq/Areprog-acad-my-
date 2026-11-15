@@ -1,0 +1,24 @@
+# Énoncés seulement : les solutions sont dans corrections/S20-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S20-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur une broche de reset active à l'état bas, à quoi sert la résistance reliée à l'alimentation ?"
+  propositions:
+    - {id: a, texte: "À tenir la broche à l'état haut pour éviter un reset parasite"}
+    - {id: b, texte: "À limiter la fréquence du quartz"}
+    - {id: c, texte: "À décharger le condensateur de découplage"}
+    - {id: d, texte: "À maintenir le microcontrôleur en reset en permanence"}
+  competences: [D7.2]
+  objectif: O1
+- id: S20-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "À l'oscilloscope, la broche de reset descend régulièrement toutes les 2 s pendant quelques millisecondes. Quelle hypothèse vérifiez-vous en premier ?"
+  propositions:
+    - {id: a, texte: "Un watchdog qui n'est pas rafraîchi : contrôler l'horloge, le mode de démarrage et comparer la période à la fiche"}
+    - {id: b, texte: "Une broche de reset court-circuitée à la masse"}
+    - {id: c, texte: "Un quartz trop précis"}
+    - {id: d, texte: "Rien : un reset régulier est normal en fonctionnement"}
+  competences: [D7.2, D3.6]
+  objectif: O3

@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S20-L03-EX01
+  bonnes: [a]
+  explication: "La résistance de tirage tient le reset inactif ; la résistance interne peut ne pas suffire en milieu bruité."
+  renvoi_section: "S20-L03#la-broche-de-reset"
+- id: S20-L03-EX02
+  bonnes: [a]
+  explication: "Un reset en boucle à période régulière évoque un watchdog non rafraîchi ; une broche court-circuitée resterait basse en permanence."
+  renvoi_section: "S20-L03#lire-le-reset-à-loscilloscope"

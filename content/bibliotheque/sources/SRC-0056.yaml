@@ -1,0 +1,13 @@
+# Conception matérielle autour d'un microcontrôleur : alimentation numérique et découplage,
+# alimentation analogique séparée, broche de reset (tirage, condensateur, protection), choix de la
+# source d'horloge, quartz et résonateurs céramiques, capacités de charge (cours S20). Sections
+# citées par leur numéro et leur titre anglais.
+id: SRC-0056
+titre: "AN2519 – AVR Microcontroller Hardware Design Considerations"
+editeur: Microchip Technology
+reference: "AN2519, DS00002519B"
+revision: "B, 2018"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://ww1.microchip.com/downloads/en/Appnotes/AN2519-AVR-Microcontroller-Hardware-Design-Considerations-00002519B.pdf

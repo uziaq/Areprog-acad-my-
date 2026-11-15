@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S20-Q001
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#architecture-générique"
+  enonce: "Que réunit un microcontrôleur sur une seule puce ?"
+  propositions:
+    - {id: a, texte: "Un processeur, une mémoire programme, une mémoire vive et des périphériques"}
+    - {id: b, texte: "Seulement un processeur"}
+    - {id: c, texte: "Un régulateur et un quartz"}
+    - {id: d, texte: "Une mémoire EEPROM seule"}
+- id: S20-Q002
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#architecture-générique"
+  enonce: "Que fait l'unité de commande à chaque cycle lecture-exécution ?"
+  propositions:
+    - {id: a, texte: "Elle lit l'instruction à l'adresse du compteur de programme, l'exécute, puis passe à la suivante"}
+    - {id: b, texte: "Elle mesure la tension d'alimentation"}
+    - {id: c, texte: "Elle remet le microcontrôleur à zéro"}
+    - {id: d, texte: "Elle efface la mémoire"}
+- id: S20-Q003
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#les-quatre-conditions-de-vie"
+  enonce: "Quelles sont les quatre conditions de vie d'un microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "Alimentations, horloge, reset, mode de démarrage"}
+    - {id: b, texte: "Alimentations, CAN, EEPROM, vernis"}
+    - {id: c, texte: "Quartz, fusible, relais, connecteur"}
+    - {id: d, texte: "Programme, codes défaut, kilométrage, VIN"}
+- id: S20-Q004
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#les-quatre-conditions-de-vie"
+  enonce: "Quelle condition vérifie-t-on en premier ?"
+  propositions:
+    - {id: a, texte: "Les alimentations"}
+    - {id: b, texte: "Le mode de démarrage"}
+    - {id: c, texte: "Le reset"}
+    - {id: d, texte: "Le programme"}
+- id: S20-Q005
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#les-quatre-conditions-de-vie"
+  enonce: "Les réglages de configuration (fuses) qui choisissent la source d'horloge s'effacent-ils avec la mémoire programme ?"
+  propositions:
+    - {id: a, texte: "Non : un mauvais réglage peut empêcher le microcontrôleur de fonctionner même après effacement"}
+    - {id: b, texte: "Oui, toujours"}
+    - {id: c, texte: "Ils n'existent sur aucun microcontrôleur"}
+    - {id: d, texte: "Oui, à chaque mise sous tension"}
+- id: S20-Q006
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#les-alimentations-et-le-découplage"
+  enonce: "D'où viennent les pointes de courant d'un microcontrôleur à chaque front d'horloge ?"
+  propositions:
+    - {id: a, texte: "Du condensateur de découplage placé près de ses broches"}
+    - {id: b, texte: "De la batterie directement, par les longues pistes"}
+    - {id: c, texte: "Du quartz"}
+    - {id: d, texte: "De la broche de reset"}
+- id: S20-Q007
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L01#les-alimentations-et-le-découplage"
+  enonce: "Pourquoi l'alimentation analogique d'un microcontrôleur est-elle souvent séparée et découplée à part ?"
+  propositions:
+    - {id: a, texte: "Pour garder le bruit numérique hors des mesures du convertisseur"}
+    - {id: b, texte: "Pour économiser un condensateur"}
+    - {id: c, texte: "Pour faire tourner le quartz plus vite"}
+    - {id: d, texte: "Parce qu'elle est en 12 V"}
+- id: S20-Q008
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L02#loscillateur-pierce"
+  enonce: "Dans un oscillateur Pierce, de quoi se compose le circuit de contre-réaction ?"
+  propositions:
+    - {id: a, texte: "Du quartz et de deux condensateurs de charge"}
+    - {id: b, texte: "D'une seule résistance"}
+    - {id: c, texte: "D'un transformateur"}
+    - {id: d, texte: "D'une diode Zener"}
+- id: S20-Q009
+  type: calcul
+  securite: false
+  competences: [D7.2]
+  section: "S20-L02#exemple-4--condensateurs-de-charge"
+  enonce: "Un quartz demande CL = 20 pF ; Ci = 5 pF et Cs = 5 pF. Quelle valeur de Ce faut-il sur chaque broche ?"
+  unite_attendue: pF
+- id: S20-Q010
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L02#loscillateur-pierce"
+  enonce: "Que se passe-t-il si la charge capacitive d'un quartz est trop forte ?"
+  propositions:
+    - {id: a, texte: "L'oscillation peut ne pas démarrer"}
+    - {id: b, texte: "La fréquence double"}
+    - {id: c, texte: "Le quartz devient un résonateur céramique"}
+    - {id: d, texte: "Rien"}
+- id: S20-Q011
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L02#loscillateur-pierce"
+  enonce: "Par rapport à un quartz, un résonateur céramique :"
+  propositions:
+    - {id: a, texte: "Est moins précis et plus sensible à la température, mais démarre plus vite"}
+    - {id: b, texte: "Est plus précis"}
+    - {id: c, texte: "N'a pas besoin de charge"}
+    - {id: d, texte: "Ne s'utilise jamais avec un microcontrôleur"}
+- id: S20-Q012
+  type: choix_unique
+  securite: false
+  competences: [D7.2, D3.6]
+  section: "S20-L02#mesurer-sans-arrêter-loscillateur"
+  enonce: "Pourquoi une sonde ordinaire peut-elle fausser la mesure d'un oscillateur ?"
+  propositions:
+    - {id: a, texte: "Sa capacité de 8 à 15 pF charge un circuit à haute impédance et peut changer ou arrêter l'oscillation"}
+    - {id: b, texte: "Elle ne voit pas les signaux de plus de 1 kHz"}
+    - {id: c, texte: "Elle mesure en courant"}
+    - {id: d, texte: "Elle inverse le signal"}
+- id: S20-Q013
+  type: calcul
+  securite: false
+  competences: [D7.2, D3.6]
+  section: "S20-L02#exemple-5--charge-de-la-sonde"
+  enonce: "Quelle est l'impédance d'une capacité de 10 pF à 8 MHz ?"
+  unite_attendue: Ω
+- id: S20-Q014
+  type: choix_unique
+  securite: false
+  competences: [D7.2, D3.6]
+  section: "S20-L02#mesurer-sans-arrêter-loscillateur"
+  enonce: "Quelle méthode perturbe le moins un oscillateur ?"
+  propositions:
+    - {id: a, texte: "Une sonde active à faible capacité, ou un signal dérivé de l'horloge"}
+    - {id: b, texte: "Une sonde ×1 avec un long fil de masse"}
+    - {id: c, texte: "Le multimètre en ohmmètre sous tension"}
+    - {id: d, texte: "Toucher le quartz"}
+- id: S20-Q015
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L02#pourquoi-un-oscillateur-ne-démarre-pas"
+  enonce: "Après une soudure près du quartz, l'horloge ne démarre plus. Première cause à vérifier ?"
+  propositions:
+    - {id: a, texte: "Résidus de flux ou pont de soudure entre les broches du quartz"}
+    - {id: b, texte: "Le programme"}
+    - {id: c, texte: "Le connecteur du calculateur"}
+    - {id: d, texte: "La batterie du véhicule"}
+- id: S20-Q016
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L03#la-broche-de-reset"
+  enonce: "Que fait un reset sur un microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "Il met les broches en haute impédance, réinitialise les registres et ramène le compteur de programme au début"}
+    - {id: b, texte: "Il efface la mémoire programme"}
+    - {id: c, texte: "Il coupe l'alimentation"}
+    - {id: d, texte: "Il change la fréquence du quartz"}
+- id: S20-Q017
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L03#la-broche-de-reset"
+  enonce: "Pourquoi un bouton de reset se monte-t-il avec une résistance en série ?"
+  propositions:
+    - {id: a, texte: "Pour éviter que la décharge brutale du condensateur crée des pointes de tension"}
+    - {id: b, texte: "Pour allumer une LED"}
+    - {id: c, texte: "Pour régler le watchdog"}
+    - {id: d, texte: "Pour augmenter la fréquence"}
+- id: S20-Q018
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L03#le-superviseur-de-tension"
+  enonce: "Que fait un superviseur de tension ?"
+  propositions:
+    - {id: a, texte: "Il tient le microcontrôleur en reset quand la tension surveillée est trop basse, puis le relâche après un délai"}
+    - {id: b, texte: "Il régule la tension"}
+    - {id: c, texte: "Il génère l'horloge"}
+    - {id: d, texte: "Il programme la mémoire"}
+- id: S20-Q019
+  type: choix_unique
+  securite: false
+  competences: [D7.2]
+  section: "S20-L03#le-watchdog"
+  enonce: "Dans un watchdog à fenêtre, quand le rafraîchissement est-il valide ?"
+  propositions:
+    - {id: a, texte: "Entre la limite basse et la limite haute de la fenêtre"}
+    - {id: b, texte: "À n'importe quel moment"}
+    - {id: c, texte: "Seulement avant la limite basse"}
+    - {id: d, texte: "Seulement après la limite haute"}
+- id: S20-Q020
+  type: calcul
+  securite: false
+  competences: [D7.2]
+  section: "S20-L03#exemple-7--période-dun-reset-en-boucle"
+  enonce: "On compte 15 resets en 30 s à l'oscilloscope. Quelle est leur période ?"
+  unite_attendue: s
+- id: S20-Q021
+  type: choix_unique
+  securite: false
+  competences: [D7.2, D3.6]
+  section: "S20-L03#lire-le-reset-à-loscilloscope"
+  enonce: "Le reset reste à 0 V en permanence, contact mis. Hypothèses ?"
+  propositions:
+    - {id: a, texte: "Alimentation sous le seuil du superviseur, broche tirée à la masse, superviseur en défaut"}
+    - {id: b, texte: "Watchdog non rafraîchi"}
+    - {id: c, texte: "Fonctionnement normal"}
+    - {id: d, texte: "Quartz trop rapide"}
+- id: S20-Q022
+  type: choix_unique
+  securite: false
+  competences: [D7.2, D3.6]
+  section: "S20-L03#lire-le-reset-à-loscilloscope"
+  enonce: "Pourquoi ne pas se contenter du multimètre pour juger un reset ?"
+  propositions:
+    - {id: a, texte: "Un reset en boucle donne une valeur moyenne trompeuse ; l'oscilloscope montre les impulsions"}
+    - {id: b, texte: "Le multimètre ne mesure pas les tensions continues"}
+    - {id: c, texte: "Le reset est un courant"}
+    - {id: d, texte: "Le multimètre déclenche un reset"}
+- id: S20-Q023
+  type: choix_unique
+  securite: true
+  competences: [D9.1, D10.1]
+  section: "S20-L03#lire-le-reset-à-loscilloscope"
+  enonce: "Au TP-29, où posez-vous de préférence la pointe pour relever une alimentation du microcontrôleur ?"
+  propositions:
+    - {id: a, texte: "Sur un condensateur de découplage voisin, pointe tenue fermement, masse de sonde sur la masse de la carte"}
+    - {id: b, texte: "Entre deux broches du microcontrôleur, au hasard"}
+    - {id: c, texte: "Sur le boîtier métallique du quartz"}
+    - {id: d, texte: "Sur un nœud de l'étage à tension élevée"}
+- id: S20-Q024
+  type: choix_unique
+  securite: true
+  competences: [D9.1, D10.1]
+  section: "S20-L01#les-quatre-conditions-de-vie"
+  enonce: "Avant de toucher la carte du TP-29 après une coupure, que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je mesure la décharge des étages à tension élevée, je décharge à travers une résistance si besoin, puis je mesure de nouveau"}
+    - {id: b, texte: "J'attends une minute"}
+    - {id: c, texte: "Je court-circuite les condensateurs au tournevis"}
+    - {id: d, texte: "Rien, le banc est coupé"}
+- id: S20-Q025
+  type: choix_unique
+  securite: true
+  competences: [D9.1]
+  section: "S20-L02#pourquoi-un-oscillateur-ne-démarre-pas"
+  enonce: "Pendant FR-16, quelle précaution protège la santé ?"
+  propositions:
+    - {id: a, texte: "L'aspiration des fumées en marche pendant toute la soudure"}
+    - {id: b, texte: "Souffler sur la fumée"}
+    - {id: c, texte: "Souder sans flux"}
+    - {id: d, texte: "Aérer après la séance"}

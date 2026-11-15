@@ -1,0 +1,14 @@
+# Oscillateur à quartz d'un microcontrôleur : montage Pierce, modèle du quartz, capacités de
+# charge, gain et puissance d'excitation, problèmes de carte (pistes longues, résidus de flux,
+# bruit d'alimentation, quartz endommagé), charge apportée par la sonde d'oscilloscope et essais
+# (cours S20). Copie hébergée par l'université de Rhode Island ; sections citées par leur numéro
+# et leur titre anglais.
+id: SRC-0057
+titre: "Microcontroller Oscillator Circuit Design Considerations"
+editeur: Motorola Semiconductor
+reference: "AN1706/D"
+revision: "1997"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ele.uri.edu/courses/ele205/Application-notes/AN1706.pdf

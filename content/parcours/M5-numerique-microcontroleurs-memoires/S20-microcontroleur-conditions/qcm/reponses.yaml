@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S20-Q001
+  bonnes: [a]
+  explication: "C'est ce qui le distingue d'un microprocesseur seul."
+  pourquoi_faux:
+    b: "Il faut aussi les mémoires et les périphériques."
+    c: "Ce sont des composants externes."
+    d: "Une mémoire seule ne calcule pas."
+  source: "S20-L01#architecture-générique"
+- id: S20-Q002
+  bonnes: [a]
+  explication: "Fetch, execute, puis incrément du compteur."
+  pourquoi_faux:
+    b: "C'est le rôle d'un superviseur."
+    c: "C'est le reset."
+    d: "Sans rapport."
+  source: "S20-L01#architecture-générique"
+- id: S20-Q003
+  bonnes: [a]
+  explication: "C'est la liste de la leçon, dans l'ordre de contrôle."
+  pourquoi_faux:
+    b: "Ce ne sont pas des conditions de fonctionnement."
+    c: "Composants divers."
+    d: "Données, pas conditions matérielles."
+  source: "S20-L01#les-quatre-conditions-de-vie"
+- id: S20-Q004
+  bonnes: [a]
+  explication: "Sans alimentation, rien d'autre ne peut fonctionner."
+  pourquoi_faux:
+    b: "C'est la dernière."
+    c: "Elle vient après l'horloge."
+    d: "Ce n'est pas une condition matérielle."
+  source: "S20-L01#les-quatre-conditions-de-vie"
+- id: S20-Q005
+  bonnes: [a]
+  explication: "La note Microchip le précise pour ses composants."
+  pourquoi_faux:
+    b: "Contraire à la source."
+    c: "Ils existent sur certaines familles."
+    d: "Ils sont non volatils."
+  source: "S20-L01#les-quatre-conditions-de-vie"
+- id: S20-Q006
+  bonnes: [a]
+  explication: "Les longues pistes ne peuvent pas fournir ces pointes."
+  pourquoi_faux:
+    b: "Leur inductance l'empêche."
+    c: "Le quartz ne fournit pas de courant."
+    d: "Sans rapport."
+  source: "S20-L01#les-alimentations-et-le-découplage"
+- id: S20-Q007
+  bonnes: [a]
+  explication: "Le convertisseur et la référence sont sensibles au bruit."
+  pourquoi_faux:
+    b: "Il en faut un de plus."
+    c: "Sans rapport."
+    d: "Faux."
+  source: "S20-L01#les-alimentations-et-le-découplage"
+- id: S20-Q008
+  bonnes: [a]
+  explication: "L'inverseur interne fournit le gain ; quartz et condensateurs, le filtrage et le déphasage."
+  pourquoi_faux:
+    b: "La résistance polarise seulement."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S20-L02#loscillateur-pierce"
+- id: S20-Q009
+  valeur: 30
+  tolerance_relative: 0.02
+  unite: pF
+  explication: "Ce + Ci = 2 × 20 − 5 = 35 pF ; Ce = 35 − 5 = 30 pF."
+  source: "S20-L02#exemple-4--condensateurs-de-charge"
+- id: S20-Q010
+  bonnes: [a]
+  explication: "Charge trop faible : instabilité ; trop forte : démarrage compromis."
+  pourquoi_faux:
+    b: "Faux."
+    c: "Faux."
+    d: "La charge compte."
+  source: "S20-L02#loscillateur-pierce"
+- id: S20-Q011
+  bonnes: [a]
+  explication: "D'après le tableau comparatif de la note Microchip."
+  pourquoi_faux:
+    b: "Il est moins précis."
+    c: "Il demande sa charge."
+    d: "Il est courant."
+  source: "S20-L02#loscillateur-pierce"
+- id: S20-Q012
+  bonnes: [a]
+  explication: "La note Motorola le signale explicitement."
+  pourquoi_faux:
+    b: "Faux pour une sonde d'oscilloscope."
+    c: "Elle mesure une tension."
+    d: "Faux."
+  source: "S20-L02#mesurer-sans-arrêter-loscillateur"
+- id: S20-Q013
+  valeur: 1989
+  tolerance_relative: 0.02
+  unite: Ω
+  explication: "Z = 1 / (2π × 8 × 10⁶ × 10 × 10⁻¹²) ≈ 1989 Ω."
+  source: "S20-L02#exemple-5--charge-de-la-sonde"
+- id: S20-Q014
+  bonnes: [a]
+  explication: "Moins de 2 pF pour une sonde active à effet de champ."
+  pourquoi_faux:
+    b: "C'est la pire."
+    c: "Dangereux pour l'instrument et faux."
+    d: "Perturbe et risque l'ESD."
+  source: "S20-L02#mesurer-sans-arrêter-loscillateur"
+- id: S20-Q015
+  bonnes: [a]
+  explication: "Le flux crée un chemin parasite qui réduit le gain."
+  pourquoi_faux:
+    b: "La cause matérielle évidente d'abord."
+    c: "Loin du quartz."
+    d: "Sans rapport sur banc."
+  source: "S20-L02#pourquoi-un-oscillateur-ne-démarre-pas"
+- id: S20-Q016
+  bonnes: [a]
+  explication: "D'après la note Microchip."
+  pourquoi_faux:
+    b: "La Flash est conservée."
+    c: "Faux."
+    d: "Faux."
+  source: "S20-L03#la-broche-de-reset"
+- id: S20-Q017
+  bonnes: [a]
+  explication: "Le courant de décharge et l'inductance des pistes créent des pointes."
+  pourquoi_faux:
+    b: "Sans rapport."
+    c: "Sans rapport."
+    d: "Sans rapport."
+  source: "S20-L03#la-broche-de-reset"
+- id: S20-Q018
+  bonnes: [a]
+  explication: "Le délai laisse l'oscillateur se stabiliser."
+  pourquoi_faux:
+    b: "C'est le régulateur."
+    c: "C'est le quartz."
+    d: "Sans rapport."
+  source: "S20-L03#le-superviseur-de-tension"
+- id: S20-Q019
+  bonnes: [a]
+  explication: "Trop tôt ou trop tard est un défaut."
+  pourquoi_faux:
+    b: "C'est le principe d'aucun watchdog."
+    c: "Défaut trop tôt."
+    d: "Défaut trop tard."
+  source: "S20-L03#le-watchdog"
+- id: S20-Q020
+  valeur: 2
+  tolerance_relative: 0.02
+  unite: s
+  explication: "30 / 15 = 2 s."
+  source: "S20-L03#exemple-7--période-dun-reset-en-boucle"
+- id: S20-Q021
+  bonnes: [a]
+  explication: "Un watchdog donnerait des impulsions régulières."
+  pourquoi_faux:
+    b: "Il donnerait un reset en boucle."
+    c: "Le microcontrôleur ne démarre jamais."
+    d: "Sans rapport direct."
+  source: "S20-L03#lire-le-reset-à-loscilloscope"
+- id: S20-Q022
+  bonnes: [a]
+  explication: "D'où le mode de déclenchement normal pour voir les répétitions."
+  pourquoi_faux:
+    b: "Faux."
+    c: "C'est une tension."
+    d: "Faux."
+  source: "S20-L03#lire-le-reset-à-loscilloscope"
+- id: S20-Q023
+  bonnes: [a]
+  explication: "Une pointe qui glisse entre deux broches peut détruire le microcontrôleur."
+  pourquoi_faux:
+    b: "Risque de court-circuit."
+    c: "Ce n'est pas l'alimentation."
+    d: "Danger et FE-07 / FE-09."
+  source: "S20-L03#lire-le-reset-à-loscilloscope"
+- id: S20-Q024
+  bonnes: [a]
+  explication: "Un temps d'attente ne remplace pas la mesure (FE-09)."
+  pourquoi_faux:
+    b: "Interdit par le protocole."
+    c: "Décharge franche dangereuse."
+    d: "Des condensateurs peuvent rester chargés."
+  source: "S20-L01#les-quatre-conditions-de-vie"
+- id: S20-Q025
+  bonnes: [a]
+  explication: "Les fumées de flux s'aspirent à la source."
+  pourquoi_faux:
+    b: "Inefficace."
+    c: "Ne règle pas les fumées."
+    d: "Trop tard."
+  source: "S20-L02#pourquoi-un-oscillateur-ne-démarre-pas"
