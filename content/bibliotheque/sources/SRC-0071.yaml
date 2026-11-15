@@ -1,0 +1,15 @@
+# Norme de fabrication NASA pour le montage en surface : fers à température régulée, mise à la
+# terre de la panne, contrôle de la panne, alliages et flux, grossissement d'inspection selon la
+# largeur des pastilles, critères généraux d'acceptation et de rejet, critères des composants chip
+# (ménisque, inclinaison, débord). Document ancien, utilisé ici comme référence publique de
+# critères écrits, à la place de l'IPC-A-610 (payante). Sections citées par leur numéro et leur
+# titre anglais (cours S26).
+id: SRC-0071
+titre: "NASA-STD-8739.2, Workmanship Standard for Surface Mount Technology"
+editeur: NASA
+reference: "NASA-STD-8739.2"
+revision: "août 1999"
+date_consultation: 2026-11-15
+type: norme
+licence: lien_seulement
+lien: https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/NASA-STD-8739-2.pdf

@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S26-L01.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S26-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pour obtenir un bon mouillage sur un composant chip, que doit faire la panne ?"
+  propositions:
+    - {id: a, texte: "Chauffer en même temps la pastille et la terminaison du composant"}
+    - {id: b, texte: "Faire fondre le fil au-dessus de la pastille, puis le laisser tomber"}
+    - {id: c, texte: "Chauffer seulement le corps du composant"}
+    - {id: d, texte: "Rester le plus longtemps possible pour être sûr"}
+  competences: [D9.1]
+  objectif: O1
+- id: S26-L01-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "D'après la fiche de l'alliage SAC305 étudiée, quelle est sa plage de fusion ?"
+  propositions:
+    - {id: a, texte: "De 217 °C (solidus) à 220 °C (liquidus)"}
+    - {id: b, texte: "De 179 °C à 188 °C"}
+    - {id: c, texte: "Exactement 100 °C"}
+    - {id: d, texte: "De 300 °C à 350 °C"}
+  competences: [D9.1]
+  objectif: O2
+- id: S26-L01-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Où prenez-vous la température de panne et la durée de contact pour souder un condensateur céramique ?"
+  propositions:
+    - {id: a, texte: "Dans la fiche du fabricant du composant, la fiche de l'alliage et la notice de la station"}
+    - {id: b, texte: "Le plus chaud possible pour aller vite"}
+    - {id: c, texte: "Dans une vidéo de démonstration"}
+    - {id: d, texte: "Toujours 450 °C"}
+  competences: [D9.1]
+  objectif: O3

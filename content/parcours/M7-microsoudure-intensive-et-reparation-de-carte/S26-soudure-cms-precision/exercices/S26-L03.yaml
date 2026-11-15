@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S26-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S26-L03-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Les pastilles d'un composant mesurent 0,35 mm de large. Quel grossissement la norme NASA prévoit-elle pour contrôler ses soudures ?"
+  propositions:
+    - {id: a, texte: "25 à 45 fois"}
+    - {id: b, texte: "10 à 25 fois"}
+    - {id: c, texte: "2 fois"}
+    - {id: d, texte: "À l'œil nu"}
+  competences: [D3.5]
+  objectif: O1
+- id: S26-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un composant chip a une épaisseur de 0,8 mm. Quelle hauteur minimale de ménisque la norme NASA demande-t-elle ?"
+  propositions:
+    - {id: a, texte: "0,4 mm, soit 50 % de l'épaisseur"}
+    - {id: b, texte: "0,8 mm, toute l'épaisseur"}
+    - {id: c, texte: "0,2 mm, soit 25 % de l'épaisseur"}
+    - {id: d, texte: "Aucune hauteur minimale"}
+  competences: [D9.5]
+  objectif: O2
+- id: S26-L03-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur 20 passifs posés, 18 sont acceptés et 2 rejetés. Quel est le taux de conformité ?"
+  propositions:
+    - {id: a, texte: "90 %"}
+    - {id: b, texte: "18 %"}
+    - {id: c, texte: "10 %"}
+    - {id: d, texte: "100 %, car les rejetés seront repris"}
+  competences: [D9.5]
+  objectif: O3

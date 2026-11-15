@@ -1,0 +1,14 @@
+# Note d'application d'un fabricant de composants céramiques : sensibilité des condensateurs
+# céramiques aux chocs thermiques, précautions au fer (préchauffage, panne jamais sur la
+# céramique, puissance, température et durée maximales), refroidissement lent, hauteur de
+# ménisque, effet « pierre tombale ». Sections sans numéro, citées par leur titre anglais
+# (cours S26).
+id: SRC-0073
+titre: "Soldering Application Note for Ceramic Chip Components"
+editeur: Johanson Technology
+reference: "jti-soldering"
+revision: "non datée (fichier de mai 2011)"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.johansontechnology.com/downloads/jti-soldering.pdf

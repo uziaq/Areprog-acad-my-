@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S26-L03-EX01
+  bonnes: [a]
+  explication: "Sous 0,39 mm de largeur de pastille, la norme NASA-STD-8739.2 prévoit 25 à 45 fois."
+  renvoi_section: "S26-L03#grossissement-et-éclairage"
+- id: S26-L03-EX02
+  bonnes: [a]
+  explication: "50 % de 0,8 mm = 0,4 mm ; un ménisque plus bas est rejeté."
+  renvoi_section: "S26-L03#critères-pour-un-composant-chip"
+- id: S26-L03-EX03
+  bonnes: [a]
+  explication: "18 / 20 = 0,9, soit 90 %. Le taux se calcule avant reprise ; les reprises sont notées à part."
+  renvoi_section: "S26-L03#la-grille-de-contrôle-et-le-taux-de-conformité"

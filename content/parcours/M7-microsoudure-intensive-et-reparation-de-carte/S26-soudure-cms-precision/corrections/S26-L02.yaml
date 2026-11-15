@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S26-L02-EX01
+  bonnes: [a]
+  explication: "La norme NASA demande un solvant approuvé, dans la demi-heure, et interdit les ultrasons sur une carte équipée ; une carte vernie se nettoie seulement localement."
+  renvoi_section: "S26-L02#nettoyer"
+- id: S26-L02-EX02
+  ordre: [e, b, d, a, c]
+  explication: "Pastilles propres et flux, une pastille étamée, composant fixé, deuxième extrémité, puis contrôle (après nettoyage)."
+  renvoi_section: "S26-L02#poser-un-passif-chip"
