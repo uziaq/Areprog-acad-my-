@@ -1,0 +1,12 @@
+# Circuit d'alimentation intégré « system basis chip » (SBC) : alimentation intégrée (régulateurs
+# buck ou LDO), émetteur-récepteur CAN ou LIN, supervision (chien de garde, reset), broches WAKE,
+# modes basse consommation (cours S17). Cité par section.
+id: SRC-0045
+titre: "System Basis Chips (SBCs) 101 – Exploration of TI's SBC Portfolio"
+editeur: Texas Instruments
+reference: "SPRT815"
+revision: "décembre 2025"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/sprt815

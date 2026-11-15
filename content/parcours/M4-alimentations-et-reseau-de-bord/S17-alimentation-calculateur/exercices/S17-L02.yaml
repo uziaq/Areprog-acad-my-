@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S17-L02.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S17-L02-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre, depuis la broche du plus batterie, les blocs de la chaîne d'entrée générique d'un calculateur."
+  propositions:
+    - {id: a, texte: "Filtre CEM"}
+    - {id: b, texte: "Protection contre l'inversion de polarité"}
+    - {id: c, texte: "Régulateurs des tensions internes et microcontrôleur"}
+    - {id: d, texte: "Convertisseur d'entrée"}
+  competences: [D6.3]
+  objectif: O1
+- id: S17-L02-EX02
+  version: "0.1"
+  type: calcul
+  enonce: "Un calculateur consomme 1,5 A ; sa protection contre l'inversion est une diode série qui chute 0,7 V. Quelle puissance dissipe-t-elle en permanence ?"
+  unite_attendue: W
+  competences: [D6.3]
+  objectif: O2
+- id: S17-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Au relevé, vous trouvez deux condensateurs céramiques identiques en série entre le plus permanent et la masse, tournés à 90° l'un de l'autre. Quelle explication retenez-vous ?"
+  propositions:
+    - {id: a, texte: "Si l'un casse en court-circuit quand la carte se tord, l'autre évite le court-circuit de la batterie"}
+    - {id: b, texte: "C'est une erreur de fabrication"}
+    - {id: c, texte: "Cela double la capacité"}
+    - {id: d, texte: "Cela remplace la diode TVS"}
+  competences: [D6.3]
+  objectif: O3

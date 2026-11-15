@@ -1,0 +1,11 @@
+# SBC à sécurité fonctionnelle pour microcontrôleur automobile : niveau d'intégrité de sécurité
+# (ASIL) atteignable, rôle de la supervision (cours S17). Cité par section.
+id: SRC-0048
+titre: "NXP SBC solution for Infineon AURIX TC2xx/TC3xx series MCU"
+editeur: NXP Semiconductors
+reference: "AN13322"
+revision: "révision 4.0, 31 juillet 2026"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.nxp.com/docs/en/application-note/AN13322.pdf

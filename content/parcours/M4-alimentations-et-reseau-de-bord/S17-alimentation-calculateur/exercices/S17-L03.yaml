@@ -1,0 +1,23 @@
+# Énoncés seulement : les solutions sont dans corrections/S17-L03.yaml
+- id: S17-L03-EX01
+  version: "0.1"
+  type: choix_multiple
+  enonce: "Quelles fonctions un SBC réunit-il en général dans un seul boîtier ? (plusieurs réponses)"
+  propositions:
+    - {id: a, texte: "Des régulateurs d'alimentation"}
+    - {id: b, texte: "Un émetteur-récepteur CAN ou LIN"}
+    - {id: c, texte: "Un chien de garde et une sortie de reset"}
+    - {id: d, texte: "La mémoire du programme du calculateur"}
+  competences: [D6.3]
+  objectif: O1
+- id: S17-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pour le TP-23, on vous propose un calculateur de récupération d'ABS / ESP. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Je le mets de côté jusqu'au module M9 et je choisis un autre calculateur ; je note la décision au journal"}
+    - {id: b, texte: "Je l'utilise, puisque la carte n'est pas alimentée"}
+    - {id: c, texte: "Je l'alimente pour vérifier qu'il fonctionne"}
+    - {id: d, texte: "Je retire son vernis pour voir les composants"}
+  competences: [D10.6]
+  objectif: O2

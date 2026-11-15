@@ -1,0 +1,12 @@
+# Réveil d'un SBC : mode veille à faible courant, réveil local par broche WAKE, réveil par le bus
+# CAN (motif de réveil), réveil sélectif (cours S17). Sections citées par leur numéro et leur titre
+# anglais.
+id: SRC-0046
+titre: "Wake Up Methods for CAN SBCs"
+editeur: Texas Instruments
+reference: "SDAA128"
+revision: "novembre 2025"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/pdf/SDAA128

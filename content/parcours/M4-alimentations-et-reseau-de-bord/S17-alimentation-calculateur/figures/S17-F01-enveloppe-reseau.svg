@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : allure des contraintes du réseau 12 V vues par l'entrée d'un calculateur, sans valeur ; les valeurs se lisent dans ISO 16750-2. -->
+  <path d="M70 20 V300" />
+  <path d="M64 28 L70 18 L76 28" />
+  <text x="78" y="20" fill="currentColor" stroke="none" font-size="11">tension</text>
+  <path d="M70 230 H540" stroke-width="1" stroke-dasharray="3 4" />
+  <text x="62" y="234" fill="currentColor" stroke="none" text-anchor="end" font-size="11">0 V</text>
+  <rect x="100" y="40" width="420" height="34" stroke-width="1.5" stroke-dasharray="6 4" />
+  <text x="310" y="62" fill="currentColor" stroke="none" text-anchor="middle">délestage de charge écrêté (bref)</text>
+  <rect x="100" y="86" width="420" height="34" stroke-width="1.5" stroke-dasharray="6 4" />
+  <text x="310" y="108" fill="currentColor" stroke="none" text-anchor="middle">démarrage avec une batterie 24 V (prolongé)</text>
+  <rect x="100" y="132" width="420" height="40" stroke-width="2.5" />
+  <text x="310" y="157" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">plage de fonctionnement normale</text>
+  <rect x="100" y="184" width="420" height="34" stroke-width="1.5" stroke-dasharray="6 4" />
+  <text x="310" y="206" fill="currentColor" stroke="none" text-anchor="middle">creux au démarrage</text>
+  <rect x="100" y="244" width="420" height="40" stroke-width="1.5" stroke-dasharray="2 4" />
+  <text x="310" y="262" fill="currentColor" stroke="none" text-anchor="middle">tension inversée</text>
+  <text x="310" y="278" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">bloquée par la protection contre l'inversion</text>
+</svg>

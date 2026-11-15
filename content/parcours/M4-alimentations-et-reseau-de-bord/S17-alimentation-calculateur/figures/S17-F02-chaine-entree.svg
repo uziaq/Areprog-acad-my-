@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG d'après le principe de la note TI SLYT707 (figure 1) : chaîne d'entrée générique, pas un calculateur réel. -->
+  <defs><marker id="s17f02-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <circle cx="24" cy="70" r="4" />
+  <text x="24" y="52" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">borne 30</text>
+  <path d="M28 70 H50" marker-end="url(#s17f02-fl)" />
+  <rect x="52" y="45" width="100" height="50" />
+  <text x="102" y="66" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">protection</text>
+  <text x="102" y="81" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">inversion</text>
+  <path d="M152 70 H222" marker-end="url(#s17f02-fl)" />
+  <path d="M182 70 V112" />
+  <path d="M172 128 H192 L182 112 Z M170 112 H194 M170 112 l-4 4 M194 112 l4 -4" stroke-width="1.5" />
+  <path d="M182 128 V160 M170 160 H194 M175 166 H189 M180 172 H184" />
+  <text x="200" y="124" fill="currentColor" stroke="none" font-size="11">TVS</text>
+  <rect x="224" y="45" width="90" height="50" />
+  <text x="269" y="66" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">filtre</text>
+  <text x="269" y="81" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">CEM</text>
+  <path d="M314 70 H342" marker-end="url(#s17f02-fl)" />
+  <rect x="344" y="45" width="100" height="50" />
+  <text x="394" y="66" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">convertisseur</text>
+  <text x="394" y="81" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">d'entrée</text>
+  <path d="M444 70 H472" marker-end="url(#s17f02-fl)" />
+  <rect x="474" y="45" width="90" height="50" />
+  <text x="519" y="66" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">régulateurs</text>
+  <text x="519" y="81" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">internes</text>
+  <path d="M519 95 V150" marker-end="url(#s17f02-fl)" />
+  <rect x="464" y="152" width="110" height="46" />
+  <text x="519" y="180" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">microcontrôleur</text>
+  <rect x="300" y="152" width="110" height="46" />
+  <text x="355" y="180" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">supervision</text>
+  <path d="M519 120 H355 V150" stroke-width="1.5" marker-end="url(#s17f02-fl)" />
+  <path d="M410 175 H462" stroke-width="1.5" marker-end="url(#s17f02-fl)" />
+  <text x="436" y="168" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">reset</text>
+  <text x="320" y="240" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">Schéma de principe : l'ordre et le nombre de blocs varient selon la carte.</text>
+</svg>

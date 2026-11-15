@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S17-Q001
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#les-bornes-selon-din-72552"
+  enonce: "Selon DIN 72552, que désigne la borne 30 ?"
+  propositions:
+    - {id: a, texte: "La ligne venant directement du plus de la batterie"}
+    - {id: b, texte: "Le plus après contact"}
+    - {id: c, texte: "La masse"}
+    - {id: d, texte: "La commande du démarreur"}
+- id: S17-Q002
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#les-bornes-selon-din-72552"
+  enonce: "Selon DIN 72552, que désigne la borne 15 ?"
+  propositions:
+    - {id: a, texte: "Le plus commandé par le commutateur d'allumage"}
+    - {id: b, texte: "Le plus permanent"}
+    - {id: c, texte: "La masse"}
+    - {id: d, texte: "La bobine d'un relais"}
+- id: S17-Q003
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#les-bornes-selon-din-72552"
+  enonce: "Selon DIN 72552, que désigne la borne 31 ?"
+  propositions:
+    - {id: a, texte: "Le retour direct vers le moins de la batterie ou la masse"}
+    - {id: b, texte: "Le plus permanent"}
+    - {id: c, texte: "La commande du démarreur"}
+    - {id: d, texte: "Le contact d'un relais"}
+- id: S17-Q004
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#un-réseau-de-bord-qui-bouge"
+  enonce: "Qu'est-ce qu'un délestage de charge (load dump) ?"
+  propositions:
+    - {id: a, texte: "La déconnexion de la batterie pendant que l'alternateur charge, d'autres consommateurs restant branchés"}
+    - {id: b, texte: "Le creux de tension pendant l'action du démarreur"}
+    - {id: c, texte: "Le branchement de la batterie à l'envers"}
+    - {id: d, texte: "L'ondulation laissée par le redressement de l'alternateur"}
+- id: S17-Q005
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#un-réseau-de-bord-qui-bouge"
+  enonce: "Où lit-on les tensions et durées des essais du réseau de bord ?"
+  propositions:
+    - {id: a, texte: "Dans l'édition en vigueur de la norme et dans le cahier des charges du constructeur"}
+    - {id: b, texte: "Dans une vidéo de réparation"}
+    - {id: c, texte: "On les retient de mémoire"}
+    - {id: d, texte: "Sur l'étiquette du calculateur"}
+- id: S17-Q006
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#un-réseau-de-bord-qui-bouge"
+  enonce: "Pourquoi un calculateur ne voit-il en général que le délestage écrêté ?"
+  propositions:
+    - {id: a, texte: "Le constructeur installe un écrêteur sur l'alternateur"}
+    - {id: b, texte: "Le délestage n'existe plus sur les véhicules récents"}
+    - {id: c, texte: "La batterie l'absorbe toujours"}
+    - {id: d, texte: "Le calculateur est coupé pendant le délestage"}
+- id: S17-Q007
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#les-impulsions-diso-7637-2"
+  enonce: "Que simule l'impulsion 1 d'ISO 7637-2 ?"
+  propositions:
+    - {id: a, texte: "La coupure d'une charge inductive branchée en parallèle avec le calculateur"}
+    - {id: b, texte: "Le délestage de charge"}
+    - {id: c, texte: "Le démarrage à froid"}
+    - {id: d, texte: "Une décharge électrostatique"}
+- id: S17-Q008
+  type: calcul
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#exemple-2--courant-forcé-dans-une-diode-de-protection"
+  enonce: "Une impulsion de 75 V crête, de résistance de source 4 Ω, arrive sur une diode qui écrête à 33 V. Quel courant crête dans la diode ?"
+  unite_attendue: A
+- id: S17-Q009
+  type: calcul
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#exemple-2--courant-forcé-dans-une-diode-de-protection"
+  enonce: "Une diode écrête à 30 V et laisse passer 8 A crête. Quelle puissance crête dissipe-t-elle ?"
+  unite_attendue: W
+- id: S17-Q010
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#les-classes-de-fonctionnement"
+  enonce: "En classe de fonctionnement A, que doit faire le calculateur pendant l'essai ?"
+  propositions:
+    - {id: a, texte: "Fonctionner normalement pendant et après l'essai"}
+    - {id: b, texte: "S'arrêter puis repartir seul"}
+    - {id: c, texte: "Attendre une action de l'utilisateur"}
+    - {id: d, texte: "Être remplacé"}
+- id: S17-Q011
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#larchitecture-générique"
+  enonce: "Quel bloc empêche le microcontrôleur de démarrer tant que son alimentation n'est pas correcte ?"
+  propositions:
+    - {id: a, texte: "La supervision, qui maintient le reset"}
+    - {id: b, texte: "Le filtre CEM"}
+    - {id: c, texte: "La diode TVS"}
+    - {id: d, texte: "La protection contre l'inversion"}
+- id: S17-Q012
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#la-protection-contre-linversion-de-polarité"
+  enonce: "Quel inconvénient a une simple diode série comme protection contre l'inversion ?"
+  propositions:
+    - {id: a, texte: "Elle chute plusieurs centaines de millivolts et dissipe P = VF × I en permanence"}
+    - {id: b, texte: "Elle ne bloque pas les tensions négatives"}
+    - {id: c, texte: "Elle demande un contrôleur"}
+    - {id: d, texte: "Elle n'existe qu'en boîtier BGA"}
+- id: S17-Q013
+  type: calcul
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#la-protection-contre-linversion-de-polarité"
+  enonce: "Une protection MOSFET a une résistance à l'état passant de 20 mΩ ; le calculateur consomme 3 A. Quelle puissance dissipe le MOSFET ?"
+  unite_attendue: W
+- id: S17-Q014
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#la-protection-contre-les-transitoires"
+  enonce: "Où doit se situer la tension d'écrêtage de la diode TVS positive d'entrée ?"
+  propositions:
+    - {id: a, texte: "Au-dessus du démarrage 24 V et du délestage écrêté, sous la tension maximale des composants en aval"}
+    - {id: b, texte: "Juste au-dessus de la tension nominale de la batterie"}
+    - {id: c, texte: "Au-dessus de la tension maximale des composants en aval"}
+    - {id: d, texte: "À 0 V"}
+- id: S17-Q015
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#le-filtre-et-les-condensateurs-dentrée"
+  enonce: "Pourquoi place-t-on souvent deux condensateurs céramiques en série sur l'entrée batterie ?"
+  propositions:
+    - {id: a, texte: "Si l'un casse en court-circuit, l'autre évite le court-circuit de la batterie"}
+    - {id: b, texte: "Pour doubler la capacité"}
+    - {id: c, texte: "Pour remplacer la protection contre l'inversion"}
+    - {id: d, texte: "Par erreur de conception"}
+- id: S17-Q016
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#le-convertisseur-dentrée"
+  enonce: "Que doit faire le convertisseur d'entrée pendant le creux de démarrage ?"
+  propositions:
+    - {id: a, texte: "Continuer à alimenter la carte, par exemple avec un étage boost ou un buck-boost"}
+    - {id: b, texte: "Se couper"}
+    - {id: c, texte: "Inverser sa sortie"}
+    - {id: d, texte: "Rien de particulier : le creux n'existe pas"}
+- id: S17-Q017
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L02#reconnaître-la-chaîne-sur-une-carte"
+  enonce: "Au relevé, comment confirmez-vous qu'un composant près du connecteur est une diode TVS ?"
+  propositions:
+    - {id: a, texte: "Par son marquage et la fiche de son fabricant"}
+    - {id: b, texte: "Par sa forme"}
+    - {id: c, texte: "Par sa couleur"}
+    - {id: d, texte: "Par sa position sur la carte"}
+- id: S17-Q018
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L03#le-sbc-un-circuit-dalimentation-intégré"
+  enonce: "Qu'est-ce qu'un SBC ?"
+  propositions:
+    - {id: a, texte: "Un circuit qui réunit régulateurs, émetteur-récepteur CAN ou LIN et supervision"}
+    - {id: b, texte: "Un microcontrôleur"}
+    - {id: c, texte: "Une mémoire EEPROM"}
+    - {id: d, texte: "Un fusible réarmable"}
+- id: S17-Q019
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L03#dormir-et-se-réveiller"
+  enonce: "Pourquoi un calculateur branché sur la borne 30 doit-il avoir un mode veille ?"
+  propositions:
+    - {id: a, texte: "Pour consommer très peu véhicule à l'arrêt et ne pas décharger la batterie"}
+    - {id: b, texte: "Pour protéger le microcontrôleur des transitoires"}
+    - {id: c, texte: "Parce que la borne 30 est coupée contact coupé"}
+    - {id: d, texte: "Pour refroidir la carte"}
+- id: S17-Q020
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L03#dormir-et-se-réveiller"
+  enonce: "Par quels moyens un SBC peut-il réveiller un calculateur ?"
+  propositions:
+    - {id: a, texte: "Une broche WAKE, un motif de réveil sur le bus CAN, une minuterie"}
+    - {id: b, texte: "Uniquement la borne 31"}
+    - {id: c, texte: "Uniquement un bouton sur la carte"}
+    - {id: d, texte: "Aucun : il ne dort jamais"}
+- id: S17-Q021
+  type: choix_unique
+  securite: true
+  competences: [D10.6, D9.1]
+  section: "S17-L03#les-calculateurs-liés-à-la-sécurité"
+  enonce: "Quels calculateurs sont réservés au module M9, avec le protocole renforcé ?"
+  propositions:
+    - {id: a, texte: "Airbag, ABS / ESP et direction assistée"}
+    - {id: b, texte: "Tous les calculateurs"}
+    - {id: c, texte: "Les autoradios"}
+    - {id: d, texte: "Aucun"}
+- id: S17-Q022
+  type: choix_unique
+  securite: true
+  competences: [D10.6, D9.1]
+  section: "S17-L03#les-calculateurs-liés-à-la-sécurité"
+  enonce: "Un calculateur d'airbag arrive avec son module de sac gonflable. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Le module pyrotechnique n'entre pas dans l'atelier de formation ; seul le calculateur est accepté, et mis de côté jusqu'au module M9"}
+    - {id: b, texte: "Je garde l'ensemble sur l'établi"}
+    - {id: c, texte: "Je débranche le module et je le range dans un tiroir"}
+    - {id: d, texte: "Je teste le module au multimètre"}
+- id: S17-Q023
+  type: choix_unique
+  securite: true
+  competences: [D9.3, D9.1]
+  section: "S17-L03#le-vernis-de-tropicalisation"
+  enonce: "Quelles protections pour un retrait de vernis au solvant ?"
+  propositions:
+    - {id: a, texte: "Très bonne ventilation, gants nitrile, lunettes, et lecture de la fiche de données de sécurité du produit"}
+    - {id: b, texte: "Aucune, le produit est en petite quantité"}
+    - {id: c, texte: "Un bracelet ESD suffit"}
+    - {id: d, texte: "Travailler près d'une flamme pour sécher plus vite"}
+- id: S17-Q024
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S17-L03#le-vernis-de-tropicalisation"
+  enonce: "Un vernis est mou et caoutchouteux. De quelle famille est-il probablement ?"
+  propositions:
+    - {id: a, texte: "Silicone"}
+    - {id: b, texte: "Parylène"}
+    - {id: c, texte: "Époxy"}
+    - {id: d, texte: "Acrylique"}
+- id: S17-Q025
+  type: choix_unique
+  securite: false
+  competences: [D6.3]
+  section: "S17-L01#les-bornes-selon-din-72552"
+  enonce: "Sur un relais, quelles bornes sont celles de la bobine selon DIN 72552 ?"
+  propositions:
+    - {id: a, texte: "85 et 86"}
+    - {id: b, texte: "30 et 87"}
+    - {id: c, texte: "15 et 31"}
+    - {id: d, texte: "50 et 30"}

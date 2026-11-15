@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG d'après la description de la note TI SPRT815 : SBC générique, pas un composant réel. -->
+  <defs><marker id="s17f03-fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none" /></marker></defs>
+  <rect x="120" y="30" width="250" height="220" stroke-width="2.5" />
+  <text x="245" y="22" fill="currentColor" stroke="none" text-anchor="middle" font-weight="600">SBC</text>
+  <text x="20" y="74" fill="currentColor" stroke="none" font-size="11">batterie</text>
+  <path d="M70 70 H118" marker-end="url(#s17f03-fl)" />
+  <text x="20" y="134" fill="currentColor" stroke="none" font-size="11">WAKE</text>
+  <path d="M70 130 H118" marker-end="url(#s17f03-fl)" />
+  <rect x="140" y="50" width="210" height="44" />
+  <text x="245" y="77" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">régulateurs (buck, LDO)</text>
+  <rect x="140" y="108" width="210" height="44" />
+  <text x="245" y="128" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">supervision</text>
+  <text x="245" y="143" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">chien de garde, reset, réveil</text>
+  <rect x="140" y="166" width="210" height="44" />
+  <text x="245" y="193" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">émetteur-récepteur CAN ou LIN</text>
+  <rect x="460" y="90" width="120" height="110" />
+  <text x="520" y="150" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">microcontrôleur</text>
+  <path d="M350 72 H420 V100 H458" marker-end="url(#s17f03-fl)" />
+  <text x="395" y="66" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">rails</text>
+  <path d="M350 130 H458" marker-end="url(#s17f03-fl)" />
+  <text x="404" y="124" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">reset</text>
+  <path d="M370 160 H458 M380 156 L370 160 L380 164 M448 156 L458 160 L448 164" stroke-width="1.5" />
+  <text x="414" y="154" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">SPI</text>
+  <path d="M350 188 H458" stroke-width="1.5" marker-end="url(#s17f03-fl)" />
+  <text x="404" y="182" fill="currentColor" stroke="none" text-anchor="middle" font-size="10">données</text>
+  <path d="M220 210 V275 M270 210 V275" />
+  <text x="245" y="292" fill="currentColor" stroke="none" text-anchor="middle" font-size="11">bus CAN ou LIN</text>
+</svg>

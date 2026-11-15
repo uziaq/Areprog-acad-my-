@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S17-L03-EX01
+  bonnes: [a, b, c]
+  explication: "Un SBC réunit l'alimentation, l'émetteur-récepteur CAN ou LIN et la supervision (chien de garde, reset), avec les broches WAKE. Le programme est dans le microcontrôleur ou une mémoire externe, pas dans le SBC."
+  renvoi_section: "S17-L03#le-sbc-un-circuit-dalimentation-intégré"
+- id: S17-L03-EX02
+  bonnes: [a]
+  explication: "Règle de l'académie : les calculateurs d'airbag, d'ABS / ESP et de direction sont traités en M9, avec le protocole renforcé. Ils ne servent pas au TP-23."
+  renvoi_section: "S17-L03#les-calculateurs-liés-à-la-sécurité"
