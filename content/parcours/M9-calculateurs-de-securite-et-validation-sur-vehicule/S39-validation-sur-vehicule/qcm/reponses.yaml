@@ -1,0 +1,199 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S39-Q001
+  bonnes: [a]
+  explication: "S33-L02 et S39-L01."
+  pourquoi_faux:
+    b: "C'est le banc ou la carte."
+    c: "C'est le contrôle visuel."
+    d: "Non."
+  source: "S39-L01#pourquoi-valider-sur-véhicule"
+- id: S39-Q002
+  bonnes: [a]
+  explication: "Véhicule d'atelier, code interne ; véhicules électrifiés exclus (D-15)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Exclu (D-15)."
+  source: "S39-L01#pourquoi-valider-sur-véhicule"
+- id: S39-Q003
+  bonnes: [a]
+  explication: "Compatibilité d'après le constructeur."
+  pourquoi_faux:
+    b: "Non."
+    c: "Insuffisant."
+    d: "Non."
+  source: "S39-L01#vérifier-la-compatibilité"
+- id: S39-Q004
+  bonnes: [a]
+  explication: "Ce que le cursus n'enseigne pas (catalogue des TP)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L01#exemple-1--une-fiche-de-compatibilité"
+- id: S39-Q005
+  bonnes: [a]
+  explication: "Méthode comparative."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L01#écrire-le-protocole-avant-lessai"
+- id: S39-Q006
+  bonnes: [a]
+  explication: "Règle « Sécurité véhicule » 3."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L01#les-règles-de-sécurité-véhicule"
+- id: S39-Q007
+  bonnes: [a]
+  explication: "Règle « Sécurité véhicule » 7."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L01#les-règles-de-sécurité-véhicule"
+- id: S39-Q008
+  bonnes: [a]
+  explication: "SRC-0104, effets sur la santé."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L01#les-règles-de-sécurité-véhicule"
+- id: S39-Q009
+  bonnes: [a]
+  explication: "Une tension qui chute peut interrompre une opération."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L01#la-tension-de-batterie-pendant-les-opérations"
+- id: S39-Q010
+  bonnes: [a]
+  explication: "Relevé complet avant l'échange."
+  pourquoi_faux:
+    b: "Non."
+    c: "Incomplet."
+    d: "Non."
+  source: "S39-L02#les-défauts-avant-et-après"
+- id: S39-Q011
+  bonnes: [a]
+  explication: "Ce que le cursus n'enseigne pas."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#les-défauts-avant-et-après"
+- id: S39-Q012
+  bonnes: [a]
+  explication: "Un défaut qui revient décrit l'état réel."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#les-défauts-avant-et-après"
+- id: S39-Q013
+  bonnes: [a]
+  explication: "Hypothèse à confirmer après effacement."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#exemple-1--trier-les-défauts"
+- id: S39-Q014
+  bonnes: [a]
+  explication: "Diagnostic par entrée (S29)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#les-valeurs-réelles"
+- id: S39-Q015
+  bonnes: [a]
+  explication: "Ordre des contrôles S23-S24."
+  pourquoi_faux:
+    b: "Pas avant les contrôles simples."
+    c: "Non."
+    d: "Dangereux."
+  source: "S39-L02#la-communication"
+- id: S39-Q016
+  bonnes: [a]
+  explication: "Conditions de la procédure de l'outil."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#apprentissages-codages-et-tests-dactionneurs"
+- id: S39-Q017
+  bonnes: [a]
+  explication: "À vérifier par constructeur."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#apprentissages-codages-et-tests-dactionneurs"
+- id: S39-Q018
+  bonnes: [a]
+  explication: "Chaque ligne a sa preuve."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L02#ce-que-latelier-ne-peut-pas-faire"
+- id: S39-Q019
+  bonnes: [a]
+  explication: "Décision D-14."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L03#un-calculateur-de-sécurité-sur-véhicule"
+- id: S39-Q020
+  bonnes: [a]
+  explication: "SRC-0097, ENERGY RESERVE CONTROL."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L03#airbag--simulateurs-uniquement"
+- id: S39-Q021
+  valeur: 2.115
+  tolerance_relative: 0.02
+  unite: J
+  explication: "E = 0,5 × 0,0047 × 900 = 2,115 J."
+  source: "S39-L03#exemple-2--lénergie-dune-réserve"
+- id: S39-Q022
+  bonnes: [a]
+  explication: "Décharge mesurée deux fois (SRC-0013, FE-09)."
+  pourquoi_faux:
+    b: "Un délai ne remplace pas la mesure."
+    c: "Non."
+    d: "Dangereux et interdit."
+  source: "S39-L03#airbag--simulateurs-uniquement"
+- id: S39-Q023
+  bonnes: [a]
+  explication: "Règle « Sécurité véhicule » 5."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L03#freinage--essais-statiques-avant-tout-déplacement"
+- id: S39-Q024
+  bonnes: [a]
+  explication: "Règle « Sécurité véhicule » 6."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L03#direction--immobilisé-calibrations-avant-roulage"
+- id: S39-Q025
+  bonnes: [a]
+  explication: "S39-L03, figure S39-F02."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S39-L03#le-dossier-de-validation-renforcée"

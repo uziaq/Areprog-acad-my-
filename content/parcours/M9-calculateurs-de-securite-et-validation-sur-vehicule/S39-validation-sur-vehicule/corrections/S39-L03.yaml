@@ -1,0 +1,11 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S39-L03-EX01
+  bonnes: [a]
+  explication: "Règle « Sécurité véhicule » 4 du catalogue des TP : un calculateur d'airbag réparé n'est jamais mis sous tension face à des allumeurs réels pendant le cursus."
+  renvoi_section: "S39-L03#airbag--simulateurs-uniquement"
+- id: S39-L03-EX02
+  valeur: 1.198
+  tolerance_relative: 0.02
+  unite: "J"
+  explication: "E = ½ C U² = 0,5 × 0,0022 × 33² = 0,5 × 0,0022 × 1089 ≈ 1,20 J."
+  renvoi_section: "S39-L03#exemple-2--lénergie-dune-réserve"

@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S39-L01-EX01
+  bonnes: [a]
+  explication: "Un calculateur de même référence matérielle peut porter un logiciel ou un codage différent ; la compatibilité se vérifie dans la documentation du constructeur. Le cursus n'enseigne aucune modification des données d'antidémarrage."
+  renvoi_section: "S39-L01#vérifier-la-compatibilité"
+- id: S39-L01-EX02
+  bonnes: [a]
+  explication: "Le protocole, critères d'arrêt compris, est écrit avant l'essai (S33-L02, catalogue des TP)."
+  renvoi_section: "S39-L01#écrire-le-protocole-avant-lessai"
+- id: S39-L01-EX03
+  bonnes: [a]
+  explication: "Les gaz d'échappement exposent à une intoxication au monoxyde de carbone ; on les capte au plus près et on ne laisse pas tourner le moteur inutilement (SRC-0104). Un masque à poussières ne protège pas du monoxyde de carbone."
+  renvoi_section: "S39-L01#les-règles-de-sécurité-véhicule"

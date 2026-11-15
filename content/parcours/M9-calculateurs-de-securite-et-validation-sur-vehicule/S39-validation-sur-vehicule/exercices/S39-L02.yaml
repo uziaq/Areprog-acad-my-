@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S39-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S39-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Après l'échange d'un calculateur, plusieurs défauts sont mémorisés. Quel est le bon ordre ?"
+  propositions:
+    - {id: a, texte: "Enregistrer tous les défauts de tous les calculateurs, effacer les défauts ordinaires, puis vérifier lesquels reviennent"}
+    - {id: b, texte: "Effacer tout de suite pour partir propre"}
+    - {id: c, texte: "Effacer aussi les données de collision"}
+    - {id: d, texte: "Ignorer les défauts des autres calculateurs"}
+  competences: [D10.6, D10.7]
+  objectif: O1
+- id: S39-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Comment juger une valeur réelle lue avec le calculateur réparé ?"
+  propositions:
+    - {id: a, texte: "En la comparant à la même valeur lue avec le calculateur d'origine, dans les mêmes conditions"}
+    - {id: b, texte: "En la comparant à une valeur trouvée sur un forum"}
+    - {id: c, texte: "Elle est juste si aucun voyant n'est allumé"}
+    - {id: d, texte: "En la lisant une seule fois, moteur dans n'importe quel état"}
+  competences: [D10.7]
+  objectif: O2
+- id: S39-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Un essai du constructeur demande un roulage que l'atelier ne peut pas faire. Que mettre au dossier ?"
+  propositions:
+    - {id: a, texte: "L'essai dans « non validable en atelier », avec sa raison"}
+    - {id: b, texte: "« Validé », puisque tout le reste est bon"}
+    - {id: c, texte: "Rien"}
+    - {id: d, texte: "Faire l'essai sur route ouverte"}
+  competences: [D10.7]
+  objectif: O3

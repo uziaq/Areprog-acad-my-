@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 230" width="590" height="230" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : déroulé d'une validation sur véhicule d'atelier, méthode de l'académie. -->
+  <defs>
+    <marker id="s39f01-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="15" y="20" width="170" height="62" rx="6" />
+  <text x="100.0" y="41.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">1. Préparer</text>
+  <text x="100.0" y="56.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">compatibilité, protocole</text>
+  <text x="100.0" y="71.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">écrit, critères d'arrêt</text>
+  <path d="M185 51 H209" marker-end="url(#s39f01-a)" stroke-width="1.5" />
+  <rect x="210" y="20" width="170" height="62" rx="6" />
+  <text x="295.0" y="41.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">2. Référence</text>
+  <text x="295.0" y="56.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">calculateur d'origine :</text>
+  <text x="295.0" y="71.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">défauts, valeurs réelles</text>
+  <path d="M380 51 H404" marker-end="url(#s39f01-a)" stroke-width="1.5" />
+  <rect x="405" y="20" width="170" height="62" rx="6" />
+  <text x="490.0" y="41.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">3. Échange</text>
+  <text x="490.0" y="56.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">batterie débranchée,</text>
+  <text x="490.0" y="71.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">ordre du constructeur</text>
+  <path d="M490 82 V119" marker-end="url(#s39f01-a)" stroke-width="1.5" />
+  <rect x="405" y="120" width="170" height="62" rx="6" />
+  <text x="490.0" y="141.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">4. Calculateur réparé</text>
+  <text x="490.0" y="156.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">défauts, valeurs réelles,</text>
+  <text x="490.0" y="171.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">apprentissages, essais</text>
+  <path d="M405 151 H381" marker-end="url(#s39f01-a)" stroke-width="1.5" />
+  <rect x="210" y="120" width="170" height="62" rx="6" />
+  <text x="295.0" y="141.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">5. Comparer</text>
+  <text x="295.0" y="156.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">mêmes conditions,</text>
+  <text x="295.0" y="171.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">mêmes relevés</text>
+  <path d="M210 151 H186" marker-end="url(#s39f01-a)" stroke-width="1.5" />
+  <rect x="15" y="120" width="170" height="62" rx="6" />
+  <text x="100.0" y="141.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">6. Dossier</text>
+  <text x="100.0" y="156.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">banc, véhicule,</text>
+  <text x="100.0" y="171.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">non validable</text>
+  <text x="295" y="215" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Arrêt immédiat à tout moment si un critère écrit avant l'essai est atteint.</text>
+</svg>
