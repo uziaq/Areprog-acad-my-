@@ -1,0 +1,17 @@
+# Guide en ligne de réparation et de reprise des cartes électroniques, publié par un prestataire de
+# réparation (Circuit Technology Center), qui déclare suivre l'IPC-7711/7721 (payantes, non
+# consultées). Procédures utilisées : nettoyage local (2.2.1), identification et retrait des
+# vernis au solvant et par grattage (2.3.1, 2.3.2, 2.3.5), restauration du vernis (2.4.2), étuvage
+# et préchauffage (2.5), époxy (2.7), réparation de piste par feuillard (4.2.1) et par fil (4.2.4),
+# pastille soulevée (4.4.1), remplacement de pastille CMS (4.7.1), trou métallisé par œillet (5.1).
+# Sections citées par leur numéro et leur titre anglais (cours S28). Ne vaut ni certification IPC
+# ni procédure constructeur.
+id: SRC-0077
+titre: "Circuit Board Repair and Rework Guides"
+editeur: Circuit Technology Center
+reference: "Guides en ligne"
+revision: "version en ligne consultée le 2026-11-15"
+date_consultation: 2026-11-15
+type: site
+licence: lien_seulement
+lien: https://www.circuitrework.com/guides/

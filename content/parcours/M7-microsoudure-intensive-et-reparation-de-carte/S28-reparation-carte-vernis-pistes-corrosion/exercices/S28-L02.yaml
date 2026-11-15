@@ -1,0 +1,35 @@
+# Énoncés seulement : les solutions sont dans corrections/S28-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S28-L02-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Une piste de 0,4 mm de large est coupée. Sur quelle longueur minimale le fil de réparation recouvre-t-il chaque extrémité ?"
+  propositions:
+    - {id: a, texte: "0,8 mm, soit deux fois la largeur de la piste"}
+    - {id: b, texte: "0,2 mm, la moitié de la largeur"}
+    - {id: c, texte: "0,4 mm, une fois la largeur"}
+    - {id: d, texte: "Aucun recouvrement : soudure bout à bout"}
+  competences: [D9.4]
+  objectif: O1
+- id: S28-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Sur une carte multicouche, le trou métallisé d'une broche est arraché et une couche interne y est reliée. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Pas d'œillet, qui ne convient qu'à un trou sans connexion interne : photo, dossier, avis du formateur"}
+    - {id: b, texte: "Percer le trou et poser un œillet"}
+    - {id: c, texte: "Remplir le trou de soudure"}
+    - {id: d, texte: "Recoller la pastille à l'époxy et s'arrêter là"}
+  competences: [D9.4]
+  objectif: O2
+- id: S28-L02-EX03
+  version: "0.1"
+  type: choix_unique
+  enonce: "Quel contrôle prouve qu'une piste réparée par fil est correcte ?"
+  propositions:
+    - {id: a, texte: "Examen visuel du recouvrement et de l'alignement, continuité de la piste, isolement avec les pistes voisines"}
+    - {id: b, texte: "Un simple coup d'œil"}
+    - {id: c, texte: "La mise sous tension du calculateur"}
+    - {id: d, texte: "La mesure de la résistance du fil seul, avant soudure"}
+  competences: [D9.4, D9.5]
+  objectif: O3

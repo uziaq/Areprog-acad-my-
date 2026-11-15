@@ -1,0 +1,12 @@
+# Qualification des semi-conducteurs discrets (diodes, transistors) pour l'automobile : plage de
+# température ambiante minimale, absence de « certification » AEC. Document gratuit sur le site de
+# l'AEC. Section citée par son numéro et son titre anglais (cours S28).
+id: SRC-0079
+titre: "AEC-Q101, Failure Mechanism Based Stress Test Qualification for Discrete Semiconductors in Automotive Applications"
+editeur: Automotive Electronics Council
+reference: "AEC-Q101"
+revision: "Rev E, 1er mars 2021"
+date_consultation: 2026-11-15
+type: norme
+licence: lien_seulement
+lien: http://www.aecouncil.com/Documents/AEC_Q101_Rev_E_Base_Document.pdf

@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S28-L01-EX01
+  bonnes: [a]
+  explication: "La méthode de retrait dépend du vernis ; des essais simples, faits dans une zone non critique, suffisent à l'identifier. On n'immerge pas une carte dans un solvant agressif."
+  renvoi_section: "S28-L01#identifier-avant-de-retirer"
+- id: S28-L01-EX02
+  ordre: [b, d, a, e, c]
+  explication: "Délimiter, appliquer le produit, frotter, neutraliser et sécher, puis vérifier que le vernis est retiré."
+  renvoi_section: "S28-L01#retirer-localement"
+- id: S28-L01-EX03
+  bonnes: [a]
+  explication: "Le nettoyage complet conditionne l'adhérence, la protection contre la corrosion et les propriétés électriques. Les contacts ne se vernissent pas."
+  renvoi_section: "S28-L01#restaurer-le-vernis"

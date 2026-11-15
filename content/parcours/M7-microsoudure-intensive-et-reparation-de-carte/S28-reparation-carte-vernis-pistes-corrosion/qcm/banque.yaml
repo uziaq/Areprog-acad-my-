@@ -1,0 +1,277 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S28-Q001
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#identifier-avant-de-retirer"
+  enonce: "Pourquoi identifier un vernis avant de le retirer ?"
+  propositions:
+    - {id: a, texte: "La méthode de retrait dépend du vernis"}
+    - {id: b, texte: "Pour connaître son prix"}
+    - {id: c, texte: "Ce n'est pas utile"}
+    - {id: d, texte: "Pour savoir s'il est conducteur"}
+- id: S28-Q002
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#identifier-avant-de-retirer"
+  enonce: "Où fait-on les essais d'identification d'un vernis ?"
+  propositions:
+    - {id: a, texte: "Dans une zone non critique de la carte"}
+    - {id: b, texte: "Sur la zone à réparer"}
+    - {id: c, texte: "Sur les broches du microcontrôleur"}
+    - {id: d, texte: "Sur le connecteur"}
+- id: S28-Q003
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#identifier-avant-de-retirer"
+  enonce: "Un vernis ramollit au contact de l'alcool. Vers quelle famille cela oriente-t-il ?"
+  propositions:
+    - {id: a, texte: "Acrylique"}
+    - {id: b, texte: "Époxy"}
+    - {id: c, texte: "Parylène"}
+    - {id: d, texte: "Silicone épais"}
+- id: S28-Q004
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#identifier-avant-de-retirer"
+  enonce: "Un vernis dur se prête plutôt…"
+  propositions:
+    - {id: a, texte: "à l'abrasion"}
+    - {id: b, texte: "au brossage seul"}
+    - {id: c, texte: "au pelage à la main"}
+    - {id: d, texte: "au lavage à l'eau"}
+- id: S28-Q005
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#retirer-localement"
+  enonce: "Pourquoi applique-t-on le produit de retrait plusieurs fois ?"
+  propositions:
+    - {id: a, texte: "Il s'évapore vite"}
+    - {id: b, texte: "Pour économiser le produit"}
+    - {id: c, texte: "Pour refroidir la carte"}
+    - {id: d, texte: "Ce n'est pas nécessaire"}
+- id: S28-Q006
+  type: choix_unique
+  securite: true
+  competences: [D9.3]
+  section: "S28-L01#retirer-localement"
+  enonce: "Peut-on immerger une carte dans un solvant agressif pour retirer le vernis ?"
+  propositions:
+    - {id: a, texte: "Non : il peut faire gonfler le support et attaquer composants et soudures"}
+    - {id: b, texte: "Oui, c'est plus rapide"}
+    - {id: c, texte: "Oui, si la carte est sèche"}
+    - {id: d, texte: "Oui, à chaud"}
+- id: S28-Q007
+  type: choix_unique
+  securite: true
+  competences: [D9.3]
+  section: "S28-L01#retirer-localement"
+  enonce: "Pendant un grattage du vernis, quelle protection est indispensable ?"
+  propositions:
+    - {id: a, texte: "Poste ESD et bracelet relié : l'abrasion crée des charges"}
+    - {id: b, texte: "Aucune"}
+    - {id: c, texte: "Un gant isolant seulement"}
+    - {id: d, texte: "Une soufflette"}
+- id: S28-Q008
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#retirer-localement"
+  enonce: "Retrait à la chaleur : le vernis coule et colle. Qu'en concluez-vous ?"
+  propositions:
+    - {id: a, texte: "C'est trop chaud ou la méthode ne convient pas"}
+    - {id: b, texte: "Il faut chauffer davantage"}
+    - {id: c, texte: "C'est le signe d'un bon retrait"}
+    - {id: d, texte: "Il faut ajouter du flux"}
+- id: S28-Q009
+  type: choix_unique
+  securite: false
+  competences: [D9.3]
+  section: "S28-L01#restaurer-le-vernis"
+  enonce: "Que contrôle-t-on sur un vernis restauré ?"
+  propositions:
+    - {id: a, texte: "Aspect, couleur, adhérence, couverture et essais électriques des conducteurs voisins"}
+    - {id: b, texte: "Son odeur"}
+    - {id: c, texte: "Rien"}
+    - {id: d, texte: "Son épaisseur seulement"}
+- id: S28-Q010
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#une-réparation-ne-doit-rien-réduire"
+  enonce: "Quelle règle s'applique à toute réparation de piste ?"
+  propositions:
+    - {id: a, texte: "Ne réduire ni la largeur, ni l'écart, ni la capacité en courant"}
+    - {id: b, texte: "Utiliser le fil le plus fin"}
+    - {id: c, texte: "Toujours un fil nu"}
+    - {id: d, texte: "Recouvrir de soudure toute la piste"}
+- id: S28-Q011
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+  enonce: "Jusqu'où recoupe-t-on une piste abîmée ?"
+  propositions:
+    - {id: a, texte: "Jusqu'à une zone où elle est encore bien collée"}
+    - {id: b, texte: "On ne la recoupe pas"}
+    - {id: c, texte: "Jusqu'à la pastille la plus proche"}
+    - {id: d, texte: "Sur 10 cm"}
+- id: S28-Q012
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+  enonce: "Une piste mesure 0,3 mm de large. Quel recouvrement minimal pour le fil ?"
+  propositions:
+    - {id: a, texte: "0,6 mm"}
+    - {id: b, texte: "0,3 mm"}
+    - {id: c, texte: "0,15 mm"}
+    - {id: d, texte: "Aucun"}
+- id: S28-Q013
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+  enonce: "Pourquoi éloigner la soudure de recouvrement de la pastille voisine ?"
+  propositions:
+    - {id: a, texte: "Pour ne pas refondre la pastille en même temps"}
+    - {id: b, texte: "Pour gagner du fil"}
+    - {id: c, texte: "Pour l'esthétique"}
+    - {id: d, texte: "Ce n'est pas utile"}
+- id: S28-Q014
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#réparer-une-piste-par-un-fil-ou-un-feuillard"
+  enonce: "Quand peut-on utiliser un fil nu ?"
+  propositions:
+    - {id: a, texte: "Pour une réparation courte qui ne croise aucun conducteur"}
+    - {id: b, texte: "Toujours"}
+    - {id: c, texte: "Jamais"}
+    - {id: d, texte: "Sous un circuit intégré"}
+- id: S28-Q015
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#recoller-ou-remplacer-une-pastille"
+  enonce: "Une pastille est soulevée mais intacte. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "La recoller à l'époxy, sans l'étirer, pressée sous un ruban"}
+    - {id: b, texte: "La couper"}
+    - {id: c, texte: "La souder plus chaud"}
+    - {id: d, texte: "La laisser telle quelle"}
+- id: S28-Q016
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#recoller-ou-remplacer-une-pastille"
+  enonce: "Le temps de polymérisation de l'époxy de l'atelier se lit…"
+  propositions:
+    - {id: a, texte: "dans la fiche de ce produit"}
+    - {id: b, texte: "dans la procédure d'un autre produit"}
+    - {id: c, texte: "nulle part, on attend une heure"}
+    - {id: d, texte: "sur la carte"}
+- id: S28-Q017
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#trou-métallisé-et-via"
+  enonce: "Quand peut-on réparer un trou métallisé par un œillet ?"
+  propositions:
+    - {id: a, texte: "Seulement s'il n'a pas de connexion interne"}
+    - {id: b, texte: "Toujours"}
+    - {id: c, texte: "Seulement sur une carte multicouche"}
+    - {id: d, texte: "Jamais"}
+- id: S28-Q018
+  type: choix_unique
+  securite: false
+  competences: [D9.4]
+  section: "S28-L02#broche-de-connecteur"
+  enonce: "Une broche de connecteur est tordue. Que faites-vous ?"
+  propositions:
+    - {id: a, texte: "La redresser une fois à froid, ou la remplacer par une broche identique si elle casse"}
+    - {id: b, texte: "La redresser plusieurs fois"}
+    - {id: c, texte: "La chauffer au rouge"}
+    - {id: d, texte: "La couper"}
+- id: S28-Q019
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S28-L03#reconnaître-une-zone-corrodée"
+  enonce: "Que modifient les contaminants de surface d'une carte ?"
+  propositions:
+    - {id: a, texte: "La soudure, l'adhérence du vernis et les caractéristiques électriques"}
+    - {id: b, texte: "Rien"}
+    - {id: c, texte: "Seulement la couleur"}
+    - {id: d, texte: "Seulement le poids"}
+- id: S28-Q020
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S28-L03#traiter-dans-lordre"
+  enonce: "Pourquoi nettoie-t-on avant d'étuver ?"
+  propositions:
+    - {id: a, texte: "Pour ne pas cuire les résidus sur la carte"}
+    - {id: b, texte: "Pour gagner du temps"}
+    - {id: c, texte: "L'ordre n'a pas d'importance"}
+    - {id: d, texte: "Pour refroidir la carte"}
+- id: S28-Q021
+  type: choix_unique
+  securite: false
+  competences: [D9.5]
+  section: "S28-L03#traiter-dans-lordre"
+  enonce: "Pourquoi ne rince-t-on jamais à l'eau du robinet ?"
+  propositions:
+    - {id: a, texte: "Elle apporte chlore et halogénures"}
+    - {id: b, texte: "Elle est trop froide"}
+    - {id: c, texte: "Elle est conductrice une fois sèche"}
+    - {id: d, texte: "On peut, c'est sans risque"}
+- id: S28-Q022
+  type: choix_unique
+  securite: true
+  competences: [D9.5]
+  section: "S28-L03#traiter-dans-lordre"
+  enonce: "Avant de manipuler la carte d'un calculateur de récupération corrodé, que faites-vous ?"
+  propositions:
+    - {id: a, texte: "Mesurer la décharge des étages à tension élevée, puis la mesurer de nouveau"}
+    - {id: b, texte: "Attendre cinq minutes et commencer"}
+    - {id: c, texte: "Nettoyer directement"}
+    - {id: d, texte: "Le mettre sous tension pour voir"}
+- id: S28-Q023
+  type: choix_unique
+  securite: false
+  competences: [D4.7]
+  section: "S28-L03#choisir-un-composant-équivalent"
+  enonce: "Que signifie « qualifié AEC-Q100 » ?"
+  propositions:
+    - {id: a, texte: "Le fournisseur a qualifié lui-même le composant selon le document et fournit ses données"}
+    - {id: b, texte: "Un organisme AEC l'a certifié"}
+    - {id: c, texte: "Il convient à tout calculateur"}
+    - {id: d, texte: "Il est sans plomb"}
+- id: S28-Q024
+  type: choix_unique
+  securite: false
+  competences: [D4.7]
+  section: "S28-L03#choisir-un-composant-équivalent"
+  enonce: "Quelle est la plage du grade 1 de l'AEC-Q100 ?"
+  propositions:
+    - {id: a, texte: "−40 °C à +125 °C"}
+    - {id: b, texte: "−40 °C à +150 °C"}
+    - {id: c, texte: "−40 °C à +85 °C"}
+    - {id: d, texte: "0 °C à +70 °C"}
+- id: S28-Q025
+  type: choix_unique
+  securite: false
+  competences: [D4.7]
+  section: "S28-L03#choisir-un-composant-équivalent"
+  enonce: "Un remplaçant a même fonction, même boîtier, même brochage, mais une tension assignée plus faible. Est-il équivalent ?"
+  propositions:
+    - {id: a, texte: "Non : chaque paramètre critique doit être au moins égal"}
+    - {id: b, texte: "Oui, le brochage suffit"}
+    - {id: c, texte: "Oui, s'il est qualifié AEC"}
+    - {id: d, texte: "Oui, s'il est moins cher"}

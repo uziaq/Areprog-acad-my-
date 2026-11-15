@@ -1,0 +1,25 @@
+# Énoncés seulement : les solutions sont dans corrections/S28-L03.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S28-L03-EX01
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Remettez dans l'ordre le traitement d'une zone corrodée."
+  propositions:
+    - {id: a, texte: "Nettoyage au pinceau et rinçage à l'alcool"}
+    - {id: b, texte: "Photos et mesure d'isolement initiale"}
+    - {id: c, texte: "Étuvage pour sécher"}
+    - {id: d, texte: "Retrait local du vernis"}
+    - {id: e, texte: "Remplacement des éléments atteints, nouvelle mesure, vernis restauré"}
+  competences: [D9.2, D9.5]
+  objectif: O1
+- id: S28-L03-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Le circuit d'origine est qualifié AEC-Q100 grade 0. Le remplaçant proposé a même fonction, même boîtier et même brochage, mais il est qualifié grade 2. Est-il équivalent ?"
+  propositions:
+    - {id: a, texte: "Non : grade 2 jusqu'à +105 °C contre +150 °C pour le grade 0"}
+    - {id: b, texte: "Oui : il est qualifié AEC-Q100"}
+    - {id: c, texte: "Oui : le grade 2 est supérieur au grade 0"}
+    - {id: d, texte: "Oui, si le prix est plus bas"}
+  competences: [D4.7]
+  objectif: O2

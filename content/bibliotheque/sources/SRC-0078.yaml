@@ -1,0 +1,13 @@
+# Qualification des circuits intégrés pour l'automobile : classes de température de
+# fonctionnement (grades 0 à 3), absence de « certification » AEC (chaque fournisseur qualifie et
+# fournit ses données), approbation par l'utilisateur. Document gratuit sur le site de l'AEC.
+# Sections citées par leur numéro et leur titre anglais (cours S28).
+id: SRC-0078
+titre: "AEC-Q100, Failure Mechanism Based Stress Test Qualification for Integrated Circuits in Automotive Applications"
+editeur: Automotive Electronics Council
+reference: "AEC-Q100"
+revision: "Rev J, 11 août 2023"
+date_consultation: 2026-11-15
+type: norme
+licence: lien_seulement
+lien: http://www.aecouncil.com/Documents/AEC_Q100_Rev_J_Base_Document.pdf

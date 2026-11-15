@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S28-L03-EX01
+  ordre: [b, d, a, c, e]
+  explication: "Constater et mesurer d'abord, dégager le vernis, nettoyer avant d'étuver pour ne pas cuire les résidus, puis remplacer, mesurer de nouveau et restaurer le vernis."
+  renvoi_section: "S28-L03#traiter-dans-lordre"
+- id: S28-L03-EX02
+  bonnes: [a]
+  explication: "D'après l'AEC-Q100, le grade 0 couvre −40 à +150 °C et le grade 2 seulement −40 à +105 °C : le remplaçant a une plage plus étroite, il n'est pas équivalent. Plus le numéro de grade est grand, plus la plage est étroite."
+  renvoi_section: "S28-L03#choisir-un-composant-équivalent"

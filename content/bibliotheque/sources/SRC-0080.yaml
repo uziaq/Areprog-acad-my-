@@ -1,0 +1,13 @@
+# Qualification des composants passifs (condensateurs, résistances, inductances…) pour
+# l'automobile : plage de température ambiante minimale, qualification sur la plage annoncée par
+# le fabricant, absence de « certification » AEC. Document gratuit sur le site de l'AEC. Sections
+# citées par leur numéro et leur titre anglais (cours S28).
+id: SRC-0080
+titre: "AEC-Q200, Stress Test Qualification for Passive Components"
+editeur: Automotive Electronics Council
+reference: "AEC-Q200"
+revision: "Rev E, 20 mars 2023"
+date_consultation: 2026-11-15
+type: norme
+licence: lien_seulement
+lien: http://www.aecouncil.com/Documents/AEC_Q200_Rev_E_Base_Document.pdf
