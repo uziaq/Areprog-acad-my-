@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S18-L03-EX01
+  ordre: [b, c, a, d]
+  explication: "Mesures sans risque d'abord : résistance des rails hors tension, puis mise sous tension progressive, puis rails internes, puis reset et réveil. Les fonctions viennent en dernier."
+  renvoi_section: "S18-L03#alimentation-dabord"
+- id: S18-L03-EX02
+  bonnes: [a]
+  explication: "Une mesure en circuit inclut les composants en parallèle, et les voisines n'ont pas de raison d'avoir la même valeur. On relève la même position sur une carte de référence et l'on note l'origine de la valeur au dossier."
+  renvoi_section: "S18-L03#lexemplaire-de-référence"

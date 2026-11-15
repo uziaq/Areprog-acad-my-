@@ -1,0 +1,12 @@
+# Mesure de résistance à quatre fils (méthode de Kelvin) : courant et tension mesurés par des
+# conducteurs séparés, pour éliminer la résistance des cordons (cours S18, milliohmmètre).
+# Manuel libre ; section citée par son titre anglais, chapitre 8 (DC Metering Circuits).
+id: SRC-0049
+titre: "Lessons In Electric Circuits, Volume I : DC, chapitre 8"
+editeur: Tony R. Kuphaldt (ibiblio.org)
+reference: "Chapitre 8, DC Metering Circuits, version HTML"
+revision: "copyright 2000-2023"
+date_consultation: 2026-11-15
+type: cours
+licence: libre
+lien: https://ibiblio.org/kuphaldt/electricCircuits/DC/DC_8.html

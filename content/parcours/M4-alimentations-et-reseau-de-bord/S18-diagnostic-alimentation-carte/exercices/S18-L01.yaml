@@ -1,0 +1,31 @@
+# Énoncés seulement : les solutions sont dans corrections/S18-L01.yaml
+# Valeurs d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S18-L01-EX01
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pourquoi le banc PB-1 a-t-il deux interrupteurs séparés pour les bornes 30 et 15 ?"
+  propositions:
+    - {id: a, texte: "Pour reproduire « contact coupé » (30 seule) et « contact mis » (30 et 15) et mesurer le courant dans chaque état"}
+    - {id: b, texte: "Pour doubler le courant disponible"}
+    - {id: c, texte: "Pour remplacer la limitation de courant"}
+    - {id: d, texte: "Parce que la borne 15 est la masse"}
+  competences: [D10.1]
+  objectif: O1
+- id: S18-L01-EX02
+  version: "0.1"
+  type: ordonnancement
+  enonce: "Vous venez de couper l'alimentation d'un ECU moteur diesel sur le banc et vous devez souder près de l'étage d'injection. Remettez les gestes dans l'ordre."
+  propositions:
+    - {id: a, texte: "Mesurer la tension des condensateurs de l'étage à tension élevée"}
+    - {id: b, texte: "Repérer sur la carte l'étage à tension élevée et ses condensateurs"}
+    - {id: c, texte: "Décharger à travers une résistance si la tension n'est pas négligeable"}
+    - {id: d, texte: "Mesurer de nouveau juste avant de souder"}
+  competences: [D10.1, D10.6]
+  objectif: O2
+- id: S18-L01-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Borne 30 seule, un calculateur consomme 12 mA sous 12 V après sa mise en veille. Quelle puissance prélève-t-il en permanence sur la batterie ?"
+  unite_attendue: W
+  competences: [D3.2]
+  objectif: O3
