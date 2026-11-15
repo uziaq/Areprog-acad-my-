@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S31-L03-EX01
+  ordre: [b, d, e, a, c]
+  explication: "Nettoyer, photographier, repérer la fermeture, ouvrir sans contrainte, puis identifier la protection avant toute mesure."
+  renvoi_section: "S31-L03#ouvrir-sans-abîmer"
+- id: S31-L03-EX02
+  bonnes: [a]
+  explication: "Grade 0 : −40 °C à +150 °C ; grade 1 : −40 °C à +125 °C (AEC-Q100 §1.3.4). Le remplaçant doit couvrir au moins la plage de l'original."
+  renvoi_section: "S31-L03#exemple-1--un-remplaçant-de-grade-inférieur"

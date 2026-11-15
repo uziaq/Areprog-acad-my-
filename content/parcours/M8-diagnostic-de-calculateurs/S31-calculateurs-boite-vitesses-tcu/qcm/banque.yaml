@@ -1,0 +1,261 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S31-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#les-blocs-dun-tcu"
+  enonce: "Quelle sortie caractérise un calculateur de boîte de vitesses automatique ?"
+  propositions:
+    - {id: a, texte: "Des électrovannes régulées en courant"}
+    - {id: b, texte: "Des injecteurs survoltés"}
+    - {id: c, texte: "Des bougies de préchauffage"}
+    - {id: d, texte: "Des lampes d'éclairage"}
+- id: S31-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#les-blocs-dun-tcu"
+  enonce: "Quel type de capteur mesure en général la pression d'huile pour le TCU ?"
+  propositions:
+    - {id: a, texte: "Un capteur ratiométrique"}
+    - {id: b, texte: "Une thermistance"}
+    - {id: c, texte: "Un capteur inductif"}
+    - {id: d, texte: "Un interrupteur à lame"}
+- id: S31-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#les-blocs-dun-tcu"
+  enonce: "Comment attribue-t-on une fonction à un circuit de la carte ?"
+  propositions:
+    - {id: a, texte: "Par son marquage et sa fiche"}
+    - {id: b, texte: "Par sa position près du connecteur"}
+    - {id: c, texte: "Par sa taille"}
+    - {id: d, texte: "Par sa couleur"}
+- id: S31-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#vitesse-et-sens--deux-voies-en-quadrature"
+  enonce: "Que donne la fréquence des signaux d'un capteur de vitesse ?"
+  propositions:
+    - {id: a, texte: "La vitesse de rotation"}
+    - {id: b, texte: "Le sens de rotation"}
+    - {id: c, texte: "La température"}
+    - {id: d, texte: "La pression"}
+- id: S31-Q005
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#exemple-2--une-vitesse-à-partir-dune-fréquence"
+  enonce: "Capteur de vitesse : 900 Hz devant une cible de 30 dents. Fréquence de rotation en tours par seconde (saisir en Hz) ?"
+  unite_attendue: Hz
+- id: S31-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#température--la-thermistance-ctn"
+  enonce: "D'après la note TI, que vaut la CTN de l'exemple à 50 °C, comparée à 25 °C ?"
+  propositions:
+    - {id: a, texte: "Moins : 819,7 Ω contre 2,252 kΩ"}
+    - {id: b, texte: "Plus"}
+    - {id: c, texte: "Autant"}
+    - {id: d, texte: "Zéro"}
+- id: S31-Q007
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#température--la-thermistance-ctn"
+  enonce: "Comment simuler la thermistance sur le banc ?"
+  propositions:
+    - {id: a, texte: "Par une résistance fixe de valeur connue, en comparant la valeur réelle à la référence"}
+    - {id: b, texte: "En chauffant la carte au pistolet à air chaud"}
+    - {id: c, texte: "En laissant l'entrée ouverte"}
+    - {id: d, texte: "En court-circuitant l'entrée"}
+- id: S31-Q008
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L01#exemple-3--une-température-figée"
+  enonce: "Une température d'huile reste figée à une valeur extrême. Première mesure ?"
+  propositions:
+    - {id: a, texte: "Hors tension : résistance de la CTN, puis continuité de la ligne"}
+    - {id: b, texte: "Remplacer le microcontrôleur"}
+    - {id: c, texte: "Effacer les défauts sans les noter"}
+    - {id: d, texte: "Changer la boîte"}
+- id: S31-Q009
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#pourquoi-réguler-le-courant"
+  enonce: "Comment varie la résistance d'une bobine en cuivre qui chauffe ?"
+  propositions:
+    - {id: a, texte: "Elle augmente"}
+    - {id: b, texte: "Elle baisse"}
+    - {id: c, texte: "Elle ne change pas"}
+    - {id: d, texte: "Elle devient nulle"}
+- id: S31-Q010
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#exemple-1--la-bobine-chaude"
+  enonce: "Bobine de 5 Ω à 20 °C ; coefficient 0,004041 par degré. Résistance à 70 °C ?"
+  unite_attendue: Ω
+- id: S31-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#charge-recirculation-coupure-rapide"
+  enonce: "À quoi sert la coupure rapide par écrêtage ?"
+  propositions:
+    - {id: a, texte: "Faire chuter rapidement le courant de la bobine"}
+    - {id: b, texte: "Augmenter le courant de maintien"}
+    - {id: c, texte: "Mesurer la température"}
+    - {id: d, texte: "Alimenter le microcontrôleur"}
+- id: S31-Q012
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S31-L02#charge-recirculation-coupure-rapide"
+  enonce: "Avec quel matériel observe-t-on l'impulsion de coupure d'une électrovanne ?"
+  propositions:
+    - {id: a, texte: "Oscilloscope et sonde choisis pour une tension supérieure à l'alimentation, masse sur la masse de la carte"}
+    - {id: b, texte: "Sonde ×1 de calibre 5 V"}
+    - {id: c, texte: "Multimètre en continu"}
+    - {id: d, texte: "Ohmmètre"}
+- id: S31-Q013
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#crête-puis-maintien"
+  enonce: "Quel est l'ordre du profil en régulation interne du circuit cité ?"
+  propositions:
+    - {id: a, texte: "Montée, crête régulée, descente en recirculation, maintien régulé, coupure"}
+    - {id: b, texte: "Maintien, puis crête"}
+    - {id: c, texte: "Crête seule"}
+    - {id: d, texte: "Tension fixe"}
+- id: S31-Q014
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#crête-puis-maintien"
+  enonce: "D'où vient le profil (crête, maintien, temps) d'une électrovanne donnée ?"
+  propositions:
+    - {id: a, texte: "De sa documentation et du logiciel du calculateur, pas de la fiche du circuit"}
+    - {id: b, texte: "De la fiche du circuit de commande"}
+    - {id: c, texte: "D'une valeur typique supposée"}
+    - {id: d, texte: "De l'outil de diagnostic uniquement"}
+- id: S31-Q015
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#crête-puis-maintien"
+  enonce: "Quelle plage de fréquence de découpage le circuit cité permet-il ?"
+  propositions:
+    - {id: a, texte: "500 Hz à 20 kHz"}
+    - {id: b, texte: "1 MHz à 10 MHz"}
+    - {id: c, texte: "50 Hz seulement"}
+    - {id: d, texte: "Aucune, il ne découpe pas"}
+- id: S31-Q016
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#exemple-2--estimer-le-rapport-cyclique"
+  enonce: "Maintien 0,6 A ; alimentation minimale 12 V ; bobine 8 Ω. Courant maximal possible (tension / résistance) ?"
+  unite_attendue: A
+- id: S31-Q017
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#exemple-3--lire-la-recopie-de-courant"
+  enonce: "Courant de bobine 1,2 A ; facteur de recopie 20 000 ; résistance 10 kΩ. Tension de recopie ?"
+  unite_attendue: V
+- id: S31-Q018
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S31-L02#mesurer-une-commande-délectrovanne"
+  enonce: "Quelle pince utiliser pour le courant d'une électrovanne régulée ?"
+  propositions:
+    - {id: a, texte: "Une pince mesurant le continu, zéro réglé, dans ses limites"}
+    - {id: b, texte: "Une pince AC seulement"}
+    - {id: c, texte: "Aucune, le multimètre suffit en alternatif"}
+    - {id: d, texte: "Une pince sans réglage du zéro"}
+- id: S31-Q019
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#mesurer-une-commande-délectrovanne"
+  enonce: "Le courant ondule autour du maintien. Qu'en conclure ?"
+  propositions:
+    - {id: a, texte: "C'est normal en régulation par découpage"}
+    - {id: b, texte: "La bobine est en court-circuit"}
+    - {id: c, texte: "Le circuit est détruit"}
+    - {id: d, texte: "La pince est cassée"}
+- id: S31-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L02#mesurer-une-commande-délectrovanne"
+  enonce: "Que détecte le diagnostic à l'état bloqué du circuit cité ?"
+  propositions:
+    - {id: a, texte: "Une sortie ouverte ou en court-circuit à la masse"}
+    - {id: b, texte: "La température d'huile"}
+    - {id: c, texte: "La vitesse"}
+    - {id: d, texte: "Rien"}
+- id: S31-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L03#tcu-séparé-ou-unité-mécatronique"
+  enonce: "Quel TCU le catalogue des TP conseille-t-il pour les exercices ?"
+  propositions:
+    - {id: a, texte: "Un TCU séparé de la boîte, plus simple à manipuler"}
+    - {id: b, texte: "Une mécatronique complète avec la boîte"}
+    - {id: c, texte: "N'importe quel calculateur d'airbag"}
+    - {id: d, texte: "Aucun"}
+- id: S31-Q022
+  type: choix_unique
+  securite: false
+  competences: [D4.7]
+  section: "S31-L03#température-et-qualification"
+  enonce: "Quelle plage couvre le grade 0 de l'AEC-Q100 ?"
+  propositions:
+    - {id: a, texte: "−40 °C à +150 °C"}
+    - {id: b, texte: "−40 °C à +85 °C"}
+    - {id: c, texte: "0 °C à +70 °C"}
+    - {id: d, texte: "−40 °C à +105 °C"}
+- id: S31-Q023
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S31-L03#ouvrir-sans-abîmer"
+  enonce: "Avant de toucher la carte d'un TCU qui a été alimenté, que faut-il faire ?"
+  propositions:
+    - {id: a, texte: "Mesurer la décharge des condensateurs, puis la mesurer de nouveau"}
+    - {id: b, texte: "Attendre une minute"}
+    - {id: c, texte: "Rincer la carte à l'eau"}
+    - {id: d, texte: "Rien"}
+- id: S31-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L03#ouvrir-sans-abîmer"
+  enonce: "Pourquoi identifier la protection de la carte avant toute mesure ?"
+  propositions:
+    - {id: a, texte: "La méthode de retrait et de remplacement dépend du produit (vernis, gel, encapsulant)"}
+    - {id: b, texte: "Pour la couleur du dossier"}
+    - {id: c, texte: "Ce n'est pas utile"}
+    - {id: d, texte: "Pour choisir le fer"}
+- id: S31-Q025
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S31-L03#lhuile"
+  enonce: "Des particules métalliques sur l'aimant d'un capteur de vitesse orientent vers :"
+  propositions:
+    - {id: a, texte: "Une cause mécanique de la boîte, à signaler"}
+    - {id: b, texte: "Un défaut du microcontrôleur"}
+    - {id: c, texte: "Une panne de CAN"}
+    - {id: d, texte: "Rien"}

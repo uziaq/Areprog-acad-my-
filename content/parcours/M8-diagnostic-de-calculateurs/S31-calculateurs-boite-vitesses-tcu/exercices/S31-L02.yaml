@@ -1,0 +1,27 @@
+# Énoncés seulement : les solutions sont dans corrections/S31-L02.yaml
+# Situations d'exercice choisies pour l'entraînement [EXEMPLE].
+- id: S31-L02-EX01
+  version: "0.1"
+  type: calcul
+  enonce: "Une bobine d'électrovanne fait 8 Ω à 20 °C. Coefficient du cuivre : 0,004041 par degré. Quelle est sa résistance à 120 °C ?"
+  unite_attendue: "Ω"
+  competences: [D10.3]
+  objectif: O1
+- id: S31-L02-EX02
+  version: "0.1"
+  type: choix_unique
+  enonce: "Pourquoi une électrovanne de boîte est-elle commandée en courant plutôt qu'à tension fixe ?"
+  propositions:
+    - {id: a, texte: "Pour garder la force voulue quand la résistance de la bobine change avec la température et que la tension batterie varie"}
+    - {id: b, texte: "Parce qu'une bobine ne supporte pas la tension continue"}
+    - {id: c, texte: "Pour supprimer l'impulsion de coupure"}
+    - {id: d, texte: "Pour économiser le microcontrôleur"}
+  competences: [D10.3]
+  objectif: O1
+- id: S31-L02-EX03
+  version: "0.1"
+  type: calcul
+  enonce: "Courant de bobine 0,8 A ; facteur de recopie 20 000 ; résistance de recopie 12 kΩ. Quelle tension lit-on aux bornes de cette résistance ?"
+  unite_attendue: "V"
+  competences: [D10.3]
+  objectif: O2

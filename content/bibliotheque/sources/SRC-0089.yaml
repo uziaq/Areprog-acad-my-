@@ -1,0 +1,14 @@
+# Commande d'électrovannes régulée en courant : demi-pont modifié (charge, recirculation,
+# coupure rapide par écrêtage), régulation cycle à cycle crête puis maintien, fréquence de
+# découpage réglable de 500 Hz à 20 kHz avec dither, estimation du rapport cyclique, mesure de
+# courant par recopie (facteur typique 20 000), diagnostics à l'état passant et bloqué.
+# Sections citées par leur numéro et leur titre anglais (cours S31).
+id: SRC-0089
+titre: "DRV3946-Q1 Dual Channel Automotive Solenoid Driver with Current Regulation, Clamping and Diagnostics"
+editeur: Texas Instruments
+reference: "SLVSGS5A"
+revision: "A, juin 2024"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/drv3946-q1.pdf

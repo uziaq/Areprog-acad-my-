@@ -1,0 +1,12 @@
+# Mesure de température par thermistance CTN en pont diviseur avec une résistance fixe ; sens de
+# variation de la tension selon la position de la CTN ; exemple de valeurs de la CTN à 25 °C et
+# 50 °C. Sections citées par leur titre anglais (cours S31).
+id: SRC-0091
+titre: "Temperature Sensing with NTC Circuit (Analog Engineer's Circuit)"
+editeur: Texas Instruments
+reference: "SBOA323A"
+revision: "A, juin 2021"
+date_consultation: 2026-11-15
+type: notice
+licence: lien_seulement
+lien: https://www.ti.com/lit/an/sboa323a/sboa323a.pdf
