@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S32-L03-EX01
+  bonnes: [a]
+  explication: "Réponse en modulation de fréquence, 134,2 kHz et 123 kHz nominaux (fiche TMS3705)."
+  renvoi_section: "S32-L03#la-station-de-base-et-lantenne"
+- id: S32-L03-EX02
+  bonnes: [a]
+  explication: "La modification de données d'antidémarrage n'est pas enseignée ; le module est étudié au niveau carte uniquement, sans lecture ni écriture de sa mémoire."
+  renvoi_section: "S32-L03#ce-que-le-cursus-traite-et-ce-quil-ne-traite-pas"

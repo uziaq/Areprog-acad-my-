@@ -1,0 +1,14 @@
+# Circuit de station de base pour transpondeur (accès et antidémarrage) : commande de l'antenne
+# par un pont complet, réponse du transpondeur en modulation de fréquence (134,2 kHz et 123 kHz
+# nominaux), diagnostic de l'antenne pendant la phase de charge, protection contre le
+# court-circuit, courant de veille de 0,2 mA. Étudié au niveau carte uniquement.
+# Sections citées par leur numéro et leur titre anglais (cours S32).
+id: SRC-0093
+titre: "TMS3705 Transponder Base Station IC"
+editeur: Texas Instruments
+reference: "SCBS881F"
+revision: "F, juin 2023"
+date_consultation: 2026-11-15
+type: datasheet
+licence: lien_seulement
+lien: https://www.ti.com/lit/ds/symlink/tms3705.pdf

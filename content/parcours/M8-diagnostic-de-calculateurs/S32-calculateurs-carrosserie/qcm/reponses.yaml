@@ -1,0 +1,195 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S32-Q001
+  bonnes: [a]
+  explication: "Rôle générique, à confirmer par la documentation du véhicule."
+  pourquoi_faux:
+    b: "ECU moteur."
+    c: "ABS / ESP."
+    d: "Airbag."
+  source: "S32-L01#le-rôle-dun-module-de-carrosserie"
+- id: S32-Q002
+  bonnes: [a]
+  explication: "Fiche TPS4H160-Q1 §7.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#les-commutateurs-high-side-multivoies"
+- id: S32-Q003
+  bonnes: [a]
+  explication: "Coefficient de température positif du filament."
+  pourquoi_faux:
+    b: "Inversé."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#les-commutateurs-high-side-multivoies"
+- id: S32-Q004
+  bonnes: [a]
+  explication: "Fiche TPS4H160-Q1 §7.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#les-commutateurs-high-side-multivoies"
+- id: S32-Q005
+  bonnes: [a]
+  explication: "Non signalé par la broche de défaut (§7.3.6.2.1)."
+  pourquoi_faux:
+    b: "Non pour ce cas."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#le-diagnostic-de-charge"
+- id: S32-Q006
+  bonnes: [a]
+  explication: "Fiche TPS4H160-Q1 §7.3.6.2.2."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#le-diagnostic-de-charge"
+- id: S32-Q007
+  bonnes: [a]
+  explication: "Fiche TPS4H160-Q1 §7.3.6.2.2."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#le-diagnostic-de-charge"
+- id: S32-Q008
+  bonnes: [a]
+  explication: "Fiche TPS4H160-Q1 §7.3.6.1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L01#le-diagnostic-de-charge"
+- id: S32-Q009
+  valeur: 3.2
+  tolerance_relative: 0.02
+  unite: V
+  explication: "0,8 / 500 = 1,6 mA ; 1,6 mA × 2 kΩ = 3,2 V."
+  source: "S32-L01#exemple-2--lire-la-recopie-de-courant"
+- id: S32-Q010
+  bonnes: [a]
+  explication: "Le banc départage carte et véhicule."
+  pourquoi_faux:
+    b: "FE-13."
+    c: "Non."
+    d: "Cause non traitée."
+  source: "S32-L01#exemple-1--une-voie-signalée-en-charge-ouverte"
+- id: S32-Q011
+  bonnes: [a]
+  explication: "Un courant de repos trop fort décharge la batterie."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L02#pourquoi-la-consommation-au-repos-compte"
+- id: S32-Q012
+  bonnes: [a]
+  explication: "Fiche TPS4H160-Q1 §1."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L02#le-budget-des-composants"
+- id: S32-Q013
+  valeur: 300
+  tolerance_relative: 0.02
+  unite: µA
+  explication: "50 + 200 + 1 + 49 = 300 µA."
+  source: "S32-L02#exemple-1--un-budget-de-repos"
+- id: S32-Q014
+  bonnes: [a]
+  explication: "Un ampèremètre se place en série (Fluke)."
+  pourquoi_faux:
+    b: "Court-circuit de l'alimentation."
+    c: "Non."
+    d: "Non."
+  source: "S32-L02#mesurer-sans-réveiller"
+- id: S32-Q015
+  bonnes: [a]
+  explication: "Un outil branché peut garder le module éveillé."
+  pourquoi_faux:
+    b: "Empêche l'endormissement."
+    c: "Non."
+    d: "Non."
+  source: "S32-L02#mesurer-sans-réveiller"
+- id: S32-Q016
+  bonnes: [a]
+  explication: "Un courant de fonctionnement sur un calibre microampère peut griller le fusible du multimètre."
+  pourquoi_faux:
+    b: "Risque pour l'appareil."
+    c: "Le module serait éveillé."
+    d: "Non."
+  source: "S32-L02#mesurer-sans-réveiller"
+- id: S32-Q017
+  bonnes: [a]
+  explication: "Réveil local, bus, minuterie, message précis."
+  pourquoi_faux:
+    b: "Citée."
+    c: "Citée."
+    d: "Citée."
+  source: "S32-L02#les-sources-de-réveil"
+- id: S32-Q018
+  valeur: 0.36
+  tolerance_relative: 0.02
+  unite: W
+  explication: "12 × 0,03 = 0,36 W."
+  source: "S32-L02#exemple-3--la-puissance-au-repos"
+- id: S32-Q019
+  bonnes: [a]
+  explication: "Catalogue des TP, « Ce que le cursus n'enseigne pas »."
+  pourquoi_faux:
+    b: "Hors cursus."
+    c: "Hors cursus."
+    d: "Non."
+  source: "S32-L03#ce-que-le-cursus-traite-et-ce-quil-ne-traite-pas"
+- id: S32-Q020
+  bonnes: [a]
+  explication: "Fiche TMS3705 §3."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L03#la-station-de-base-et-lantenne"
+- id: S32-Q021
+  bonnes: [a]
+  explication: "Fiche TMS3705 §3."
+  pourquoi_faux:
+    b: "Non pour ce système."
+    c: "Non."
+    d: "Non."
+  source: "S32-L03#la-station-de-base-et-lantenne"
+- id: S32-Q022
+  bonnes: [a]
+  explication: "Fiche TMS3705 §9.4."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S32-L03#la-station-de-base-et-lantenne"
+- id: S32-Q023
+  bonnes: [a]
+  explication: "Niveau carte uniquement."
+  pourquoi_faux:
+    b: "Hors cursus."
+    c: "Non."
+    d: "Non."
+  source: "S32-L03#la-station-de-base-et-lantenne"
+- id: S32-Q024
+  bonnes: [a]
+  explication: "Entrée et niveau à relever dans la documentation."
+  pourquoi_faux:
+    b: "Non."
+    c: "Hors cursus."
+    d: "Non."
+  source: "S32-L03#les-entrées-du-contacteur-et-le-réveil"
+- id: S32-Q025
+  bonnes: [a]
+  explication: "Justification écrite au dossier."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "FE-13."
+  source: "S32-L03#remplacer-un-composant"

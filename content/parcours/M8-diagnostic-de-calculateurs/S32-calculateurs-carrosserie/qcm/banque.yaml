@@ -1,0 +1,265 @@
+# Questions sans les bonnes réponses (voir reponses.yaml).
+# Banque de 25 questions (pédagogie v0.3 ; décision E-01 encore ouverte). Valeurs de calcul [EXEMPLE].
+- id: S32-Q001
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#le-rôle-dun-module-de-carrosserie"
+  enonce: "Quelles fonctions un BCM ou une BSI commande-t-il en général ?"
+  propositions:
+    - {id: a, texte: "Éclairage, confort, lecture des commandes, liaison entre réseaux"}
+    - {id: b, texte: "Injection et suralimentation"}
+    - {id: c, texte: "Freinage d'urgence"}
+    - {id: d, texte: "Déclenchement des airbags"}
+- id: S32-Q002
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#les-commutateurs-high-side-multivoies"
+  enonce: "Quelles charges le commutateur high-side multivoies cité peut-il commander ?"
+  propositions:
+    - {id: a, texte: "Lampes de faible puissance, LED, relais, électrovannes, éléments chauffants"}
+    - {id: b, texte: "Uniquement des moteurs de démarreur"}
+    - {id: c, texte: "Uniquement des signaux logiques"}
+    - {id: d, texte: "Des injecteurs survoltés"}
+- id: S32-Q003
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#les-commutateurs-high-side-multivoies"
+  enonce: "Pourquoi une lampe froide appelle-t-elle plus de courant ?"
+  propositions:
+    - {id: a, texte: "Sa résistance est plus faible à froid"}
+    - {id: b, texte: "Sa résistance est plus forte à froid"}
+    - {id: c, texte: "Elle est en court-circuit"}
+    - {id: d, texte: "Elle ne l'appelle pas"}
+- id: S32-Q004
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#les-commutateurs-high-side-multivoies"
+  enonce: "Comment le circuit cité limite-t-il le courant d'appel ?"
+  propositions:
+    - {id: a, texte: "Par une limite de courant réglable par une résistance extérieure"}
+    - {id: b, texte: "Par un fusible interne"}
+    - {id: c, texte: "Il ne le limite pas"}
+    - {id: d, texte: "Par le microcontrôleur seul"}
+- id: S32-Q005
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#le-diagnostic-de-charge"
+  enonce: "Voie passante, charge ouverte : comment le défaut se voit-il sur le circuit cité ?"
+  propositions:
+    - {id: a, texte: "Recopie de courant très faible, que le microcontrôleur doit aller lire"}
+    - {id: b, texte: "Broche de défaut active immédiatement"}
+    - {id: c, texte: "Sortie à 0 V"}
+    - {id: d, texte: "Il ne se voit pas"}
+- id: S32-Q006
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#le-diagnostic-de-charge"
+  enonce: "Quelle résistance de tirage la fiche recommande-t-elle pour la détection de charge ouverte voie bloquée ?"
+  propositions:
+    - {id: a, texte: "20 kΩ"}
+    - {id: b, texte: "10 Ω"}
+    - {id: c, texte: "1 MΩ"}
+    - {id: d, texte: "Aucune"}
+- id: S32-Q007
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#le-diagnostic-de-charge"
+  enonce: "Qu'est-ce qui peut fausser la détection de charge ouverte voie bloquée ?"
+  propositions:
+    - {id: a, texte: "Les fuites dues à l'humidité ou à la corrosion"}
+    - {id: b, texte: "La couleur de la lampe"}
+    - {id: c, texte: "La fréquence CAN"}
+    - {id: d, texte: "Rien"}
+- id: S32-Q008
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#le-diagnostic-de-charge"
+  enonce: "Court-circuit à la masse sur une voie passante : que se passe-t-il ?"
+  propositions:
+    - {id: a, texte: "La limite de courant est atteinte et le défaut est signalé"}
+    - {id: b, texte: "La voie s'arrête sans rien signaler"}
+    - {id: c, texte: "Le courant baisse"}
+    - {id: d, texte: "Rien"}
+- id: S32-Q009
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#exemple-2--lire-la-recopie-de-courant"
+  enonce: "Lampe 0,8 A ; rapport de recopie 500 ; résistance 2 kΩ. Tension de recopie ?"
+  unite_attendue: V
+- id: S32-Q010
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L01#exemple-1--une-voie-signalée-en-charge-ouverte"
+  enonce: "Défaut de charge ouverte sur une sortie de feu. Sur banc, la lampe s'allume et le défaut disparaît. Conclusion ?"
+  propositions:
+    - {id: a, texte: "La carte n'est pas en cause : chercher côté lampe, faisceau ou connecteur"}
+    - {id: b, texte: "Remplacer le commutateur"}
+    - {id: c, texte: "Remplacer le microcontrôleur"}
+    - {id: d, texte: "Effacer le défaut et rendre le module"}
+- id: S32-Q011
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L02#pourquoi-la-consommation-au-repos-compte"
+  enonce: "Pourquoi un module de carrosserie doit-il consommer peu au repos ?"
+  propositions:
+    - {id: a, texte: "Il reste alimenté par la borne 30, véhicule arrêté, sur la batterie"}
+    - {id: b, texte: "Il est alimenté par l'alternateur au repos"}
+    - {id: c, texte: "Il n'est jamais alimenté au repos"}
+    - {id: d, texte: "Pour refroidir la carte"}
+- id: S32-Q012
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L02#le-budget-des-composants"
+  enonce: "Quel courant de veille la fiche du commutateur multivoies cité annonce-t-elle ?"
+  propositions:
+    - {id: a, texte: "Moins de 500 nA"}
+    - {id: b, texte: "50 mA"}
+    - {id: c, texte: "5 A"}
+    - {id: d, texte: "Aucun chiffre"}
+- id: S32-Q013
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S32-L02#exemple-1--un-budget-de-repos"
+  enonce: "SBC 50 µA, station de base 200 µA, deux commutateurs à 0,5 µA, fuites 49 µA. Budget total ?"
+  unite_attendue: µA
+- id: S32-Q014
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S32-L02#mesurer-sans-réveiller"
+  enonce: "Où branche-t-on l'ampèremètre pour la consommation au repos ?"
+  propositions:
+    - {id: a, texte: "En série dans la borne 30, avant la mise sous tension"}
+    - {id: b, texte: "En parallèle sur la batterie"}
+    - {id: c, texte: "Sur la ligne CAN"}
+    - {id: d, texte: "Sur la masse des sondes"}
+- id: S32-Q015
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L02#mesurer-sans-réveiller"
+  enonce: "Que fait-on de l'outil de diagnostic avant d'attendre l'endormissement ?"
+  propositions:
+    - {id: a, texte: "On le débranche"}
+    - {id: b, texte: "On le laisse connecté en lecture"}
+    - {id: c, texte: "On lance un essai d'actionneur"}
+    - {id: d, texte: "On efface les défauts en boucle"}
+- id: S32-Q016
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S32-L02#mesurer-sans-réveiller"
+  enonce: "Avant de passer au calibre le plus sensible, que vérifie-t-on ?"
+  propositions:
+    - {id: a, texte: "Que le module est endormi et que le courant est dans la plage du calibre"}
+    - {id: b, texte: "Rien"}
+    - {id: c, texte: "Que la borne 15 est fermée"}
+    - {id: d, texte: "Que l'outil est branché"}
+- id: S32-Q017
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L02#les-sources-de-réveil"
+  enonce: "Laquelle n'est pas une source de réveil d'un SBC citée par la note NXP ?"
+  propositions:
+    - {id: a, texte: "La couleur du boîtier"}
+    - {id: b, texte: "Une broche de réveil local"}
+    - {id: c, texte: "Un motif de réveil sur le bus CAN"}
+    - {id: d, texte: "Une minuterie"}
+- id: S32-Q018
+  type: calcul
+  securite: false
+  competences: [D10.3]
+  section: "S32-L02#exemple-3--la-puissance-au-repos"
+  enonce: "Courant de repos 30 mA sous 12 V. Puissance ?"
+  unite_attendue: W
+- id: S32-Q019
+  type: choix_unique
+  securite: true
+  competences: [D10.3]
+  section: "S32-L03#ce-que-le-cursus-traite-et-ce-quil-ne-traite-pas"
+  enonce: "Comment le module d'accès est-il étudié dans le cursus ?"
+  propositions:
+    - {id: a, texte: "Au niveau carte uniquement, sur des pièces de provenance légitime documentée"}
+    - {id: b, texte: "Avec copie des clés"}
+    - {id: c, texte: "Avec modification des données d'antidémarrage"}
+    - {id: d, texte: "Il n'est pas étudié"}
+- id: S32-Q020
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L03#la-station-de-base-et-lantenne"
+  enonce: "Quel rôle joue la station de base de transpondeur ?"
+  propositions:
+    - {id: a, texte: "Commander l'antenne, envoyer des données modulées et démoduler la réponse du transpondeur"}
+    - {id: b, texte: "Alimenter le démarreur"}
+    - {id: c, texte: "Mesurer la pression"}
+    - {id: d, texte: "Commander les feux"}
+- id: S32-Q021
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L03#la-station-de-base-et-lantenne"
+  enonce: "D'où vient l'énergie du transpondeur dans le système cité ?"
+  propositions:
+    - {id: a, texte: "Du champ de l'antenne, pendant une phase de charge"}
+    - {id: b, texte: "D'une pile changée chaque année"}
+    - {id: c, texte: "Du bus CAN"}
+    - {id: d, texte: "De la borne 15 par un fil"}
+- id: S32-Q022
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L03#la-station-de-base-et-lantenne"
+  enonce: "Que fait le pont d'antenne du circuit cité en cas de court-circuit à la masse ?"
+  propositions:
+    - {id: a, texte: "Il se coupe rapidement puis réessaie après un délai"}
+    - {id: b, texte: "Il continue sans rien faire"}
+    - {id: c, texte: "Il double son courant"}
+    - {id: d, texte: "Il efface la mémoire"}
+- id: S32-Q023
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L03#la-station-de-base-et-lantenne"
+  enonce: "Quelle mesure de niveau carte fait-on hors tension sur l'antenne ?"
+  propositions:
+    - {id: a, texte: "Continuité et résistance de la bobine, comparées à la référence"}
+    - {id: b, texte: "Lecture de la mémoire du module"}
+    - {id: c, texte: "Mesure de pression"}
+    - {id: d, texte: "Aucune"}
+- id: S32-Q024
+  type: choix_unique
+  securite: false
+  competences: [D10.3]
+  section: "S32-L03#les-entrées-du-contacteur-et-le-réveil"
+  enonce: "Comment simule-t-on le contacteur sur le banc ?"
+  propositions:
+    - {id: a, texte: "Par un interrupteur, d'après la documentation"}
+    - {id: b, texte: "En court-circuitant le microcontrôleur"}
+    - {id: c, texte: "Avec une clé copiée"}
+    - {id: d, texte: "On ne le simule pas"}
+- id: S32-Q025
+  type: choix_unique
+  securite: false
+  competences: [D4.7]
+  section: "S32-L03#remplacer-un-composant"
+  enonce: "Un transistor du pont d'antenne est désigné par la mesure. Comment justifier son remplaçant ?"
+  propositions:
+    - {id: a, texte: "Paramètres critiques, boîtier, plage de température et qualification, comme en S28-L03"}
+    - {id: b, texte: "Prendre le moins cher"}
+    - {id: c, texte: "Prendre n'importe quel transistor du même boîtier"}
+    - {id: d, texte: "Aucune justification n'est nécessaire"}

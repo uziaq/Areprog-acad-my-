@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S32-L02-EX01
+  valeur: 300
+  tolerance_relative: 0.02
+  unite: "µA"
+  explication: "80 + 200 + 20 = 300 µA ; la valeur attendue reste celle de la référence mesurée."
+  renvoi_section: "S32-L02#exemple-1--un-budget-de-repos"
+- id: S32-L02-EX02
+  bonnes: [a]
+  explication: "Une coupure pendant le changement de calibre peut réveiller ou réinitialiser le calculateur ; l'interrupteur garde le circuit fermé."
+  renvoi_section: "S32-L02#mesurer-sans-réveiller"
+- id: S32-L02-EX03
+  bonnes: [a]
+  explication: "Un outil branché, un bus mal terminé ou une entrée de réveil flottante empêchent l'endormissement ; on retire ces causes avant d'accuser la carte."
+  renvoi_section: "S32-L02#exemple-2--un-module-qui-ne-sendort-pas"

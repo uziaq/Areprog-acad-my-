@@ -1,0 +1,15 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S32-L01-EX01
+  bonnes: [a]
+  explication: "Version A : sortie de défaut numérique à drain ouvert ; version B : recopie analogique du courant (fiche TPS4H160-Q1)."
+  renvoi_section: "S32-L01#les-commutateurs-high-side-multivoies"
+- id: S32-L01-EX02
+  bonnes: [a]
+  explication: "Sans charge, rien ne tire la sortie vers la masse : elle reste proche de l'alimentation et le défaut est signalé. Une résistance de tirage de 20 kΩ compense les fuites."
+  renvoi_section: "S32-L01#le-diagnostic-de-charge"
+- id: S32-L01-EX03
+  valeur: 2
+  tolerance_relative: 0.02
+  unite: "V"
+  explication: "1 A / 500 = 2 mA ; 2 mA × 1 kΩ = 2 V."
+  renvoi_section: "S32-L01#exemple-2--lire-la-recopie-de-courant"
