@@ -1,0 +1,13 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S38-L01-EX01
+  bonnes: [a]
+  explication: "SRC-0099 décrit un calculateur de direction comme un microcontrôleur, des capteurs, un circuit de gestion d'alimentation, une commande de moteur et des transistors de puissance."
+  renvoi_section: "S38-L01#ce-que-fait-un-calculateur-de-direction"
+- id: S38-L01-EX02
+  bonnes: [a]
+  explication: "La logique d'entrée empêche d'allumer ensemble les deux transistors d'une même phase, ce qui court-circuiterait l'alimentation (SRC-0102, Overview)."
+  renvoi_section: "S38-L01#les-surveillances-et-leur-effet"
+- id: S38-L01-EX03
+  bonnes: [a]
+  explication: "Un mode dégradé est une information : une surveillance a réagi. On lit les défauts sans effacer, on contrôle les causes simples d'abord, et le comportement se lit dans la documentation du constructeur. On ne roule pas pour essayer et on ne shunte jamais une surveillance."
+  renvoi_section: "S38-L01#les-modes-dégradés"

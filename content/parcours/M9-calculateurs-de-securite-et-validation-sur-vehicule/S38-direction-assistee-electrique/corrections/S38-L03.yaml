@@ -1,0 +1,9 @@
+# Chargé par l'application uniquement après la réponse de l'apprenant.
+- id: S38-L03-EX01
+  bonnes: [a]
+  explication: "Une trame SENT est une suite d'impulsions : le multimètre n'en donne qu'une moyenne sans signification. On la lit à l'oscilloscope."
+  renvoi_section: "S38-L03#une-sortie-analogique-ou-numérique"
+- id: S38-L03-EX02
+  bonnes: [a]
+  explication: "Le catalogue des TP impose des premiers essais véhicule immobilisé, puis les calibrations du constructeur avant tout roulage ; les opérations exactes viennent de la documentation du constructeur."
+  renvoi_section: "S38-L03#après-une-intervention"

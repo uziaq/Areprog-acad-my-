@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 315" width="750" height="315" fill="none" stroke="currentColor" stroke-width="2" font-family="Inter, system-ui, sans-serif" font-size="12">
+  <!-- Figure réalisée par AREPROG : architecture générique d'un calculateur de direction assistée électrique, d'après SRC-0102 et SRC-0099. -->
+  <defs>
+    <marker id="s38f01-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" stroke="none" />
+    </marker>
+  </defs>
+  <rect x="15" y="20" width="135" height="52" rx="6" />
+  <text x="82.5" y="43.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Alimentation</text>
+  <text x="82.5" y="58.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">protection, filtre</text>
+  <path d="M150 46 H164" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <rect x="165" y="20" width="150" height="52" rx="6" />
+  <text x="240.0" y="43.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Circuit d'alimentation</text>
+  <text x="240.0" y="58.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">régulateurs, surveillance</text>
+  <path d="M315 46 H364" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <rect x="365" y="20" width="160" height="70" rx="6" />
+  <text x="445.0" y="45.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Microcontrôleur</text>
+  <text x="445.0" y="60.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">de sécurité, CAN</text>
+  <text x="445.0" y="75.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">capteurs, décision</text>
+  <path d="M445 90 V109" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <text x="510" y="103" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">PWM, SPI</text>
+  <rect x="365" y="110" width="160" height="62" rx="6" />
+  <text x="445.0" y="131.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Commande de pont</text>
+  <text x="445.0" y="146.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">surveillance VDS,</text>
+  <text x="445.0" y="161.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">chien de garde</text>
+  <path d="M525 141 H569" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <rect x="570" y="110" width="160" height="62" rx="6" />
+  <text x="650.0" y="131.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Pont de MOSFET</text>
+  <text x="650.0" y="146.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">3 phases</text>
+  <text x="650.0" y="161.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">(6 transistors)</text>
+  <path d="M650 172 V209" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <rect x="570" y="210" width="160" height="52" rx="6" stroke-dasharray="6 4" />
+  <text x="650.0" y="233.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Moteur d'assistance</text>
+  <text x="650.0" y="248.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">sans balais</text>
+  <path d="M570 236 H526" marker-end="url(#s38f01-a)" stroke-width="1.5" stroke-dasharray="4 3" />
+  <rect x="365" y="210" width="160" height="52" rx="6" />
+  <text x="445.0" y="233.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Shunts et amplis</text>
+  <text x="445.0" y="248.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">courant des phases</text>
+  <path d="M445 210 V173" marker-end="url(#s38f01-a)" stroke-width="1.5" stroke-dasharray="4 3" />
+  <rect x="15" y="110" width="150" height="62" rx="6" stroke-dasharray="6 4" />
+  <text x="90.0" y="131.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Capteur de couple</text>
+  <text x="90.0" y="146.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">deux voies</text>
+  <text x="90.0" y="161.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">redondantes</text>
+  <path d="M165 141 H335 V68 H364" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <rect x="15" y="210" width="150" height="52" rx="6" stroke-dasharray="6 4" />
+  <text x="90.0" y="233.0" text-anchor="middle" fill="currentColor" stroke="none" font-weight="600">Position du moteur</text>
+  <text x="90.0" y="248.0" text-anchor="middle" fill="currentColor" stroke="none" font-size="10.5">et angle du volant</text>
+  <path d="M165 236 H350 V82 H364" marker-end="url(#s38f01-a)" stroke-width="1.5" />
+  <text x="375" y="300" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Architecture générique d'après les documents cités ; répartition réelle selon le constructeur.</text>
+</svg>

@@ -1,0 +1,193 @@
+# Chargé par l'application uniquement après la soumission du QCM.
+- id: S38-Q001
+  bonnes: [a]
+  explication: "SRC-0099 : commande de moteur et transistors de puissance."
+  pourquoi_faux:
+    b: "C'est l'ABS."
+    c: "C'est l'airbag."
+    d: "C'est l'ECU moteur."
+  source: "S38-L01#ce-que-fait-un-calculateur-de-direction"
+- id: S38-Q002
+  bonnes: [a]
+  explication: "Trois côté haut et trois côté bas (SRC-0102)."
+  pourquoi_faux:
+    b: "Un demi-pont."
+    c: "Un pont en H."
+    d: "Non."
+  source: "S38-L01#un-moteur-sans-balais-et-un-pont-triphasé"
+- id: S38-Q003
+  bonnes: [a]
+  explication: "SRC-0102, Features."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L01#un-moteur-sans-balais-et-un-pont-triphasé"
+- id: S38-Q004
+  bonnes: [a]
+  explication: "SRC-0102, Application Information."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Tension de charge habituelle."
+  source: "S38-L01#un-moteur-sans-balais-et-un-pont-triphasé"
+- id: S38-Q005
+  bonnes: [a]
+  explication: "Logique d'entrée et temps mort (SRC-0102)."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L01#les-surveillances-et-leur-effet"
+- id: S38-Q006
+  bonnes: [a]
+  explication: "SRC-0102, Features."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L01#les-surveillances-et-leur-effet"
+- id: S38-Q007
+  bonnes: [a]
+  explication: "Une surveillance se diagnostique, elle ne se contourne pas (protocole renforcé)."
+  pourquoi_faux:
+    b: "Interdit par le protocole renforcé."
+    c: "Sans mesure, non."
+    d: "Non."
+  source: "S38-L01#les-surveillances-et-leur-effet"
+- id: S38-Q008
+  bonnes: [a]
+  explication: "Propres à chaque constructeur."
+  pourquoi_faux:
+    b: "Elle décrit le circuit, pas le véhicule."
+    c: "Non."
+    d: "Non."
+  source: "S38-L01#les-modes-dégradés"
+- id: S38-Q009
+  valeur: 25
+  tolerance_relative: 0.02
+  unite: A
+  explication: "0,2 / 8 = 0,025 V ; 0,025 / 0,001 = 25 A."
+  source: "S38-L02#exemple-1--lire-un-courant-de-phase"
+- id: S38-Q010
+  bonnes: [a]
+  explication: "SRC-0102, Electrical Characteristics."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L02#mesurer-le-courant-des-phases"
+- id: S38-Q011
+  bonnes: [a]
+  explication: "SRC-0102, Electrical Characteristics."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L02#la-surveillance-vds"
+- id: S38-Q012
+  valeur: 200
+  tolerance_relative: 0.02
+  unite: A
+  explication: "1 / 0,005 = 200 A."
+  source: "S38-L02#exemple-3--le-courant-de-détection-vds"
+- id: S38-Q013
+  bonnes: [a]
+  explication: "Diagnostic comparatif, hypothèse à confirmer."
+  pourquoi_faux:
+    b: "Non."
+    c: "Le moteur n'est pas sur le banc."
+    d: "Jamais sans limite écrite."
+  source: "S38-L02#contrôler-hors-tension"
+- id: S38-Q014
+  bonnes: [a]
+  explication: "Décharge mesurée deux fois (SRC-0013, FE-09)."
+  pourquoi_faux:
+    b: "Dangereux et interdit."
+    c: "Les condensateurs restent chargés."
+    d: "Non."
+  source: "S38-L02#contrôler-hors-tension"
+- id: S38-Q015
+  bonnes: [a]
+  explication: "Catalogue des TP, protocole renforcé."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L02#le-banc-à-charges-réduites"
+- id: S38-Q016
+  valeur: 14.4
+  tolerance_relative: 0.02
+  unite: W
+  explication: "P = 12² / 10 = 14,4 W."
+  source: "S38-L02#exemple-2--une-charge-réduite"
+- id: S38-Q017
+  bonnes: [a]
+  explication: "Charges qui chauffent : jamais touchées pendant ou juste après un essai."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L02#le-banc-à-charges-réduites"
+- id: S38-Q018
+  bonnes: [a]
+  explication: "SRC-0102, Electrical Characteristics."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L02#mesurer-les-commandes-de-grille"
+- id: S38-Q019
+  bonnes: [a]
+  explication: "La source côté haut suit la phase (SRC-0029, FE-07)."
+  pourquoi_faux:
+    b: "Court-circuit par la masse de l'oscilloscope."
+    c: "Non."
+    d: "Interdit."
+  source: "S38-L02#mesurer-les-commandes-de-grille"
+- id: S38-Q020
+  bonnes: [a]
+  explication: "SRC-0103, Introduction."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L03#le-capteur-de-couple"
+- id: S38-Q021
+  bonnes: [a]
+  explication: "SRC-0103, Introduction."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L03#une-sortie-analogique-ou-numérique"
+- id: S38-Q022
+  valeur: 18
+  tolerance_relative: 0.02
+  unite: µs
+  explication: "9 × 2 = 18 µs."
+  source: "S38-L03#exemple-2--la-durée-dune-demande-de-données"
+- id: S38-Q023
+  bonnes: [a]
+  explication: "Captage au plus près et moteurs pas laissés en marche inutilement (SRC-0104)."
+  pourquoi_faux:
+    b: "Aggrave l'exposition."
+    c: "Ne protège pas du monoxyde de carbone."
+    d: "Intoxication possible (SRC-0104)."
+  source: "S38-L03#mesurer-sur-véhicule-immobilisé-moteur-arrêté-puis-en-marche"
+- id: S38-Q024
+  bonnes: [a]
+  explication: "Règles « Sécurité véhicule » du catalogue des TP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L03#mesurer-sur-véhicule-immobilisé-moteur-arrêté-puis-en-marche"
+- id: S38-Q025
+  bonnes: [a]
+  explication: "Règle « Sécurité véhicule » 6 du catalogue des TP."
+  pourquoi_faux:
+    b: "Non."
+    c: "Non."
+    d: "Non."
+  source: "S38-L03#après-une-intervention"

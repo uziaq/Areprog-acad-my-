@@ -1,0 +1,14 @@
+# Page de l'INRS sur la prévention des risques liés aux gaz d'échappement : composition, effets
+# sur la santé (irritation, intoxication au monoxyde de carbone, cancer), démarche de prévention
+# (captage au plus près de l'émission pour les véhicules immobiles en atelier, ventilation, ne
+# pas laisser tourner les moteurs inutilement). Utilisée en S38 pour le premier TP moteur en
+# marche. Sections citées par leur titre.
+id: SRC-0104
+titre: "Gaz d'échappement. Prévenir les risques liés aux gaz d'échappement"
+editeur: INRS
+reference: "Rubrique Risques chimiques, gaz d'échappement"
+revision: "Mise à jour du 24/11/2022"
+date_consultation: 2026-11-15
+type: site
+licence: lien_seulement
+lien: https://www.inrs.fr/risques/gaz-echappement/ce-qu-il-faut-retenir.html
